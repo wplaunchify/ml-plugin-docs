@@ -70,7 +70,7 @@ If you have Event Tickets, you can use the [Share option](https://theeventscalen
 
 ![Virtual Event Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Annotation-on-2020-08-24-at-13-32-12.png)
 
-You can add an additional level of security by using the [Login Requirements options](https://docs.nexcess.com/software/the-events-calendar/event-tickets/#Login_requirements) under **Events > Settings > Tickets** to require users to log in before RSVPing and/or purchasing a ticket.
+You can add an additional level of security by using the [Login Requirements options](https://docs.nexcess.com/software/the-events-calendar/event-tickets-settings/#h-login-requirements) under **Events > Settings > Tickets** to require users to log in before RSVPing and/or purchasing a ticket.
 
 #### Virtual and Hybrid Event Labels
 
@@ -96,7 +96,7 @@ These options can be used alone or combined to meet your needs.
 
 ### Generate Zoom meetings with passwords
 
-Starting with Virtual Events 1.0.2, Zoom meetings are generated with an embedded password to meet Zoom’s [new security measures](https://support.zoom.us/hc/en-us/articles/360033331271-Account-setting-update-Password-default-for-meeting-and-webinar#:~:text=Zoom%20currently%20has%20a%20setting,the%20meeting%20requires%20a%20password.). This means that there are essentially two versions of the Zoom Join link. The basic, **limited-access link** will prompt the user to enter a password before joining the meeting. The **all-access link with an embedded password** will allow the user immediate access to the meeting.
+Zoom meetings are generated with an embedded password to meet Zoom’s [new security measures](https://support.zoom.us/hc/en-us/articles/360033331271-Account-setting-update-Password-default-for-meeting-and-webinar#:~:text=Zoom%20currently%20has%20a%20setting,the%20meeting%20requires%20a%20password.). This means that there are essentially two versions of the Zoom Join link. The basic, **limited-access link** will prompt the user to enter a password before joining the meeting. The **all-access link with an embedded password** will allow the user immediate access to the meeting.
 
 This requires that the **Have a minimum password length** setting is enabled under **Admin → Account Management → Account Settings → Security** in Zoom.
 

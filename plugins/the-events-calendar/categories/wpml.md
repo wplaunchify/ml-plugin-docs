@@ -88,7 +88,6 @@ functions.php
 
 ```
 add_filter('tribe_get_single_option', 'tribe_options_multilingual', 20, 3);
-
 function tribe_options_multilingual( $option, $default, $option_name ) {
   if (is_string($option)) {
     return apply_filters( 'wpml_translate_single_string', $option, 'admin_texts_tribe_events_calendar_options', '[tribe_events_calendar_options]' . $option_name);
@@ -186,7 +185,7 @@ Before this happens to you too, we highly recommend:
 
 ## Emptying the WPML Cache and Preventing 404 Errors
 
-Starting with version 3.5.3, WPML uses caching to offer awesome performance on multilingual sites.
+WPML uses caching to offer awesome performance on multilingual sites.
 
 With that in mind, sometimes this can also cause 404 error messages, especially after one of the following changes:
 

@@ -19,10 +19,10 @@ Events created with The Events Calendar can have 3 statuses out of the box, whic
 If you would like to add your own custom status, then you can do it with the help of the following snippet.
 
 ```
-add_filter( 'tec_event_statuses', 'my_custom_statuses', 20, 2 );
- 
-function my_custom_statuses( $statuses, $current_status ) {
-	$custom_statuses = custom_statuses();
+add_filter( 'tec_event_statuses', 'tec_add_custom_event_statuses', 20, 2 );
+
+function tec_add_custom_event_statuses( $statuses, $current_status ) {
+	$custom_statuses = tec_custom_event_statuses();
 
 	foreach ( $custom_statuses as $custom_status ) {
 		$statuses[] = [
@@ -36,12 +36,12 @@ function my_custom_statuses( $statuses, $current_status ) {
 	return $statuses;
 }
 
-function custom_statuses() {
+function tec_custom_event_statuses() {
 	$statuses = [
 		'rescheduled'     => [
 			'name'   => 'Rescheduled',
 			'value'  => 'rescheduled',
-			'schema' => 'EventRecheduled',
+			'schema' => 'https://schema.org/EventRescheduled',
 		],
 		'suspended'       => [
 			'name'   => 'Suspended',
@@ -69,7 +69,7 @@ To modify the event schema, we will need another snippet.
 add_filter( "tribe_json_ld_event_object", 'tec_custom_event_schema', 30, 3 );
 
 function tec_custom_event_schema( $data, $args, $post ) {
-	$custom_statuses = $this->custom_statuses();
+	$custom_statuses = tec_custom_event_statuses();
 
 	$event_status = get_post_meta( $post->ID, '_tribe_events_status', true );
 
@@ -95,12 +95,12 @@ $data->eventStatus = 'https://schema.org/EventScheduled';
  inside the conditional test, or you can completely remove it like this:
 
 ```
-add_filter( "tribe_json_ld_event_object", 'tec_custom_event_schema', 30, 3 );
+add_filter( "tribe_json_ld_event_object", 'tec_remove_custom_status_from_schema', 30, 3 );
 
-function tec_custom_event_schema( $data, $args, $post ) {
+function tec_remove_custom_status_from_schema( $data, $args, $post ) {
 	$event = tribe_get_event( $post );
 
-	if ( 'my_other_status === $event->event_status ) {
+	if ( 'my_other_status' === $event->event_status ) {
 		unset( $data->eventStatus );
 	}
 
@@ -118,20 +118,16 @@ Making the custom event status show up on the single event page is easiest with 
 
 Make note of the following in case you want to use a different status than “Suspended”:
 
-- Checking against the status slug on line 4
-- Adding the right slug in the class on line 7
-- Showing the right label on line 10
+- The slug and the label of each status you want to show, in the $statuses array near the top of the function.
 
 ```
 add_filter( 'tribe_events_single_event_title_html', 'tec_custom_status_on_single_classic', 10, 2 );
-
 function tec_custom_status_on_single_classic( $title, $event_id ) {
 	$statuses = [
 		'suspended' => 'Suspended',
 		'custom'    => 'Custom',
 	];
 	$event_status = get_post_meta( $event_id, '_tribe_events_status', true );
-
 	if ( array_key_exists( $event_status, $statuses ) ) {
 		$status = '
         <div class="tribe-common-b2 tribe-events-status-single-notice">
@@ -151,13 +147,15 @@ function tec_custom_status_on_single_classic( $title, $event_id ) {
             </div>
         </div>
         ';
-
 		$title = $status . $title;
 	}
-
 	return $title;
 }
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

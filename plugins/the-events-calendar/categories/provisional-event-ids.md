@@ -84,7 +84,7 @@ The Events Calendar provides a safe, forward-compatible utility function to reso
 
 The function is a static method: 
 ```
-TECEventsCustom_TablesV1ModelsOccurrence::normalize_id()
+TEC\Events\Custom_Tables\V1\Models\Occurrence::normalize_id()
 ```
 
 This function accepts an ID (either provisional or a standard Post ID) and will always return the correct, integer-based WordPress Post ID.
@@ -98,7 +98,7 @@ Here is a simple example of how to use the function to get the correct Post ID.
 $provisional_id = 10000114;
 
 // Use the normalize_id() method to get the actual WordPress Post ID.
-$event_post_id = TECEventsCustom_TablesV1ModelsOccurrence::normalize_id( $provisional_id );
+$event_post_id = TEC\Events\Custom_Tables\V1\Models\Occurrence::normalize_id( $provisional_id );
 
 // Always check that you received a valid integer ID before using it.
 if ( is_int( $event_post_id ) && $event_post_id > 0 ) {
@@ -125,7 +125,7 @@ In this use case, we’d be interested in customizing the
 /wp-content/plugins/the-events-calendar/src/views/v2/list/event.php
 ```
 
- file (see [Template Customization Example](https://docs.nexcess.com/software/the-events-calendar/promoter-email-template/)) so make a copy of the file and place it in your site’s 
+ file (see [Template Customization Example](https://docs.nexcess.com/software/the-events-calendar/customize-list-view/)) so make a copy of the file and place it in your site’s 
 ```
 /wp-content/themes/[your-theme]/tribe/events/v2/list/
 ```
@@ -139,37 +139,53 @@ Edit the
 /wp-content/themes/[your-theme]/tribe/events/v2/list/event.php
 ```
 
- file, and replace its contents with the following:
+ file, and replace its contents with the following. It is based on the current List View template; if your copy of event.php looks different, keep your copy and make only the two changes described below:
 
 ```
 <?php
+/**
+ * View: List Event
+ *
+ * Override this template in your own theme by creating a file at:
+ * [your-theme]/tribe/events/v2/list/event.php
+ *
+ * See more documentation about our views templating system.
+ *
+ * @link http://evnt.is/1aiy
+ *
+ * @version 5.0.0
+ *
+ * @var WP_Post $event The event post object with properties added by the `tribe_get_event` function.
+ *
+ * @see tribe_get_event() For the format of the event object.
+ */
+
 $container_classes = [ 'tribe-common-g-row', 'tribe-events-calendar-list__event-row' ];
 $container_classes['tribe-events-calendar-list__event-row--featured'] = $event->featured;
 
 $event_classes = tribe_get_post_class( [ 'tribe-events-calendar-list__event', 'tribe-common-g-row', 'tribe-common-g-row--gutters' ], $event->ID );
 
-$the_event_id = TECEventsCustom_TablesV1ModelsOccurrence::normalize_id ($event->ID);
+$the_event_id = TEC\Events\Custom_Tables\V1\Models\Occurrence::normalize_id( $event->ID );
 ?>
-<div <?php tec_classes( $container_classes ); ?>>
+<li <?php tec_classes( $container_classes ); ?>>
 
 	<?php $this->template( 'list/event/date-tag', [ 'event' => $event ] ); ?>
 
 	<div class="tribe-events-calendar-list__event-wrapper tribe-common-g-col">
 		<article <?php tec_classes( $event_classes ); ?>>
-			<?php 
-				if (tribe_event_in_category ('generated', $the_event_id)) {
-					$this->template( 'list/event/featured-image', [ 'event' => $event ] );
-				}
-				else {
-					echo('<div><p>No featured image to show</p></div>');
-				}
+			<?php
+			if ( tribe_event_in_category( 'generated', $the_event_id ) ) {
+				$this->template( 'list/event/featured-image', [ 'event' => $event ] );
+			} else {
+				echo '<div><p>No featured image to show</p></div>';
+			}
 			?>
 
 			<div class="tribe-events-calendar-list__event-details tribe-common-g-col">
 
 				<header class="tribe-events-calendar-list__event-header">
-					<?php $this->template( 'list/event/date', [ 'event' => $event ] ); ?>
 					<?php $this->template( 'list/event/title', [ 'event' => $event ] ); ?>
+					<?php $this->template( 'list/event/date', [ 'event' => $event ] ); ?>
 					<?php $this->template( 'list/event/venue', [ 'event' => $event ] ); ?>
 					<?php $this->template( 'list/event/category', [ 'event' => $event ] ); ?>
 				</header>
@@ -181,14 +197,14 @@ $the_event_id = TECEventsCustom_TablesV1ModelsOccurrence::normalize_id ($event->
 		</article>
 	</div>
 
-</div>
+</li>
 ```
 
 If you compare the above code with the original code, you’ll notice the following changes:
 
 - The addition of 
 ```
-$the_event_id = TECEventsCustom_TablesV1ModelsOccurrence::normalize_id ($event->ID);
+$the_event_id = TEC\Events\Custom_Tables\V1\Models\Occurrence::normalize_id( $event->ID );
 ```
 
  code.
@@ -200,8 +216,13 @@ if (tribe_event_in_category ('generated', $the_event_id))
 
  conditional.
 - This conditional simply means that we only show the event’s featured image if the event to be listed in list view is in the *generated* (category slug).
+- Replace *generated* with the slug of one of your own event categories. The category must already exist; if it does not, PHP logs a warning for every event in the list.
 
 The above use case opens up a range of other possibilities, so please feel free to adjust your code accordingly.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

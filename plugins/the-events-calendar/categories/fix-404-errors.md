@@ -39,35 +39,15 @@ Open the event in the WordPress editor, make a minor change, and click **Update*
 
 #### 3. Check Your Custom Tables Health
 
-Since The Events Calendar 6.0, event data is stored in custom database tables. A failed or incomplete migration can cause 404 errors on event pages. In your WordPress dashboard, go to **Events → Troubleshooting** and check that the Custom Tables Health Check shows a **Good!** status.
+Event data is stored in custom database tables. A failed or incomplete migration can cause 404 errors on event pages. In your WordPress dashboard, go to **Events → Troubleshooting** and check that the Custom Tables Health Check shows a **Good!** status.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/001-1024x341-1.jpg)
 
-#### 4. Check Your Default View Setting
+#### 4. Check That the View Is Enabled
 
-If the view set as your default under **Events → Settings → Display** is not actually enabled, the calendar page will return a 404. Make sure the default view you’ve selected is active.
+If the 404 is on a specific calendar view, such as /events/photo/ or /events/week/, that view may be turned off. Go to **Events → Settings → Display** and make sure the view is enabled. The Events Calendar returns a 404 for the URL of any view that is turned off. If you would rather have those URLs redirect to your default view, go to **Events → Settings → Display**, find **SEO & URL Handling**, and turn off “Return 404 for disabled view URLs”.
 
-#### 5. Try This Conflict-Fix Snippet
-
-Some plugin and theme combinations cause WordPress to search for a media attachment instead of an event, producing a silent 404. Paste this snippet into your child theme’s functions.php to correct this:
-
-```
-<?php
-/*
- * Possible solution for Single Event page 404 errors where the WP_Query has an attachment set
- * IMPORTANT: Flush permalinks after pasting this code: http://tri.be/support/documentation/troubleshooting-404-errors/
- * Updated to work with post 3.10 versions
- */
-function tribe_attachment_404_fix () {
-	if (class_exists('Tribe__Events__Main')) {
-		remove_action( 'init', array( Tribe__Events__Main::instance(), 'init' ), 10 );
-		add_action( 'init', array( Tribe__Events__Main::instance(), 'init' ), 1 );
-	}
-}
-add_action( 'after_setup_theme', 'tribe_attachment_404_fix' );
-```
-
-#### 6. Test for Plugin or Theme Conflicts
+#### 5. Test for Plugin or Theme Conflicts
 
 Another plugin or your active theme may be interfering with TEC’s URL routing. Follow the steps in our [Testing for Conflicts guide](https://docs.nexcess.com/software/the-events-calendar/testing-for-conflicts/), then re-save your permalinks once you’ve completed it.
 
@@ -76,13 +56,7 @@ Another plugin or your active theme may be interfering with TEC’s URL routing.
 If none of the above resolved the issue, gather the following before contacting support:
 
 - Try switching your permalink structure to the default setting. Does that clear the 404s? Note this when you open a ticket.
-- Add [this diagnostic snippet](https://gist.github.com/elimn/d3483854e8e9399e449e) to your child theme’s functions.php. Then visit any 404-returning event URL with 
-```
-?tribe_query_debug=true
-```
-
- appended to it. This outputs detailed query information. Share it with our support team, then remove the snippet once the issue is resolved.
-- [Open a support ticket](https://theeventscalendar.com/support/) and include your System Information from **Events → Settings → Troubleshooting**.
+- [Open a support ticket](https://theeventscalendar.com/support/) and include your System Information from **Events → Troubleshooting**.
 
 ---
 
@@ -102,12 +76,12 @@ A **soft 404** is different. It’s a page that returns a 200 (success) HTTP sta
 
 **Venue and organizer pages with no upcoming events.** When you create a venue or organizer in TEC, an archive page is automatically generated for them. If that venue or organizer has no events currently assigned — either because none have been added yet, or because all their events are in the past — the page exists but contains very little content. Google may flag these as soft 404s. This is not an error on your site. Once you add events for those venues and organizers, the pages will have enough content and the flags will resolve on their own.
 
-**Empty day view pages.** Day view URLs like 
+**Dates outside your range of events.** Day, Month and List View URLs with a date before your earliest event or after your latest event return a hard 404 by design. For example, 
 ```
-/events/2024-11-15/
+/events/2031-01-05/
 ```
 
- return a hard 404 by design when no events exist on that date. The page shows a “no events on this day” message, but the HTTP status code is 404 because no matching events were found. This was the original behavior across all empty event views in TEC, and was changed to return 200 OK for most views in response to user feedback — but day views with no events retain the 404 behavior. Google may flag these.
+ returns a 404 when your last event is in 2027. This keeps search engines from indexing an endless run of empty calendar pages. Days and months inside your range of events that simply have no events load normally with a 200 status. Google may flag the out-of-range URLs.
 
 ### What to Do About It
 
@@ -118,17 +92,9 @@ noindex
 
 , which tells Google not to crawl them. Keep in mind that you’ll need to remove the noindex setting once those pages have enough content and you want them indexed again.
 
-For **hard 404s on empty day view pages**: if these are causing a specific SEO concern, you can force day view pages to return a 200 status code instead by adding this snippet to your child theme’s functions.php:
+For **404s on dates outside your range of events**: in most cases nothing needs to be done, because this is the intended behavior. If you would rather serve List View URLs that carry a date with a 200 status and a noindex directive, go to **Events → Settings → Display**, find **SEO & URL Handling**, and set “Out-of-range date URL behavior” to “Return HTTP 200 with a noindex directive”. This setting applies to List View URLs with a date; Day and Month View URLs outside your range still return a 404.
 
-```
-add_action( 'wp', 'tribe_no_event_day_404s' );
-function tribe_no_event_day_404s() {
-    if ( ! tribe_is_event_query() ) return;
-    status_header( 200 );
-}
-```
-
-Note that this forces a 200 response for all event queries without matching events, not just day views. Before using it, consider whether the 404s are actually affecting your search rankings — check your traffic metrics and search referral data first. A long list of 404 flags in Search Console looks alarming, but its real-world impact on rankings is often minimal. Search engines are generally good at distinguishing between broken pages and intentionally empty archive pages.
+We do not recommend forcing a 200 status on every empty page with custom code. It also turns real missing pages, such as a deleted event, venue or category, into soft 404s, which is worse for search engines. A long list of 404 flags in Search Console looks alarming, but its real-world impact on rankings is often minimal. Search engines are generally good at distinguishing between broken pages and intentionally empty archive pages.
 
 ---
 

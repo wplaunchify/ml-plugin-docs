@@ -65,45 +65,79 @@ By default, Photo View pulls the full-sized image and resizes it to a specific a
 Find the event template file in the plugin:
 
 ```
-wp-content/plugins/events-calendar-pro/src/view/v2/photo/event.php
+wp-content/plugins/events-calendar-pro/src/views/v2/photo/event/featured-image.php
 ```
 
 Copy it to your child theme at:
 
 ```
-[your-theme]/tribe/events-pro/v2/photo/event.php
+[your-theme]/tribe/events-pro/v2/photo/event/featured-image.php
 ```
 
 #### Update the Image Call
 
-Open the copied file and locate this line around line 28:
+Open the copied file and replace its entire contents with the following. It loads the medium image size instead of the full-size image, and it leaves out the srcset attribute (without that change, browsers still load the large image on desktop screens):
 
 ```
-<?php $this->template( 'photo/event/featured-image', [ 'event' => $event ] ); ?>
+<?php
+/**
+ * View: Photo View - Single Event Featured Image
+ *
+ * Override this template in your own theme by creating a file at:
+ * [your-theme]/tribe/events-pro/v2/photo/event/featured-image.php
+ *
+ * See more documentation about our views templating system.
+ *
+ * @link https://evnt.is/1aiy
+ *
+ * @since 5.0.0
+ * @since 7.6.3 Removed link around featured image for accessibility update [TEC-5181].
+ *
+ * @version 7.6.3
+ *
+ * @var WP_Post $event The event post object with properties added by the `tribe_get_event` function.
+ * @var string $placeholder_url The url for the placeholder image if a featured image does not exist.
+ *
+ * @see tribe_get_event() For the format of the event object.
+ */
+
+?>
+<div class="tribe-events-pro-photo__event-featured-image-wrapper">
+	<a
+		href="<?php echo esc_url( $event->permalink ); ?>"
+		rel="bookmark"
+		class="tribe-events-pro-photo__event-featured-image-link"
+	>
+		<span class="tribe-events-pro-photo__event-featured-image-link-inner tribe-common-a11y-hidden"><?php echo esc_html( get_the_title( $event ) ); ?></span>
+		<img
+			class="tribe-events-pro-photo__event-featured-image"
+			src="<?php echo esc_url( $event->thumbnail->medium->url ?? $event->thumbnail->full->url ?? $placeholder_url ); ?>"
+			role="presentation"
+			<?php if ( ! empty( $event->thumbnail->alt ) ) : ?>
+				alt="<?php echo esc_attr( $event->thumbnail->alt ); ?>"
+			<?php else : ?>
+				alt=""
+			<?php endif; ?>
+			<?php if ( ! empty( $event->thumbnail->title ) ) : ?>
+				title="<?php echo esc_attr( $event->thumbnail->title ); ?>"
+			<?php endif; ?>
+			<?php if ( ! empty( $event->thumbnail->medium->width ) ) : ?>
+				width="<?php echo esc_attr( $event->thumbnail->medium->width ); ?>"
+			<?php endif; ?>
+			<?php if ( ! empty( $event->thumbnail->medium->height ) ) : ?>
+				height="<?php echo esc_attr( $event->thumbnail->medium->height ); ?>"
+			<?php endif; ?>
+		/>
+	</a>
+</div>
 ```
 
-Replace it with:
-
+To use a different registered WordPress image size, replace medium in the three places it appears (the src line, the width line and the height line) with thumbnail, large or a custom size name. A name with a hyphen, like the custom-size example below, is written as 
 ```
-<?php echo tribe_event_featured_image( $event->ID, 'thumbnail' ); ?>
-```
-
-Replace 
-```
-'thumbnail'
+$event->thumbnail->{'custom-size'}
 ```
 
- with any registered WordPress image size: 
-```
-'medium'
-```
-
-, 
-```
-'large'
-```
-
-, or a custom size name. Standard WordPress sizes are defined at **WordPress Settings → Media**.
+. Standard WordPress sizes are defined at Settings → Media.
 
 #### Registering a Custom Cropped Size
 
@@ -151,7 +185,6 @@ functions.php
 
 ```
 add_filter( 'tribe_events_views_v2_view_template_vars', 'tribe_custom_default_featured_image' );
-
 function tribe_custom_default_featured_image( $template_vars ) {
     $template_vars['placeholder_url'] = 'https://your-site.com/wp-content/uploads/your-image.jpg';
     return $template_vars;
@@ -184,15 +217,12 @@ Note the use of
     font-size: 18px;
     font-weight: normal;
 }
-
 .tribe-common--breakpoint-medium.tribe-events-pro .tribe-events-pro-photo__event-title {
     font-size: 20px;
 }
-
 .tribe-events-pro .tribe-events-pro-photo__event {
     margin-bottom: 30px;
 }
-
 .tribe-common--breakpoint-medium.tribe-events-pro .tribe-events-pro-photo__event {
     margin-bottom: 60px;
 }
@@ -208,7 +238,6 @@ If you are using the Twenty Nineteen theme (or another theme that applies its ow
 .tribe-theme-twentynineteen .tribe-events-pro .entry.tribe-common-g-col.tribe-events-pro-photo__event {
     margin-bottom: 30px;
 }
-
 .tribe-theme-twentynineteen .tribe-events-pro.tribe-common--breakpoint-medium .entry.tribe-common-g-col.tribe-events-pro-photo__event {
     margin-bottom: 60px;
 }
@@ -227,7 +256,7 @@ This requires overriding two template files.
 Copy:
 
 ```
-/wp-content/plugins/events-pro/src/views/v2/photo/event.php
+/wp-content/plugins/events-calendar-pro/src/views/v2/photo/event.php
 ```
 
 to:
@@ -236,29 +265,10 @@ to:
 [your-theme]/tribe/events-pro/v2/photo/event.php
 ```
 
-Remove the line that calls the date-tag template so the file looks like this:
+Remove this line from the copied file (around line 34):
 
 ```
-<?php
-$classes = get_post_class( [ 'tribe-common-g-col', 'tribe-events-pro-photo__event' ], $event->ID );
-
-if ( $event->featured ) {
-    $classes[] = 'tribe-events-pro-photo__event--featured';
-}
-?>
-<article <?php tribe_classes( $classes ) ?>>
-
-    <?php $this->template( 'photo/event/featured-image', [ 'event' => $event ] ); ?>
-
-    <div class="tribe-events-pro-photo__event-details-wrapper">
-        <div class="tribe-events-pro-photo__event-details">
-            <?php $this->template( 'photo/event/date-time', [ 'event' => $event ] ); ?>
-            <?php $this->template( 'photo/event/title', [ 'event' => $event ] ); ?>
-            <?php $this->template( 'photo/event/cost', [ 'event' => $event ] ); ?>
-        </div>
-    </div>
-
-</article>
+<?php $this->template( 'photo/event/date-tag', [ 'event' => $event ] ); ?>
 ```
 
 #### Step 2: Override featured-image.php
@@ -266,7 +276,7 @@ if ( $event->featured ) {
 Copy:
 
 ```
-/wp-content/plugins/events-pro/src/views/v2/photo/event/featured-image.php
+/wp-content/plugins/events-calendar-pro/src/views/v2/photo/event/featured-image.php
 ```
 
 to:
@@ -279,51 +289,80 @@ Replace the contents with the following, which builds the image with the date ta
 
 ```
 <?php
+/**
+ * View: Photo View - Single Event Featured Image
+ *
+ * Override this template in your own theme by creating a file at:
+ * [your-theme]/tribe/events-pro/v2/photo/event/featured-image.php
+ *
+ * See more documentation about our views templating system.
+ *
+ * @link https://evnt.is/1aiy
+ *
+ * @since 5.0.0
+ * @since 7.6.3 Removed link around featured image for accessibility update [TEC-5181].
+ *
+ * @version 7.6.3
+ *
+ * @var WP_Post $event The event post object with properties added by the `tribe_get_event` function.
+ * @var string $placeholder_url The url for the placeholder image if a featured image does not exist.
+ *
+ * @see tribe_get_event() For the format of the event object.
+ */
+
 use Tribe__Date_Utils as Dates;
 
-$image_url = $event->thumbnail->exists ? $event->thumbnail->full->url : $placeholder_url;
-
 $display_date = empty( $is_past ) && ! empty( $request_date )
-    ? max( $event->dates->start_display, $request_date )
-    : $event->dates->start_display;
+	? max( $event->dates->start_display, $request_date )
+	: $event->dates->start_display;
 
 $event_month     = $display_date->format_i18n( 'M' );
 $event_day_num   = $display_date->format_i18n( 'j' );
 $event_date_attr = $display_date->format( Dates::DBDATEFORMAT );
 ?>
 <div class="tribe-events-pro-photo__event-featured-image-wrapper">
-    <a
-        href="<?php echo esc_url( $event->permalink ); ?>"
-        title="<?php echo esc_attr( get_the_title( $event ) ); ?>"
-        rel="bookmark"
-        class="tribe-events-pro-photo__event-featured-image-link"
-    >
-        <img
-            src="<?php echo esc_url( $image_url ); ?>"
-            <?php if ( ! empty( $event->thumbnail->srcset ) ) : ?>
-            <?php endif; ?>
-            <?php if ( ! empty( $event->thumbnail->alt ) ) : ?>
-                alt="<?php echo esc_attr( $event->thumbnail->alt ); ?>"
-            <?php endif; ?>
-            <?php if ( ! empty( $event->thumbnail->title ) ) : ?>
-                title="<?php echo esc_attr( $event->thumbnail->title ); ?>"
-            <?php endif; ?>
-            class="tribe-events-pro-photo__event-featured-image"
-        />
-        <div class="tribe-events-pro-photo__event-featured-image-date-tag">
-            <time
-                class="tribe-events-pro-photo__event-featured-image-date-tag-datetime"
-                datetime="<?php echo esc_attr( $event_date_attr ); ?>"
-            >
-                <span class="tribe-events-pro-photo__event-featured-image-date-tag-month">
-                    <?php echo esc_html( $event_month ); ?>
-                </span>
-                <span class="tribe-events-pro-photo__event-featured-image-date-tag-daynum tribe-common-h5 tribe-common-h4--min-medium">
-                    <?php echo esc_html( $event_day_num ); ?>
-                </span>
-            </time>
-        </div>
-    </a>
+	<a
+		href="<?php echo esc_url( $event->permalink ); ?>"
+		rel="bookmark"
+		class="tribe-events-pro-photo__event-featured-image-link"
+	>
+		<span class="tribe-events-pro-photo__event-featured-image-link-inner tribe-common-a11y-hidden"><?php echo esc_html( get_the_title( $event ) ); ?></span>
+		<img
+			class="tribe-events-pro-photo__event-featured-image"
+			src="<?php echo esc_url( $event->thumbnail->full->url ?? $placeholder_url ); ?>"
+			role="presentation"
+			<?php if ( ! empty( $event->thumbnail->srcset ) ) : ?>
+				srcset="<?php echo esc_attr( $event->thumbnail->srcset ); ?>"
+			<?php endif; ?>
+			<?php if ( ! empty( $event->thumbnail->alt ) ) : ?>
+				alt="<?php echo esc_attr( $event->thumbnail->alt ); ?>"
+			<?php else : ?>
+				alt=""
+			<?php endif; ?>
+			<?php if ( ! empty( $event->thumbnail->title ) ) : ?>
+				title="<?php echo esc_attr( $event->thumbnail->title ); ?>"
+			<?php endif; ?>
+			<?php if ( ! empty( $event->thumbnail->full->width ) ) : ?>
+				width="<?php echo esc_attr( $event->thumbnail->full->width ); ?>"
+			<?php endif; ?>
+			<?php if ( ! empty( $event->thumbnail->full->height ) ) : ?>
+				height="<?php echo esc_attr( $event->thumbnail->full->height ); ?>"
+			<?php endif; ?>
+		/>
+		<div class="tribe-events-pro-photo__event-featured-image-date-tag">
+			<time
+				class="tribe-events-pro-photo__event-featured-image-date-tag-datetime"
+				datetime="<?php echo esc_attr( $event_date_attr ); ?>"
+			>
+				<span class="tribe-events-pro-photo__event-featured-image-date-tag-month">
+					<?php echo esc_html( $event_month ); ?>
+				</span>
+				<span class="tribe-events-pro-photo__event-featured-image-date-tag-daynum tribe-common-h5 tribe-common-h4--min-medium">
+					<?php echo esc_html( $event_day_num ); ?>
+				</span>
+			</time>
+		</div>
+	</a>
 </div>
 ```
 
@@ -335,7 +374,6 @@ Add the following to your stylesheet or **Appearance → Customize → Additiona
 .tribe-events-pro .tribe-events-pro-photo__event-featured-image-link {
     position: relative;
 }
-
 .tribe-events-pro .tribe-events-pro-photo__event-featured-image-date-tag {
     position: absolute;
     bottom: 0;
@@ -343,13 +381,11 @@ Add the following to your stylesheet or **Appearance → Customize → Additiona
     background-color: rgba(255, 255, 255, 0.8);
     padding: 6px 12px;
 }
-
 .tribe-events-pro .tribe-events-pro-photo__event-featured-image-date-tag-datetime {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
 .tribe-events-pro .tribe-events-pro-photo__event-featured-image-date-tag-month {
     color: #727272;
     font-family: "Helvetica Neue", Helvetica, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
@@ -375,10 +411,10 @@ The slider adapts to device orientation: portrait shows one event at a time with
 Copy the following two files from the plugin to your child theme:
 
 ```
-/wp-content/plugins/events-pro/src/views/v2/photo.php
+/wp-content/plugins/events-calendar-pro/src/views/v2/photo.php
 → [your-theme]/tribe/events-pro/v2/photo.php
 
-/wp-content/plugins/events-pro/src/views/v2/photo/event.php
+/wp-content/plugins/events-calendar-pro/src/views/v2/photo/event.php
 → [your-theme]/tribe/events-pro/v2/photo/event.php
 ```
 
@@ -403,55 +439,96 @@ swiper-wrapper
 
 ```
 <?php
+/**
+ * View: Photo View
+ *
+ * Override this template in your own theme by creating a file at:
+ * [your-theme]/tribe/events-pro/v2/photo.php
+ *
+ * See more documentation about our views templating system.
+ *
+ * @link https://evnt.is/1aiy
+ *
+ * @version 7.7.8
+ * @since 6.1.2 Changing our nonce verification structures.
+ * @since 6.2.0 Defer header rendering to the components/header template.
+ * @since 7.7.8 Improve accessibility by switching from a <div> to a semantic <ul> structure and adding a hidden heading linked via aria-labelledby.
+ *
+ * @var string   $rest_url             The REST URL.
+ * @var string   $rest_method          The HTTP method, either `POST` or `GET`, the View will use to make requests.
+ * @var int      $should_manage_url    int containing if it should manage the URL.
+ * @var string   $placeholder_url      The url for the placeholder image if a featured image does not exist.
+ * @var array    $events               The array containing the events.
+ * @var string   $today_url            URL pointing to the today link for this view.
+ * @var string   $prev_url             URL pointing to the prev page link for this view.
+ * @var string   $next_url             URL pointing to the next page link for this view.
+ * @var bool     $disable_event_search Boolean on whether to disable the event search.
+ * @var string[] $container_classes    Classes used for the container of the view.
+ * @var array    $container_data       An additional set of container `data` attributes.
+ * @var string   $breakpoint_pointer   String we use as pointer to the current view we are setting up with breakpoints.
+ */
+
 $header_classes = [ 'tribe-events-header' ];
 if ( empty( $disable_event_search ) ) {
-    $header_classes[] = 'tribe-events-header--has-event-search';
+	$header_classes[] = 'tribe-events-header--has-event-search';
 }
 ?>
 <div
-    <?php tribe_classes( $container_classes ); ?>
-    data-js="tribe-events-view"
-    data-view-rest-nonce="<?php echo esc_attr( $rest_nonce ); ?>"
-    data-view-rest-url="<?php echo esc_url( $rest_url ); ?>"
-    data-view-manage-url="<?php echo esc_attr( $should_manage_url ); ?>"
-    <?php foreach ( $container_data as $key => $value ) : ?>
-    data-view-<?php echo esc_attr( $key ) ?>="<?php echo esc_attr( $value ) ?>"
-    <?php endforeach; ?>
-    <?php if ( ! empty( $breakpoint_pointer ) ) : ?>
-    data-view-breakpoint-pointer="<?php echo esc_attr( $breakpoint_pointer ); ?>"
-    <?php endif; ?>
+	<?php tec_classes( $container_classes ); ?>
+	data-js="tribe-events-view"
+	data-view-rest-url="<?php echo esc_url( $rest_url ); ?>"
+	data-view-rest-method="<?php echo esc_attr( $rest_method ); ?>"
+	data-view-manage-url="<?php echo esc_attr( $should_manage_url ); ?>"
+	<?php foreach ( $container_data as $key => $value ) : ?>
+		data-view-<?php echo esc_attr( $key ) ?>="<?php echo esc_attr( $value ) ?>"
+	<?php endforeach; ?>
+	<?php if ( ! empty( $breakpoint_pointer ) ) : ?>
+		data-view-breakpoint-pointer="<?php echo esc_attr( $breakpoint_pointer ); ?>"
+	<?php endif; ?>
 >
-    <div class="tribe-common-l-container tribe-events-l-container">
-        <?php $this->template( 'components/loader', [ 'text' => __( 'Loading...', 'tribe-events-calendar-pro' ) ] ); ?>
-        <?php $this->template( 'components/data' ); ?>
-        <?php $this->template( 'components/before' ); ?>
+	<section class="tribe-common-l-container tribe-events-l-container">
+		<?php $this->template( 'components/loader', [ 'text' => __( 'Loading...', 'tribe-events-calendar-pro' ) ] ); ?>
 
-        <header <?php tribe_classes( $header_classes ); ?>>
-            <?php $this->template( 'components/messages' ); ?>
-            <?php $this->template( 'components/breadcrumbs' ); ?>
-            <?php $this->template( 'components/events-bar' ); ?>
-            <?php $this->template( 'photo/top-bar' ); ?>
-        </header>
+		<?php $this->template( 'components/json-ld-data' ); ?>
 
-        <?php $this->template( 'components/filter-bar' ); ?>
+		<?php $this->template( 'components/data' ); ?>
 
-        <div class="tribe-events-pro-photo swiper-container">
-            <div class="tribe-events-pro-photo__events tribe-common-g-row tribe-common-g-row--gutters swiper-wrapper">
-                <?php foreach ( $events as $event ) : ?>
-                    <?php $this->setup_postdata( $event ); ?>
-                    <?php $this->template( 'photo/event', [ 'event' => $event ] ); ?>
-                <?php endforeach; ?>
-            </div>
+		<?php $this->template( 'components/before' ); ?>
 
-            <button class="swiper-button-prev tribe-common-c-btn-icon tribe-common-c-btn-icon--caret-left"></button>
-            <button class="swiper-button-next tribe-common-c-btn-icon tribe-common-c-btn-icon--caret-right"></button>
-            <div class="swiper-pagination"></div>
-        </div>
+		<?php $this->template( 'components/header' ); ?>
 
-        <?php $this->template( 'photo/nav' ); ?>
-        <?php $this->template( 'components/ical-link' ); ?>
-        <?php $this->template( 'components/after' ); ?>
-    </div>
+		<?php $this->template( 'components/filter-bar' ); ?>
+
+		<div class="tribe-events-pro-photo swiper-container">
+			<h2
+				id="tribe-events-photo-view-heading"
+				class="tribe-common-a11y-visual-hide"
+			>
+				<?php esc_html_e( 'List of events in Photo View', 'tribe-events-calendar-pro' ); ?>
+			</h2>
+			<ul class="tribe-events-pro-photo__events tribe-common-g-row tribe-common-g-row--gutters swiper-wrapper" aria-labelledby="tribe-events-photo-view-heading">
+
+				<?php foreach ( $events as $event ) : ?>
+					<?php $this->setup_postdata( $event ); ?>
+
+					<?php $this->template( 'photo/event', [ 'event' => $event ] ); ?>
+
+				<?php endforeach; ?>
+
+			</ul>
+
+			<button class="swiper-button-prev tribe-common-c-btn-icon tribe-common-c-btn-icon--caret-left"></button>
+			<button class="swiper-button-next tribe-common-c-btn-icon tribe-common-c-btn-icon--caret-right"></button>
+			<div class="swiper-pagination"></div>
+
+		</div>
+
+		<?php $this->template( 'photo/nav' ); ?>
+
+		<?php $this->template( 'components/ical-link' ); ?>
+
+		<?php $this->template( 'components/after' ); ?>
+	</section>
 </div>
 
 <?php $this->template( 'components/breakpoints' ); ?>
@@ -469,30 +546,52 @@ event.php
 swiper-slide
 ```
 
- class to each event article:
+ class to each event:
 
 ```
 <?php
+/**
+ * View: Photo Event
+ *
+ * Override this template in your own theme by creating a file at:
+ * [your-theme]/tribe/events-pro/v2/photo/event.php
+ *
+ * See more documentation about our views templating system.
+ *
+ * @link https://evnt.is/1aiy
+ *
+ * @version 7.7.8
+ *
+ * @since 5.0.0
+ * @since 7.7.8 Improve accessibility by switching the wrapper element from an <article> to an <li> for semantic list structure.
+ *
+ * @var WP_Post $event The event post object with properties added by the `tribe_get_event` function.
+ * @var string  $placeholder_url The url for the placeholder image if a featured image does not exist.
+ *
+ * @see tribe_get_event() For the format of the event object.
+ */
+
 $classes = get_post_class( [ 'tribe-common-g-col', 'tribe-events-pro-photo__event', 'swiper-slide' ], $event->ID );
 
-if ( $event->featured ) {
-    $classes[] = 'tribe-events-pro-photo__event--featured';
+if ( ! empty( $event->featured ) ) {
+	$classes[] = 'tribe-events-pro-photo__event--featured';
 }
 ?>
-<article <?php tribe_classes( $classes ) ?>>
+<li <?php tec_classes( $classes ); ?>>
+	<article>
+		<?php $this->template( 'photo/event/featured-image', [ 'event' => $event ] ); ?>
 
-    <?php $this->template( 'photo/event/featured-image', [ 'event' => $event ] ); ?>
-
-    <div class="tribe-events-pro-photo__event-details-wrapper">
-        <?php $this->template( 'photo/event/date-tag', [ 'event' => $event ] ); ?>
-        <div class="tribe-events-pro-photo__event-details">
-            <?php $this->template( 'photo/event/date-time', [ 'event' => $event ] ); ?>
-            <?php $this->template( 'photo/event/title', [ 'event' => $event ] ); ?>
-            <?php $this->template( 'photo/event/cost', [ 'event' => $event ] ); ?>
-        </div>
-    </div>
-
-</article>
+		<div class="tribe-events-pro-photo__event-details-wrapper">
+			<?php $this->template( 'photo/event/date-tag', [ 'event' => $event ] ); ?>
+			<div class="tribe-events-pro-photo__event-details">
+				<?php $this->template( 'photo/event/title', [ 'event' => $event ] ); ?>
+				<?php $this->template( 'photo/event/date-time', [ 'event' => $event ] ); ?>
+				<?php $this->template( 'photo/event/category', [ 'event' => $event ] ); ?>
+				<?php $this->template( 'photo/event/cost', [ 'event' => $event ] ); ?>
+			</div>
+		</div>
+	</article>
+</li>
 ```
 
 #### Step 4: Add the CSS
@@ -505,31 +604,25 @@ Add the following to your child theme’s stylesheet or **Appearance → Customi
     overflow: hidden;
     position: relative;
 }
-
 .tribe-common--breakpoint-medium.tribe-events-pro .tribe-events-pro-photo {
     margin: 0;
     padding: 0;
 }
-
 .tribe-events-pro .tribe-events-pro-photo__events {
     flex-wrap: nowrap;
     margin: 0;
 }
-
 .tribe-common--breakpoint-medium.tribe-events-pro .tribe-events-pro-photo__events {
     flex-wrap: wrap;
 }
-
 .tribe-events-pro .tribe-events-pro-photo__event {
     flex: none;
 }
-
 .tribe-events-pro .tribe-events-pro-photo .swiper-pagination {
     display: flex;
     justify-content: center;
     padding: 15px 16px;
 }
-
 .tribe-events-pro .tribe-events-pro-photo .swiper-pagination-bullet {
     background-color: #bababa;
     border-radius: 50%;
@@ -538,27 +631,22 @@ Add the following to your child theme’s stylesheet or **Appearance → Customi
     margin: 0 6px;
     width: 10px;
 }
-
 .tribe-events-pro .tribe-events-pro-photo .swiper-pagination-bullet:hover,
 .tribe-events-pro .tribe-events-pro-photo .swiper-pagination-bullet:focus,
 .tribe-events-pro .tribe-events-pro-photo .swiper-pagination-bullet-active {
     background-color: #727272;
 }
-
 .tribe-events-pro .tribe-events-pro-photo .swiper-button-prev,
 .tribe-events-pro .tribe-events-pro-photo .swiper-button-next {
     position: absolute;
     bottom: 10px;
 }
-
 .tribe-events-pro .tribe-events-pro-photo .swiper-button-prev {
     left: 21px;
 }
-
 .tribe-events-pro .tribe-events-pro-photo .swiper-button-next {
     right: 21px;
 }
-
 .tribe-common--breakpoint-medium.tribe-events-pro .tribe-events-pro-photo .swiper-pagination,
 .tribe-common--breakpoint-medium.tribe-events-pro .tribe-events-pro-photo .swiper-button-prev,
 .tribe-common--breakpoint-medium.tribe-events-pro .tribe-events-pro-photo .swiper-button-next {
@@ -588,17 +676,13 @@ isMobile
 
 ```
 var photoSwiper = {};
-
 ( function( $, obj ) {
     'use strict';
     var $document = $( document );
-
     obj.selectors = {
         slider: '.tribe-events-pro-photo.swiper-container',
     };
-
     obj.instances = {};
-
     obj.deinitSwiper = function( $container ) {
         var uid = $container.attr( 'data-view-breakpoint-pointer' );
         $container.find( obj.selectors.slider ).each( function( index, slider ) {
@@ -608,7 +692,6 @@ var photoSwiper = {};
             obj.instances[ uid + '-' + index ].destroy();
         } );
     };
-
     obj.initSwiper = function( $container ) {
         var uid = $container.attr( 'data-view-breakpoint-pointer' );
         $container.find( obj.selectors.slider ).each( function( index, slider ) {
@@ -630,44 +713,35 @@ var photoSwiper = {};
             } );
         } );
     };
-
     obj.setSwiper = function( $container ) {
         var containerState = $container.data( 'tribeEventsState' );
         var isMobile = containerState.isMobile;
-
         if ( isMobile ) {
             obj.initSwiper( $container );
         } else {
             obj.deinitSwiper( $container );
         }
     };
-
     obj.handleResize = function( event ) {
         obj.setSwiper( event.data.container );
     };
-
     obj.bindEvents = function( $container ) {
         $container.on( 'resize.tribeEvents', { container: $container }, obj.handleResize );
     };
-
     obj.deinit = function( event, jqXHR, settings ) {
         var $container = event.data.container;
         obj.deinitSwiper( $container );
         $container.off( 'beforeAjaxSuccess.tribeEvents', obj.deinit );
     };
-
     obj.init = function( event, index, $container, data ) {
         var $sliders = $container.find( obj.selectors.slider );
-
         if ( ! $sliders.length ) {
             return;
         }
-
         obj.setSwiper( $container );
         obj.bindEvents( $container );
         $container.on( 'beforeAjaxSuccess.tribeEvents', { container: $container }, obj.deinit );
     };
-
     obj.ready = function( event ) {
         const manager = tribe.events.views.manager;
         manager.$containers.each( function( index, container ) {
@@ -676,7 +750,6 @@ var photoSwiper = {};
         } );
         $document.on( 'afterSetup.tribeEvents', manager.selectors.container, obj.init );
     };
-
     $document.ready( obj.ready );
 } )( jQuery, photoSwiper );
 ```
@@ -713,6 +786,10 @@ add_action( 'wp_enqueue_scripts', 'add_photo_swiper_js' );
 Visit your Photo View page — you should see a slider on mobile and the standard grid on desktop.
 
 ![Animated preview of the Photo View slider in portrait orientation on mobile](https://docs.nexcess.com/wp-content/uploads/2026/06/KB-photo-view-slider-portrait.gif)
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

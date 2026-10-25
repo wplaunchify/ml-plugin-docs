@@ -8,13 +8,13 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/community-tickets/](https://docs.nexcess.com/software/the-events-calendar/community-tickets/)
 
-The [Community](https://theeventscalendar.com/products/community/) plugin lets users submit events to your site. When paired with [Event Tickets](https://theeventscalendar.com/products/wordpress-event-tickets/), those users can also sell tickets for their events — with you, as the site admin, optionally collecting a fee from each sale and splitting payments with the organizer via PayPal. This guide walks through the full lifecycle: setting up the plugin, configuring ticket fees, and tracking sales and payouts.
+The Community plugin lets users submit events to your site. When paired with Event Tickets, those users can also sell tickets for their events — with you, as the site admin, optionally collecting a fee from each sale and splitting payments with the organizer via PayPal. This guide walks through the full lifecycle: setting up the plugin, configuring ticket fees, and tracking sales and payouts.
 
 **See also:**[Sales Tax and Marketplace Facilitator Laws for Community Events](https://docs.nexcess.com/software/the-events-calendar/tax-laws/)
 
 ## Setup
 
-Like all premium Events add-ons, Community requires [The Events Calendar](https://theeventscalendar.com/product/wordpress-events-calendar/) installed on your site. The ticketing functionality additionally requires [Event Tickets](https://theeventscalendar.com/product/wordpress-event-tickets/) installed and active. Install and configure those plugins before continuing.
+Like all premium Events add-ons, Community requires The Events Calendar installed on your site. The ticketing functionality additionally requires Event Tickets installed and active. Install and configure those plugins before continuing.
 
 1. [Download and install](https://docs.nexcess.com/software/the-events-calendar/downloading-and-installing-the-plugin/) the Community plugin.
 2. If you’ve just purchased Community, your license key is added automatically. Otherwise, see [Finding and Inputting Your License Key](https://docs.nexcess.com/software/the-events-calendar/finding-and-inputting-your-license-key/). The plugin works without the license, but the key is required for automatic updates. If you need updates on both dev and live sites, see [Using One License for Live and Dev Sites](https://docs.nexcess.com/software/the-events-calendar/using-one-license-for-live-and-dev-sites/).
@@ -82,7 +82,7 @@ Coupons are not functional or supported for payouts based on the PayPal Payments
 
 ## Split Payments
 
-There are three ways to collect fees from ticket sales. The default option is to have all ticket sales collected via your [e-commerce engine](https://docs.nexcess.com/software/the-events-calendar/ecommerce/) (WooCommerce, Easy Digital Downloads, or Tickets Commerce). You can then divide up the money as needed. **With this method,** **it is your responsibility as the site admin to pay event organizers**– by whatever method you prefer. You can use the sales data for each event to track how much is owed to the organizer and how much you have earned in fees.
+There are three ways to collect fees from ticket sales. The default option is to have all ticket sales collected via your [e-commerce engine](https://docs.nexcess.com/software/the-events-calendar/ecommerce/) (WooCommerce or Tickets Commerce). You can then divide up the money as needed. **With this method,** **it is your responsibility as the site admin to pay event organizers**– by whatever method you prefer. You can use the sales data for each event to track how much is owed to the organizer and how much you have earned in fees.
 
 The other two options are to enable split payments, which divide up each ticket sale according to your fee settings and immediately pays the site admin and the event organizer via PayPal.
 

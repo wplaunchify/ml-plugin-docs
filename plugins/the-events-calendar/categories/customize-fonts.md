@@ -21,9 +21,11 @@ Once you are on the Global Elements panel, the following options are available t
 
 ![The customizer settings for The Events Calendar's global elements, including font family, and font size.](https://docs.nexcess.com/wp-content/uploads/2026/06/font-control-1.jpg)
 
-- **Font Family:** This is the actual font you want to be used for the calendar.- **Default:** The Events Calendar plugin fonts are used.
+- **Font Family:** This is the actual font you want to be used for the calendar.
+- **Default:** The Events Calendar plugin fonts are used.
 - **Inherit theme font(s):** The theme’s styles are used in place of the plugin’s fonts.
-- **Font Size**- **By Pixel:** The base (or “normal”) size of the font in pixels.
+- **Font Size**
+- **By Pixel:** The base (or “normal”) size of the font in pixels.
 - **By scale:** The base size of the font defined by scale in small, medium, or large variations. Each adjustment is approximately 
 ```
 2px
@@ -109,7 +111,7 @@ Or, if you prefer, you can still change the font size (and font family for that 
   font-size: 32px;
 
   /* or */
-  --tec-font-size-7: 32px;
+  --tec-font-size-10: 32px;
 }
 ```
 
@@ -156,7 +158,6 @@ add_filter(
     return 10; // sets the minimum font size to 10px
   }
 );
-
 add_filter(
   'tribe_customizer_maximum_font_size',
   function() {
@@ -187,13 +188,20 @@ We can apply the same font “stack” the theme uses to the CSS classes the cal
 .tribe-common .tribe-common-h3,
 .tribe-common .tribe-common-h4,
 .tribe-common .tribe-common-h5,
-.tribe-common .tribe-common-h6 {
+.tribe-common .tribe-common-h6,
+.tribe-common .tribe-common-h7,
+.tribe-common .tribe-common-h8,
+.tribe-events-single-event-title {
   --tec-font-family-sans-serif:"Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   --tec-font-family-base:"Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
 ```
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2021-08-02-at-14.37.11.jpg)
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

@@ -124,7 +124,6 @@ tribe/events/v2/list/christmas-marker.php
 <?php
 $event = tribe_get_event( get_the_ID() );
 $christmas_days = [ '12-24', '12-25' ];
-
 if ( ! in_array( $event->dates->start->format( 'm-d' ), $christmas_days, true ) ) {
   return;
 }
@@ -343,9 +342,11 @@ tribe_get_event()
  at the top of the file:
 
 ```
+<?php
 $event = tribe_get_event( get_the_ID() );
 
 get_header();
+?>
 ```
 
 From there, use the 
@@ -366,6 +367,10 @@ $event
 👋 [Download the example files](https://theeventscalendar.com/knowledgebase/wp-content/uploads/2020/10/template-manager-filters.zip) used in this section if you’d like to follow along with a working copy.
 
 With the Template Hierarchy filter you can: use your theme’s existing templates for calendar content, hijack single events, event archives, or both, create dedicated templates for each, and access all event data in those templates. Happy coding!
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

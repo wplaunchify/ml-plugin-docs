@@ -31,8 +31,13 @@ display: none !important;
 Another way to achieve this is a snippet that can be added to your theme’s functions.php file or with a plugin like [Code Snippets](https://wordpress.org/plugins/code-snippets/).
 
 ```
-add_filter( 'tribe_template_done', function ($show, $name) { 
-return 'v2/rsvp/details/attendance' === $name ? '' : $show; 
+add_filter( 'tribe_template_done', function ( $html, $name ) {
+	$hidden_templates = [
+		'v2/rsvp/details/attendance',          // RSVP (original system).
+		'v2/commerce/rsvp/details/attendance', // New RSVP system.
+	];
+
+	return in_array( $name, $hidden_templates, true ) ? '' : $html;
 }, 10, 2 );
 ```
 
@@ -133,7 +138,7 @@ Let’s say you want to customize the original price to draw attention to the sa
 
 The 
 ```
-.tribe-tickets__item__extra__price .tribe-tickets__original_price
+.tribe-tickets__tickets-original-price
 ```
 
  class is what you’ll want to use in your theme’s CSS, or on the Additional CSS section at *wp-admin > Appearance > Customizer > Additional CSS.*
@@ -180,13 +185,11 @@ add_filter( 'event_tickets_unvailable_message', function( $message, $tickets ) {
 
 ## Enable Public Attendees List for All Events
 
-The public attendees list is a feature of the [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/) plugin that shows a list of attendees for public events. This can enhance the user experience by allowing potential guests to see who else is attending, thus encouraging them to join in. However, as stated, it is deactivated by default and requires each event to be modified individually to enable this setting.
+The public attendees list is a feature of EventTickets that shows a list of attendees for public events. This can enhance the user experience by allowing potential guests to see who else is attending, thus encouraging them to join in. However, as stated, it is deactivated by default and requires each event to be modified individually to enable this setting.
 
 This can become tedious, especially for event managers with numerous upcoming events. Instead of manually activating the feature for each event, you can use a code snippet to apply the changes universally.
 
 ```
-<?php //Do not copy this line
-
 add_filter( 'tribe_tickets_hide_attendees_list', function ( $hidden, $post ) {
 	if ( function_exists( 'tribe_is_event' ) && tribe_is_event( $post ) ) {
 		return false;
@@ -230,7 +233,7 @@ Avoid setting this value too high. Increasing the number of events significantly
 
 ## Hide Remaining Ticket Quantity
 
-Use the CSS snippet below to hide the available ticket quantity shown in the ticket or RSVP.
+Use the CSS snippet below to hide the available ticket quantity shown in the ticket block.
 
 ```
 /* list view */
@@ -242,6 +245,19 @@ Use the CSS snippet below to hide the available ticket quantity shown in the tic
 .tribe-common-b3.tribe-tickets__tickets-item-extra-available {
     display: none;
 }
+```
+
+To hide the remaining quantity on an RSVP (the “50 remaining” text), use this PHP snippet instead. Add it to your theme’s functions.php file or with a plugin like Code Snippets. It works with both the new and the original RSVP system and keeps the “days left to RSVP” text.
+
+```
+add_filter( 'tribe_template_done', function ( $html, $name ) {
+	$hidden_templates = [
+		'v2/rsvp/details/availability/remaining',          // RSVP (original system).
+		'v2/commerce/rsvp/details/availability/remaining', // New RSVP system.
+	];
+
+	return in_array( $name, $hidden_templates, true ) ? '' : $html;
+}, 10, 2 );
 ```
 
 ## Change the “Get Tickets” Link Text on Calendar Views
@@ -267,29 +283,24 @@ Let’s say we want that to say something else, like “Register Now!” or some
  *
  * @return string The translated text or the custom text.
  */
-
 add_filter( 'gettext_with_context', 'tribe_change_get_tickets', 20, 4 );
 function tribe_change_get_tickets( string $translation, string $text, string $context, string $domain ): string {
-
 	if (
 		$domain != 'default'
 		&& ! str_starts_with( $domain, 'event-' )
 	) {
 		return $translation;
 	}
-
 	$ticket_text = [
 		// Get Tickets on List View
 		'Get %s'      => 'Register Now!',
 		// Get Tickets Form - Single View
 		'Get Tickets' => 'Register Now!',
 	];
-
 	// If we don't have replacement text, bail.
 	if ( empty( $ticket_text[ $text ] ) ) {
 		return $translation;
 	}
-
 	return $ticket_text[ $text ];
 }
 ```
@@ -323,8 +334,6 @@ Most plugins provide a shortcode for creating a custom login page, or at least h
 Once you know the custom login page URL, it’s time to add a snippet to do the trick:
 
 ```
-<?php //Do not copy this line
-
 add_filter( 'tribe_tickets_ticket_login_url', function ( $login_url ) {
 	$login_page = '/new_login_page';
 
@@ -354,6 +363,10 @@ add_filter( 'tribe_tickets_unvailable_message_time', '__return_true' );
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-30-at-23.28.31-1024x271-1.jpg)
 
 **Ref:** [tribe_tickets_unvailable_message_time](https://docs.theeventscalendar.com/reference/hooks/tribe_tickets_unvailable_message_time/)
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

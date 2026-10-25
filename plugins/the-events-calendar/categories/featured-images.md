@@ -30,7 +30,7 @@ It’s worth noting that a featured image is not required for publishing an even
 
 ## Where Featured Images are Displayed
 
-Featured images pop up in a few different places. The first place is the calendar views. In list-style views like list, day, and map (Pro only), the image will show next to the event. In month view and Pro’s week view, the image will show in the mouseover tooltip for each event. If you really want to showcase your featured fmages, you’ll want to use Pro’s photo view which shows the photos prominently in a tiled view.
+Featured images pop up in a few different places. The first place is the calendar views. In list-style views like list, day, and map (Pro only), the image will show next to the event. In month view and Pro’s week view, the image will show in the mouseover tooltip for each event. If you really want to showcase your featured images, you’ll want to use Pro’s photo view which shows the photos prominently in a tiled view.
 
 The other place you can expect to see a featured image is on a single event page. It will display at the top of the post, before the content.
 
@@ -40,12 +40,17 @@ In the Block Editor, you can place a featured image block.
 
 ## Styling a Featured Image with CSS
 
-Let’s say you want to change the featured image so that it floats to the right instead of the left of an event in the calendar view. The Featured Image is always wrapped in the 
+Let’s say you want to change the featured image so that it floats to the right of the content on a single event page. On a single event page the Featured Image is wrapped in the 
 ```
 .tribe-events-event-image
 ```
 
- class, so we can use that to make the change in our CSS file.
+ class, so we can use that to make the change in our CSS file. (Calendar views use different class names, for example 
+```
+.tribe-events-calendar-list__event-featured-image
+```
+
+ in List View.)
 
 ```
 .tribe-events-event-image {
@@ -53,7 +58,7 @@ Let’s say you want to change the featured image so that it floats to the right
 }
 ```
 
-Not bad, right? You can do the same thing to round the corners, add a border and increase the margins:
+Not bad, right? You can do the same thing on the single event page to round the corners, add a border and increase the margins:
 
 ```
 .tribe-events-event-image {
@@ -77,18 +82,31 @@ It’s even possible to hide the image completely from view. For example, this w
 
 One thing that comes up from time to time is how to change the size of the featured image. To do this, you will need to create a [theme override](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/) of the template where the Featured Image you want to edit is displayed.
 
-In that template, located where the featured image is called. It will look something like this:
+On a single event page the template is 
+```
+single-event.php
+```
+
+, and the line where the featured image is called looks like this:
 
 ```
-the_post_thumbnail( 'medium' );
+echo tribe_event_featured_image( $event_id, 'full', false );
 ```
 
-See the “medium” variable in there? That’s the size! If your theme follows uses the [standard WordPress sizing conventions for images](http://codex.wordpress.org/Post_Thumbnails#Thumbnail_Sizes), you can change that to any of the following:
+See the “full” value in there? That’s the size! If your theme follows uses the [standard WordPress sizing conventions for images](http://codex.wordpress.org/Post_Thumbnails#Thumbnail_Sizes), you can change that to any of the following:
 
 - thumbnail
 - medium
 - large
 - full
+
+On a single event page you can also change the size with a filter instead of a template override. Add this to your child theme’s functions.php or via the Code Snippets plugin. It changes the size to large; use thumbnail, medium or full to choose another:
+
+```
+add_filter( 'tribe_event_featured_image_size', function () {
+    return 'large';
+} );
+```
 
 If you’re looking to further customize how WordPress crops your thumbnails, we’d recommend using [this third-party plugin](https://wordpress.org/plugins/my-eyes-are-up-here/) to help you achieve that.
 
@@ -121,21 +139,30 @@ To control the data that appears on social sharing websites, we usually recommen
 
 Those plugins include Open graph meta tags, which can be used to inform social media websites which title, image, and description they should use.
 
-Out of the box, our plugins don’t have a built-in method for changing the pictures or the title. However, if you would like to manage social media sharing images without relying on third-party plugins you can do it with a PHP snippet below.
+Out of the box, our plugins don’t have a built-in method for changing the pictures or the title. However, if you would like to manage social media sharing images without relying on third-party plugins you can do it with a PHP snippet below. This snippet adds the tags on single event pages only. If you use an SEO plugin that already adds these tags, do not use it, otherwise the tags appear twice.
 
 ```
-add_action('wp_head', function() {
-    if (is_single() || is_page()) {
-        ?>
-        &lt;meta property="og:title" content="&lt;?php the_title(); ?>" />
-        &lt;meta property="og:description" content="&lt;?php echo get_the_excerpt(); ?>" />
-        &lt;meta property="og:image" content="&lt;?php echo get_the_post_thumbnail_url(); ?>" />
-        &lt;meta property="og:url" content="&lt;?php the_permalink(); ?>" />
-        &lt;meta property="og:type" content="article" />
-        &lt;?php
+add_action( 'wp_head', function () {
+    if ( ! is_singular( 'tribe_events' ) ) {
+        return;
     }
-});
+
+    $image_url = get_the_post_thumbnail_url( null, 'full' );
+    ?>
+    <meta property="og:title" content="<?php echo esc_attr( get_the_title() ); ?>" />
+    <meta property="og:description" content="<?php echo esc_attr( wp_strip_all_tags( get_the_excerpt() ) ); ?>" />
+    <?php if ( $image_url ) : ?>
+        <meta property="og:image" content="<?php echo esc_url( $image_url ); ?>" />
+    <?php endif; ?>
+    <meta property="og:url" content="<?php echo esc_url( get_permalink() ); ?>" />
+    <meta property="og:type" content="article" />
+    <?php
+} );
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

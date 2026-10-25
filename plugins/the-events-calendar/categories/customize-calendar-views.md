@@ -67,13 +67,15 @@ functions.php
  or via the [Code Snippets](https://docs.nexcess.com/software/the-events-calendar/code-snippets/) plugin, changing the number to your desired value:
 
 ```
-add_filter(
-    'tribe_events_views_v2_view_latest-past_repository_args',
-    function( $args, $context, $view ) {
-        $args['posts_per_page'] = 10; // Change to your desired number
-        return $args;
-    }
-);
+function tec_set_events_per_page( $args ) {
+    $args['posts_per_page'] = 10; // Change to your desired number
+    return $args;
+}
+
+// List, Photo and Map views. Month and Day views do not use this setting.
+add_filter( 'tribe_events_views_v2_view_list_repository_args', 'tec_set_events_per_page' );
+add_filter( 'tribe_events_views_v2_view_photo_repository_args', 'tec_set_events_per_page' );
+add_filter( 'tribe_events_views_v2_view_map_repository_args', 'tec_set_events_per_page' );
 ```
 
 #### Controlling Events in the Latest Past Events Section
@@ -92,21 +94,6 @@ To match the Latest Past Events count to your main list view setting:
 add_filter( 'tribe_context_latest_past_per_page', function( $value ) {
     return tribe_get_option( 'postsPerPage', 3 );
 } );
-add_filter(
-    'tribe_events_views_v2_view_prev_url',
-    function( $url, $canonical, $view ) {
-        $parsed_url = wp_parse_url( $url );
-        if ( empty( $parsed_url['query'] ) || false === strpos( 'eventDisplay=past', $parsed_url['query'] ) ) {
-            return $url;
-        }
-        if ( ! empty( $parsed_url['path'] ) && false !== strpos( 'page', $parsed_url['path'] ) ) {
-            return $url;
-        }
-        return add_query_arg( 'paged', '2', $url );
-    },
-    10,
-    3
-);
 ```
 
 ## Customizing the Title for Your Events Page When Added to Homescreen
@@ -161,10 +148,10 @@ By default, calendar views show ongoing events even after their start time has p
 
 It hooks into 
 ```
-tribe_repository_events_pre_get_posts
+tribe_events_views_v2_view_repository_args
 ```
 
- to modify the main frontend event query. It uses your site’s configured WordPress timezone.
+ to hide events that have already started from the calendar views. It uses your site’s configured WordPress timezone.
 
 Add this to your child theme’s 
 ```
@@ -174,29 +161,15 @@ functions.php
  or via the Code Snippets plugin.
 
 ```
-<?php //Do not copy this line
-add_action( 'tribe_repository_events_pre_get_posts', function ( $query ) {
-	// Only modify the main frontend query
-	if ( is_admin() || ! $query->is_main_query() ) {
-		return;
-	}
-	// Use site's timezone safely
-	$timezone = wp_timezone();
-	$now      = new DateTime( 'now', $timezone );
-	$today    = $now->format( 'Y-m-d H:i:s' );
-	// Exclude events that have already started
-	$meta_query   = (array) $query->get( 'meta_query', [] );
-	$meta_query[] = [
-		'key'     => '_EventStartDate',
-		'value'   => $today,
-		'compare' => '>=',
-		'type'    => 'DATETIME',
-	];
-	$query->set( 'meta_query', $meta_query );
-}, 10 );
+add_filter( 'tribe_events_views_v2_view_repository_args', function ( $repository_args, $context, $view ) {
+	// Only show events that have not started yet. "now" uses the site's timezone.
+	$repository_args['starts_after'] = 'now';
+
+	return $repository_args;
+}, 10, 3 );
 ```
 
-⚠️ This affects all frontend event queries, including List, Month, and Day views. It does not affect admin event listings.
+⚠️ This affects the List, Month, Day and other calendar views. In Month View, events that started earlier today are hidden too. It does not affect admin event listings.
 
 ### Hiding Events by Category
 
@@ -252,7 +225,7 @@ function tec_exclude_events_category( $repository_args, $context, $view ) {
 		return $repository_args;
 	}
 	// If on a given view, exclude events in the given categories.
-	if ( in_array( $view->get_slug(), $hide_in_views, true ) ) {
+	if ( in_array( $view::get_view_slug(), $hide_in_views, true ) ) {
 		$repository_args['category_not_in'] = $excluded_categories;
 	}
 	return $repository_args;
@@ -310,7 +283,7 @@ function tec_exclude_events_category( $repository_args, $context, $view ) {
 }
 ```
 
-Of course this can be easily adjusted to do the reverse. If you only want to hide the events on main calendar pages then you just need to remove the exclamation point (or [“logical NOT” character](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)) on line 5, so it would look like this:
+Of course this can be easily adjusted to do the reverse. If you only want to hide the events on main calendar pages then you just need to remove the exclamation point (or [“logical NOT” character](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT)) on line 4, so it would look like this:
 
 ```
 if ( $context->is('shortcode') ) {
@@ -333,28 +306,63 @@ add_filter( 'tribe_events_views_v2_view_photo_repository_args', 'tec_exclude_eve
 add_filter( 'tribe_events_views_v2_view_week_repository_args', 'tec_exclude_events_category', 10, 3 );
 add_filter( 'tribe_events_views_v2_view_map_repository_args', 'tec_exclude_events_category', 10, 3 );
 function tec_exclude_events_category( $repository_args, $context, $view ) {
-    // Get all terms in the 'tribe_events_cat' taxonomy
-    $terms = get_terms([
-        'taxonomy'   => 'tribe_events_cat',
-        'hide_empty' => false, // Set to true if you want to exclude empty terms
-    ]);
-    // Check for errors or empty result
-    if ( ! is_wp_error( $terms ) && ! empty( $terms ) ) {
-        // Convert terms to an array of term slugs
-        $term_slugs = wp_list_pluck( $terms, 'slug' );
-    } else {
-        // Handle case where no terms are found or there's an error
-        $term_slugs = [];
-    }
     // List of category slugs to be excluded
     $excluded_categories = [
-		'my-category-slug',
-		'my-other-category-slug',
+        'my-category-slug',
+        'my-other-category-slug',
     ];
-    // Remove the excluded categories from the full list.
-    $show_categories = array_diff( $term_slugs, $excluded_categories );
-    // Build the tax_query argument to strictly include only events in $show_categories
-    $repository_args['category'] = $show_categories;
+
+    // Get all terms in the 'tribe_events_cat' taxonomy
+    $terms = get_terms( [
+        'taxonomy'   => 'tribe_events_cat',
+        'hide_empty' => false,
+        'fields'     => 'slugs',
+    ] );
+
+    if ( is_wp_error( $terms ) || empty( $terms ) ) {
+        return $repository_args;
+    }
+
+    // The categories that are allowed to stay visible.
+    $other_categories = array_diff( $terms, $excluded_categories );
+
+    $tax_query = [
+        'relation' => 'AND',
+        [
+            'taxonomy' => 'tribe_events_cat',
+            'field'    => 'slug',
+            'terms'    => $excluded_categories,
+            'operator' => 'IN',
+        ],
+    ];
+
+    if ( ! empty( $other_categories ) ) {
+        $tax_query[] = [
+            'taxonomy' => 'tribe_events_cat',
+            'field'    => 'slug',
+            'terms'    => $other_categories,
+            'operator' => 'NOT IN',
+        ];
+    }
+
+    // Find the events that are ONLY in the excluded categories.
+    $hidden_event_ids = get_posts( [
+        'post_type'        => 'tribe_events',
+        'post_status'      => 'any',
+        'fields'           => 'ids',
+        'posts_per_page'   => -1,
+        'tax_query'        => $tax_query,
+        'suppress_filters' => true,
+    ] );
+
+    if ( empty( $hidden_event_ids ) ) {
+        return $repository_args;
+    }
+
+    $existing = isset( $repository_args['post__not_in'] ) ? (array) $repository_args['post__not_in'] : [];
+
+    $repository_args['post__not_in'] = array_merge( $existing, $hidden_event_ids );
+
     return $repository_args;
 }
 ```
@@ -438,7 +446,7 @@ Here,
 ```
 
  is the post ID.
-- Note the post ID and edit line 5 above.
+- Note the post ID and edit line 4 above.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/URL.jpg)
 
@@ -516,7 +524,8 @@ The snippet above does not cover the date/time display inside the Month, Map, an
 In each overridden file, find:
 
 ```
-$display_end_date = $event->dates->start_display->format( 'H:i' ) !== $event->dates->end_display->format( 'H:i' );
+$display_end_date = $event->dates->start_display->format( 'H:i' ) !== $event->dates->end_display->format( 'H:i' )
+    && $show_end_time;
 ```
 
 Replace it with:
@@ -525,7 +534,20 @@ Replace it with:
 $display_end_date = false;
 ```
 
-Map and Photo views require [Events Calendar Pro](https://theeventscalendar.com/products/events-calendar-pro/). For template override instructions, see [Customizing Template Files](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/).
+In the Map view file the variable has a different name. There, find:
+
+```
+$display_end_time = $event->dates->start_display->format( 'H:i' ) !== $event->dates->end_display->format( 'H:i' )
+    && $show_end_time;
+```
+
+and replace it with:
+
+```
+$display_end_time = false;
+```
+
+Map and Photo views require [Events Calendar Pro](https://theeventscalendar.com/products/events-calendar-pro/). For template override instructions, see [Customizing Template Files](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/). Save the Month override under [your-theme]/tribe/events/v2/ and the Map and Photo overrides under [your-theme]/tribe/events-pro/v2/, keeping the same folder structure as in the plugin.
 
 ## Customizing the Calendar Page Title
 
@@ -612,7 +634,7 @@ add_filter( 'tribe_events_title_tag', function ( $title ) {
 	if ( tribe_context()->get( 'view_request' ) === 'default' ) {
 		$title = 'Default event page';
 	} elseif ( tribe_context()->get( 'view_request' ) === 'list' ) {
-		$title = 'Single event page';
+		$title = 'List event page';
 	} elseif ( tribe_context()->get( 'view_request' ) === 'month' ) {
 		$title = 'Month event page';
 	} elseif ( tribe_context()->get( 'view_request' ) === 'day' ) {
@@ -644,7 +666,10 @@ holiday
 #### Disable Links in List, Month, Day, and Summary Views
 
 ```
-.tribe_events_cat-holiday h3 a {
+.tribe-events-view--list .tribe_events_cat-holiday a,
+.tribe-events-view--month .tribe_events_cat-holiday a,
+.tribe-events-view--day .tribe_events_cat-holiday a,
+.tribe-events-view--summary .tribe_events_cat-holiday a {
     pointer-events: none;
 }
 ```
@@ -652,7 +677,8 @@ holiday
 #### Disable Links in Photo and Week Views
 
 ```
-.tribe-events-view--photo .tribe_events_cat-holiday a {
+.tribe-events-view--photo .tribe_events_cat-holiday a,
+.tribe-events-view--week .tribe_events_cat-holiday a {
     pointer-events: none;
 }
 ```
@@ -847,12 +873,22 @@ To always show a dropdown, change
 $is_tabs_style = true;
 ```
 
-To hide a specific view from the switcher menu without disabling it entirely, find the 
+To hide a specific view from the switcher menu without disabling it entirely, copy 
+```
+/wp-content/plugins/the-events-calendar/src/views/v2/components/events-bar/views/list.php
+```
+
+ to 
+```
+[your-theme]/tribe/events/v2/components/events-bar/views/list.php
+```
+
+, find the 
 ```
 foreach
 ```
 
- loop in the same file and add a 
+ loop in that file and add a 
 ```
 continue
 ```
@@ -871,26 +907,12 @@ continue
 <?php endforeach; ?>
 ```
 
-If only one view is active, its button will still appear in the switcher but essentially refreshes the page. To suppress it, override:
+If only one view is active, its button will still appear in the switcher but essentially refreshes the page. To hide the view switcher, add the CSS below to your stylesheet or to Appearance > Customizer > Additional CSS. It hides the switcher in every view, on desktop and on mobile.
 
 ```
-/wp-content/plugins/the-events-calendar/src/views/v2/components/events-bar/views/list.php
-```
-
-to 
-```
-[your-theme]/tribe/events/v2/components/events-bar/views/list.php
-```
-
-, then add just before the closing 
-```
-?>
-```
-
-:
-
-```
-return; // hiding this!
+.tribe-events .tribe-events-c-events-bar__views {
+	display: none;
+}
 ```
 
 ### Via CSS
@@ -942,6 +964,24 @@ Some themes have their own CSS class prefixes that can be used for more targeted
 The Events URL slug in Events → Settings → General (tab) → Viewing (section) allows you to set the front-end calendar (archive of events) permalink on your site. This is a default, dynamically generated page of The Events Calendar.
 
 If you come to a situation where you do not need this page made available on the front end, the following code snippet, which you can append to your theme’s functions.php file, may help.
+
+```
+add_action( 'template_redirect', function () {
+	if ( ! is_post_type_archive( 'tribe_events' ) ) {
+		return;
+	}
+
+	global $wp_query;
+	$wp_query->set_404();
+	status_header( 404 );
+	nocache_headers();
+
+	// The Events Calendar loads its own template, so ask for the theme's 404 template instead.
+	add_filter( 'template_include', function () {
+		return get_404_template();
+	}, 100 );
+} );
+```
 
 The snippet above will direct users to a page not found (404) page.
 
@@ -1056,6 +1096,10 @@ To fade out sold-out events in Photo View, you can use CSS like this:
 ### Conclusion
 
 This method provides a robust way to visually differentiate sold-out series from available ones, improving the user experience by signaling availability before a user even clicks. For more information on safely adding code to your site, please refer to our guide on [best practices for implementing custom code snippets](https://docs.nexcess.com/software/the-events-calendar/code-snippets/).
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

@@ -14,7 +14,7 @@ Our support team will often ask you to share your system information. This is a 
 
 ### Sharing the Information Automatically
 
-As of The Events Calendar 5.8.2, when you go to Events → Troubleshooting in your wp-admin you’ll see the option to share your System Information with the support team.
+When you go to Events → Troubleshooting in your wp-admin you’ll see the option to share your System Information with the support team.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/tec-troubleshoot-sysinfo.jpg)
 

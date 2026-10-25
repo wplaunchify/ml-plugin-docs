@@ -45,27 +45,34 @@ To use IAC with an RSVP, click the *+Collect Attendee Information*option and con
 In addition to using the plugin settings, the default IAC setting can be programmatically set to any of the three possible settings with the following function:
 
 ```
-<?php
-add_filter( 'tribe_tickets_plus_attendee_registration_iac_default_setting_for_all_tickets', 'my_custom_iac_setting_for_all_tickets' );
+add_filter( 'tribe_tickets_plus_attendee_registration_iac_setting_for_ticket', 'my_custom_iac_setting_for_all_tickets', 10, 2 );
 /**
- * Filter the Individual Attendee Collection setting for all tickets.
+ * Set the Individual Attendee Collection setting for every ticket and RSVP that has no setting of its own.
  *
- * @param string $default_iac_setting The default IAC setting for all tickets (none, allowed, required).
+ * @param string $iac_setting The IAC setting for the ticket (none, allowed, required).
+ * @param int    $ticket_id   The ticket ID.
  *
- * @return The default IAC setting for all tickets (none, allowed, required).
+ * @return string The IAC setting for the ticket (none, allowed, required).
  */
-function my_custom_iac_setting_for_all_tickets( $default_iac_setting ) {
-  // Set the default as allowed.
-  return 'allowed';
+function my_custom_iac_setting_for_all_tickets( $iac_setting, $ticket_id ) {
+	$meta_key = tribe( 'tickets-plus.attendee-registration.iac' )->get_iac_setting_ticket_meta_key();
+
+	// Keep the setting saved on the ticket itself.
+	if ( get_post_meta( $ticket_id, $meta_key, true ) ) {
+		return $iac_setting;
+	}
+
+	// Set the default as allowed. Use 'required' or 'none' instead if you prefer.
+	return 'allowed';
 }
 ```
 
-The filter hook used in the example above updates IAC for all tickets at once. To control IAC setting on a per-ticket basis, 
+The snippet above sets the setting for every ticket and RSVP that does not already have its own saved setting. A setting saved on a ticket in the editor is kept. To treat specific tickets differently, use the same 
 ```
 tribe_tickets_plus_attendee_registration_iac_setting_for_ticket
 ```
 
- filter hook can be used.
+ filter and check the $ticket_id it receives.
 
 ## Available IAC Configurations
 
@@ -104,7 +111,7 @@ Post-purchase: the Billing Purchaser can log into your website, head to the *Eve
 
 When modifying the name or email address on the My Tickets page for an attendee ticket with Individual Attendee Collection required, any email can be used even if the email address is used for another attendee already.
 
-## Attendee registration settings
+## Attendee Registration Settings
 
 Head to **Tickets → Settings → Attendee Registration** to configure your event registration settings.
 
@@ -118,7 +125,7 @@ Head to **Tickets → Settings → Attendee Registration** to configure your eve
 
 **Attendee registration page:** If you’d like to have full control over designing the registration page to perfectly match your website, with methods to show sidebars, footers, or other page elements, using the Attendee Registration Page is the route to go.  Use the [[tribe_attendee_registration]](https://docs.nexcess.com/software/the-events-calendar/attendee-registration/#Attendee_registration_settings) shortcode to display the attendee information fields to users on any WordPress page or post.
 
-## Set what information to collect during registration
+## Set What Information to Collect During Registration
 
 When creating a ticket or RSVP, click the “Attendee Information”**option to define what information you want to collect during registration. We call these “custom registration fields” and they are a feature included with Event Tickets Plus.
 
@@ -213,6 +220,10 @@ When a visitor selects a quantity of tickets and clicks **Get Tickets**, the fo
 - Use clear, concise language for the checkbox label.
 - Link to your actual terms or waiver page, so attendees can review it before agreeing.
 - For legal compliance, ensure the wording of your terms matches any organizational or regional requirements.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

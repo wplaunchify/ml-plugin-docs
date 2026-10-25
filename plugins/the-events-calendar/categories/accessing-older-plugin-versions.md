@@ -8,7 +8,7 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/accessing-older-plugin-versions/](https://docs.nexcess.com/software/the-events-calendar/accessing-older-plugin-versions/)
 
-Our team regularly releases updates to The Events Calendar and its add-ons, which can be [installed directly in the WordPress admin](https://docs.nexcess.com/software/the-events-calendar/import-events-csv/) of your site when they are available.
+Our team regularly releases updates to The Events Calendar and its add-ons, which can be [installed directly in the WordPress admin](https://docs.nexcess.com/software/the-events-calendar/manual-updates/) of your site when they are available.
 
 But what if you update to the latest version and decide to go back to a previous version instead? That’s totally possible.
 

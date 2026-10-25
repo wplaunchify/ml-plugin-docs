@@ -8,36 +8,92 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/downgrading-wordpress/](https://docs.nexcess.com/software/the-events-calendar/downgrading-wordpress/)
 
-Downgrading your WordPress site to a previous version can be necessary when encountering compatibility issues with themes or plugins after an update. However, it’s important to approach this process cautiously, as running an outdated version may expose your site to security vulnerabilities. Always ensure you have a complete backup of your site before proceeding.
+This article explains how to update WordPress to the latest version, and how to go back to an earlier version if an update causes a compatibility problem with your plugins or theme. Whichever you’re doing, take a full backup of your site first. Downgrading is a short-term fix, so plan to move back to the latest version once the problem is solved.
 
-**Methods to Downgrade WordPress:**
+Note
 
-1. **Using a Plugin:** Using plugins such as **WP Downgrade** plugin simplifies the process of reverting to a specific WordPress version.
-2. **Manual Downgrade via FTP:** For those comfortable with manual processes, downgrading via FTP provides direct control over the files.
+				
 
-- **Preparation:**
+If your site is hosted with Nexcess, see [WordPress Upgrade and Downgrade](https://docs.nexcess.com/hosting/cms/wordpress/troubleshooting/wordpress-upgrade-and-downgrade/) in our hosting docs for options specific to your hosting plan.
 
-- Backup your entire website, including the database and all files.
-- Deactivate all plugins to prevent potential conflicts.
-- **Download Previous Version:**
+## Before You Start
 
-- Visit the [WordPress Release Archive](https://wordpress.org/download/releases/).
-- Download the desired version’s ZIP file to your computer.
-- **Upload Files via FTP:**
+- **Back up your whole site**, including the database and all files.
+- **Test on a staging site** if you can, so you can see the result before changing your live site.
+- **Check what your plugins need.** Each plugin has a minimum WordPress version. If you downgrade below it, that plugin may stop working, so check the requirements of your plugins and theme before choosing a version.
 
-- Extract the ZIP file on your computer.
-- Connect to your website’s server using an FTP client (e.g., FileZilla).
-- Navigate to your site’s root directory (where WordPress is installed).
-- Upload the extracted files, overwriting the existing ones.
-- **Final Steps:**
+## How Do I Update WordPress?
 
-- After the upload, access your site’s admin area.
-- You may be prompted to update the database; follow the on-screen instructions.
-- Reactivate your plugins one by one, ensuring compatibility.
+1. In your WordPress dashboard, go to **Dashboard > Updates**.
+2. Click **Update to version** followed by the version number.
+3. If you see **Database Update Required** afterwards, click **Update WordPress Database**.
 
-This method requires careful execution to avoid disrupting your site.
+## How Do I Downgrade WordPress?
 
-By following these methods and precautions, you can safely downgrade your WordPress site to a previous version when necessary.
+Warning
+
+				
+
+Running an older version of WordPress can leave your site open to security issues that newer versions fix. Only downgrade to solve a specific problem, and update again as soon as you can.
+
+If you have a backup from before the update, restoring it is often the cleanest option, because it also brings back your database exactly as it was. The two methods below change only the WordPress files, and they can’t undo changes the newer version made to your database.
+
+### Option 1: Use a Plugin
+
+The free [WP Downgrade | Specific Core Version](https://wordpress.org/plugins/wp-downgrade/) plugin downloads the WordPress version you choose and installs it the same way as a normal update.
+
+1. Install and activate the plugin.
+2. Go to **Settings > WP Downgrade** and enter the version number you want.
+3. Go to **Dashboard > Updates** and run the update.
+
+### Option 2: Downgrade Manually
+
+You’ll need access to your site’s files, through FTP, SFTP or your host’s file manager.
+
+1. Download the version you need from the [WordPress Release Archive](https://wordpress.org/download/releases/) and unzip it on your computer.
+2. Deactivate your plugins.
+3. On your site, delete the WordPress core files and folders, but keep 
+```
+wp-config.php
+```
+
+, the 
+```
+wp-content
+```
+
+ folder, and your 
+```
+.htaccess
+```
+
+ and 
+```
+robots.txt
+```
+
+ files if you have them.
+4. Upload the files from the unzipped 
+```
+wordpress
+```
+
+ folder, except its 
+```
+wp-content
+```
+
+ folder, so your themes, plugins and uploads aren’t touched.
+5. Log in to your dashboard. If you see **Database Update Required**, click **Update WordPress Database**.
+6. Reactivate your plugins one at a time, checking your site after each one.
+
+For more detail on replacing WordPress files by hand, see [Upgrading WordPress](https://developer.wordpress.org/advanced-administration/upgrade/upgrading/) in the WordPress documentation.
+
+## Related Articles
+
+- [How to Test for Plugin Conflicts](https://docs.nexcess.com/software/general/how-to-test-for-plugin-conflicts/): find out whether a plugin or your theme is causing a problem after an update.
+- [Download Plugin and Theme Files](https://docs.nexcess.com/software/accounts-licensing/download-plugin-and-theme-files/): download earlier versions of our plugins and themes.
+- [Changelogs](https://docs.nexcess.com/software/changelogs/): release notes for every product, by brand.
 
 ---
 

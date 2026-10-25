@@ -35,12 +35,10 @@ That’s not always desirable – you might wish to make use of a WooCommerce ad
 First,  you need to allow customers to access the actual product pages for tickets. This can by done by adding the following PHP snippet to your theme’s functions.php file or a [functionality plugin](https://docs.nexcess.com/software/the-events-calendar/code-snippets/).
 
 ```
-<?php
 /*
  * Description: Prevent hijacking WooCommerce product pages for tickets.
  *
  * Usage: Add the snippet to your functions.php file or with a plugin like Code Snippets.
- *        Make sure to NOT have duplicate opening <?php tags.
  *
  * Plugins required: Event Tickets, Event Tickets Plus
  */
@@ -92,15 +90,54 @@ event-tickets/src/views/v2/list/event/cost.php
 [your-theme]/tribe/tickets/v2/list/event/cost.php
 ```
 
-. Replace the contents of this file with the following code in addition to your custom code to display links to product(s). (You can use the snippet above to display the products.)
+. Replace the contents of this file with the following code. It keeps the standard price and adds a “Buy Now!” link for each WooCommerce ticket product.
 
 ```
 <?php
-$this->template( 'v2/tickets', [
-	'tickets' => Tribe__Tickets__Tickets::get_all_event_tickets( get_the_ID() )
-] );
+/**
+ * View: List Single Event Cost, with a "Buy Now" link for each ticket product.
+ *
+ * Save as [your-theme]/tribe/tickets/v2/list/event/cost.php
+ *
+ * @var WP_Post $event The event post object with properties added by the `tribe_get_event` function.
+ */
 
-//Your custom code to display links to product(s) goes here
+if ( empty( $event->cost ) ) {
+	return;
+}
+
+$tickets = Tribe__Tickets__Tickets::get_all_event_tickets( $event->ID );
+?>
+<div class="tribe-events-c-small-cta tribe-common-b3 tribe-events-calendar-list__event-cost">
+	<span class="tribe-events-c-small-cta__price">
+		<?php echo esc_html( $event->cost ); ?>
+	</span>
+	<?php if ( ! empty( $tickets ) ) : ?>
+		<ul>
+			<?php
+			foreach ( $tickets as $ticket ) {
+				// Only WooCommerce tickets have a product page to link to.
+				if ( 'product' !== get_post_type( $ticket->ID ) ) {
+					continue;
+				}
+
+				$product = wc_get_product( $ticket->ID );
+
+				if ( ! $product ) {
+					continue;
+				}
+				?>
+				<li>
+					<?php echo esc_html( $ticket->name ); ?>
+					<?php echo wp_kses_post( $product->get_price_html() ); ?>
+					<a href="<?php echo esc_url( $product->get_permalink() ); ?>"><?php esc_html_e( 'Buy Now!', 'event-tickets' ); ?></a>
+				</li>
+				<?php
+			}
+			?>
+		</ul>
+	<?php endif; ?>
+</div>
 ```
 
 Please do remember that this is only a rough guide and the idea is to give you a starting point. If you need to do something slightly different or build something more advanced then we’ll need to leave it to you to work out the details!
@@ -122,8 +159,6 @@ Adding an **Event Title** column:
 Add the following code to your site, and you’ll see the event title appear right next to each ticket title:
 
 ```
-<?php //Do not copy this line
-
 add_filter( 'manage_edit-product_columns', function ( $columns ) {
 	$name_index = array_search( 'name', array_keys( $columns ) );
 	if ( $name_index !== false ) {
@@ -154,47 +189,30 @@ When using [Event Tickets Plus](https://theeventscalendar.com/products/wordpress
 As tickets are frequently associated with events, it is desirable for the featured image of an event to be automatically assigned to a WooCommerce product created for the event’s tickets. This can be accomplished by adding the following PHP snippet to the site.
 
 ```
-add_action( 'save_post_tribe_events', function ( $post_id, $post, $update ) {
-    // Ensure this is not an autosave
+add_action( 'save_post_tribe_events', function ( $post_id ) {
+    // Ensure this is not an autosave or a revision.
     if ( wp_is_post_autosave( $post_id ) || wp_is_post_revision( $post_id ) ) {
         return;
     }
 
-    // Get the event's featured image
+    // Get the event's featured image.
     $event_thumbnail_id = get_post_thumbnail_id( $post_id );
-    error_log('Event ID: ' . $post_id . ' - Thumbnail ID: ' . $event_thumbnail_id);
 
-    // Check if a featured image exists
-    if ( !$event_thumbnail_id ) {
-        error_log('No featured image found for event.');
+    // Bail if the event has no featured image.
+    if ( ! $event_thumbnail_id ) {
         return;
     }
 
-    // Get all tickets linked to this event
-    $tickets = Tribe__Tickets__Tickets::get_all_event_tickets( $post_id );
+    // Get the IDs of the WooCommerce ticket products linked to this event.
+    $ticket_ids = tribe_tickets( 'woo' )->by( 'event', $post_id )->get_ids();
 
-    foreach ( $tickets as $ticket ) {
-        // Ensure it's a WooCommerce ticket
-        if ( $ticket->provider_class !== 'Tribe__Tickets_Plus__Commerce__WooCommerce__Main' ) {
-            continue;
-        }
-
-        // If the ticket product has no image, set the event's image
-        if ( ! has_post_thumbnail( $ticket->ID ) ) {
-            set_post_thumbnail( $ticket->ID, $event_thumbnail_id );
-
-            // Force WooCommerce to recognize the change
-            wp_update_post( array(
-                'ID'           => $ticket->ID,
-                'post_status'  => get_post_status( $ticket->ID )
-            ));
-
-            error_log('Set featured image for product ID: ' . $ticket->ID);
-        } else {
-            error_log('Product ID: ' . $ticket->ID . ' already has an image.');
+    foreach ( $ticket_ids as $ticket_id ) {
+        // If the ticket product has no image, use the event's image.
+        if ( ! has_post_thumbnail( $ticket_id ) ) {
+            set_post_thumbnail( $ticket_id, $event_thumbnail_id );
         }
     }
-}, 10, 3 );
+} );
 ```
 
 By automatically assigning the event’s featured image to WooCommerce ticket products, time is saved by eliminating the need for a site editor to assign featured images to all created tickets manually.
@@ -226,7 +244,7 @@ This will work the same way for syncing tags.
  *               Change delimiter as per your needs.
  *               Make sure that the slug is same for both tag or both category to sync properly
  *
- * Last updated: March 31, 2020
+ * Last updated: October 20, 2026
  *
  * @link https://gist.github.com/rafsuntaskin/ce0d2b5cbd35379a83ad020d630f6031
  * @link https://theeventscalendar.com/knowledgebase/k/sync-event-category-with-ticket-product-category/
@@ -267,7 +285,7 @@ function rt_sync_et_ticket_category_with_woo( $post_id, $ticket, $raw_data, $cla
  
     //process if event has tags
     if ( ! empty( $tag_slugs ) ) {
-        wp_add_post_tags( $ticket->ID, $tag_slugs );
+        wp_add_object_terms( $ticket->ID, $tag_slugs, 'product_tag' );
     }
 }
 ```
@@ -278,6 +296,10 @@ function rt_sync_et_ticket_category_with_woo( $post_id, $ticket, $raw_data, $cla
 - [manage_{$post->post_type}_posts_custom_column](https://developer.wordpress.org/reference/hooks/manage_post-post_type_posts_custom_column/)
 - [tribe_events_product_is_ticket](https://docs.theeventscalendar.com/reference/functions/tribe_events_product_is_ticket/)
 - [tribe_events_get_ticket_event](https://docs.theeventscalendar.com/reference/functions/tribe_events_get_ticket_event/)
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

@@ -16,51 +16,23 @@ When hovering over an event in Week View, a small box pops up with more event de
 
 #### Hiding Tooltips with PHP
 
-php
-
 ```
-add_filter(
-    'tribe_template_html:events-pro/v2/week/grid-body/events-day/event',
-    function( $html ) {
-        $html = preg_replace(
-            '/data-js="tribe-events-tooltip"|data-tooltip-content=.*;/m',
-            '',
-            $html
-        );
-        return $html;
-    }
-);
-
 add_filter(
     'tribe_template_html:events-pro/v2/week/grid-body/events-day/event/tooltip',
     function( $html ) {
         return '';
     }
 );
-
-add_filter(
-    'tribe_template_html:events-pro/v2/week/grid-body/multiday-events-day/multiday-event/hidden/link',
-    function( $html ) {
-        $html = preg_replace(
-            '/data-js="tribe-events-tooltip"|data-tooltip-content=.*;/m',
-            '',
-            $html
-        );
-        return $html;
-    }
-);
 ```
 
-Three filters are needed for Week View: one for regular events, one to empty the tooltip template itself, and one for multi-day events that span across the week grid.
+This filter empties the tooltip template, which removes the tooltip for every event in Week View, including multi-day events.
 
 #### Hiding Tooltips with CSS
 
 If you prefer a CSS-only approach, add the following to your (child) theme’s *style.css* file, or under **Appearance → Customize → Additional CSS**:
 
-css
-
 ```
-.tribe-events-view-week .tribe-events-tooltip-theme {
+.tooltipster-base:has(.tribe-events-pro-week-grid__event-tooltip) {
     display: none !important;
 }
 ```
@@ -80,6 +52,10 @@ add_filter( 'tribe_events_views_v2_week_multiday_toggle', function() { return 5;
 The snippet above will produce the following outcome:
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/5-event-week-1024x329-1.jpg)
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

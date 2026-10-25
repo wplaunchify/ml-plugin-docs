@@ -192,7 +192,7 @@ Simply make sure that if you use quotation marks in your shortcodes, they are on
 
 ### Shortcodes and the WordPress Customizer
 
-With the [CSS Custom Properties](https://docs.nexcess.com/software/the-events-calendar/custom-fields/), Customizer styles will impact both widgets and shortcodes. If you prefer to keep the Customizer out of your widget and shortcode styles, you can add [the code in this gist](https://gist.github.com/Camwyn/f18718b9e2514a47f6e6def0607facb3) to the “Additional CSS” section of the Customizer or a separate style sheet you load.
+With the [CSS Custom Properties](https://docs.nexcess.com/software/the-events-calendar/customize-css/#h-css-custom-properties), Customizer styles will impact both widgets and shortcodes. If you prefer to keep the Customizer out of your widget and shortcode styles, you can add [the code in this gist](https://gist.github.com/Camwyn/f18718b9e2514a47f6e6def0607facb3) to the “Additional CSS” section of the Customizer or a separate style sheet you load.
 
 ## Customization: Show Only Weekend Events in List View Shortcode
 
@@ -223,32 +223,25 @@ The code snippet below calculates the start and end of the current weekend, then
 add_filter( 'tribe_events_views_v2_view_repository_args', 'my_weekend_repo_args', 10, 2 );
 function my_weekend_repo_args( $rep_args, $context ) {
 	$shortcode_id = '24f53d40'; // Replace with your shortcode ID
-
 	// Only run for the correct shortcode
 	if ( empty( $context->get( 'shortcode' ) ) || $context->get( 'shortcode' ) !== $shortcode_id ) {
 		return $rep_args;
 	}
-
 	// Use site timezone
 	$tz = wp_timezone();
-
 	// Calculate weekend range (Saturday 00:00:00 to Sunday 23:59:59 this week)
 	$weekend_start = new DateTime( 'saturday this week 00:00:00', $tz );
 	$weekend_end   = new DateTime( 'sunday this week 23:59:59', $tz );
-
 	// Apply weekend range to repository arguments
 	$rep_args['start_date'] = $weekend_start->format( 'Y-m-d H:i:s' );
 	$rep_args['end_date']   = $weekend_end->format( 'Y-m-d H:i:s' );
-
 	// Keep ordering predictable
 	$rep_args['orderby'] = 'event_date';
 	$rep_args['order']   = 'ASC';
-
 	// Optional: set posts per page if not already defined
 	if ( empty( $rep_args['posts_per_page'] ) ) {
 		$rep_args['posts_per_page'] = tribe_get_option( 'postsPerPage', 10 );
 	}
-
 	return $rep_args;
 }
 ```

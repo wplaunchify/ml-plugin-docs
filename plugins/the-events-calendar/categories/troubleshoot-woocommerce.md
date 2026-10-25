@@ -31,31 +31,43 @@ We’ve prepared a code snippet that resolves this visual glitch. This code chec
 You can add the following code to your site to fix the issue:
 
 ```
-// Fix WooCommerce admin order items table when Event column is present but empty.
-add_action('admin_enqueue_scripts', function ($hook) {
-    if ($hook !== 'post.php' && $hook !== 'post-new.php') return;
+// Fix WooCommerce admin order items table when the Event column is present but empty.
+add_action( 'admin_enqueue_scripts', function () {
+	$screen = get_current_screen();
 
-    $screen = get_current_screen();
-    if (!$screen || $screen->post_type !== 'shop_order') return;
+	// Only run on the WooCommerce order screen (works with and without High-Performance Order Storage).
+	if ( ! $screen || ! function_exists( 'wc_get_page_screen_id' ) || wc_get_page_screen_id( 'shop-order' ) !== $screen->id ) {
+		return;
+	}
 
-    // Run after jQuery
-    wp_add_inline_script('jquery-core', <<<JS
-jQuery(function($){
-  // Only act if the Event header exists
-  if (!$('.woocommerce_order_items thead th.item_event').length) return;
+	// Run after jQuery.
+	wp_add_inline_script( 'jquery-core', <<<'JS'
+jQuery( function ( $ ) {
+	function addMissingEventCells() {
+		// Only act if the Event header exists.
+		if ( ! $( '.woocommerce_order_items thead th.item_event' ).length ) {
+			return;
+		}
 
-  // For each line item row, if there's no td.item_event, insert an empty one before Price
-  $('#order_line_items tr.item').each(function(){
-    var $row = $(this);
-    if (!$row.find('td.item_event').length) {
-      $('<td class="item_event" width="1%"><div class="view">&nbsp;</div></td>')
-        .insertBefore($row.find('td.item_cost').first());
-    }
-  });
-});
+		// For each line item row without an Event cell, insert an empty one before Price.
+		$( '#order_line_items tr.item' ).each( function () {
+			var $row = $( this );
+
+			if ( ! $row.find( 'td.item_event' ).length ) {
+				$( '<td class="item_event" width="1%"><div class="view">&nbsp;</div></td>' )
+					.insertBefore( $row.find( 'td.item_cost' ).first() );
+			}
+		} );
+	}
+
+	addMissingEventCells();
+
+	// WooCommerce reloads the items table after adding or removing items.
+	$( document.body ).on( 'wc_order_items_reloaded', addMissingEventCells );
+} );
 JS
-    );
-});
+	);
+} );
 ```
 
 #### How to Implement the Snippet
@@ -73,6 +85,10 @@ functions.php
 2. Using a dedicated code snippets plugin, which allows you to add snippets without modifying theme files.
 
 Once the snippet is added and activated, the columns on your WooCommerce order screen will be properly aligned for all products, whether they are events or standard store items.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

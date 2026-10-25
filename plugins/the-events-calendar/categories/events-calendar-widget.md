@@ -31,7 +31,7 @@ There we have it. Now we can go to the front end of our website and see the Mini
 First thing you might notice when adding the widget to the sidebar is that there are a few options that allow us to customize things a bit. These are the available options:
 
 - **Title:** This is the heading that sits above the widget on the front end of the site. By default, it is “Events Calendar,” but can be changed to anything we’d like.
-- **Number of Events to Show:** This allows you to set the maximum number of events that display in the list below the calendar at any given time. By default, this is set to five, but can be any number between one and ten.
+- **Number of events to list below the widget calendar:** This allows you to set the maximum number of events that display in the list below the calendar at any given time. By default, this is set to five, but can be any number between one and ten.
 - **Add a filter:** This option allows you to limit the events that display in the widget to certain categories and tags. Let’s say we only want events categorized as Conference to display in the widget. Perfect, add a filter! How about Conferences and Workshops? Add two filters!
 
 ## Widget Block
@@ -74,32 +74,10 @@ You can also add a tax-operand attribute to the calendar so that multiple catego
 [tribe_mini_calendar tags="cabbage, broccoli" tax-operand="AND"]
 ```
 
-**Note:**You can also embed the regular calendar Month View with the shortcode [tribe_events view=“month”]
-
-## Troubleshoot the Calendar Widget
-
-### The Calendar Widget Overflows a Sidebar
-
-Sometimes the calendar widget is larger than your sidebars. Commonly this is because the theme’s stylesheet has added padding to all table cells. This can be countered by adding a rule that strips that padding back out of our mini calendar grids specifically.
-
+**Note:**You can also embed the regular calendar Month View with the shortcode 
 ```
-.tribe-mini-calendar td,
-.tribe-mini-calendar th {
-padding: 0;
-}
+[tribe_events view="month"]
 ```
-
-If you find that the mini calendar grids are still too big on iPad sized screens and would like to shrink it, you can reduce the font size with this:
-
-```
-@media (max-width: 850px) {
-.tribe-mini-calendar {
-font-size: 10px;
-}
-}
-```
-
-That will target the mini calendar grids font size after the screen size of the viewing device is below 850px in width. You can change that number to whatever size you would like. In addition, you may have to add more selectors to that CSS to get it to work with your theme.
 
 ## Customizing the Widget
 
@@ -144,7 +122,7 @@ If you have created a custom page to display your calendar using a shortcode, or
 
 This guide provides a simple code snippet to update the destination URL for the ‘View Calendar’ link in the Events Calendar widget.
 
-This snippet uses jQuery to select the ‘View More’ link in the Events Calendar widget (
+This snippet uses jQuery to select the ‘View Calendar’ link in the Events Calendar widget (
 ```
 .tribe-events-widget-events-month__view-more
 ```
@@ -163,7 +141,6 @@ add_action( 'wp_footer', function() {
 jQuery(document).ready(function($) {
   // Replace 'https://example.com/new-page/' with your desired custom URL
   var customCalendarUrl = 'https://example.com/new-page/';
-
   // Target the 'View Calendar' link in the Events Calendar widget
   $('.tribe-events-widget-events-month__view-more a')
     .attr('href', customCalendarUrl);
@@ -203,7 +180,7 @@ functions.php
  file or through a plugin like **Code Snippets**. Using this method if you want to remove the link from the DOM entirely (cleaner code output).
 
 ```
-add_filter( 'tribe_template_pre_html:events-pro/v2/widgets/shortcodes/components/view-more', '__return_false' )
+add_filter( 'tribe_template_pre_html:events-pro/v2/widgets/shortcodes/components/view-more', '__return_false' );
 ```
 
 This method removes the link from the HTML entirely, so it won’t be rendered on the frontend.
@@ -271,31 +248,7 @@ Presto! Now that the template is in our theme directory, we can modify to suit o
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/CleanShot-2024-10-23-at-13.06.14-1024x226-1.jpg)
 
-Note – we have added some italics, but you can style this however you see fit. Now, we can save our work, head back to our widget and see the event’s excerpt displays with the rest of the event’s information. Nice work!
-
-### Show Today’s Events
-
-If you use a Mini Calendar Widget on your site then on the first-page load it will show you the number of events from the month that you set up in the back-end. If you set up 5 events and there are less than that on the current day, it will show you events from the coming days as well.
-
-If you click on a specific date in the calendar, then you will only see the events for that day.
-
-If you would like to show only today’s events on the first-page load as well, then the below snippet will help you.
-
-Copy the below code into your (child) theme’s *functions.php* file (or wherever you usually put custom code).
-
-```
-add_action( 'pre_get_posts', 'tribe_andras_custom_mini_calendar_starting_query' );
-
-function tribe_andras_custom_mini_calendar_starting_query( $query ) {
-
-	$is_widget = $query->get( 'is_tribe_widget' );
-	$event_display = $query->get( 'eventDisplay' );
-
-	if ( $is_widget && $event_display == 'custom' ) {
-		$query->set( 'eventDisplay', 'day' );
-	}
-}
-```
+Note – the excerpt is output as a paragraph, so you can style it however you see fit with CSS. Now, we can save our work, head back to our widget and see the event’s excerpt displays with the rest of the event’s information. Nice work!
 
 ### Remove Next Month’s Dates from Current Month
 
@@ -341,24 +294,18 @@ Create a **mobile-day.php** file on your
 ```
 <?php
 use Tribe__Date_Utils as Dates;
-
 $events = ! empty( $day['events'] ) ? $day['events'] : [];
 if ( ! empty( $day['multiday_events'] ) ) {
 	$events = array_filter( array_merge( $day['multiday_events'], $events ) );
 }
 $mobile_day_id = 'tribe-events-calendar-mobile-day-' . $day['year_number'] . '-' . $day['month_number'] . '-' . $day['day_number'];
-
 $classes = [ 'tribe-events-calendar-month-mobile-events__mobile-day' ];
-
 if ( $today_date === $day_date ) {
 	$classes[] = 'tribe-events-calendar-month-mobile-events__mobile-day--show';
 }
 ?>
-
 <div <?php tribe_classes( $classes ); ?> id="<?php echo sanitize_html_class( $mobile_day_id ); ?>">
-
 	<?php if ( count($events) ) : ?>
-
 		<?php foreach ( $events as $event ) : ?>
 			<?php 
 				$first_day_of_month = date( 'Y-m-d', strtotime ( 'first day of' . $today_date ) );
@@ -370,23 +317,14 @@ if ( $today_date === $day_date ) {
 				}	
 				else {			
 			?>
-
 			<?php $event_date = $event->dates->start->format( Dates::DBDATEFORMAT ); ?>
-
 			<?php $this->template( 'month/mobile-events/mobile-day/day-marker', [ 'events' => $events, 'event' => $event, 'request_date' => $day_date ] ); ?>
-
 			<?php $this->setup_postdata( $event ); ?>
-
 			<?php $this->template( 'month/mobile-events/mobile-day/mobile-event', [ 'event' => $event ] ); ?>
-
 			<?php } ?>
-
 		<?php endforeach; ?>
-
 		<?php $this->template( 'month/mobile-events/mobile-day/more-events', [ 'more_events' => $day['more_events'], 'more_url' => $day['day_url'] ] ); ?>
-
 	<?php else : ?>
-
 		<?php
 		$this->template(
 			'components/messages',
@@ -396,7 +334,6 @@ if ( $today_date === $day_date ) {
 			]
 		);
 		?>
-
 	<?php endif; ?>
 </div>
 ```
@@ -408,7 +345,7 @@ There are a few different ways to add custom CSS to your WordPress site. For mor
 To remove the next and previous month’s dates from the calendar, use this CSS snippet:
 
 ```
-.tribe-events-view--shortcode div.tribe-events-calendar-month__day--next-month {
+.tribe-events-view--shortcode td.tribe-events-calendar-month__day--next-month {
   visibility: hidden !important;
 }
 ```
@@ -416,7 +353,7 @@ To remove the next and previous month’s dates from the calendar, use this CSS 
 To remove the previous month’s dates from the calendar, use this snippet:
 
 ```
-.tribe-events-view--shortcode div.tribe-events-calendar-month__day--past-month {
+.tribe-events-view--shortcode td.tribe-events-calendar-month__day--past-month {
     visibility: hidden !important;
 }
 ```
@@ -424,11 +361,15 @@ To remove the previous month’s dates from the calendar, use this snippet:
 And, to remove both the previous month and upcoming month dates from the calendar, use this snippet:
 
 ```
-.tribe-events-view--shortcode div.tribe-events-calendar-month__day--next-month,
-.tribe-events-view--shortcode div.tribe-events-calendar-month__day--past-month  {    
+.tribe-events-view--shortcode td.tribe-events-calendar-month__day--next-month,
+.tribe-events-view--shortcode td.tribe-events-calendar-month__day--past-month  {    
      visibility: hidden !important;
 }
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

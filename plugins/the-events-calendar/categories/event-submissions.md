@@ -20,7 +20,7 @@ First, make sure the [Community Events](https://theeventscalendar.com/products/c
 
 ### Decide Who Can Submit
 
-The first decision is whether to allow **anonymous submissions**. Enable this to let any visitor submit events without logging in. Disable it to require user accounts — anonymous visitors will be prompted to log in before they can access the submission form.
+The first decision is whether to allow anonymous submissions. On the Content Creation tab, check **Allow anonymous submissions** to let any visitor submit events without logging in. Leave it unchecked to require user accounts — anonymous visitors will be prompted to log in before they can access the submission form.
 
 ![The Allow Anonymous Submissions setting](https://docs.nexcess.com/wp-content/uploads/2026/06/CE-option.jpg)
 
@@ -30,7 +30,7 @@ If you’re requiring registered users, make sure visitors can actually create a
 
 ### Choose a Review Workflow
 
-Next, set the default status for submitted events. This controls how much review happens before a submission goes live:
+Next, still on the Content Creation tab, set **Default status for submitted events**. This controls how much review happens before a submission goes live:
 
 - **Draft** — submitted events won’t be displayed until an admin publishes them.
 - **Pending Review** — same as Draft for visibility, but makes submissions easier for admins to find and review.
@@ -40,18 +40,18 @@ Next, set the default status for submitted events. This controls how much review
 
 ### Configure Submitter Permissions
 
-Scroll down to configure what submitters can do beyond just creating events:
+These settings are on two tabs under Events → Settings → Community: the venue and organizer options are on the Content Creation tab (under Form Defaults) and the rest are on the Members tab. Together they control what submitters can do beyond just creating events:
 
-- **Allow users to create new venues and organizers** — enable these to let logged-in users add venues or organizers on the fly. Leave disabled to restrict submitters to your existing options.
-- **Allow users to edit their submissions** — lets logged-in users modify their events from the frontend. This is a prerequisite for the My Events page covered below.
-- **Allow users to remove their submissions** — lets users delete their events from the frontend. Admins aren’t notified when this happens.
-- **Deleted events handling** — choose whether removed events go to Trash (restorable) or are permanently deleted.
+- **Users cannot create new Venues** and **Users cannot create new Organizers** (Content Creation tab) — leave these unchecked to let logged-in users add venues or organizers on the fly. Check them to restrict submitters to your existing venues and organizers.
+- **Edit their submissions** (Members tab) — lets logged-in users modify their events from the frontend. This is a prerequisite for the My Events page covered below.
+- **Remove their submissions** (Members tab) — lets users delete their events from the frontend. Admins aren’t notified when this happens.
+- **Deleted events should be** (Members tab) — choose whether removed events are **Placed in the Trash** (restorable) or **Permanently Deleted**.
 
 ![The Edit and Remove Submissions settings](https://docs.nexcess.com/wp-content/uploads/2026/06/CE-option-7.jpg)
 
 ### Turn On Email Notifications
 
-If you’re using Draft or Pending Review as the default status, you’ll want to know when a new submission needs review. Scroll to the Alerts section, enable the checkbox, and enter one or more email addresses — each listed address will receive a notification whenever a new event is submitted.
+If you’re using Draft or Pending Review as the default status, you’ll want to know when a new submission needs review. Open the Alerts tab, check **Send an email alert when a new event is submitted**, and enter one or more email addresses (one per line) under **Email addresses to be notified** — each listed address will receive a notification whenever a new event is submitted.
 
 ![The Alert Settings with notification email addresses](https://docs.nexcess.com/wp-content/uploads/2026/06/CE-option-9.jpg)
 
@@ -77,7 +77,7 @@ To reduce spam submissions from anonymous users, you can enable reCAPTCHA on the
 
 ## Creating a My Events Page
 
-Once submissions are configured and you’ve enabled **Allow users to edit their submissions**, you can give logged-in users a dedicated page where they can view, edit, and delete everything they’ve submitted — without needing access to the WordPress dashboard.
+Once submissions are configured and you’ve enabled **Edit their submissions**, you can give logged-in users a dedicated page where they can view, edit, and delete everything they’ve submitted — without needing access to the WordPress dashboard.
 
 By default, logged-in users can access their submitted events at 
 ```

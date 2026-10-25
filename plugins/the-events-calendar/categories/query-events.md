@@ -41,13 +41,18 @@ When you call
 tribe_get_events()
 ```
 
- you can expect it to return an array of events (or an empty array if nothing matches). You can call it with no arguments at all:
+ you can expect it to return an array of events (or an empty array if nothing matches). With no arguments at all it returns the oldest events first, past ones included, so to get upcoming events add the 
+```
+ends_after
+```
+
+ argument:
 
 ```
 tribe_get_events( array( 'ends_after' => 'now' ) );
 ```
 
-The above retrieves a list of upcoming events. Because no count was specified, it defaults to the value set in **Events → Settings → General** for the number of events to show per page (10 by default).
+The above retrieves a list of upcoming events. Because no count was specified, it defaults to the value set in **Events → Settings → Display** for the number of events to show per page (10 by default).
 
 There is a very strong link between 
 ```
@@ -74,7 +79,10 @@ $events = tribe_get_events( [
 Once you have retrieved events, the simplest approach is to loop through the array directly:
 
 ```
-$events = tribe_get_events( [ 'posts_per_page' => 5 ] );
+$events = tribe_get_events( [
+   'posts_per_page' => 5,
+   'start_date'     => 'now',
+] );
 
 // Loop through the events, displaying the title and content for each
 foreach ( $events as $event ) {
@@ -90,7 +98,10 @@ This quick approach is fine for inspecting event properties, but to display them
 global $post;
 
 // Retrieve the next 5 upcoming events
-$events = tribe_get_events( [ 'posts_per_page' => 5 ] );
+$events = tribe_get_events( [
+   'posts_per_page' => 5,
+   'start_date'     => 'now',
+] );
 
 // Loop through the events: set up each one as
 // the current post then use template tags to
@@ -103,6 +114,9 @@ foreach ( $events as $post ) {
    echo '<h4>' . $post->post_title . '</h4>';
    echo ' ' . tribe_get_start_date( $post ) . ' ';
 }
+
+// Restore the original post data
+wp_reset_postdata();
 ```
 
 This approach is more readable — you are not constantly referencing the event/post object directly — and you also benefit from all the filters and other good things that WordPress (and The Events Calendar) handle behind the scenes.
@@ -176,17 +190,31 @@ next monday
 
 #### Gotchas to Be Aware Of
 
-Setting a 
 ```
 start_date
 ```
 
- earlier than today when querying for *upcoming* events will have no impact — it is automatically overwritten. Similarly, setting an 
+ and 
 ```
 end_date
 ```
 
- later than today when querying for *past* events will have no effect.
+ are used exactly as you give them. A 
+```
+start_date
+```
+
+ in the past returns past events as well as upcoming ones, so use 
+```
+start_date => 'now'
+```
+
+ (or 
+```
+ends_after => 'now'
+```
+
+) when you only want upcoming events.
 
 When using 
 ```
@@ -247,10 +275,10 @@ $events = tribe_get_events( [
 ] );
 ```
 
-Upcoming events starting on or after a certain date:
+Events starting on or after a certain date (this includes past events when the date is in the past):
 
 ```
-// Retrieve any upcoming events starting January 1st, 2015, or later
+// Retrieve any events starting January 1st, 2015, or later (past and upcoming)
 $events = tribe_get_events( [
    'start_date'   => '2015-01-01',
 ] );
@@ -297,12 +325,14 @@ tribe_event_is_multiday()
 :
 
 ```
-$events = tribe_get_events();
-foreach ( $events as $event ):
+$events = tribe_get_events( [ 'start_date' => 'now' ] );
+foreach ( $events as $event ) :
   // Skip any multiday events!
-  if ( tribe_event_is_multiday( $event->ID ) ) continue;
-        // ... Code to print out event details ...
-  endif;
+  if ( tribe_event_is_multiday( $event->ID ) ) {
+    continue;
+  }
+
+  // ... Code to print out event details ...
 endforeach;
 ```
 
@@ -313,9 +343,10 @@ The downside of this approach is that if you want to show exactly 10 upcoming ev
 An easy workaround is to request more results than you need:
 
 ```
-$events = tribe_get_events( array(
-  'posts_per_page' => 50
-) );
+$events = tribe_get_events( [
+  'start_date'     => 'now',
+  'posts_per_page' => 50,
+] );
 ```
 
 This pulls up to 50 events rather than the default count. It is not the most efficient approach, but it is quick to implement. To ensure you show at most 10 events while fetching 50, combine this with a counter:
@@ -324,124 +355,82 @@ This pulls up to 50 events rather than the default count. It is not the most eff
 $counter = 0;
 $desired = 10;
 
-$events = tribe_get_events( array(
-  'posts_per_page' => 50
-) );
+$events = tribe_get_events( [
+  'start_date'     => 'now',
+  'posts_per_page' => 50,
+] );
 
-foreach ( $events as $event ):
-  if ( tribe_event_is_multiday( $event->ID ) ) continue;
-  if ( ++$counter > $desired ) break;
-        // ... Code to print out event details ...
+foreach ( $events as $event ) :
+  if ( tribe_event_is_multiday( $event->ID ) ) {
+    continue;
+  }
+
+  if ( ++$counter > $desired ) {
+    break;
+  }
+
+  // ... Code to print out event details ...
 endforeach;
 ```
 
 #### Advanced: Excluding Multi-Day Events at the Query Level
 
-For a cleaner solution, you can filter multi-day events out at the database query level. The class below wraps 
+For a cleaner solution, you can filter multi-day events out at the database query level. The function below wraps 
 ```
 tribe_get_events()
 ```
 
- and adds SQL joins and a 
+ and adds a meta query on the event duration (
 ```
-WHERE
+_EventDuration
 ```
 
- condition to exclude any event whose duration exceeds 24 hours (86,400 seconds):
+, in seconds) to exclude any event that lasts 24 hours (86,400 seconds) or longer:
 
 ```
-class SingleDayEvents {
-  public $results;
+/**
+ * Gets events that last less than 24 hours (single-day events).
+ *
+ * @param array $args Arguments for tribe_get_events().
+ *
+ * @return array The matching events.
+ */
+function tec_get_single_day_events( $args = [] ) {
+	$args['meta_query'][] = [
+		'key'     => '_EventDuration',
+		'value'   => DAY_IN_SECONDS,
+		'compare' => '<',
+		'type'    => 'NUMERIC',
+	];
 
-  public static function fetch( $args = array() ) {
-    $query = new self( $args );
-    return $query->results;
-  }
-
-  public function __construct( $args = array() ) {
-    $this->setup();
-    $this->query( $args );
-    $this->teardown();
-  }
-
-  protected function setup() {
-    add_filter( 'tribe_events_query_posts_joins',  array( $this, 'posts_join' ) );
-    add_filter( 'tribe_events_query_posts_fields', array( $this, 'posts_fields' ) );
-    add_filter( 'posts_where', array( $this, 'posts_where' ), 100 );
-  }
-
-  protected function teardown() {
-    remove_filter( 'tribe_events_query_posts_joins',  array( $this, 'posts_join' ) );
-    remove_filter( 'tribe_events_query_posts_fields', array( $this, 'posts_fields' ) );
-    remove_filter( 'posts_where', array( $this, 'posts_where' ), 100 );
-  }
-
-  public function query( $args ) {
-    $this->results = tribe_get_events( $args );
-  }
-
-  /**
-   * It may be that PRO implements some of this for us, if so - great! If not - the joins will be
-   * made even if we are only using core.
-   *
-   * @param  array $fields
-   * @return array
-   **/
-  public function posts_fields( $fields ) {
-    $fields['event_start_date'] = "tribe_event_start_date.meta_value as EventStartDate";
-    $fields['event_end_date']   = "tribe_event_end_date.meta_value as EventEndDate";
-    return $fields;
-  }
-
-  /**
-   * Counterpart to $this->posts_fields().
-   *
-   * @param  array $joins
-   * @return array
-   **/
-  public function posts_join( $joins ) {
-    global $wpdb;
-    $joins['event_start_date'] = " LEFT JOIN $wpdb->postmeta as tribe_event_start_date ON ( $wpdb->posts.ID = tribe_event_start_date.post_id AND tribe_event_start_date.meta_key = '_EventStartDate' ) ";
-    $joins['event_end_date']   = " LEFT JOIN $wpdb->postmeta as tribe_event_end_date ON ( $wpdb->posts.ID = tribe_event_end_date.post_id AND tribe_event_end_date.meta_key = '_EventEndDate' ) ";
-    return $joins;
-  }
-
-  /**
-   * Adds logic to reject multiday events from the result set.
-   *
-   * The logic is still relatively crude - it treats any event longer than 24hrs in duration as "multiday"
-   * whereas in practice definitions may be more elastic than this but it could of course be modified
-   * further to meet specific needs.
-   *
-   * @param  string $where_sql
-   * @return string
-   **/
-  public function posts_where( $where_sql ) {
-    return " $where_sql AND UNIX_TIMESTAMP( tribe_event_end_date.meta_value ) - UNIX_TIMESTAMP( tribe_event_start_date.meta_value ) < 86400 ";
-  }
+	return tribe_get_events( $args );
 }
 ```
 
 #### Usage
 
-Fetch all upcoming single-day events with no additional arguments:
+Fetch upcoming single-day events:
 
 ```
-$single_day_events = SingleDayEvents::fetch();
+$single_day_events = tec_get_single_day_events( [ 'start_date' => 'now' ] );
 ```
 
-The normal range of arguments can also be passed. For instance, to get only upcoming events in list display mode:
+The normal range of arguments can also be passed. For instance, to get upcoming single-day events in list display mode:
 
 ```
-$events = SingleDayEvents::fetch( [ 'eventDisplay' => 'list' ] );
+$events = tec_get_single_day_events( [ 'start_date' => 'now', 'eventDisplay' => 'list' ] );
 ```
 
-No multi-day events will be included in the result set. Feel free to adjust and modify the class to better suit your needs — in particular, the 24-hour threshold in 
+No multi-day events will be included in the result set. Feel free to adjust the function to better suit your needs — in particular, the 24-hour threshold (
 ```
-posts_where()
+DAY_IN_SECONDS
 ```
 
- can be changed if your definition of “multi-day” differs.
+) can be changed if your definition of “multi-day” differs.
+
+---
+
+*Reviewed and updated October 2026*
 
 ---
 

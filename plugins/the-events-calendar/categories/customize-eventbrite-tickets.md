@@ -63,12 +63,12 @@ add_filter( 'tribe_events_eventbrite_iframe_height', function ( $iframe_height, 
 }, 100, 4 );
 ```
 
-Adjust the 
+The plugin’s own default height is 300 pixels plus 180 pixels for each visible ticket. This snippet raises it to 400 pixels plus 160 pixels per visible ticket, which is taller only for events with up to four visible tickets; from five tickets on, the plugin’s default is already as tall or taller, so the snippet changes nothing. Adjust the 
 ```
 $intended_height
 ```
 
- calculation if the default (a 400-pixel base plus 160 pixels per visible ticket) doesn’t match how your forms actually render. The snippet only increases the height — if Eventbrite ever returns a taller iframe, the snippet leaves it alone.
+ numbers to match how your forms actually render. The snippet only increases the height and never makes the iframe shorter than the plugin’s default.
 
 #### For Developers
 

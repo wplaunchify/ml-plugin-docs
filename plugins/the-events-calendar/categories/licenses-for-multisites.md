@@ -8,15 +8,14 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/licenses-for-multisites/](https://docs.nexcess.com/software/the-events-calendar/licenses-for-multisites/)
 
-If you’re interested in using one of our premium plugins on a multisite network, we’ve got you covered! We have special Multisite Licenses that can be activated on your main network settings page, granting automatic updates to all sub-sites within the network. You can purchase a Multisite License for any of our premium products from the individual product pages. A Multisite License is the best way to [manage multiple WordPress sites](https://ithemes.com/sync/?utm_source=theeventscalendar&utm_medium=referral&utm_campaign=stellarx) all in one place.
+If you have our multisite license, activating it on your main network settings page gives you seamless, automatic updates for every sub-site in your network.
 
 ### What is a Multisite Network?
 
-> A multisite network is a collection of sites that all share the same WordPress installation. They can also share plugins and themes. The individual sites in the network are virtual sites in the sense that they do not have their own directories on your server, although they do have separate directories for media uploads within the shared installation, and they do have separate tables in the database.WordPress Codex
+> A multisite network is a collection of sites that all share the same WordPress installation. They can also share plugins and themes. The individual sites in the network are virtual sites in the sense that they do not have their own directories on your server, although they do have separate directories for media uploads within the shared installation, and they do have separate tables in the database.
+> WordPress Codex
 
 ### What license do I need for my Multisite Network?
-
-**💡 Most people using a multisite network will need to purchase a Multisite License. You need a Multisite License to “Network Activate” a plugin, individually activate the plugin on 11 or more sub-sites, or do automatic updates on any number of sub-sites.**
 
 Network activating your license means that you activate The Events Calendar and any premium add-ons just once, and then those plugins become activated on *all* sub-sites that are on the multisite network.
 
@@ -34,9 +33,9 @@ The rest of this tutorial pertains to Multisite licenses and **network-level** m
 
 ### Installing and activating plugins on a multisite
 
-First off you’ll want to install and activate our core plugin, The Events Calendar. Once it’s installed, click the Network Activate link to activate it for all your sub-sites. If you only want to use the plugin on some of your sub-sites, skip the network activation and you’ll be able to activate the plugin on individual sub-sites as desired.
+First off you’ll want to install and activate our core plugin, The Events Calendar. Once it’s installed, click the Network Activate link to activate it for all your sub-sites. If you only want to use the plugin on some of your sub-sites, skip the network activation, and you’ll be able to activate the plugin on individual sub-sites as desired.
 
-Next you’ll add whichever premium plugin(s) you’ve purchased. For this example, we’ll use Events Calendar PRO. [Download the plugin .zip file](https://docs.nexcess.com/software/the-events-calendar/downloading-and-installing-the-plugin/#download-premium) from [your account’s downloads page](https://theeventscalendar.com/my-account/downloads/). Upload the plugin file via your network plugins page. Again, you can choose between the Network Activate option and manually activating the plugin on individual sub-sites.
+Next you’ll add whichever premium plugin(s) you’ve purchased. For this example, we’ll use Events Calendar PRO. [Download the plugin .zip file](https://docs.nexcess.com/software/the-events-calendar/downloading-and-installing-the-plugin/#download-premium) from [your account’s downloads page](https://software.liquidweb.com/login/). Upload the plugin file via your network plugins page. Again, you can choose between the Network Activate option and manually activating the plugin on individual sub-sites.
 
 ---
 

@@ -102,7 +102,7 @@ If you are just getting started or having issues with PayPal, here are a few com
 [SITE_URL]/wp-cron.php
 ```
 - In some cases, if the Paypal confirmation is not received, the attendees don’t get generated. In this case, go to the WooCommerce Order edit page and click **Regenerate Attendees** in the [Order actions dropdown](https://docs.nexcess.com/wp-content/uploads/2026/06/woocommerce-order-actions-regenerate-attendees.jpg).
-- Check for other [Common Ticket Stock Issues](https://docs.nexcess.com/software/the-events-calendar/ticket-addons/).
+- Check for other [Common Ticket Stock Issues](#h-ticket-stock-issues-with-cart-abandonment).
 - If you’re still seeing the *Checkout Unavailable!* message on your checkout page after connecting your PayPal account, we recommend disconnecting it and then reconnecting using a private window or a different browser. Since PayPal stores account information in your browser, this process helps ensure you’re starting fresh and confirming the connection properly.
 
 ## Issues with Apple Pay Purchases
@@ -236,7 +236,7 @@ To be sure that these are working correctly, you will have to enable them on you
 
 Once the above steps are done, head over to your **WordPress dashboard > Tickets > Settings > Payments (tab)** and click on **Edit Stripe Connection**. Then, scroll down to the Checkout (section) and ensure that the payment method you enabled in Stripe is also enabled in the **Payment methods accepted** selection.
 
-💡 Additional payment methods are made available with Event Tickets Plus (see [Implementing Stripe on Event Tickets and Event Tickets Plus](https://docs.nexcess.com/software/the-events-calendar/customize-event-tickets/)).
+💡 Additional payment methods are made available with Event Tickets Plus (see [Implementing Stripe on Event Tickets and Event Tickets Plus](https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/#h-connecting-to-stripe)).
 
 ### Stripe Payment Wallets Not Showing Up
 

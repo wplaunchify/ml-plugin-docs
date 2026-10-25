@@ -2,8 +2,8 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-10-18T06:34:43.717Z",
-  "total_pages": 320,
+  "last_scraped": "2026-10-25T06:35:47.399Z",
+  "total_pages": 309,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -68,19 +68,6 @@
         {
           "title": "Using Advanced Custom Fields with The Events Calendar",
           "url": "https://docs.nexcess.com/software/the-events-calendar/advanced-custom-fields/"
-        }
-      ]
-    },
-    {
-      "title": "All About The Events Calendar 6 0",
-      "slug": "all-about-the-events-calendar-6-0",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/all-about-the-events-calendar-6-0/",
-      "file": "categories/all-about-the-events-calendar-6-0.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "All About The Events Calendar 6.0",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/all-about-the-events-calendar-6-0/"
         }
       ]
     },
@@ -627,19 +614,6 @@
         {
           "title": "Testing Updates in a Staging Environment",
           "url": "https://docs.nexcess.com/software/the-events-calendar/creating-and-using-a-wordpress-staging-site/"
-        }
-      ]
-    },
-    {
-      "title": "Creating Site Backups",
-      "slug": "creating-site-backups",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/creating-site-backups/",
-      "file": "categories/creating-site-backups.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Creating Site Backups",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/creating-site-backups/"
         }
       ]
     },
@@ -1333,19 +1307,6 @@
       ]
     },
     {
-      "title": "Downloading And Installing The Plugin",
-      "slug": "downloading-and-installing-the-plugin",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/downloading-and-installing-the-plugin/",
-      "file": "categories/downloading-and-installing-the-plugin.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Installing a WordPress Plugin",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/downloading-and-installing-the-plugin/"
-        }
-      ]
-    },
-    {
       "title": "Duplicate Events",
       "slug": "duplicate-events",
       "url": "https://docs.nexcess.com/software/the-events-calendar/duplicate-events/",
@@ -1359,6 +1320,19 @@
       ]
     },
     {
+      "title": "Elementor Compability",
+      "slug": "elementor-compability",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-compability/",
+      "file": "categories/elementor-compability.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "Elementor Compatibility Handbook",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-compability/"
+        }
+      ]
+    },
+    {
       "title": "Elementor Compatibility Handbook",
       "slug": "elementor-compatibility-handbook",
       "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-compatibility-handbook/",
@@ -1368,19 +1342,6 @@
         {
           "title": "Elementor Compatibility Handbook",
           "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-compatibility-handbook/"
-        }
-      ]
-    },
-    {
-      "title": "Elementor Csv Import",
-      "slug": "elementor-csv-import",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-csv-import/",
-      "file": "categories/elementor-csv-import.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Elementor Compatibility Handbook",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/elementor-csv-import/"
         }
       ]
     },
@@ -2113,19 +2074,6 @@
       ]
     },
     {
-      "title": "Getting Started With Wordpress",
-      "slug": "getting-started-with-wordpress",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-wordpress/",
-      "file": "categories/getting-started-with-wordpress.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Getting Started with WordPress",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/getting-started-with-wordpress/"
-        }
-      ]
-    },
-    {
       "title": "Givewp Events",
       "slug": "givewp-events",
       "url": "https://docs.nexcess.com/software/the-events-calendar/givewp-events/",
@@ -2191,19 +2139,6 @@
       ]
     },
     {
-      "title": "How To Block A Wordpress User",
-      "slug": "how-to-block-a-wordpress-user",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-block-a-wordpress-user/",
-      "file": "categories/how-to-block-a-wordpress-user.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Block a WordPress User",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-block-a-wordpress-user/"
-        }
-      ]
-    },
-    {
       "title": "How To Clear Your Site And Browser Cache Properly",
       "slug": "how-to-clear-your-site-and-browser-cache-properly",
       "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-clear-your-site-and-browser-cache-properly/",
@@ -2213,19 +2148,6 @@
         {
           "title": "How to Clear Your Site and Browser Cache Properly",
           "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-clear-your-site-and-browser-cache-properly/"
-        }
-      ]
-    },
-    {
-      "title": "How To Create A Child Theme And Why",
-      "slug": "how-to-create-a-child-theme-and-why",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-create-a-child-theme-and-why/",
-      "file": "categories/how-to-create-a-child-theme-and-why.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How To Create a Child Theme (and Why)",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-create-a-child-theme-and-why/"
         }
       ]
     },
@@ -2451,19 +2373,6 @@
       ]
     },
     {
-      "title": "Key Validation Server Is Not Available",
-      "slug": "key-validation-server-is-not-available",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/key-validation-server-is-not-available/",
-      "file": "categories/key-validation-server-is-not-available.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Solved: Key Validation Server is not Available",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/key-validation-server-is-not-available/"
-        }
-      ]
-    },
-    {
       "title": "Learndash Integration",
       "slug": "learndash-integration",
       "url": "https://docs.nexcess.com/software/the-events-calendar/learndash-integration/",
@@ -2512,19 +2421,6 @@
         {
           "title": "Using Loco Translate with The Events Calendar",
           "url": "https://docs.nexcess.com/software/the-events-calendar/loco-translate/"
-        }
-      ]
-    },
-    {
-      "title": "Manual Updates",
-      "slug": "manual-updates",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/manual-updates/",
-      "file": "categories/manual-updates.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Manual Plugin Updates",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/manual-updates/"
         }
       ]
     },
@@ -2984,19 +2880,6 @@
       ]
     },
     {
-      "title": "Rsvp Migration",
-      "slug": "rsvp-migration",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/rsvp-migration/",
-      "file": "categories/rsvp-migration.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "RSVP Migration",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/rsvp-migration/"
-        }
-      ]
-    },
-    {
       "title": "Schedule Shortcodes",
       "slug": "schedule-shortcodes",
       "url": "https://docs.nexcess.com/software/the-events-calendar/schedule-shortcodes/",
@@ -3240,19 +3123,6 @@
         {
           "title": "Sales Tax and Marketplace Facilitator Laws for Community Events",
           "url": "https://docs.nexcess.com/software/the-events-calendar/tax-laws/"
-        }
-      ]
-    },
-    {
-      "title": "Tec Core",
-      "slug": "tec-core",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/tec-core/",
-      "file": "categories/tec-core.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Do You Provide Discounts if I Purchase Multiple Products?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/tec-core/bundle-discounts-legacy/"
         }
       ]
     },
@@ -3604,19 +3474,6 @@
         {
           "title": "Troubleshooting Eventbrite Tickets",
           "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-eventbrite/"
-        }
-      ]
-    },
-    {
-      "title": "Troubleshoot Google Maps",
-      "slug": "troubleshoot-google-maps",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-google-maps/",
-      "file": "categories/troubleshoot-google-maps.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Troubleshooting Google Maps",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshoot-google-maps/"
         }
       ]
     },

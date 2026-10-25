@@ -16,7 +16,7 @@ The [tribe_event_inline] shortcode provides this extra functionality and more—
 
 ## The Single Event Shortcode
 
-To use the [tribe_event_inline] shortcode, you need The Events Calendar *and* Events Calendar Pro on your site, with both plugins at version 4.4 or higher.
+To use the [tribe_event_inline] shortcode, you need The Events Calendar *and* Events Calendar Pro on your site.
 
 Once you’re ready to use the shortcode, there are two main things to keep in mind:
 
@@ -75,15 +75,10 @@ Let’s say you wanted to add the event’s thumbnail image, too—and other det
 
 ```
 [tribe_event_inline id="167"]
-
 {thumbnail}
-
 {title:linked}
-
 Time: {start_date} @ {start_time} – {end_date} @ {end_time}
-
 {excerpt}
-
 [/tribe_event_inline]
 ```
 
@@ -95,13 +90,9 @@ Time: {start_date} @ {start_time} – {end_date} @ {end_time}
 
 ```
 [tribe_event_inline id="167"]
-
 <h2>{title:linked}</h2>
-
 <p>Time: {start_date} @ {start_time} – {end_date} @ {end_time}</p>
-
 <p>{excerpt}</p>
-
 [/tribe_event_inline]
 ```
 

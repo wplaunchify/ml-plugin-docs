@@ -112,7 +112,7 @@ This guide will walk you through how to change some of the elements available in
 
 ![Stripe's compact card checkout element without any modification.](https://docs.nexcess.com/wp-content/uploads/2026/06/CleanShot-2024-10-02-at-12.58.54@2x-1024x279-1.jpg)
 
-This is Stripe’s compact card element without any modifications. This will show when checking out a ticket if the settings at **Tickets > Settings > Payments > Stripe > Checkout Settings**are configured to only accept credit cards with the streamlined checkout option:
+This is Stripe’s compact card element without any modifications. This will show when checking out a ticket if, at **Tickets > Settings > Payments > Stripe > Checkout**, “Checkout Type” is set to “Accept only credit card payments” and “Credit Card field format” is set to “Single field. For streamlined checkout.”:
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/CleanShot-2024-10-02-at-13.10.08@2x-1024x373-1.jpg)
 
@@ -123,13 +123,13 @@ This is Stripe’s compact card element without any modifications. This will sho
 If your site uses a dark background, using a lighter font color is helpful for readability. This snippet will change the font color and the placeholder font color to white, but you can adjust the color as needed by changing the [hex code](https://www.w3schools.com/colors/colors_picker.asp).
 
 ```
-function tec_tickets_custom_stripe_checkout_localized_data( $data ) {
+function tec_stripe_checkout_font_color( $data ) {
 	$data['cardElementStyle']['base']['color'] = '#ffffff'; // Change text color to white
 	$data['cardElementStyle']['base']['::placeholder']['color'] = '#ffffff'; // Change placeholder color to white
 	return $data;
 }
 
-add_filter( 'tec_tickets_commerce_stripe_checkout_localized_data', 'tec_tickets_custom_stripe_checkout_localized_data' );
+add_filter( 'tec_tickets_commerce_stripe_checkout_localized_data', 'tec_stripe_checkout_font_color' );
 ```
 
 #### Disable ‘Autofill link’
@@ -139,12 +139,12 @@ add_filter( 'tec_tickets_commerce_stripe_checkout_localized_data', 'tec_tickets_
 This snippet will disable and hide the ‘Autofill link’ option that by default is set to appear on the right-hand side of the input element:
 
 ```
-function tec_tickets_custom_stripe_checkout_localized_data( $data ) {
+function tec_stripe_checkout_disable_link( $data ) {
 	$data['cardElementOptions']['disableLink'] = true; // Disable Autofill Link
 	return $data;
 }
 
-add_filter( 'tec_tickets_commerce_stripe_checkout_localized_data', 'tec_tickets_custom_stripe_checkout_localized_data' );
+add_filter( 'tec_tickets_commerce_stripe_checkout_localized_data', 'tec_stripe_checkout_disable_link' );
 ```
 
 #### Remove Postal Code
@@ -160,12 +160,12 @@ After snippet:
 Removing the postal code is necessary if you are in a country that does not have numerical postal codes, such as Ireland. This snippet will remove and hide that field:
 
 ```
-function tec_tickets_custom_stripe_checkout_localized_data( $data ) {
+function tec_stripe_checkout_hide_postal_code( $data ) {
 	$data['cardElementOptions']['hidePostalCode'] = true; // Hide Postal Code.
 	return $data;
 }
 
-add_filter( 'tec_tickets_commerce_stripe_checkout_localized_data', 'tec_tickets_custom_stripe_checkout_localized_data' );
+add_filter( 'tec_tickets_commerce_stripe_checkout_localized_data', 'tec_stripe_checkout_hide_postal_code' );
 ```
 
 #### There is more…
@@ -222,6 +222,9 @@ You may notice in the snippets above that the first example changes
 		'base' => [
 			'color' => '#23282d',
 		],
+		'invalid' => [
+			'color' => '#c00000',
+		],
 	],
 	'cardElementOptions' => [
 		/**
@@ -243,24 +246,22 @@ If your currency is not included, you can register it with a simple code snippet
 Place the following code in your child theme’s **functions.php** file or via [Code Snippets](https://wordpress.org/plugins/code-snippets/) plugin:
 
 ```
-add_filter( 'tec_tickets_commerce_currency_code_options', function( $options ) {
-	$options['KWD'] = 'Kuwaiti Dinar (KWD)';
-	ksort( $options );
-	return $options;
-} );
-
-add_filter( 'tribe_tickets_commerce_currency_code_options_map', function ( $map ) {
-	$map['KWD'] = array(
-		'name'          => __( 'Kuwaiti Dinar (KWD)', 'event-tickets' ),
-		// Arabic symbol "د.ك". Use HTML entities to match TEC's style.
-		'symbol'        => '&#x62F;.&#x643;',
-		'decimal_point' => '.',   // KWD typically uses 3 decimals.
-		'thousands_sep' => ',',
-	);
+add_filter( 'tec_tickets_commerce_default_currency_map', function ( $map ) {
+	$map['KWD'] = [
+		'name'              => __( 'Kuwaiti Dinar (KWD)', 'event-tickets' ),
+		'symbol'            => '&#x62F;.&#x643;',
+		'decimal_point'     => '.',
+		'thousands_sep'     => ',',
+		'decimal_precision' => 3,
+	];
 
 	ksort( $map );
 
 	return $map;
+} );
+
+add_filter( 'tec_tickets_commerce_currency_KWD_precision', function () {
+	return 3;
 } );
 ```
 
@@ -271,33 +272,38 @@ The snippet above will add **KWD** as a currency option in WP Admin Dashboard �
 #### Notes
 
 - ```
-tec_tickets_commerce_currency_code_options
+tec_tickets_commerce_default_currency_map
 ```
 
-Adds your new currency option to the dropdown list in Tickets Commerce settings.
-- ```
-tribe_tickets_commerce_currency_code_options_map
-```
-
-Defines how your custom currency is displayed and formatted.
+Adds your new currency to the dropdown list in Tickets Commerce settings and defines how it is displayed and formatted.
 - **Symbol:** The Arabic Dinar symbol 
 ```
 د.ك
 ```
 
- is added as an HTML entity so it renders correctly in the frontend.
-- **Decimal Precision:** The Kuwaiti Dinar often uses **3 decimal places**. You can adjust this in the 
+ is added as HTML entities so it renders correctly on the frontend.
+- **Separators:** 
 ```
 decimal_point
 ```
 
- and formatting logic if needed.
+ and 
+```
+thousands_sep
+```
+
+ set the characters used in prices.
 - **Sorting:** 
 ```
 ksort()
 ```
 
- is used to keep the currency list in alphabetical order after your custom currency is added.
+ keeps the currency list in alphabetical order after your custom currency is added.
+- ```
+tec_tickets_commerce_currency_KWD_precision
+```
+
+Sets the number of decimal places. The Kuwaiti Dinar uses 3 decimals. Replace KWD in the filter name with the code of your own currency.
 - You can replace 
 ```
 "KWD"
@@ -442,6 +448,10 @@ ksort()
 - Yemeni rial (YER)
 - South African Rand (ZAR)
 - Zambian kwacha (ZMW)
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

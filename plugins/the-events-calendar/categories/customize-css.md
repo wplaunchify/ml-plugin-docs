@@ -205,8 +205,6 @@ To find the correct asset name, find where the file is located in the site heade
 Simply alter the following snippet with your correct Javascript file and add it to your theme’s functions.php file.
 
 ```
-<?php
-
 // Remove an asset that was registered with Tribe Assets.
 // The asset name can be found by finding where the file is loaded 
 // in the site head. The value to use will be the ID of the style 
@@ -371,9 +369,9 @@ tribe_events_views_v2_view_breakpoints
  filter. You don’t need to include all breakpoints — only the ones you want to change. This affects all calendar views:
 
 ```
-add_filter( 'tribe_events_views_v2_view_breakpoints', 'customize_tribe_events_breakpoints', 10, 2 );
+add_filter( 'tribe_events_views_v2_view_breakpoints', 'tec_customize_view_breakpoints', 10, 2 );
 
-function customize_tribe_events_breakpoints( $breakpoints, $view ) {
+function tec_customize_view_breakpoints( $breakpoints, $view ) {
     $breakpoints['xsmall'] = 500;
     $breakpoints['medium'] = 768;
     $breakpoints['full']   = 960;
@@ -385,7 +383,13 @@ function customize_tribe_events_breakpoints( $breakpoints, $view ) {
 To modify breakpoints on only one view, use the view-specific filter instead. For example, to target List View only:
 
 ```
-add_filter( 'tribe_events_views_v2_view_list_breakpoints', 'customize_tribe_events_breakpoints', 10, 2 );
+add_filter( 'tribe_events_views_v2_view_list_breakpoints', 'tec_customize_list_view_breakpoints', 10, 2 );
+
+function tec_customize_list_view_breakpoints( $breakpoints, $view ) {
+    $breakpoints['medium'] = 768;
+
+    return $breakpoints;
+}
 ```
 
 Replace 
@@ -430,9 +434,9 @@ summary
 You can define entirely new breakpoints using the same filter. The following adds an extra-large breakpoint at 1024px:
 
 ```
-add_filter( 'tribe_events_views_v2_view_breakpoints', 'customize_tribe_events_breakpoints', 10, 2 );
+add_filter( 'tribe_events_views_v2_view_breakpoints', 'tec_add_extra_large_breakpoint', 10, 2 );
 
-function customize_tribe_events_breakpoints( $breakpoints, $view ) {
+function tec_add_extra_large_breakpoint( $breakpoints, $view ) {
     $breakpoints['extra_large'] = 1024;
 
     return $breakpoints;
@@ -508,6 +512,10 @@ These can be combined with other selectors to target elements within a specific 
     background-color: #ff2052;
 }
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

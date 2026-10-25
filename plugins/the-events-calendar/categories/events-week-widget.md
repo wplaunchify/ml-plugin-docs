@@ -26,14 +26,14 @@ There are a few options that allow you to customize things a bit. These are the 
 
 - **Title:** This is the heading that sits above the widget on the front end of the site. By default, it is blank, but it can be changed to anything you like.
 - **Layout:** This option enables a vertical or horizontal layout of the events. Choose the one that works best for the widget area.
-- **Number of Events to Show:**This allows you to set the maximum number of events that show per day. By default, this is set to five, but can be any number between one and ten.
+- **Number of Events to Show:**This allows you to set the maximum number of events that show per day. By default, this is set to three, but can be any number between one and ten.
 - **Add a filter:** This option allows you to limit the events that display in the widget to certain categories and tags. Let’s say you only want events categorized as Conference to display in the widget. Perfect, add a filter! How about Conferences and Workshops? Add two filters!
 
 ## Widget Display Notes
 
 In the Events By Week widget you can expect the following:
 
-- Recurring Events will show
+- Recurring events show the occurrences that fall within the week.
 - Events checked “Sticky in Month View” will show first
 - **Condense events in Series** and **Front-end Condense Events Series toggle** will *not* hide events in This Week Events widget. Instead, use tags and categories to show only the events you would like
 
@@ -52,10 +52,10 @@ The shortcode has many different options for you to change the output and you ca
 **Start Date:** This is used to set the week of events to show. This will find the start of the week based on your WordPress setting and use that for the first day of the week. For example if your setting is to start the week on Monday and you put the date of Wednesday the 6th it will start with Monday the 4th.
 
 ```
-[tribe_this_week start_date="12-07-2015"]
+[tribe_this_week start_date="2026-05-06"]
 ```
 
-Use the date format in your settings here: *Events > Settings > Display Tab > “Date with year”*
+Use the format YYYY-MM-DD (year, month, day), for example 2026-05-06. The widget shows the week that contains that date.
 
 **Week Offset:** Use this to show a week in the future. For example if you want to always show next weeks events add a 1 and it will show the This Week Widget starting with the next start of the week.
 
@@ -63,7 +63,7 @@ Use the date format in your settings here: *Events > Settings > Display Tab > �
 [tribe_this_week week_offset="1"]
 ```
 
-*Note the offset only accepts positive numbers.*
+*Use a negative number to show a past week. For example, week_offset="-1" shows last week.*
 
 **Hide Weekends:** set this to 1 and it will hide Saturdays and Sundays.
 
@@ -95,10 +95,10 @@ In the above examples, you are using the category/tag slugs, but you can also us
 
 As the final example shows, numeric IDs and category/tag slugs can freely be mixed together.
 
-**Operand:**You use this option to change between to using “and” or to use “or” for the filters. The default is “or” so if you have two event categories it will find all events with either of those. If you change to “and” it will return events that have both of those event categories.
+**Tax-operand:**You use this option to change between using “and” or “or” for the category and tag filters. The default is “or”, so if you list two event categories it will find all events with either of those. If you change to “and” it will return only events that have both of those event categories.
 
 ```
-[tribe_this_week operand="and"]
+[tribe_this_week tax-operand="and"]
 ```
 
 **Layout:**Set the layout of the shortcode to horizontal or vertical, the default is vertical for the shortcode.

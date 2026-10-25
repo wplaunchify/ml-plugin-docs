@@ -30,7 +30,7 @@ Choose who will receive this message. The dropdown lets you select one or more a
 
 - The attendee lists for this event (people who purchased a ticket or registered for the event)
 - The attendee lists of other events
-- Your [custom lists](https://docs.nexcess.com/software/the-events-calendar/customize-attendee-list/)
+- Your [custom lists](https://docs.nexcess.com/software/the-events-calendar/attendee-lists/)
 
 ![The audience selector in the Promoter message editor](https://docs.nexcess.com/wp-content/uploads/2026/06/audience.png)
 
@@ -50,7 +50,7 @@ Enter the subject line and body of the email. You can style the message, create 
 
 #### Merge Tags
 
-Use merge tags to insert dynamic content — such as the attendee’s name or the event title — directly into your message. See the [Merge Tags guide](https://docs.nexcess.com/software/the-events-calendar/event-categories-tags/) for the full list of available tags.
+Use merge tags to insert dynamic content — such as the attendee’s name or the event title — directly into your message. See the [Merge Tags guide](#h-merge-tags-0) for the full list of available tags.
 
 ![The merge tags panel in the Promoter message editor](https://docs.nexcess.com/wp-content/uploads/2026/06/image-35.png)
 
@@ -282,7 +282,7 @@ This guide outlines a straightforward method for testing Promoter emails, allowi
 
 Before sending the official email to your attendees, it’s advisable to conduct a test with an “unofficial” version of your email. This process involves the following steps:
 
-1. **Create a Custom List in Promoter:** Start by creating a [Promoter custom list](https://docs.nexcess.com/software/the-events-calendar/customize-attendee-list/). Add only the recipients you wish to test the email with, ensuring this list is exclusively used for testing purposes.
+1. **Create a Custom List in Promoter:** Start by creating a [Promoter custom list](https://docs.nexcess.com/software/the-events-calendar/attendee-lists/). Add only the recipients you wish to test the email with, ensuring this list is exclusively used for testing purposes.
 2. **Duplicate the Scheduled Message:** Identify the [scheduled message](https://docs.nexcess.com/software/the-events-calendar/promoter-messages/) you intend to test. Duplicate this message and select your newly created custom list as the sole recipient. It is crucial to ensure that this message is only sent to the custom list to prevent accidental dispatch to your entire attendee list.
 3. **Incorporate Test Links:** To effectively test the “Clicks” tracking functionality, include test links within your email. This step is vital to ensure all links within your email are functioning correctly and tracking engagement as intended.
 4. **Send the Test Email:** Once you have completed the setup, click the “Send Now” button. Await the arrival of the email in your designated mailbox to proceed with the evaluation.

@@ -25,9 +25,9 @@ This snippet will return 100 events in the export. Adjust that number to suit yo
 By default, the name for this ICS file is constructed as a combination of your site’s name plus a random string of numbers and letters–unique, but perhaps not particularly descriptive for your users. If you’d prefer to change the default file name for your ICS exports to something more memorable, this snippet will let you do just that. Simply add these lines to your theme’s **functions.php** file:
 
 ```
-[php]add_filter( &amp;#039;tribe_events_ical_feed_filename&amp;#039;, function() {
- return &amp;#039;my-custom-ical-filename.ics&amp;#039;;
- } );[/php]
+add_filter( 'tribe_events_ical_feed_filename', function() {
+ return 'my-custom-ical-filename.ics';
+ } );
 ```
 
 This will set the new default file name for your exports to **my-custom-ical-filename.ics**. If you’d like to use a name that’s unique to your site, just change this text in the snippet (but make sure the **.ics** extension remains intact).
@@ -43,8 +43,6 @@ The calendar name refers to the name you see in your calendar application, such 
 Adding the following PHP snippet to your site will change the calendar name added to the iCal export
 
 ```
-<?php //Do not copy this line
-
 add_filter( 'tribe_ical_feed_calname', function ( $name ) { 
   return 'My Awesome Calendar'; 
 } );
@@ -55,8 +53,6 @@ add_filter( 'tribe_ical_feed_calname', function ( $name ) {
 Similar to the prior snippet, the following will let you change the name of the calendar subscribers see when subscribing to the calendar through Outlook
 
 ```
-<?php //Do not copy this line
-
 add_filter( 'tec_events_ical_outlook_subscribe_url', function ( $url, $base_url, $feed_url, $params ) {
 	$params['name'] = "My Awesome Calendar";
 
@@ -83,13 +79,11 @@ add_filter( 'tec_events_ical_outlook_single_event_import_url', function ( $url, 
     $params['body'] = '';
     return add_query_arg( $params, $base_url );
 }, 10, 3 );
-
 // Remove description from Google Calendar export
 add_filter( 'tec_views_v2_single_event_gcal_link_parameters', function ( $pieces, $event ) {
     $pieces['details'] = '';
     return $pieces;
 }, 10, 2 );
-
 // Remove description from iCal / ICS exports
 add_filter( 'tribe_ical_feed_item', function ( $item, $event ) {
     $item['DESCRIPTION'] = 'DESCRIPTION:';
@@ -154,6 +148,10 @@ https://
 ```
 
 .
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

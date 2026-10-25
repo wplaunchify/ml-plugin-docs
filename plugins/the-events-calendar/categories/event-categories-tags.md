@@ -190,7 +190,7 @@ Before using either snippet, make sure your categories have descriptions. Go to 
 
 #### Option 1: Display Before the Events Bar (Most Views)
 
-This snippet injects the description above the events search/filter bar. It works with List, Summary, Map, Photo, Day, and Week views. Due to how Month View’s layout is handled, this snippet does not extend to Month View without further customization.
+This snippet injects the description above the events search/filter bar. It works with all calendar views, including Month View, and the description stays in place when visitors change months or views without reloading the page.
 
 Add the following to your child theme’s 
 ```
@@ -201,14 +201,35 @@ functions.php
 
 ```
 add_action(
-    'tribe_template_before_include:events/v2/components/events-bar',
-    function ( $file, $name, $template ) {
-        if ( is_tax( 'tribe_events_cat' ) ) {
-            echo '' . category_description() . '';
-        }
-    },
-    10,
-    3
+	'tribe_template_before_include:events/v2/components/events-bar',
+	function ( $file, $name, $template ) {
+		// The category being viewed, read from the calendar view itself so it also works in Month View and when the calendar refreshes without reloading the page.
+		$view = $template->get( 'view' );
+
+		if ( ! $view ) {
+			return;
+		}
+
+		$category_slug = $view->get_context()->get( 'event_category' );
+
+		if ( ! is_string( $category_slug ) || '' === $category_slug ) {
+			return;
+		}
+
+		$term = get_term_by( 'slug', $category_slug, 'tribe_events_cat' );
+
+		if ( ! $term || is_wp_error( $term ) ) {
+			return;
+		}
+
+		$description = term_description( $term, 'tribe_events_cat' );
+
+		if ( $description ) {
+			echo '<div class="events-category-des">' . wp_kses_post( $description ) . '</div>';
+		}
+	},
+	10,
+	3
 );
 ```
 
@@ -224,9 +245,9 @@ To style the description, add the following to your child theme’s stylesheet o
 
 ![Event category archive page showing a category description displayed above the events bar](https://docs.nexcess.com/wp-content/uploads/2026/06/category-desc.jpeg)
 
-#### Option 2: Display Below the Page Title (All Views Including Month)
+#### Option 2: Display Below the Page Title (All Views Except Week View)
 
-This snippet injects the description below the archive page’s H1 title, just above the calendar content. It works with all views including Month View, and uses more precise conditional checks to ensure it only fires on category archive pages.
+This snippet injects the description below the archive page’s H1 title, just above the calendar content. It works with List, Month, Day, Photo, Map and Summary views, and the description stays in place when visitors change months or views without reloading the page. Week View has no page title, so use Option 1 there.
 
 Add the following to your child theme’s 
 ```
@@ -236,17 +257,37 @@ functions.php
  file or via the Code Snippets plugin:
 
 ```
-add_action( 'tribe_template_after_include:events/v2/components/header-title', function() {
-    if ( is_tax( 'tribe_events_cat' ) ) {
-        $term = get_queried_object();
-        if ( $term && ! is_wp_error( $term ) ) {
-            $description = term_description( $term, 'tribe_events_cat' );
-            if ( $description ) {
-                echo '' . wp_kses_post( $description ) . '';
-            }
-        }
-    }
-} );
+add_action(
+	'tribe_template_after_include:events/v2/components/header-title',
+	function ( $file, $name, $template ) {
+		// The category being viewed, read from the calendar view itself so it also works in Month View and when the calendar refreshes without reloading the page.
+		$view = $template->get( 'view' );
+
+		if ( ! $view ) {
+			return;
+		}
+
+		$category_slug = $view->get_context()->get( 'event_category' );
+
+		if ( ! is_string( $category_slug ) || '' === $category_slug ) {
+			return;
+		}
+
+		$term = get_term_by( 'slug', $category_slug, 'tribe_events_cat' );
+
+		if ( ! $term || is_wp_error( $term ) ) {
+			return;
+		}
+
+		$description = term_description( $term, 'tribe_events_cat' );
+
+		if ( $description ) {
+			echo '<div class="custom-event-category-description">' . wp_kses_post( $description ) . '</div>';
+		}
+	},
+	10,
+	3
+);
 ```
 
 To add spacing below the description so it sits comfortably above the calendar, add the following CSS:
@@ -299,28 +340,33 @@ to your child theme at:
 
 Step 2: Add the Image Code
 
-Open the copied file and locate this line near the top:
+Open the copied file and locate this line:
 
 ```
-<?php $header_title_element = $header_title_element ?? 'h1'; ?>
+<div class="tribe-events-header__title">
 ```
 
-Immediately after that line, add the following, replacing 
+Immediately before that line, add the following, replacing 
 ```
-'Category Name'
+category-slug
 ```
 
- with your category’s name and 
+ with your category’s slug (the last part of its archive URL, for example concert in /events/category/concert/) and 
 ```
-'IMAGE URL HERE'
+IMAGE URL HERE
 ```
 
  with the URL of your image:
 
 ```
-<?php if ( is_tax( 'tribe_events_cat', 'Category Name' ) ) {
-    echo "<img src='IMAGE URL HERE'>";
-} ?>
+<?php
+$view          = $this->get( 'view' );
+$category_slug = $view ? $view->get_context()->get( 'event_category' ) : '';
+
+if ( 'category-slug' === $category_slug ) {
+	echo '<img src="IMAGE URL HERE" alt="">';
+}
+?>
 ```
 
 ![The header-title.php template override with the image conditional added after the header_title_element line](https://docs.nexcess.com/wp-content/uploads/2026/06/Image-2024-12-15-at-2.44.03-PM.jpg)
@@ -334,17 +380,24 @@ elseif
 
 ```
 <?php
-if ( is_tax( 'tribe_events_cat', 'Category One' ) ) {
-    echo "<img src='Image URL 1'>";
-} elseif ( is_tax( 'tribe_events_cat', 'Category Two' ) ) {
-    echo "<img src='Image URL 2'>";
+$view          = $this->get( 'view' );
+$category_slug = $view ? $view->get_context()->get( 'event_category' ) : '';
+
+if ( 'category-one' === $category_slug ) {
+	echo '<img src="Image URL 1" alt="">';
+} elseif ( 'category-two' === $category_slug ) {
+	echo '<img src="Image URL 2" alt="">';
 }
 ?>
 ```
 
 ![Category archive page showing a custom header image above the calendar](https://docs.nexcess.com/wp-content/uploads/2026/06/Image-2024-12-15-at-2.48.10-PM.jpg)
 
-This approach places the image at the very top of the header area, above the category title. You can adjust its position within the template file to suit your layout.
+This approach places the image at the very top of the header area, above the category title. You can adjust its position within the template file to suit your layout. The image does not appear in Week View, which has no page title.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

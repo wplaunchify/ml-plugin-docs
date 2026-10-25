@@ -15,8 +15,6 @@ The Event Tickets Plus App communicates with your WordPress site through the RES
 In some scenarios, it’s important not to display attendee information on the scan result or within the Events screen of the app — for privacy reasons, for staff with limited access rights, or to comply with an internal policy. The snippet below filters the REST API responses the app receives, replacing attendee names, emails, and payment details with placeholder values before they reach the app.
 
 ```
-&lt;?php //* Do NOT include the opening php tag
-
 add_filter(
     'rest_request_after_callbacks',
     'tec_tickets_maybe_hide_attendee_information_for_app',
@@ -34,21 +32,21 @@ add_filter(
  * @return WP_REST_Response|WP_HTTP_Response|WP_Error|mixed
  */
 function tec_tickets_maybe_hide_attendee_information_for_app( $response, array $handler, WP_REST_Request $request ) {
-    if ( empty( $request-&gt;get_header( 'App-version' ) ) ) {
+    if ( empty( $request->get_header( 'App-version' ) ) ) {
         return $response;
     }
 
-    if ( '/tribe/tickets/v1/attendees' === $request-&gt;get_route() ) {
+    if ( '/tribe/tickets/v1/attendees' === $request->get_route() ) {
         // Hide the attendee information from the attendee endpoint.
         $response = tec_tickets_hide_attendee_information_attendee_endpoint( $response, $handler, $request );
     }
 
-    if ( '/tribe/tickets/v1/qr' === $request-&gt;get_route() ) {
+    if ( '/tribe/tickets/v1/qr' === $request->get_route() ) {
         // Update QR response, hiding the attendee information.
         $response = tec_tickets_hide_attendee_information_qr_endpoint( $response, $handler, $request );
     }
 
-    if ( '/tribe/events/v1/events' === $request-&gt;get_route() ) {
+    if ( '/tribe/events/v1/events' === $request->get_route() ) {
         // If you want to hide Events for the APP, or do something with this endpoint.
     }
 
@@ -59,13 +57,13 @@ function tec_tickets_maybe_hide_attendee_information_for_app( $response, array $
  * Hide the attendee information from the attendees endpoint.
  */
 function tec_tickets_hide_attendee_information_attendee_endpoint( $response, array $handler, WP_REST_Request $request ) {
-    if ( empty( $response-&gt;data['attendees'] ) ) {
+    if ( empty( $response->data['attendees'] ) ) {
         return $response;
     }
 
-    foreach ( $response-&gt;data['attendees'] as &amp;$attendee ) {
+    foreach ( $response->data['attendees'] as &$attendee ) {
         $attendee['title']               = 'Hidden Name';
-        $attendee['email']               = '[email protected]';
+        $attendee['email']               = 'Hidden Email';
         $attendee['payment']['currency'] = '';
         $attendee['payment']['date']     = '';
         $attendee['payment']['price']    = 'Unavailable';
@@ -80,17 +78,17 @@ function tec_tickets_hide_attendee_information_attendee_endpoint( $response, arr
  * Hide the attendee information from the QR endpoint.
  */
 function tec_tickets_hide_attendee_information_qr_endpoint( $response, array $handler, WP_REST_Request $request ) {
-    if ( empty( $response-&gt;data['attendee'] ) ) {
+    if ( empty( $response->data['attendee'] ) ) {
         return $response;
     }
 
-    $response-&gt;data['attendee']['title']               = 'Hidden Name';
-    $response-&gt;data['attendee']['email']               = '[email protected]';
-    $response-&gt;data['attendee']['payment']['currency'] = '';
-    $response-&gt;data['attendee']['payment']['date']     = '';
-    $response-&gt;data['attendee']['payment']['price']    = 'Unavailable';
-    $response-&gt;data['attendee']['information']         = [];
-    $response-&gt;data['attendee']['information']['Information'] = 'The attendee information is private. For more information please contact the site administrator.';
+    $response->data['attendee']['title']               = 'Hidden Name';
+    $response->data['attendee']['email']               = 'Hidden Email';
+    $response->data['attendee']['payment']['currency'] = '';
+    $response->data['attendee']['payment']['date']     = '';
+    $response->data['attendee']['payment']['price']    = 'Unavailable';
+    $response->data['attendee']['information']         = [];
+    $response->data['attendee']['information']['Information'] = 'The attendee information is private. For more information please contact the site administrator.';
 
     return $response;
 }
@@ -107,7 +105,7 @@ The snippet below adds a **QR Data** column to your event’s [Attendees List](h
 ```
 add_filter( 'tribe_events_tickets_attendees_csv_export_columns', function( $columns ) {
     $columns_to_add = [
-        'qr_data' =&gt; 'QR Data',
+        'qr_data' => 'QR Data',
     ];
     $columns = array_merge( $columns, $columns_to_add );
     return $columns;
@@ -115,10 +113,10 @@ add_filter( 'tribe_events_tickets_attendees_csv_export_columns', function( $colu
 
 add_filter( 'tribe_events_tickets_attendees_table_column', function ( $value, $item, $column ) {
     if ( $column == 'qr_data' ) {
-        $path = '?event_qr_code=1&amp;ticket_id=' . $item['qr_ticket_id'] .
-                '&amp;event_id=' . $item['event_id'] .
-                '&amp;security_code=' . $item['security_code'] .
-                '&amp;path=' . urlencode( tribe_tickets_rest_url_prefix() . '/qr' );
+        $path = '?event_qr_code=1&ticket_id=' . $item['qr_ticket_id'] .
+                '&event_id=' . $item['event_id'] .
+                '&security_code=' . $item['security_code'] .
+                '&path=' . urlencode( tribe_tickets_rest_url_prefix() . '/qr' );
         $value = get_site_url( null, $path, 'https' );
     }
     return $value;
@@ -126,7 +124,7 @@ add_filter( 'tribe_events_tickets_attendees_table_column', function ( $value, $i
 
 add_filter( 'manage_tribe_events_page_tickets-attendees_columns', function ( $column_headers ) {
     $new_columns_to_add = [
-        'qr_data' =&gt; 'QR Data',
+        'qr_data' => 'QR Data',
     ];
 
     // Add QR Data column immediately after the ticket column.
@@ -148,8 +146,6 @@ In some cases, you may want to hide the Events list from the app entirely — fo
 The snippet below returns a 404 for the app’s Events endpoint, causing the Events screen in the app to display as empty:
 
 ```
-&lt;?php //* Do NOT include the opening php tag
-
 add_filter(
     'rest_request_after_callbacks',
     'tec_tickets_maybe_disable_events_for_app',
@@ -167,28 +163,32 @@ add_filter(
  * @return WP_REST_Response|WP_HTTP_Response|WP_Error|mixed
  */
 function tec_tickets_maybe_disable_events_for_app( $response, array $handler, WP_REST_Request $request ) {
-    if ( empty( $request-&gt;get_header( 'App-version' ) ) ) {
+    if ( empty( $request->get_header( 'App-version' ) ) ) {
         return $response;
     }
 
-    if ( '/tribe/events/v1/events' !== $request-&gt;get_route() ) {
+    if ( '/tribe/events/v1/events' !== $request->get_route() ) {
         return $response;
     }
 
     $response = new WP_REST_Response(
         [
-            'code'    =&gt; 'rest_no_route',
-            'message' =&gt; 'No route was found matching the URL and request method.',
+            'code'    => 'rest_no_route',
+            'message' => 'No route was found matching the URL and request method.',
         ]
     );
 
-    $response-&gt;set_status( 404 );
+    $response->set_status( 404 );
 
     return $response;
 }
 ```
 
 This snippet is also available [on GitHub](https://gist.github.com/juanfra/a11936a15e1da39c291cb8e92994aa9b).
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

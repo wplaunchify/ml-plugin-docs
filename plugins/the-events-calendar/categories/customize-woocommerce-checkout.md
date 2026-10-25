@@ -59,8 +59,6 @@ To address this issue, we can use a simple snippet that enhances the information
 #### The Snippets
 
 ```
-<?php //Do not copy this line
-
 add_filter( 'woocommerce_cart_item_name', function( $product_name, $cart_item ) {
     if ( function_exists( 'tribe_events_get_ticket_event' ) ) {
         $event = tribe_events_get_ticket_event( $cart_item['product_id'] );
@@ -77,8 +75,6 @@ add_filter( 'woocommerce_cart_item_name', function( $product_name, $cart_item ) 
 If using WooCommerce [Cart Block](https://woocommerce.com/document/woocommerce-store-editing/customizing-cart-and-checkout/cart-block/) instead of the legacy [Cart Shortcode](https://woocommerce.com/document/woocommerce-shortcodes/page-shortcodes/#cart), use the following snippet
 
 ```
-<?php //Do not copy this line
-
 add_filter( 'woocommerce_add_cart_item_data', function ( $cart_item_data, $product_id ) {
 	if ( function_exists( 'tribe_events_get_ticket_event' ) && function_exists( 'tribe_is_event' ) ) {
 		$event = tribe_events_get_ticket_event( $product_id );
@@ -104,18 +100,24 @@ add_filter( 'woocommerce_get_item_data', function ( $item_data, $cart_item_data 
 
 ## Move Return to Cart and Edit Event Attendee Info Links
 
-If you’d like to move the “Return to Cart” and “Edit Attendee Info” links to a different place on your WooCommerce checkout page, use the code below to get started.
+If you’d like to move the “Return to Cart” and “Edit Attendee Info” links to a different place on your WooCommerce checkout page, use the code below. It moves them to the top of the classic WooCommerce checkout, above the billing details.
 
 ![Return to cart and Edit attendee info link locations](https://docs.nexcess.com/wp-content/uploads/2026/06/add-return-to-cart-and-edit-attendee-info-links.jpg)Add the Return to Cart and Edit Attendee Info links to the WooCommerce Checkout page when reviewing your order
 
 ```
-add_action('init', 'domain_move_checkout_links', 40);
+add_action( 'init', function () {
+	if ( ! class_exists( 'Tribe__Tickets_Plus__Commerce__WooCommerce__Main' ) ) {
+		return;
+	}
 
-function domain_move_checkout_links() {
-	$TPCommerce_Object = Tribe__Tickets_Plus__Commerce__WooCommerce__Main::get_instance();
-	remove_action( 'woocommerce_checkout_before_order_review', array( $TPCommerce_Object, 'add_checkout_links' ) );
-	add_action( 'after_checkout_logged_in', array( $TPCommerce_Object, 'add_checkout_links' ) );
-}
+	$woo = Tribe__Tickets_Plus__Commerce__WooCommerce__Main::get_instance();
+
+	// Remove the links from their default spot above the order review table.
+	remove_action( 'woocommerce_checkout_order_review', [ $woo, 'add_checkout_links' ], 5 );
+
+	// Show them at the top of the checkout form instead.
+	add_action( 'woocommerce_checkout_before_customer_details', [ $woo, 'add_checkout_links' ] );
+}, 40 );
 ```
 
 ## Removing Attendee Details from the Order Details Page
@@ -135,7 +137,6 @@ function tec_test_woo_meta_data_filter( $data ) {
   // Modify anything from the $data here
   return $data;
 }
-
 add_filter( 'tribe_tickets_plus_woo_meta_data_filter','tec_test_woo_meta_data_filter' );
 ```
 
@@ -146,6 +147,10 @@ add_filter( 'tribe_tickets_plus_woo_meta_data_filter','tec_test_woo_meta_data_fi
 - [tribe_is_event](https://docs.theeventscalendar.com/reference/functions/tribe_is_event/)
 - woocommerce_add_cart_item_data
 - woocommerce_get_item_data
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

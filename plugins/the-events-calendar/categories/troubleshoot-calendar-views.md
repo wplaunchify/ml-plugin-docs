@@ -12,9 +12,7 @@
 
 If the page title has taken on the title of the first event, there are a few things you can do to fix it. Please note that the solutions below assume you have a high level of experience tinkering with WordPress code.
 
-First, try modifying the constant *TRIBE_MODIFY_GLOBAL_TITLE* as outlined in [this guide](https://docs.nexcess.com/software/the-events-calendar/constants/).
-
-If that first step did not work, find out what you are using for your Events Template in Events > Settings > Template. Make note of the setting here. If you’ve got the “Default Events Template” option selected, then add the following code to your themes functions.php file and modify as needed to set the titles you want:
+Find out what you are using for your Events Template in Events > Settings > Template. Make note of the setting here. If you’ve got the “Default Events Template” option selected, then add the following code to your themes functions.php file and modify as needed to set the titles you want:
 
 ```
 add_filter('tribe_get_events_title', 'my_get_events_title');
@@ -28,7 +26,7 @@ if( tribe_is_month() && !is_tax() ) { // The Main Calendar Page
 } elseif( tribe_is_event() && is_single() ) { // Single Events
   return get_the_title();
 } elseif( tribe_is_day() ) { // Single Event Days
-  return 'Events on: ' . date('F j, Y', strtotime($wp_query->query_vars['eventDate']));
+  return 'Events on: ' . date('F j, Y', strtotime(get_query_var( 'eventDate' )));
 } elseif( tribe_is_venue() ) { // Single Venues
   return $title;
 } else {
@@ -95,7 +93,7 @@ if( tribe_is_month() && !is_tax() ) { // The Main Calendar Page
 } elseif( tribe_is_event() && is_single() ) { // Single Events
   echo get_the_title();
 } elseif( tribe_is_day() ) { // Single Event Days
-  echo 'Events on: ' . date('F j, Y', strtotime($wp_query->query_vars['eventDate']));
+  echo 'Events on: ' . date('F j, Y', strtotime(get_query_var( 'eventDate' )));
 } elseif( tribe_is_venue() ) { // Single Venues
   echo get_the_title();
 } else {
@@ -118,7 +116,7 @@ Pay attention to any specific code your theme may be using for the title too bec
   <?php } elseif( tribe_is_event() && is_single() ) { // Single Events ?>
     <h1><?php the_title(); ?></h1>
   <?php } elseif( tribe_is_day() ) { // Single Event Days ?>
-    <h1><?php $title = 'Events on: ' . date('F j, Y', strtotime(get_query_var( 'eventDate' ))); ?></h1>
+    <h1><?php echo 'Events on: ' . date('F j, Y', strtotime(get_query_var( 'eventDate' ))); ?></h1>
   <?php } elseif( tribe_is_venue() ) { // Single Venues ?>
     <h1><?php the_title(); ?></h1>
   <?php } else { ?>
@@ -160,10 +158,11 @@ functions.php
  file to change the width at which the responsive breakpoint is activated.
 
 ```
-[php]function customize_tribe_events_breakpoint() {
-  return 600;
+function customize_tribe_events_v2_medium_breakpoint( $breakpoints ) {
+  $breakpoints['medium'] = 600;
+  return $breakpoints;
 }
-add_filter( &#039;tribe_events_mobile_breakpoint&#039;, &#039;customize_tribe_events_breakpoint&#039; );[/php]
+add_filter( 'tribe_events_views_v2_view_breakpoints', 'customize_tribe_events_v2_medium_breakpoint' );
 ```
 
 In this example, we’re telling the calendar to hold off from changing to small screen mode until the container is less than 600 pixels in width. That’s 168 more pixels of space to play with than we had before. If you’d prefer to use a different breakpoint, simply change the “600” in code to another value of your choice.
@@ -171,7 +170,14 @@ In this example, we’re telling the calendar to hold off from changing to small
 But let’s say that we want to kill the small screen mode completely. We can do that using this snippet instead:
 
 ```
-add_filter( 'tribe_events_kill_responsive', '__return_true');
+function customize_tribe_events_v2_force_desktop( $breakpoints ) {
+  return [
+    'xsmall' => 0,
+    'medium' => 0,
+    'full'   => 0,
+  ];
+}
+add_filter( 'tribe_events_views_v2_view_breakpoints', 'customize_tribe_events_v2_force_desktop' );
 ```
 
 Other methods for allotting more space to your calendars might include removing sidebars or adjusting their behavior to move above or below your calendar views on smaller displays. It’s worth exploring different options to see which one works best for you and your users.
@@ -211,6 +217,10 @@ Read more about testing for conflicts in our [Knowledgebase article](https://doc
 Another first step you can take when resolving this error is to utilize Google Chrome Developer Tools. You can usually find some good clues to help you see what is causing the issue there. To learn more about using Google Chrome Developer Tools, check out this [Knowledgebase article](https://docs.nexcess.com/software/the-events-calendar/using-google-chrome-developer-tools/).
 
 The same applies to other browsers, like [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/) and Safari, where you can look for errors in the console using their inspection tools.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

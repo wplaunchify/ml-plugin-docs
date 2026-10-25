@@ -8,11 +8,11 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/responsive-templates/](https://docs.nexcess.com/software/the-events-calendar/responsive-templates/)
 
-The Events Calendar features a responsive design, which is a fancy way if saying it adjusts its layout according to the size of the screen it is being viewed on, like a smartphone or tablet. While it works smoothly in most cases, there may be situations where you want to adjust the responsiveness, say to accommodate a specific page template in your theme.
+The Events Calendar features a responsive design, which is a fancy way of saying it adjusts its layout according to the size of the screen it is being viewed on, like a smartphone or tablet. While it works smoothly in most cases, there may be situations where you want to adjust the responsiveness, say to accommodate a specific page template in your theme.
 
-The default breakpoint (i.e. the screen width where the layout adjusts) is is 768px. If the screen is narrower than 768px, then the calendar will adjust to a compact layout designed for smaller screens. If the screen is 768pc or wider, then the full-size layout is displayed.
+The default breakpoint (i.e. the screen width where the layout adjusts) is 768px. If the screen is narrower than 768px, then the calendar will adjust to a compact layout designed for smaller screens. If the screen is 768px or wider, then the full-size layout is displayed.
 
-This breakpoint can be customized or completely removed with different filters. Let’s check that out.
+This breakpoint can be customized with different filters. Let’s check that out.
 
 #### Breakpoints
 
@@ -106,7 +106,7 @@ add_filter( 'tribe_events_views_v2_view_breakpoints', 'customize_tribe_events_v2
 
 ## Customizing Breakpoints for a Specific Calendar View
 
-Removing breakpoints doesn’t have to be an all-or-nothing sort of thing. Each view has a filter for each responsive breakpoint, allowing them to be customized for specific views:
+Customizing breakpoints doesn’t have to be an all-or-nothing sort of thing. Each view has a filter for each responsive breakpoint, allowing them to be customized for specific views:
 
 - **List view:** 
 ```
@@ -273,15 +273,11 @@ To clear the cache, open any event and click **Update**, or go to **Events > Set
 
 ## Styling Based on Responsiveness
 
-The Events Calendar includes the following CSS classes, which are added to the 
-```
-<body>
-```
+The Events Calendar adds CSS classes to the calendar itself (the element with the class tribe-events-view), not to the page body. They give you control over the appearance of the calendar based on how wide it is. Each class is added when the calendar is at least that wide, using the same breakpoints as in the sections above.
 
- class, giving you control over the appearance of the calendar based on whether it is responsive or being viewed on a small screen.
-
-- **.tribe-is-responsive**: This class is always available, unless the breakpoint has been removed like we saw in the previous section. In other words, this class is removed when responsiveness is disabled.
-- **.tribe-mobile**: This class is automatically added when responsiveness is enabled and the calendar is viewed on a small screen, narrower than 768px, or a custom breakpoint, if you set one like we did in the previous section.
+- **.tribe-common--breakpoint-xsmall**: added when the calendar is 500px wide or wider (or your custom xsmall value).
+- **.tribe-common--breakpoint-medium**: added when the calendar is 768px wide or wider (or your custom medium value).
+- **.tribe-common--breakpoint-full**: added when the calendar is 960px wide or wider (or your custom full value).
 
 So, for example, the following could be added to the theme’s 
 ```
@@ -289,6 +285,17 @@ style.css
 ```
 
  file, or by [overriding the calendar’s default styles with a custom stylesheet](https://docs.nexcess.com/software/the-events-calendar/customize-css/#Overwriting_CSS_files).
+
+```
+/* Smaller event titles when the calendar is narrower than 768px */
+.tribe-events-view:not(.tribe-common--breakpoint-medium) .tribe-events-calendar-list__event-title {
+	font-size: 0.875rem;
+}
+```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

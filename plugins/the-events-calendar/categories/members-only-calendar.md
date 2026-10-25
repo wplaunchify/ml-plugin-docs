@@ -31,27 +31,37 @@ This method is a stringent, very literal “members-only” calendar. **With thi
 The main events page redirect is dictated by adding code like the following to your theme’s *functions.php* file, or a custom plugin:
 
 ```
-add_filter( 'tribe_events_pre_get_posts', 'redirect_from_events' );
-function redirect_from_events( $query ) {
-	if ( is_user_logged_in() )
+add_action( 'template_redirect', 'redirect_from_events', 1 );
+function redirect_from_events() {
+	if ( is_user_logged_in() ) {
 		return;
-	if ( ! $query->is_main_query() || ! $query->get( 'eventDisplay' ) )
+	}
+
+	// Only act on event pages: the calendar views, single events, event categories, venues and organizers.
+	if ( ! function_exists( 'tribe_is_event_query' ) || ! tribe_is_event_query() ) {
 		return;
+	}
+
 	// Look for a page with a slug of "logged-in-users-only".
 	$target_page = get_posts( [
 		'post_type' => 'page',
-		'name' => 'logged-in-users-only'
-	 ] );
+		'name'      => 'logged-in-users-only',
+	] );
+
 	// Use the target page URL if found, else use the home page URL.
 	if ( empty( $target_page ) ) {
 		$url = get_home_url();
 	} else {
 		$target_page = current( $target_page );
-		$url = get_permalink( $target_page->ID );
+		$url         = get_permalink( $target_page->ID );
 	}
-	
-	// Redirect!
-	wp_safe_redirect( $url );
+
+	/*
+	 * Redirect! The Events Calendar blocks wp_redirect() on its calendar views,
+	 * so send the redirect header directly.
+	 */
+	nocache_headers();
+	header( 'Location: ' . esc_url_raw( $url ), true, 302 );
 	exit;
 }
 ```
@@ -89,11 +99,11 @@ As expected, that event will show up, as shown in the Month View in the followin
 
 ![Screen Shot 2016-07-19 at 9.44.57 PM](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2016-07-19-at-9.44.57-PM.jpg)
 
-To hide any event in that members-only category, you can do that by adding CSS like the following to the bottom of your theme’s *style.css* file:
+To hide any event in that members-only category from logged-out visitors, add CSS like the following to the bottom of your theme’s *style.css* file. The body:not(.logged-in) part means logged-in visitors still see the event:
 
 ```
-.type-tribe_events.tribe-events-category-members-only {
-  display: none;
+body:not(.logged-in) .type-tribe_events.tribe_events_cat-members-only {
+	display: none;
 }
 ```
 
@@ -101,15 +111,7 @@ To hide any event in that members-only category, you can do that by adding CSS l
 
 ![Screen Shot 2016-07-19 at 10.02.42 PM](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2016-07-19-at-10.02.42-PM.jpg)
 
-Now you just need to add one extra bit of CSS so that the event *will* be visible if you are logged-in. That extra bit of CSS looks like this:
-
-```
-body.logged-in .type-tribe_events.tribe-events-category-members-only {
-  display: inline;
-}
-```
-
-The event will remain hidden from view if you are logged out, but it will show like normal if you are logged in. All other events that are *not* in that “Members Only” category will be visible regardless of whether you are logged in or not.
+The event will remain hidden from view if you are logged out, but it will show like normal if you are logged in. All other events that are *not* in that “Members Only” category will be visible regardless of whether you are logged in or not. Note that this method only hides the events visually: their details are still in the page source, the calendar feeds and the REST API, so use Method One if the events must stay private.
 
 ### Method Three: Using a Third-Party Plugin
 
@@ -122,6 +124,10 @@ With the above methods, a bit of time, and a bit of tinkering, you should be abl
 - If you want to learn more about the PHP involved in writing functions like those seen in Method One, check out [PHP’s official documentation website](http://php.net/docs.php) and the official WordPress [Codex](https://codex.wordpress.org/) and [Code Reference](http://developer.wordpress.org/reference).
 - If you want to make it easier to write the sort of CSS used in Method Two, check out a (free!) tool like [Firebug](http://getfirebug.com/) if you use FireFox, or the Developer Tools for either [Safari](http://developer.apple.com/technologies/tools/) or [Chrome](https://developers.google.com/chrome-developer-tools/docs/overview). They have “Inspector” tools that make it easy to find out what CSS is required to achieve a specific modification.
 - If you want to hire a professional developer to assist you, check out a list of highly-rated customizers that we have compiled [here](http://m.tri.be/18k1).
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

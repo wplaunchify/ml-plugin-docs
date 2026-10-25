@@ -21,7 +21,7 @@ Avada is an extremely popular WordPress theme and page builder. It also integrat
 
 - **Avada:** The core theme for the Avada product suite. It requires Avada Core and Avada Builder, which are bundled with the theme purchase.
 - **The Events Calendar:** The core plugin for calendar functionality.
-- [The Events Calendar Pro](https://theeventscalendar.com/products/) (optional): Additional calendar features and views.
+- **The Events Calendar Pro** (optional): Additional calendar features and views.
 - **Event Tickets** (optional): The core plugin for creating tickets for events.
 
 ## Installation
@@ -85,7 +85,7 @@ If you’d like to remove the header space only on the calendar page, you can ad
 - Add this CSS snippet to hide the header on the calendar page specifically.
 
 ```
-.fusion-page-title-bar {
+.post-type-archive-tribe_events .fusion-page-title-bar {
   display: none;
 }
 ```
@@ -173,7 +173,7 @@ The options include:
 
 [Avada Layouts](https://avada.com/documentation/how-to-use-avada-layouts/) is a powerful templating system that enables you to create custom layouts for any part of your website.
 
-Since Avada 7.11.10, there is a complete range of TEC dynamic content to create custom layouts and templates for your events.
+Avada includes a complete range of TEC dynamic content to create custom layouts and templates for your events.
 
 How to Get Started with Single Event Layouts:
 
@@ -221,59 +221,11 @@ This setup will allow you to place event tickets into your custom layout.
 
 ## Fixing Display Issues
 
-**Note:** The issues listed below are associated with older versions of Avada and The Events Calendar. These conflicts have been resolved in recent updates to both the theme and the plugins.
-
-We work closely with Theme Fusion, the team behind Avada, to ensure compatibility between The Events Calendar, Avada, and our other plugins. Past conflicts have been addressed in recent versions of both the theme and plugins, as documented below.
+We work closely with Theme Fusion, the team behind Avada, to ensure compatibility between The Events Calendar, Avada, and our other plugins.
 
 To minimize potential issues, we recommend using the latest versions whenever possible and testing updates in a staging environment before applying them to your live site.
 
 If you do run into an issue using The Events Calendar with Avada, please [let us know](https://theeventscalendar.com/support/#contact), and we will work with Theme Fusion to correct it or offer guidance on how to correct it.
-
-### Fixing the Month View Design
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/avada-issue-month-view-overflow.jpg)
-
-We are working with the Theme Fusion team to officially fix this issue, but for now, you can work around this by adding the following to the “Additional CSS” section of the WordPress Customizer, or using Avada’s Custom CSS section under **Avada→Options→Custom CSS**:
-
-```
-.tribe-events .tribe-events-calendar-month__day {
-  height: auto;
-}
-```
-
-July 2 2021 update: the Avada team confirmed this is going to be fixed in the next release (7.4.2).
-
-### Fixing the Calendar’s Icons
-
-A [known issue exists](https://theeventscalendar.com/known-issues/#svg-icons-glitch) where the calendar’s updated icons in The Events Calendar 5.3 are either missing or improperly sized. This was fixed in Avada 7.2, so be sure to use that version or above when working with The Events Calendar 5.3 and above.
-
-### Fixing the Calendar Widget
-
-Another issue that prevents embedding The Events Calendar widget on a site using the Avada theme was fixed in [The Events Calendar 5.5](https://theeventscalendar.com/release-notes/the-events-calendar/the-events-calendar-5-5-0/).
-
-### Fixing the Ticket Form Design
-
-The ticket form in our Event Tickets plugin experienced a design issue that affected the plus (
-```
-+
-```
-
-) and minus (
-```
--
-```
-
-) buttons that update the ticket quantity. This was fixed in Avada 6.2. However, if you are unable to update to a newer version of the theme, [we have a CSS snippet you can use](https://docs.nexcess.com/software/the-events-calendar/troubleshoot-event-tickets/) as a workaround.
-
-```
-#tribe-tickets .tribe-tickets__item .tribe-tickets__item__quantity button {
-  border: none;
-  box-shadow: none;
-  
-  font-weight: 600;
-  background: none;
-}
-```
 
 ## Additional Resources
 
@@ -288,10 +240,10 @@ Avada may force The Events Calendar into its column/sidebars which aren’t alwa
 
 ## Custom Styling Beyond Builder Defaults
 
-Whether you’re using builder modules or default TEC pages, fine-tune appearance with CSS. For example:
+Whether you’re using builder modules or default TEC pages, fine-tune appearance with CSS. For example, this highlights today’s date in Month View:
 
 ```
-.avada .tribe-events-calendar td.tribe-events-today {
+.tribe-events-calendar-month__day--current {
   background-color: #f0f8ff;
 }
 ```

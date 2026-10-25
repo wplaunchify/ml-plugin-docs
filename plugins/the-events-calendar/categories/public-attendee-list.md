@@ -8,7 +8,7 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/public-attendee-list/](https://docs.nexcess.com/software/the-events-calendar/public-attendee-list/)
 
-The Public Attendee List powers the [Who’s Attending feature](https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/#global-stock) on your event page while using [Event Tickets Plus](https://theeventscalendar.com/product/wordpress-event-tickets-plus/), but it can do much more. It is a list of all of the attendees for an event, allowing you and others to see who is attending the event. This is powered by the API, which is public. You can learn more about APIs in our [REST API article](https://theeventscalendar.com/knowledgebase/k/introduction-to-the-events-calendar-rest-api/).
+The Public Attendee List powers the Who’s Attending feature on your event page while using [Event Tickets Plus](https://theeventscalendar.com/product/wordpress-event-tickets-plus/), but it can do much more. It is a list of all of the attendees for an event, allowing you and others to see who is attending the event. This is powered by the API, which is public. You can learn more about APIs in our [REST API article](https://theeventscalendar.com/knowledgebase/k/introduction-to-the-events-calendar-rest-api/).
 
 We have combined the end-user permissions for the full Public Attendee List and the Who’s Attending block.  At this time, we do provide a way for users to opt-out from these.
 
@@ -49,10 +49,10 @@ To access all attendee registrations that are publicly available for all events 
 To access all attendee registrations that are publicly available for just a single ticket within an event, this is the link you can use:
 
 ```
-[yoursite.com]/wp-json/tribe/tickets/v1/attendees/260
+[yoursite.com]/wp-json/tribe/tickets/v1/attendees/?ticket_id=260
 ```
 
-That number at the end of the URL coordinates with the Ticket ID. To find that, go to **Events** from the WordPress dashboard.  Mouse over the [attendees list](https://docs.nexcess.com/software/the-events-calendar/ticket-orders/#attendee-list) (or get there while editing the single event).
+The number after ticket_id= is the Ticket ID. (A number placed directly after /attendees/ looks up a single attendee by attendee ID, not a ticket, so a ticket ID there returns an error.) To find that, go to **Events** from the WordPress dashboard.  Mouse over the [attendees list](https://docs.nexcess.com/software/the-events-calendar/ticket-orders/#attendee-list) (or get there while editing the single event).
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-41-39.jpg)Ticket ID is visible in the Status column
 
@@ -62,7 +62,7 @@ One of the things to remember is that the Public Attendee API, as all [WordPress
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/publicattendeesapi-1024x411-1.png)The Public Attendee API will display like this.
 
-**Note:** For users to appear within the Public Attendees API, the Who’s Attending/Attendee List must be enabled on published tickets AND the end purchaser must uncheck the opt-out prompt within Event Tickets 4.12+.
+**Note:** For users to appear within the Public Attendees API, the Who’s Attending/Attendee List must be enabled on published tickets AND the end purchaser must uncheck the opt-out prompt
 
 ## Opting out of the attendee list
 
@@ -72,7 +72,7 @@ To be shown in the public attendee results, users will need to uncheck the box, 
 
 **Note:** If you use the Who’s Attending feature on your site, but hide the opt-out question, users will be hidden from the Public Attendee List.
 
-Since Event Tickets Plus 4.11.2, both Classic and Block users will see an opt-out form below tickets on the front end of their website. Previously, this feature was only displayed within the RSVP Block (not Classic mode).
+Both Classic and Block users will see an opt-out form below tickets on the front end of their website. Previously, this feature was only displayed within the RSVP Block (not Classic mode).
 
 ![Opting out of the public attendee list](https://docs.nexcess.com/wp-content/uploads/2026/06/image-13.jpg)By default, users will be opted-out of the Public Attendee API.
 

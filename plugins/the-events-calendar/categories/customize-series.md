@@ -38,69 +38,27 @@ locate_template()
  to the template you want to use (*/wp-content/themes/your-active-theme/* folder).
 
 ```
-/* 1 - Define another template */
 add_filter(
 	'template_include',
 	static function ( $template ) {
 		if ( is_singular( 'tribe_event_series' ) ) {
 			// Point this to the template you want to use.
-			$template = locate_template( 'templates/some-template.php' );
+			$custom_template = locate_template( 'templates/some-template.php' );
+
+			if ( $custom_template ) {
+				$template = $custom_template;
+			}
 		}
 		return $template;
 	}
 );
-/* 2 - Remove the Series Calendar view from being injected into your custom template */
-use TECEvents_ProCustom_TablesV1TemplatesSeries_Filters;
-add_filter(
-	'template_include',
-	static function ( $template ) {
-		if ( ! has_action( 'tribe_common_loaded', 'tribe_register_pro' ) ) {
-			return $template;
-		}
-		remove_filter( 'the_content', [ tribe( Series_Filters::class ), 'inject_content' ], 10 );
-		return $template;
-	},
-	15
-);
-```
-
-#### Opting Out of Series Content Injection
-
-By default, the Series page displays a list of events related to the series. If you’d prefer to opt out and prevent this list from being displayed, you can use the following filter that allows you to disable the automatic injection of the series content into 
-```
-the_content
-```
-
-.
-
-Returning 
-```
-false
-```
-
-, the series list will no longer be shown on the series page.
-
-Here’s the snippet:
-
-```
-add_filter( 'tec_events_pro_enable_series_content_injection', '__return_false' );
-```
-
-## Link Directly to the Series Page from the Calendar
-
-Normally when a user clicks any event title on a calendar view or widget, the link takes them to that event’s page. With this snippet, you can adjust that behavior so that clicking an event title from a calendar view takes the user right to the Series landing page, where they can view all events in a Series. They can still reach the individual event pages by clicking on the event title on the Series page.
-
-This snippet will change the link for all events on your site that are in a Series. Any event that is not in a Series will link to the event page like usual. If you want to link to the Series page from only *some*of your events, you can use a redirection plugin as described in [this article](https://theeventscalendar.com/knowledgebase/k/how-to-redirect-specific-events-to-a-series-page/).
-
-```
-add_filter( 'tec_events_pro_custom_tables_v1_redirect_event_link_to_series', '__return_true' );
 ```
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/series-linkfromevent-1024x368-1.png)
 
-#### Limit Redirection to Specific Events
+## Link Directly to the Series Page from the Calendar
 
-The snippet above changes the behavior for *all* events in Series. If you want to use a similar behavior but only for *some*events, you can do that with a third-party redirect plugin.
+Normally when a user clicks an event title on a calendar view or widget, the link takes them to that event’s page. If you’d like clicks on some events to take the user to the Series landing page instead, where they can view all events in the Series, you can do that with a third-party redirect plugin.
 
 The first thing you’ll want to do is install the [Redirection plugin](https://wordpress.org/plugins/redirection/). Simply [install the plugin](https://docs.nexcess.com/software/the-events-calendar/downloading-and-installing-the-plugin/) as you would any other WordPress plugin. From there, follow the prompts to continue set-up.
 
@@ -176,6 +134,10 @@ To add the word “Series” to the Series page, simply add the following CSS to
     content: " Series";
 }
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

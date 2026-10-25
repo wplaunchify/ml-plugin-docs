@@ -65,7 +65,6 @@ To stop Yoast SEO from rewriting the event archives title, you can download [th
 If you want full control of the archive title, then here’s a code snippet you can use:
 
 ```
-<?php
 // Custom title for events archive pages
 add_filter( 'tribe_events_v2_view_title', 'custom_events_archive_title', 10, 4 );
 function custom_events_archive_title( $title, $depth, $context, $posts ) {
@@ -95,12 +94,12 @@ The Events Calendar integrates with Yoast SEO to provide the following dynamic v
 
 | Variable | What It Inserts |
 | --- | --- |
-| %event_start_date% | The event’s start date |
-| %event_end_date% | The event’s end date |
-| %venue_title% | The venue name |
-| %venue_city% | The venue city |
-| %venue_state% | The venue state |
-| %organizer_title% | The organizer name |
+| %%event_start_date%% | The event’s start date |
+| %%event_end_date%% | The event’s end date |
+| %%venue_title%% | The venue name |
+| %%venue_city%% | The venue city |
+| %%venue_state%% | The venue state |
+| %%organizer_title%% | The organizer name |
 
 #### Configure Site-Wide Event Title Templates
 
@@ -110,7 +109,7 @@ The Events Calendar integrates with Yoast SEO to provide the following dynamic v
 4. In the **SEO Title** field, click the **“Insert variable”** button.
 5. Start typing your desired variable (e.g., 
 ```
-%event_start_date%
+%%event_start_date%%
 ```
 
 ) or choose from the suggestions list.
@@ -126,7 +125,7 @@ The Events Calendar integrates with Yoast SEO to provide the following dynamic v
 3. Click the **SEO** tab.
 4. In the **SEO Title** field, click **“Insert variable”** and select your desired variable (e.g., 
 ```
-%event_start_date%
+%%event_start_date%%
 ```
 
 ).
@@ -830,7 +829,8 @@ You can use the below to copy-paste all CSS and JavaScript asset resources easil
 /wp-content/plugins/events-virtual/(.*).css
 /wp-content/plugins/the-events-calendar-community-events/(.*).css
 /wp-content/plugins/the-events-calendar-community-events-tickets/(.*).css
-/wp-content/plugins/the-events-calendar-eventbrite-tickets/(.*).css/wp-content/plugins/the-events-calendar/(.*).js
+/wp-content/plugins/the-events-calendar-eventbrite-tickets/(.*).css
+/wp-content/plugins/the-events-calendar/(.*).js
 /wp-content/plugins/events-calendar-pro/(.*).js
 /wp-content/plugins/event-tickets/(.*).js
 /wp-content/plugins/event-tickets-plus/(.*).js
@@ -912,7 +912,8 @@ You can use the below to copy-paste all CSS and JavaScript asset resources easil
 /wp-content/plugins/event-tickets-plus/(.*).css
 /wp-content/plugins/the-events-calendar-filterbar/(.*).css
 /wp-content/plugins/the-events-calendar-community-events/(.*).css
-/wp-content/plugins/the-events-calendar-eventbrite-tickets/(.*).css/wp-content/plugins/the-events-calendar/(.*).js
+/wp-content/plugins/the-events-calendar-eventbrite-tickets/(.*).css
+/wp-content/plugins/the-events-calendar/(.*).js
 /wp-content/plugins/events-calendar-pro/(.*).js
 /wp-content/plugins/event-tickets/(.*).js
 /wp-content/plugins/event-tickets-plus/(.*).js
@@ -923,7 +924,18 @@ You can use the below to copy-paste all CSS and JavaScript asset resources easil
 
 #### Excluding ESI nonces
 
-Add  
+Add 
+```
+tvn1
+```
+
+ and 
+```
+tvn2
+```
+
+ to the list of ESI Nonces. 
+*(wp-admin > LiteSpeed Cache > Cache > ESI)* Before The Events Calendar 6.11.1 these were named 
 ```
 _tec_view_rest_nonce_primary
 ```
@@ -933,8 +945,7 @@ _tec_view_rest_nonce_primary
 _tec_view_rest_nonce_secondary
 ```
 
- to the list of ESI Nonces. 
-*(wp-admin > LiteSpeed Cache > Cache > ESI)*
+.
 
 ![This displays an options page with a text area where you can add ESI nonces that can be excluded ](https://docs.nexcess.com/wp-content/uploads/2026/06/ExcludingESINonces-2.jpg)
 
@@ -1040,6 +1051,10 @@ add_filter( 'autoptimize_filter_html_noptimize', function( $return, $content ) {
 	return $return;
 }, 10, 2 );
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

@@ -39,9 +39,9 @@ Community Events adds the following class names to the body of Community Events 
 ☝️ For a quick example of using these classes effectively, here’s a bit of example code that would make the Event Title label text on the Community Events submission form red:
 
 ```
-[css]body.tribe_community_edit .events-community-post-title label {
+body.tribe_community_edit .events-community-post-title label {
   color: red;
-}[/css]
+}
 ```
 
 #### CSS and PHP: Template Tags
@@ -66,12 +66,15 @@ tribe_is_community_my_events_page()
 You could use these template tags to print CSS or JavaScript onto Community Events pages with a PHP snippet like the following, which hooks into WordPress’ [wp_head action](https://codex.wordpress.org/Plugin_API/Action_Reference/wp_head) to print CSS if you’re on either the submission page or the “My Events” list page.
 
 ```
-<?php
 /**
  * Adds CSS or JS to the top of Community Events' submission and "My Events" pages.
  */
 function teckb_events_community_css() {
- 
+
+  if ( ! function_exists( 'tribe_is_community_edit_event_page' ) ) {
+    return;
+  }
+
   if ( ! tribe_is_community_edit_event_page() && ! tribe_is_community_my_events_page() ) {
     return;
   }
@@ -87,7 +90,7 @@ console.log( 'You can also insert JavaScript, although this may be best in the w
 </script>
 <?php
 }
- 
+
 add_action( 'wp_head', 'teckb_events_community_css' );
 ```
 
@@ -102,8 +105,8 @@ You can specify event fields for requirement by using this filter: tribe_events_
 To make the Event URL field required for submission, for example, you could add the following snippet of code to your site:
 
 ```
-add_filter( 'tribe_events_community_required_fields', 'my_community_required_fields', 10, 1 );
-function my_community_required_fields( $fields ) {
+add_filter( 'tribe_events_community_required_fields', 'tec_require_event_url', 10, 1 );
+function tec_require_event_url( $fields ) {
   if ( ! is_array( $fields ) ) {
     return $fields;
   }
@@ -143,31 +146,12 @@ You can see a full list of the default fields below. It’s worth mentioning tha
 
 ### Venue Fields
 
-You can specify venue fields for requirement by using this filter:
-
-- tribe_events_community_required_venue_fields
-
-To make the venue URL and phone number required, for example, you could write the following snippet:
+To make the venue required, so the submitter has to pick an existing venue or create a new one, use the following snippet:
 
 ```
-add_filter( 'tribe_events_community_required_venue_fields', 'my_venue_community_required_fields' );
-function my_venue_community_required_fields( $fields ) {
-    
-  if ( ! is_array( $fields ) ) {
-    return $fields;
-  }
-  $fields[] = 'Phone';
-  $fields[] = 'URL';
-  return $fields;
-}
-```
-
-In order for the above snippet to work, it is necessary to also require the venue field itself. You can do that with the following snippet:
-
-```
-add_filter( 'tribe_events_community_required_fields', 'my_community_required_fields' );
+add_filter( 'tribe_events_community_required_fields', 'tec_require_venue' );
  
-function my_community_required_fields( $fields ) {
+function tec_require_venue( $fields ) {
  
   if ( ! is_array( $fields ) ) {
     return $fields;
@@ -178,17 +162,6 @@ function my_community_required_fields( $fields ) {
   return $fields;
 }
 ```
-
-#### Default Venue Fields
-
-- Venue *(the Venue Name)*
-- Address
-- City
-- Province
-- State
-- Zip
-- Phone
-- URL
 
 ### Additional Fields
 
@@ -202,8 +175,8 @@ _ecp_custom_2
 ) of the fields after setting them up and change them in the code.
 
 ```
-add_filter( 'tribe_events_community_required_fields', 'my_community_required_fields' );
-function my_community_required_fields( $fields ) {
+add_filter( 'tribe_events_community_required_fields', 'tec_require_additional_fields' );
+function tec_require_additional_fields( $fields ) {
   if ( ! is_array( $fields ) ) {
     return $fields;
   }
@@ -230,9 +203,9 @@ function tec_additional_fields_required_labels( $text, $field ) {
 The last step is to add the snippet that includes the custom field in the list of allowed fields.
 
 ```
-add_filter( 'tec_events_community_allowed_fields', 'my_community_allowed_fields' );
+add_filter( 'tec_events_community_allowed_fields', 'tec_allow_additional_field' );
  
-function my_community_allowed_fields( $fields ) {
+function tec_allow_additional_field( $fields ) {
   if ( ! is_array( $fields ) ) {
     return $fields;
   }
@@ -298,15 +271,21 @@ value
 Since these errors are added through a script, we can use a snippet that modifies the script to update error messages:
 
 ```
-add_action( 'wp_enqueue_scripts', function ( ) {
-// Ensure the script is enqueued
+add_action( 'wp_enqueue_scripts', function () {
+	// Only on the Community Events submission page.
+	if ( ! function_exists( 'tribe_is_community_edit_event_page' ) || ! tribe_is_community_edit_event_page() ) {
+		return;
+	}
+
+	// Ensure the script is enqueued.
 	wp_enqueue_script( 'tribe_events-community' );
-// Modify the localization data
+
+	// Modify the localization data.
 	wp_add_inline_script( 'tribe_events-community', '
-        if ( tribe_submit_form_i18n.errors[ "post_title" ] ) { // Tweak to match which field you want to change
-        tribe_submit_form_i18n.errors[ "post_title" ] = "You cannot submit an event without a title"; // Tweak to match what message you want to output
-        }
-    ', 'before' );
+		if ( tribe_submit_form_i18n.errors[ "post_title" ] ) { // Tweak to match which field you want to change
+			tribe_submit_form_i18n.errors[ "post_title" ] = "You cannot submit an event without a title"; // Tweak to match what message you want to output
+		}
+	', 'before' );
 }, 20 );
 ```
 
@@ -317,22 +296,27 @@ Here is how that would affect the frontend:
 Let’s add to the Event Description to the same example:
 
 ```
-add_action( 'wp_enqueue_scripts', function ( ) {
-		// Ensure the script is enqueued.
-		wp_enqueue_script( 'tribe_events-community' );
-		// Modify the localization data.
-		wp_add_inline_script(
-			'tribe_events-community',
-			'if ( tribe_submit_form_i18n.errors["post_title"] ) { 
-        tribe_submit_form_i18n.errors[ "post_title" ] = "You cannot submit an event without a title"; 
-        }
-        if ( tribe_submit_form_i18n.errors[ "tcepostcontent" ] ) { 
-        tribe_submit_form_i18n.errors[ "tcepostcontent" ] = "Please add an event description 🙈"; 
-        }',
-			'before' 
-		);
+add_action( 'wp_enqueue_scripts', function () {
+	// Only on the Community Events submission page.
+	if ( ! function_exists( 'tribe_is_community_edit_event_page' ) || ! tribe_is_community_edit_event_page() ) {
+		return;
 	}
-);
+
+	// Ensure the script is enqueued.
+	wp_enqueue_script( 'tribe_events-community' );
+
+	// Modify the localization data.
+	wp_add_inline_script(
+		'tribe_events-community',
+		'if ( tribe_submit_form_i18n.errors[ "post_title" ] ) {
+			tribe_submit_form_i18n.errors[ "post_title" ] = "You cannot submit an event without a title";
+		}
+		if ( tribe_submit_form_i18n.errors[ "tcepostcontent" ] ) {
+			tribe_submit_form_i18n.errors[ "tcepostcontent" ] = "Please add an event description 🙈";
+		}',
+		'before'
+	);
+}, 20 );
 ```
 
 And here is how that would affect the frontend:
@@ -345,42 +329,41 @@ In the case where you have set up requiring fields other than the default, it is
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/CleanShot-2024-12-03-at-17.20.31@2x-1024x641-1.jpg)
 
-Here’s an example using the required addition fields from above:
+Here’s an example using the required addition fields from above. This one snippet replaces the Additional Fields snippets above (required, label and allowed fields), so use it instead of them, not in addition to them:
 
 ```
-function my_community_required_fields( $fields ) {
+add_filter( 'tribe_events_community_required_fields', 'tec_require_all_additional_fields' );
+function tec_require_all_additional_fields( $fields ) {
 	if ( ! is_array( $fields ) ) {
 		return $fields;
 	}
-	$fields[] = '_ecp_custom_2'; 
-	$fields[] = '_ecp_custom_3'; 
+	$fields[] = '_ecp_custom_2';
+	$fields[] = '_ecp_custom_3';
 	$fields[] = '_ecp_custom_5';
 	return $fields;
 }
-add_filter( 'tec_events_community_allowed_fields', 'my_community_allowed_fields' );
-function my_community_allowed_fields( $fields ) {
+
+add_filter( 'tec_events_community_allowed_fields', 'tec_allow_all_additional_fields' );
+function tec_allow_all_additional_fields( $fields ) {
 	if ( ! is_array( $fields ) ) {
 		return $fields;
 	}
-	$fields[] = '_ecp_custom_2'; 
-	$fields[] = '_ecp_custom_3'; 
+	$fields[] = '_ecp_custom_2';
+	$fields[] = '_ecp_custom_3';
 	$fields[] = '_ecp_custom_5';
 	return $fields;
 }
-add_filter( 'tribe_community_events_field_label_text', 'tec_additional_fields_required_labels', 10, 2 );
-function tec_additional_fields_required_labels( $text, $field ) {
-	// Add required label if it is one of the Additional Fields.
-	if ( strstr( $field, '_ecp_custom_2') ) {
-		return $text . ' <span class="req">(required)</span>';
+
+add_filter( 'tribe_community_events_field_label_text', 'tec_all_additional_fields_required_labels', 10, 2 );
+function tec_all_additional_fields_required_labels( $text, $field ) {
+	// Add the required label if it is one of the Additional Fields we require.
+	foreach ( [ '_ecp_custom_2', '_ecp_custom_3', '_ecp_custom_5' ] as $required_field ) {
+		if ( strstr( $field, $required_field ) ) {
+			return $text . ' <span class="req">(required)</span>';
+		}
 	}
-	if ( strstr( $field, '_ecp_custom_3') ) {
-		return $text . ' <span class="req">(required)</span>';
-	}
-	if ( strstr( $field, '_ecp_custom_5') ) {
-		return $text . ' <span class="req">(required)</span>';
-	}
-    // If it's not one of the Additional Fields we require, just return the label
-    return $text;
+	// If it's not one of the Additional Fields we require, just return the label.
+	return $text;
 }
 ```
 
@@ -391,10 +374,9 @@ Without adding our snippet to change the error messages, this is what will now s
 To enhance the clarity of your error messages by pinpointing the required fields, you can integrate the following code snippet into your site:
 
 ```
-<?php //Do not copy this line
 add_filter( 'tribe_community_form_field_label', function ( $label, $field ) {
-	// Check if the field does not match '_ecp_custom_X' pattern
-	if ( ! preg_match( '/^_ecp_custom_d+$/', $field ) || ! tribe_is_community_edit_event_page() ) {
+	// Check if the field does not match the '_ecp_custom_X' pattern
+	if ( ! preg_match( '/^_ecp_custom_\d+$/', $field ) || ! tribe_is_community_edit_event_page() ) {
 		return $label;
 	}
 	$custom_fields = tribe_get_option( 'custom-fields', array() );
@@ -412,27 +394,34 @@ With the snippet added, the error message will change from “Ecp custom 2 is re
 Another approach is to customize the error message completely; however, this works only for fields that don’t require a page reload. This is the snippet that we can add to adjust those error messages:
 
 ```
-add_action(
-	'wp_enqueue_scripts',
-	function ( ) {
-		// Ensure the script is enqueued.
-		wp_enqueue_script( 'tribe_events-community' );
-		// Modify the localization data.
-		wp_add_inline_script(
-			'tribe_events-community',
-			'if ( tribe_submit_form_i18n.errors[ "_ecp_custom_2" ] ) { 
-        tribe_submit_form_i18n.errors[ "_ecp_custom_2" ] = "This is a custom field... Do not skip it!"; 
-        }
-        if (tribe_submit_form_i18n.errors[ "_ecp_custom_3" ] ) { 
-        tribe_submit_form_i18n.errors[ "_ecp_custom_3" ] = "Seriously?! You're skipping this one too?"; 
-        }
-        if (tribe_submit_form_i18n.errors[ "_ecp_custom_5" ] ) { 
-        tribe_submit_form_i18n.errors[ "_ecp_custom_5" ] = "I'm calling your manager."; 
-        }',
-			'before'
-		);
+add_action( 'wp_enqueue_scripts', function () {
+	// Only on the Community Events submission page.
+	if ( ! function_exists( 'tribe_is_community_edit_event_page' ) || ! tribe_is_community_edit_event_page() ) {
+		return;
 	}
-);
+
+	// Ensure the script is enqueued.
+	wp_enqueue_script( 'tribe_events-community' );
+
+	// The messages to show, keyed by the field name. Tweak these to match your fields.
+	$messages = [
+		'_ecp_custom_2' => 'This is a custom field... Do not skip it!',
+		'_ecp_custom_3' => "Seriously?! You're skipping this one too?",
+		'_ecp_custom_5' => "I'm calling your manager.",
+	];
+
+	// Modify the localization data.
+	wp_add_inline_script(
+		'tribe_events-community',
+		'var tecCustomErrors = ' . wp_json_encode( $messages ) . ';
+		Object.keys( tecCustomErrors ).forEach( function ( key ) {
+			if ( tribe_submit_form_i18n.errors[ key ] ) {
+				tribe_submit_form_i18n.errors[ key ] = tecCustomErrors[ key ];
+			}
+		} );',
+		'before'
+	);
+}, 20 );
 ```
 
 And here is how that snippet will change those error messages:
@@ -528,7 +517,6 @@ tribe_dropdown_search_terms
 The snippet allows you to define the IDs for categories and tags you wish to exclude.
 
 ```
-<?php
 add_filter(
     'tribe_dropdown_search_terms',
     function( $data, $search, $page, $args, $source ) {
@@ -586,7 +574,7 @@ tag_ID
 
 ## Modify the Successful Submission Message
 
-To change the message that appears after successfully creating a new event with the Events Community “add event”, you can add the following PHP code snippet to your site:
+To change the message that appears after successfully creating a new event with the Events Community “add event”, you can add the following PHP code snippet to your site. Note that it replaces the whole success message, including the links to view the event and submit another one, and it also applies when an event is edited:
 
 ```
 add_filter( 'tribe_community_events_form_errors', function ( $errors ) { 
@@ -671,11 +659,9 @@ This snippet adds
 image/webp
 ```
 
- to the list of MIME types accepted by the Community Events image uploader. This enables users to submit images in the WebP format, which offers better compression and smaller file sizes compared to JPEG and PNG.
+ to the list of MIME types accepted by the Community Events image uploader. This enables users to submit images in the WebP format, which offers better compression and smaller file sizes compared to JPEG and PNG. The upload field’s help text and file picker also need the template change below; otherwise visitors are still told that only .jpg, .png and .gif files are allowed.
 
-You may also want to update the image upload field text. The default image upload field text says:
-
-> “Choose a .jpg, .png, or .gif file under 300 MB in size.”
+The default image upload field text says: “Choose a .jpg, .png, or .gif file under 64 MB in size.” (The size shown depends on your site’s upload limit.)
 
 To reflect that WebP is also accepted, you’ll need to [override the template](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/) that outputs this text.
 
@@ -691,10 +677,14 @@ Steps to override the template:
 ```
 /wp-content/themes/your-theme/tribe-events/community/modules/image.php
 ```
-2. Open the file and edit the text on line 50 to include *.webp*.
+2. Open the file and make these two changes, leaving everything else (including the id=”tec-event-image-help” on the paragraph) as it is:
 
 ```
-<p><?php echo esc_html( sprintf( __( 'Choose a .jpg, .png, .gif or .webp file under %1$s in size.', 'tribe-events-community' ), $size_format ) ); ?></p>
+1. Around line 74, change the help text to:
+__( 'Choose a .jpg, .png, .gif or .webp file under %1$s in size.', 'tribe-events-community' ),
+
+2. Around line 99, change the accept attribute of the file field to:
+accept=".jpg,.jpeg,.png,.gif,.webp"
 ```
 
 ## For Developers
@@ -702,6 +692,10 @@ Steps to override the template:
 - tec_events_community_form_layout
 - [tribe_community_events_event_status_enabled](https://docs.theeventscalendar.com/reference/hooks/tribe_community_events_event_status_enabled/)
 - [tribe_community_events_virtual_events_integration_enabled](https://docs.theeventscalendar.com/reference/hooks/tribe_community_events_virtual_events_integration_enabled/)
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

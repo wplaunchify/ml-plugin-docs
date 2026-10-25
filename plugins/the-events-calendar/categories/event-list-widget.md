@@ -89,7 +89,7 @@ You can also add a tax-operand attribute to the calendar so that multiple catego
 Also, just like the advanced list widget itself, it is possible to specify extra information which should be displayed, such as the phone number and address of each venue:
 
 ```
-[tribe_events_list phone="yes" address="yes"]
+[tribe_events_list phone="yes" street="yes" city="yes"]
 ```
 
 Here’s a complete list of those optional details:
@@ -165,8 +165,14 @@ As you may have noticed, there isn’t an option to hide the end date/time. If y
 ```
 add_filter ( 'tribe_events_event_short_schedule_details', function ( $schedule ) {
 	$dash_position = strpos( $schedule, '> - ' );
-	$schedule = substr( $schedule, 0, $dash_position );
-	return $schedule;
+
+	// Nothing to remove if there is no end time.
+	if ( false === $dash_position ) {
+		return $schedule;
+	}
+
+	// Keep the closing ">" of the start time tag so the markup stays valid.
+	return substr( $schedule, 0, $dash_position + 1 );
 } );
 ```
 
@@ -299,7 +305,6 @@ This ensures that only the **“Newly Added”** widget adopts the new sorting b
 Check out the snippet below to implement this feature!
 
 ```
-<?php //Do not copy this line
 class EventsListWidget_NewlyAddedEvents {
 	protected $constraints = array(
 		'sidebar_id'   => null,
@@ -470,7 +475,7 @@ wp-content
 
  directory one level up from the theme folder. This is the file we want: 
 ```
-the-events-calendar/src/views/v2/list/featured-image.php
+the-events-calendar/src/views/v2/list/event/featured-image.php
 ```
 
 .
@@ -582,6 +587,10 @@ Or, if we want things to work look and work like the first two approaches, add t
 #### Wrapping up
 
 And there you have it — three solid approaches for adding an event’s featured image thumbnail to the event list widget. The first approach is “nice and neat” because it only involves working on one file. But the custom template approach offers more flexibility when it comes to adding more markup as well as better separation of concerns as the markup is kept distinct from the function that injects it.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

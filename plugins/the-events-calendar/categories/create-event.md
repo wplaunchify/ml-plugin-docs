@@ -63,7 +63,7 @@ If your event is happening a little off the beaten path and there isn’t a mapp
 
 #### Multiple Venues
 
-As of [The Events Calendar 6.2.0](https://theeventscalendar.com/blog/news/introducing-new-features-for-events-calendar-pro/), you can attach multiple venues to an event. To take advantage of this feature, you must be using Events Calendar Pro.
+You can attach multiple venues to an event. To take advantage of this feature, you must be using Events Calendar Pro.
 
 In the Classic Editor, click on the Add New Venue button. This will add a Venue area below the first.
 
@@ -89,7 +89,7 @@ Similar to the venue details, you can select any pre-existing organizer details 
 
 ![The image is showing the organizers of an event, with the option to add or edit an organizer in the WordPress Block Editor](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-05-09-at-6.47.22-AM.jpg)Organizer in the Block Editor
 
-You do not need to provide organizer details and, if you do, you need only provide as much information as you want to. With The Events Calendar 3.11+, you can add multiple organizers to an event. Keep in mind that if you opt for multiple organizers, any organizer meta (like the phone number or email) will *not*show on the frontend-only the organizer names will be listed. If you have Events Calendar Pro, the listed names will link to the associated [Organizer Page](https://docs.nexcess.com/software/the-events-calendar/venues-organizers/).
+You do not need to provide organizer details and, if you do, you need only provide as much information as you want to. You can add multiple organizers to an event. Keep in mind that if you opt for multiple organizers, any organizer meta (like the phone number or email) will *not*show on the frontend-only the organizer names will be listed. If you have Events Calendar Pro, the listed names will link to the associated [Organizer Page](https://docs.nexcess.com/software/the-events-calendar/venues-organizers/).
 
 #### Event Website
 

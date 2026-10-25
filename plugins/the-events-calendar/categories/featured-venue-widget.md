@@ -61,15 +61,20 @@ Will show the widget even if no upcoming events are scheduled for the venue:
 
 ### Styling with CSS
 
-You can apply custom CSS to the Featured Venue widget. The widget’s styles are part of 
+You can apply custom CSS to the Featured Venue widget. The widget’s styles are loaded from 
 ```
-tribe-events-pro.css
+widget-featured-venue-skeleton.css
 ```
 
-. To target the widget with your own CSS rules, use the base class:
+ (or 
+```
+widget-featured-venue-full.css
+```
+
+ if you’re loading the full stylesheet). To target the widget with your own CSS rules, use the base class:
 
 ```
-.tribe-events-venue-widget {
+.tribe-events-widget-featured-venue {
     /* your styles here */
 }
 ```
@@ -80,19 +85,34 @@ For guidance on where to add custom CSS and how widget stylesheets work, see our
 
 Let’s say you want to change the content in the widget. We can override the template and modify it there to make some changes with a few steps:
 
-- Make a copy of the template. It is located at */plugins/events-calendar-pro/src/views/pro/widgets/venue-widget.php*.
-- Make a new folder in the site’s theme directory and call it *tribe-events*.
-- Make a new folder in that one called *pro*.
-- Make a new folder in that one called *widgets*.
-- Drop the copied *venue-widget.php* file in that last folder.
+- Make a copy of the event template. It is located at */plugins/events-calendar-pro/src/views/v2/widgets/widget-featured-venue/events-list/event.php*.
+- Make a new folder in the (child-)theme directory called *tribe*.
+- Make a new folder in that one called *events-pro*.
+- Make a new folder in that one called *v2*.
+- Make the folders *widgets/widget-featured-venue/events-list* inside that one, one inside the other.
+- Drop the copied *event.php* file in that last folder.
 
-Now that the widget is in your theme directory, you can modify it to suit your needs. For example, you can add the event excerpt to the widget content by placing the following snippet after the event details:
+Now that the widget is in your theme directory, you can modify it to suit your needs. For example, you can add the event excerpt to the widget content by placing the following snippet inside the div with the class 
+```
+tribe-events-widget-featured-venue__event-details
+```
+
+, right after the closing 
+```
+</header>
+```
+
+ tag:
 
 ```
-<?php the_excerpt(); ?>
+<?php echo wp_kses_post( wpautop( get_the_excerpt( $event->ID ) ) ); ?>
 ```
 
 Save that and your widget will now display the event post excerpt beneath the event details. Check out our [Customization Archives](https://theeventscalendar.com/knowledgebase/k/themers-guide/) for a more comprehensive overview of how to use template overrides.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

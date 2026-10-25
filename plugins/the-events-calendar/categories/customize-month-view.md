@@ -12,26 +12,14 @@ Month View lays out your events on a traditional calendar grid. You may want to 
 
 ## Show All Events For a Day in Month View
 
-Sometimes you don’t want users to have to click a “View All” link in Month View to see all the events scheduled that day, but would rather have all the events presented outright. This is totally doable and requires a two-pronged approach: first, by adding a snippet to your functions.php file; and second, by eliminating the “View More” link from the calendar itself.
+Sometimes you don’t want users to have to click a “View All” link in Month View to see all the events scheduled that day, but would rather have all the events presented outright. This is totally doable with one snippet: it removes the limit on how many events each day shows, so the “+ N More” link no longer appears.
 
-For the snippet, simply add the code below to your theme’s functions.php file. The snippet sets the 
-```
-pages_per_post
-```
-
- to 
-```
--1
-```
-
-, which WordPress takes as meaning enforce no limit.
+For the snippet, simply add the code below to your theme’s functions.php file (or the Code Snippets plugin). It returns -1 for the number of events per day, which means no limit.
 
 ```
-add_filter( 'tribe_events_month_day_limit', 'tribe_remove_calendar_day_limit' );
-
-function tribe_remove_calendar_day_limit() { 
+add_filter( 'tribe_events_views_v2_month_events_per_day', function () {
     return -1;
-}
+} );
 ```
 
 ## Show Full Day of the Week Name
@@ -45,7 +33,7 @@ Perform a template override, by making a copy of ‘/wp-content/plugins/the-even
 Look for the following line:
 
 ```
-<?php echo esc_html( $wp_locale->get_weekday_abbrev( $day ) ); ?>
+<?php echo esc_html( $day_initial ); ?>
 ```
 
 Then replace that with this new code:
@@ -54,7 +42,7 @@ Then replace that with this new code:
 <?php echo esc_html( $day ); ?>
 ```
 
-The template grabs the short form of the weekday via WordPress’s locale helpers, then uses that in the table header. Instead, we use the full day name.
+The template shows the first letter of each weekday in the table header. Instead, we use the full day name.
 
 ## Change the Date Format
 
@@ -69,19 +57,18 @@ formatted_grid_date
 
 ```
 add_filter(
-    'tribe_events_views_v2_view_template_vars',
-    function( $template_vars, $view ) {
-		
-		// Month view only
-        if ( isset( $template_vars['formatted_grid_date_mobile'] ) ) {
+    'tribe_events_views_v2_view_month_template_vars',
+    function ( $template_vars, $view ) {
+        if ( isset( $template_vars['formatted_grid_date'], $template_vars['the_date'] ) ) {
             $date = Tribe__Date_Utils::build_date_object( $template_vars['the_date'] );
-            $template_vars['formatted_grid_date_mobile'] = $date->format( 'F' );
+            $template_vars['formatted_grid_date']        = $date->format_i18n( 'F' );
+            $template_vars['formatted_grid_date_mobile'] = $date->format_i18n( 'F' );
         }
-		
-		return $template_vars;
+
+        return $template_vars;
     },
-	10,
-	2
+    10,
+    2
 );
 ```
 
@@ -107,23 +94,27 @@ Tip: Always use a child theme when making customizations so updates don’t over
 
 #### Step 2: Add the Thumbnail Code
 
-Open the file you just copied. Around line 26, add the following snippet where you’d like the thumbnail to appear:
+Open the file you just copied. Add the following snippet on a new line directly under the line that loads the 
+```
+calendar-event/featured-image
+```
+
+ template (around line 27), inside the 
+```
+<article>
+```
+
+ element:
 
 ```
-<?php if( isset ($event->thumbnail )): ?>
+<?php if ( $event->thumbnail->exists && ! $event->featured ) : ?>
 	<img
-		class="tribe-events-calendar-list__event-featured-image"
+		class="tribe-events-calendar-month__calendar-event-featured-image"
 		src="<?php echo esc_url( $event->thumbnail->full->url ); ?>"
 		<?php if ( ! empty( $event->thumbnail->srcset ) ) : ?>
+			srcset="<?php echo esc_attr( $event->thumbnail->srcset ); ?>"
 		<?php endif; ?>
-		<?php if ( ! empty( $event->thumbnail->alt ) ) : ?>
-			alt="<?php echo esc_attr( $event->thumbnail->alt ); ?>"
-		<?php else : ?>
-			alt=""
-		<?php endif; ?>
-		<?php if ( ! empty( $event->thumbnail->title ) ) : ?>
-			title="<?php echo esc_attr( $event->thumbnail->title ); ?>"
-		<?php endif; ?>
+		alt="<?php echo esc_attr( ! empty( $event->thumbnail->alt ) ? $event->thumbnail->alt : '' ); ?>"
 		<?php if ( ! empty( $event->thumbnail->full->width ) && ! empty( $event->thumbnail->full->height ) ) : ?>
 			width="<?php echo esc_attr( $event->thumbnail->full->width ); ?>"
 			height="<?php echo esc_attr( $event->thumbnail->full->height ); ?>"
@@ -134,7 +125,7 @@ Open the file you just copied. Around line 26, add the following snippet where y
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/CE-Code-1024x653-1.jpg)
 
-Once added, your month view will display featured images for each event.
+Once added, your month view will display the featured image for each event that has one. Events marked as Featured already show their image in Month View, so the snippet skips them.
 
 #### Step 3: Handling Multiple Events in the Same Day
 
@@ -218,11 +209,9 @@ Following the same pattern we used in [“How to Include a New Template in a Vie
 <?php
 // Get the event ID.
 $event_id = get_the_ID();
-
 // Fetch from this Event all custom fields and their values.
 $fields = tribe_get_custom_fields( $event_id );
 ?>
-
 <div class="theme-extra-event-fields">
 <?php if ( ! empty( $fields['Artist'] ) ) : ?>
   <h4>Artist</h4>
@@ -253,7 +242,6 @@ The template above will make the appropriate checks to display the Artist Name a
 Now you will need to include this new template to show after the tooltip for the month view, using the following code in your functions.php file:
 
 ```
-<?php 
 add_action( 'tribe_template_after_include:events/v2/month/calendar-body/day/calendar-events/calendar-event/tooltip/description',
   function ( $file, $name, $template ) {
     $template->template( 'month/tooltip-extra-fields' );
@@ -274,23 +262,19 @@ styles.css
 .tooltipster-base.tribe-events-tooltip-theme .theme-extra-event-fields {
   font-size: 13px;
 }
-
 .tooltipster-base.tribe-events-tooltip-theme .theme-extra-event-fields h4 {
   font-size: 15px;
   margin-bottom: 10px;
   margin-top: 10px;
   font-weight: bold;
 }
-
 .tooltipster-base.tribe-events-tooltip-theme .theme-extra-event-fields a {
   color: rgb(17, 85, 204);
   font-weight: bold;
 }
-
 .tooltipster-base.tribe-events-tooltip-theme .theme-extra-event-fields ul {
   list-style: disc;
 }
-
 .tooltipster-base.tribe-events-tooltip-theme .theme-extra-event-fields ul li {
   margin-left: 16px;
 }
@@ -339,36 +323,27 @@ Let’s create a new file in your child theme at this location:
 ```
 <?php
 /**
- * Get the venue ID.
- * @var integer $venue_id
- *
- * @see https://docs.theeventscalendar.com/reference/functions/tribe_get_venue_id/
+ * Show the venue of the event this tooltip belongs to.
  */
-$venue_id = tribe_get_venue_id();
+$tooltip_event = $this->get( 'event' );
+$venue_id      = $tooltip_event ? tribe_get_venue_id( $tooltip_event->ID ) : 0;
 
-if ( isset( $venue_id ) && $venue_id != 0 ) {
-
-	/**
-	 * Retrieving the venue object.
-	 * @var object $venue
-	 *
-	 * @see https://docs.theeventscalendar.com/reference/functions/tribe_get_venue_object/
-	 */
+if ( $venue_id ) {
 	$venue = tribe_get_venue_object( $venue_id );
 
 	echo '<div class="tribe-events-calendar-month__calendar-event-tooltip-venue tribe-common-b3"><p>';
 
 	echo '<strong>Venue:</strong> ';
 
-	// Display venue name
-	echo $venue->post_title;
+	// Display venue name.
+	echo esc_html( $venue->post_title );
 
-	// Display venue address
+	// Display venue address.
 	if ( ! empty( $venue->address ) ) {
 		echo ', ' . esc_html( $venue->address );
 	}
 
-	// Display venue city
+	// Display venue city.
 	if ( ! empty( $venue->city ) ) {
 		echo ', ' . esc_html( $venue->city );
 	}
@@ -377,7 +352,7 @@ if ( isset( $venue_id ) && $venue_id != 0 ) {
 }
 ```
 
-The template above checks if a venue for the event exists and if it does, then prints the venue name and the venue city.
+The template above checks if a venue for the event exists and if it does, then prints the venue name, address and city.
 
 It is possible to adjust or expand this information depending on what you would like to display. You can find all the venue-related information and variables in [this developer documentation](https://docs.theeventscalendar.com/reference/functions/tribe_get_venue_object/#return).
 
@@ -533,7 +508,7 @@ add_filter
 If you prefer a CSS-only approach, add the following to your (child) theme’s *style.css* file, or under **Appearance → Customize → Additional CSS**:
 
 ```
-.tribe-events-view-month .tribe-events-tooltip-theme {
+.tooltipster-base.tribe-events-tooltip-theme {
     display: none !important;
 }
 ```
@@ -547,7 +522,7 @@ Add the PHP to your theme’s
 functions.php
 ```
 
- file or via the [Code Snippets](https://wordpress.org/plugins/code-snippets/) plugin. Add the CSS under **Appearance → Customize → Additional CSS**, or in your child theme’s stylesheet.
+ file or via the [Code Snippets](https://wordpress.org/plugins/code-snippets/) plugin. Add the CSS under **Appearance → Customize → Additional CSS**, or in your child theme’s stylesheet. In months other than the current one, Month View gives the first day of the month the “today” style; this is expected with these snippets.
 
 #### Option 1: Remove the Content, Collapse the Space
 
@@ -561,7 +536,13 @@ display: none
 **PHP snippet:**
 
 ```
-add_filter( 'tec_events_month_day_classes_comparison_date', function( $today_date, $request_date, $day_date, $day, $today ) {
+add_filter( 'tec_events_month_day_classes_comparison_date', function ( $comparison_date, $request_date, $day_date, $day, $today_date ) {
+    // In the current month, keep comparing with today so the "today" highlight stays on today.
+    if ( substr( $today_date, 0, 7 ) === $request_date->format( 'Y-m' ) ) {
+        return $today_date;
+    }
+
+    // In any other month, compare with the requested month.
     return $request_date;
 }, 10, 5 );
 ```
@@ -590,16 +571,13 @@ visibility: hidden
 ```
 add_filter(
     'tribe_events_views_v2_view_month_template_vars',
-    function( $template_vars, $view ) {
-        // current time
-        $now = Tribe__Date_Utils::build_date_object( $template_vars['now'] );
-        // requested date - for month view this is the first of the month
+    function ( $template_vars, $view ) {
+        $now          = Tribe__Date_Utils::build_date_object( $template_vars['now'] );
         $request_date = $template_vars['request_date'];
 
-        // if the requested date isn't the same as the current date,
-        // pass the requested date as the current date
-        if ( $now->format( 'Y-m-d' ) !== $request_date->format( 'Y-m-d' ) ) {
-            $template_vars['today_date'] = $template_vars['request_date']->format( 'Y-m-d' );
+        // In any month other than the current one, compare days with the requested month.
+        if ( $now->format( 'Y-m' ) !== $request_date->format( 'Y-m' ) ) {
+            $template_vars['today_date'] = $request_date->format( 'Y-m-d' );
         }
 
         return $template_vars;
@@ -658,7 +636,7 @@ It’ll look something like this on the frontend:
 
 ![mark your business as closed with The Events Calendar](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2021-12-21-at-11.05.24-AM.jpg)
 
-To show a “Closed” text inside a specific Month View date, you can modify the following CSS snippet:
+To show a “Closed” text inside a specific Month View date, you can modify the following CSS snippet: Change 2022-12-25 to the date you want to mark, written as YYYY-MM-DD.
 
 ```
 .tribe-events-calendar-month__day[aria-labelledby="tribe-events-calendar-day-2022-12-25"] .tribe-events-calendar-month__events:after {
@@ -673,7 +651,7 @@ To show a “Closed” text inside a specific Month View date, you can modify th
 
 #### Customizing the CSS Snippet
 
-You can customize the above snippet by changing the word “Closed” to something else, changing the font-size element, background color, or the padding and border.
+You can customize the above snippet by changing the word “Closed” to something else, changing the font-size element, background color, or the padding and border. Day numbers in nth-child count columns from the first day of the week set in Settings > General > Week Starts On. If your week starts on Monday, 6 and 7 are Saturday and Sunday; if it starts on Sunday, use 7 and 1.
 
 If you’d like to change which days are marked as “Closed”, you’ll want to edit the number next to 
 ```
@@ -714,30 +692,25 @@ Template file:
 /wp-content/plugins/the-events-calendar/src/views/v2/month/calendar-body/day/calendar-events/calendar-event/title.php
 ```
 
-Override the above file with the following content, which inserts 
+Override the above file with the following content, which adds 
 ```
 target="_blank"
 ```
 
- after the 
+ and 
 ```
-href
-```
-
- attribute of the 
-```
-<a>
+rel="bookmark noopener"
 ```
 
- element.
+ to the title link.
 
 ```
-<h3 class="tribe-events-calendar-month__calendar-event-title tribe-common-h8 tribe-common-h--alt">
+<div class="tribe-events-calendar-month__calendar-event-title tribe-common-h8 tribe-common-h--alt">
 	<a
 		href="<?php echo esc_url( $event->permalink ); ?>"
 		target="_blank"
 		title="<?php echo esc_attr( $event->title ); ?>"
-		rel="bookmark"
+		rel="bookmark noopener"
 		class="tribe-events-calendar-month__calendar-event-title-link tribe-common-anchor-thin"
 		data-js="tribe-events-tooltip"
 		data-tooltip-content="#tribe-events-tooltip-content-<?php echo esc_attr( $event->ID ); ?>"
@@ -748,7 +721,7 @@ href
 		echo $event->title;
 		?>
 	</a>
-</h3>
+</div>
 ```
 
 #### From the Tooltips
@@ -758,30 +731,25 @@ Template file:
 /wp-content/plugins/the-events-calendar/src/views/v2/month/calendar-body/day/calendar-events/calendar-event/tooltip/title.php
 ```
 
-Override the above file with the following content, which inserts 
+Override the above file with the following content, which adds 
 ```
 target="_blank"
 ```
 
- after the 
+ and 
 ```
-href
-```
-
- attribute of the 
-```
-<a>
+rel="bookmark noopener"
 ```
 
- element.
+ to the title link.
 
 ```
-<h3 class="tribe-events-calendar-month__calendar-event-tooltip-title tribe-common-h7">
+<div class="tribe-events-calendar-month__calendar-event-tooltip-title tribe-common-h7">
 	<a
 		href="<?php echo esc_url( $event->permalink ); ?>"
 		target="_blank"
 		title="<?php echo esc_attr( $event->title ); ?>"
-		rel="bookmark"
+		rel="bookmark noopener"
 		class="tribe-events-calendar-month__calendar-event-tooltip-title-link tribe-common-anchor-thin"
 	>
 		<?php
@@ -789,8 +757,12 @@ href
 		echo $event->title;
 		?>
 	</a>
-</h3>
+</div>
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

@@ -60,15 +60,20 @@ This causes the number of seconds to be displayed. The other argument is the tex
 
 ### Styling with CSS
 
-You can apply custom CSS to the Events Countdown widget. The widget’s styles are part of 
+You can apply custom CSS to the Events Countdown widget. The widget’s styles are loaded from 
 ```
-tribe-events-pro.css
+widget-countdown-skeleton.css
 ```
 
-. To target the widget with your own CSS rules, use the base class:
+ (or 
+```
+widget-countdown-full.css
+```
+
+ if you’re loading the full stylesheet). To target the widget with your own CSS rules, use the base class:
 
 ```
-.tribe-events-countdown-widget {
+.tribe-events-widget-countdown {
     /* your styles here */
 }
 ```
@@ -86,7 +91,12 @@ You can override the Events Countdown widget template if you want to customize
 - Make a new folder in that one called *widgets*
 - Drop the copied template file (or one more *widget-countdown* folder and then the file) into that last folder
 
-Now that the template is in the theme files, you can modify it to suit your needs. For example, you can change the labels from Days, Hours, Min and Sec to DD, HH, MM, SS instead. Save the file and that change will take place on the front end.
+Now that the template is in the theme files, you can modify it to suit your needs. For example, to change the labels from days, hours, mins and secs to d, h, m and s, override the 
+```
+widget-countdown/timer.php
+```
+
+ template and edit the labels there. Save the file and that change will take place on the front end.
 
 ![kb-widgets-countdown-override](https://docs.nexcess.com/wp-content/uploads/2026/06/kb-widgets-countdown-override.jpg)
 
@@ -100,39 +110,40 @@ Would you like to count down to the event end date instead of the start date in 
 
 ```
 /**
- * Modify the event countdown variables to use the event's end date instead of the start date.
+ * Count down to the event end date instead of the start date in the Events Countdown widget and shortcode.
  *
- * This function adjusts the countdown variables in The Events Calendar Countdown Widget to count down to
- * the end date of an event instead of the start date. It will not change the variables if there is no event 
- * or if the event has already ended.
+ * @param array<string,mixed> $vars The template variables of the view being rendered.
+ * @param object              $view The view being rendered.
  *
- * @param array $vars The original template variables.
- * @return array Modified template variables.
+ * @return array<string,mixed> The modified template variables.
  */
-add_filter( 'tribe_events_views_v2_view_template_vars', function ( $vars ) {
-    $event = tribe_get_event( get_the_ID() );
-    $now = Tribe__Date_Utils::build_date_object( tribe_context()->get( 'now', 'now' ) )->setTimezone( new DateTimeZone( 'UTC' ) );
-    $end_date_str = tribe_get_end_date( $event->ID, false, Tribe__Date_Utils::DBDATEFORMAT );
-    $end_date = Tribe__Date_Utils::build_date_object( $end_date_str )->setTimezone( new DateTimeZone( 'UTC' ) );
+add_filter( 'tribe_events_views_v2_view_template_vars', function ( $vars, $view ) {
+	// Only change the countdown widget.
+	if ( 'widget-countdown' !== $view::get_view_slug() ) {
+		return $vars;
+	}
 
-    // Bail if there is no event.
-    if ( !$event ) {
-        return $vars;
-    }
+	$event = isset( $vars['event'] ) ? $vars['event'] : null;
 
-    // Bail if the end date has passed.
-    if ( $end_date < $now ) {
-        return $vars;
-    }
+	// Bail if there is no event.
+	if ( ! $event instanceof WP_Post || empty( $event->dates ) ) {
+		return $vars;
+	}
 
-    // Change the variables to point to the event's end date instead of the start date.
-    $vars['count_to_date']  = $end_date_str;
-    $vars['count_to_stamp'] = Tribe__Date_Utils::time_between( $vars['count_to_date'], $now->format( 'c' ) );
-    $vars['event_done'] = 0;
+	$now = Tribe__Date_Utils::build_date_object( tribe_context()->get( 'now', 'now' ) )->setTimezone( new DateTimeZone( 'UTC' ) );
+	$end = $event->dates->end_utc->format( 'c' );
 
-    return $vars;
-}, 11 );
+	$vars['count_to_date']  = $end;
+	$vars['count_to_stamp'] = Tribe__Date_Utils::time_between( $end, $now->format( 'c' ) );
+	$vars['event_done']     = $end < $now->format( 'c' );
+
+	return $vars;
+}, 11, 2 );
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

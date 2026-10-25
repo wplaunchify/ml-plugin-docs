@@ -22,7 +22,7 @@ There are three filter hooks and one action hook that can be used. (You can find
 
 This filter hook allows you to modify the event data **before it is saved** in the database. This is for both when saving and updating events.
 
-*Location: the-events-calendar/src/Tribe/Aggregator/Record/Abstract.php:2059*
+*Location: the-events-calendar/src/Tribe/Aggregator/Record/Abstract.php:2089*
 
 ```
 $event = apply_filters( 'tribe_aggregator_before_save_event', $event, $this );
@@ -50,7 +50,7 @@ $this
 
 This filter hook allows you to modify the event data **before it is updated**. (It’s almost the same as the first one, but works only when updating events.)
 
-*Location: the-events-calendar/src/Tribe/Aggregator/Record/Abstract.php:2074*
+*Location: the-events-calendar/src/Tribe/Aggregator/Record/Abstract.php:2104*
 
 ```
 $event = apply_filters( 'tribe_aggregator_before_update_event', $event, $this );
@@ -62,7 +62,7 @@ Parameters like above.
 
 This filter hook allows you to modify the event data **before it is inserted** into the database. (It’s almost the same as the first one, but works only when saving new events.)
 
-*Location: the-events-calendar/src/Tribe/Aggregator/Record/Abstract.php:2110*
+*Location: the-events-calendar/src/Tribe/Aggregator/Record/Abstract.php:2140*
 
 ```
 $event = apply_filters( 'tribe_aggregator_before_insert_event', $event, $this );
@@ -74,7 +74,7 @@ Parameters like above.
 
 As the name suggests, this action hook runs after an event has been saved in the database. It allows you to do something extra after an event is saved, for example, changing the featured image.
 
-*Location: the-events-calendar/src/Tribe/Aggregator/Record/Abstract.php:2231*
+*Location: the-events-calendar/src/Tribe/Aggregator/Record/Abstract.php:2261*
 
 ```
 do_action( 'tribe_aggregator_after_insert_post', $event, $item, $this );
@@ -91,7 +91,7 @@ $event
 $item
 ```
 
- is an array, the raw version of the event data that was sent to the site.
+ is an object, the raw version of the event data that was sent to the site.
 - ```
 $this
 ```
@@ -262,11 +262,9 @@ For the filter hooks:
  */
 function my_custom_ea_filter( $event, $data ){
 	// Code comes here
-
     // Return the event data to be saved.
     return $event;
 }
-
 add_filter( 'tribe_aggregator_before_save_event', 'my_custom_ea_filter', 10, 2 );
 ```
 
@@ -275,7 +273,7 @@ For the action hook:
 ```
 /**
  * @param array  $event  Which Event data was sent.
- * @param array  $item   Raw version of the data sent from EA.
+ * @param object $item   Raw version of the data sent from EA.
  * @param object $data   The record we are dealing with.
  */
 function my_custom_ea_action( $event, $item, $data ){
@@ -315,23 +313,19 @@ Use with: both hooks. It’s best to use this at the beginning.
 
 ```
 /* START origin validation */
-
 // Get the origin of the current import.
 $current_origin = $data->meta['origin'];
-
 // Define what origins the code should run on.
 $valid_origins = [
 	'gcal',
 	'meetup',
 ];
-
 // Bail, if the import is not from a valid origin.
 if ( ! in_array( $current_origin, $valid_origins ) ) {
 	return $event;
 	// OR in case of the action hook:
 	// return;
 }
-
 /* END origin validation */
 ```
 
@@ -343,23 +337,19 @@ Use with: both hooks. It’s best to use this at the beginning.
 
 ```
 /* START source validation */
-
 // Get the source of the current import.
 $current_source = $data->meta['source'];
-
 // Define what sources the code should run on.
 $valid_sources = [
 	'https://awesomeevents.com/ical-event-calendar.php',
 	'https://fantasticevents.com/calendar.ics',
 ];
-
 // Bail, if the import is not from a valid souce,
 if ( ! in_array( $current_source, $valid_sources ) ) {
 	return $event;
 	// OR in case of the action hook:
 	// return;
 }
-
 /* END source validation */
 ```
 
@@ -380,19 +370,15 @@ tribe_aggregator_after_insert_post
 
 ```
 /* START apply tags */
-
 // Define the tags. Can be an array of tags ...
 $tags = [
 	'Imported Events',
 	'External',
 ];
-
 // OR ... a string of tags separated by commas.
 $tags = 'Imported Events, External';
-
 // Add the tags.
 wp_add_post_tags( $event['ID'], $tags );
-
 /* END apply tags */
 ```
 
@@ -409,21 +395,17 @@ tribe_aggregator_after_insert_post
 
 ```
 /* START apply tags */
-
 // Get the source of the current import.
 $current_source = $data->meta['source'];
-
 // Define what tags should be added to the events from the different sources.
 $sources_and_tags = [
 	'https://awesomeevents.com/ical-event-calendar.php' => 'One tag',
 	'https://fantasticevents.com/calendar.ics'          => [ 'First tag', 'Second tag', ],
 ];
-
 // Add the tags based on the source.
 if ( array_key_exists( $current_source, $sources_and_tags ) ) {
 	wp_add_post_tags( $event['ID'], $sources_and_tags[ $current_source ] );
 }
-
 /* END apply tags */
 ```
 
@@ -453,7 +435,7 @@ if ( ! empty( $venue_id ) ) {
 $venue_id = 999;
 
 // Add the defined venue ID to the event.
-update_post_meta( $event_id, '_EventVenueID', $venue_id );
+update_post_meta( $event['ID'], '_EventVenueID', $venue_id );
 
 /* END add venue */
 ```
@@ -471,23 +453,18 @@ tribe_aggregator_after_insert_post
 
 ```
 /* START set featured image */
-
 // Default featured image ID.
 $featured_image_id = 2816;
-
 // Partial match with title.
 if ( is_int( strpos( $item->title, "Coffee Hour" ) ) ) {
 	$featured_image_id = 6697;
 }
-
 // Exact match with title.
 if ( $item->title == 'Game Time' ) {
 	$featured_image_id = 6575;
 }
-
 // Set the featured image.
 set_post_thumbnail( $event['ID'], $featured_image_id );
-
 /* END set featured image */
 ```
 
@@ -504,13 +481,10 @@ tribe_aggregator_before_save_event
 
 ```
 /* START remove taxonomies */
-
 // Remove categories.
 unset( $event['categories'] );
-
 // Remove tags.
 unset( $event['tags'] );
-
 /* END remove taxonomies */
 ```
 
@@ -529,15 +503,12 @@ tribe_aggregator_before_save_event
 
 ```
 /* START remove event URL */
-
 // Get the source of the current import.
 $current_source = $data->meta['source'];
-
 // If the event URL matches the source URL, remove it.
 if ( $event['EventURL'] == $data->meta['source'] ) {
 	$event['EventURL'] = '';
 }
-
 /* END remove event URL */
 ```
 
@@ -584,7 +555,7 @@ function my_custom_ea_filter( $event, $data ){
 
 	// Add the tags based on the origin.
 	if ( array_key_exists( $current_origin, $origins_and_tags ) ) {
-		wp_add_post_tags( $event['ID'], $origins_and_tags[ $current_origin ] );
+		$event['tags'] = array_merge( (array) ( $event['tags'] ?? [] ), (array) $origins_and_tags[ $current_origin ] );
 	}
 
 	// If the event URL matches the source URL, remove it.
@@ -700,6 +671,10 @@ _tribe_events_status
 - Postponed
 
 To define your own custom event statuses, see [Adding a Custom Event Status](https://docs.nexcess.com/software/the-events-calendar/custom-event-status/).
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

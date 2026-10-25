@@ -54,7 +54,7 @@ add_action( 'admin_init', function() {
 	}
 
 	// Instantiate Schema Builder
-	$tec_schema_builder = tribe( TECEventsCustom_TablesV1Schema_BuilderSchema_Builder::class );
+	$tec_schema_builder = tribe( \TEC\Events\Custom_Tables\V1\Schema_Builder\Schema_Builder::class );
 
 	// Recreate custom tables.
 	$tec_schema_builder->up();
@@ -85,6 +85,10 @@ yourdomain.com/wp-json/tribe/events/v1/events
 ```
 
 ) is excluded from any blocking or filtering rules.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

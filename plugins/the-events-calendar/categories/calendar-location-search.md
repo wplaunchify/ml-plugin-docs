@@ -44,7 +44,7 @@ By default, the location search field appears on all calendar views. To restrict
 
 ### Filtering Events by Location in WP_Query
 
-From Events Calendar Pro version 4.4.16, the arguments 
+The arguments 
 ```
 tribe_geoloc
 ```
@@ -189,7 +189,6 @@ If all your venues are in the same state or region, you can automatically append
 
 ```
 add_filter( 'tec_google_map_args', 'tec_limit_search_to_texas' );
-
 function tec_limit_search_to_texas( $args ) {
     $args['address'] = $args['address'] . ', TX';
     return $args;

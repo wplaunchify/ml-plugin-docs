@@ -141,23 +141,30 @@ That said, let’s see an example showing how the JSON-LD schema data appears on
 
 ```
 <script type="application/ld+json">
-[{"@context":"http://schema.org",
-"@type":"Event",
-   "name":"Hosted Dinner with Chef Monica Geller",
-   "description":"Join Chef Moinca Geller for a Hosted Dinner! She will discuss how her weight loss contributed to her wanting to be a chef all while preparing her guests a healthy, balanced meal for you to enjoy.",
-   "startDate":"2024-06-15T18:30:00-04:00"
-   "location":{
-      "@type":"Place",
-      "name":"ABC Cooking School Event Center",
-      "description":"The ABC Cooking School is the best event center of New York",
-      "address":{
-         "@type":"PostalAddress",
-         "streetAddress":"123 1st Aveune",
-         "addressLocality":"New York City",
-         "addressRegion":"NY",
-         "postalCode":"10036",
-         "addressCountry":"United States"
-      },
+[{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "Hosted Dinner with Chef Monica Geller",
+  "description": "Join Chef Monica Geller for a Hosted Dinner! She will discuss how her weight loss contributed to her wanting to be a chef all while preparing her guests a healthy, balanced meal for you to enjoy.",
+  "url": "https://example.com/event/hosted-dinner-with-chef-monica-geller/",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "startDate": "2024-06-15T18:30:00-04:00",
+  "endDate": "2024-06-15T21:30:00-04:00",
+  "location": {
+    "@type": "Place",
+    "name": "ABC Cooking School Event Center",
+    "description": "The ABC Cooking School is the best event center of New York",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 1st Avenue",
+      "addressLocality": "New York City",
+      "addressRegion": "NY",
+      "postalCode": "10036",
+      "addressCountry": "United States"
+    }
+  },
+  "performer": "Organization"
 }]
 </script>
 ```
@@ -168,7 +175,7 @@ That said, let’s see an example showing how the JSON-LD schema data appears on
 2. **description**: A brief description of the event, automatically filled with your event post content.
 3. **image**: URLs of images related to the event. Your [Featured Image](https://docs.nexcess.com/software/the-events-calendar/featured-images/) will be automatically included there.
 4. **eventStatus**: The status of your event. When creating your events, the Event Status meta box will automatically set your event as a Scheduled event, but you can change it to “Canceled” or “Postponed” statuses. You can learn more about those statuses on the [“Creating Events” article.](https://docs.nexcess.com/software/the-events-calendar/create-event/#:~:text=front%20and%20center.-,Event%20Status,-Usually%20found%20in)
-5. **EventAttendanceMode**: indicates whether it occurs online, offline, or a mix. All events are automatically set as an Online event. Using the Virtual Events plugin, you can create Online and Mixed events.
+5. **EventAttendanceMode**: indicates whether it occurs online, offline, or a mix. Events are automatically set as an Offline (in-person) event. Using the Virtual Events plugin, you can create Online and Mixed events.
 6. **offers**: Details about the ticket or entry offer, including price, currency, availability, and URL for purchasing tickets.
 The Events Calendar provides a price field where you can set the value and currency. Using the Event Tickets plugin, that field is hidden as that data comes from the tickets created on your event page.
 7. **organizer**: Information about the organization or person organizing the event, including name and URL. The Events Calendar provides the [Organizer post type](https://docs.nexcess.com/software/the-events-calendar/venues-organizers/#create-org), where you can create event organizers and select them when creating your events.
@@ -214,13 +221,12 @@ If you prefer to use a third-party plugin to manage all the schemas, you will ne
 if ( class_exists('Tribe__Events__Main') ) {
   // Remove Schema JSON from Calendar view URLS
   add_filter( 'tribe_events_views_v2_view_json_ld_markup', '__return_empty_string' );
-
   //Remove Schema JSON from Single Event URLS
   add_filter( 'tribe_json_ld_markup', '__return_empty_string' );
 }
 ```
 
-Filter: [tribe_events_views_v2_view_json_ld_markup](https://docs.theeventscalendar.com/reference/hooks/tribe_events_views_v2_view_json_ld_markup/)
+Filters: [tribe_events_views_v2_view_json_ld_markup](https://docs.theeventscalendar.com/reference/hooks/tribe_events_views_v2_view_json_ld_markup/) and tribe_json_ld_markup
 
 #### Change the “Events” Schema Type to a Custom Schema Type
 
@@ -229,47 +235,42 @@ If all your events are Music events, you may want to change the default event ty
 ```
 if ( class_exists('Tribe__Events__Main')) {
   add_filter( 'tribe_json_ld_event_object', 'customize_event_json_ld', 10, 3 );
-
   function customize_event_json_ld( $data, $args, $post ) {
       // Change event type from "Event" to "MusicEvent"
       if ( isset( $data->{'@type'} ) && 'Event' === $data->{'@type'} ) {
           $data->{'@type'} = 'MusicEvent';
       }
-
       // Remove the default "performer" set as "Organization"
       if ( isset( $data->performer ) ) {
           unset( $data->performer );
       }
-
       // Change the default "Organizer" to be used as "Performer"
       if ( isset( $data->organizer ) ) {
           $data->performer = $data->organizer;
           unset( $data->organizer );
       }
-
       // Change the new "performer" type from "Person" to "MusicGroup"
       if ( isset( $data->performer ) && 'Person' === $data->performer->{'@type'} ) {
           $data->performer->{'@type'} = 'MusicGroup';
       }
-
       return $data;
   }
 }
 ```
 
-Filter: [tribe__tickets__json_ld__order](https://docs.theeventscalendar.com/reference/classes/tribe__tickets__json_ld__order/)
+Filter: tribe_json_ld_event_object
 
 #### How to Disable Yoast SEO Schemas for Single Event URLs
 
 ```
-if ( class_exists('Tribe__Events__Main') && class_exists ('WPSEO_Frontend') ) {
-	function custom_yoast_schema() {
-		if ( is_singular('tribe_events')){
-			add_filter( 'wpseo_json_ld_output', '__return_false' );
+if ( class_exists( 'Tribe__Events__Main' ) && class_exists( 'WPSEO_Options' ) ) {
+	add_filter( 'wpseo_json_ld_output', function ( $output ) {
+		if ( is_singular( 'tribe_events' ) ) {
+			return false;
 		}
-	}
 
-	add_filter( 'template_redirect', 'custom_yoast_schema' );
+		return $output;
+	} );
 }
 ```
 
@@ -294,14 +295,10 @@ Filter: [rank_math/json_ld](https://rankmath.com/kb/filters-hooks-api-developer/
 #### Disable “All in One SEO”(AIOSEO) Schemas for Single Event URLs
 
 ```
-if ( class_exists('Tribe__Events__Main') && class_exists ('AIOSEO') ) {
-  function aioseo_disable_schema( $disabled ) {
-	  if ( is_singular('tribe_events') ) {
-	     return true;
-	  }
-  }
-
-  add_filter( 'aioseo_schema_disable', 'aioseo_disable_schema' );
+if ( class_exists( 'Tribe__Events__Main' ) && function_exists( 'aioseo' ) ) {
+	add_filter( 'aioseo_schema_disable', function ( $disabled ) {
+		return is_singular( 'tribe_events' ) ? true : $disabled;
+	} );
 }
 ```
 
@@ -329,7 +326,7 @@ Users sometimes report warnings in Google Search Console regarding missing field
 
 **Cause:** This field is optional and, if not provided, defaults to “Scheduled.”
 
-- **Solution:** Our plugin will only set an “eventStatus” for events that are **Postponed** or **Cancelled**. For all other events, this field is omitted, as the default status is considered “Scheduled.”
+- **Solution:** Our plugin sets “eventStatus” on every event: “EventScheduled” by default, and “EventPostponed” or “EventCancelled” for events with those statuses. If Google still reports the field as missing, test the event URL with the Rich Results Test to see what Google receives, because another plugin may be changing the markup.
 
 #### 4. Missing field “organizer”
 
@@ -359,7 +356,7 @@ Users sometimes report warnings in Google Search Console regarding missing field
 
 **Cause:** This field is not required unless the event is cancelled or postponed.
 
-- **Solution:** The field will only be added for cancelled or postponed events. For scheduled events, this field is not necessary.
+- **Solution:** Our plugin adds “eventAttendanceMode” to every event: OfflineEventAttendanceMode for in-person events, and Online or Mixed for virtual and hybrid events. If Google still reports the field as missing, test the event URL with the Rich Results Test to see what Google receives, because another plugin may be changing the markup.
 
 #### 9. Missing field “performer”
 
@@ -425,7 +422,6 @@ The following parameters will help block some WordPress folders and URLs, and al
 
 ```
 ## For WordPress
-
 User-agent: *
 Disallow: /wp-admin/*
 Disallow: /wp-login.php
@@ -439,14 +435,12 @@ Disallow: */comments-page-*
 Disallow: */trackback
 Disallow: */feed
 Disallow: */comments
-
 Allow: /wp-content/cache/*
 Allow: /wp-content/uploads/*
 Allow: /wp-content/themes/*
 Allow: /wp-content/plugins/*
 Allow: /wp-includes/js/*
 Allow: /wp-includes/css/*
-
 ## For Events Calendar
 Disallow: *post_type=tribe_events*
 Disallow: *hide_subsequent_recurrences=*
@@ -462,7 +456,6 @@ Disallow: *outlook-ical=*
 Disallow: *related_series=*
 Disallow: *tribe_geofence=*
 Disallow: *tribe_organizer=*
-
 Allow: /events/*
 Allow: /event/*
 ```
@@ -503,22 +496,22 @@ function tec_add_nofollow_to_recurring_events() {
     }
 	// If it's a recurring event, add the noindex meta tag
     if ( tribe_is_recurring_event($event_id) ) {
-		echo '<meta name="robots" id="tec_noindex" content="noindex, follow" />' . "n";
+		echo '<meta name="robots" id="tec_noindex" content="noindex, follow" />' . "\n";
     }
 }
 ```
 
-If you’re looking to have only the first recurrence indexed by Google but not all the subsequent ones, you’ll need to tweak that code not to include the noindex tag for the first event occurrence.
+If you’re looking to have only the first recurrence indexed by Google but not all the subsequent ones, you’ll need to tweak that code not to include the noindex tag for the first event occurrence. Use the snippet below instead of the previous one, not in addition to it.
 
 ```
-add_action( 'wp_head', 'tec_add_nofollow_to_recurring_events' );
+add_action( 'wp_head', 'tec_add_noindex_to_later_recurrences' );
 
 /**
- * Add 'nofollow' to recurring events, except for the first instance.
+ * Add 'noindex' to recurring events, except for the first instance.
  * 
  * @return void
  */
-function tec_add_nofollow_to_recurring_events() {
+function tec_add_noindex_to_later_recurrences() {
     // Bail if ECP is not active.
     if ( ! class_exists( 'Tribe__Events__Pro__Main' ) ) {
 		return;
@@ -542,48 +535,14 @@ function tec_add_nofollow_to_recurring_events() {
 	    $post = get_post( $event_id );
 	
 	    // Check if the event is the first in the recurrence.
-	    $is_first = TECEventsCustom_TablesV1ModelsOccurrence::is_first( $post->_tec_occurrence );
+	    $is_first = TEC\Events\Custom_Tables\V1\Models\Occurrence::is_first( $post->_tec_occurrence );
 
 	    // If it's not the first recurrence, add the noindex meta tag
 	    if ( !$is_first ) {
-		    echo '<meta name="robots" id="tec_noindex" content="noindex, follow" />' . "n";
+		    echo '<meta name="robots" id="tec_noindex" content="noindex, follow" />' . "\n";
 	    }
     }
 }
-```
-
-### Add noindex to the Legacy Recurring Events Page
-
-If you’ve been using The Events Calendar for a while, you may have legacy pages for old recurring events (
-```
-/event/[event-name]/all
-```
-
-). That page has been replaced by the Series archive page. The following snippet that adds noindex to this page, since it’s no longer relevant. You can add it to your functions.php file when using *Yoast SEO*:
-
-```
-if(class_exists('WPSEO_Options')){ 
-add_filter("wpseo_robots", function($robots) {
-	global $wp_query;
-		if ( $wp_query->tribe_is_recurrence_list && 'all' === $wp_query->get( 'eventDisplay' )) {
-        	return "noindex";
-    	}
-        return $robots;
-	});
-}
-```
-
-If you are using *Rank Math*, here is the example snippet using the proper filters for that plugin:
-
-```
-add_filter( 'rank_math/frontend/robots', function ( $robots ) {
-    global $wp_query;
-    if ( $wp_query->tribe_is_recurrence_list && 'all' === $wp_query->get( 'eventDisplay' )) {
-        unset( $robots['index'] );
-	    $robots['noindex'] = 'noindex';
-    }
-    return $robots;
-});
 ```
 
 ## Protecting Your Site from Bot Crawl Overload
@@ -672,16 +631,12 @@ add_filter( 'tec_events_seo_robots_meta_include', '__return_false' );
 Here’s an example that prevents meta includes for the list and day view:
 
 ```
-add_filter( 'tec_events_seo_robots_meta_include', function( $do_include, $view ) {
+add_filter( 'tec_events_seo_robots_meta_include', function ( $do_include, $view ) {
+    if ( in_array( $view, [ 'list', 'day' ], true ) ) {
+        return false;
+    }
 
-    if ( in_array( $view, [ 'list', 'day' ] ) ) {
-
-        return false;
-
-    }
-
-    return $do_include;
-
+    return $do_include;
 }, 10, 2 );
 ```
 
@@ -708,28 +663,19 @@ This filter allows you to change the content attribute (i.e. *noindex, nofollow*
 Here’s an example where we change the week view’s content attribute to *noindex, follow*:
 
 ```
-add_filter( 'tec_events_filter_wp_robots_meta_directives', function( $robots ) {
-		
-		    $view = tribe_context()->get( 'view' );
-		
-		    if ( ! $view ) {
-		
-		        return $robots;
-		
-		    }
-		
-		    if ( $view !== 'week' ) {
-		
-		        return $robots;
-		
-		    }
-		    
-			$robots['noindex'] = true;
-			$robots['nofollow'] = false;
-		
-		    return $robots;
-		
-		}, 10 );
+add_filter( 'tec_events_filter_wp_robots_meta_directives', function ( $robots ) {
+    $view = tribe_context()->get( 'view' );
+
+    if ( 'week' !== $view ) {
+        return $robots;
+    }
+
+    $robots['noindex']  = true;
+    $robots['nofollow'] = false;
+    $robots['follow']   = true;
+
+    return $robots;
+}, 20 );
 ```
 
 #### tec_events_seo_robots_meta_allowable_post_types
@@ -739,16 +685,16 @@ This filter allows you to change the post types that are allowed to have meta ta
 Here’s an example where we remove Venues from the list of allowable post types:
 
 ```
-add_filter( 'tec_events_seo_robots_meta_allowable_post_types', function( $post_types ) {
-
-    return array_filter( (array) $post_types, static function() {
-
-        return $post_type !== Tribe__Events__Venue::POSTTYPE;
-
-    } );
-
-}, 10, 2 );
+add_filter( 'tec_events_seo_robots_meta_allowable_post_types', function ( $post_types ) {
+    return array_filter( (array) $post_types, static function ( $post_type ) {
+        return Tribe__Events__Venue::POSTTYPE !== $post_type;
+    } );
+} );
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

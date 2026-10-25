@@ -100,10 +100,9 @@ This snippet merges events into your site’s main post RSS feed. After adding i
 https://yoursite.com/feed
 ```
 
- alongside regular posts, ordered by publication date.
+ alongside regular posts, ordered by publication date. Events keep their start date as the feed’s pubDate, so to show the publication date instead, also add the snippet under “Use the Publication Date as the RSS pubDate” below. The snippet also adds events to other feeds that do not name a post type, such as author and search feeds.
 
 ```
-<?php
 // Add Events to RSS Feed
 function add_events_to_rss_feed( $args ) {
     if ( isset( $args['feed'] ) && !isset( $args['post_type'] ) ) {
@@ -122,12 +121,11 @@ By default, the RSS feed does not include event start and end dates as dedicated
 > 💡 RSS feeds do not offer native support for event-specific fields like start and end times, and likely never will. The fields added below are based on a draft RSS event spec that was last updated in 2002. The draft appears abandoned, and even the purl.org namespace now 404s. Given the age of RSS and that it is widely being replaced by newer formats, it is likely that no official event namespace will ever come to RSS. These fields have limited utility and will not be viewable or useful in many RSS readers.
 
 ```
-<?php
 // Add Tribe Event Namespace
 add_action( 'rss2_ns', 'events_rss2_namespace' );
 
 function events_rss2_namespace() {
-    echo 'xmlns:ev="http://purl.org/rss/2.0/modules/event/"'."n";
+    echo 'xmlns:ev="http://purl.org/rss/2.0/modules/event/"'."\n";
 }
 
 // Add Event Dates to RSS Feed
@@ -140,7 +138,7 @@ function tribe_rss_feed_add_eventdate() {
         return;
     }
     ?>
-    <ev:tribe_event_meta xmlns:ev="Event">
+    <ev:tribe_event_meta>
     <?php if ( tribe_get_start_date() !== tribe_get_end_date() ) { ?>
 
         <ev:startdate><?php echo tribe_get_start_date(); ?></ev:startdate>
@@ -158,16 +156,37 @@ function tribe_rss_feed_add_eventdate() {
 
 ### Order Events by Publication Date in the Feed
 
-By default, TEC orders events in the RSS feed by start date. If you want events to appear in publication date order instead — for example, after merging events into the main post feed — this snippet removes TEC’s ordering filter when the current query is a feed:
+By default, TEC orders events in the RSS feed by start date. If you want the events feed (for example, 
+```
+https://yoursite.com/events/feed
+```
+
+) to list the most recently published events first instead, use this snippet. It does not change the main post feed at 
+```
+https://yoursite.com/feed
+```
+
+, where events merged in with the first snippet are already ordered by publication date:
 
 ```
-add_action( 'pre_get_posts', 'custom_teardown_tribe_order_filter', 60 );
+/**
+ * Order the events feed by publication date instead of event start date.
+ *
+ * @param WP_Query $query The query being run.
+ */
+function custom_tribe_feed_order_by_publish_date( $query ) {
+	if ( ! $query->is_feed() || ! $query->is_main_query() ) {
+		return;
+	}
 
-function custom_teardown_tribe_order_filter() {
-    if ( is_feed() ) {
-        remove_filter( 'posts_orderby', array( 'Tribe__Events__Query', 'posts_orderby' ), 10, 2 );
-    }
+	if ( ! function_exists( 'tribe_is_event_query' ) || ! tribe_is_event_query() ) {
+		return;
+	}
+
+	$query->set( 'orderby', 'date' );
+	$query->set( 'order', 'DESC' );
 }
+add_action( 'pre_get_posts', 'custom_tribe_feed_order_by_publish_date', 60 );
 ```
 
 ### Use the Publication Date as the RSS pubDate
@@ -185,7 +204,7 @@ By default, TEC sets the
  to reflect when the event was actually published on your site instead, add this single line:
 
 ```
-remove_filter( 'get_post_time', array( 'Tribe__Events__Templates', 'event_date_to_pubDate', 10 ) );
+remove_filter( 'get_post_time', array( 'Tribe__Events__Templates', 'event_date_to_pubDate' ), 10 );
 ```
 
 ### Adjust the Number of Events in the Feed
@@ -199,7 +218,6 @@ By default, WordPress uses the value set under **Settings → Reading → Syndic
 
 ```
 add_filter( 'pre_option_posts_per_rss', 'tribe_events_feed_count' );
-
 function tribe_events_feed_count( $count ) {
     if ( tribe_is_event() || tribe_is_event_query() ) {
         return 10; // Change this number to your desired feed count
@@ -209,6 +227,10 @@ function tribe_events_feed_count( $count ) {
 ```
 
 For more ways to customize WordPress RSS feeds, see [this Digging Into WordPress article on feed customization](https://digwp.com/2012/10/customizing-wordpress-feeds/), or browse the [WordPress Codex on feeds](https://codex.wordpress.org/WordPress_Feeds).
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

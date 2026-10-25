@@ -85,8 +85,6 @@ Many parts of the world (including most of the US and Canada) use Daylight Savin
 
 **The single best thing you can do to accommodate Daylight Saving Time is to use location-based time zones for all your events.**This kind of time zone setting will adjust for DST, while a UTC-based time zone (e.g. UTC -8) is an absolute time and will not adjust for DST. If you choose to use a UTC-based option, you may need to manually adjust the time on your events.
 
-💡 **Series Engine users**: Please reference [this knowledgebase post](https://docs.nexcess.com/software/the-events-calendar/series-passes/) to learn about event time compatibility with that plugin and the special setting they have for you to use.
-
 #### How UTC Time Zones Clash with DST: An Example Explained
 
 Let’s say your WordPress *site* time zone is UTC-5, but you have a recurring event whose *event* time zone is America/New_York. Some of the events happen before DST starts, some after.
@@ -150,7 +148,7 @@ Here I’m going to show you how you can implement this on the single event page
 
 #### 1. The template override
 
-We want this functionality to remain available even after a plugin update, so we will make use of the [template override system](https://docs.nexcess.com/software/the-events-calendar/customization/#customizing-calendar-view-templates) of The Events Calendar.
+We want this functionality to remain available even after a plugin update, so we will make use of the [template override system](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/) of The Events Calendar.
 
 If you are using the Classic editor grab the following file:
 
@@ -183,8 +181,7 @@ $event_id = get_the_ID();
 For the Classic Editor, the line is:
 
 ```
-$event_id = Tribe_Events_Main::postIdHelper(
-get_the_ID() );
+$event_id = Tribe__Events__Main::postIdHelper( get_the_ID() );
 ```
 
 Below that line add the following piece of code (line included for reference):
@@ -192,9 +189,14 @@ Below that line add the following piece of code (line included for reference):
 ```
 $event_id = get_the_ID();
 /**
- * Setting up the cookie if it doesn't exist yet and grabbing the browser time zone string.
+ * Only accept a real time zone name from the cookie. The cookie value comes from the visitor's browser, so it must be checked before it is used.
  */
-if ( ! isset( $_COOKIE['tribe_browser_time_zone'] ) ) { ?>
+$browser_time_zone_cookie   = isset( $_COOKIE['tribe_browser_time_zone'] ) ? sanitize_text_field( wp_unslash( $_COOKIE['tribe_browser_time_zone'] ) ) : '';
+$browser_time_zone_is_valid = in_array( $browser_time_zone_cookie, timezone_identifiers_list( DateTimeZone::ALL_WITH_BC ), true );
+/**
+ * Setting up the cookie if it doesn't exist yet (or isn't a valid time zone) and grabbing the browser time zone string.
+ */
+if ( ! $browser_time_zone_is_valid ) { ?>
 	<script type="text/javascript">
 		if ( navigator.cookieEnabled ) {
 			document.cookie = "tribe_browser_time_zone=" + Intl.DateTimeFormat().resolvedOptions().timeZone + "; path=/";
@@ -207,11 +209,9 @@ if ( ! isset( $_COOKIE['tribe_browser_time_zone'] ) ) { ?>
 // Setting default values in case the cookie doesn't exist.
 $user_time_output = "<small>Your time zone couldn't be detected. Try <a href=''>reloading</a> the page.</small>";
 $browser_time_zone_string = "not detected";
-if ( isset( $_COOKIE['tribe_browser_time_zone'] ) ) {
-	// Grab the time zone string from the cookie.
-	$browser_time_zone_string = $_COOKIE['tribe_browser_time_zone'];
-	// Grab the event time zone string.
-	$event_time_zone_string = Tribe__Events__Timezones::get_event_timezone_string( $event_id );
+if ( $browser_time_zone_is_valid ) {
+	// Use the validated time zone string from the cookie.
+	$browser_time_zone_string = $browser_time_zone_cookie;
 	// Grab the event start date in UTC time from the database.
 	$event_start_utc = tribe_get_event_meta( $event_id, '_EventStartDateUTC', true );
 	// Set up the DateTime object.
@@ -221,7 +221,7 @@ if ( isset( $_COOKIE['tribe_browser_time_zone'] ) ) {
 	// Grab the time zone abbreviation based on the browser time zone string.
 	$browser_time_zone_abbreviation = Tribe__Timezones::abbr( 'now', $browser_time_zone_string );
 	// Compile the output string with time zone abbreviation.
-	$user_time_output = $event_start_date_in_browser_timezone . " " . $browser_time_zone_abbreviation;
+	$user_time_output = esc_html( $event_start_date_in_browser_timezone . " " . $browser_time_zone_abbreviation );
 	// Compile the string of the time zone for the tooltip.
 	$browser_time_zone_string .= ' detected';
 }
@@ -236,20 +236,20 @@ We’re still working in the same file.
 Look for this line:
 
 ```
-<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
+<?php echo tribe_events_event_schedule_details( $event_id, '<div>', '</div>' ); // phpcs:ignore StellarWP.XSS.EscapeOutput.OutputNotEscaped ?>
 ```
 
 Add the following below the line (line included for reference):
 
 ```
-<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
+<?php echo tribe_events_event_schedule_details( $event_id, '<div>', '</div>' ); // phpcs:ignore StellarWP.XSS.EscapeOutput.OutputNotEscaped ?>
 <?php
 /**
  * Adding the event start time in the visitor's time zone.
  */
 if ( ! tribe_event_is_all_day( $event_id ) ) {
 	echo "<div class='tribe-events-schedule--browser-time-zone'><p>";
-	echo "Start time where <span style='text-decoration-style: dotted; text-decoration-line: underline; cursor: help;' title='This is based on your browser time zone (" . $browser_time_zone_string . ") and it might not be fully accurate.'>you are</span>: " . $user_time_output;
+	echo "Start time where <span style='text-decoration-style: dotted; text-decoration-line: underline; cursor: help;' title='This is based on your browser time zone (" . esc_attr( $browser_time_zone_string ) . ") and it might not be fully accurate.'>you are</span>: " . $user_time_output;
 	echo "</p></div>";
 }
 ?>
@@ -257,27 +257,27 @@ if ( ! tribe_event_is_all_day( $event_id ) ) {
 
 #### Block editor
 
-Go to the end of the file and paste the code between the 
+Go to the end of the file and paste the code between the closing 
 ```
-</h2>
+</p>
 ```
 
- and the closing 
+ tag and the final closing 
 ```
 </div>
 ```
 
- tags, like this (lines included for reference):
+ tag, like this (lines included for reference):
 
 ```
-</h2>
+</p>
 	<?php
 	/**
 	 * Adding the event start time in the visitor's time zone.
 	 */
 	if ( ! tribe_event_is_all_day( $event_id ) ) {
 		echo "<div class='tribe-events-schedule--browser-time-zone'><p>";
-		echo "Start time where <span style='text-decoration-style: dotted; text-decoration-line: underline; cursor: help;' title='This is based on your browser time zone (" . $browser_time_zone_string . ") and it might not be fully accurate.'>you are</span>: " . $user_time_output;
+		echo "Start time where <span style='text-decoration-style: dotted; text-decoration-line: underline; cursor: help;' title='This is based on your browser time zone (" . esc_attr( $browser_time_zone_string ) . ") and it might not be fully accurate.'>you are</span>: " . $user_time_output;
 		echo "</p></div>";
 	}
 	?>
@@ -368,10 +368,12 @@ $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
     // Use the event ID from the event object.
     $event_id = $event->ID;
     /**
-     * Check for the visitor's time zone cookie.
+     * Check for a valid visitor time zone cookie. The cookie value comes from the visitor's browser, so it must be checked before it is used.
      * (Remember: if you haven't implemented a cookie consent mechanism, you should do so.)
      */
-    if ( ! isset( $_COOKIE['tribe_browser_time_zone'] ) ) { ?>
+    $browser_time_zone_cookie   = isset( $_COOKIE['tribe_browser_time_zone'] ) ? sanitize_text_field( wp_unslash( $_COOKIE['tribe_browser_time_zone'] ) ) : '';
+    $browser_time_zone_is_valid = in_array( $browser_time_zone_cookie, timezone_identifiers_list( DateTimeZone::ALL_WITH_BC ), true );
+    if ( ! $browser_time_zone_is_valid ) { ?>
         <script type="text/javascript">
             if ( navigator.cookieEnabled ) {
                 document.cookie = "tribe_browser_time_zone=" + Intl.DateTimeFormat().resolvedOptions().timeZone + "; path=/";
@@ -381,12 +383,11 @@ $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
     // Set up a default message in case the cookie is not set.
     $user_time_output = "<small>Your time zone couldn't be detected. Try <a href=''>reloading</a> the page.</small>";
     $browser_time_zone_string = "not detected";
-    if ( isset( $_COOKIE['tribe_browser_time_zone'] ) ) {
-        // Retrieve the visitor's time zone from the cookie.
-        $browser_time_zone_string = $_COOKIE['tribe_browser_time_zone'];
+    if ( $browser_time_zone_is_valid ) {
+        // Use the validated time zone from the cookie.
+        $browser_time_zone_string = $browser_time_zone_cookie;
         
-        // Retrieve the event's UTC start time and event time zone string.
-        $event_time_zone_string = Tribe__Events__Timezones::get_event_timezone_string( $event_id );
+        // Retrieve the event's UTC start time.
         $event_start_utc = tribe_get_event_meta( $event_id, '_EventStartDateUTC', true );
         
         // Create a DateTime object from the UTC time.
@@ -407,7 +408,7 @@ $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
         $browser_time_zone_abbreviation = $formatter->format(new DateTime('now', new DateTimeZone($browser_time_zone_string)));
         
         // Combine the time with the abbreviation.
-        $user_time_output = $event_start_date_in_browser_timezone . " " . $browser_time_zone_abbreviation;
+        $user_time_output = esc_html( $event_start_date_in_browser_timezone . " " . $browser_time_zone_abbreviation );
         
         // Update the time zone string for tooltip purposes.
         $browser_time_zone_string .= ' detected';
@@ -426,13 +427,37 @@ $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
 </div>
 ```
 
-## Advanced Functionality: Bulk-update Timezone Data via Database Query
+## Advanced Functionality: Bulk-update Timezone Data with WP-CLI
 
-If you happen to find the need to update the timezone of your events in bulk, the SQL query below might just be what you need.
+If you need to change the time zone of many events at once, use the script below instead of editing the database directly. A direct database query only changes one stored value, so events keep showing the old time zone on the calendar. Take a full backup first, save the script as change-timezone.php, change the time zone name on the first line, and run it with: wp eval-file change-timezone.php
 
 ```
-UPDATE wp_postmeta SET meta_value="America/New_York" WHERE meta_key="_EventTimezone";
+<?php
+// Run this once, for example with: wp eval-file change-timezone.php
+// Always take a database backup first.
+$new_timezone = 'America/New_York';
+
+$event_ids = get_posts(
+	[
+		'post_type'      => 'tribe_events',
+		'post_status'    => 'any',
+		'posts_per_page' => -1,
+		'fields'         => 'ids',
+	]
+);
+
+foreach ( $event_ids as $event_id ) {
+	tribe_events()
+		->where( 'post_status', 'any' )
+		->where( 'post__in', [ $event_id ] )
+		->set( 'timezone', $new_timezone )
+		->save();
+}
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

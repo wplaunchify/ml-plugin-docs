@@ -21,7 +21,20 @@ When Elementor’s **Loop Grid** or **Loop Carousel** widgets are used to displa
 
 ```
 function hide_subsequent_recurrences( $query ) {
-    $query->set( 'hide_subsequent_recurrences', true );
+	if ( ! function_exists( 'tribe_events' ) ) {
+		return;
+	}
+
+	// Ask The Events Calendar for the next upcoming instance of each recurring event.
+	$event_ids = tribe_events()
+		->where( 'hide_subsequent_recurrences', true )
+		->where( 'starts_after', 'now' )
+		->per_page( -1 )
+		->get_ids();
+
+	// Use an ID that does not exist when there are no upcoming events, so the widget shows nothing.
+	$query->set( 'post__in', $event_ids ? $event_ids : [ 0 ] );
+	$query->set( 'orderby', 'post__in' );
 }
 
 add_action( 'elementor/query/hide_subsequent_recurrences', 'hide_subsequent_recurrences' );
@@ -74,17 +87,17 @@ function custom_event_custom_fields_shortcode( $atts ) {
 
     // Check if the custom field exists based on the attribute 'field'
     if ( ! empty( $atts['field'] ) && isset( $custom_fields[ $atts['field'] ] ) ) {
-        $output .= '
-';
-        $output .= '
-' . esc_html( $atts['field'] ) . '
-';
-        $output .= '
+        $value = $custom_fields[ $atts['field'] ];
 
-' . esc_html( $custom_fields[ $atts['field'] ] ) . '
-';
-        $output .= '
-';
+        // Fields that allow several values (like checkboxes) come back as a list.
+        if ( is_array( $value ) ) {
+            $value = implode( ', ', $value );
+        }
+
+        $output .= '<div class="event-custom-field">';
+        $output .= '<h3>' . esc_html( $atts['field'] ) . '</h3>';
+        $output .= '<p>' . esc_html( $value ) . '</p>';
+        $output .= '</div>';
     }
 
     // Return the output
@@ -135,10 +148,17 @@ If you’re comfortable with HTML, you can change the markup the shortcode emits
 ```
 // Check if the custom field exists based on the attribute 'field'
 if ( ! empty( $atts['field'] ) && isset( $custom_fields[ $atts['field'] ] ) ) {
-    $output .= '';
-    $output .= '' . esc_html( $atts['field'] ) . '';
-    $output .= '' . esc_html( $custom_fields[ $atts['field'] ] ) . '';
-    $output .= '';
+    $value = $custom_fields[ $atts['field'] ];
+
+    // Fields that allow several values (like checkboxes) come back as a list.
+    if ( is_array( $value ) ) {
+        $value = implode( ', ', $value );
+    }
+
+    $output .= '<div class="event-custom-field">';
+    $output .= '<h3>' . esc_html( $atts['field'] ) . '</h3>';
+    $output .= '<p>' . esc_html( $value ) . '</p>';
+    $output .= '</div>';
 }
 ```
 
@@ -158,6 +178,10 @@ p
 ```
 
  tags for whatever structure and classes match your theme.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

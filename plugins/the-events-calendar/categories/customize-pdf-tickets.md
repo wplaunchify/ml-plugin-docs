@@ -10,7 +10,7 @@
 
 Customizing event ticket PDFs to provide additional information often involves modifying files located in the 
 ```
-event-tickets-plussrcviewstickets-wallet-pluspdf
+event-tickets-plus/src/views/tickets-wallet-plus/pdf
 ```
 
  directory. One common customization is adding a custom note below the event details. For example, if one needs to include special instructions, messages, or personalized greetings on the ticket, they would typically modify the 
@@ -33,7 +33,7 @@ pass.php
 
  located at 
 ```
-event-tickets-plussrcviewstickets-wallet-pluspdfpass.php
+event-tickets-plus/src/views/tickets-wallet-plus/pdf/pass.php
 ```
 
 .
@@ -59,7 +59,7 @@ See the image below for how it is structured.
 
 Depending on your layout and customization, you should modify one (or more) file. All the files are located at 
 ```
-event-tickets-plussrcviewstickets-wallet-pluspdf
+event-tickets-plus/src/views/tickets-wallet-plus/pdf
 ```
 
 ## Add a Note
@@ -76,7 +76,7 @@ body.php
 
  and upload it at
 ```
-[your-theme]/tribe/tickets-wallet-plus/pdf/pass.php
+[your-theme]/tribe/tickets-plus/tickets-wallet-plus/pdf/pass/body.php
 ```
 
 Open the file in a text editor and add your own custom note, similar to the example below:
@@ -87,7 +87,7 @@ Open the file in a text editor and add your own custom note, similar to the exam
  * PDF Pass: Body
  *
  * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/tickets-wallet-plus/pdf/pass/body.php
+ * [your-theme]/tribe/tickets-plus/tickets-wallet-plus/pdf/pass/body.php
  *
  * See more documentation about our views templating system.
  *
@@ -97,7 +97,6 @@ Open the file in a text editor and add your own custom note, similar to the exam
  *
  * @version 1.0.0
  */
-
 ?>
 <tr>
 	<td height="670">
@@ -133,7 +132,7 @@ By default, the ticket description only appears on the event page where the tick
 
 Start by making a copy of the following template file: 
 ```
-wp-contentpluginsevent-tickets-plussrcviewstickets-wallet-pluspdfpassbodyticket-infoattendee-detailsticket-title.php
+wp-content/plugins/event-tickets-plus/src/views/tickets-wallet-plus/pdf/pass/body/ticket-info/attendee-details/ticket-title.php
 ```
 
 Place the file in your theme at the following path. If the sub-folders don’t already exist, you’ll need to create them first: 
@@ -146,14 +145,13 @@ Add the following lines of code at the very end of the file:
 ```
 <?php if ( ! empty( $attendee['product_id'] ) ) : ?>
     <?php
-    $ticket_excerpt = get_post_field( 'post_excerpt', (int) $attendee['product_id'] );
-
+    $ticket_excerpt = get_post_field( 'post_excerpt', absint( $attendee['product_id'] ) );
     if ( ! empty( $ticket_excerpt ) ) :
         ?>
         <table class="tec-tickets__wallet-plus-pdf-attendee-details-ticket-excerpt">
             <tr>
                 <td>
-                    <?php echo $ticket_excerpt; ?>
+                    <?php echo esc_html( $ticket_excerpt ); ?>
                 </td>
             </tr>
         </table>
@@ -182,7 +180,7 @@ post-title.php
 2. In your child theme directory, create the following path and place the copied file:
 
 ```
-[your-child-theme]/tribe/tickets-wallet-plus/pdf/pass/body/
+[your-child-theme]/tribe/tickets-plus/tickets-wallet-plus/pdf/pass/body/
 ```
 3. Open the file in a text editor and add the following code just after the 
 ```
@@ -194,7 +192,7 @@ post-title.php
 ```
 <tr style="font-weight:normal;">
   <td>
-    <?php echo esc_html( $post->post_content ); ?>
+    <?php echo esc_html( wp_strip_all_tags( strip_shortcodes( $post->post_content ) ) ); ?>
   </td>
 </tr>
 ```
@@ -209,11 +207,16 @@ By default, Event Tickets Plus generates PDF tickets in Letter size and portrait
 
 ```
 add_filter( 'tec_tickets_wallet_plus_pdf_pass_get_pdf_object', function( $pdf ) {
-    // Set paper format and orientation
-    $pdf->setPageFormat( 'A4', 'L' ); // Change A4 to your preferred format, L for Landscape or P for Portrait
-    return $pdf;
-});
+	// Replace the default Letter page with your preferred paper format and orientation.
+	$pdf->deletePage( 1 );
+	$pdf->AddPage( 'L', 'A4' ); // Change A4 to your preferred format, L for Landscape or P for Portrait.
+	return $pdf;
+} );
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

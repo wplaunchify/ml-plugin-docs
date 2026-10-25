@@ -25,9 +25,9 @@ There are four main template tags that would work well in this situation, which 
 - A template tag for adding content above the Community Events submission page.
 - tribe_events_community_form_after_template
 - A template tag for adding content below the Community Events submission page.
-- tribe_ce_before_event_list_top_buttons
+- tribe_community_events_before_list_navigation
 - A template tag for adding content above the “My Events” page.
-- tribe_ce_after_event_list_table
+- tribe_community_events_after_list_table
 - A template tag for adding content below the “My Events” page.
 
 You can use the same callback function a number of times, which will be exemplified as follows: Let’s say you wanted to add a simple bit of text, like “Sponsored by The Events Calendar” at the top the Community Events **submission** page only. You could write a code snippet like this to do just that:
@@ -47,11 +47,11 @@ If you wanted to add this bit of content to **all four** locations, then you wou
 tribe_add_community_sponsor_message
 ```
 
-, in the case of this example) to **all four** template tags, like this:
+, in the case of this example) to **all four** template tags, like this: Use this snippet instead of the one above, not in addition to it.
 
 ```
 function tribe_add_community_sponsor_message() {
-    echo 'Sponsored by <a href="https://theeventscalendar.com">The Events Calendar/a>';
+    echo 'Sponsored by <a href="https://theeventscalendar.com">The Events Calendar</a>';
 }
 
 // Above the submission page content.
@@ -61,10 +61,10 @@ add_action( 'tribe_events_community_form_before_template', 'tribe_add_community_
 add_action( 'tribe_events_community_form_after_template', 'tribe_add_community_sponsor_message' );
 
 // Above the "My Events" list page content.
-add_action( 'tribe_ce_before_event_list_top_buttons', 'tribe_add_community_sponsor_message' );
+add_action( 'tribe_community_events_before_list_navigation', 'tribe_add_community_sponsor_message' );
 
 // Below the "My Events" list page content.
-add_action( 'tribe_ce_after_event_list_table', 'tribe_add_community_sponsor_message' );
+add_action( 'tribe_community_events_after_list_table', 'tribe_add_community_sponsor_message' );
 ```
 
 #### Advanced Option: Custom Theme Templates
@@ -79,7 +79,7 @@ One of the most common questions we get from users of the Community Events add-o
 
 You can easily change the page title on the submission form using the 
 ```
-tribe_events_community_submit_event_page_title
+tec_events_community_add-route_page_title
 ```
 
  filter. Just paste the following into your theme’s 
@@ -90,8 +90,8 @@ functions.php
  file:
 
 ```
-add_filter( 'tribe_events_community_submit_event_page_title', 'change_the_title' );
-function change_the_title() {
+add_filter( 'tec_events_community_add-route_page_title', 'tec_change_community_submit_page_title' );
+function tec_change_community_submit_page_title() {
 	return 'Your New Title Goes Here';
 }
 ```
@@ -100,7 +100,7 @@ function change_the_title() {
 
 You can also change the page title on the My Events page using the 
 ```
-tribe_events_community_event_list_page_title
+tec_events_community_list-route_page_title
 ```
 
  filter. Just paste the following into your theme’s 
@@ -111,8 +111,8 @@ functions.php
  file:
 
 ```
-add_filter( 'tribe_events_community_event_list_page_title', 'change_the_title' );
-function change_the_title() {
+add_filter( 'tec_events_community_list-route_page_title', 'tec_change_community_my_events_page_title' );
+function tec_change_community_my_events_page_title() {
 	return 'Your New Title Goes Here';
 }
 ```
@@ -124,24 +124,28 @@ When using the Community plugin, you might notice that viewing the “My Events�
 However, some customers have reached out to us with a need to add events on behalf of their users. They wanted these events to appear in “My Events” so the users could view them. If you would like to achieve the same and have events added through both the frontend and backend to appear in “My Events,” you can use the snippet below to accomplish this.
 
 ```
-add_filter('tribe_community_events_get_event_query', 'get_events', 15, 3);
+add_filter( 'tribe_community_events_get_event_query', 'tec_community_get_all_events', 15, 3 );
 
 /**
- * Retrieves events based on the provided arguments.
+ * Retrieves all of the user's events, including the ones added in the admin.
  *
  * @param mixed $data Data to filter.
  * @param array $args Query arguments.
  * @param bool  $full Whether to return the full query.
  *
- * @return WP_Query The filtered events query.
+ * @return WP_Query|array The filtered events query.
  */
-function get_events($data, $args, $full): WP_Query {
-    unset($args['meta_query']);
-    return tribe_get_events($args, $full);
+function tec_community_get_all_events( $data, $args, $full ) {
+    unset( $args['meta_query'] );
+    return tribe_get_events( $args, $full );
 }
 ```
 
 That’s it! Now you will be able to see all of your events in Community: My Events.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

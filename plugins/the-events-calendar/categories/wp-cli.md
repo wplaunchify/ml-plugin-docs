@@ -8,9 +8,9 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/wp-cli/](https://docs.nexcess.com/software/the-events-calendar/wp-cli/)
 
-If you’re managing a site powered by our calendar and tickets plugin, using WP-CLI ([WordPress Command Line Interface](https://developer.wordpress.org/cli/commands/)) can save you significant time when managing events, running imports, or diagnosing performance issues. Below is a quick guide on the available WP-CLI commands offered by our plugins and how to use them effectively.
+If you’re managing a site powered by our calendar and tickets plugin, using WP-CLI ([WordPress Command Line Interface](https://developer.wordpress.org/cli/commands/)) can save you significant time when managing events and running imports. Below is a quick guide on the available WP-CLI commands offered by our plugins and how to use them effectively.
 
-> To execute the below commands, you will need to first download and install the TEC CLI Plugin on your website.
+> The wp tribe commands below need the TEC CLI Plugin installed and active on your website. The wp event-aggregator commands are built into The Events Calendar and do not need it.
 
 ## Event Management
 
@@ -30,15 +30,15 @@ Remove all test events, organizers, and venues:
 wp tribe events-generator reset
 ```
 
-> Requires The Events Calendar version 4.5.4 or higher.
-
 ## Event Aggregator
 
 #### Import Events from External Source
 
 ```
-wp event-aggregator import-from --origin=ical --source=https://example.com/events.ics
+wp event-aggregator import-from ical https://example.com/events.ics
 ```
+
+The first value is the import origin (ical, gcal, csv, ics, facebook, meetup or url) and the second is the address or file path of the source. Importing from an external source requires an Event Aggregator license.
 
 Additional options:
 
@@ -77,38 +77,6 @@ Optional:
 
  Specify output format
 
-### Testing & Diagnostics
-
-#### Generate Load Test Events
-
-Create events between two dates:
-
-```
-wp tec-load-test 2024-01-01 2024-01-15 30
-```
-
-(Generates 30 events per day in that date range.)
-
-#### Check MySQL Max Packet Size
-
-```
-wp tec-mysql-packet-size
-```
-
-#### Count Events
-
-All events:
-
-```
-wp tec-count
-```
-
-Published events:
-
-```
-wp tec-count --status=publish
-```
-
 ## Tickets & Attendees
 
 #### Generate RSVP Attendees
@@ -129,6 +97,8 @@ wp tribe event-tickets reset-rsvp-attendees <event-id>
 wp tribe event-tickets-plus generate-wc-orders <event-id> --count=10
 ```
 
+At least one WooCommerce payment method must be turned on, or the command stops with an error.
+
 #### Reset WooCommerce Orders
 
 ```
@@ -137,7 +107,7 @@ wp tribe event-tickets-plus reset-wc-orders <event-id>
 
 ## Final Thoughts
 
-WP-CLI support makes The Events Calendar even more powerful for developers and site managers. Whether you’re bulk-generating events or diagnosing database performance, these commands can streamline your workflows.
+WP-CLI support makes The Events Calendar even more powerful for developers and site managers. Whether you’re bulk-generating test events or running Event Aggregator imports, these commands can streamline your workflows.
 
 For more details, you can check the official The Events Calendar CLI documentation here: [https://github.com/the-events-calendar/tec-cli](https://github.com/the-events-calendar/tec-cli)
 

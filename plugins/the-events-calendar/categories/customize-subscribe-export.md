@@ -25,38 +25,36 @@ functions.php
 
 This snippet does the following:
 
-- Changes “Add to Google Calendar” to “Subscribe Here”
-- Changes “Add to iCalendar” to “Export Here”
+- Changes “Google Calendar” to “Subscribe Here”
+- Changes “iCalendar” to “Export Here”
 
-Of course, you can edit the snippet to have those labels say anything you want.
+Of course, you can edit the snippet to have those labels say anything you want. The new labels appear in the dropdown on the calendar views and on single event pages.
 
 ```
-add_filter( 
-    'tec_views_v2_subscribe_links_gcal_label', 
-    function ( $label, $link_obj, $view ) {
-		if ( !is_singular( 'tribe_events' ) ) { return $label; }
-        return $link_obj->get_single_label( $view );
-    },
-    10,
-    3
-);
+add_filter( 'tec_views_v2_subscribe_links_gcal_label', function () {
+	return 'Subscribe Here';
+} );
+
+add_filter( 'tec_views_v2_subscribe_links_ical_label', function () {
+	return 'Export Here';
+} );
 ```
 
 You can also change the labels for the various Outlook options. Simply replace the Google Calendar and iCalendar filters with one of the following:
 
 **Outlook 365:** 
 ```
-tec_views_v2_subscribe_link_outlook-365_visibility
+tec_views_v2_subscribe_links_outlook-365_label
 ```
 
 **Outlook Live:** 
 ```
-tec_views_v2_subscribe_link_outlook-live_visibility
+tec_views_v2_subscribe_links_outlook-live_label
 ```
 
 **Outlook ICS File:** 
 ```
-tec_views_v2_subscribe_link_outlook-ics_visibility
+tec_views_v2_subscribe_links_outlook-ics_label
 ```
 
 ## Removing the “Add to Calendar” Option
@@ -148,18 +146,15 @@ Add the following code to your site. You can place it in your theme’s **functi
  */
 function my_custom_reorder_subscribe_links( array $subscribe_links ): array {
     $target= null;
-
     // Check if the 'ical' item exists and remove it from its current position.
     if ( isset( $subscribe_links['ical'] ) ) {
         $target= $subscribe_links['ical'];
         unset( $subscribe_links['ical'] );
     }
-
     // If the 'ical' item was found, add it to the beginning of the array.
     if ( null !== $target) {
         $subscribe_links = [ 'ical' => $target] + $subscribe_links;
     }
-
     return $subscribe_links;
 }
 add_filter( 'tec_views_v2_subscribe_links', 'my_custom_reorder_subscribe_links', 10 );
@@ -219,35 +214,10 @@ The Events Calendar includes built-in Subscribe and Add to Calendar links on cal
 Your subscribe URL follows this pattern:
 
 ```
-https://www.google.com/calendar/render?cid=webcal://yourdomain.com/?post_type=tribe_events&ical=1&eventDisplay=list
+https://www.google.com/calendar/render?cid=webcal%3A%2F%2Fyourdomain.com%2F%3Fpost_type%3Dtribe_events%26ical%3D1%26eventDisplay%3Dlist
 ```
 
-Replace 
-```
-yourdomain.com
-```
-
- with your actual domain. Keep 
-```
-webcal://
-```
-
- at the start of the 
-```
-cid
-```
-
- parameter — do not use 
-```
-http://
-```
-
- or 
-```
-https://
-```
-
- here, or it won’t work correctly in Google Calendar.
+Replace yourdomain.com with your actual domain and leave everything else as it is. The text after cid= is the encoded form of webcal://yourdomain.com/?post_type=tribe_events&ical=1&eventDisplay=list. It must start with webcal (webcal%3A%2F%2F), not http or https, and the &, ? and = characters must stay encoded, or it won’t work correctly in Google Calendar.
 
 Next, add the button to a page or post
 
@@ -256,7 +226,7 @@ Next, add the button to a page or post
 **Using raw HTML:** Paste this into any HTML block or widget:
 
 ```
-<a href="https://www.google.com/calendar/render?cid=webcal://yourdomain.com/?post_type=tribe_events&ical=1&eventDisplay=list"
+<a href="https://www.google.com/calendar/render?cid=webcal%3A%2F%2Fyourdomain.com%2F%3Fpost_type%3Dtribe_events%26ical%3D1%26eventDisplay%3Dlist"
    target="_blank"
    style="display:inline-block; padding:10px 20px; background:#0073aa; color:#fff; text-decoration:none; border-radius:5px;">
   Subscribe to Calendar
@@ -282,10 +252,13 @@ function custom_add_to_calendar_button($atts) {
     }
 
     $title = get_the_title($event_id);
-    $start = tribe_get_start_date($event_id, false, 'YmdTHis');
-    $end = tribe_get_end_date($event_id, false, 'YmdTHis');
-    $location = tribe_get_venue($event_id);
-    $description = get_the_excerpt($event_id);
+    $start = tribe_get_start_date($event_id, false, 'Ymd') . 'T' . tribe_get_start_date($event_id, false, 'His');
+    $end = tribe_get_end_date($event_id, false, 'Ymd') . 'T' . tribe_get_end_date($event_id, false, 'His');
+    $location = tribe_get_venue($event_id) ?: '';
+    $description = wp_strip_all_tags(get_post_field('post_excerpt', $event_id));
+    if ('' === $description) {
+        $description = wp_trim_words(wp_strip_all_tags(strip_shortcodes(get_post_field('post_content', $event_id))), 40);
+    }
 
     $google_calendar_url = "https://calendar.google.com/calendar/render?action=TEMPLATE" .
         "&text=" . urlencode($title) .
@@ -365,6 +338,10 @@ You can also use the following filters to further customize the **subscribe and 
 - **tec_views_v2_single_event_gcal_link_parameters**: allows altering the params passed to gCal in the link
 - **tec_views_v2_single_gcal_subscribe_link**: allows altering the link itself once params have been added
 - **tec_events_ical_outlook_single_event_import_url**: allows altering the Outlook’s export URL .
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

@@ -19,7 +19,7 @@ If you would rather have that part of the content disappear after the event is o
 You will need to create a template override for this file:
 
 ```
-wp-content/plugins/events-pro/src/views/zoom/single/zoom-details.php
+wp-content/plugins/events-calendar-pro/src/views/zoom/single/zoom-details.php
 ```
 
 Take that file and make a copy of it here:
@@ -42,7 +42,7 @@ Open up the file for editing, and right before the HTML code starts – before t
 The beginning of the file should look something like this now. *(Note, the line numbers are approximate.)*
 
 ```
-// Remove the query vars from the zoom URL to avoid too long a URL in display.
+// Remove the query vars from the Zoom URL to avoid too long a URL in display.
 if ( ! empty( $event->zoom_join_url ) ) {
 	$short_zoom_url = implode(
 		'',
@@ -81,14 +81,20 @@ Save the changes to the file and you should be set.
 If you would like to achieve something similar with your embedded video content, then you will need a template override for this file:
 
 ```
-wp-content/plugins/events-pro/src/views/single/video-embed.php
+wp-content/plugins/events-calendar-pro/src/views/single/video-embed.php
 ```
 
 The file for the “Watch” button would be this one:
 
 ```
-wp-content/plugins/events-pro/src/views/components/link-button.php
+wp-content/plugins/events-calendar-pro/src/views/components/link-button.php
 ```
+
+Copy either file into your child theme the same way, keeping the folder path after src/views/. For example, tribe/events-virtual/single/video-embed.php and tribe/events-virtual/components/link-button.php.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

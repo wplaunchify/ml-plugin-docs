@@ -30,11 +30,9 @@ functions.php
  * @return array Same as above. 
  */
 function tribe_past_reverse_chronological_v2( $template_vars ) {
-
   if ( ! empty( $template_vars['is_past'] ) ) {
     $template_vars['events'] = array_reverse( $template_vars['events'] );
   }
-
   return $template_vars;
 }
 // Change List View to Past Event Reverse Chronological Order 
@@ -48,18 +46,16 @@ add_filter( 'tribe_events_views_v2_view_photo_template_vars', 'tribe_past_revers
 If you are using a shortcode to display your events and would like to show the past events in reverse order there as well, you can use the following snippet.
 
 ```
-<?php
-
 add_filter(
 	'tribe_events_views_v2_view_template_vars',
 	function( $template_vars, $view ) {
-	  	$context = $view->get_context();
+		  	$context = $view->get_context();
    
 		// Not doing a shortcode - bail.
 		if ( empty( $context->get( 'shortcode' ) ) ) {
 			return $template_vars;
 		}
-	   
+		   
 		// Get the date set for the shortcode and today's date
 		$targetDate = strtotime($template_vars['request_date']->format( 'Y-m-d' ));
 		$currentDate = strtotime(date("Y-m-d"));
@@ -74,7 +70,7 @@ add_filter(
 			$template_vars['events'] = array_reverse( $template_vars['events'] );
 		}
    
-	  	return $template_vars;
+		  	return $template_vars;
 	},
 	8,
 	2
@@ -109,7 +105,6 @@ add_filter( 'body_class', function( $classes ) {
 		// Get the event end date as a Unix timestamp
 		$event_end  = tribe_get_end_date( $event_id, true, 'U' );
 		$current    = current_time( 'timestamp' );
-
 		if ( $event_end < $current ) {
 			// Event has ended
 			$classes[] = 'past-event';
@@ -137,8 +132,8 @@ Once the code is added, the HTML
  tag on single event pages will contain the new class, like this:
 
 ```
-<body class="tribe-events-single tribe-events past-event ...">
-<body class="tribe-events-single tribe-events upcoming-event ...">
+<body class="wp-singular single single-tribe_events past-event ...">
+<body class="wp-singular single single-tribe_events upcoming-event ...">
 ```
 
 #### Example Use Case (Styling)
@@ -157,6 +152,10 @@ body.past-event .tribe-events-single-event-title {
 You can target any element on the page, such as the event details, venue information, or even apply a subtle overlay to the page background using the new body class as the main selector.
 
 This simple customization provides endless possibilities for styling your single event pages based on their status.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

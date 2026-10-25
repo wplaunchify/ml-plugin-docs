@@ -74,7 +74,7 @@ Event Aggregator’s **Other URL** import is particularly well suited for establ
 
 Before getting started, confirm your hub site meets the following requirements:
 
-- [The Events Calendar](https://theeventscalendar.com/product/wordpress-events-calendar/) version 4.5 or higher must be installed and activated. This plugin provides the core calendar functionality and includes Event Aggregator, which must be activated separately.
+- [The Events Calendar](https://theeventscalendar.com/product/wordpress-events-calendar/) must be installed and activated. This plugin provides the core calendar functionality and includes Event Aggregator, which must be activated separately.
 - An [Event Aggregator](https://theeventscalendar.com/products/event-aggregator/) license key must be purchased and activated to unlock the **Other URL** import option. Without a license, only the CSV import option is available. If you need help activating your license, check out the [New User Primer](https://docs.nexcess.com/software/the-events-calendar/event-imports/) for a quick walkthrough.
 - [Events Calendar Pro](https://theeventscalendar.com/products/wordpress-events-calendar/) (optional): If you’ll be importing any events from sites that use Events Calendar Pro and wish to retain venue and organizer details from calendar events, you may wish to have Events Calendar Pro installed and activated on your hub site, as well. If it is not installed, venue and organizer data will still be imported, but venue and organizer pages will not be generated on the front end.
 

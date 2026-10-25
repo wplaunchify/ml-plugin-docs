@@ -23,12 +23,23 @@ The Events Calendar cost field within the event information or in the headers of
 Alternatively, instead of customizing the display in the cost field, you could also use the following CSS to hide all the cost fields except in the ticket add to cart form:
 
 ```
-/*The Events Calendar - Hide All Event Costs*/
-.tribe-events-list .tribe-events-event-cost,
+/* The Events Calendar - Hide All Event Costs */
+.tribe-events-calendar-list__event-cost,
+.tribe-events-calendar-day__event-cost,
+.tribe-events-calendar-latest-past__event-cost,
+.tribe-events-calendar-month__calendar-event-tooltip-cost,
+.tribe-events-calendar-month-mobile-events__mobile-event-cost,
+.tribe-events-widget-events-list__event-cost,
+.tribe-events-pro-photo__event-cost,
+.tribe-events-pro-week-grid__event-tooltip-cost,
+.tribe-events-pro-week-mobile-events__event-cost,
+.tribe-events-pro-map__event-tooltip-cost,
+.tribe-events-pro-summary__event-cost,
 .tribe-events-schedule .tribe-events-cost,
-.tribe-events-meta-group dl dt:nth-child(5),
-.tribe-events-meta-group .tribe-events-event-cost {
-    display:none;
+.tribe-events-meta-group .tribe-events-event-cost-label,
+.tribe-events-meta-group .tribe-events-event-cost,
+.tribe-block__event-price {
+	display: none;
 }
 ```
 
@@ -56,11 +67,9 @@ Then change the tax status to **None** and click **Update**.
 
 #### Disable Taxes on New Tickets
 
-If you’d like to disable taxes on all new tickets that haven’t been created yet, you can use a snippet. Simply add the following snippet to your theme’s functions.php file to disable taxes on all of your tickets:
+If you’d like to disable taxes on all new tickets that haven’t been created yet, you can use a snippet. Add the following snippet to your child theme’s functions.php file (or a code snippets plugin). It sets the tax status to None every time a WooCommerce ticket is saved, so it also applies when you re-save an existing ticket:
 
 ```
-<?php
-
 add_action( 'event_tickets_after_save_ticket', 'rt_disable_tax_for_event_tickets', 10, 4 );
 
 function rt_disable_tax_for_event_tickets( $post_id, $ticket, $raw_data, $class_name ) {
@@ -82,6 +91,10 @@ function rt_disable_tax_for_event_tickets( $post_id, $ticket, $raw_data, $class_
 ```
 
 If you have further questions about how The Events Calendar displays costs please post to [our Help Desk](https://support.theeventscalendar.com/submit_ticket). For issues related to tax display in WooCommerce, you’ll want to get in touch with [WooCommerce support](https://wordpress.org/support/plugin/woocommerce).
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

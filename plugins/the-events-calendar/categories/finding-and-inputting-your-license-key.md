@@ -48,9 +48,5 @@ And you’re all set!
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/ECP-license.jpg)
 
-### What if I’m not seeing the “Licenses” tab?
-
-This is probably the result of using different plugin versions. For example, if you are running version 4.8 of The Events Calendar, then you should also be running 4.8 of Events Calendar Pro. Otherwise, the **Licenses** tab may not work correctly. You may need to manually update your plugins until their version numbers are compatible with each other — [learn more about manually updating plugins](https://docs.nexcess.com/software/the-events-calendar/manual-updates/). Once the version numbers are made compatible, the **Licenses** tab should show up for you.
-
 ---
 

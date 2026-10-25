@@ -12,35 +12,11 @@ This article includes explanations and solutions for some of the more common iss
 
 ## Fixing “???” or Garbled Text
 
-If you notice that some text in your **Event Tickets Plus** PDF tickets appears as question marks (
-```
-???
-```
+If some text in your Event Tickets Plus PDF tickets appears as boxes or question marks (???), or is missing, it’s usually a font issue. The PDF uses the FreeSans font, which covers Latin (including accented letters), Cyrillic and Greek, but not Chinese, Japanese or Korean. Here are the steps to follow in that case.
 
-) or unreadable characters, it’s usually caused by a **font encoding issue**. The default font used in the PDF doesn’t support certain character sets, which can happen with many non-Latin languages or special symbols.Here are the steps to follow in that case.
+#### 1. Update the PDF Template to Use a Font That Supports Your Language
 
-#### 1. Add a Snippet to Use a Font That Supports More Characters
-
-Add this snippet to your site using a snippets plugin like [Code Snippets](https://wordpress.org/plugins/code-snippets/) or by placing it in your theme’s 
-```
-functions.php
-```
-
- file.
-
-```
-add_filter( 'tec_tickets_wallet_plus_pdf_pass_get_pdf_object', function( $pdf ) {
-    // Set FreeSerif font for wider character encoding support
-    $pdf->setFont( 'freeserif', '', 10 );
-    return $pdf;
-});
-```
-
-The **FreeSerif** font supports a broad range of Unicode characters, helping resolve most encoding or missing character problems.
-
-#### 2. Update the PDF Template to Match the Font Setting
-
-If the snippet doesn’t fully fix the issue, try adjusting the template used to generate the PDFs (see [Customizing Template Files)](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/):
+Adjust the template used to generate the PDFs (see [Customizing Template Files)](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/):
 
 1. Copy this file from the plugin: 
 ```
@@ -50,17 +26,36 @@ wp-content/plugins/event-tickets-plus/src/views/tickets-wallet-plus/pdf/pass/sty
 ```
 wp-content/themes/[your-theme]/tribe/tickets-plus/tickets-wallet-plus/pdf/pass/styles.php
 ```
-3. Open the copied file and replace all instances of: 
+3. Open the copied file and replace both instances of 
 ```
-font-family: freesans
-```
-
- with: 
-```
-font-family: freeserif
+font-family: freesans;
 ```
 
-#### 3. Test the Changes
+ with the font for your language:
+- ```
+stsongstdlight
+```
+
+: Simplified Chinese
+- ```
+msungstdlight
+```
+
+: Traditional Chinese
+- ```
+cid0jp
+```
+
+: Japanese
+- ```
+hysmyeongjostdmedium
+```
+
+: Korean
+
+These fonts are meant for their own language, so accented Latin letters or Cyrillic text may not display with them. Only use one if your attendee names are written in that language.
+
+#### 2. Test the Changes
 
 After saving your updates, regenerate a sample ticket and download the PDF. The text should now render correctly instead of showing 
 ```
@@ -96,7 +91,7 @@ When creating PDF tickets with Event Tickets and Event Tickets Plus, you may see
 Error during status transition. DirectoryIterator::__construct(/tmp/): failed to open dir: Permission denied
 ```
 
-This error message indicates that you don’t have access to the directory needed to create the PDF for your tickets. The good news is that we have a snippet to help you override these permissions and get your tickets working as expected in no time!
+This error message indicates that PHP does not have access to the temporary folder it needs to create the PDF for your tickets.
 
 As we mentioned, the above error indicates that you don’t have access to the 
 ```
@@ -108,68 +103,21 @@ As we mentioned, the above error indicates that you don’t have access to the 
 /tmp
 ```
 
- directory doesn’t exist (it usually resides in the root folder of your server), or you don’t have privileges to write to this directory. With privileges -755, you should be able to work with this folder so the plugin can generate and save the QR codes for the ticket emails.
+ directory doesn’t exist (it usually resides in the root folder of your server), or you don’t have privileges to write to this directory. With permissions 755, you should be able to work with this folder so the plugin can generate and save the QR codes for the ticket emails.
 
 As a first step, we recommend reaching out to your web host to see if they can provide you with access to this directory and/or change the permissions on the directory for your website.
 
-If the issue persists, you can add the following snippet to your 
-```
-functions.php
-```
-
- file:
-
-```
-<?php
-
-add_filter( 'tribe_ext_pdf_tickets_mpdf_args', function( $args ) {
-	$upload_dir = wp_upload_dir();
-	$args['tempDir'] = $upload_dir['basedir'] . '/tmp/';
-	return $args;
-} );
-```
+If the issue persists, ask your host to point PHP’s temporary folder to a folder it can write to. This is the sys_temp_dir setting in php.ini (or the TMPDIR environment variable on the server). Choose a private folder outside your public web directory.
 
 ## QR Codes Missing When ModSecurity is Enabled
 
 You may have the [ModSecurity](https://modsecurity.org/) module enabled on your hosting as a preventive and security measure for your website. While this shouldn’t affect the proper functioning of our plugins, there are some cases where unexpected behavior occurs, such as the QR code not appearing on PDF-generated tickets.
 
-In cases where this issue occurs, the following code can be added to the **qr-image.php** file to correct this unexpected behavior. You will want to follow our guide on [Template Overrides](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/) to change this.
-
-(File Path: 
-```
-/wp-content/plugins/event-tickets-plus/src/views/tickets-wallet-plus/pdf/pass/body/ticket-info/attendee-details/qr-image.php
-```
-
-)
-
-```
-<?php
-if ( empty( $qr_enabled ) || empty( $qr_image_url ) ) {
-	return;
-}
-
-// We convert absolute URL to physical path on the server
-$upload_dir = wp_upload_dir();
-$qr_path = str_replace( $upload_dir['baseurl'], $upload_dir['basedir'], $qr_image_url );
-
-if ( file_exists( $qr_path ) ) {
-	$qr_image_data = base64_encode( file_get_contents( $qr_path ) );
-	$mime_type = mime_content_type( $qr_path );
-	echo '<td width="120" rowspan="2">';
-	echo '<img width="100" src="data:' . $mime_type . ';base64,' . $qr_image_data . '" />';
-	echo '</td>';
-} else {
-	echo '<td width="120" rowspan="2">';
-	echo '<p>QR code not accessible</p>';
-	echo '<p>' . esc_html( basename( $qr_path ) ) . '</p>';
-	echo '</td>';
-}
-?>
-```
-
-**💡Important Notice:** Before proceeding, we strongly recommend [creating a full site backup](https://docs.nexcess.com/software/the-events-calendar/creating-site-backups/) or [testing this process on a staging site first](https://docs.nexcess.com/software/the-events-calendar/how-to-set-up-a-staging-site-for-your-wordpress-website/).
+In Event Tickets Plus 6.11.1 and later this no longer happens: the QR code is built into the PDF instead of being loaded from your site’s web address, so there is nothing for ModSecurity to block. If your QR codes are missing, update Event Tickets Plus to the latest version.
 
 ## Fixing TCPDF Errors
+
+In Event Tickets Plus 6.11.1 and later, the QR code is built into the PDF instead of being loaded from your site’s web address, and a ticket image that cannot be loaded no longer causes a critical error at checkout. If you see the error below, update Event Tickets Plus first.
 
 If you encounter a critical error during checkout and are unable to complete the purchase, inspect your server’s log file. Look for an error message similar to:
 
@@ -251,6 +199,10 @@ Note: Some hosting providers may restrict these settings for security reasons.
 3. **Contact Your Hosting Provider**: If the above steps don’t resolve the issue, reach out to your hosting provider. Provide them with the error details and request assistance in configuring the server to allow TCPDF to access remote images.
 
 By following these steps, you should be able to resolve the TCPDF image size error and ensure that PDF tickets are generated correctly.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

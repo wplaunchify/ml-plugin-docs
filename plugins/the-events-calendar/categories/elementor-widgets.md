@@ -199,9 +199,7 @@ You’ll also see an *Advanced* tab, which is where you’ll be able to style yo
 
 ## Using the [tribe_events] shortcode
 
-If you prefer not to use the native widgets — or you’re using The Events Calendar without Events Calendar Pro — you can embed the main calendar into an Elementor layout using the [[tribe_events] shortcode](https://docs.nexcess.com/software/the-events-calendar/calendar-embed-shortcodes/). Drop the shortcode into any Elementor page to display the calendar wherever you want.
-
-👋 As of version 6.4.0, The Events Calendar now offers [support for Elementor single event template](https://docs.nexcess.com/software/the-events-calendar/elementor-templates/)!
+If you prefer not to use the native widgets, you can embed the main calendar into an Elementor layout using the [[tribe_events] shortcode](https://docs.nexcess.com/software/the-events-calendar/calendar-embed-shortcodes/). Drop the shortcode into any Elementor page to display the calendar wherever you want.
 
 The shortcode works with either the Classic Editor or the Block Editor.
 
@@ -219,14 +217,6 @@ The following scenarios will work with this integration:
 ```
 
  on an Elementor page template
-
-Lastly, it is worth noting that this compatibility improvement has been designed to work only with the [updated calendar views](https://theeventscalendar.com/knowledgebase/k/enabling-updated-calendar-views/) from The Events Calendar 5.0. You can toggle these views on by checking the box under **Events → Settings → Display**.
-
-## Legacy versions (pre-7.0)
-
-**💡Important Notice:** The sections above cover Events Calendar Pro 7.0 and above. If you are using a version prior to 7.0, the widgets behave similarly but with a few differences — most notably, virtual event content controls in the Event widget are only available to customers with the [Virtual Events](https://theeventscalendar.com/products/wordpress-virtual-events/) add-on.
-
-🔍Learn more about the changes in [this detailed blog post](https://evnt.is/1bdy).
 
 ---
 

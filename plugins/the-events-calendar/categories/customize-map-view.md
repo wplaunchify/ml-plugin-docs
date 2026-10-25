@@ -17,14 +17,17 @@ The Map View in [Events Calendar Pro](https://theeventscalendar.com/products/wor
 By default, the number of events displayed per page in this view is determined by the setting found under **Events > Settings > Display > Calendar tab > Number of events to show per page**. Adjusting this setting allows you to control how many events are listed per page across various views, including the Map View. However, there may be instances where you want the Map View to display a different number of events per page than other views. Adding the following snippet to your site does the exact thing for you:
 
 ```
-// Increase/Decrease Events Shown in Map View 
-add_filter( 'tribe_events_views_v2_view_map_repository_args', function( $args, $context ) { 
-$args['posts_per_page'] = 4 ;// Change this number to your choice 
-return $args; 
-}, 10, 2);
+add_filter( 'tribe_events_views_v2_map_view_context', function( $context ) {
+	// Change this number to the amount of events you want per page on Map View.
+	return $context->alter( [ 'events_per_page' => 4 ] );
+} );
 ```
 
-That’s all, by implementing the above code, 4 events per page will be loaded on Map View.
+That’s all. With the code above, Map View loads 4 events per page and paging with Next still reaches every event. Other views keep using the Number of events to show per page setting.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

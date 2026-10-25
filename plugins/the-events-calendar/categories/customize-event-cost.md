@@ -35,11 +35,9 @@ functions.php
 ```
 function tribe_tec_rename_free_label( $translation, $text, $domain ) {
     $custom_text = [ 'Free' => '0' ]; // Replace '0' with your preferred label
-
     if ( 0 === strpos( $domain, 'the-events-calendar' ) && array_key_exists( $translation, $custom_text ) ) {
         $translation = $custom_text[ $translation ];
     }
-
     return $translation;
 }
 add_filter( 'gettext', 'tribe_tec_rename_free_label', 20, 3 );
@@ -82,12 +80,10 @@ tribe_get_cost
 function tribe_not_show_free( $cost, $post_id, $with_currency_symbol ) {
     $regex = '/Free/';
     $match = preg_match( $regex, $cost );
-
     if ( $cost == 0 || $cost == 'Free' || $match ) {
         $cost = str_replace( 'Free', ' ', $cost );
         $cost = str_replace( ' – ', ' ', $cost );
     }
-
     return $cost;
 }
 add_filter( 'tribe_get_cost', 'tribe_not_show_free', 10, 3 );
@@ -102,40 +98,34 @@ Add the snippet to your
 functions.php
 ```
 
- file or via Code Snippets. Before saving, delete the block you *do not* want — either the lowest-price block or the highest-price block.
+ file or via Code Snippets. Before saving, set $show to ‘lowest’ or ‘highest’ to choose which end of the range to display.
 
 ```
 function tec_remove_price_range( $cost, $post_id, $with_currency_symbol ) {
+    // Choose which end of the range to show: 'lowest' or 'highest'.
+    $show = 'lowest';
+
     $pieces = explode( ' – ', $cost );
 
-    // If the ticket is free, just display it as-is.
-    if ( $cost == 'Free' ) {
+    // If the event is free, or has a single price, display it as-is.
+    if ( 'Free' === $cost || count( $pieces ) < 2 ) {
         return $cost;
     }
 
-    // DELETE the block below if you want to show only the highest price instead.
-    // To show the lowest price with prefix text:
-    if ( ! empty( $pieces[0] ) ) {
-        return 'Starting from ' . $pieces[0];
+    if ( 'highest' === $show ) {
+        return 'Up to ' . end( $pieces );
     }
 
-    // DELETE the block above if you want to show only the lowest price.
-    // To show the highest price with prefix text:
-    if ( ! empty( $pieces[1] ) ) {
-        return 'Up to ' . $pieces[1];
-    }
-
-    // If not a range, return the default value.
-    return $cost;
+    return 'Starting from ' . $pieces[0];
 }
 add_filter( 'tribe_get_cost', 'tec_remove_price_range', 10, 3 );
 ```
 
-Showing the lowest price with “Starting from” prefix:
+Showing the lowest price with “Starting from” prefix (the snippet above, as written):
 
 ![Event cost showing 'Starting from $5' instead of a full price range](https://docs.nexcess.com/wp-content/uploads/2026/06/Starting.jpg)
 
-Showing only the highest price with “Up to” prefix (remove lines 9–12 from the snippet above):
+Showing only the highest price with “Up to” prefix (in the snippet above, change ‘lowest’ to ‘highest’ on the line that sets $show):
 
 ![Event cost showing 'Up to $50' instead of a full price range](https://docs.nexcess.com/wp-content/uploads/2026/06/Up-to-Price-1.jpg)
 
@@ -223,13 +213,38 @@ functions.php
 **If the currency symbol (like €) is before the cost:**
 
 ```
-// Add a space before the Euro symboladd_filter( 'tribe_get_cost', 'add_space_before_euro');functionadd_space_before_euro( $cost) {    if( is_admin() ) {        return$cost;    }    $cost= str_replace( '€', ' €', $cost);    $cost= str_replace( '&euro;', ' &euro;', $cost);    $cost= str_replace( '&#8364;', ' &#8364;', $cost);    return$cost;}
+add_filter( 'tribe_get_cost', 'tec_add_space_after_currency_symbol' );
+function tec_add_space_after_currency_symbol( $cost ) {
+    if ( is_admin() ) {
+        return $cost;
+    }
+
+    // Change these to match your currency symbol (€ is used as the example).
+    $cost = str_replace( '€', '€ ', $cost );
+    $cost = str_replace( '&euro;', '&euro; ', $cost );
+    $cost = str_replace( '&#8364;', '&#8364; ', $cost );
+
+    return $cost;
+}
 ```
 
 **If the currency symbol is after the cost:**
 
 ```
-add_filter( 'tribe_get_cost', 'add_space_before_dollar');functionadd_space_before_dollar( $cost) {    if( is_admin() ) {        return$cost;    }    $cost= str_replace( '$', ' $', $cost);    $cost= str_replace( '&#36;', ' &#36;', $cost);    return$cost;}
+add_filter( 'tribe_get_cost', 'tec_add_space_before_currency_symbol' );
+function tec_add_space_before_currency_symbol( $cost ) {
+    if ( is_admin() ) {
+        return $cost;
+    }
+
+    // Change these to match your currency symbol or abbreviation (EUR and € are used as the examples).
+    $cost = str_replace( 'EUR', ' EUR', $cost );
+    $cost = str_replace( '€', ' €', $cost );
+    $cost = str_replace( '&euro;', ' &euro;', $cost );
+    $cost = str_replace( '&#8364;', ' &#8364;', $cost );
+
+    return $cost;
+}
 ```
 
 By using one of these methods, you can ensure that your event cost formatting looks clean and professional, whether you’re using symbols or abbreviations. Choose the approach that works best for your setup and design preferences.
@@ -237,6 +252,10 @@ By using one of these methods, you can ensure that your event cost formatting lo
 ## Disclaimer
 
 As with all of our snippets, please note that we share these in the hope they will be useful **but without any guarantees or commitments**. If you wish to use them, it is your responsibility to test them and adapt them to your needs (or find someone who can do so on your behalf). We are unable to provide further support in relation to these snippets.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

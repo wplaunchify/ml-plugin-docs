@@ -22,7 +22,7 @@ wp-config.php
 
 .
 
-This article details each of the eight constants that can be used to fine-tune The Events Calendar — though one is deprecated (documented for the benefit of anyone working on an older installation, where an update has not been possible for whatever reason).
+This article details each of the five constants that can be used to fine-tune The Events Calendar.
 
 As previously mentioned, some pretty critical information is stored in 
 ```
@@ -38,13 +38,6 @@ The constants we will look at are:
 - [TRIBE_DISABLE_PUE](#tribe_disable_pue)
 - [PUE_UPDATE_URL](#pue_update_url)
 - [TRIBE_DISABLE_DEPRECATED_TAGS](#tribe_disable_deprecated_tags)
-- [TRIBE_MODIFY_GLOBAL_TITLE](#tribe_modify_global_title)
-- ```
-TRIBE_EVENTS_SINGLE_VIEW_V2_DISABLED
-```
-- ```
-TRIBE_EVENTS_WIDGETS_V2_DISABLED
-```
 
 Defining constants is straightforward:
 
@@ -143,43 +136,7 @@ TRIBE_DISABLE_DEPRECATED_TAGS
 define('TRIBE_DISABLE_DEPRECATED_TAGS', true);
 ```
 
-### Fix Title Conflict with Certain Themes
-
-Have you noticed that sometimes the title for an event page isn’t displaying properly? Is it displaying twice or are loops of events displaying a single event title rather than an appropriate archive title? This could be due to your theme calling 
-```
-the_title();
-```
-
- outside of the loop for that page.
-
-To fix this problem, use  
-```
-TRIBE_MODIFY_GLOBAL_TITLE
-```
-
- to overwrite the default title being output by the theme.
-
-```
-define('TRIBE_MODIFY_GLOBAL_TITLE', true);
-```
-
-### Bypass Single Event Style Changes
-
-The following constant can be added so that the updated single event styles can be overridden by any customizations that you’ve made there:
-
-```
-define('TRIBE_EVENTS_SINGLE_VIEW_V2_DISABLED', true);
-```
-
-Similarly, this can be done with a filter:
-
-```
-add_filter( 'tribe_events_single_view_v2_is_enabled', '__return_false' )
-```
-
----
-
-We hope this was of value to you. If there’s another constant you think might be worth adding or have questions about any of those outlined above, [let us know](https://support.theeventscalendar.com/submit_ticket)!
+We hope this was of value to you. If there’s another constant you think might be worth adding or have questions about any of those outlined above, let us know!
 
 ---
 

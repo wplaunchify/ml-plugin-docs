@@ -72,45 +72,51 @@ This code inserts a visually distinct warning box **only inside the existing rig
 
 ### Option 3: New Left Sidebar (Three-Column Layout)
 
-This advanced option converts the modal into a three-column grid by adding a new, narrow sidebar to the left of the seating map. Use this to display persistent information or instructions.
+This advanced option converts the modal into a three-column grid by adding a new, narrow sidebar to the left of the seating map. Use this to display persistent information or instructions. The three columns only apply on screens 768px wide and larger, and only inside the seating modal.
 
 ```
-.tribe-dialog__content.tribe-modal__content {
-    display: grid;
-    grid-template-columns: 150px 1fr 300px; 
-    gap: 15px; 
-    align-items: start;
-}
+@media (min-width: 768px) {
+    .tec-tickets-seating__modal .tribe-dialog__content.tribe-modal__content {
+        display: grid;
+        grid-template-columns: 150px 1fr 300px;
+        gap: 15px;
+        align-items: start;
+    }
 
-.tec-tickets-seating__iframe-container {
-    grid-column: 2 / 3; 
-    width: 100%;
-    height: 100%;
-}
+    .tec-tickets-seating__modal .tribe-dialog__content.tribe-modal__content::before {
+        content: "Check policies here."; /* Customize this content */
+        grid-column: 1 / 2;
+        display: block;
+        padding: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        background-color: #ffffff;
+        color: #555555;
+        font-size: 1.1em;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.6;
+    }
 
-.tec-tickets-seating__modal-sidebar_container {
-    grid-column: 3 / 4;
-}
+    .tec-tickets-seating__iframe-container {
+        grid-column: 2 / 3;
+        width: 100%;
+        height: 100%;
+    }
 
-.tec-tickets-seating__iframe-container::before {
-    content: "Check policies here."; /* Customize this content */
-    grid-column: 1 / 2;
-    display: block;
-    padding: 15px;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    background-color: #ffffff;
-    color: #555555;
-    font-size: 1.1em;
-    font-style: italic;
-    font-weight: bold;
-    line-height: 1.6;
+    .tec-tickets-seating__modal-sidebar_container {
+        grid-column: 3 / 4;
+    }
 }
 ```
 
 **Result:**
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-10-21-at-21.18.14-1024x534-1.jpg)
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

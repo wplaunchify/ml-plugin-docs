@@ -40,7 +40,6 @@ function tribe_genesis_bypass_genesis_do_post_content() {
 	if ( ! class_exists( 'Tribe__Events__Main' ) ) {
 	  return;
 	}
-
 	if ( class_exists( 'Tribe__Events__Pro__Main' ) ) {
 		if ( tribe_is_month() 
 		  || tribe_is_upcoming() 
@@ -63,7 +62,6 @@ function tribe_genesis_bypass_genesis_do_post_content() {
 			add_action( 'genesis_entry_content', 'the_content', 15 );
 		}
 	}
-
 }
 ```
 
@@ -84,9 +82,9 @@ Your default layout may work for the single event template, but not your main ev
 
 For all the layout snippets, you can change full-width-content with any of these other options or a custom layout: full-width-content, content-sidebar, sidebar-content, content-sidebar-sidebar, sidebar-sidebar-content, sidebar-content-sidebar.
 
-The following snippets **will only work** if you event template setting is set to default page template.  That setting is found here in your site admin:
+The following snippets **will only work** if your Events template setting is set to Default Page Template. That setting is found here in your site admin:
 
-Events → Settings → Display Tab → Events Template → Default Page Template
+Events → Settings → Display → Calendar → Events template → Default Page Template
 
 ## Main Event Views
 
@@ -99,14 +97,12 @@ This first snippet will show the main event views at full width.
  * Genesis @2.1.2
  * Options - full-width-content, content-sidebar, sidebar-content, content-sidebar-sidebar, sidebar-sidebar-content, sidebar-content-sidebar
  */
-
 // Target all Event Views (Month, List, Map etc)
 add_filter( 'genesis_pre_get_option_site_layout', 'tribe_genesis_view_layouts' );
 function tribe_genesis_view_layouts( $layout ) {
 	if ( ! class_exists( 'Tribe__Events__Main' ) ) {
 		return $layout;
 	}
-
 	if ( class_exists( 'Tribe__Events__Pro__Main' ) ) {
 		if( tribe_is_month() || tribe_is_upcoming() || tribe_is_past() || tribe_is_day() || tribe_is_map() || tribe_is_photo() || tribe_is_week() ) {
 			return 'full-width-content';
@@ -116,7 +112,6 @@ function tribe_genesis_view_layouts( $layout ) {
 			return 'full-width-content';
 		}
 	}
-
 	return $layout;
 }
 ```
@@ -138,7 +133,6 @@ function tribe_genesis_all_layouts( $layout ) {
 	if ( class_exists( 'Tribe__Events__Main' ) && tribe_is_event_query() ) {
 		return 'full-width-content';
 	}
-
 	return $layout;
 }
 ```
@@ -158,7 +152,6 @@ function tribe_genesis_single_layouts( $layout ) {
 	if ( is_singular( 'tribe_events' ) || is_singular( 'tribe_venue' ) || is_singular( 'tribe_organizer' ) ) {
 		return 'full-width-content';
 	}
-
 	return $layout;
 }
 ```
@@ -178,7 +171,6 @@ function tribe_single_events_full_width_layout( $layout ) {
 	if ( class_exists( 'Tribe__Events__Main' ) && tribe_is_event_query() && is_single() ) {
 		return 'full-width-content';
 	}
-
 	return $layout;
 }
 ```
@@ -198,7 +190,6 @@ function tribe_genesis_community_layouts( $layout ) {
 	if ( tribe_is_community_my_events_page() || tribe_is_community_edit_event_page() ) {
 		return 'full-width-content';
 	}
-
 	return $layout;
 }
 ```
@@ -209,10 +200,10 @@ All the layout snippets can be used in any combination to target specific event 
 
 Genesis Simple Share does not show on single event templates due to no Genesis hooks being in the template, but adding the snippet below to your child theme’s functions.php will make Simple Share show above the event content. You can also review the 
 ```
-the-events-calendarsrcviewssingle-event.php
+the-events-calendar/src/views/single-event.php
 ```
 
-template for different hooks if you would like to place it somewhere else on the single event template.
+ template for different hooks if you would like to place it somewhere else on the single event template.
 
 ```
 /**
@@ -224,9 +215,7 @@ function tribe_genesis_event_share( $post_info ) {
 	if ( is_singular( 'tribe_events' ) && function_exists( 'genesis_share_get_icon_output' ) ) {
 		global $Genesis_Simple_Share;
 		$share =  genesis_share_get_icon_output( 'entry-meta', $Genesis_Simple_Share->icons );
-		$event_sharing = '</pre>
-		<div class="alignleft info-left">' . $share . '</div>
-		<pre>';
+		$event_sharing = '<div class="alignleft info-left">' . $share . '</div>';
 
 		echo $event_sharing;
 	}
@@ -278,7 +267,9 @@ To remove the Author Boxes from single event, single venue, and single organizer
  */
 add_action( 'pre_get_posts', 'tribe_genesis_hide_author_single_events' );
 function tribe_genesis_hide_author_single_events( $query ) {
-	if( is_singular( 'tribe_events' ) || $query->query['post_type'] == 'tribe_venue' || $query->query['post_type'] == 'tribe_organizer' ) {
+	$post_type = $query->get( 'post_type' );
+
+	if ( is_singular( 'tribe_events' ) || 'tribe_venue' === $post_type || 'tribe_organizer' === $post_type ) {
 		remove_action( 'genesis_after_entry', 'genesis_do_author_box_single', 8 );
 	}
 }
@@ -300,7 +291,7 @@ We hope you found this tutorial helpful! Have questions or issues with Genesis c
 
 ## Genesis Framework & Event Tickets
 
-As of Event Tickets 4.9, the attendee details are now collected on a new, separate screen instead of the event page where the attendee form used to be. The default slug for this page is ‘attendee-registration’.
+The attendee details are collected on a separate screen. The default slug for this page is ‘attendee-registration’.
 
 When using a theme based on the Genesis Framework and having a specific setting, the Attendee Registration page will not show up properly. It will show a kind of an excerpt of that page.
 
@@ -315,55 +306,20 @@ When the setting is Display → Excerpt or the content limit is higher than 
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-28-1.jpg)
 
-Here is the solution to fix that. Add this snippet to your child theme’s 
-```
-functions.php
-```
-
- file or via a [Code snippets plugin](https://docs.nexcess.com/software/the-events-calendar/code-snippets/).
-
-```
-/**
- * Change the Get Tickets on List View and Single Events
- *
- * @param string $translation The translated text.
- * @param string $text      The text to translate.
- * @param string $domain    The domain slug of the translated text.
- *
- * @return string The translated text or the custom text.
- */
-   
-add_filter( 'gettext', 'tribe_change_get_tickets', 20, 4 );
-function tribe_change_get_tickets( $translation, $text, $domain) {    
-  if ( $domain != 'default'
-    && strpos( $domain, 'event-' ) !== 0
-  ) {
-    return $translation;
-  }
-   
-  $ticket_text = [
-    // Get Tickets on List View
-    '%s are no longer available'    => 'Sold Out',
-  ];
-   
-  // If we don't have replacement text, bail.
-  if ( empty( $ticket_text[ $text ] ) ) {
-    return $translation;
-  }
-   
-  return $ticket_text[ $text ];
-}
-```
+If you run into this problem, please contact our Help Desk and we will be happy to help.
 
 ### Notes
 
-- Originally written in November 2018
-- Tested with Event Tickets 4.8.4
+- Originally written in November 2018, updated October 2026
 - Author: András Guseo
 
 ### Disclaimer
 
 As with all of our recipes, please note that we share this in the hope it will be useful, **but without any guarantees or commitments**. If you wish to use it, it is *your* responsibility to test it first of all and adapt it to your needs (or find someone who can do so on your behalf). We are unable to provide further support in relation to this recipe.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

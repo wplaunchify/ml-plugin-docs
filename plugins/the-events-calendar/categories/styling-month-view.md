@@ -25,9 +25,8 @@ A “cell” is the square background of a single day on the month view grid whe
 The following is a general class that can be used to style any date on the month view grid, whether it’s past, present, or current.
 
 ```
-.tribe-events-calendar-month__day-cell { 
-    background-color: #fff; /* to change the background color */
-    border-color: #000;/* To change the border color */
+.tribe-events .tribe-events-calendar-month__day-cell {
+  background-color: #fff; /* Changes the background color on large screens. For small screens, see the next section. */
 }
 ```
 
@@ -36,9 +35,8 @@ The following is a general class that can be used to style any date on the month
 The following class can be used to adjust the styling of a month view cell on screens that are 768px and below, like tablets and mobile smaller mobile devices.
 
 ```
-.tribe-events-calendar-month__day-cell--mobile {
-  background-color: #fff; /* Change the background color */
-  border-color: #000;/* Change the border color */
+.tribe-events .tribe-events-calendar-month__day-cell--mobile {
+  background-color: #fff !important; /* Changes the background color. Themes style these cells as buttons, so !important is needed. */
 }
 ```
 
@@ -47,9 +45,8 @@ The following class can be used to adjust the styling of a month view cell on sc
 The following class can be used to adjust the styling of a month view cell on screens that are 768px and above, like desktop computer screens.
 
 ```
-.tribe-events-calendar-month__day-cell--desktop {
+.tribe-events .tribe-events-calendar-month__day-cell--desktop {
   background-color: #fff; /* Changes the background color */
-  border-color: #000;/* Changes the border color */
 }
 ```
 
@@ -60,9 +57,13 @@ The following class can be used to adjust the styling of a month view cell on sc
 This affects both this month’s past days, including days from the previous month.
 
 ```
-.tribe-events-calendar-month__day--past {
+.tribe-events .tribe-events-calendar-month__day--past {
   background-color: #fff; /* Changes the background color */
-  border-color: #000;/* Changes the border color */
+}
+
+/* The grid lines only exist on larger screens, and this selector is needed to override the default border color. */
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__day--past {
+  border-color: #000; /* Changes the border color */
 }
 ```
 
@@ -73,9 +74,13 @@ This affects both this month’s past days, including days from the previous mon
 The following class can be used to style the month view cell that contains the current date.
 
 ```
-.tribe-events-calendar-month__day--current {
+.tribe-events .tribe-events-calendar-month__day--current {
   background-color: #fff; /* Changes the background color */
-  border-color: #000;/* Changes the border color */
+}
+
+/* The grid lines only exist on larger screens, and this selector is needed to override the default border color. */
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__day--current {
+  border-color: #000; /* Changes the border color */
 }
 ```
 
@@ -87,8 +92,7 @@ For example, this is styling cells that are in the past on desktop screens:
 
 ```
 .tribe-events-calendar-month__day--past .tribe-events-calendar-month__day-cell--desktop {
-  background-color: #fff; /* to change the background color */
-  border-color: #000;/* To change the border color */
+  background-color: #fff; /* Changes the background color */
 }
 ```
 
@@ -178,22 +182,27 @@ Events that span multiple days? Yep, they can be styled, too! Note that you’ll
 tribe-events-calendar-month__multiday-event-bar-inner
 ```
 
- class to style the background color of the event.
+ class to style the background color of the event. Multi-day bars only appear on large screens, and The Events Calendar’s own styles for them are more specific than a plain class, so start each selector with 
+```
+.tribe-common--breakpoint-medium.tribe-events
+```
+
+, as shown below.
 
 ```
 /* We can add a border around the entire event. */
-.tribe-events-calendar-month__multiday-event-bar {
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__multiday-event-bar {
   border: 1px solid #20c2ff;
 }
 
 /* We can change the background color of the event. */
-.tribe-events-calendar-month__multiday-event-bar-inner {
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__multiday-event-bar-inner {
   background-color: #20ff5e;
 }
 
 /* We can change the color of the event title. */
-.tribe-events-calendar-month__multiday-event-bar-title {
-  color: #20ff5e;
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__multiday-event-bar-title {
+  color: #0b3d91;
 }
 ```
 
@@ -207,16 +216,16 @@ You can combine any of these to achieve some pretty sweet styles.
 .tribe-events-calendar-month__day--past .tribe-events-calendar-month__calendar-event{ }
 ```
 
-### Current event and recurring event
+### Current day and multi-day event
 
 ```
 .tribe-events-calendar-month__day--current .tribe-events-calendar-month__multiday-event-bar-inner{ }
 ```
 
-### Current event and recurring event in mobile views
+### Current day in mobile views
 
 ```
-.tribe-events-calendar-month__day--current .tribe-events-calendar-month__day-cell--mobile .tribe-events-calendar-month__multiday-event-bar-inner { }
+.tribe-events-calendar-month__day--current .tribe-events-calendar-month__day-cell--mobile { }
 ```
 
 If you are trying to customize month view in The Events Calendar 4 and earlier, here is a [set of separate instructions](https://theeventscalendar.com/knowledgebase/k/css-classes-for-the-month-view-grid/).
@@ -224,6 +233,10 @@ If you are trying to customize month view in The Events Calendar 4 and earlier, 
 ### Disclaimer
 
 As with all of our recipes, please note that we share this in the hope it will be useful **but without any guarantees or commitments**. If you wish to use it, it is *your*responsibility to test it first of all and adapt it to your needs (or find someone who can do so on your behalf). We are unable to provide further support in relation to this recipe.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

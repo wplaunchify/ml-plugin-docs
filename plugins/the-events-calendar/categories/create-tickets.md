@@ -8,12 +8,12 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/create-tickets/](https://docs.nexcess.com/software/the-events-calendar/create-tickets/)
 
-Creating tickets with Event Tickets and Event Tickets Plus is easy and fast. This page walks you through the process of making tickets for your site’s posts, pages, or events. Before getting started, make sure you [review your settings](https://docs.nexcess.com/software/the-events-calendar/event-tickets/). The article is divided up into two main parts:
+Creating tickets with Event Tickets and Event Tickets Plus is easy and fast. This page walks you through the process of making tickets for your site’s posts, pages, or events. Before getting started, make sure you [review your settings](https://docs.nexcess.com/software/the-events-calendar/event-tickets-settings/). The article is divided up into two main parts:
 
 1. **Setting up basic tickets**– creating basic tickets with a specific or unlimited capacity
 2. **Shared Capacity**– creating two or more tickets that pull from a shared capacity for the event
 
-You can get a quick overview of using Block Editor with Tickets in [An Introduction to Tickets Blocks](https://docs.nexcess.com/software/the-events-calendar/events-block-editor/).
+You can get a quick overview of using Block Editor with Tickets in [An Introduction to Tickets Blocks](https://docs.nexcess.com/software/the-events-calendar/events-block-editor/#h-ticket-and-rsvp-blocks).
 
 With Event Tickets and Events Calendar Pro you can also create a pass ticket that gives attendees access to an event [Series](https://docs.nexcess.com/software/the-events-calendar/event-series/) (a group of multiple events). Find out more about this amazing new ticket type, [Series Passes](https://google.com).
 
@@ -21,25 +21,9 @@ With Event Tickets and Events Calendar Pro you can also create a pass ticket tha
 
 Tickets can be added to posts, pages, or events. In the Classic Editor, you will find the *Tickets meta box b*elow the main content of the post type*:*
 
-![Classic Editor: Add Ticket or RSVP](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_19-55-36.jpg)Classic Editor: Add Ticket or RSVP
+![](https://docs.nexcess.com/wp-content/uploads/2025/10/Screenshot-2026-10-20-at-12.26.56-PM.png)Classic Editor Tickets metabox
 
-The **Ticket Settings** option provides control over which ecommerce provider is used to manage ticket sales for an event. When your site has multiple ecommerce integrations enabled—such as **WooCommerce**, **Easy Digital Downloads (EDD)**, or others—this button allows you to specify the provider that will handle ticket creation, checkout, and order management for that specific event.
-
-Selecting the appropriate ecommerce provider ensures that tickets are processed using the correct store system, reflecting the settings, payment gateways, and reporting features associated with that integration.
-
-This option is particularly useful for sites that use more than one ecommerce solution, allowing event organizers to manage ticketing flexibly without changing global settings.
-
-![Classic Editor: Ticket Settings Options](https://docs.nexcess.com/wp-content/uploads/2026/06/teckb-1030-01-1024x554-1.jpg)Classic Editor: Ticket Settings Options
-
-When using the Block Editor, the available options become visible upon selecting the ticket creation block.
-
-![Block Editor: Ticket Settings Options](https://docs.nexcess.com/wp-content/uploads/2026/06/teckb-1030-02-1024x519-1.jpg)Block Editor: Ticket Settings Options
-
-If you have another ecommerce solution, you may want to disable Tickets Commerce to prevent accidental ticket sales through it. Tickets Commerce becomes the default ticket ecommerce provider when enabled via **WordPress Dashboard > Tickets > Settings > Payments**.
-
-In the Block Editor, default Ticket blocks or RSVP blocks may appear if you are creating an event.  Otherwise, you can add a Ticket and RSVP blocks to the main content:
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-01-11.jpg)Block Editor: Add Ticket or RSVP
+In the Block Editor, default Ticket blocks or RSVP blocks may appear if you are creating an event.  You can also add Ticket and RSVP blocks to the main content of any post type.
 
 We’ll create a basic ticket with a capacity for this ticket only for this example. (Using a shared capacity for two or more tickets is discussed in another [section below](#global-stock).)
 
@@ -49,13 +33,17 @@ When clicking on the **+ New ticket** button you will be presented with some add
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-06-41.jpg)Block Editor: Add New Ticket
 
-In this example, we are using [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/) with WooCommerce. Since we want to make a purchasable ticket, we click **+ New Ticket**. If you want to collect attendee RSVPs without selling tickets, you can click **+ New RSVP** instead – in which case you’ll want to read over [our RSVP tutorial](https://docs.nexcess.com/software/the-events-calendar/event-rsvps/) instead.
-
-If you are using only Event Tickets with [Tickets Commerce](https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/), then you will only see one capacity option as shown on [this screen](https://docs.nexcess.com/wp-content/uploads/2026/06/Event-Tickets-Add-New-Ticket.jpg).
-
 When creating tickets with [Tickets Commerce](https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/), you will also have the option to add a sale price, and the dates for the sale price.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/tickets-commerce-sale-price-1024x794-1.jpg)Adding a sale price of $20 for Tickets Commerce tickets.
+
+In addition to the basic options outlined in the section above, you’ll see the [Capacity](https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/)options.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-16-45.jpg)Classic Editor: Ticket Capacity
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-21-17.jpg)Block Editor: Ticket Capacity
+
+If you want your ticket to share the capacity for your event but also impose a sales limit on it (for example, if you want to only allow up to 50 children at your event out of your shared capacity of 100 attendees) you can *Sell up to*a certain number of tickets*.*
 
 Clicking on *Advanced* will show the following additional field.
 
@@ -89,6 +77,12 @@ You can duplicate a ticket when using the Classic Editor by clicking on the midd
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-12-49.jpg)Block Editor: Edit Tickets
 
+As your tickets start to sell, the stock for all tickets in global stock will decrease accordingly.
+
+Next up we recommend that you learn about [managing ticket orders and attendees](https://docs.nexcess.com/software/the-events-calendar/ticket-orders/) as well as reviewing [How Event Tickets are Calculated](https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/). If you have any further questions please don’t hesitate to connect with the team via our help desk.
+
+See [Common Stock Issues](https://docs.nexcess.com/software/the-events-calendar/troubleshoot-tickets-purchases/#h-ticket-stock-issues-with-cart-abandonment) for help troubleshooting.
+
 ### Note
 
 If the tickets **are for sale but just sold out**, then the form will still show. But purchasing tickets won’t be possible, and there will be an “Out of Stock!” message as shown in [this screenshot](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2016-06-01-at-3.46.09-PM.jpg).
@@ -97,7 +91,7 @@ What about if the tickets are not sold out but are only going to be sold between
 
 ## Event Ticket Types
 
-Different ticket types allow you the flexibility to sell tickets to various kinds of events. Users with Event Tickets have access to one ticket type: standard ticket. If you also have Events Calendar Pro, you can also use the [Series Pass](https://evnt.is/-series-passes) ticket type. In the future, we’ll be adding additional ticket types to further expand the functionality ([read more](https://docs.nexcess.com/software/the-events-calendar/recurring-events/)).
+Different ticket types allow you the flexibility to sell tickets to various kinds of events. Users with Event Tickets have access to one ticket type: standard ticket. If you also have Events Calendar Pro, you can also use the [Series Pass](https://evnt.is/-series-passes) ticket type.
 
 ### Standard Tickets
 
@@ -111,7 +105,7 @@ Series Passes can be purchased from the Series page and from any event in that S
 
 Ready to get started with Series Passes? Learn more in [this article](https://docs.nexcess.com/software/the-events-calendar/series-passes/).
 
-## Shared Capacity and Ticket Settings
+## Shared Capacity
 
 The shared capacity feature allows you to create multiple tickets that all come out of one pool of stock. For example, say you have a venue that has 100 seats, and you are selling three different priced tickets for children, adults, and seniors. If you listed the capacity of each ticket at 100, you might accidentally sell over 100 total tickets and run out of seats. Instead, you can set a *Shared Capacity* of 100 for the event. Your attendees can choose to buy any of the three tickets, but only up to 100 individual ticket sales.
 
@@ -120,6 +114,14 @@ To enable the shared capacity for your event, click the **Settings**button in th
 ![Ticket Settings for an event](https://docs.nexcess.com/wp-content/uploads/2026/06/TER-Ticket-Settings.jpg)Classic Editor: Ticket Settings
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-ticket-settings.jpg)Block Editor: Ticket Settings
+
+## Ticket Settings
+
+The **Sell tickets using** option provides control over which ecommerce provider is used to manage ticket sales for an event. If you use WooCommerce, this button allows you to specify the provider that will handle ticket creation, checkout, and order management for that specific event.
+
+![](https://docs.nexcess.com/wp-content/uploads/2025/10/Screenshot-2026-10-20-at-12.33.24-PM-1024x198.png)
+
+When using the Block Editor, the available options are in the block sidebar.
 
 If you check the *Show attendees list on event page*checkbox in the Classic Editor, attendees who purchase tickets will have their [Gravatar](https://gravatar.com) displayed in a [Who’s Attending feature](https://cloudup.com/cHoh6LrI4H1) on the event page.
 
@@ -131,23 +133,7 @@ If you display attendees on the front of your site, attendees can participate in
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-attendees-1.jpg)Block Editor: Attendees block
 
-When you click **+ New Ticket****the new ticket fields will display. In addition to the basic options outlined in the section above, you’ll see the [Capacity](https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/)options.
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-16-45.jpg)Classic Editor: Ticket Capacity
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-21-17.jpg)Block Editor: Ticket Capacity
-
-If you want your ticket to share the capacity for your event but also impose a sales limit on it (for example, if you want to only allow up to 50 children at your event out of your shared capacity of 100 attendees) you can *Sell up to*a certain number of tickets*.*
-
-Once you’ve configured your ticket, hit the **Save Ticket****button and you’re all set. As your tickets start to sell, the stock for all tickets in global stock will decrease accordingly.
-
-**Note:** We recommend running only one e-commerce functionality at a time. If you need to run multiple, we highly recommend that all tickets for one event use the same e-commerce platform, which you can select from the [ticket editor settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Ticket-Editor-Settings-Multiple-commerce.jpg).
-
-Next up we recommend that you learn about [managing ticket orders and attendees](https://docs.nexcess.com/software/the-events-calendar/ticket-orders/) as well as reviewing [How Event Tickets are Calculated](https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/). If you have any further questions please don’t hesitate to connect with the team via our help desk.
-
-See [Common Stock Issues](https://docs.nexcess.com/software/the-events-calendar/ticket-addons/) for help troubleshooting.
-
-Using Seating with Event Tickets
+## Using Assigned Seating with Event Tickets
 
 If you are using our Seating add-on, you can enable assigned seating with tickets. The capacity for each ticket will be defined by your event’s Seat Layout and your ticket’s Seat Type. This tool allows your attendees to choose from a visual seat layout when they’re purchasing tickets, so they can pick their perfect spot and have a specific seat assignment for the event. Read more about [using Seating with Event Tickets](https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/).
 

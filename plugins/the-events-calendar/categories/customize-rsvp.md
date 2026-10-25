@@ -18,7 +18,7 @@ We’ll walk you through the steps here.
 
 #### Prerequisites
 
-For this to work, you need to require users to log in before they RSVP. You can find the respective setting under **Tickets > Settings > General** tab.
+For this to work, you need to require users to log in before they RSVP. You can find the respective setting under **Tickets > Settings > General** tab, in the Login Requirements section. Tick the RSVP box there.
 
 ![Login requirements for one RSVP to work](https://docs.nexcess.com/wp-content/uploads/2026/06/et-rsvp-login-requirements-1024x163-1.jpg)
 
@@ -27,25 +27,28 @@ For this to work, you need to require users to log in before they RSVP. You can 
 The first thing you’ll want to do is add the following snippet to your functions.php file:
 
 ```
-add_filter( 'tribe_tickets_get_ticket_max_purchase', function( $stock ) {
-	if ( $stock < 1 ) {
+add_filter( 'tribe_tickets_get_ticket_max_purchase', function( $stock, $ticket ) {
+	if ( $stock < 1 || ! $ticket instanceof Tribe__Tickets__Ticket_Object ) {
 		return $stock;
 	}
-	return 1;
-} );
+
+	$is_rsvp = 'tc-rsvp' === $ticket->type() || 'Tribe__Tickets__RSVP' === $ticket->provider_class;
+
+	return $is_rsvp ? 1 : $stock;
+}, 10, 2 );
 ```
 
-This will limit the RSVP so that users can only submit a single RSVP at once.
+This limits each RSVP submission to one attendee, and only for RSVP tickets (other ticket types keep their normal limit). It does not stop someone from RSVPing a second time; the template override below does that.
 
 #### Template Override
 
 The next step in the process is to create a template override. Create a file at:
 
 ```
-[your-theme]/tribe/tickets/v2/rsvp/actions/rsvp.php
+[your-theme]/tribe/tickets/v2/commerce/rsvp/actions/rsvp.php
 ```
 
-Add the following to that template to include a custom message if a user tries to purchase multiple RSVPs:
+Add the following to that template to show a custom message, instead of the Going and Not Going buttons, when the user has already RSVP’d:
 
 ```
 <?php
@@ -53,11 +56,8 @@ Add the following to that template to include a custom message if a user tries t
  * Block: RSVP
  * Actions - RSVP
  *
- * This is a template override for the following file:
- * event-tickets/src/views/v2/rsvp/actions/rsvp.php
- *
- * Place this template in your own theme by creating a file at:
- * [your-theme]/tribe/tickets/v2/rsvp/actions/rsvp.php
+ * Override this template in your own theme by creating a file at:
+ * [your-theme]/tribe/tickets/v2/commerce/rsvp/actions/rsvp.php
  *
  * See more documentation about our Blocks Editor templating system.
  *
@@ -68,21 +68,20 @@ Add the following to that template to include a custom message if a user tries t
  * @since 4.12.3
  * @version 4.12.3
  */
-$user = wp_get_current_user();
-$event_id = get_the_ID();
-/** @var Tribe__Tickets__Tickets_View $tickets_view */
+
+defined( 'ABSPATH' ) || die();
+
 $tickets_view = Tribe__Tickets__Tickets_View::instance();
+$has_rsvp     = $tickets_view->has_rsvp_v2_attendees( get_the_ID(), get_current_user_id() );
 ?>
 <div class="tribe-tickets__rsvp-actions-rsvp">
-	<span class="tribe-common-h2 tribe-common-h6--min-medium">
-		<?php esc_html_e( 'RSVP Here', 'event-tickets' ); ?>
-	</span>
-    <?php if ( ! $tickets_view->has_rsvp_attendees( $event_id, $user->ID ) ) : ?>
-        <?php $this->template( 'v2/rsvp/actions/rsvp/going', [ 'rsvp' => $rsvp ] ); ?>
-        <?php $this->template( 'v2/rsvp/actions/rsvp/not-going', [ 'rsvp' => $rsvp ] ); ?>
-    <?php else : ?>
-        <p>Sorry - only one per customer!</p>
-    <?php endif; ?>
+	<?php if ( ! $has_rsvp ) : ?>
+		<?php $this->template( 'v2/commerce/rsvp/actions/rsvp/going', [ 'rsvp' => $rsvp ] ); ?>
+
+		<?php $this->template( 'v2/commerce/rsvp/actions/rsvp/not-going', [ 'rsvp' => $rsvp ] ); ?>
+	<?php else : ?>
+		<p><?php esc_html_e( 'Sorry - only one per customer!', 'my-theme' ); ?></p>
+	<?php endif; ?>
 </div>
 ```
 
@@ -94,7 +93,7 @@ After setting this up, a user who has already RSVP’d to an event should see so
 
 ## Disable “Going” Button
 
-You can disable the “Going” button entirely with the following snippet:
+You can disable the “Going” button for people who have already RSVP’d with a template override. Create a file at [your-theme]/tribe/tickets/v2/commerce/rsvp/actions/rsvp/going.php with the following:
 
 ```
 <?php
@@ -103,7 +102,7 @@ You can disable the “Going” button entirely with the following snippet:
  * Actions - RSVP - Going
  *
  * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/tickets/v2/rsvp/actions/rsvp/going.php
+ * [your-theme]/tribe/tickets/v2/commerce/rsvp/actions/rsvp/going.php
  *
  * See more documentation about our Blocks Editor templating system.
  *
@@ -112,14 +111,18 @@ You can disable the “Going” button entirely with the following snippet:
  * @var bool $must_login Whether the user has to login to RSVP or not.
  * @var Tribe__Tickets__Ticket_Object $rsvp The rsvp ticket object.
  *
- * @since 4.12.3
- * @version 4.12.3
+ * @since 5.30.0
+ *
+ * @version 5.30.0
  */
-$user = get_current_user_id();
-$tickets_view = Tribe__Tickets__Tickets_View::instance();
-$rsvp_count   = 0 < $tickets_view->count_rsvp_attendees( get_the_ID(), $user );
-$disabled = $must_login || $rsvp_count;
+
+defined( 'ABSPATH' ) || die();
+
+$has_rsvp = is_user_logged_in()
+	&& Tribe__Tickets__Tickets_View::instance()->has_rsvp_v2_attendees( get_the_ID(), get_current_user_id() );
+$disabled = $must_login || $has_rsvp;
 ?>
+
 <div class="tribe-tickets__rsvp-actions-rsvp-going">
 	<button
 		class="tribe-common-c-btn tribe-tickets__rsvp-actions-button-going tribe-common-b1 tribe-common-b2--min-medium"
@@ -140,10 +143,10 @@ Sometimes we need to change the default labels for the Name and Email fields on 
 What we can do is edit the corresponding template, in this case, it is:
 
 ```
-/wp-content/plugins/event-tickets/src/views/v2/rsvp/form/fields/name.php
+/wp-content/plugins/event-tickets/src/views/v2/commerce/rsvp/form/fields/name.php
 ```
 
-Changing the word “Same” to “Full Name” in the code as shown in fthe ollowing image:
+Changing the word “Name” to “Full Name” in the code, as shown in the following image:
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Name_php.jpeg)
 
@@ -151,7 +154,11 @@ After this, our RSVP will be updated as we expected:
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/RSVP_FullName.jpeg)
 
-It’s worth mentioning that while it’s true that you can modify the code in the template file, it’s good practice to apply the template override method to avoid losing changes in case there’s a plugin update that replaces the modified file with the original file.
+It’s worth mentioning that while it’s true that you can modify the code in the template file, it’s good practice to apply the template override method to avoid losing changes in case there’s a plugin update that replaces the modified file with the original file. To do this, copy the file to [your-theme]/tribe/tickets/v2/commerce/rsvp/form/fields/name.php and make the change there.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

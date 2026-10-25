@@ -53,7 +53,6 @@ functions.php
 add_filter( 'tribe_events_single_map_default_width', function( $width ) {
 	return '600px';
 }, 20 );
-
 add_filter( 'tribe_events_single_map_default_height', function ( $height ) {
 	return '600px';
 }, 20 );
@@ -72,7 +71,7 @@ The filter that you can use to modify the default location with Google Maps is
 add_filter( 'tec_google_map_args', 'tec_customize_google_map_args', 10, 1 );
 ```
 
-To change the default location to Spain for example, you can add a snippet like the following to your functions.php file:
+To change the default location to Spain for example, you can add a snippet like the following to your functions.php file. It changes the region Google uses when it looks up an address to find its coordinates, and it only works with your own Google Maps API key. It does not change how the map itself is displayed:
 
 ```
 add_filter( 'tec_google_map_args', 'tec_customize_google_map_args', 10, 1 );
@@ -85,15 +84,30 @@ function tec_customize_google_map_args ( $args ) {
 
 You can find a list of all of the available country codes [here](https://www.google.com/maps/d/viewer?hl=en&ie=UTF8&msa=0&ll=-3.81666561775622e-14%2C-4.21875&spn=167.755473%2C90&z=1&source=embed&mid=1f1VuHW9fZ9alpSJkKxP3V1_UDe4).
 
-You can also use the same snippet to localize the language the map is displayed in.
-
-To change the language to Spanish you need to add the following line to the above snippet, before the return:
+To change the language and region of the map that is displayed on your event and venue pages, use this separate snippet instead. It also needs your own Google Maps API key. Replace es and ES with your own language and region codes:
 
 ```
-$args['language'] = 'es';
+add_filter( 'script_loader_src', function ( $src, $handle ) {
+	if ( 'tribe-events-google-maps' !== $handle ) {
+		return $src;
+	}
+
+	// Language and region of the map shown on your site. Replace "es" and "ES" with your own codes.
+	return add_query_arg(
+		[
+			'language' => 'es',
+			'region'   => 'ES',
+		],
+		$src
+	);
+}, 10, 2 );
 ```
 
 Important note: this will override the user’s browser settings, so use it with care! Google’s documentation on localization can be found [here](https://developers.google.com/maps/documentation/javascript/localization).
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

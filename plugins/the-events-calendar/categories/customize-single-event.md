@@ -143,11 +143,12 @@ to your theme at:
 [your-theme]/tribe-events/modules/meta/venue.php
 ```
 
-**Block Editor** — copy both files:
+**Block Editor** — copy these three files (the first covers the Event Venue block, the second the Classic Event Details block, the third the Event Organizer block):
 
 ```
 /the-events-calendar/src/views/blocks/parts/venue.php
 /the-events-calendar/src/views/blocks/parts/organizer.php
+/the-events-calendar/src/views/blocks/event-organizer.php
 ```
 
 to your theme at:
@@ -155,12 +156,13 @@ to your theme at:
 ```
 [your-theme]/tribe/events/blocks/parts/venue.php
 [your-theme]/tribe/events/blocks/parts/organizer.php
+[your-theme]/tribe/events/blocks/event-organizer.php
 ```
 
-In both copied templates, find the line that outputs the phone number:
+In each copied template, find the line that outputs the phone number:
 
 ```
-<?php echo esc_html( $phone ) ?>
+<?php echo esc_html( $phone ); ?>
 ```
 
 Replace it with a 
@@ -174,17 +176,10 @@ tel:
 <a href="tel:<?php echo esc_attr( $phone ) ?>"><?php echo esc_html( $phone ) ?></a>
 ```
 
-Keep the link wrapped in its existing 
-```
-dd.tel
-```
-
- tags so the final result looks like this:
+Keep the link wrapped in the tags that are already around it (for example the span that holds the venue phone) so the final result looks like this:
 
 ```
-<dd class="tel">
-    <a href="tel:<?php echo esc_attr( $phone ) ?>"><?php echo esc_html( $phone ) ?></a>
-</dd>
+<span class="tribe-venue-tel tribe-events-meta-value"> <a href="tel:<?php echo esc_attr( $phone ); ?>"><?php echo esc_html( $phone ); ?></a> </span>
 ```
 
 ## Open Links in New Tabs
@@ -219,8 +214,18 @@ By default, the venue within the single event page is linked to the correspondin
 
 ```
 add_action( 'tribe_events_single_meta_before', function () {
-	remove_filter( 'tribe_get_venue', array( Tribe__Events__Pro__Main::instance()->single_event_meta, 'link_venue' ) );
+	if ( class_exists( 'Tribe__Events__Pro__Main' ) ) {
+		remove_filter( 'tribe_get_venue', array( Tribe__Events__Pro__Main::instance()->single_event_meta, 'link_venue' ) );
+	}
 }, 100 );
+
+add_filter( 'tribe_get_venue_link', function ( $link, $venue_id, $full_link ) {
+	if ( $full_link && is_singular( 'tribe_events' ) ) {
+		return esc_html( get_the_title( $venue_id ) );
+	}
+
+	return $link;
+}, 10, 3 );
 ```
 
 This code removes the filter that adds the link to the venue name, ensuring that the venue is displayed as plain text without a hyperlink.
@@ -248,7 +253,7 @@ to:
 [your-theme]/tribe-events/modules/meta/organizer.php
 ```
 
-Open the copied file and scroll to around line 55. Find:
+Open the copied file and search for the line that outputs the email address. Find:
 
 ```
 <?php echo esc_html( $email ); ?>
@@ -282,7 +287,6 @@ function tribe_get_event_website_link_label_default( $label, $post_id ) {
     }
     return $label;
 }
-
 add_filter( 'tribe_get_event_website_link_label', 'tribe_get_event_website_link_label_default', 10, 2 );
 ```
 
@@ -312,7 +316,7 @@ function tribe_change_event_website_link_to_button( $html ) {
     }
 
     if ( ! empty( $label ) ) {
-        $new_html = preg_replace( '/">.{2,}?(</a>)/', '">' . $label . '</a>', $new_html );
+        $new_html = preg_replace( '/">.{2,}?(<\/a>)/', '">' . $label . '</a>', $new_html );
     }
 
     return $new_html;
@@ -355,50 +359,17 @@ to:
 [your-theme]/tribe-events/modules/meta/details.php
 ```
 
-Then remove the following 
-```
-<dt>
-```
+Then remove the following block from the copied file:
 
- block from the copied file:
-
-![The details.php template showing the Website dt element to be removed](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-08-12-at-10.48.01.jpg)
+```
+<?php if ( ! empty( $website_title ) ) : ?>
+	<span class="tribe-events-event-url-label tribe-events-meta-label"><?php echo esc_html( $website_title ); ?></span>
+<?php endif; ?>
+```
 
 The result is a clean button or link with no heading above it:
 
 ![The event website displayed as a button with no Website heading](https://docs.nexcess.com/wp-content/uploads/2026/06/kb-eventwebsite-button.jpg)
-
-## Customize Single Event Pages with Event Categories
-
-By default, event categories do not contain a specific body class, so making customizations with CSS can be difficult. The good news is that we’ve got a snippet that you can add to your theme’s functions.php file, which will add a body class to a specific event category. From there, you’re free to customize the appearance of the category to your liking.
-
-This can be useful if you’d like to customize only a specific category of events. For example, you may want to hide the date and time only from one event category.
-
-Use this snippet:
-
-```
-add_filter( 'body_class', 'tec_add_taxonomy_class' );
- 
- // Add taxonomy terms name to body class
-function tec_add_taxonomy_class( $classes ){
-    if( is_singular('tribe_events') ) {
-        global $post;
-        $taxonomy_terms = get_the_terms($post->ID, 'tribe_events_cat'); 
-        if ( $taxonomy_terms ) {
-            foreach ( $taxonomy_terms as $taxonomy_term ) {
-            $classes[] = 'tribe_events_cat-' . $taxonomy_term->slug;
-            }
-        }
-    }
-    return $classes;
-```
-
-Once you add the snippet to your site, check your single event page, and on the body classes, you will see the newly added 
-```
-tribe_events_cat-CATEGORY-SLUG
-```
-
- classes (one for each event category on that post). You can now use the body classes to manipulate your CSS to your desire. If you need help inspecting the elements, you can use our [Google Chrome Developer Tools](https://docs.nexcess.com/software/the-events-calendar/using-google-chrome-developer-tools/) tutorial.
 
 ## Customizing Meta Field Labels
 
@@ -407,7 +378,7 @@ The single event meta area — the section below the event description listing d
 details.php
 ```
 
-.
+. These changes apply to events created with the Classic Editor; events built with the Block Editor use the block templates instead.
 
 ![The single event meta details area showing Website, Event Categories, and Event Tags labels](https://docs.nexcess.com/wp-content/uploads/2026/06/single-event-meta-details-area.jpg)
 
@@ -454,7 +425,7 @@ tribe_get_event_categories()
  call and locate this line within it:
 
 ```
-'label' => null, // An appropriate plural/singular label will be provided
+'label'        => null, // An appropriate plural/singular label will be provided
 ```
 
 Replace 
@@ -465,7 +436,7 @@ null
  with your own label string:
 
 ```
-'label' => 'Find similar events:',
+'label'        => 'Find similar events',
 ```
 
 Keep the trailing comma in place.
@@ -509,16 +480,14 @@ tribe_meta_event_archive_tags(
 
 ## Display the Event Author
 
-You can show the event author at the bottom of the event description by adding a code snippet to your theme.
+You can show the event author at the bottom of the event description by adding a code snippet to your theme. This works for events created with the Classic Editor.
 
 ```
 add_action( 'tribe_events_single_event_after_the_content', 'show_event_author_name' );
-
 function show_event_author_name() {
     $author_id = get_the_author_meta( 'ID' );
     $author_name = get_the_author();
     $author_url = get_author_posts_url( $author_id );
-
     echo '<p class="event-author"><strong>Event created by:</strong> <a href="' . esc_url( $author_url ) . '">' . esc_html( $author_name ) . '</a></p>';
 }
 ```
@@ -540,24 +509,19 @@ To exclude the content from single event pages, you can use the following condit
 add_filter( 
 	'tribe_events_before_html', 
 	function( $before ) {
-
 		if ( is_singular( Tribe__Events__Main::POSTTYPE ) ) {
 			return '';
 		}
-
 		return $before;
 	} 
 );
-
 //HTML after event content
 add_filter( 
 	'tribe_events_after_html', 
 	function( $after ) {
-
 		if ( is_singular( Tribe__Events__Main::POSTTYPE ) ) {
 			return '';
 		}
-
 		return $after;
 	} 
 );
@@ -601,6 +565,10 @@ get_sidebar()
  in the template.
 
 Once the sidebar is in place, it will appear in **Appearance → Widgets** where you can add and arrange widgets as usual.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

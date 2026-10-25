@@ -42,7 +42,7 @@ RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20190704T035959Z;BYDAY=WE
 
 Event Aggregator reads this and creates single events on your site using the recurrence information. However, if you modify one instance of that event, a new entry with a separate UID is generated in the iCalendar feed. Because the feed doesn’t include any data indicating that this new event is “linked” to the original, Event Aggregator sees two separate UIDs and creates a new event for the modified instance.
 
-Since recurring events import as single events, you can use the *series* feature included with Events Calendar Pro 6.0 and above to group related events together. Head to **Events → Series → Add New**, select the events you’d like to group, and you’ll have a dedicated event page for everything in the series.
+Since recurring events import as single events, you can use the *series* feature included with Events Calendar Pro  to group related events together. Head to **Events → Series → Add New**, select the events you’d like to group, and you’ll have a dedicated event page for everything in the series.
 
 ## Cleaning Up Duplicates
 

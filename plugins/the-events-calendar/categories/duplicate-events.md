@@ -10,7 +10,7 @@
 
 Events Calendar Pro allows you to duplicate any event from the WordPress dashboard, creating an exact copy you can then modify before publishing. This is useful when you run similar recurring events that don’t use the built-in recurrence feature, or when you want to reuse an event’s details as a starting point for a new one.
 
-💡 This feature requires [Events Calendar Pro](https://theeventscalendar.com/products/wordpress-events-calendar-pro/).
+💡 This feature requires Events Calendar Pro.
 
 ## How to Duplicate an Event
 
@@ -49,11 +49,9 @@ functions.php
  file or via the [Code Snippets](https://docs.nexcess.com/software/the-events-calendar/code-snippets/) plugin:
 
 ```
-<?php //Do not copy this line
-
 add_action( 'tec_events_pro_custom_tables_v1_after_duplicate_event', function () {
-	if ( class_exists( 'TECTicketsIntegrationsPluginsEvents_ProDuplicate_Post' ) ) {
-		$duplicate_post_instance = Tribe( TECTicketsIntegrationsPluginsEvents_ProDuplicate_Post::class );
+	if ( class_exists( '\TEC\Tickets\Integrations\Plugins\Events_Pro\Duplicate_Post' ) ) {
+		$duplicate_post_instance = tribe( \TEC\Tickets\Integrations\Plugins\Events_Pro\Duplicate_Post::class );
 		if ( $duplicate_post_instance ) {
 			remove_action( 'tec_events_pro_custom_tables_v1_after_duplicate_event', [
 				$duplicate_post_instance,
@@ -63,6 +61,10 @@ add_action( 'tec_events_pro_custom_tables_v1_after_duplicate_event', function ()
 	}
 }, 9 );
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

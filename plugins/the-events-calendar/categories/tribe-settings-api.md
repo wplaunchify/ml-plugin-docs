@@ -8,14 +8,9 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/tribe-settings-api/](https://docs.nexcess.com/software/the-events-calendar/tribe-settings-api/)
 
-If you’re writing a custom add-on, a site-specific plugin, or a code snippet that extends [The Events Calendar](https://theeventscalendar.com/products/wordpress-events-calendar/) or [Event Tickets](https://theeventscalendar.com/products/wordpress-event-tickets/), the Tribe Settings API gives you a clean way to plug your own options into the existing settings screens – the same API our own tabs (General, Display, Integrations, etc.) are built on. Instead of reinventing a settings page with the WordPress Settings API, you can register a tab, add fields, and let Tribe Settings handle the rendering, validation, saving, and error messaging for you.
+If you’re writing a custom add-on, a site-specific plugin, or a code snippet that extends The Events Calendar or Event Tickets, the Tribe Settings API gives you a clean way to plug your own options into the existing settings screens – the same API our own tabs (General, Display, Integrations, etc.) are built on. Instead of reinventing a settings page with the WordPress Settings API, you can register a tab, add fields, and let Tribe Settings handle the rendering, validation, saving, and error messaging for you.
 
-The API was originally introduced in The Events Calendar 2.0.5 and has since been extracted into the shared [tribe-common](https://github.com/the-events-calendar/tribe-common) library (
-```
-@since 4.0.1
-```
-
-), where it is bootstrapped and loaded on every request for any plugin that embeds tribe-common (The Events Calendar, Event Tickets, and their add-ons). Four classes make up the API, and all four live in the */common/src/Tribe/* folder of the plugin. The older *Tribe__Events__** class names still exist as deprecated shims under */common/src/deprecated/*, but new code should use the current class names listed below.
+The Tribe Settings API is part of the shared [tribe-common](https://github.com/the-events-calendar/tribe-common) library, which loads on every request for any plugin that embeds it (The Events Calendar, Event Tickets, and their add-ons), so it is available wherever your code runs. Four classes make up the API, and all four live in the */common/src/Tribe/* folder of the plugin. New code should use the class names listed below; the older *Tribe__Events__** names are kept only as deprecated aliases.
 
 ## How the four classes fit together
 
@@ -63,7 +58,7 @@ add_action( 'tribe_settings_do_tabs', function () {
 		'my-addon',                         // Tab ID (used in the URL).
 		__( 'My Add-on', 'my-addon' ),      // Tab label.
 		[
-			'priority' => 55,               // Places the tab between Licenses (40) and Help (60).
+			'priority' => 55,               // Higher numbers appear later. The default is 50, so 55 places the tab after the built-in tabs.
 			'fields'   => $fields,
 		]
 	);
@@ -410,12 +405,12 @@ add_action( 'tribe_settings_do_tabs', function () {
 } );
 
 // React when the sync mode is saved - e.g. reschedule a cron.
-add_action( 'tribe_settings_save_field_my_addon_mode', function ( $field_id, $value ) {
+add_action( 'tribe_settings_save_field_my_addon_mode', function ( $value ) {
 	wp_clear_scheduled_hook( 'my_addon_sync' );
 	if ( 'hourly' === $value ) {
 		wp_schedule_event( time(), 'hourly', 'my_addon_sync' );
 	}
-}, 10, 2 );
+} );
 ```
 
 Things to notice:
@@ -442,6 +437,10 @@ functions.php
 ```
 
  file, but we recommend using a dedicated code snippets plugin like **Code Snippets** so your changes survive theme updates. For more details, see our guide on the [best practices for implementing custom code snippets](https://docs.nexcess.com/software/the-events-calendar/code-snippets/).
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

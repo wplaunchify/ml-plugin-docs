@@ -284,9 +284,7 @@ However, with a bit of customization, you can make these pill-like categories li
 /**
  * Make event category display as a link in The Events Calendar List View.
  */
-
 add_filter( 'tribe_template_html:events/v2/list/event/category', 'tec_make_event_category_link', 10, 4 );
-
 /**
  * Converts the TEC List View category div into a clickable link.
  *
@@ -300,29 +298,22 @@ add_filter( 'tribe_template_html:events/v2/list/event/category', 'tec_make_event
 function tec_make_event_category_link( $html, $file, $name, $template ) {
 	/** @var WP_Term|null $priority_cat */
 	$priority_cat = $template->get( 'category_colors_priority_category' );
-
 	if ( empty( $priority_cat ) || ! $priority_cat instanceof WP_Term ) {
 		return $html;
 	}
-
 	$url = get_term_link( $priority_cat );
-
 	if ( is_wp_error( $url ) ) {
 		return $html;
 	}
-
 	// Match the inner category div only, not the outer wrapper.
-	$pattern = '/<divb([^>]*btec-events-calendar-list__categoryb[^>]*)>(.*?)</div>/s';
-
+	$pattern = '/<div\b([^>]*\btec-events-calendar-list__category\b[^>]*)>(.*?)<\/div>/s';
 	// $1 = attributes on the div, $2 = inner HTML.
 	$replacement = sprintf(
 		'<a href="%s"$1>$2</a>',
 		esc_url( $url )
 	);
-
 	// Replace only the first matching category div.
 	$html = preg_replace( $pattern, $replacement, $html, 1 );
-
 	return $html;
 }
 ```
@@ -330,6 +321,10 @@ function tec_make_event_category_link( $html, $file, $name, $template ) {
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/snippet-on-1024x362-1.jpg)
 
 That’s it! Clicking a category button below an event in List View will now take users to that Category’s page.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

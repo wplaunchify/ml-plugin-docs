@@ -14,7 +14,7 @@ If you want to change a word or label on your calendar, you can do that using a 
 
 The snippet here will help you change any piece of text in The Events Calendar and its add-ons. With a little bit of modification, it would even allow you to change the wording of any piece of text anywhere in WordPress, not just this plugin!
 
-Use the starter snippet below as a template, and copy it into your theme’s functions.php. You may need to remove the opening **<?php** tag if your theme’s functions.php already has one.
+Use the starter snippet below as a template, and copy it into your theme’s functions.php (or the Code Snippets plugin), below any existing code. The snippet has no opening **<?php** tag, so it is safe to paste into a file that already has one.
 
 This snippet contains two example wording changes, which you can use as a template for the changes you want to make. This changes the phrase “Related Events” to “Similar Events” and “Venue” to “Location.” This is the magic bit right here:
 
@@ -27,18 +27,18 @@ $custom_text = [
 
 To change a particular set of text, you must first copy it exactly as it appears in the *code*. Frequently it appears the same on the front-end. For instance, to change the wording of “Related Events” to say “Similar Events”, you can simply copy the text from the front end. You will then paste it as a key inside of the $custom_text array inside of the snippet as in the above example. You can add as many lines as you want by following the same pattern.
 
-Sometimes the text you want to change cannot be copy-pasted from the front end. For instance, by default, the label in the Events Bar has a CSS style that transforms <label>s to all caps. If we copy-pasted “SEARCH” or “WEEK OF” they will not replace the text we want, because that is not how they appear in the code. If we inspect these elements we will see something like this:
+Sometimes the text you want to change cannot be copy-pasted from the front end. For instance, the Events Bar search field shows the placeholder “Search for events”, but in the code the text is “Search for %s”, where %s stands for the word “events”. If we inspect the field we will see something like this:
 
 ```
-<label>Search</label>
+<input type="text" id="tribe-events-events-bar-keyword" placeholder="Search for events" />
 ```
 
-In order to change that label, we would have to copy it as it appears in the *code*, namely “Search”, not “SEARCH”. An example which changes “Search” to “Find”:
+In order to change that placeholder, we have to copy the text as it appears in the code, namely “Search for %s”, not “Search for events”. An example which changes “Search for %s” to “Find %s”:
 
 ```
 $custom_text = [
   'Related %s' => 'Similar %s',
-  'Search' => 'Find', 
+  'Search for %s' => 'Find %s',
 ];
 ```
 
@@ -71,8 +71,6 @@ gettext
 **The** **Starter Snippet**
 
 ```
-<?php
-
 /*
  * EXAMPLE OF CHANGING ANY TEXT (STRING) IN THE EVENTS CALENDAR
  * See the codex to learn more about WP text domains:
@@ -86,13 +84,12 @@ gettext
  * The text you want to change is the key, and it is case-sensitive.
  * The text you want to change it to is the value.
  * You can freely add or remove key => values, but make sure to separate them with a comma.
- * This example changes the label "Venue" to "Location", "Related Events" to "Similar Events", and "(Now or date) onwards" to "Calendar - you can discard the dynamic portion of the text as well if desired.
+ * This example changes the label "Venue" to "Location" and "Related Events" to "Similar Events".
 */
 function tribe_replace_strings() {
 	$custom_text = [
 		'Venue' => 'Location',
 		'Related %s' => 'Similar %s',
-		'%s onwards' => 'Calendar',
 	];
 
 	return $custom_text;
@@ -520,13 +517,13 @@ It’s also worth mentioning that the same caveats about translations from that 
 As a first example, to alter the capitalized version of the “Virtual” term add the following to our theme’s functions.php file:
 
 ```
-add_filter( 'tribe_virtual_label', function(){ return 'Online'} );
+add_filter( 'tribe_virtual_label', function() { return 'Online'; } );
 ```
 
 To alter the lowercase version of the “virtual” term, add this to our theme functions.php:
 
 ```
-add_filter( 'tribe_virtual_label_lowercase', function() { return 'online'} );
+add_filter( 'tribe_virtual_label_lowercase', function() { return 'online'; } );
 ```
 
 Note that these snippets also change the phrase “virtual events” to “online events” and “Virtual Events” to “Online Events”.
@@ -536,10 +533,10 @@ But let’s say we want to change the term “Virtual Event” to “Webinar” 
 tribe_virtual_event_label_singular
 ```
 
- and it will override “Virtual Event” to “Webinars”.
+ and it will override “Virtual Event” to “Webinar”.
 
 ```
-add_filter( 'tribe_virtual_event_label_singular', function(){ return 'Webinars'} );
+add_filter( 'tribe_virtual_event_label_singular', function() { return 'Webinar'; } );
 ```
 
 It’s worth mentioning that these only change the *front-end* usage of these terms – for some clarity we decided to limit changing the term in the admin.
@@ -577,7 +574,7 @@ What if we want to change the event term – but only for virtual events (gettin
 add_filter(
     'tribe_virtual_event_label_singular',
     function() {
-        return tribe_get_virtual_label() . 'Classroom';
+        return tribe_get_virtual_label() . ' Classroom';
     }
 );
  
@@ -585,7 +582,7 @@ add_filter(
 add_filter(
     'tribe_virtual_event_label_singular_lowercase',
     function() {
-        return tribe_get_virtual_label_lowercase() . 'classroom';
+        return tribe_get_virtual_label_lowercase() . ' classroom';
     }
 );
  
@@ -593,7 +590,7 @@ add_filter(
 add_filter(
     'tribe_virtual_event_label_plural',
     function() {
-        return tribe_get_virtual_label() . 'Classrooms';
+        return tribe_get_virtual_label() . ' Classrooms';
     }
 );
  
@@ -601,7 +598,7 @@ add_filter(
 add_filter(
     'tribe_virtual_event_label_plural_lowercase',
     function() {
-        return tribe_get_virtual_label_lowercase() . 'classrooms';
+        return tribe_get_virtual_label_lowercase() . ' classrooms';
     }
 );
 ```
@@ -621,6 +618,10 @@ add_filter( 'tec_event_status_postponed_label', function() { return 'Rescheduled
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-07-02-at-00.43.00-1024x227-1.jpg)
 
 **Ref:** [tec_event_status_postponed_label](https://docs.theeventscalendar.com/reference/hooks/tec_event_status_postponed_label/)
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

@@ -37,7 +37,6 @@ null
 This can be useful when you want to block email notifications for certain events, such as private gatherings or internal testing events.
 
 ```
-<?php //Do not copy this line
 add_filter( 'tec_tickets_emails_dispatcher_to', function ( $to, $dispatcher ) {
 	// Event IDs for which the email should not be sent.
 	$excluded_event_ids = [ 123, 124, 125 ];
@@ -87,7 +86,6 @@ Add the following PHP code to the site to be able to use
  placeholders in the Completed Order email.
 
 ```
-<?php //Do not copy this line
 add_filter( 'tec_tickets_emails_completed-order_placeholders', function ( $placeholders, $id, $email ) {
 	// Ensure the email object contains attendees
 	$attendees = $email->get( 'attendees' );
@@ -137,7 +135,7 @@ In this guide, we’ll walk you through how to customize the ticket confirmation
 1. Start by making a copy of the following template file:
 
 ```
-wp-contentpluginsevent-ticketssrcviewsemailstemplate-partsbodytickets.php
+wp-content/plugins/event-tickets/src/views/emails/template-parts/body/tickets.php
 ```
 
 2. Place the file in your theme at the following path. If the sub-folders don’t already exist, you’ll need to create them first:
@@ -169,7 +167,7 @@ $ticket_description = $ticket_product->post_excerpt;
 <tr>
     <td class="ticket-details">
         <h4 style="color: <?php echo esc_attr($ticket_text_color); ?>; margin-bottom: 0;"><?php esc_html_e('Additional Details:', 'event-tickets'); ?></h4>
-        <span style="color: <?php echo esc_attr($ticket_text_color); ?>;"><?php echo $ticket_description; ?></span>
+        <span style="color: <?php echo esc_attr($ticket_text_color); ?>;"><?php echo wp_kses_post( $ticket_description ); ?></span>
     </td>
 </tr>
 ```
@@ -186,27 +184,19 @@ When using **Attendee Registration** fields, you may sometimes include fields su
 
 While these fields work perfectly on the frontend registration form, they can often appear as messy, in the automated ticket confirmation emails sent to customers. To keep your emails professional, you can use a code snippet to exclude specific fields from the email while keeping them mandatory on your registration form.
 
-The following code uses the 
-```
-tribe_tickets_plus_email_meta_fields
-```
-
- filter. It searches through the list of attendee fields intended for the email and removes (unsets) any field that matches a specific “slug.”
+The following code removes a field from the attendee details shown in the ticket confirmation email, matching the field by its label (the text people see on the registration form). It uses a template filter on the email’s attendee-field template.
 
 ```
-/**
- * Prevents a specific attendee registration field from appearing in ticket emails.
- */
-function exclude_specific_field_from_ticket_emails( $meta_fields ) {
-	foreach ( $meta_fields as $index => $field ) {
-		// Replace 'privacy' with the slug of the field you want to hide.
-		if ( isset( $field['slug'] ) && 'privacy' === $field['slug'] ) {
-			unset( $meta_fields[ $index ] );
-		}
+add_filter( 'tribe_template_html:tickets-plus/emails/template-parts/body/ticket/ar-fields/data', function ( $html, $file, $name, $template ) {
+	$values = $template->get_local_values();
+
+	// Replace 'Privacy Policy' with the label of the field you want to hide.
+	if ( 'Privacy Policy' === ( $values['key'] ?? '' ) ) {
+		return '';
 	}
-	return $meta_fields;
-}
-add_filter( 'tribe_tickets_plus_email_meta_fields', 'exclude_specific_field_from_ticket_emails' );
+
+	return $html;
+}, 10, 4 );
 ```
 
 #### How to Find Your Field Slug
@@ -214,13 +204,7 @@ add_filter( 'tribe_tickets_plus_email_meta_fields', 'exclude_specific_field_from
 To ensure the code targets the correct field, you need the “slug.”
 
 1. Navigate to **Tickets > Attendee Fields** in your WordPress dashboard.
-2. Locate the field you wish to hide (e.g., your Privacy Policy field).
-3. The **Label** is what users see, but the **Slug** is the internal name. If you haven’t set a custom slug, it is typically a lowercase version of your label (e.g., “Privacy Policy” becomes 
-```
-privacy-policy
-```
-
-).
+2. Replace Privacy Policy in the code with the exact label of the field you want to hide. You can find the label under the ticket’s Attendee Information fields.
 
 ## Adding Outlook link to Event Ticket Emails
 
@@ -256,8 +240,8 @@ If you want to include Outlook export links in Ticket and RSVP confirmation emai
  */
 $path = '/calendar/action/compose'; 
 $rrv  = 'addevent'; 
-$startdt = tribe_get_start_date($event->ID, true, 'c'); 
-$enddt = tribe_get_end_date($event->ID, true, 'c'); 
+$startdt = rawurlencode( tribe_get_start_date( $event->ID, true, 'c' ) );
+$enddt = rawurlencode( tribe_get_end_date( $event->ID, true, 'c' ) );
 $location = "";
 if (tribe_get_venue($event->ID)) {
 	$location .= tribe_get_venue($event->ID) . ", ";
@@ -274,10 +258,11 @@ if (tribe_get_state($event->ID)) {
 if (tribe_get_country($event->ID)) {
 	$location .= tribe_get_country($event->ID);
 }
-$subject = str_replace(' ', '%20', get_the_title($event));
-$body = str_replace(' ', '%20', get_the_excerpt($event));
+$location = rawurlencode( html_entity_decode( $location, ENT_QUOTES, 'UTF-8' ) );
+$subject = rawurlencode( html_entity_decode( get_the_title( $event ), ENT_QUOTES, 'UTF-8' ) );
+$body = rawurlencode( html_entity_decode( wp_strip_all_tags( get_the_excerpt( $event ) ), ENT_QUOTES, 'UTF-8' ) );
 if (!empty($event->virtual_meeting_url)) {
-	$body .= urlencode("<br/><b><a href=" . $event->virtual_meeting_url . ">Join Zoom Meeting</a></b>") ;
+	$body .= rawurlencode( '<br/><b><a href="' . $event->virtual_meeting_url . '">Join Zoom Meeting</a></b>' );
 }
 $params = [
 	'path'     => $path,
@@ -337,14 +322,13 @@ By default, registrants will receive an email including their RSVP info upon reg
 With this simple snippet, you can add any email address to the BCC field of the email.
 
 ```
-<?php
-//* Do NOT include the opening php tag, if there's already one.
 /**
 * Add a custom email address to the BCC field on all Event Tickets' RSVP ticket emails
 */
 add_filter( 'tec_tickets_emails_dispatcher_rsvp_headers', 'my_add_bcc_email_headers' );
 function my_add_bcc_email_headers( $headers ) {
-	$headers['Bcc'] = 'YOUR NAME <[email protected]>';
+	// Replace YOUR NAME and YOUR-EMAIL-ADDRESS with a real name and email address.
+	$headers['Bcc'] = 'YOUR NAME <YOUR-EMAIL-ADDRESS>';
 	
 	return $headers;
 }
@@ -353,8 +337,6 @@ function my_add_bcc_email_headers( $headers ) {
 To add event organizers to the BBC for the RSVP Email you can use this modified version.
 
 ```
-<?php
-//* Do NOT include the opening php tag, if there's already one.
 /**
  * Add the event organizer to the BCC field on the Event Tickets' RSVP ticket emails.
  */
@@ -375,12 +357,16 @@ function my_add_bcc_email_organizers_headers( $headers, $dispatcher ) {
 	}
 	// Get the organizers.
 	$organizers = tribe_get_organizer_ids( $post_id );
+	$emails = [];
+
 	// Loop through the organizers.
 	foreach ( $organizers as $organizer_id ) {
 		// Get the organizer email address.
 		$organizer_email = stripslashes_deep( html_entity_decode( tribe_get_organizer_email( $organizer_id ), ENT_COMPAT, 'UTF-8' ) );
 		// Add the organizer email info to our emails array.
-		$emails[] = $organizer_email;
+		if ( is_email( $organizer_email ) ) {
+			$emails[] = $organizer_email;
+		}
 	}
 	// Bail, if there are no organizer email addresses.
 	if ( empty( $emails ) ) {
@@ -468,6 +454,10 @@ That’s all it takes! Your attendees will now see the virtual event details exa
 - [edd_email_ticket_receipt](https://docs.theeventscalendar.com/reference/hooks/edd_email_ticket_receipt/)
 - tec_tickets_emails_dispatcher_to
 - [tec_tickets_emails_completed-order_placeholders](https://docs.theeventscalendar.com/reference/hooks/tec_tickets_emails_this-slug_placeholders/)
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

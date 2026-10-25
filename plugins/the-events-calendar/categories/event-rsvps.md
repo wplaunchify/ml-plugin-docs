@@ -18,7 +18,7 @@ Instead of buying a ticket, entering credit card or PayPal information, or going
 
 **This article will show you how to enable and use the RSVP features of Event Tickets and Event Tickets Plus.**
 
-**Note:**There is no eCommerce or payment-collection functionality with RSVPs. This article is only about the RSVP feature; to learn about selling tickets with Event Tickets and Event Tickets Plus, check out the [Making a Ticket](https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/) tutorial.
+**Note:**There is no eCommerce or payment-collection functionality with RSVPs. This article is only about the RSVP feature; to learn about selling tickets with Event Tickets and Event Tickets Plus, check out the [Making a Ticket](https://docs.nexcess.com/software/the-events-calendar/create-tickets/) tutorial.
 
 ### Enabling RSVP Functionality
 

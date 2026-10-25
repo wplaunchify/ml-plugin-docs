@@ -10,7 +10,12 @@
 
 The Event Tickets Protected Content shortcodes allow you to display content on any WordPress page or post to certain users if they are logged in and whether or not they have registered for a given event, or registered for a specific type of ticket or RSVP.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/etp-shortcode-protected-content-1024x953-1.png)The first shortcode will display for users who are logged in and have registered for the event with ID 123. The second shortcode will display for users who have not registered for the event.
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/etp-shortcode-protected-content-1024x953-1.png)The shortcodes show your content to logged-in users who have registered for an event (for example, the event with ID 123), or, when you set 
+```
+ticketed="0"
+```
+
+, to everyone who has not registered, including visitors who are logged out.
 
 ## What it’s good for
 
@@ -51,7 +56,7 @@ Both shortcodes accept the following parameters to control the visibility of con
 post_id
 ```
 
- (Required) – The ID of the event, page or post where the ticket or RSVP is created.
+ – The ID of the event, page or post where the ticket or RSVP is created. If left blank, the page or post that contains the shortcode is used.
 - ```
 on
 ```
@@ -89,7 +94,8 @@ not_ticket_ids
 ticketed
 ```
 
- – Determines if a user sees protected content based on whether the user is or is not an attendee for the event.- ```
+ – Determines if a user sees protected content based on whether the user is or is not an attendee for the event.
+- ```
 1
 ```
 
@@ -121,7 +127,8 @@ not_rsvp_ids
 rsvpd
 ```
 
- – Determines if a user sees protected content based on whether the user is or is not an attendee for the event.- ```
+ – Determines if a user sees protected content based on whether the user is or is not an attendee for the event.
+- ```
 1
 ```
 
@@ -227,6 +234,33 @@ This content will only show to people who are attendees of the event (ID: 123) o
 Where 123 is the ID of the post/page/event where the tickets were created.
 
 ## RSVP examples
+
+**⚠️ Note:** If your site uses the new RSVP system, the 
+```
+[tribe_tickets_rsvp_protected_content]
+```
+
+ shortcode does not recognise people who RSVP’d with it, so the examples below will not work. Use the 
+```
+[tribe_tickets_protected_content]
+```
+
+ shortcode instead and set 
+```
+ticket_ids
+```
+
+ to the ID of the RSVP, for example 
+```
+[tribe_tickets_protected_content post_id="123" ticket_ids="32"]Your content[/tribe_tickets_protected_content]
+```
+
+. Add 
+```
+ticketed="0"
+```
+
+ to show content to people who have not RSVP’d.
 
 #### Example 1: Protected content based on any RSVP attendee for the current event
 

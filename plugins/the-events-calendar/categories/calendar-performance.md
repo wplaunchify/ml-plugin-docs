@@ -142,21 +142,33 @@ src="<?php echo esc_url( $event->thumbnail->medium->url ); ?>"
 
 #### The Updated HTML
 
-Here is how your updated code should look:
+Changing only the src line is not enough: the image also has a srcset attribute that lets browsers pick the large file again on desktop screens. Replace the whole contents of your copied file with the version below. It uses the medium image, removes srcset, and keeps the check that skips events without a featured image.
 
 ```
+<?php
+/**
+ * View: Month View - Calendar Event Tooltip Featured Image
+ *
+ * Override this template in your own theme by creating a file at:
+ * [your-theme]/tribe/events/v2/month/calendar-body/day/calendar-events/calendar-event/tooltip/featured-image.php
+ *
+ * @var WP_Post $event The event post object with properties added by the `tribe_get_event` function.
+ */
+
+if ( ! $event->thumbnail->exists ) {
+	return;
+}
+?>
 <div class="tribe-events-calendar-month__calendar-event-tooltip-featured-image-wrapper">
-    <img
-        class="tribe-events-calendar-month__calendar-event-tooltip-featured-image"
-        src="<?php echo esc_url( $event->thumbnail->medium->url ); ?>"
-        <?php if ( ! empty( $event->thumbnail->srcset ) ) : ?>
-        <?php endif; ?>
-        <?php if ( ! empty( $event->thumbnail->alt ) ) : ?>
-            alt="<?php echo esc_attr( $event->thumbnail->alt ); ?>"
-        <?php else : ?>
-            alt=""
-        <?php endif; ?>
-    />
+	<img
+		class="tribe-events-calendar-month__calendar-event-tooltip-featured-image"
+		src="<?php echo esc_url( $event->thumbnail->medium->url ); ?>"
+		<?php if ( ! empty( $event->thumbnail->alt ) ) : ?>
+			alt="<?php echo esc_attr( $event->thumbnail->alt ); ?>"
+		<?php else : ?>
+			alt=""
+		<?php endif; ?>
+	/>
 </div>
 ```
 
@@ -218,6 +230,10 @@ The database is often the root of long-term slowdowns.
 The Events Calendar and its associated plugins can handle large numbers of events and work well even on very high-traffic websites. However, performance is dependent on many environmental factors that the plugin itself is often unable to manage automatically. This article covers the full picture: proactive settings and best practices for keeping your calendar fast, recurring event strategies that protect your database, specific optimizations like month view tooltips, and a step-by-step guide to diagnosing and fixing performance that degrades over time.
 
 We recommend following [WordPress’ recommended server configuration](https://wordpress.org/about/requirements/). If you do not meet their minimums (e.g. PHP 7.4), the suggestions below will likely still fall short.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

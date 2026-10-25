@@ -80,12 +80,12 @@ Again, check out the screenshot on the right for reference.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/shot_230313_222459.jpg)Google Maps API Key Restriction for Geocoding
 
-Since there is only one field for the API key in the settings panel (under Events > Settings > Integrations) you will need some code as well. Paste the following into your child theme’s 
+Since there is only one field for the API key in the settings panel (under Events > Settings > Integrations) you will need some code as well. Paste the following (it deliberately has no opening PHP tag) into your child theme’s 
 ```
 functions.php
 ```
 
- file, use the [Code Snippets](https://wordpress.org/plugins/code-snippets/) plugin to add custom code to your site, or create a separate plugin from it.
+ file, or use the [Code Snippets](https://wordpress.org/plugins/code-snippets/) plugin to add custom code to your site. If you would rather create a separate plugin from it, start the plugin file with an opening PHP tag and a plugin header comment, then paste the code below them.
 
 The first API key that you use for Maps JavaScript API (and Maps Embed API), enter under 
 ```
@@ -117,7 +117,6 @@ IP_ADDRESS_PROTECTED_API_KEY
 .
 
 ```
-<?php
 /**
  * Facilitates dictating a separate (IP-address protected) Google Maps
  * API key for server-side geocoding requests.
@@ -167,6 +166,10 @@ class Server_Side_Google_Maps_Key {
 // Specify our alternative API key here (to be used for server-side geocoding requests).
 new Server_Side_Google_Maps_Key( 'IP_ADDRESS_PROTECTED_API_KEY' );
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

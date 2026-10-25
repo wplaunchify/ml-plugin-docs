@@ -8,7 +8,7 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/event-tickets-emails/](https://docs.nexcess.com/software/the-events-calendar/event-tickets-emails/)
 
-[Event Tickets](https://theeventscalendar.com/products/wordpress-event-tickets/) come with several different functionalities to make it easy to sell tickets, collect registrations, and manage attendees for your in-person or virtual events. Emails are configured under Tickets > Settings > Emails.
+**Event Tickets** come with several different functionalities to make it easy to sell tickets, collect registrations, and manage attendees for your in-person or virtual events. Emails are configured under Tickets > Settings > Emails.
 
 On the “Emails”, tab you will find a list of emails you can enable and configure separately. Each email listed in this section has its configuration page that can be accessed by clicking on the email title or the pen icon.
 
@@ -213,7 +213,7 @@ The completed order confirmation a site admin gets once a **Tickets Commerce** o
 
 ## Waitlist Emails
 
-The[Waitlist feature](https://docs.nexcess.com/software/the-events-calendar/attendee-waitlist/) has been available in [Event Tickets Plus since 6.2.0.](https://theeventscalendar.com/products/wordpress-event-tickets/)
+The[Waitlist feature](https://docs.nexcess.com/software/the-events-calendar/attendee-waitlist/) is part of Event Tickets Plus.
 
 Among the existing Ticket Emails, you’ll find those designed specifically to follow up with waitlisted users.
 
@@ -252,9 +252,9 @@ Here is how emails look out of the box. There are placeholders included, but the
 
 **Footer content:** In this setting, you should be able to insert any information you want. The text will be placed in the footer of the email.
 
-**Footer credit:** This setting will be present only if you’re running a site with Event Tickets Plus, and it’ll allow you to remove the “Powered by Event Tickets”.
+**Footer credit:** This setting will be present only if you’re running a site with Event Tickets Plus, and it’ll allow you to remove the “[your site name] tickets are powered by Event Tickets” line.
 
-If you are using only **Event Tickets** (without Event Tickets Plus) and want to remove the “Powered by Event Tickets” credit from the email footer, you will need to override the email template file in your theme at: *event-tickets/src/views/tickets/emails/template-parts/body/footer/credit.php*. You can do a template override by following this guide: [Customizing Template Files](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/). In that file, comment out or remove the following lines to hide the footer credit:
+If you are using only **Event Tickets** (without Event Tickets Plus) and want to remove the “tickets are powered by Event Tickets” credit from the email footer, you will need to override the email template file. Copy it from wp-content/plugins/event-tickets/src/views/emails/template-parts/body/footer/credit.php to wp-content/themes/[your-theme]/tribe/tickets/emails/template-parts/body/footer/credit.php. You can do a template override by following this guide: [Customizing Template Files](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/). In that file, comment out or remove the following lines to hide the footer credit:
 
 ```
 <tr>

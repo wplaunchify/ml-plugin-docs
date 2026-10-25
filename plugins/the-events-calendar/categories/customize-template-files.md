@@ -128,13 +128,26 @@ All plugin files live in your server’s
 
  template directory for each plugin:
 
-| Plugin | Template Files |
-| --- | --- |
-| The Events Calendar | /the-events-calendar/src/views/v2/ |
-| Events Calendar Pro | /events-calendar-pro/src/views/v2/ |
-| Event Tickets | /event-tickets/src/views/v2/ |
-| Event Tickets Plus | /event-tickets-plus/src/views/v2/ |
-| Community Events | /the-events-calendar-community-events/src/views/ |
+- The Events Calendar: 
+```
+/the-events-calendar/src/views/v2/
+```
+- Events Calendar Pro: 
+```
+/events-calendar-pro/src/views/v2/
+```
+- Event Tickets: 
+```
+/event-tickets/src/views/v2/
+```
+- Event Tickets Plus: 
+```
+/event-tickets-plus/src/views/v2/
+```
+- Community Events: 
+```
+/the-events-calendar-community-events/src/views/
+```
 
 💡 A quick way to find the correct override path for any template is to open the file itself. The header comment at the top of every template file includes the path to use for your theme override.
 
@@ -144,49 +157,90 @@ All plugin files live in your server’s
 
 Single event, organizer, and venue pages still use files from the legacy design, with both classic editor and block editor versions.
 
-| Plugin | Template File | Theme Override Location |
-| --- | --- | --- |
-| Classic Editor |
-| The Events Calendar | /the-events-calendar/src/views/single-event.php | [your-theme]/tribe-events/single-event.php |
-| The Events Calendar | /the-events-calendar/src/views/modules/ | [your-theme]/tribe-events/modules/ |
-| Events Calendar Pro | /events-calendar-pro/src/views/pro/modules/ | [your-theme]/tribe-events/pro/modules/ |
-| Block Editor |
-| The Events Calendar | /the-events-calendar/src/views/single-event-blocks.php | [your-theme]/tribe/events/single-event-blocks.php |
-| The Events Calendar | /the-events-calendar/src/views/single-event/ | [your-theme]/tribe/events/single-event/ |
-| Events Calendar Pro | /events-calendar-pro/src/views/blocks/ | [your-theme]/tribe/events-pro/blocks/ |
+#### Classic Editor
 
-### JavaScript Templates
+- The Events Calendar
+- Template File: 
+```
+/the-events-calendar/src/views/single-event.php
+```
+- Theme Override Location: 
+```
+[your-theme]/tribe-events/single-event.php
+```
+- The Events Calendar
+- Template File: 
+```
+/the-events-calendar/src/views/modules/
+```
+- Theme Override Location: 
+```
+[your-theme]/tribe-events/modules/
+```
+- Events Calendar Pro
+- Template File: 
+```
+/events-calendar-pro/src/views/pro/modules/
+```
+- Theme Override Location: 
+```
+[your-theme]/tribe-events/pro/modules/
+```
+
+#### Block Editor
+
+- The Events Calendar
+- Template File: 
+```
+/the-events-calendar/src/views/single-event-blocks.php
+```
+- Theme Override Location: 
+```
+[your-theme]/tribe/events/single-event-blocks.php
+```
+- The Events Calendar
+- Template File: 
+```
+/the-events-calendar/src/views/single-event/
+```
+- Theme Override Location: 
+```
+[your-theme]/tribe/events/single-event/
+```
+- Events Calendar Pro
+- Template File: 
+```
+/events-calendar-pro/src/views/blocks/
+```
+- Theme Override Location: 
+```
+[your-theme]/tribe/events-pro/blocks/
+```
+
+### Mobile Views and Tooltips
 
 💡 The Events Calendar is not fully compatible with Full Site Editing themes. We recommend testing with Twenty Twenty if you encounter compatibility issues.
 
-JavaScript is used to power mobile calendar views and the tooltips in Month and Week views. The JavaScript template files are located at:
+In the current calendar views, the mobile layouts and the tooltips in Month and Week views are regular PHP templates in each plugin’s /src/views/v2/ folder. The template files are located at:
 
-- **Month View:** 
-```
-wp-content/plugins/the-events-calendar/src/views/month/single-event.php
-```
-- **Week View:** 
-```
-wp-content/plugins/events-calendar-pro/src/views/week/single-event-allday.php
-```
 - **Mobile Month View:** 
 ```
-wp-content/plugins/the-events-calendar/src/views/month/mobile.php
+wp-content/plugins/the-events-calendar/src/views/v2/month/mobile-events.php
 ```
 - **Mobile Week View:** 
 ```
-wp-content/plugins/events-calendar-pro/src/views/week/mobile.php
+wp-content/plugins/events-calendar-pro/src/views/v2/week/mobile-events.php
 ```
 - **Month View Tooltips:** 
 ```
-wp-content/plugins/events-calendar-pro/src/views/month/tooltip.php
+wp-content/plugins/the-events-calendar/src/views/v2/month/calendar-body/day/calendar-events/calendar-event/tooltip.php
 ```
 - **Week View Tooltips:** 
 ```
-wp-content/plugins/events-calendar-pro/src/views/week/tooltip.php
+wp-content/plugins/events-calendar-pro/src/views/v2/week/grid-body/events-day/event/tooltip.php
 ```
 
-Overriding JavaScript templates follows the same process as overriding any other plugin template file, described in the sections below.
+Overriding these templates follows the same process as overriding any other plugin template file, described in the sections below.
 
 ## Creating a Template Override
 
@@ -393,7 +447,7 @@ tribe_template_path_list
 /**
  * Add your own plugin as a template override location for The Events Calendar,
  * Event Tickets, and related plugins.
- * Applies to templates using the new Template Engine (v5.0.1+).
+ * Applies to templates using the Template Engine (v5.0.1+).
  *
  * @param array            $folders  Array of data for loading locations.
  * @param Tribe__Template $template Instance of the template engine.
@@ -403,23 +457,19 @@ function tribe_v2_additional_plugin_template_locations( $folders, Tribe__Templat
     $plugin_name   = 'my-plugin';
     $priority      = 5;
     $custom_folder = [ 'tribe-customizations' ];
-
     $plugin_path = array_merge(
         (array) trailingslashit( plugin_dir_path( __FILE__ ) ),
         (array) $custom_folder,
         array_diff( $template->get_template_folder(), [ 'src', 'views' ] )
     );
-
     $folders[ $plugin_name ] = [
         'id'        => $plugin_name,
         'namespace' => $plugin_name,
         'priority'  => $priority,
         'path'      => $plugin_path,
     ];
-
     return $folders;
 }
-
 add_filter( 'tribe_template_path_list', 'tribe_v2_additional_plugin_template_locations', 10, 2 );
 ```
 

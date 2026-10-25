@@ -12,13 +12,13 @@ A popular feature request we hear from the community is to expand the ways that 
 
 This was a great solution for a long time until we started to notice that APM was growing up and maturing on its own. And, like any child who grows up, it needed to spread its wings and fly- so we decided to break APM off from The Events Calendar Pro.
 
-We’re going to cover how to get started with APM on your site and set it up to work with events. You can also filter and sort your events using [Events Manager](https://theeventscalendar.com/knowledgebase/k/managing-your-events/) available with [Events Calendar Pro](https://theeventscalendar.com/products/wordpress-events-calendar/), along with [Filter Bar](https://theeventscalendar.com/products/wordpress-calendar-filter-bar/). We’ll go over this option below as well.
+We’re going to cover how to get started with APM on your site and set it up to work with events. You can also filter and sort your events using [Events Manager](https://theeventscalendar.com/knowledgebase/k/managing-your-events/) available with Events Calendar Pro, along with Filter Bar. We’ll go over this option below as well.
 
 ### Update and activate all the things
 
 First off, please update The Events Calendar and its add-ons, including The Events Calendar Pro.
 
-Now that you’re running the latest and greatest version of The Events Calendar download, install, and activate the [Advanced Post Manager plugin](https://wordpress.org/plugins/advanced-post-manager/) version 3.10 or newer.
+Now that you’re running the latest and greatest version of The Events Calendar download, install, and activate the [Advanced Post Manager plugin](https://wordpress.org/plugins/advanced-post-manager/).
 
 Head over to *Events → All Events* from the WordPress dashboard. This will take you to the list of all your events posts. Right above that list, you should see a meta box called **Filters & Columns**. That might be collapsed for you, so go ahead and expand it to see APM in all its glory.
 

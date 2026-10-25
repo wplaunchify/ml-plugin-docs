@@ -89,25 +89,5 @@ You should now see the Additional Field appearing on the single event page.
 
 We hope you found this walkthrough useful for getting the most out of The Events Calendar when creating events and pages with Beaver Builder.
 
-## Using Events Shortcodes with Beaver Builder
-
-If you’re using Beaver Builder with Events Calendar Pro and want to integrate [shortcodes](https://docs.nexcess.com/software/the-events-calendar/shortcodes/), you may need a snippet to render the page as expected. Page builders often optimize the loading experience by prerendering code, and then render it again to display the code.  However, [[tribe_events]](https://docs.nexcess.com/software/the-events-calendar/calendar-embed-shortcodes/) can only load once per page.
-
-A way to work around this is to use the snippet below. Add this snippet to either your child theme’s functions.php file or use the [My Custom Functions](https://wordpress.org/plugins/my-custom-functions/) plugin.
-
-Please check out our guides:
-
-- [Best Practices for Implementing Custom Code Snippets](https://docs.nexcess.com/software/the-events-calendar/code-snippets/)
-- [Themer’s Guide](https://theeventscalendar.com/knowledgebase/k/themers-guide/)
-
-```
-add_action( 'init', function() {
-    add_shortcode( 'tribe_events', function( $atts ) {
-        $shortcode = new Tribe__Events__Pro__Shortcodes__Tribe_Events( $atts );
-        return $shortcode->output();
-    } );
-}, 100 );
-```
-
 ---
 

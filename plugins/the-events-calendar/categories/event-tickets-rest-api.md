@@ -86,7 +86,7 @@ We built The Events Calendar REST API to allow our users and ourselves to consum
 
 Since The Events Calendar REST API is built on top of the [WordPress REST API](https://developer.wordpress.org/rest-api/), it inherits its code, robustness, and security.
 
-The Events Calendar REST API is free and bundled with The Events Calendar plugin. It requires WordPress 4.5 or above. Once you have installed and activated The Events Calendar, you are ready to get started.
+The Events Calendar REST API is free and bundled with The Events Calendar plugin. Once you have installed and activated The Events Calendar, you are ready to get started.
 
 ## Endpoints and Base URL
 
@@ -242,7 +242,7 @@ GET https://demo.theeventscalendar.com/wp-json/tribe/tickets/v1/tickets?attendee
 attendees
 ```
 
- attribute for each ticket returns as an empty array even when you know attendees exist. This is because attendee data requires authentication to retrieve — see the [Authentication](#authentication) section below.
+ attribute for each ticket returns as an empty array even when you know attendees exist. This is because attendee data requires authentication to retrieve — see the section below.
 
 ## Authentication
 
@@ -252,7 +252,7 @@ Some REST API requests require authentication to return data. For example, this 
 GET https://demo.theeventscalendar.com/wp-json/tribe/tickets/v1/attendees
 ```
 
-But without authentication, a site with attendees will still return:
+But without authentication you get little or no attendee data. A site with attendees can return an empty list like this:
 
 ```
 {
@@ -269,7 +269,7 @@ Since our REST API is built on top of the WordPress API, the same [authenticatio
 
 Three options are available:
 
-1. **Basic Auth plugin** — Recommended for simple authentication. Allows you to use your WordPress admin credentials for API requests.
+1. **Application Passwords** — Recommended for simple authentication. Built into WordPress, so no plugin is needed. See “Generate an Application Password” below.
 2. **JWT Authentication plugin** — For more advanced JSON Web Token authentication.
 3. **Nonce Authentication** — Create a nonce using 
 ```
@@ -283,14 +283,14 @@ wp_create_nonce()
 
 . More technical to set up, but very versatile and built into WordPress.
 
-#### Making a Request with cURL (Basic Auth)
+#### Making a Request with cURL (Application Password)
 
-With the Basic Auth plugin installed and activated, you can authenticate a 
+Once you have an Application Password, you can authenticate a 
 ```
 GET
 ```
 
- request using cURL by passing your WordPress username and password with the 
+ request using cURL by passing your WordPress username and the Application Password with the 
 ```
 --user
 ```
@@ -298,8 +298,8 @@ GET
  flag:
 
 ```
-curl --user user:pass -X GET 
-    -H "Content-Type: application/json" 
+curl --user USERNAME:APPLICATION_PASSWORD -X GET \
+    -H "Content-Type: application/json" \
     https://www.yoursite.url/wp-json/tribe/tickets/v1/attendees
 ```
 
@@ -359,7 +359,7 @@ X-WP-Nonce
 
 ```
 $.ajax({
-    url: localized_script_variables.ajax_url,
+    url: localized_script_variables.rest_endpoint,
     type: 'GET',
     dataType: 'json',
     headers: {
@@ -382,19 +382,15 @@ functions.php
 
 ```
 // file functions.php
-
 add_action( 'wp_enqueue_scripts', 'twentyseventeen_parent_theme_enqueue_styles' );
-
 function twentyseventeen_parent_theme_enqueue_styles() {
     wp_enqueue_style( 'twentyseventeen-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'rest-style',
         get_stylesheet_directory_uri() . '/style.css',
         array( 'twentyseventeen-style' )
     );
-
     // Enqueue the theme script...
     wp_enqueue_script( 'rest-theme-js', get_stylesheet_directory_uri() . '/js/rest-theme.js', array( 'jquery' ) );
-
     // ...and localize The Events Calendar REST API root URL and nonce
     wp_localize_script( 'rest-theme-js', 'restTheme',
         array(
@@ -417,10 +413,8 @@ In
     if ( undefined === restTheme ) {
         return;
     }
-
     var renderEvents = function( response ) {
         var eventsNode;
-
         if ( response.events.length > 0 ) {
             eventsNode = $( '<ul>' );
             for ( var event of response.events ) {
@@ -432,10 +426,8 @@ In
             eventsNode = $( '<p>' );
             eventsNode.text( 'No upcoming events found!' );
         }
-
         eventsNode.appendTo( $( '#rest-events' ) );
     };
-
     var showEvents = function() {
         $.ajax( {
             url: restTheme.root + 'events',
@@ -446,7 +438,6 @@ In
             data: { 'page': 1, 'per_page': 3 }
         } ).done( renderEvents );
     };
-
     $( document ).ready( function() { showEvents(); } );
 } )( jQuery );
 ```
@@ -465,14 +456,9 @@ The REST API supports creating new events by sending a
 POST
 ```
 
- request to the events endpoint. Because you are modifying data on the server, this operation requires authentication and appropriate user permissions (Editor or Administrator role).
+ request to the events endpoint. Because you are modifying data on the server, this operation requires authentication and appropriate user permissions (Editor or Administrator role). It also requires a site served over HTTPS (or a local development environment). Note: some hosts or security plugins may disable this feature.
 
 The examples below use [Application Passwords](https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/#basic-authentication-with-application-passwords) for authentication. Application Passwords authenticate REST requests without exposing your main login password — they are per-user, revocable, and designed for use over HTTPS. If you prefer a different method, you can adapt the examples to use [Cookie/Nonce](https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/#cookie-authentication) authentication instead.
-
-#### Prerequisites
-
-- WordPress 5.6 or above
-- Site served over HTTPS (or a local development environment). Note: some hosts or security plugins may disable this feature.
 
 #### Generate an Application Password
 
@@ -501,22 +487,32 @@ The examples below use [Application Passwords](https://developer.wordpress.org/r
 
 #### Setting Event Status
 
-By default, newly created events are saved as 
-```
-draft
-```
-
-. To publish immediately, include the 
+If you leave out the 
 ```
 status
 ```
 
- parameter:
+ parameter, the event is published when the user making the request is allowed to publish events (for example an administrator or an editor), and saved as a draft when they are not. To choose the status yourself, include the 
+```
+status
+```
+
+ parameter. A user who cannot publish events gets 
+```
+pending
+```
+
+ when they ask for 
+```
+publish
+```
+
+.
 
 | Parameter | Value | Result |
 | --- | --- | --- |
 | status | "publish" | Event is created and immediately published |
-| status | "draft" | Event is saved as a draft (default) |
+| status | "draft" | Event is saved as a draft |
 
 #### Example JSON Payload
 
@@ -558,9 +554,9 @@ APPLICATION_PASSWORD
  flag automatically handles Basic Auth encoding.
 
 ```
-curl -X POST 'https://your-site.com/wp-json/tribe/events/v1/events' 
-  --header 'Content-Type: application/json' 
-  --user 'WP_USERNAME:APPLICATION_PASSWORD' 
+curl -X POST 'https://your-site.com/wp-json/tribe/events/v1/events' \
+  --header 'Content-Type: application/json' \
+  --user 'WP_USERNAME:APPLICATION_PASSWORD' \
   --data-raw '{
     "title": "Event Created from REST API",
     "description": "This event was created via a POST request to the events REST API.",
@@ -574,7 +570,7 @@ For the complete list of available fields and their data structures — includin
 
 ## Using the REST API to Manage Event Attendees
 
-If you haven’t already, before diving into this guide you should start with our other articles about using the REST API with The Events Calendar and Event Tickets. Get started with the [basics](https://docs.nexcess.com/software/the-events-calendar/event-tickets-rest-api/) and then learn how to add [authentication](https://theeventscalendar.com/knowledgebase/rest-api-authentication/) to your requests. Up to this point, we’ve mostly been talking about just retrieving information (
+If you haven’t already, before diving into this guide you should start with our other articles about using the REST API with The Events Calendar and Event Tickets. Get started with the basics and then learn how to add authentication to your requests. Up to this point, we’ve mostly been talking about just retrieving information (
 ```
 GET
 ```
@@ -593,21 +589,20 @@ PUT
 
 #### Create a New Attendee
 
-First, set up an authenticated call – in this example we’ll be using an [authenticated AJAX call](https://theeventscalendar.com/knowledgebase/rest-api-authentication/#h-making-a-rest-request-with-ajax). In your script file, this is what your JS will look like:
+First, set up an authenticated call – in this example we’ll be using an authenticated AJAX call. In your script file, this is what your JS will look like:
 
 ```
 $.ajax( {
-		method: 'POST',
-		url: 'https://your-site/wp-json/tribe/tickets/v1/attendees',
-		beforeSend: function ( xhr ) {
-			xhr.setRequestHeader( 'X-WP-Nonce', ajax_variable.nonce );
-		},
-		data: {
-			ticket_id: '50', 
-			full_name: 'Bob Saget',
-			email: '[email protected]',
-		}
-	} )
+	method: 'POST',
+	url: 'https://your-site/wp-json/tribe/tickets/v1/attendees',
+	beforeSend: function ( xhr ) {
+		xhr.setRequestHeader( 'X-WP-Nonce', ajax_variable.nonce );
+	},
+	data: {
+		ticket_id: '50',
+		full_name: 'Bob Saget',
+		email: '[email protected]',
+	}
 } );
 ```
 
@@ -678,17 +673,16 @@ This is what the AJAX call looks like with those adjustments:
 
 ```
 $.ajax( {
-		method: 'PUT', // For updating existing item in database
-		url: 'https://your-site/wp-json/tribe/tickets/v1/attendees/670', // Add the id of the attendee
-		beforeSend: function ( xhr ) {
-			xhr.setRequestHeader( 'X-WP-Nonce', ajax_variable.nonce );
-		},
-		data: {
-			ticket_id: '50', 
-			full_name: 'Updated Name',
-			email: '[email protected]',
-		}
-	} )
+	method: 'PUT', // For updating existing item in database
+	url: 'https://your-site/wp-json/tribe/tickets/v1/attendees/670', // Add the id of the attendee
+	beforeSend: function ( xhr ) {
+		xhr.setRequestHeader( 'X-WP-Nonce', ajax_variable.nonce );
+	},
+	data: {
+		ticket_id: '50',
+		full_name: 'Updated Name',
+		email: '[email protected]',
+	}
 } );
 ```
 
@@ -712,15 +706,12 @@ _raccoon_suspect_level
 
 ```
 add_filter( 'tribe_rest_single_event_data', 'my_plugin_add_suspect_level' );
-
 function my_plugin_add_suspect_level( array $event_data ) {
     $event_id = $event_data['id'];
     $level = get_post_meta( $event_id, '_raccoon_suspect_level', true );
-
     if ( empty( $level ) ) {
         $level = '4';
     }
-
     $event_data['raccoon_suspect_level'] = $level;
     return $event_data;
 }
@@ -737,7 +728,6 @@ json_ld
 
 ```
 add_filter( 'tribe_rest_single_event_data', 'my_plugin_remove_json_ld' );
-
 function my_plugin_remove_json_ld( array $event_data ) {
     unset( $event_data['json_ld'] );
     return $event_data;
@@ -759,7 +749,7 @@ The Events Calendar REST API includes a live documentation endpoint available on
 https://your-site.com/wp-json/tribe/events/v1/doc
 ```
 
-Hitting this endpoint returns a JSON object in [Swagger 2.0](https://swagger.io/) format that documents every available endpoint, parameter, and response structure — and because it is generated from the code itself, it is always up to date.
+Hitting this endpoint returns a JSON object in [OpenAPI 3.0](https://swagger.io/) format that documents every available endpoint, parameter, and response structure — and because it is generated from the code itself, it is always up to date.
 
 ![The Events Calendar REST API documentation rendered in the Swagger.io editor](https://docs.nexcess.com/wp-content/uploads/2026/06/swagger-output-665x408-1.png)
 
@@ -783,7 +773,6 @@ tribe_rest_swagger_event_documentation
 
 ```
 add_filter( 'tribe_rest_swagger_event_documentation', 'my_plugin_document_suspect_level' );
-
 function my_plugin_document_suspect_level( array $documentation ) {
     $documentation['properties']['raccoon_suspect_level'] = array(
         'type'        => 'integer',
@@ -797,7 +786,7 @@ function my_plugin_document_suspect_level( array $documentation ) {
 
 #### One-Click Client Generation
 
-Because the documentation is in Swagger format, you can generate a REST API client in the language of your choice directly from the Swagger.io editor. Copy your 
+Because the documentation is in OpenAPI format, you can generate a REST API client in the language of your choice directly from the Swagger.io editor. Copy your 
 ```
 /doc
 ```
@@ -817,8 +806,9 @@ You will receive a downloadable archive containing The Events Calendar REST API 
 Let’s say you’re running into issues trying to view or edit events on your site. Chances are the REST API is blocked somehow. This could be indicated by this error message:
 
 ```
-Warning: The Events Calendar REST API endpoints are not accessible, which can severely limit calendar functionality. This may be due to a server configuration or another plugin blocking access to the REST API.
-Please have your hosting provider or system administrator adjust settings to ensure that the necessary endpoints are accessible.
+Warning: The Events Calendar REST API endpoints are not accessible! This may be due to a server configuration or another plugin blocking access to the REST API.
+Please check with your hosting provider or system administrator to ensure that the below is accessible:
+https://your-site.com/wp-json/tribe/events/v1/
 ```
 
 To get your calendar back on track, it’s essential to identify what’s blocking the REST API. In a lot of cases, this can be caused by a **firewall** or **security plugin**accidentally identifying the API as a threat and blocking the endpoints.
@@ -830,6 +820,10 @@ If the REST API is still blocked with just The Events Calendar activated and a d
 Once the issue is resolved and the required TEC REST API endpoints are accessible again, your calendar should start functioning as intended.
 
 If you’re still facing issues, please reach out to our Support Team. We’ll be happy to assist you!
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

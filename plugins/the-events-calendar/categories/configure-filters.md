@@ -10,7 +10,7 @@
 
 Congratulations on picking up the Filter Bar add on! You’re probably excited to unleash your new calendar filtering powers, so let’s go over the ways you can configure the plugin to suit your needs.
 
-## Finding the filter settings
+## Finding the Filter Settings
 
 The first thing you’ll want to do is head over to the Filter Bar settings, which you can find under **Events → Settings → Filters** in your WordPress admin.
 
@@ -66,7 +66,7 @@ For more help with venue data, see [Troubleshooting Map View](https://docs.nexce
 
 ## Additional fields
 
-If you use Events Calendar Pro 4.0+, then you have the extra option of being able to add any [Additional Fields](https://docs.nexcess.com/software/the-events-calendar/custom-fields/) you’ve created to the Filter Bar.  Let’s say, for example, you have a custom field for Dress Attire. That custom field will be available in the list of configurable options for Filter Bar, allowing you to display and customize the appearance of that field in the Filter Bar.
+If you use Events Calendar Pro, then you have the extra option of being able to add any [Additional Fields](https://docs.nexcess.com/software/the-events-calendar/custom-fields/) you’ve created to the Filter Bar.  Let’s say, for example, you have a custom field for Dress Attire. That custom field will be available in the list of configurable options for Filter Bar, allowing you to display and customize the appearance of that field in the Filter Bar.
 
 ![This is the additional fields filter bar settings](https://docs.nexcess.com/wp-content/uploads/2026/06/FilterBarCustomFields.jpg)
 

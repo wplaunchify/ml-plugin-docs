@@ -10,7 +10,7 @@
 
 The Waitlist feature allows you to manage events with limited space or high-demand situations with ease. It lets you keep a list of interested attendees when an event is sold out or during pre-sales. You can effortlessly create a waitlist for both free and paid events by adding it to your tickets and RSVPs.
 
-👋 Note: This feature is available with our premium plugin [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/) since version 6.2.0.
+👋 Note: This feature is available with our premium plugin [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/)
 
 ## Configuring the Waitlist
 
@@ -107,7 +107,7 @@ wp_mail( $admin_email, $subject, $message );
  */
 function my_waitlist_admin_notification( $subscriber ) {
     // Ensure this is a valid Subscriber object.
-    if ( ! $subscriber instanceof TECTickets_PlusWaitlistSubscriber ) {
+    if ( ! $subscriber instanceof \TEC\Tickets_Plus\Waitlist\Subscriber ) {
         return;
     }
  
@@ -118,37 +118,41 @@ function my_waitlist_admin_notification( $subscriber ) {
     }
  
     $event_id    = $subscriber->get_post_id();
-    $event_title = get_the_title( $event_id );
+    $event_title = html_entity_decode( get_the_title( $event_id ), ENT_QUOTES, 'UTF-8' );
  
     $subscriber_name  = $subscriber->get_fullname();
     $subscriber_email = $subscriber->get_email();
  
     $subject = sprintf(
         /* translators: %s: Event title. */
-        esc_html__( 'New Waitlist Signup for: %s', 'my-text-domain' ),
+        __( 'New Waitlist Signup for: %s', 'my-text-domain' ),
         $event_title
     );
  
     $message_lines = [
         sprintf(
-            esc_html__( 'A new user has signed up for the waitlist for the event "%s".', 'my-text-domain' ),
+            __( 'A new user has signed up for the waitlist for the event "%s".', 'my-text-domain' ),
             $event_title
         ),
         '',
-        esc_html__( 'Subscriber Details:', 'my-text-domain' ),
+        __( 'Subscriber Details:', 'my-text-domain' ),
         /* translators: %s: Subscriber's full name. */
-        sprintf( esc_html__( 'Name: %s', 'my-text-domain' ), $subscriber_name ),
+        sprintf( __( 'Name: %s', 'my-text-domain' ), $subscriber_name ),
         /* translators: %s: Subscriber's email address. */
-        sprintf( esc_html__( 'Email: %s', 'my-text-domain' ), $subscriber_email ),
+        sprintf( __( 'Email: %s', 'my-text-domain' ), $subscriber_email ),
     ];
  
-    $message = implode( "rn", $message_lines );
+    $message = implode( "\r\n", $message_lines );
  
     // You can change $admin_email to a different email address if you prefer.
     wp_mail( $admin_email, $subject, $message );
 }
 add_action( 'tec_tickets_plus_waitlist_after_create_subscriber', 'my_waitlist_admin_notification', 10, 1 );
 ```
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

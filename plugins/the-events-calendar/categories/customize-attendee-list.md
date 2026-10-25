@@ -53,24 +53,29 @@ But when we view the [Attendee List](https://docs.nexcess.com/software/the-event
 Carefully insert the following PHP code at the end of your theme’s *functions.php* file (ensure not to overwrite any existing code there) or use the [Code Snippets](https://wordpress.org/plugins/code-snippets/) plugin:
 
 ```
-add_filter( 'tribe_events_tickets_attendees_table_column', function ( $value, $item, $column ) {
-    if ( $column === 'company' ) {
-         $value = $item['company'];
-    }
-    return $value;
-}, 100, 3 );
+add_filter( 'tribe_tickets_attendee_table_columns', function ( $columns ) {
+    $new_columns = [];
 
-add_filter( 'manage_tribe_events_page_tickets-attendees_columns', function ( $column_headers ) {
-    $new_column_headers = [];
-    foreach ( $column_headers as $column_key =&gt; $column_name ) {
-        $new_column_headers[ $column_key ] = $column_name;
+    foreach ( $columns as $column_key => $column_name ) {
+        $new_columns[ $column_key ] = $column_name;
+
         // Add the new column immediately after the ticket column.
-        if ( 'ticket' == $column_key ) {
-            $new_column_headers['company'] = 'Company';
+        if ( 'ticket' === $column_key ) {
+            $new_columns['company'] = 'Company';
         }
     }
-    return $new_column_headers;
+
+    return $new_columns;
 } );
+
+add_filter( 'tribe_events_tickets_attendees_table_column', function ( $value, $item, $column ) {
+    if ( 'company' === $column ) {
+        $answer = isset( $item['attendee_meta']['company']['value'] ) ? $item['attendee_meta']['company']['value'] : '';
+        $value  = is_array( $answer ) ? implode( ', ', $answer ) : $answer;
+    }
+
+    return $value;
+}, 100, 3 );
 ```
 
 Don’t forget to replace 
@@ -78,7 +83,7 @@ Don’t forget to replace
 company
 ```
 
- with the name of the field you are using.
+ with the name of the field you are using. The name is the field’s slug: its label in lowercase with dashes instead of spaces (for example, Company becomes company and Phone Number becomes phone-number). Change it in the three places where it appears, and change Company to the heading you want to show.
 
 After saving the changes, you should see a new custom column on the Event Attendees list:
 
@@ -89,34 +94,30 @@ After saving the changes, you should see a new custom column on the Event Attend
 To add a Security Code column to the Attendees list, insert the following PHP code at the end of your theme’s *functions.php* file or use the [Code Snippets](https://wordpress.org/plugins/code-snippets/) plugin:
 
 ```
-add_filter( 'tribe_events_tickets_attendees_csv_export_columns', function( $columns ) {
+add_filter( 'tribe_events_tickets_attendees_csv_export_columns', function ( $columns ) {
     $columns['security_code'] = 'Security Code';
     return $columns;
 } );
 
-add_filter( 'tribe_events_tickets_attendees_table_column', function ( $value, $item, $column ) {
-    if ( $column === 'security_code' ) {
-         $value = $item['security_code'];
-    }
-    return $value;
-}, 100, 3 );
+add_filter( 'tribe_tickets_attendee_table_columns', function ( $columns ) {
+    $new_columns = [];
 
-add_filter( 'manage_tribe_events_page_tickets-attendees_columns', function ( $column_headers ) {
-    $new_column_headers = [];
-    foreach ( $column_headers as $column_key =&gt; $column_name ) {
-        $new_column_headers[ $column_key ] = $column_name;
-        if ( 'ticket' == $column_key ) {
-            $new_column_headers['security_code'] = 'Security Code';
+    foreach ( $columns as $column_key => $column_name ) {
+        $new_columns[ $column_key ] = $column_name;
+
+        if ( 'ticket' === $column_key ) {
+            $new_columns['security_code'] = 'Security Code';
         }
     }
-    return $new_column_headers;
+
+    return $new_columns;
 } );
 ```
 
 After inserting the code and saving:
 
 - Go to the Attendees section under the Event Tickets menu in your admin panel.
-- Verify that the columns for Security Code and Ticket ID are now present.
+- Verify that the Security Code column is now present.
 - Check a few entries to ensure the columns are populating correctly.
 
 ![Attendees list showing Security Code column](https://docs.nexcess.com/wp-content/uploads/2026/06/attendee-list-security-code-column.jpg)
@@ -142,16 +143,16 @@ function add_registration_time_to_attendee_details( $item ) {
         $order_id = $item['order_id'];
     }
 
-    $registration_time = get_the_date( 'F j, Y', $order_id );
+    $registration_time = get_the_date( 'F j, Y g:i a', $order_id );
 
     if ( empty( $registration_time ) ) {
         return;
     }
 
     printf(
-        '&lt;div class="event-tickets-ticket-registration-time"&gt;%1$s:&lt;br/&gt;%2$s&lt;/div&gt;',
+        '<div class="event-tickets-ticket-registration-time">%1$s:<br/>%2$s</div>',
         esc_html__( 'Registration Time', 'tribe-extension' ),
-        sanitize_text_field( $registration_time )
+        esc_html( $registration_time )
     );
 }
 ```
@@ -166,25 +167,25 @@ Use the guide below to add any WooCommerce order data to your attendee export.
 
 The code is designed for easy customization. To choose which fields appear in your attendee export, **edit the $fields array** at the top of the snippet. This list tells the rest of the code what values to pull in and which columns to populate — it is the only part you need to edit.
 
-The list is pre-populated with the most common WooCommerce fields, which saves you from having to look up each field name. **Delete any fields you don’t want**, and the code will automatically update the export accordingly.
+The list is pre-populated with the most common WooCommerce fields, which saves you from having to look up each field name. **Delete any fields you don’t want**, and the code will automatically update the export accordingly. The snippet only adds data for attendees who bought through WooCommerce; other attendees keep their default values.
 
 **Note:** The block below is only the editable portion of the code for illustration — you’ll still need the full snippet further down for it to work.
 
 ```
 $fields = [
-    'order_id'        =&gt; 'Order ID',
-    'order_number'    =&gt; 'Order Number',
-    'order_date'      =&gt; 'Order Date',
-    'payment_method'  =&gt; 'Payment Method',
-    'transaction_id'  =&gt; 'Transaction ID',
-    'order_status'    =&gt; 'Order Status',
-    'billing_name'    =&gt; 'Billing Name',
-    'billing_email'   =&gt; 'Billing Email',
-    'billing_phone'   =&gt; 'Billing Phone',
-    'billing_address' =&gt; 'Billing Address',
-    'shipping_address'=&gt; 'Shipping Address',
-    'order_total'     =&gt; 'Order Total',
-    'coupon_codes'    =&gt; 'Coupon Codes',
+    'order_id'        => 'Order ID',
+    'order_number'    => 'Order Number',
+    'order_date'      => 'Order Date',
+    'payment_method'  => 'Payment Method',
+    'transaction_id'  => 'Transaction ID',
+    'order_status'    => 'Order Status',
+    'billing_name'    => 'Billing Name',
+    'billing_email'   => 'Billing Email',
+    'billing_phone'   => 'Billing Phone',
+    'billing_address' => 'Billing Address',
+    'shipping_address'=> 'Shipping Address',
+    'order_total'     => 'Order Total',
+    'coupon_codes'    => 'Coupon Codes',
 ];
 ```
 
@@ -192,7 +193,7 @@ Using the payment-method example, the pared-down list would look like this:
 
 ```
 $fields = [
-    'payment_method' =&gt; 'Payment Method',
+    'payment_method' => 'Payment Method',
 ];
 ```
 
@@ -206,19 +207,19 @@ And here’s how it would appear on the export:
 add_filter( 'tribe_events_tickets_attendees_csv_export_columns', function( $columns ) {
     // Defines the fields to add. Remove the ones you don't want in the export.
     $fields = [
-        'order_id'        =&gt; 'Order ID',
-        'order_number'    =&gt; 'Order Number',
-        'order_date'      =&gt; 'Order Date',
-        'payment_method'  =&gt; 'Payment Method',
-        'transaction_id'  =&gt; 'Transaction ID',
-        'order_status'    =&gt; 'Order Status',
-        'billing_name'    =&gt; 'Billing Name',
-        'billing_email'   =&gt; 'Billing Email',
-        'billing_phone'   =&gt; 'Billing Phone',
-        'billing_address' =&gt; 'Billing Address',
-        'shipping_address'=&gt; 'Shipping Address',
-        'order_total'     =&gt; 'Order Total',
-        'coupon_codes'    =&gt; 'Coupon Codes',
+        'order_id'        => 'Order ID',
+        'order_number'    => 'Order Number',
+        'order_date'      => 'Order Date',
+        'payment_method'  => 'Payment Method',
+        'transaction_id'  => 'Transaction ID',
+        'order_status'    => 'Order Status',
+        'billing_name'    => 'Billing Name',
+        'billing_email'   => 'Billing Email',
+        'billing_phone'   => 'Billing Phone',
+        'billing_address' => 'Billing Address',
+        'shipping_address'=> 'Shipping Address',
+        'order_total'     => 'Order Total',
+        'coupon_codes'    => 'Coupon Codes',
     ];
 
     return array_merge( $columns, $fields );
@@ -228,7 +229,8 @@ add_filter( 'tribe_events_tickets_attendees_table_column', function( $value, $it
     // Static cache retains its value between function calls.
     static $order_cache = [];
 
-    if ( empty( $item['order_id'] ) ) {
+    // Only WooCommerce ticket attendees have a WooCommerce order.
+    if ( ! function_exists( 'wc_get_order' ) || empty( $item['order_id'] ) || empty( $item['provider_slug'] ) || 'woo' !== $item['provider_slug'] ) {
         return $value;
     }
 
@@ -244,31 +246,31 @@ add_filter( 'tribe_events_tickets_attendees_table_column', function( $value, $it
 
     switch ( $column ) {
         case 'order_id':
-            return $order-&gt;get_id();
+            return $order->get_id();
         case 'order_number':
-            return $order-&gt;get_order_number();
+            return $order->get_order_number();
         case 'order_date':
-            return $order-&gt;get_date_created() ? $order-&gt;get_date_created()-&gt;date( 'Y-m-d H:i' ) : '';
+            return $order->get_date_created() ? $order->get_date_created()->date( 'Y-m-d H:i' ) : '';
         case 'payment_method':
-            return $order-&gt;get_payment_method_title();
+            return $order->get_payment_method_title();
         case 'transaction_id':
-            return $order-&gt;get_transaction_id();
+            return $order->get_transaction_id();
         case 'order_status':
-            return $order-&gt;get_status();
+            return $order->get_status();
         case 'billing_name':
-            return $order-&gt;get_formatted_billing_full_name();
+            return $order->get_formatted_billing_full_name();
         case 'billing_email':
-            return $order-&gt;get_billing_email();
+            return $order->get_billing_email();
         case 'billing_phone':
-            return $order-&gt;get_billing_phone();
+            return $order->get_billing_phone();
         case 'billing_address':
-            return $order-&gt;get_formatted_billing_address();
+            return $order->get_formatted_billing_address();
         case 'shipping_address':
-            return $order-&gt;get_formatted_shipping_address();
+            return $order->get_formatted_shipping_address();
         case 'order_total':
-            return $order-&gt;get_total();
+            return $order->get_total();
         case 'coupon_codes':
-            return implode( ', ', $order-&gt;get_coupon_codes() );
+            return implode( ', ', $order->get_coupon_codes() );
         default:
             return $value;
     }
@@ -333,7 +335,7 @@ $fields
  array like so:
 
 ```
-'billing_country' =&gt; 'Billing Country',
+'billing_country' => 'Billing Country',
 ```
 
 Then add a matching 
@@ -345,7 +347,7 @@ case
 
 ```
 case 'billing_country':
-    return $order-&gt;get_billing_country();
+    return $order->get_billing_country();
 ```
 
 Place it just before the 
@@ -391,7 +393,7 @@ case
 
 ```
 case 'my_custom_field':
-    return $order-&gt;get_meta( '_my_custom_field' );
+    return $order->get_meta( '_my_custom_field' );
 ```
 
 Then add it to the 
@@ -402,7 +404,7 @@ $fields
  array:
 
 ```
-'my_custom_field' =&gt; 'My Custom Field Name',
+'my_custom_field' => 'My Custom Field Name',
 ```
 
 **Important:** The key in the 
@@ -421,6 +423,10 @@ case
 ```
 
  statement in the switch.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

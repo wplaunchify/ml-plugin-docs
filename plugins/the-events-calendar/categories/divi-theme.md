@@ -122,21 +122,26 @@ function custom_add_to_calendar_button_auto() {
     }
 
     $title       = get_the_title( $event_id );
-    $start       = tribe_get_start_date( $event_id, false, 'YmdTHis' );
-    $end         = tribe_get_end_date( $event_id, false, 'YmdTHis' );
-    $location    = tribe_get_venue( $event_id );
+    $start       = tribe_get_start_date( $event_id, false, 'Ymd\THis' );
+    $end         = tribe_get_end_date( $event_id, false, 'Ymd\THis' );
+    $location    = tribe_get_venue( $event_id ) ?: '';
     $description = get_the_excerpt( $event_id );
 
-    $google_calendar_url = "https://calendar.google.com/calendar/render?action=TEMPLATE"
-        . "&text="     . urlencode( $title )
-        . "&dates="    . $start . "/" . $end
-        . "&details="  . urlencode( $description )
-        . "&location=" . urlencode( $location )
-        . "&sf=true&output=xml";
+    $google_calendar_url = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+        . '&text='     . urlencode( $title )
+        . '&dates='    . $start . '/' . $end
+        . '&details='  . urlencode( $description )
+        . '&location=' . urlencode( $location )
+        . '&sf=true&output=xml';
 
     ob_start(); ?>
-    
+    <a class="et_pb_button" href="<?php echo esc_url( $google_calendar_url ); ?>" target="_blank" rel="noopener noreferrer">
         Add to Calendar
+    </a>
+    <?php
+    return ob_get_clean();
+}
+add_shortcode( 'add_to_calendar_auto', 'custom_add_to_calendar_button_auto' );
 ```
 
 **Step 2: Add the Shortcode to Your Divi Template**
@@ -199,7 +204,7 @@ function my_tec_adjacent_events_where_previous( $where, $in_same_term ) {
     }
 
     $where = preg_replace(
-        "/p.post_dates*<s*'[^']*'/",
+        "/p\.post_date\s*<\s*'[^']*'/",
         "tec_mt.meta_value < '{$event_date}'",
         $where
     );
@@ -227,7 +232,7 @@ function my_tec_adjacent_events_where_next( $where, $in_same_term ) {
     }
 
     $where = preg_replace(
-        "/p.post_dates*>s*'[^']*'/",
+        "/p\.post_date\s*>\s*'[^']*'/",
         "tec_mt.meta_value > '{$event_date}'",
         $where
     );
@@ -270,6 +275,10 @@ functions.php
 ```
 
  file or via a dedicated code snippets plugin. See [Best Practices for Implementing Custom Code Snippets](https://docs.nexcess.com/software/the-events-calendar/code-snippets/) for guidance.
+
+---
+
+*Snippets reviewed and updated October 2026*
 
 ---
 

@@ -37,8 +37,6 @@ Install and activate The Events Calendar plugin and those little error messages 
 
 ![kb-common_error_messages-install_tec](https://docs.nexcess.com/wp-content/uploads/2026/06/kb-common_error_messages-install_tec.jpg)
 
-Since our premium plugins tend to rely on each other, we recommend using the same version number for all of them. For example, version 3.8 of The Events Calendar should be paired with version 3.8 of The Events Calendar Pro which should be paired with version 3.8 of The Filter Bar. And so on.
-
 This notice will display if the plugin versions you are running are out of sync. The plugins will remain installed and active, but you may experience issues with the functionality. [Update](https://docs.nexcess.com/software/the-events-calendar/automatic-updates/) (or downgrade) your plugins to the same common version number and this notice will disappear.
 
 If you are having trouble updating your premium plugins, it’s probably because your license has [expired](https://docs.nexcess.com/software/the-events-calendar/renewing-an-expired-license-subscription/). Once you [renew the license](https://docs.nexcess.com/software/the-events-calendar/renewing-an-expired-license-subscription/), you’ll have access to updates again.
