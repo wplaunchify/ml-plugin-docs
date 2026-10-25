@@ -673,7 +673,9 @@ facetwp_facet_display_value
 
  hook, this is very easy to do. You can [prepend or append any text you like](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/#add-a-prefix-or-suffix-to-facet-choice-labels). You can also use HTML.
 
-If needed, you can do this conditionally, only for a specific facet or facet type. Or based on choice parameters like its hierarchical depth, or if it is selected.
+If needed, you can do this conditionally, only for a specific facet or facet type. Or based on the choice’s [parameters](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/#parameters) that are available in the hook, like its hierarchical depth, or if it is selected or disabled (a ghost).
+
+If you want to add one or more **classes** or **attributes** to the facet choices’ HTML element, you can use the [facetwp_facet_choice_classes](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_classes/) or [facetwp_facet_choice_attributes](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes/) hooks. Both of these hooks are available in [FacetWP v4.6](/help-center/changelog/#4-6)+.
 
 Note:Some facet types already have a prefix or suffix setting of their own, like the [Slider facet type](/help-center/facets/facet-types/slider/#prefix), and the [Exclude facet type](/help-center/facets/facet-types/exclude/#prefix).
     
@@ -682,8 +684,11 @@ Note:Some facet types already have a prefix or suffix setting of their own, like
     - [The facetwp_facet_display_value hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/)
 - [The Slider facet type](https://facetwp.com/help-center/facets/facet-types/slider/)
 - [The Exclude facet type](https://facetwp.com/help-center/facets/facet-types/exclude/)
+- [The facetwp_facet_choice_classes hook](https://facetwp.com/?page_id=232886)
+- [The facetwp_facet_choice_attributes hook](https://facetwp.com/?page_id=233219)
+- [Private: How can I add classes or attributes to facet choices?](https://facetwp.com/?post_type=faq&p=233691)
 
-                    Last updated: April 23, 2026
+                    Last updated: October 21, 2026
 
 ---
 

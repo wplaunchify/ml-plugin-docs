@@ -706,7 +706,7 @@ N
 N
 ```
 
- in the facet. If in doubt, you can [check for each character how/which accents are removed and how they are returned by this function](https://developer.wordpress.org/reference/functions/remove_accents/). Note that it does not only strip accents, but also simplifies some characters in other ways. For example 
+ in the facet. If in doubt, you can [check for each character how/which accents are removed and how they are returned by this function](https://developer.wordpress.org/reference/functions/remove_accents/). Note that it not only strips accents, but also simplifies some characters in other ways. For example 
 ```
 æ
 ```
@@ -738,7 +738,9 @@ The
 #
 ```
 
- character [can be removed](#remove-the-hash-character) or [replaced with something else](#customize-the-hash-character).
+ character [can be removed](#remove-the-hash-character) or [replaced with something else](#customize-the-hash-alias-character).
+
+## Customize the choices
 
 ### Use other alphabets, languages, or characters
 
@@ -757,7 +759,7 @@ Z
 facetwp_alpha_chars
 ```
 
- hook, which was introduced in version 1.4+ of the add-on.
+ hook, which was introduced in [version 1.4](#add-on-changelog) of the add-on.
 
 The following example shows how to add 4 characters to the existing set: 
 ```
@@ -884,14 +886,14 @@ facetwp_alpha_remove_accents
 
  hook is not needed, and you can remove [line 17](#add-characters-and-emojis-L17).
 
-## Remove the hash character
+### Remove the hash character
 
 The 
 ```
 #
 ```
 
- character in the facet is an alias for these numbers: 
+ character in the facet is an [alias](#add-custom-character-aliases) for these numbers: 
 ```
 0,1,2,3,4,5,6,7,8,9
 ```
@@ -919,14 +921,145 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 }, 10, 2 );
 ```
 
-## Customize the hash character
+### Add custom character aliases
 
-The 
+In [version 1.5+](#add-on-changelog) of the A-Z Listing add-on, it is possible to add custom character **aliases**, using the 
+```
+facetwp_alpha_aliases
+```
+
+ hook.
+
+A character “alias” is a facet choice that represents and [matches](#how-character-matching-works) **multiple characters at once**. The A-Z Listing facet already has a default alias: the 
 ```
 #
 ```
 
- character can easily be replaced with something else, using a few lines of CSS. Add the following snippet to your (child) theme’s functions.php to replace it with 
+ choice, which represents all numbers: 
+```
+0,1,2,3,4,5,6,7,8,9
+```
+
+.
+
+The following example uses the 
+```
+facetwp_alpha_aliases
+```
+
+ hook to first define [three custom aliases](#add-aliases-L5-L7), for three ranges of letters in the alphabet.
+
+Then it uses [the facetwp_alpha_chars hook](#use-other-alphabets-languages-or-characters) to define which choices (individual characters or aliases) to display in the facet. In this example, we chose to [display only aliases](#add-aliases-L15): the three new ones, plus the default 
+```
+#
+```
+
+ one:
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Define custom character aliases. 
+// Note: the 'facetwp_alpha_aliases' hook is available in A-Z Listing v1.5+.
+add_filter( 'facetwp_alpha_aliases', function( $aliases, $params ) {
+  if ( 'my_az_facet_name' == $params['facet']['name'] ) { // Replace "my_az_facet_name" with the name of your A-Z Listing facet.
+    $aliases['A-I'] = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+    $aliases['J-R'] = [ 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R' ];
+    $aliases['S-Z'] = [ 'S', 'T', 'U', 'V', 'W', 'Z', 'Y', 'Z' ];
+  }
+  return $aliases;
+}, 10, 2 );
+
+// Display aliases as choice
+add_filter( 'facetwp_alpha_chars', function( $chars, $params ) {
+  if ( 'my_az_facet_name' == $params['facet']['name'] ) { // Replace "my_az_facet_name" with the name of your A-Z Listing facet.
+    $chars = [ '#', 'A-I', 'J-R', 'S-Z' ]; // Define which choices (individual characters or aliases) are available in the facet
+  }
+  return $chars;
+}, 10, 2 );
+```
+
+![An A-Z Listing facet with one default (#) and three custom character aliases, matching 0-9 numbers and three A-Z character ranges](https://facetwp.com/wp-content/uploads/2026/10/a-z-aliases.png)An A-Z Listing facet with one default (
+```
+#
+```
+
+) and three custom character aliases, matching 0-9 numbers and three A-Z character ranges
+Next, if needed, you could customize the label **output** for these four alias choices, as shown in the following snippet.
+
+The [facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/) used for this will only change the text labels of the choices, as they appear in the facet. The technical raw choice values [as they appear in the URL](/help-center/developers/the-facetwp-url/) after filtering, will remain what they were as defined by the alias (e.g. 
+```
+?_my_az_facet_name=A-I
+```
+
+ for 
+```
+A-I
+```
+
+).
+
+Note that the 
+```
+facetwp_facet_display_value
+```
+
+ hook also needs [version 1.5+](#add-on-changelog) of the A-Z Listing add-on, just like the 
+```
+facetwp_alpha_aliases
+```
+
+ used in the above snippet.
+
+After adding the [above](#add-aliases) and the following snippet to your (child) theme’s functions.php, the facet will look like the image on the right. Make sure to replace
+```
+my_az_facet_name
+```
+
+ with the name of your A-Z Listing facet in the three filters in both snippets.
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Note: the 'facetwp_facet_display_value' hook is available in A-Z Listing v1.5+.
+add_filter( 'facetwp_facet_display_value', function( $label, $params ) {
+  if ( 'my_az_facet_name' == $params['facet']['name'] ) { // Replace "my_az_facet_name" with the name of your A-Z Listing facet.
+    if ( '#' == $label ) {
+      $label = '[0 to 9]';
+    }
+    if ( 'A-I' == $label ) {
+      $label = '[A to I]';
+    }
+    if ( 'J-R' == $label ) {
+      $label = '[J to R]';
+    }
+    if ( 'S-Z' == $label ) {
+      $label = '[S to Z]';
+    }
+  }
+  return $label;
+}, 20, 2 );
+```
+
+## Customize the choice output
+
+### Customize the choice label text output
+
+In [version 1.5+](#add-on-changelog) of the A-Z Listing facet add-on, you can use the 
+```
+facetwp_facet_display_value
+```
+
+ hook to customize the text label output of the characters and [aliases](#add-custom-character-aliases), for example, to change the text label itself, or add a prefix/suffix or custom icon.
+
+If needed, you can do this for specific characters only. For example, for the “Any” label, for the characters that are [aliases](#add-custom-character-aliases), for those that are selected or not, or for those that have results or not.
+
+See [the code examples on the facetwp_facet_display_value hook page](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/#customize-a-z-listing-facet-labels) for how to do this.
+
+### Customize the hash alias character
+
+In [version 1.5+](#add-on-changelog) of the A-Z Listing facet add-on, the 
+```
+#
+```
+
+ [alias](#add-custom-character-aliases) can easily be replaced with something else, using [the facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/). Add the following snippet to your (child) theme’s functions.php to replace it with 
 ```
 0-9
 ```
@@ -934,7 +1067,38 @@ The
 :
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_action( 'wp_head', function() {
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Note: A-Z Listing add-on v1.5+ required
+add_filter( 'facetwp_facet_display_value', function( $label, $params ) {
+
+  // Skip if the facet type is NOT an A-Z Listing facet
+  if ( 'alpha' !== $params['facet']['type'] ) {
+    return $label;
+  }
+
+  // Change the label if the choice is the '#' alias  {
+  if ( array_key_exists( $label, $params['aliases'] ) && $label == '#' ) {
+    $label = '0-9';
+  }
+
+  return $label;
+}, 20, 2 );
+```
+
+In older versions of the A-Z Listing facet add-on (v1.4 and earlier), you can change the 
+```
+#
+```
+
+ alias character using a few lines of CSS. Add the following snippet to your (child) theme’s functions.php to replace it with 
+```
+0-9
+```
+
+:
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Only works in A-Z Listing add-on v1.4 and earlier
+add_action( 'wp_head', function() {
   ?>
   <style>
     .facetwp-type-alpha .facetwp-alpha[data-id="#"] {
@@ -949,7 +1113,29 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 }, 100 );
 ```
 
-## Use lowercase letters
+Note that in [version 1.5+](#add-on-changelog)+ of the A-Z Listing add-on, the 
+```
+.facetwp-alpha[data-id="#"]
+```
+
+ CSS selectors will not work anymore, because the 
+```
+data-id
+```
+
+ attribute was changed to 
+```
+data-value
+```
+
+. In newer versions, you could change these CSS selectors, or restore the 
+```
+data-id
+```
+
+ attribute [with the facetwp_facet_choice_attributes](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes/) hook, or (recommended), use the [above snippet](#replace-hash-character) instead.
+
+### Use lowercase letters
 
 If you need the letters in the facet to show as lowercase, you can do so with a bit of CSS. Add the following to your (child) theme’s functions.php:
 
@@ -964,6 +1150,14 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
   <?php
 }, 100 );
 ```
+
+### Add custom classes or attributes to character choice elements
+
+In [version 1.5+](#add-on-changelog) of the A-Z Listing facet add-on, you can add custom **classes** to the character choice elements [using the facetwp_facet_choice_classes](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_classes#conditionally-add-classes-in-an-a-z-listing-facet) hook.
+
+Similarly, custom **attributes** can be added [using the facetwp_facet_choice_attributes](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes#conditionally-add-attributes-in-an-a-z-listing-facet) hook.
+
+In both hooks, you can do this conditionally, only for specific choices. For example, only for specific characters, if a specific character is in the results or not, if the character is selected or not, if it is the “Any” choice, or if the choice is a (built-in or custom) [alias](#add-custom-character-aliases).
 
 ## Insert A-Z letter headings in a listing
 
@@ -1144,8 +1338,12 @@ add_action( 'facetwp_scripts', function() {
 - [Using the Listing Builder in Dev Mode](https://facetwp.com/help-center/listing-templates/listing-builder/using-the-listing-builder-in-dev-mode/)
 - [Using FacetWP with Advanced Custom Fields](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/)
 - [How to filter or order a WP_Query by one or more custom fields](https://facetwp.com/how-to-filter-or-order-a-wp_query-by-one-or-more-custom-fields/)
+- [The FacetWP URL](https://facetwp.com/help-center/developers/the-facetwp-url/)
+- [The facetwp_facet_display_value hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/)
+- [The facetwp_facet_choice_classes hook](https://facetwp.com/?page_id=232886)
+- [The facetwp_facet_choice_attributes hook](https://facetwp.com/?page_id=233219)
 
-                Last updated: December 18, 2025
+                Last updated: October 20, 2026
 
 ---
 
@@ -3926,6 +4124,53 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 }, 10, 2 );
 ```
 
+## Add custom accessibility attributes
+
+Using [FacetWP v4.6](/help-center/changelog/#4-6)+ and the Color facet add-on [version 1.7.2](#add-on-changelog)+, you can add custom attributes to facet choices [using the facetwp_facet_choice_attributes](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes) hook.
+
+This can be useful for adding custom accessibility-related attributes to the Color facet choices, as Color facets are currently not handled by FacetWP’s 
+```
+accessibility.js
+```
+
+ script (which runs if you have the “Load a11y support” FacetWP setting enabled).
+
+The following snippet adds 
+```
+aria-label
+```
+
+, 
+```
+role
+```
+
+, and 
+```
+tabindex
+```
+
+ attributes to Color facet choices. It also dynamically sets 
+```
+aria-checked="true"
+```
+
+ [if the choice is selected](#add-accessibility-attributes-L6-L8):
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_facet_choice_attributes', function( $atts, $params ) {
+  if ( 'color' == $params['facet']['type'] ) {
+    $atts['aria-label'] = 'Filter by the color ' . $params['row']['facet_display_value'];
+    $atts['role'] = 'button';
+    $atts['tabindex'] = 0;
+    if ( $params['selected'] ) {
+      $atts['aria-checked'] = 'true';
+    }
+  }
+  return $atts;
+}, 10, 2 );
+```
+
                     ## Changelog
 
                         
@@ -4009,6 +4254,8 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with Pods](https://facetwp.com/help-center/using-facetwp-with/pods/)
 - [The User Selections facet type](https://facetwp.com/help-center/facets/facet-types/user-selections/)
 - [The facetwp_facet_display_value hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/)
+- [The facetwp_facet_choice_classes hook](https://facetwp.com/?page_id=232886)
+- [The facetwp_facet_choice_attributes hook](https://facetwp.com/?page_id=233219)
 - [Using FacetWP with Variation Swatches for WooCommerce](https://facetwp.com/help-center/using-facetwp-with/variation-swatches-for-woocommerce/)
 - [Using FacetWP with WooCommerce Attribute Swatches](https://facetwp.com/help-center/using-facetwp-with/woocommerce-attribute-swatches/)
 - [The facetwp_facet_orderby hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_orderby/)
@@ -4019,7 +4266,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [How to switch the facet logic on the front-end](https://facetwp.com/how-to-switch-the-facet-logic-on-the-front-end/)
 - [The facetwp_facet_filter_posts hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_filter_posts/)
 
-                Last updated: July 30, 2026
+                Last updated: October 20, 2026
 
 ---
 
@@ -7274,6 +7521,27 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 }, 10, 2 );
 ```
 
+## Customize the choice label text output
+
+You can use the 
+```
+facetwp_facet_display_value
+```
+
+ hook to customize the text label output of the Hierarchy facet’s choices, for example, to change the text label itself, or add a prefix/suffix or custom icon.
+
+If needed, you can do this for specific choices only. For example, for the “Any” label, for the “real” clickable choices, or for the unclickable selected ones.
+
+See [the code examples on the facetwp_facet_display_value hook page](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/#customize-hierarchy-facet-labels) for how to do this.
+
+## Add custom classes or attributes to choice elements
+
+In [FacetWP v4.6](/help-center/changelog/#4-6)+, you can add custom **classes** to the facet choice elements [using the facetwp_facet_choice_classes](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_classes#conditionally-add-classes-in-a-hierarchy-facet) hook.
+
+Similarly, custom **attributes** can be added [using the facetwp_facet_choice_attributes](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes#conditionally-add-attributes-in-a-hierarchy-facet) hook.
+
+In both hooks, you can do this conditionally, only for specific choices. For example, for the “Any” label, for the “real” clickable choices only, or for the unclickable selected ones.
+
 ## Customize or remove the “Any” arrow icon
 
 The “Any” label (which can be changed with [the Default label setting](#default-label)) automatically adds a left arrow icon 
@@ -7322,12 +7590,15 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Range List facet type](https://facetwp.com/help-center/facets/facet-types/range-list/)
 - [The Time Since facet type](https://facetwp.com/help-center/facets/facet-types/time-since/)
 - [The Exclude facet type](https://facetwp.com/help-center/facets/facet-types/exclude/)
+- [The facetwp_facet_display_value hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/)
+- [The facetwp_facet_choice_classes hook](https://facetwp.com/?page_id=232886)
+- [The facetwp_facet_choice_attributes hook](https://facetwp.com/?page_id=233219)
 - [Using FacetWP with Intuitive Custom Post Order](https://facetwp.com/help-center/using-facetwp-with/intuitive-custom-post-order/)
 - [Using FacetWP with Advanced Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/advanced-taxonomy-terms-order/)
 - [Using FacetWP with Category Order and Taxonomy Terms Order](https://facetwp.com/help-center/using-facetwp-with/category-order-and-taxonomy-terms-order/)
 - [Using FacetWP with Custom Taxonomy Order](https://facetwp.com/help-center/using-facetwp-with/custom-taxonomy-order/)
 
-                    Last updated: July 30, 2026
+                    Last updated: October 20, 2026
 
 ---
 
@@ -20241,9 +20512,9 @@ To target an element with a class, use a . before the class. For example, use .f
 To target an element with an id, use a # before the id. For example, use #myelement to scroll to the element with id="myelement". 
 To scroll to the top of the page, use body.
 Leave the field blank for no scrolling. 
-To customize the exact place where the page scroll needs to stop, use the Scroll offset setting. |
+To customize the exact place where the page scroll needs to stop, use the “Scroll offset” setting. |
 | Scroll offset | The number of px to modify the scroll target position. 
-If you have entered a target in the Scroll target setting, you can modify the exact position where the scroll stops. 
+If you have entered a target in the “Scroll target” setting, you can modify the exact position where the scroll stops. 
 Positive numbers are below the target, negative numbers above the target. For example, using 100 will make the scroll stop 100px below the target, and -100 will stop it 100px above the target. |
 
 Note:When using the “Page numbers” pager type, the HTML output of the pager links (the numbers, dots, and “Prev”/”Next” links) can be modified with [the facetwp_facet_pager_link hook](/help-center/developers/hooks/output-hooks/facetwp_facet_pager_link/).
@@ -20286,10 +20557,30 @@ Note: this text is translatable with the facetwp_i18n hook. |
 
 | Name | Description |
 | --- | --- |
-| Load more text | The “Load more” button text. 
+| Load more text | The “Load more” button text.  Default: “Load more”.
 Note: this text is translatable with the facetwp_i18n hook. |
-| Loading text | The “Load more” button text while new posts are being loaded.
+| Loading text | The “Load more” button text while new posts are being loaded. Default: “Loading…”.
 Note: this text is translatable with the facetwp_i18n hook. |
+| When no more posts | What to do when there are no more posts to load. Default: “Hide button”. Choose “Show reset button” to show a “Reset” button that will reset the listing to its initial state (with the number of posts before the “Load more” button was clicked). Clicking the button will also trigger an optional scroll to the top of the results. 
+Note: this setting is available in FacetWP v4.6+. |
+| Reset text | The “Reset” button text. Default: “Reset”. This setting only appears if the “When no more posts” setting is set to “Show reset button”.
+Note: this text is translatable with the facetwp_i18n hook. |
+| Scroll target | The target for scrolling the page when clicking the “Reset” button. This setting only appears if the “When no more posts” setting is set to “Show reset button”. 
+To target an element with a class, use a . before the class. For example, use .facetwp-template to scroll to the element with class="facetwp-template", which is the top of the listing/results.
+To target an element with an id, use a # before the id. For example, use #myelement to scroll to the element with id="myelement". 
+To scroll to the top of the page, use body.
+Leave the field blank for no scrolling. 
+To customize the exact place where the page scroll needs to stop, use the “Scroll offset” setting. |
+| Scroll offset | The number of px to modify the scroll target position. 
+If you have entered a target in the “Scroll target” setting, you can modify the exact position where the scroll stops. 
+Positive numbers are below the target, negative numbers above the target. For example, using 100 will make the scroll stop 100px below the target, and -100 will stop it 100px above the target. |
+
+To style the “Load more” / “Reset” 
+```
+<button>
+```
+
+ element, [see below](#style-the-load-more-reset-button).
 
 ### “Per page” pager type
 
@@ -20462,6 +20753,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
     // Load more
     $translations['fr']['Load more'] = 'Charger plus';
     $translations['fr']['Loading...'] = 'Charger...';
+    $translations['fr']['Reset'] = 'Réinitialiser';
 
     // Per page
     $translations['fr']['Per page'] = 'Par page';
@@ -20593,6 +20885,9 @@ echo FWP()->facet->pager_args['page'];
 // Display the number of posts per page
 echo FWP()->facet->pager_args['per_page'];
 
+// Display the chosen number of posts per page set in the "Per page" type Pager facet (integer). Available in FacetWP v4.6+
+echo FWP()->facet->pager_args['per_page_choice'];
+
 // Display the total number of filtered posts
 echo FWP()->facet->pager_args['total_rows'];
 
@@ -20621,8 +20916,8 @@ FWP.settings.pager
 // Get the current page number
 FWP.settings.pager.page
 
-// Get the number of posts per page
-FWP.settings.pager.per_page
+// Get the chosen number of posts per page set in the "Per page" type Pager facet. Available in FacetWP v4.6+
+FWP.settings.pager.per_page_choice
 
 // Get the total number of filtered posts
 FWP.settings.pager.total_rows
@@ -20645,6 +20940,147 @@ FWP.refresh(); // Run a refresh
 ```
 
 This would have to be used within the [facetwp-refresh event](/help-center/developers/javascript-reference/facetwp-refresh/). See [this snippet](/help-center/developers/the-facetwp-url/#pagenavi-support) and [our code library](https://gist.facetwp.com/?_keywords=FWP.paged) for full examples.
+
+## How to use a different post per page on the first page
+
+Sometimes we get the question of how to use a different number of posts per page on the first page of a [listing](/help-center/listing-templates/). A use case would be to show for example 10 posts when the page loads at first, and then, each time when clicking the [“Load more” Pager facet button](#load-more-pager-type), load 20 extra posts, until the query runs out of posts.
+
+This is possible, but not trivial: WordPress calculates which posts to show on a page based on the current page number, the number of posts per page, the total number of pages, and the total number of posts.
+
+[This tutorial](/how-to-use-a-different-post-per-page-on-the-first-page/) shows how to accomplish this, by letting WordPress recalculate the pagination parameters dynamically.
+
+## FacetWP and infinite scroll
+
+We often get the question if FacetWP supports infinite scroll, added by for example WooCommerce or [Elementor](/help-center/using-facetwp-with/elementor/) infinite scroll plugins.
+
+FacetWP does **not** support infinite scroll, which is [intentional](https://hackernoon.com/stop-infinite-scrolling-on-your-website-now-ie6rg31eu).
+
+This means that plugins that add any form of infinity load / infinite scroll **will not work** as expected.
+
+The closest thing is the [“Load more” pager type](#load-more-pager-type) of the Pager facet, which generates a “Load more” button, working similar to infinite scroll.
+
+## The load more button and URL variables
+
+The [“load more” pager type](#load-more-pager-type) of the Pager facet does not update URL vars. This means that if a user clicks the Back button to go back to the listing, the position in the pagination and the previously loaded items are lost.
+
+This behaviour is intentional. Let’s say there are 30 items per page and the user click the “Load more” button 20 times, this results in 600 total results on the page. They click to go to a result, then click the Back button. When that Back button is clicked, FacetWP would have to load all 600 items at once, straining the server.
+
+We recommend sticking with the “normal” numbers-based pager type (or use 
+```
+target="_blank"
+```
+
+ to open results) unless you absolutely need a “Load more” button.
+
+## Display a “No more results” message below the Load More button
+
+By default, when the Pager facet’s [“Load more” button](#load-more-pager-type) runs out of results to display, it is hidden (unless you choose to [show a “Reset” button](#load-more-reset)).
+
+If you want to show a message to users when the “Load more” button disappears (or the “Reset” button shows), add the following HTML to your page, wherever you want. A logical place would be directly below the Load More Pager facet. You can customize the text, or add HTML within it, but the classes must remain the same:
+
+```
+<div class="facetwp-load-more-complete facetwp-hidden">No more posts to display!</div>
+```
+
+Next, add the following snippet to your (child) theme’s functions.php. This will show the above message element as soon as the “Load more” button runs out of posts to load, and is hidden itself.
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_action('facetwp_scripts', function () { ?>
+  <script>
+    (function($) {
+      $().on('facetwp-loaded', function() {
+        var is_visible = ( FWP.settings.pager.page < FWP.settings.pager.total_pages );
+        var method = is_visible ? 'addClass' : 'removeClass';
+        $('.facetwp-load-more-complete')[method]('facetwp-hidden');
+      });
+    })(fUtil);
+  </script>
+<?php }, 100);
+```
+
+## Style the “Load more” / “Reset” button
+
+![A styled 'Load more'-type Pager facet's 'Reset' button with a custom icon.](https://facetwp.com/wp-content/uploads/2026/10/pager-load-more-reset.png)A styled “Load more”-type Pager facet’s “Reset” button with a custom icon.
+The following CSS shows how to style a [“Load more”](#load-more-pager-type) / [“Reset”](#load-more-reset) button.
+
+The facet’s 
+```
+<button>
+```
+
+ element has class 
+```
+.facetwp-load-more
+```
+
+. If the button [becomes a “Reset” button](#load-more-reset), it also gets the class 
+```
+.is-reset
+```
+
+. While the button is loading (and shows [its “Loading…” text](#load-more-loading-text)), the button’s parent facet element gets the class 
+```
+.is-loading
+```
+
+.
+
+Besides some basic styling for the button and its states, [in lines 31-36](#load-more-styling-L31-L36), we also added a 
+```
+⟳
+```
+
+ icon to the right of the “Reset” text, as shown in the image on the right. [Here](https://www.amp-what.com/unicode/search/up%20arrow) you can find some relevant alternative icons.
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_action( 'wp_head', function() {
+  ?>
+  <style>
+
+    /* "Load more" and "Reset" button shared styles */
+    .facetwp-load-more {
+      background: #000; /* black */
+      color: #fff; /* white */
+      border: none;
+      border-radius: 3px;
+      margin-top: 30px;
+      line-height: 1.5em;
+    }
+
+    /* Button styles for when the Load more Pager is loading */
+    .facetwp-type-pager.is-loading .facetwp-load-more {
+      background: #577fac; /* blue */
+    }
+
+    /* Prevent the button from dimming on refresh */
+    .facetwp-facet.facetwp-type-pager.is-loading {
+      opacity: 1;
+    }
+
+    /* Overriding button styles for the "Reset" button */
+    .facetwp-load-more.is-reset {
+      background: #666;  /* dark grey */
+    }
+
+    /* Add a "Reset"-type icon to the right of the label of the "Reset" button */
+    .facetwp-load-more.is-reset:after {
+      content: "⟳";
+      font-size: 1.1em;
+      margin-left: 8px;
+      display: inline;
+    }
+
+    /* Button hover styles */
+    .facetwp-load-more:hover,
+    .facetwp-load-more.is-reset:hover {
+      background: #577fac; /* blue */
+      color: #fff; /* white */
+    }
+
+  </style>
+  <?php
+}, 100 );
+```
 
 ## Style a “Per page” Pager facet dropdown consistently across browsers
 
@@ -20673,61 +21109,6 @@ You can use [this CSS](/help-center/facets/facet-types/dropdown/#style-select-dr
 
  that are used in facets. The result for the “Per page” Pager facet will then look like the image on the right in all browsers.
 
-## How to use a different post per page on the first page
-
-Sometimes we get the question of how to use a different number of posts per page on the first page of a [listing](/help-center/listing-templates/). A use case would be to show for example 10 posts when the page loads at first, and then, each time when clicking the [“Load more” Pager facet button](#load-more-pager-type), load 20 extra posts, until the query runs out of posts.
-
-This is possible, but not trivial: WordPress calculates which posts to show on a page based on the current page number, the number of posts per page, the total number of pages, and the total number of posts.
-
-[This tutorial](/how-to-use-a-different-post-per-page-on-the-first-page/) shows how to accomplish this, by letting WordPress recalculate the pagination parameters dynamically.
-
-## FacetWP and infinite scroll
-
-We often get the question if FacetWP supports infinite scroll, added by for example WooCommerce or [Elementor](/help-center/using-facetwp-with/elementor/) infinite scroll plugins.
-
-FacetWP does **not** support infinite scroll, which is [intentional](https://hackernoon.com/stop-infinite-scrolling-on-your-website-now-ie6rg31eu).
-
-This means that plugins that add any form of infinity load / infinite scroll **will not work** as expected.
-
-The closest thing is the [“load more” pager type](#load-more-pager-type) of the Pager facet, which generates a “load more” button, working similar to infinite scroll.
-
-## Display a “No more results” message below the Load More button
-
-By default, when the Pager facet’s [Load More button](#load-more-pager-type) runs out of results to show, it is hidden. If you want to show a message to users when that happens, add the following HTML to your page, wherever you want. A logical place would be directly below the Load More Pager facet. You can customize the text, or add HTML within it, but the classes must remain the same:
-
-```
-<div class="facetwp-load-more-complete facetwp-hidden">That's all!</div>
-```
-
-Next, add the following snippet to your (child) theme’s functions.php. This will show the above message element as soon as the Load More button runs out of posts to load, and is hidden itself.
-
-```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_action('facetwp_scripts', function () { ?>
-  <script>
-    (function($) {
-      $().on('facetwp-loaded', function() {
-        var is_visible = ( FWP.settings.pager.page < FWP.settings.pager.total_pages );
-        var method = is_visible ? 'addClass' : 'removeClass';
-        $('.facetwp-load-more-complete')[method]('facetwp-hidden');
-      });
-    })(fUtil);
-  </script>
-<?php }, 100);
-```
-
-## The load more button and URL variables
-
-The [“load more” pager type](#load-more-pager-type) of the Pager facet does not update URL vars. This means that if a user clicks the Back button to go back to the listing, the position in the pagination and the previously loaded items are lost.
-
-This behaviour is intentional. Let’s say there are 30 items per page and the user click the “load more” button 20 times, this results in 600 total results on the page. They click to go to a result, then click the Back button. When that Back button is clicked, FacetWP would have to load all 600 items at once, straining the server.
-
-We recommend sticking with the “normal” numbers-based pager type (or use 
-```
-target="_blank"
-```
-
- to open results) unless you absolutely need a “load more” button.
-
     
 ## See also
 
@@ -20751,7 +21132,7 @@ target="_blank"
 - [How to use get_query_var(‘paged’) with FacetWP](https://facetwp.com/how-to-use-get_query_varpaged-with-facetwp/)
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 
-                    Last updated: September 1, 2026
+                    Last updated: October 23, 2026
 
 ---
 
@@ -25189,6 +25570,53 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 }, 10, 3 );
 ```
 
+## Add custom accessibility attributes
+
+Using [FacetWP v4.6](/help-center/changelog/#4-6)+, you can add custom attributes to facet choices [using the facetwp_facet_choice_attributes](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes) hook.
+
+This can be useful for adding custom accessibility-related attributes to the Rating facet choices, as Rating facets are currently not handled by FacetWP’s 
+```
+accessibility.js
+```
+
+ script (which runs if you have the “Load a11y support” FacetWP setting enabled).
+
+The following snippet adds 
+```
+aria-label
+```
+
+, 
+```
+role
+```
+
+, and 
+```
+tabindex
+```
+
+ attributes to Rating facet choices. It also dynamically sets 
+```
+aria-checked="true"
+```
+
+ [if the choice is selected](#add-accessibility-attributes-L6-L8):
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_facet_choice_attributes', function( $atts, $params ) {
+  if ( 'rating' == $params['facet']['type'] ) {
+    $atts['aria-label'] = 'Filter by a ' . $params['row']['facet_value'] . '-star rating';
+    $atts['role'] = 'button';
+    $atts['tabindex'] = 0;
+    if ( $params['selected'] ) {
+      $atts['aria-checked'] = 'true';
+    }
+  }
+  return $atts;
+}, 10, 2 );
+```
+
     
 ## See also
 
@@ -25196,7 +25624,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [Using FacetWP with WooCommerce](https://facetwp.com/help-center/using-facetwp-with/woocommerce/)
 - [Using FacetWP with Advanced Custom Fields](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/)
 
-                    Last updated: July 17, 2026
+                    Last updated: October 20, 2026
 
 ---
 

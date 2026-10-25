@@ -3529,7 +3529,8 @@ Next button label |
 Count text (singular)
 Count text (no results) |
 | Type: Load more | Load more text
-Loading text |
+Loading text
+Reset text |
 | Type: Per page | Default label
 “Show all” text (if a non-numeric option is added in the settings) |
 | Sort facet | Default label
@@ -3538,9 +3539,10 @@ All sort option labels |
 | Map facet | “Enable map filtering” button text
 “Reset” button text |
 | Hierarchy Select facet | Depth labels |
-| Range List facet | Default label |
-| Time Since facet | Choices labels
-Default label |
+| Range List facet | Default label
+Choices labels (requires Range List v0.9.3+) |
+| Time Since facet | Default label
+Choices labels |
 | A-Z Listing | Default label |
 | Color | “See {num} more” / “See less” link text |
 | Exclude | Default label
@@ -3694,7 +3696,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The facetwp_facet_render_args hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/)
 - [Using FacetWP with WordPress multi-site](https://facetwp.com/help-center/using-facetwp-with/wordpress-multi-site/)
 
-                    Last updated: September 3, 2026
+                    Last updated: October 23, 2026
 
 ---
 
@@ -5762,6 +5764,8 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Dropdown facet type](https://facetwp.com/help-center/facets/facet-types/dropdown/)
 - [The Hierarchy Select facet type](https://facetwp.com/help-center/facets/facet-types/hierarchy-select/)
 - [The facetwp_facet_render_args hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/)
+- [The facetwp_facet_choice_classes hook](https://facetwp.com/?page_id=232886)
+- [The facetwp_facet_choice_attributes hook](https://facetwp.com/?page_id=233219)
 - [The facetwp_facet_orderby hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_facet_orderby/)
 - [The Time Since facet type](https://facetwp.com/help-center/facets/facet-types/time-since/)
 - [Using FacetWP with Advanced Custom Fields](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/)
@@ -5771,7 +5775,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [FacetWP and taxonomies](https://facetwp.com/help-center/developers/facetwp-and-taxonomies/)
 - [What’s new in Bricks 0.7.1](https://facetwp.com/whats-new-in-bricks-0-7-1/)
 
-                    Last updated: April 16, 2026
+                    Last updated: October 20, 2026
 
 ---
 
@@ -7392,8 +7396,16 @@ facetwp_facet_display_value
 ```
 
  hook to further customize the choice output.
+- To add **classes** to the HTML element of facet choices, you can use [the facetwp_facet_choice_classes hook](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_classes) (available in [FacetWP v4.6](/help-center/changelog/#4-6)+).
+- To add **attributes** to the HTML element of facet choices, you can use [the facetwp_facet_choice_attributes hook](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes) (available in [FacetWP v4.6](/help-center/changelog/#4-6)+).
 - To filter/customize the whole **HTML output of a facet’s content**, you can [use the facetwp_facet_html hook](/help-center/developers/hooks/output-hooks/facetwp_facet_html/#set-a-custom-facet-class).
-- And if you want to customize the facet’s **container/placeholder element**, for example to add a custom class or attribute to the facet container, [use the facetwp_shortcode_html hook](/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/#set-a-custom-facet-class) instead.
+- If you want to customize the facet’s **container/placeholder element**, for example to add a custom class or attribute to the facet container, [use the facetwp_shortcode_html hook](/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/#set-a-custom-facet-class) instead.
+- To modify the **render data** passed to a facet’s 
+```
+render()
+```
+
+ method, you can use [the facetwp_facet_render_args hook](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/).
 
 ### Supported facets
 
@@ -7757,7 +7769,7 @@ $params['results']
 $params['aliases']
 ```
 
- that contains all defined [character aliases](#).
+ which contains all defined [character aliases](/help-center/facets/facet-types/alphabetical-listing/#add-custom-character-aliases).
 
 By using these parameters as checks, you can customize labels of specific characters. For example, add a custom prefix to those that [are aliases](#customize-az-listing-choice-labels-L10-L12), those that [are selected or not](#customize-az-listing-choice-labels-L15-L17), or those [that have results or not](#customize-az-listing-choice-labels-L25-L29).
 
@@ -7769,25 +7781,25 @@ if ( '' === $params['row']['facet_value'] )
  as a check.
 
 ```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Note: A-Z Listing add-on v1.5+ required
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More info// Note: A-Z Listing add-on v1.5+ required.
 add_filter( 'facetwp_facet_display_value', function( $label, $params ) {
 
-  // Skip if the facet type is NOT an A-Z Listing facet
+  // Skip if the facet type is NOT an A-Z Listing facet.
   if ( 'alpha' !== $params['facet']['type'] ) {
     return $label;
   }
 
-  // Add a text prefix if the choice is an alias {
+  // Add a text prefix if the choice is an alias.
   if ( array_key_exists( $label, $params['aliases'] ) ) {
     $label = 'alias: ' . $label;
   }
 
-  // If the character is selected, make it bold
+  // If the character is selected, make it bold.
   if ( $params['selected'] ) {
     $label = '<strong>' . $label . '</strong>';
   }
 
-  // Change the label if it is the "Any" choice
+  // Change the label if it is the "Any" choice.
   if ( '' === $params['row']['facet_value'] ) {
     $label = 'reset all';
   }
@@ -7960,18 +7972,23 @@ Also see [this section on the Multilingual page](/help-center/using-facetwp-with
 ## See also
 
     - [The facetwp_index_row hook](https://facetwp.com/help-center/developers/hooks/indexing-hooks/facetwp_index_row/)
+- [The facetwp_facet_choice_classes hook](https://facetwp.com/?page_id=232886)
+- [The facetwp_facet_choice_attributes hook](https://facetwp.com/?page_id=233219)
+- [The facetwp_facet_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_html/)
+- [The facetwp_shortcode_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/)
+- [The facetwp_facet_render_args hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/)
 - [The fSelect facet type](https://facetwp.com/help-center/facets/facet-types/fselect/)
 - [The Slider facet type](https://facetwp.com/help-center/facets/facet-types/slider/)
 - [The Exclude facet type](https://facetwp.com/help-center/facets/facet-types/exclude/)
 - [Using FacetWP with Advanced Custom Fields](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/)
 - [FacetWP and taxonomies](https://facetwp.com/help-center/developers/facetwp-and-taxonomies/)
 - [Indexing](https://facetwp.com/help-center/indexing/)
-- [The facetwp_facet_render_args hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/)
-- [The facetwp_facet_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_html/)
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 - [Using the facetwp_i18n hook to translate facet labels and strings](https://facetwp.com/help-center/developers/hooks/advanced-hooks/facetwp_i18n/)
+- [The A-Z Listing facet type](https://facetwp.com/help-center/facets/facet-types/alphabetical-listing/)
+- [The Hierarchy facet type](https://facetwp.com/help-center/facets/facet-types/hierarchy/)
 
-                    Last updated: October 16, 2026
+                    Last updated: October 20, 2026
 
 ---
 
@@ -7985,11 +8002,19 @@ This filter lets you modify a facet’s HTML output of a facet’s **content**, 
 
 ### Alternative output hooks to consider
 
-If you want to customize the facet’s **container/placeholder element**, for example to add a custom class or attribute to the container, [use the facetwp_shortcode_html hook](/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/#set-a-custom-facet-class) instead.
+There are a few other hooks that can be used to influence the front-end facet output:
 
-If you want to change the **facet choice labels’ text output or their HTML**, [use the facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/) instead.
+- If you want to customize the facet’s **container/placeholder element**, for example to add a custom class or attribute to the container, [use the facetwp_shortcode_html hook](/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/#set-a-custom-facet-class) instead.
+- If you want to change the **facet choice labels’ text output or their HTML**, [use the facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/).
+- To customize the [bare indexed technical and display values](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/#how-it-works) of the facets’ data source fields, [use the facetwp_index_row hook](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/). Or use this hook together with the [facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/) to further customize the choice output.
+- To add **classes** to the HTML element of facet choices, you can use [the facetwp_facet_choice_classes hook](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_classes) (available in [FacetWP v4.6](/help-center/changelog/#4-6)+).
+- To add **attributes** to the HTML element of facet choices, you can use [the facetwp_facet_choice_attributes hook](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes) (available in [FacetWP v4.6](/help-center/changelog/#4-6)+).
+- To modify the **render data** passed to a facet’s 
+```
+render()
+```
 
-And to customize the [the bare indexed technical and display values](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/#how-it-works) of the facets’ data source fields, [use the facetwp_index_row hook](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/) instead. Or use this hook together with the [facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/) to further customize the choice output.
+ method, you can use [the facetwp_facet_render_args hook](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/).
 
 ## Parameters
 
@@ -8080,12 +8105,15 @@ Also see [this section on the Multilingual page](/help-center/using-facetwp-with
 
     - [The facetwp_shortcode_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/)
 - [The facetwp_facet_display_value hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/)
+- [The facetwp_index_row hook](https://facetwp.com/help-center/developers/hooks/indexing-hooks/facetwp_index_row/)
+- [The facetwp_facet_choice_classes hook](https://facetwp.com/?page_id=232886)
+- [The facetwp_facet_choice_attributes hook](https://facetwp.com/?page_id=233219)
 - [The facetwp_facet_render_args hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/)
 - [The Dropdown facet type](https://facetwp.com/help-center/facets/facet-types/dropdown/)
 - [The Sort facet type](https://facetwp.com/help-center/facets/facet-types/sort/)
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 
-                    Last updated: October 14, 2026
+                    Last updated: October 20, 2026
 
 ---
 
@@ -8238,7 +8266,12 @@ If you are concerned about the implications for SEO or accessibility of using th
 
 ## Overview
 
-This filter lets you modify the data passed to a facet’s render() method. This is useful if you need to [alter the selected values](#modify-selected-facet-values), or [translate facet settings or facet choices](#translate-facet-choices-and-facet-settings).
+This filter lets you modify the data passed to a facet’s 
+```
+render()
+```
+
+ method. This can be useful if you need to [alter the selected values](#modify-selected-facet-values), or [translate facet settings or facet choices](#translate-facet-choices-and-facet-settings).
 
 ## Parameters
 
@@ -8740,11 +8773,14 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 ## See also
 
     - [The facetwp_index_row hook](https://facetwp.com/help-center/developers/hooks/indexing-hooks/facetwp_index_row/)
+- [The facetwp_facet_display_value hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/)
+- [The facetwp_facet_choice_classes hook](https://facetwp.com/?page_id=232886)
+- [The facetwp_facet_choice_attributes hook](https://facetwp.com/?page_id=233219)
+- [The facetwp_facet_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_html/)
+- [The facetwp_shortcode_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/)
 - [How to pre-select facet choices](https://facetwp.com/how-to-pre-select-facet-choices/)
 - [The facetwp_template_use_archive hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_template_use_archive/)
 - [Using the facetwp_i18n hook to translate facet labels and strings](https://facetwp.com/help-center/developers/hooks/advanced-hooks/facetwp_i18n/)
-- [The facetwp_facet_display_value hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/)
-- [The facetwp_facet_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_html/)
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 - [The Proximity facet type](https://facetwp.com/help-center/facets/facet-types/proximity/)
 - [The Pager + Load more facet type](https://facetwp.com/help-center/facets/facet-types/pager/)
@@ -8759,7 +8795,7 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The Hierarchy Select facet type](https://facetwp.com/help-center/facets/facet-types/hierarchy-select/)
 - [The Exclude facet type](https://facetwp.com/help-center/facets/facet-types/exclude/)
 
-                    Last updated: September 4, 2026
+                    Last updated: October 20, 2026
 
 ---
 
@@ -9297,13 +9333,21 @@ This filter lets you modify the **placeholder/container HTML** for any FacetWP s
 
 Don’t try to use this hook to customize a facet’s or listing’s **content HTML**, as it will be overwritten after filtering.
 
-To customize a **facet’s content HTML** (but not its placeholder/container element), you can [use the facetwp_facet_html hook](/help-center/developers/hooks/output-hooks/facetwp_facet_html/).
+- To customize a **facet’s content HTML** (but not its placeholder/container element), you can [use the facetwp_facet_html hook](/help-center/developers/hooks/output-hooks/facetwp_facet_html/).
+- To customize a **Listing Builder listing template’s content HTML** (but not its placeholder/container element), you can use [use the facetwp_render_output hook](/help-center/developers/hooks/output-hooks/facetwp_render_output/), or the [facetwp_template_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_template_html/) to override the template entirely.
 
-To customize a **Listing Builder listing template’s content HTML** (but not its placeholder/container element), you can use [use the facetwp_render_output hook](/help-center/developers/hooks/output-hooks/facetwp_render_output/), or the [facetwp_template_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_template_html/) to override the template entirely.
+There are a few other hooks that can be used to influence the front-end facet output:
 
-If you want to change the  **facet choice labels’ text output or their HTML**, [use the facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/) instead.
+- If you want to change the  **facet choice labels’ text output or their HTML**, [use the facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/).
+- To customize the [bare indexed technical and display values](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/#how-it-works) of the facets’ data source fields, [use the facetwp_index_row hook](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/). Or use this hook together with the [facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/) to further customize the choice output.
+- To add **classes** to the HTML element of facet choices, you can use [the facetwp_facet_choice_classes hook](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_classes) (available in [FacetWP v4.6](/help-center/changelog/#4-6)+).
+- To add **attributes** to the HTML element of facet choices, you can use [the facetwp_facet_choice_attributes hook](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes) (available in [FacetWP v4.6](/help-center/changelog/#4-6)+).
+- To modify the **render data** passed to a facet’s 
+```
+render()
+```
 
-And to customize the [the bare indexed technical and display values](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/#how-it-works) of the facets’ data source fields, [use the facetwp_index_row hook](/help-center/developers/hooks/indexing-hooks/facetwp_index_row/) instead. Or use this hook together with the [facetwp_facet_display_value hook](/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/) to further customize the choice output.
+ method, you can use [the facetwp_facet_render_args hook](/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/).
 
 ## Parameters
 
@@ -9514,13 +9558,17 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 - [The facetwp_render_output hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_render_output/)
 - [The facetwp_template_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_template_html/)
 - [The facetwp_facet_display_value hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/)
+- [The facetwp_index_row hook](https://facetwp.com/help-center/developers/hooks/indexing-hooks/facetwp_index_row/)
+- [The facetwp_facet_choice_classes hook](https://facetwp.com/?page_id=232886)
+- [The facetwp_facet_choice_attributes hook](https://facetwp.com/?page_id=233219)
+- [The facetwp_facet_render_args hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_render_args/)
 - [Accessibility support](https://facetwp.com/help-center/add-on-features-and-extras/accessibility-support/)
 - [Using the Listing Builder](https://facetwp.com/help-center/listing-templates/listing-builder/)
 - [The Conditional Logic add-on](https://facetwp.com/help-center/add-on-features-and-extras/conditional-logic/)
 - [The facetwp_query_args hook](https://facetwp.com/help-center/developers/hooks/querying-hooks/facetwp_query_args/)
 - [The Pager + Load more facet type](https://facetwp.com/help-center/facets/facet-types/pager/)
 
-                    Last updated: October 14, 2026
+                    Last updated: October 20, 2026
 
 ---
 

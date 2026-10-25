@@ -23,8 +23,8 @@ FacetWP supports the following listing template types:
 - [Elementor](https://facetwp.com/help-center/using-facetwp-with/elementor/) (with add-on)
 - [Beaver Builder](https://facetwp.com/help-center/using-facetwp-with/beaver-builder/) (with add-on)
 - [Breakdance](https://facetwp.com/help-center/using-facetwp-with/breakdance/)
-- [Using FacetWP’s Listing Builder](https://facetwp.com/help-center/listing-templates/listing-builder/)
-- [Using FacetWP’s Listing Builder in Dev Mode](https://facetwp.com/help-center/listing-templates/listing-builder/using-the-listing-builder-in-dev-mode/)
+- [Using FacetWP’s Listing Builder](https://facetwp.com/help-center/listing-templates/listing-builder/) (which works on any site with any theme or page builder)
+- [Using FacetWP’s Listing Builder in Dev Mode](https://facetwp.com/help-center/listing-templates/listing-builder/using-the-listing-builder-in-dev-mode/) (with which you can use your own custom query and loop code)
 
 ## Using multiple listing templates
 
@@ -55,7 +55,7 @@ The next thing to try is to enable “Advanced query detection” in the setting
 - [Troubleshooting guide](https://facetwp.com/help-center/troubleshooting/)
 - [Using FacetWP with Advanced Custom Fields](https://facetwp.com/help-center/using-facetwp-with/advanced-custom-fields/)
 
-                    Last updated: October 21, 2025
+                    Last updated: October 23, 2026
 
 ---
 

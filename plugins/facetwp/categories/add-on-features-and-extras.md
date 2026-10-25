@@ -26,12 +26,81 @@
 
 **Source:** [https://facetwp.com/help-center/add-on-features-and-extras/accessibility-support/](https://facetwp.com/help-center/add-on-features-and-extras/accessibility-support/)
 
-FacetWP includes built-in accessibility ([a11y](https://www.a11yproject.com)) support, but it’s disabled by default.
+FacetWP includes basic built-in accessibility ([a11y](https://www.a11yproject.com)) support, but it’s disabled by default.
 
 ## Enable accessibility support
 
 ![Enable the Load a11y support setting.](https://facetwp.com/wp-content/uploads/2024/04/loada11ysupport.png)Enable the Load a11y support setting in Settings > FacetWP > Settings.
 To enable accessibility support, browse to Settings > FacetWP > Settings, and enable the “Load a11y support” setting.
+
+## Enable accessibility support programmatically
+
+To enable FacetWP’s built-in accessibility support programmatically, add the following to your (child) theme’s functions.php:
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_load_a11y', '__return_true' );
+```
+
+Note that this does not override [the setting](#enable-accessibility-support). If either the setting is enabled, or the above hook returns 
+```
+true
+```
+
+, accessibility support will be enabled.
+
+## Set or customize accessibility-related attributes for facet choices
+
+Not all [facet types](/help-center/facets/facet-types/) are currently handled by FacetWP’s 
+```
+accessibility.js
+```
+
+ script (which runs if you have [the “Load a11y support” setting](#enable-accessibility-support) enabled).
+
+For facet types that currently do not have any accessibility attributes added, or to change/overwrite the ones added by the script, you can [use the facetwp_facet_choice_attributes hook](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes/#setting-accessibility-related-attributes), which is which is available in [FacetWP v4.6](/help-center/changelog/#4-6)+.
+
+For example, the following snippet adds 
+```
+aria-label
+```
+
+, 
+```
+role
+```
+
+, and 
+```
+tabindex
+```
+
+ attributes to [Color facet](/help-center/facets/facet-types/color/) choices. It also dynamically sets 
+```
+aria-checked="true"
+```
+
+ [if the choice is selected](#add-accessibility-attributes-L6-L8):
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_facet_choice_attributes', function( $atts, $params ) {
+  if ( 'color' == $params['facet']['type'] ) {
+    $atts['aria-label'] = 'Filter by the color ' . $params['row']['facet_display_value'];
+    $atts['role'] = 'button';
+    $atts['tabindex'] = 0;
+    if ( $params['selected'] ) {
+      $atts['aria-checked'] = 'true';
+    }
+  }
+  return $atts;
+}, 10, 2 );
+```
+
+See [this section](/help-center/developers/hooks/output-hooks/facetwp_facet_choice_attributes/#setting-accessibility-related-attributes) on the 
+```
+facetwp_facet_choice_attributes
+```
+
+ hook page for more info and examples.
 
 ## Translate the Pager facet’s aria labels
 
@@ -53,21 +122,6 @@ gettext_{$domain}
 ```
 
  [WordPress filter](https://developer.wordpress.org/reference/hooks/gettext_domain/), as demonstrated in [this code example](/help-center/facets/facet-types/pager/#translate-the-aria-labels).
-
-## Enable accessibility support programmatically
-
-To enable FacetWP’s built-in accessibility support programmatically, add the following to your (child) theme’s functions.php:
-
-```
-How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_filter( 'facetwp_load_a11y', '__return_true' );
-```
-
-Note that this does not override [the setting](#enable-accessibility-support). If either the setting is enabled, or the above hook returns 
-```
-true
-```
-
-, accessibility support will be enabled.
 
 ## Add an “aria-live” attribute to a listing
 
@@ -153,10 +207,13 @@ How to use custom JavaScript code?JavaScript code can be placed in your (child) 
 <?php } );
 ```
 
+	[Private: facetwp_facet_choice_attributes](https://facetwp.com/?page_id=233219)
     
 ## See also
 
     - [The Pager + Load more facet type](https://facetwp.com/help-center/facets/facet-types/pager/)
+- [Facet types](https://facetwp.com/help-center/facets/facet-types/)
+- [The facetwp_facet_choice_attributes hook](https://facetwp.com/?page_id=233219)
 - [The facetwp_assets hook](https://facetwp.com/help-center/developers/hooks/advanced-hooks/facetwp_assets/)
 - [Using the Listing Builder](https://facetwp.com/help-center/listing-templates/listing-builder/)
 - [Using a WP archive page](https://facetwp.com/help-center/listing-templates/wp-archive-page/)
@@ -164,7 +221,7 @@ How to use custom JavaScript code?JavaScript code can be placed in your (child) 
 - [The facetwp_shortcode_html hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_shortcode_html/)
 - [The facetwp-loaded event](https://facetwp.com/help-center/developers/javascript-reference/facetwp-loaded/)
 
-                    Last updated: July 17, 2026
+                    Last updated: October 20, 2026
 
 ---
 

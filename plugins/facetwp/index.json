@@ -2,9 +2,9 @@
   "plugin_slug": "facetwp",
   "plugin_name": "FacetWP",
   "documentation_url": "https://facetwp.com/help-center/",
-  "last_scraped": "2026-10-18T04:44:52.363Z",
+  "last_scraped": "2026-10-25T04:45:48.496Z",
   "total_pages": 295,
-  "failed_urls_count": 0,
+  "failed_urls_count": 2,
   "sections": [
     {
       "title": "Add On Features And Extras",
