@@ -12,7 +12,7 @@ When working with WordPress, ensuring that your server’s settings meet the min
 
 Recommended Server Settings
 
-Here you’ll find a chart detailing the recommended **minimum** resource values. When troubleshooting Kadence, it’s crucial to confirm that your server meets or exceeds these minimum requirements. For larger websites such as e-commerce sites, you may need to adjust these values beyond these recommendations to accommodate increased demands.
+Here you’ll find a chart detailing the recommended **minimum** resource values. When troubleshooting our plugins and themes, it’s crucial to confirm that your server meets or exceeds these minimum requirements. For larger websites such as e-commerce sites, you may need to adjust these values beyond these recommendations to accommodate increased demands.
 
 You should ensure you are using the recommended server resources for WordPress.  These values can often times be modified by editing your 
 ```
