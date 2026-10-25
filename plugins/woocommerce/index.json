@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-10-18T18:54:01.566Z",
-  "total_pages": 3711,
+  "last_scraped": "2026-10-25T18:52:22.968Z",
+  "total_pages": 3746,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,124 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3711,
+      "page_count": 3746,
       "pages": [
+        {
+          "title": "Recurring Reports",
+          "url": "https://woocommerce.com/document/recurring-reports/"
+        },
+        {
+          "title": "AgenticFuel",
+          "url": "https://woocommerce.com/document/agenticfuel/"
+        },
+        {
+          "title": "Smart PDF Watermarking",
+          "url": "https://woocommerce.com/document/smart-pdf-watermarking/"
+        },
+        {
+          "title": "EU Withdrawal Button – Return and Cancel Contract",
+          "url": "https://woocommerce.com/document/teamwantreturn/"
+        },
+        {
+          "title": "Translate WooCommerce AI PHP strings",
+          "url": "https://woocommerce.com/document/woocommerce-ai/php-translations/"
+        },
+        {
+          "title": "Extend WooCommerce AI with a custom module",
+          "url": "https://woocommerce.com/document/woocommerce-ai/custom-module/"
+        },
+        {
+          "title": "Integrate with the WooCommerce AI UCP REST API",
+          "url": "https://woocommerce.com/document/woocommerce-ai/ucp-rest-api/"
+        },
+        {
+          "title": "Connect an AI client to the WooCommerce AI MCP server",
+          "url": "https://woocommerce.com/document/woocommerce-ai/mcp-server/"
+        },
+        {
+          "title": "Enable agentic commerce in WooCommerce AI",
+          "url": "https://woocommerce.com/document/woocommerce-ai/agentic-commerce/"
+        },
+        {
+          "title": "Explore WooCommerce AI Intelligence",
+          "url": "https://woocommerce.com/document/woocommerce-ai/intelligence/"
+        },
+        {
+          "title": "Configure WooCommerce AI",
+          "url": "https://woocommerce.com/document/woocommerce-ai/configure/"
+        },
+        {
+          "title": "Review and undo WooCommerce AI changes",
+          "url": "https://woocommerce.com/document/woocommerce-ai/review-and-undo/"
+        },
+        {
+          "title": "Use the WooCommerce AI Assistant chat",
+          "url": "https://woocommerce.com/document/woocommerce-ai/assistant-chat/"
+        },
+        {
+          "title": "Install and connect WooCommerce AI",
+          "url": "https://woocommerce.com/document/woocommerce-ai/install-and-connect/"
+        },
+        {
+          "title": "WooCommerce AI",
+          "url": "https://woocommerce.com/document/woocommerce-ai/"
+        },
+        {
+          "title": "Update Composite Products template overrides",
+          "url": "https://woocommerce.com/document/composite-products-update-template-overrides/"
+        },
+        {
+          "title": "Customize printed Box Office tickets",
+          "url": "https://woocommerce.com/document/box-office-printed-ticket-template/"
+        },
+        {
+          "title": "Add a clickable ticket link to Box Office emails",
+          "url": "https://woocommerce.com/document/box-office-ticket-email-link/"
+        },
+        {
+          "title": "Preview Snapchat settings with sandbox mode",
+          "url": "https://woocommerce.com/document/snapchat-sandbox-mode/"
+        },
+        {
+          "title": "Registry and Cart Toolkit",
+          "url": "https://woocommerce.com/document/registry-and-cart-toolkit/"
+        },
+        {
+          "title": "Troubleshoot Square Apple Pay domain verification errors",
+          "url": "https://woocommerce.com/document/woocommerce-square/square-apple-pay-domain-verification-errors/"
+        },
+        {
+          "title": "Local Delivery Drivers and Route Manager",
+          "url": "https://woocommerce.com/document/local-delivery-drivers-and-route-manager/"
+        },
+        {
+          "title": "InventoryFlow Erp",
+          "url": "https://woocommerce.com/document/inventoryflow-erp/"
+        },
+        {
+          "title": "TH Smart Product Search",
+          "url": "https://woocommerce.com/document/th-smart-product-search/"
+        },
+        {
+          "title": "Group Buying Power",
+          "url": "https://woocommerce.com/document/group-buying-power/"
+        },
+        {
+          "title": "How to migrate from Wix",
+          "url": "https://woocommerce.com/document/how-to-migrate-from-wix-to-woocommerce/"
+        },
+        {
+          "title": "How to migrate from Shopify",
+          "url": "https://woocommerce.com/document/how-to-migrate-from-shopify/"
+        },
+        {
+          "title": "Complete Renewal Orders",
+          "url": "https://woocommerce.com/document/complete-renewal-orders/"
+        },
+        {
+          "title": "Restaurant Menu",
+          "url": "https://woocommerce.com/document/restaurant-menu/"
+        },
         {
           "title": "Dynamic Pricing compatibility",
           "url": "https://woocommerce.com/document/woocommerce-dynamic-pricing/compatibility/"
@@ -232,10 +348,6 @@
         {
           "title": "Keep tax-inclusive product prices across customer locations",
           "url": "https://woocommerce.com/document/keep-tax-inclusive-prices-across-locations/"
-        },
-        {
-          "title": "AI Product Bundles",
-          "url": "https://woocommerce.com/document/ai-product-bundle/"
         },
         {
           "title": "Wix Data Migrator",
@@ -1826,10 +1938,6 @@
           "url": "https://woocommerce.com/document/capsule/"
         },
         {
-          "title": "Restaurant Menu",
-          "url": "https://woocommerce.com/document/restaurant-menu/"
-        },
-        {
           "title": "WooCommerce.com Orders and Invoices API",
           "url": "https://woocommerce.com/document/customer-orders-api/"
         },
@@ -1904,10 +2012,6 @@
         {
           "title": "Email List Cleaner",
           "url": "https://woocommerce.com/document/email-list-cleaner/"
-        },
-        {
-          "title": "How to migrate from Wix",
-          "url": "https://woocommerce.com/document/how-to-migrate-from-wix-to-woocommerce/"
         },
         {
           "title": "FMA Multistore Manager",
@@ -3326,7 +3430,7 @@
           "url": "https://woocommerce.com/document/smart-coupons/how-to-restrict-a-coupon-by-number-of-orders-made/"
         },
         {
-          "title": "Advisory: US de minimis is ending — what to know (and do)",
+          "title": "Shipping to the US after the de minimis suspension",
           "url": "https://woocommerce.com/document/end-of-us-de-minimis-what-to-do/"
         },
         {
@@ -4120,10 +4224,6 @@
         {
           "title": "Country Based Cart Surcharge",
           "url": "https://woocommerce.com/document/country-based-cart-surcharge/"
-        },
-        {
-          "title": "How to migrate from Shopify",
-          "url": "https://woocommerce.com/document/how-to-migrate-from-shopify/"
         },
         {
           "title": "Furnique",
@@ -6572,6 +6672,46 @@
         {
           "title": "Products Settings",
           "url": "https://woocommerce.com/document/configuring-woocommerce-settings/products/"
+        },
+        {
+          "title": "Email Settings",
+          "url": "https://woocommerce.com/document/configuring-woocommerce-settings/emails/"
+        },
+        {
+          "title": "Advanced Settings",
+          "url": "https://woocommerce.com/document/configuring-woocommerce-settings/advanced/"
+        },
+        {
+          "title": "Advanced Order Notes for WooCommerce",
+          "url": "https://woocommerce.com/document/advanced-order-notes-for-woocommerce/"
+        },
+        {
+          "title": "Consent Mode Banner PRO",
+          "url": "https://woocommerce.com/document/gtm-consent-mode-banner-woo/"
+        },
+        {
+          "title": "AnySell",
+          "url": "https://woocommerce.com/document/anysell/"
+        },
+        {
+          "title": "Sportiq",
+          "url": "https://woocommerce.com/document/sportiq/"
+        },
+        {
+          "title": "Related Products, Add-to-Cart, and Notification Shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes/"
+        },
+        {
+          "title": "Troubleshooting shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/troubleshooting-shortcodes/"
+        },
+        {
+          "title": "Product Category Shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/product-category/"
+        },
+        {
+          "title": "Product shortcodes",
+          "url": "https://woocommerce.com/document/woocommerce-shortcodes/products/"
         },
         {
           "title": "Page Shortcodes",
@@ -9978,7 +10118,7 @@
           "url": "https://woocommerce.com/document/wholesale-prices-tiered-pricing/"
         },
         {
-          "title": "Price Display Including/Excluding Tax",
+          "title": "Price Display with and Without Tax for WooCommerce",
           "url": "https://woocommerce.com/document/price-display-including-excluding-tax/"
         },
         {
@@ -12554,24 +12694,24 @@
           "url": "https://woocommerce.com/document/mailchimp-for-woocommerce-memberships/"
         },
         {
-          "title": "Add to Cart Redirect",
-          "url": "https://woocommerce.com/document/add-to-cart-redirect/"
+          "title": "[woocommerce_product_filter_category]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_category/"
         },
         {
-          "title": "WooCommerce site and data security FAQ",
-          "url": "https://woocommerce.com/document/woocommerce-security-faq/"
+          "title": "[woocommerce_product_filter_attribute]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_attribute/"
         },
         {
-          "title": "Mix and Match Version 1.3.0 – What’s New",
-          "url": "https://woocommerce.com/document/woocommerce-mix-and-match-products/version-1-3/"
+          "title": "[woocommerce_product_filter_price]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_price/"
         },
         {
-          "title": "Filters",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/api/filters/"
+          "title": "[woocommerce_product_filter]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter/"
         },
         {
-          "title": "Actions",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/api/actions/"
+          "title": "[woocommerce_product_search]",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_search/"
         },
         {
           "title": "Product Filter – Attributes",
