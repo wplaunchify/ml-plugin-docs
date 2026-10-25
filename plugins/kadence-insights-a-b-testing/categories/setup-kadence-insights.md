@@ -8,27 +8,15 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-insights/setup-kadence-insights/](https://www.kadencewp.com/help-center/docs/kadence-insights/setup-kadence-insights/)
 
-**Kadence** **Insights** enables you to use **A/B Testing** to compare different areas of your website’s performance. With Kadence Insights, you can create multiple**A/B Testing Variants**and place them on your site using the Block Editor. Different browser sessions will see different Variant Designs. 
+**Kadence Insights** enables you to use A/B testing directly inside the WordPress Block Editor to test and optimize different elements of your website. With Kadence Insights, you can create multiple variant designs and present them across unique visitor browser sessions.
 
-The Kadence Insights plugin introduces a **Custom Post Type** called **A/B Testing**, which can be added to the **BlockEditor** using the dedicated **A/B Testing Block**. A/B Testing Elements can be integrated into **Posts, Pages, Conversions, Elements**, and anywhere the Block Editor is supported. Utilize **Kadence Analytics** or **Google Analytics** to generate precise, data-driven comparisons of your A/B test performances.
+The plugin introduces a dedicated **A/B Testing** custom post type and block, which can be placed on pages, posts, Kadence Elements templates, Kadence Conversions popups, or anywhere the Gutenberg Block Editor is supported. Data can be tracked locally or routed to Google Analytics to deliver clear, data-driven performance comparisons.
 
-The Kadence **InsightsPlugin** can be bought as a standalone product or in the Full Plan by [clicking here](https://www.kadencewp.com/kadence-insights#pricing). This document goes over the available Settings and Features of Kadence Insights. To learn how to properly set up your first A/B Test, please [refer to this document](https://docs.nexcess.com/software/kadence/create-your-first-ab-test/).
+## Licensing Kadence Insights
 
-Getting Started
+**Nexcess Software** manages your licensing through the **Nexcess Portal**. For full instructions on downloading, installing, and licensing your product, see the official [How to Activate Your License](https://docs.nexcess.com/software/accounts-licensing/how-to-activate-a-unified-license-and-add-a-product/) document.
 
-To get started, go to your **Kadence Account Dashboard** and download the Kadence Insights Plugin.
-
-![Downloads and licenses](https://docs.nexcess.com/wp-content/uploads/2026/06/Downloads-and-licenses-1024x601-1.jpg)
-
-Navigate to your WordPress Dashboard and go to the **Plugins -> Add New Plugins** page. Then, click on the **Upload** **Button** at the top of the page and upload your **Kadence Insights ZIP** file. Then, install the plugin and activate it.
-
-![Upload Kadence Blocks Pro](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Kadence-Blocks-Pro-scaled-1.jpg)
-
-You will get a prompt in the WordPress Dashboard to **Activate** the **Kadence** **Insights** **Plugin**. Navigate to your **Kadence Downloads** page and copy your **License** **API** **Key**.
-
-Then, click on the **Activate** **Now** link in the **Kadence** **Insights** **Dashboard** **Prompt**. Add the **API** **Key** to the Licensing Box and press the **Save** **Changes** button.
-
-A/B Block Settings
+## Creating an A/B Test
 
 Once **Kadence** **Insights** is activated on the website, navigate to the **Dashboard -> Insights -> A/B Tests** page to begin creating your first A/B Test.
 
@@ -37,6 +25,8 @@ Once **Kadence** **Insights** is activated on the website, navigate to the **Das
 You can also create a new A/B Test directly inside the **Block** **Editor**. You can do so by selecting a Block and using the **Block** **Toolbar** to open more options. Then, select the **Create A/B Test** button to create a new A/B Test from within the Block Editor. *(Outside of the standard A/B Tests page)*
 
 ![Creating AB Tests in the Editor](https://docs.nexcess.com/wp-content/uploads/2026/06/Creating-AB-Tests-in-the-Editor.gif)
+
+## A/B Block Settings
 
 When creating a new A/B Test Post, you will be presented with a standard A/B Testing Block. Use the A/B Testing Block Settings to add Variants, customize the Goal Metric(s), and add custom CSS Classes to your A/B Testing Block. Using the Block Outline, select the A/B Testing Block to access the Block Settings.
 
@@ -54,7 +44,7 @@ Access different Variations for your A/B Testing Block by using the Block Toolba
 
 ![AB Campaign Set up](https://docs.nexcess.com/wp-content/uploads/2026/06/AB-Campaign-Set-up.gif)
 
-Goal Metrics
+## Goal Metrics
 
 Goal Metrics allow you to measure the success of one variant compared to another.  For example, you can measure how many people clicked a button or submitted a form on Variant A versus Variant B.  Or which variant converted into higher sales.  Simply give your Metric a Goal Label, select the Goal Type and configure the specifics for each type.
 
@@ -78,7 +68,7 @@ Goal Metrics allow you to measure the success of one variant compared to another
 
 ![SureCart Sales](https://docs.nexcess.com/wp-content/uploads/2026/06/SureCart-Sales.jpg)
 
-Insight Settings
+## Insight Settings
 
 Access the **Kadence Insights Settings** to enable **Analytics**. You also have the option to enable **Google Analytics**. This doesn’t add Google Analytics to your website directly. You must already have Google Analytics set up and the script added to your website. Whenever conversions occur, Kadence will send events to Google Analytics for precise tracking. [Click here to learn more about using Google Analytics](https://support.google.com/analytics/answer/10269537).
 
