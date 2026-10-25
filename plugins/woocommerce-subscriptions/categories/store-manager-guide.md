@@ -258,7 +258,7 @@ Customize the text that appears on your product and checkout pages for subscript
 
 Because a subscription is an ongoing agreement between you and the customer, every subscriber **must** have an account on your store — regardless of your [general WooCommerce account settings](https://woocommerce.com/document/configuring-woocommerce-settings/accounts-and-privacy/#guest-checkout-and-accounts). These settings control which user role a customer holds depending on whether they currently have an active subscription.
 
-**Subscriber default role** – The role assigned to a customer while they have one or more active subscriptions. By default, this is WordPresss’ built-in **Subscriber** role.
+**Subscriber default role** – The role assigned to a customer while they have one or more active subscriptions. By default, this is WordPress’s built-in **Subscriber** role.
 
 **Inactive subscriber role** – The role assigned to a customer once they have no active subscriptions — for example when their subscription expires, is cancelled, or is suspended (by you, the payment gateway, or the customer). By default this is WooCommerce’s built-in **Customer** role.
 
