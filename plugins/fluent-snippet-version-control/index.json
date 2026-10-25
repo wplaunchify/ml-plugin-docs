@@ -2,8 +2,8 @@
   "plugin_slug": "fluent-snippet-version-control",
   "plugin_name": "Fluent Snippet Version Control",
   "documentation_url": "https://fluentsnippets.com/docs/",
-  "last_scraped": "2026-10-18T02:49:17.651Z",
-  "total_pages": 20,
+  "last_scraped": "2026-10-25T02:52:14.436Z",
+  "total_pages": 21,
   "failed_urls_count": 1,
   "sections": [
     {
@@ -198,6 +198,19 @@
         {
           "title": "Permissions and security",
           "url": "https://fluentsnippets.com/docs/permissions"
+        }
+      ]
+    },
+    {
+      "title": "Rest Api",
+      "slug": "rest-api",
+      "url": "https://fluentsnippets.com/docs/rest-api/",
+      "file": "categories/rest-api.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "REST API",
+          "url": "https://fluentsnippets.com/docs/rest-api"
         }
       ]
     },

@@ -74,6 +74,51 @@ Turns every snippet off. See [Safe Mode](/docs/safe-mode).
 define( 'FLUENT_SNIPPETS_SAFE_MODE', true );
 ```
 
+### FLUENT_SNIPPETS_REST_AUTHORING
+
+Turns adding and editing snippets through the [REST API](/docs/rest-api) on (
+```
+true
+```
+
+) or off
+(
+```
+false
+```
+
+), overriding the setting on the Settings screen. Only 
+```
+true
+```
+
+, 
+```
+1
+```
+
+, 
+```
+'yes'
+```
+
+, 
+```
+'on'
+```
+
+ and
+
+```
+'true'
+```
+
+ mean on; any other value means off.
+
+```
+define( 'FLUENT_SNIPPETS_REST_AUTHORING', false );
+```
+
 ### Constants the plugin defines
 
 Read-only, but useful to check for:
@@ -213,6 +258,32 @@ Fires after a snippet file is deleted. Receives the filename.
 ### fluent_snippets/snippet_status_updated
 
 Fires when a snippet is published or unpublished.
+
+### fluent_snippets/rest_snippet_written
+
+Fires after a snippet is added or edited through the REST API. Receives the filename, 
+```
+create
+```
+
+ or
+
+```
+update
+```
+
+, and an array with the 
+```
+user_id
+```
+
+ and 
+```
+app_password_uuid
+```
+
+ of whoever made the change. See
+[Logging remote changes](/docs/rest-api#logging-remote-changes).
 
 ### fluent_snippets/rebuild_index
 
