@@ -8,35 +8,15 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/simple-share/](https://www.kadencewp.com/help-center/docs/kadence-general/simple-share/)
 
-Kadence Simple Share is a Premium Kadence Plugin that gives you a simple and clean way to add Social Sharing Icons to posts, pages, and products. It is intentionally simple, so there are no share counts or extra APIs to load. Just simple buttons for easy sharing to popular Social Platforms.
-
-The **Kadence** **Simple** **Share** **Plugin** is only available with the **Kadence** **Ultimate** or **Lifetime** **Ultimate** **Plan**. You can purchase either the *Ultimate* or the *Lifetime Ultimate Plan* by [clicking here](https://www.kadencewp.com/pricing/).
+**Kadence Simple Share** provides a lightweight, clean way to add social sharing icons to your WordPress posts, pages, and products. It is intentionally streamlined with no heavy third-party share counts or external tracking APIs to slow down your page load speed just fast, accessible buttons for sharing content across popular social platforms.
 
 ![Kadence Simple Share Preview](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Simple-Share-Preview-1024x936-1.jpg)
 
-Getting/Activating Kadence Simple Share
+## Licensing Kadence Simple Share
 
-Once you have access to the Kadence Ultimate Plan or Lifetime Ultimate Plan, you can download Kadence Simple Share from your Kadence [Downloads & License](https://www.kadencewp.com/my-account/downloads/) page.
+**Nexcess Software** manages your licensing through the **Nexcess Portal**. For full instructions on downloading, installing, and licensing your product, see the official [How to Activate Your License](https://docs.nexcess.com/software/accounts-licensing/how-to-activate-a-unified-license-and-add-a-product/) document.
 
-![Downloads and licenses](https://docs.nexcess.com/wp-content/uploads/2026/06/Downloads-and-licenses-1024x601-1.jpg)
-
-You will see the Kadence Simple share plugin in your Product List. You can download the Zip File. Be sure to leave the file compressed and don’t unzip it.
-
-![Download Simple Share](https://docs.nexcess.com/wp-content/uploads/2026/06/Download-Simple-Share.jpg)
-
-You can upload your Zip file by going to your WordPress Dashboard -> Plugins -> Add New Plugin. Then you can click on the Upload Plugin button at the top of the page. This will allow you to choose a file. Pick the Kadence Simple Share Zip File downloaded from your Kadence Account.
-
-![Upload Plugin](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Plugin.jpg)
-
-Once you have uploaded your plugin and activated it, you are all set to get started using Kadence Simple Share.
-
-Simple Share Settings
-
-You can access your Kadence Simple Share settings by going to your Dashboard -> Appearance -> Kadence -> Simple Share. Here, you can set how you would like Simple Share to work on your website.
-
-![Kadence Simple Share](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Simple-Share.jpg)
-
-**Sharing Options**
+## Sharing Options
 
 You can enable different **Sharing** **Sites**. You can pick from: Facebook, Twitter, LinkedIn, Digg, Tumblr, VK, StumbleUpon, Email, Pinterest, Reddit, XING, or WhatsApp. Just drag a website button from the **Disabled** **Column** over to the **Enabled** **Column** to enable it in the *Social Share Icon List*.
 
@@ -74,7 +54,7 @@ You can also set the **Load Share Link In** settings. This can be set as a Small
 
 ![Simple Share Settings 3](https://docs.nexcess.com/wp-content/uploads/2026/06/Simple-Share-Settings-3-1024x705-1.jpg)
 
-Kadence Simple Share Shortcode
+## Kadence Simple Share Shortcode
 
 If you have a **Custom** **Post** **Type** or want to share your icons somewhere other than what is available, you can use the 
 ```

@@ -10,26 +10,9 @@
 
 The Kadence Galleries plugin enables you to create dynamic image galleries and photo albums effortlessly in WordPress. You can display captions, titles, and categories alongside each image, set up interactive category filters, and choose from multiple layout styles.
 
-Before you begin
-
-		**Kadence Galleries** is a premium WordPress plugin included with all Essentials, Pro, and Elite plans. While it works smoothly alongside any WordPress theme, it is built to pair seamlessly with the core Kadence Theme and Kadence Blocks.
-
-- Ensure your website is running WordPress 6.0 or higher.
-- To receive automatic updates and access all pro gallery styles, the plugin must be licensed.
-
 ## Licensing Kadence Galleries
 
-**Liquid Web Software**manages your licensing through the **Liquid Web Portal**. For full instructions on downloading, installing, and licensing your product, see the official **How to Activate a Unified License** document.
-
-Legacy Licensing Notice
-
-*The information below applies to users who purchased a Kadence plan before May 2026.*
-
-If you are on an older, grandfathered plan (prior to the May 2026 unified licensing release), you can activate your license key directly inside your WordPress dashboard:
-
-- Navigate to **Dashboard → K Galleries → Settings →** **License**.
-- Enter your legacy **License Key** and associated license email.
-- Click **Save Changes** to validate your license and enable automatic updates.
+**Nexcess Software** manages your licensing through the [Nexcess Portal](https://software.nexcess.com/). For full instructions on downloading, installing, and licensing your product, see the official [How to Activate Your License](https://docs.nexcess.com/software/accounts-licensing/how-to-activate-a-unified-license-and-add-a-product/) document.
 
 ## Creating a Gallery Album
 

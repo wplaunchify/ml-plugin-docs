@@ -21,17 +21,7 @@ Learn about getting started with [Cloudflare Turnstile Here](https://developers.
 
 ## Licensing Kadence CAPTCHA
 
-**Liquid Web Software**manages your licensing through the **Liquid Web Portal**. For full instructions on downloading, installing, and licensing your product, see the official **How to Activate a Unified License** document.
-
-Legacy Licensing Notice
-
-*The information below applies to users who purchased a Kadence plan before May 2026.*
-
-*If you are on a legacy, grandfathered plan (prior to the May 2026 unified licensing release),* you can activate your license key directly within your WordPress dashboard:
-
-- Navigate to Dashboard → Settings → CAPTCHA Settings
-- Locate the license input area, then enter your legacy License Key.
-- Click Save Changes to activate your copy and enable automatic updates.
+**Nexcess Software** manages your licensing through the [Nexcess Portal](https://software.nexcess.com/). For full instructions on downloading, installing, and licensing your product, see the official [How to Activate Your License](https://docs.nexcess.com/software/accounts-licensing/how-to-activate-a-unified-license-and-add-a-product/) document.
 
 ## Setting up Google reCaptcha
 

@@ -8,57 +8,68 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/reading-time/](https://www.kadencewp.com/help-center/docs/kadence-general/reading-time/)
 
-The Kadence Reading Time plugin is a useful tool for WordPress users who want to display an estimated reading time for their posts. This feature can encourage visitors to read through your content. The plugin automatically calculates the estimated reading time based on your global words-per-minute setting, so you do not have to manually set the reading time for each post. Shorter posts will have a quicker read time than longer ones automatically.
+The Kadence Reading Time plugin provides an automated way to display an estimated reading time on your WordPress posts. Showing an estimated reading duration sets clear reader expectations and encourages visitors to engage with your content.
+
+The plugin automatically calculates reading duration based on your configured words-per-minute rate, eliminating the need to calculate or enter read times manually.
 
 ![Kadence Reading Time Sample](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Reading-Time-Sample-1024x611-1.jpg)
 
-Getting/Activating Kadence Reading Time
+## Licensing Reading Time
 
-The Kadence Reading Time Plugin is only available with the Kadence Full or Lifetime Full Plan. You can purchase either the Full or the Lifetime Full Plan by [Clicking Here](https://www.kadencewp.com/pricing/).
+**Nexcess Software** manages your licensing through the **Nexcess Portal**. For full instructions on downloading, installing, and licensing your product, see the official [How to Activate Your License](https://docs.nexcess.com/software/accounts-licensing/how-to-activate-a-unified-license-and-add-a-product/) document.
 
-Once you have access to the Kadence Full Plan or Lifetime Plan, you can download Kadence Reading Time from your Kadence [Downloads & License](https://www.kadencewp.com/my-account/downloads/) page.
-
-![Downloads and licenses](https://docs.nexcess.com/wp-content/uploads/2026/06/Downloads-and-licenses-1024x601-1.jpg)
-
-You will see the Kadence Reading Time plugin in your Product List. You can download the Zip File. Be sure to leave the file compressed and don’t unzip it.
-
-![Kadence Reading Time Download](https://docs.nexcess.com/wp-content/uploads/2026/06/My-Account-Kadence-WP-2024-03-19-at-6.26.39-PM.jpg)
-
-You can upload your Zip file by going to your WordPress Dashboard -> Plugins -> Add New Plugin. Then you can click on the Upload Plugin button at the top of the page. This will allow you to choose a file. Pick the Kadence Reading Time Zip File downloaded from your Kadence Account.
-
-![Upload Plugin](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Plugin.jpg)
-
-Once you have uploaded your plugin and activated it, you are all set to get started using Kadence Reading Time.
-
-Kadence Reading Time Settings
+## Configuring Kadence Reading Time Settings
 
 You can access your Kadence Reading Time Settings by going to your Dashboard -> Appearance -> Kadence -> Reading Time
 
 ![Kadence Reading Time](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Reading-Time.jpg)
 
-You can adjust the Reading Time Settings to customize your Kadence Reading Time plugin.
+Here you can customize how read time is calculated and displayed:
 
-You can insert the reading time before the content on single posts.
+- **Insert Before Content:** Automatically displays the reading time at the beginning of single blog post content.
+- **Insert on Excerpts:** Automatically includes the estimated reading time with excerpts on blog archive and category pages.
+- **Words Per Minute (WPM):** Define the reading speed used for the calculation. The default is set to 
+```
+250
+```
 
-You can also insert the reading time for excerpts on archive pages.
+ words per minute.
+- **Label:** Customize the prefix text. The default is 
+```
+Reading Time:
+```
 
-You can Choose the Word Per Minute to Calculate the Read Time. The default for this setting is 250. Which means the default read time is calculated at 250 words per minute. You can change this as you see fit.
+.
+- **Postfix (Plural):** Set the label following the calculated number when greater than 1. The default is  
+```
+Minutes
+```
 
-You can adjust the Label. The default label is Reading Time.
+.
+- **Postfix (Singular):** Set the label used when the read time calculation is exactly 1 minute. The default is  
+```
+Minute
+```
 
-You can also adjust the Postfix, which by default, is Minutes.
+.
+- **Insert in Post Meta:** Automatically inserts the reading time into the native Kadence Theme entry meta header alongside the author, publish date, and categories.
 
-You have the option to set a Postfix for singular. This is for whenever the read time would be only 1 minute long, which is singular. By default this is set to Minute.
-
-Finally, you have the option to Insert the Reading Time in the Post Meta. This inserts your Reading Time into your Post Meta for each post. 
-
-You can press the Save Changes button to save any changes made.
+Click **Save Changes** to store your configuration.
 
 ![Kadence Reading Time Plugin Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Reading-Time-Plugin-Settings-897x1024-1.jpg)
 
-Kadence Reading Time Shortcode
+## Using the Reading Time Shortcode
 
-If you have a Custom Post Type or want to share your Reading Time somewhere other than what is available, you can use the [kt_reading_time] ShortCode to do so. You can also just use this ShortCode wherever you need. The Kadence Reading Time ShortCode can be added to a WordPress ShortCode Block and added to different Post Types or Elements.
+If you want to display the reading time inside a Custom Post Type, within a custom Kadence Elements template, or anywhere outside the standard theme post layout, use the native shortcode:
+
+[kt_reading_time]
+
+You can add this shortcode using a WordPress **Shortcode Block** or embed it inside template files using 
+```
+do_shortcode()
+```
+
+.
 
 ![Kadence Reading Time Shortcode](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Reading-Time-Shortcode.jpg)
 
