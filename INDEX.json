@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T09:53:04.365Z",
+  "last_updated": "2026-10-25T10:01:17.796Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -604,8 +604,8 @@
       "slug": "fluent-snippets",
       "name": "Fluent Snippets",
       "documentation_url": "https://fluentsnippets.com/docs/",
-      "last_scraped": "2026-10-18T10:01:13.080Z",
-      "page_count": 20,
+      "last_scraped": "2026-10-25T10:01:17.796Z",
+      "page_count": 21,
       "categories": [
         "conditional-logic",
         "constants-and-hooks",
@@ -622,6 +622,7 @@
         "js-snippets",
         "organising-snippets",
         "permissions",
+        "rest-api",
         "safe-mode",
         "shortcodes",
         "snippet-types",
