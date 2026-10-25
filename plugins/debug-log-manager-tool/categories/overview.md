@@ -128,6 +128,15 @@ Contributors
 ## Changelog
 
 	
+### 2.5.3 (2026.10.19)
+
+- Security: Fixed stored cross-site scripting in JavaScript error log details. Encoded markup submitted to 
+```
+log_js_errors
+```
+
+ is decoded and stripped before it is written, and log details are escaped before they are returned to the log page auto-refresh. Props to Wordfence for the responsible disclosure and verification for the fix.
+
 ### 2.5.2 (2026.06.26)
 
 - Added mechanism to prevent memory exhaustion error when parsing a large debug.log file. Props to [@lbdesign](https://wordpress.org/support/users/lbdesign/) for [reporting](https://wordpress.org/support/topic/critical-error-warning-3/) this issue.
