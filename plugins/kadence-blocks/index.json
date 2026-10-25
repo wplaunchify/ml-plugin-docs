@@ -2,7 +2,7 @@
   "plugin_slug": "kadence-blocks",
   "plugin_name": "Kadence Blocks",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/",
-  "last_scraped": "2026-10-18T11:20:26.488Z",
+  "last_scraped": "2026-10-25T11:20:49.859Z",
   "total_pages": 139,
   "failed_urls_count": 0,
   "sections": [
@@ -638,7 +638,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "How to Download Previous Versions of the Kadence Theme and Plugins",
+          "title": "How to Install and Update Your WordPress Plugins and Themes",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-blocks/download-previous-versions-of-kadence-theme-and-plugins/"
         }
       ]
