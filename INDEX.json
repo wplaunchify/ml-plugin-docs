@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T03:39:58.572Z",
+  "last_updated": "2026-10-25T03:45:25.606Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3800,7 +3800,7 @@
       "slug": "wpc-product-bundles-for-woocommerce-premium",
       "name": "WPC Product Bundles for WooCommerce (Premium)",
       "documentation_url": "https://doc.wpclever.net/woosb/",
-      "last_scraped": "2026-10-18T03:41:56.759Z",
+      "last_scraped": "2026-10-25T03:45:25.606Z",
       "page_count": 76,
       "categories": [
         "basic-installations",
