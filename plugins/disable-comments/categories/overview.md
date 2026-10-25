@@ -4,7 +4,7 @@
 
 ---
 
-## Disable Comments – Remove Comments & Stop Spam [Multi-Site Support]
+## Disable Comments
 
 **Source:** [https://wordpress.org/plugins/disable-comments/](https://wordpress.org/plugins/disable-comments/)
 
@@ -156,22 +156,32 @@ Visit [WPDeveloper](https://wpdeveloper.com/) to learn more about how to do bett
 
 ### Source Code
 
-The JavaScript and CSS shipped in 
+The plugin build compiles 
+```
+assets/js/disable-comments.js
+```
+
+ from 
+```
+src/disable-comments.js
+```
+
+ with Babel and 
+```
+assets/css/style.css
+```
+
+ from 
+```
+assets/scss/style.scss
+```
+
+ with Sass, using Grunt. These sources are not included in the plugin zip. Other first-party JavaScript and CSS files in 
 ```
 assets/
 ```
 
- are compiled with Grunt and Babel from uncompiled sources that are not included in the plugin zip: JavaScript in 
-```
-src/
-```
-
- and Sass in 
-```
-assets/scss/
-```
-
-.
+ are maintained directly.
 
 Both the sources and the build configuration live in the [GitHub development repository](https://github.com/WPDevelopers/disable-comments). To build them yourself:
 
@@ -179,6 +189,53 @@ Both the sources and the build configuration live in the [GitHub development rep
 npm install
 npm run build
 ```
+
+#### Bundled third-party assets
+
+The Select2, pagination.js, and SweetAlert2 JavaScript/CSS distributions are bundled separately from the Grunt build. Their full license notices are in 
+```
+assets/licenses/
+```
+
+. The DM Sans webfont notice and SIL Open Font License 1.1 are in 
+```
+assets/fonts/OFL.txt
+```
+
+. The plugin license is in 
+```
+LICENSE.txt
+```
+
+.
+
+- Select2 4.1.0-rc.0: [source and build files](https://github.com/select2/select2/tree/4.1.0-rc.0), MIT license.
+- pagination.js, bundled header 2.1.5: [upstream source](https://github.com/superRaytin/paginationjs/tree/2.1.5), MIT license. The CSS matches upstream 2.1.5; the modified JavaScript is shipped in readable form at 
+```
+assets/js/pagination.min.js
+```
+
+ and is not rebuilt by Grunt.
+- SweetAlert2 10.10.1: [source and build files](https://github.com/sweetalert2/sweetalert2/tree/v10.10.1), MIT license.
+- DM Sans latin webfonts, distribution v11: [upstream source](https://github.com/googlefonts/dm-fonts/tree/4412393b7d2de9fe7a92064c2dce9b5af5d7fd26/Sans), SIL Open Font License 1.1.
+
+### External services
+
+Disable Comments connects to one external service, and only if you opt in.
+
+#### WPInsight usage analytics (opt-in, off by default)
+
+WPInsight is WPDeveloper’s usage-analytics service. We use it to learn which WordPress versions, PHP versions, plugins and themes people run alongside Disable Comments, so we can keep the plugin compatible with them.
+
+- **When data is sent:** only after an administrator clicks “Sure, I’d like to help” in the opt-in notice. It is sent once at that moment, then about once a day by WP-Cron (only the details that changed since the last report), and once more when the plugin is deactivated. If you click “No Thanks.” or ignore the notice, nothing is ever sent.
+- **What is sent:** your site URL and site name, WordPress version, site language and charset, PHP version, server software, whether the site is a multisite, text direction, the server path of the plugin, the lists of active and inactive plugins, the active theme and its version, the Disable Comments version, and the account email address of the administrator who clicks the opt-in button (used to send the discount coupon). A daily report can also include the current logged-in user account email; a background report without a logged-in user omits email. Reports also include the plugin name and identifier, tracker version, activation status and marketing flag, service-assigned site identifier, and original site URL when available. On deactivation it sends the same details again, plus the account email address of the administrator who deactivates the plugin, the deactivation time, and the reason and any note they enter in the deactivation form. Like any web request, the connection also reveals your server’s IP address to the service.
+- **Where it is sent:** 
+```
+https://send.wpinsight.com/process-plugin-data
+```
+- **Terms and privacy:** [Terms and Conditions](https://wpinsight.com/terms-and-conditions/), [Privacy Policy](https://wpinsight.com/privacy-policy/)
+
+The “Still Seeing a Comment Form?” check on the plugin’s settings page also requests pages of your own site to check what your theme outputs. Those requests go to your own site only and send nothing to a third party.
 
 ## Screenshots
 
@@ -334,7 +391,7 @@ The one exception is the Delete Comments tool: comments it removed are permanent
 
 ## Contributors & Developers
 
-	“Disable Comments – Remove Comments & Stop Spam [Multi-Site Support]” is open source software. The following people have contributed to this plugin.
+	“Disable Comments” is open source software. The following people have contributed to this plugin.
 
 Contributors
 		- ![](https://secure.gravatar.com/avatar/78597fc6182399eaab6afcc3ac4324f4c4234266e2ec607a8770c57241301903?s=32&d=mm&r=g)				[WPDeveloper](https://profiles.wordpress.org/wpdevteam/)
@@ -343,9 +400,9 @@ Contributors
 - ![](https://secure.gravatar.com/avatar/a39cec9005b0dca1bdfd5c6f884f6da77d28f893d60274ca947586b638ab970f?s=32&d=mm&r=g)				[Rupok](https://profiles.wordpress.org/re_enter_rupok/)
 - ![](https://secure.gravatar.com/avatar/450ce66f0232ce15aada15b4ebbb8d86a717dfa604eeb18325c8ddbfa814b94b?s=32&d=mm&r=g)				[Alimuzzaman Alim](https://profiles.wordpress.org/alimuzzamanalim/)
 - ![](https://secure.gravatar.com/avatar/fb6525bdf0b9bc628522d50e4b3dbb0e790500c154b0de255cf133619843efd0?s=32&d=mm&r=g)				[Samir Shah](https://profiles.wordpress.org/solarissmoke/)
-- ![](https://secure.gravatar.com/avatar/e8084b0a02eed1df748f38811d0989e5f345250fb17a61e46b3304e7a85278a7?s=32&d=mm&r=g)				[Garrett Hyder](https://profiles.wordpress.org/garrett-eclipse/)“Disable Comments – Remove Comments & Stop Spam [Multi-Site Support]” has been translated into 42 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/disable-comments/contributors) for their contributions.
+- ![](https://secure.gravatar.com/avatar/e8084b0a02eed1df748f38811d0989e5f345250fb17a61e46b3304e7a85278a7?s=32&d=mm&r=g)				[Garrett Hyder](https://profiles.wordpress.org/garrett-eclipse/)“Disable Comments” has been translated into 42 locales. Thank you to [the translators](https://translate.wordpress.org/projects/wp-plugins/disable-comments/contributors) for their contributions.
 
-[Translate “Disable Comments – Remove Comments & Stop Spam [Multi-Site Support]” into your language.](https://translate.wordpress.org/projects/wp-plugins/disable-comments)
+[Translate “Disable Comments” into your language.](https://translate.wordpress.org/projects/wp-plugins/disable-comments)
 
 ### Interested in development?
 
@@ -358,6 +415,13 @@ Contributors
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 This will be maintained from August 19, 2020 – @asif2bd
+
+#### [2.9.1] – 2026-10-25
+
+- Improved: Settings tabs now show in the page URL, so a tab can be linked or bookmarked and stays open after a refresh
+- Fixed: The network-admin “Custom post types” label on the Disable Comments and Delete Comments tabs no longer renders at 10px
+- Fixed: Saving settings no longer triggers a PHP warning when “Everywhere” has never been set
+- Improved: Several minor improvements and fixes throughout the plugin
 
 #### [2.9.0] – 2026-09-01
 
