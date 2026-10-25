@@ -15,24 +15,24 @@ Install the plugin [Simple Custom Post Order](https://wordpress.org/plugins/simp
 You will need to use the shortcode of the body (posts) part of the Toggle Post Filter which is
 
 var tagGroupsTPFBodyOptions = {
-    defaultImageSrc: '',
+    defaultImageSrc: "",
     defaultShowPosts: false,
     displayAmount: 2,
-    layout: 'classic',
+    layout: "classic",
     legacyBody: false,
-    messageAmountPl: '{count} posts found.',
-    messageAmountSg: '1 post found.',
-    messageGoBack: 'Go back',
-    messageLoadMore: 'Load more',
-    messageNothingFound: 'Nothing found.',
-    order: 'DESC',
-    orderBy: '',
+    messageAmountPl: "{count} posts found.",
+    messageAmountSg: "1 post found.",
+    messageGoBack: "Go back",
+    messageLoadMore: "Load more",
+    messageNothingFound: "Nothing found.",
+    order: "DESC",
+    orderBy: "",
     pager: 0,
-    pagerPosition: 'bottom',
+    pagerPosition: "bottom",
     postsPerPage: 5,
-    postsPlaceholder: 'Please select a tag.',
-    template: ``,
-    transition: 'fade',
+    postsPlaceholder: "Please select a tag.",
+    template: "",
+    transition: "fade",
   }
 . 
 

@@ -408,12 +408,11 @@ WordPress Search
 
   (function(){
     const options = {
-      divIdInner: 'tag-groups-shuffle-box-6ad4660a9394b_inner',
+      divIdInner: "tag-groups-shuffle-box-6adda0a529826_inner",
       addPremiumFilter: false,
       timeoutMilliSecs: 100,
       initialGroup: -1,
-      layoutMode: 'fitRows'
-    };
+      layoutMode: "fitRows"    };
 
     if (typeof TagGroupsShuffleBox !== 'undefined' && jQuery !== 'undefined') {
             const obj = Object.create( TagGroupsShuffleBox );
@@ -440,12 +439,11 @@ not assigned
 
   (function(){
     const options = {
-      divIdInner: 'tag-groups-shuffle-box-6ad4660a9aab0_inner',
+      divIdInner: "tag-groups-shuffle-box-6adda0a53080f_inner",
       addPremiumFilter: false,
       timeoutMilliSecs: 100,
       initialGroup: -1,
-      layoutMode: 'fitRows'
-    };
+      layoutMode: "fitRows"    };
 
     if (typeof TagGroupsShuffleBox !== 'undefined' && jQuery !== 'undefined') {
             const obj = Object.create( TagGroupsShuffleBox );

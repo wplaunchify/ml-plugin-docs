@@ -258,7 +258,7 @@ This guide shows you how to use and customize the shortcode for the Accordion Ta
 ```
 (function tagGroupsInitAccordion(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.accordion !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.accordion('tag-groups-cloud-accordion-6ad4660da9ba6', {"heightStyle":"content","active":false}, true);
+      TagGroupsBase.accordion('tag-groups-cloud-accordion-6adda0a83c6ed', {"heightStyle":"content","active":false}, true);
       return;
     }
 
@@ -269,7 +269,7 @@ This guide shows you how to use and customize the shortcode for the Accordion Ta
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-accordion-6ad4660da9ba6');
+    var element = document.getElementById('tag-groups-cloud-accordion-6adda0a83c6ed');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -284,7 +284,7 @@ This guide shows you how to use and customize the shortcode for the Accordion Ta
 ```
 (function tagGroupsInitAccordion(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.accordion !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.accordion('tag-groups-cloud-accordion-6ad4660daa2dd', {"heightStyle":"content","active":false}, true);
+      TagGroupsBase.accordion('tag-groups-cloud-accordion-6adda0a83d3a3', {"heightStyle":"content","active":false}, true);
       return;
     }
 
@@ -295,7 +295,7 @@ This guide shows you how to use and customize the shortcode for the Accordion Ta
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-accordion-6ad4660daa2dd');
+    var element = document.getElementById('tag-groups-cloud-accordion-6adda0a83d3a3');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }

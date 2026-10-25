@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T05:53:30.529Z",
+  "last_updated": "2026-10-25T06:24:41.232Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2728,7 +2728,7 @@
       "slug": "taxopress",
       "name": "TaxoPress",
       "documentation_url": "https://taxopress.com/docs/documentation/",
-      "last_scraped": "2026-10-18T06:24:14.781Z",
+      "last_scraped": "2026-10-25T06:24:41.232Z",
       "page_count": 232,
       "categories": [
         "accordion-tag-cloud",

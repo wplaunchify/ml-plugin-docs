@@ -130,7 +130,7 @@ Example for a shortcode
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6ad466040b8be', {"active":false}, false);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6adda09e7d0bf', {"active":false}, false);
       return;
     }
 
@@ -141,7 +141,7 @@ Example for a shortcode
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6ad466040b8be');
+    var element = document.getElementById('tag-groups-cloud-tabs-6adda09e7d0bf');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
