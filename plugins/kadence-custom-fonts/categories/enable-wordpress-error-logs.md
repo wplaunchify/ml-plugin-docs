@@ -4,196 +4,123 @@
 
 ---
 
-## How to Enable the WordPress Error Logs
+## How to Enable Debugging in WordPress
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-theme/enable-wordpress-error-logs/](https://www.kadencewp.com/help-center/docs/kadence-theme/enable-wordpress-error-logs/)
 
-When troubleshooting issues on your WordPress website, Error Logs are a valuable tool for diagnosing the underlying problems that could be affecting your site’s functionality. By enabling the WordPress Error Log, you can track PHP errors and warnings, making it easier to pinpoint and resolve potential issues. For example, whenever a website receives a Critical Error, an error usually can be logged and examined for diagnosis. This can be extremely useful when determining where an issue on your website is coming from. This document will walk you through the steps to enable and view WordPress Error Logs effectively.
+Enabling debugging in WordPress is a great troubleshooting step to help you see what’s going on with your website. This is best done on a [staging site](https://docs.nexcess.com/software/the-events-calendar/creating-and-using-a-wordpress-staging-site/) or *temporarily*on a live site, as it can cause error or warning messages to show in the WordPress dashboard or on your site. Any errors or warnings will be logged in the [WP_DEBUG_LOG](https://wordpress.org/support/article/debugging-in-wordpress/).
 
-Accessing the wp-config.php file
+**There are two basic ways to enable debugging: by editing the wp-config.php file or using a debugging plugin.** Using a plugin is a good option for less technical users.
 
-First, you’ll need to access your WordPress files. You can do this by connecting to your website via FTP, using your hosting provider’s file manager, or browsing the files locally if you’re working in a local environment. Once you’re connected, navigate to the root directory of your WordPress installation. This is the main folder that contains essential directories like the 
-```
-wp-content
-```
+## Enable debugging via wp-config.php file
 
- folder and important files such as the 
-```
-.htaccess
-```
+#### Locate the wp-config.php file
 
- and 
+By default, debugging is turned off in WordPress. To enable it, you’ll first want to locate your 
 ```
 wp-config.php
 ```
 
- files.
+ file. You’ll need to access your site files through either an FTP (File Transfer Protocol) or your server’s cPanel to find this. To learn more about using FTP, check out [this Knowledgebase article](https://docs.nexcess.com/software/the-events-calendar/using-ftp/).
 
-![Local Directory Sample](https://docs.nexcess.com/wp-content/uploads/2026/06/Local-Directory-Sample.gif)Example of a local directory.
+#### Edit the wp-config.php file
 
-![Host File Editor Sample](https://docs.nexcess.com/wp-content/uploads/2026/06/Host-File-Editor-Sample.gif)Example of hosting file manager.
-
-To access your files via FTP, you’ll need to find your FTP connection details through your hosting provider’s control panel. Once you have this information, you can use FTP software like [FileZilla](https://filezilla-project.org/) or [SmartFTP](https://www.smartftp.com/en-us/) to connect to your website using FTP. Once you are connected via FTP, you will be able to access your website directories.
-
-![FTP Panel](https://docs.nexcess.com/wp-content/uploads/2026/06/FTP-Panel.jpg)
-
-Inside of your main website directory, you’ll find the 
+Once you’ve located the file, you can open and edit the 
 ```
 wp-config.php
 ```
 
- file. This is the file that needs to be edited to enable and use the WordPress Error Logs.
-
-![WP Config File](https://docs.nexcess.com/wp-content/uploads/2026/06/WP-Config-File.jpg)
-
-Open the 
-```
-wp-config.php
-```
-
- file in your preferred text editor. If you’re using a hosting file manager, you can often edit it directly within the interface. If you are using an FTP connection, you can download the file and open it with a text editor like Notepad or VS Code.
-
-![WP Config](https://docs.nexcess.com/wp-content/uploads/2026/06/WP-Config.gif)
-
-Enabling Debug Mode and Error Logging
-
-Inside the 
-```
-wp-config.php
-```
-
- file, look for a line that mentions the 
-```
-WP_DEBUG
-```
-
- text. By default, you should see something like:
+ file. This file contains site-specific configuration settings, such as database information and, potentially, settings added by your hosting provider. For debugging, you’ll need to find the following line of code, which is generally located towards the bottom of the file:
 
 ```
-define( 'WP_DEBUG', false );
+('WP_DEBUG',false);
 ```
 
-You can replace this code with a the following code to enable debugging and log errors to a file:
+#### Add your debugging code
+
+Now you can overwrite the above line of code with the following code to enable debugging on your WordPress site:
 
 ```
-// Enable WordPress debug mode
+// Enable WP_DEBUG mode
 define( 'WP_DEBUG', true );
-
-// Log errors to /wp-content/debug.log
+ 
+// Enable Debug logging to the /wp-content/debug.log file
 define( 'WP_DEBUG_LOG', true );
-
-// Hide errors from displaying on the front-end
+ 
+// Disable display of errors and warnings
 define( 'WP_DEBUG_DISPLAY', false );
-
 @ini_set( 'display_errors', 0 );
+ 
+// Use dev versions of core JS and CSS files (only needed if you are modifying these core files)
+define( 'SCRIPT_DEBUG', true );
 ```
 
-This code tells WordPress to log errors to a 
+Be sure to add the above code before the following line:
+
 ```
-debug.log
+/* That's all, stop editing! Happy blogging. */
 ```
 
- file in the 
+**You can now find your debug log at**
 ```
-wp-content
-```
-
- folder, and prevents those errors from being shown to your website visitors on the front end. Learn what each line of code does below.
-
-- **define( ‘WP_DEBUG’, true );**This code enables WordPress’s debugging mode, allowing the logging of errors, warnings, and notices.
-- **define( ‘WP_DEBUG_LOG’, true );** This tells WordPress to save all of the logged errors to a file named 
-```
-debug.log
+https://yoursitename.com/wp-content/debug.log
 ```
 
- located in the 
-```
-wp-content
-```
+.
 
- directory.
-- **define( ‘WP_DEBUG_DISPLAY’, false );** This prevents errors from being displayed on the front end of your site, ensuring that visitors won’t see error messages. *(Note that this line of code is not required to enable and view the main debug log, this is related to displaying front end errors)*
-- **@ini_set( ‘display_errors’, 0 );** This line also prevents the displaying of front-end errors, ensuring that any PHP errors are not visible to users on your site. *(Note that this line of code is not required to enable and view the main debug log, this is related to displaying front end errors)*
+## Enable debugging via plugin
 
-Adjust the code values as preferred and save the file. If you’re using FTP, make sure to re-upload the file to your WordPress site, replacing the existing one for your changes to take effect.
+### WP Debugging
 
-Viewing the Error Log
+[WP Debugging](https://wordpress.org/plugins/wp-debugging/) is a free plugin that allows you to enable debugging and record bugs without having to edit any files. Once the plugin is installed and active, you can view your debug log by going selecting *Debug Quick Look* *> View File* from the top of your WordPress Dashboard.
 
-Once debugging is enabled, WordPress will start recording errors, warnings, and notices in a file called 
-```
-debug.log
-```
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/wp-debugging-plugin-view-file-1024x193-1.jpg)
 
-, located in the 
-```
-wp-content
-```
+Keep in mind that the log records issues as they happen. So in order for an issue to get logged, you need to repeat the actions that led to the issue you’re trying to troubleshoot. For example, if we’ve asked you to share the debug log to troubleshoot a critical error, you’d follow these steps:
 
- folder. Navigate to the 
-```
-wp-content
-```
+1. *Debug Quick Look > Purge File*. That clears any past errors from the log so it’s easy for us to see the relevant information.
+2. On your site, go to the page where you saw the critical error.
+3. Go back to the Dashboard and select *Debug Quick Look > View File*.
+4. Copy all the text you see there into your support ticket.
 
- folder and look for 
-```
-debug.log
-```
+### Debug Log Manager
 
-. You can download it or open it directly in your file manager to review any errors that have been logged.
-
-![Viewing the debug log](https://docs.nexcess.com/wp-content/uploads/2026/06/Viewing-the-debug-log.gif)
-
-Previously logged or triggered PHP errors will not appear in the WordPress Error Log. If you do not see a 
-```
-debug.log
-```
-
- file in the 
-```
-wp-content
-```
-
- folder, you will need to trigger a PHP error to create the file for the first time.
-
-Disabling Debugging After Use
-
-After resolving the issues, it is important to disable debug mode, as it is not recommended for use on live production websites. Keeping debug mode enabled can lead to an inflated Error Log and potentially expose sensitive information from your website. 
-
-Reopen the 
+The **Debug Log Manager** is a helpful plugin designed to simplify the process of managing WordPress debug logs. Instead of manually accessing and editing the 
 ```
 wp-config.php
 ```
 
- file and update the settings by setting 
+ file or digging through your server’s file system to view logs, this plugin provides an easy-to-use interface right from your WordPress admin dashboard.
+
+Key Features:
+
+- **Clear Logs with One Click**: Easily remove old or unnecessary log entries to keep your site clean and efficient.
+- **View Logs in Dashboard**: Access and read the contents of the 
 ```
-WP_DEBUG
+debug.log
 ```
 
- and 
+ file directly from the admin panel.
+
+![](https://docs.nexcess.com/wp-content/uploads/2026/06/DebugLogManager-min-1024x522-1.jpg)
+
+Once you’ve installed and activated the **Debug Log Manager** plugin, follow these steps to check for error logs:
+
+1. **Navigate to** 
 ```
-WP_DEBUG_LOG
+Tools > Debug Log Manager
 ```
 
- to false:
+ in your WordPress dashboard.
+2. **Enable** both **Error Logging** and **Auto-Refresh** options to monitor logs in real time.
+3. Click the **Clear Log** button to start with a clean log file.
+4. In a **new browser tab or page**, replicate the issue you’re trying to debug (e.g., trigger the error or perform the action causing trouble).
+5. Return to the **Debug Log Manager** tab/page and check for any logged messages—particularly **Fatal Errors** or **Warnings**.
+6. **Copy or download the log output** and share it with the support team for further investigation.
 
-```
-define( 'WP_DEBUG', false );
-define( 'WP_DEBUG_LOG', false );
-```
+## Warnings and errors
 
-You can either remove or comment out the other two lines of code (if you’ve added them), depending on your preferences. If you want to retain them for future use, you can comment them out as follows:
-
-```
-// define( 'WP_DEBUG_DISPLAY', false );
-// @ini_set( 'display_errors', 0 );
-```
-
-Once finished, proceed to save the file. If you are using FTP to access your website’s filebase, then ensure you reupload the 
-```
-wp-config.php
-```
-
- file to your website after making these changes.
+Now that you’ve enabled debugging, you may notice a lot of warnings and errors that you didn’t previously know about. It’s important to note that *warnings*are nothing to be concerned about. Warnings are simply there to help developers during the plugin development phase. When exploring your debug log, you should look out for **fatal errors**, as those may be causing issues with your site. However, warnings should not pose any threat to your site, so you can simply ignore those.
 
 ---
 
