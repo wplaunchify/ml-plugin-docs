@@ -1062,6 +1062,15 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-bookings/](https://help.fooevents.com/docs/topics/changelogs/fooevents-bookings/)
 
+## 2.0.19 (20 October 2026)
+
+- FIXED: Bookings wizard date bugs.
+- FIXED: Various PHP warnings.
+- FIXED: Bookings stock validation bug.
+- FIXED: Bug preventing store checkout.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.3 and WooCommerce 11.2.1.
+
 ## 2.0.16 (24 August 2026)
 
 - FIXED: PHP class typo.
@@ -1515,6 +1524,12 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-calendar/](https://help.fooevents.com/docs/topics/changelogs/fooevents-calendar/)
 
+## 2.0.5 (20 October 2026)
+
+- FIXED: Date format event listing bug.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.3 and WooCommerce 11.2.1.
+
 ## 2.0.2 (14 July 2026)
 
 - FIXED: Various template improvements.
@@ -1963,6 +1978,11 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-custom-attendee-fields/](https://help.fooevents.com/docs/topics/changelogs/fooevents-custom-attendee-fields/)
 
+## 2.0.5 (20 October 2026)
+
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.3 and WooCommerce 11.2.1.
+
 ## 2.0.4 (18 August 2026)
 
 - FIXED: Required checkbox on new attendee page bug.
@@ -2313,6 +2333,11 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-express-check-in/](https://help.fooevents.com/docs/topics/changelogs/fooevents-express-check-in/)
 
+## 2.0.5 (20 October 2026)
+
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.3 and WooCommerce 11.2.1.
+
 ## 2.0.4 (18 August 2026)
 
 - FIXED: load_text_domain() warning
@@ -2566,6 +2591,17 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/](https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/)
+
+## 2.0.24 (20 October 2026)
+
+- FIXED: Various PHP warnings.
+- FIXED: AutomateWoo support for multi-day select timestamps.
+- FIXED: Various Zoom integration improvements.
+- FIXED: Booking option logic bug in product.
+- FIXED: Order Received page, ‘Thank you’ text display bug.
+- FIXED: Various AddToWallet bugs.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.3 and WooCommerce 11.2.1.
 
 ## 2.0.18 (03 September 2026)
 
@@ -3833,6 +3869,11 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-multi-day/](https://help.fooevents.com/docs/topics/changelogs/fooevents-multi-day/)
 
+## 2.0.5 (20 October 2026)
+
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.3 and WooCommerce 11.2.1.
+
 ## 2.0.4 (18 August 2026)
 
 - FIXED: Warning if FooEvents for WooCommerce is not active.
@@ -4172,6 +4213,11 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-pdf-tickets/](https://help.fooevents.com/docs/topics/changelogs/fooevents-pdf-tickets/)
+
+## 2.0.20 (20 October 2026)
+
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.3 and WooCommerce 11.2.1.
 
 ## 2.0.15 (18 August 2026)
 
