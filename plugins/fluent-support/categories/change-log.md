@@ -498,7 +498,7 @@
 
 **= 1.4.0 (Date: November 12, 2021) =**– Initial Release
 
-.kadence-column14234_37a248-18 > .kt-inside-inner-col,.kadence-column14234_37a248-18 > .kt-inside-inner-col:before{border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;}.kadence-column14234_37a248-18 > .kt-inside-inner-col{column-gap:var(--global-kb-gap-sm, 1rem);}.kadence-column14234_37a248-18 > .kt-inside-inner-col{flex-direction:column;}.kadence-column14234_37a248-18 > .kt-inside-inner-col > .aligncenter{width:100%;}.kadence-column14234_37a248-18 > .kt-inside-inner-col:before{opacity:0.3;}.kadence-column14234_37a248-18{position:relative;}@media all and (max-width: 1024px){.kadence-column14234_37a248-18 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}@media all and (max-width: 767px){.kadence-column14234_37a248-18 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}
+.kadence-column14234_37a248-18 > .kt-inside-inner-col{column-gap:var(--global-kb-gap-sm, 1rem);}.kadence-column14234_37a248-18 > .kt-inside-inner-col{flex-direction:column;}.kadence-column14234_37a248-18 > .kt-inside-inner-col > .aligncenter{width:100%;}.kadence-column14234_37a248-18 > .kt-inside-inner-col:before{opacity:0.3;}.kadence-column14234_37a248-18{position:relative;}@media all and (max-width: 1024px){.kadence-column14234_37a248-18 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}@media all and (max-width: 767px){.kadence-column14234_37a248-18 > .kt-inside-inner-col{flex-direction:column;justify-content:center;}}
 
 ---
 
