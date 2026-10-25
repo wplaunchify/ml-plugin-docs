@@ -488,6 +488,8 @@ The payment gateway charges the customer in the currency of their cart. Make sur
 
 Every order keeps the currency and exchange rate it was placed at, so changing a rate later never rewrites past orders. Order items, the tax summary, subscription details, and the discount and refund dialogs on an order all show amounts in that order's own currency, even when it differs from your base currency. A subscription's renewals keep the same rate as the original order. When a customer upgrades a subscription through an [upgrade path](/guide/product-types-creation/defining-upgrade-paths), the new plan is priced in the subscription's own currency.
 
+Orders you create yourself follow the same rule. When you [create an order manually](/guide/store-management/orders-management/creating-new-orders), you can choose any enabled currency, and the order keeps that currency and the rate at the time you save it.
+
 If you use **FluentCart Pro** features that show prices, they follow the customer's currency too:
 
 - An [order bump](/guide/store-management/orders-management/order-bump) offer shows its price and saving in the customer's currency.
@@ -622,6 +624,7 @@ FluentCart allows you to manually create new orders directly from your WordPress
 3. This will open a new order creation interface. You will need to:
 
 - **Customer Information:** Choose an existing customer from your store or you may create new.
+- **Order currency:** When [multi-currency](/guide/settings-configuration/multi-currency-settings) is enabled, an **Order currency** card appears above the products. Pick any enabled currency to create the order in it. For a currency other than your base currency, enter prices in that currency; the card shows the rate, for example *1 USD = 0.79 GBP*. FluentCart calculates and validates the final prices when you save, using the same rate and rounding rules as the storefront checkout.
 - **Products:** Search for and add the products the customer is purchasing. - You can select product variants if applicable.
 - Specify the quantity for each product.
 - **Have a Coupon:** If a discount coupon applies to this manual order, you can enter and apply it here. Applying a coupon removes any manual discount already added to the order.
