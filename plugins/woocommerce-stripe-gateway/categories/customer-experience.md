@@ -331,44 +331,37 @@ In this guide, you will learn how to configure the Stripe extension to enable te
 
 [↑ Back to top](#doc-title)
 
-When you initially [connect the Stripe extension to your Stripe account](https://woocommerce.com/document/stripe/setup-and-configuration/connecting-to-stripe/), it only connects in live mode. Connecting to your Stripe account in test mode is a separate process. To connect in test mode:
+When you initially [connect the Stripe extension to your Stripe account](https://woocommerce.com/document/stripe/setup-and-configuration/connecting-to-stripe/), it connects both live and test mode at the same time. Click the **Configure connection** button and then check the **Test** tab to verify that test mode is working.
 
-1. Go to **WooCommerce > Settings > Payments** tab.
-2. Click the **Manage** button for the Stripe payment method.
-
-![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2025-02-14-at-09.37.31-UTC@2x.png?strip=all&w=704)
-
-1. Click the **Settings** tab in the Stripe settings page.
-
-![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2024-08-08-at-18.41.19-UTC@2x.png?w=980)
-
-1. In the *Account details* section, click the **Configure connection** button.
-
-![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2024-08-08-at-18.42.58-UTC@2x.png?w=980)
-
-1. Click the **Test** tab to view the connection status of test mode.
-- If you haven’t configured test mode yet, the account status will say “Disconnected.”
-2. Click the **Create or connect a test account** button.
-
-![](https://woocommerce.com/wp-content/uploads/2025/10/Screenshot-taken-on-2025-10-09-at-13.58.35-UTC@2x.png?strip=all&w=704)
-
-1. You will be prompted to connect to your Stripe account in test mode. Click **Connect** to do so.
-
-![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2025-02-14-at-09.41.27-UTC@2x.png?w=980)
-
-1. You’ll be redirected back to the Stripe settings page in your WordPress dashboard.
-2. Click the **Configure connection** button in the *Account details*section again.
-3. Confirm that the connection to your account’s test mode is working.
+If your test mode connection looks like the image below, you’re good to go! You can enable test mode and use it to test transactions whenever you want.
 
 ![](https://woocommerce.com/wp-content/uploads/2025/10/Screenshot-taken-on-2025-10-09-at-13.33.52-UTC@2x-1.png?strip=all&w=704)
 
-Now that you’ve connected to your Stripe account’s test mode, you can [enable test mode](#enabling) and start using test cards.
+If test mode is *not* connected for any reason, first check to see if you are [connected in live mode](https://woocommerce.com/document/stripe/setup-and-configuration/connecting-to-stripe/). If you’re not, connecting in live mode should connect test mode as well.
+
+If need be, you can connect your site’s test mode manually using the **Create or connect a test account** button.
+
+**NOTE:** Connecting test mode like this (meaning, separately from live mode) will automatically put the Stripe plugin into test mode at the end. To get back to live mode, you’ll need to [disable test mode](#enabling) after the test connection is done.
+
+![](https://woocommerce.com/wp-content/uploads/2025/10/Screenshot-taken-on-2025-10-09-at-13.58.35-UTC@2x.png?strip=all&w=704)
+
+You will be prompted to connect in test mode. Click **Connect** to do so.
+
+![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2025-02-14-at-09.41.27-UTC@2x.png?w=980)
+
+You’ll be redirected back to the Stripe settings page in your WordPress dashboard.
+
+Click the **Configure connection** button in the *Account details*section again, and confirm that the connection to your account’s test mode is working.
+
+1. 
+
+![](https://woocommerce.com/wp-content/uploads/2025/10/Screenshot-taken-on-2025-10-09-at-13.33.52-UTC@2x-1.png?strip=all&w=704)
 
 ## Enabling test mode
 
 [↑ Back to top](#doc-title)
 
-After you’ve [connected to Stripe in test mode](#configuring), you can enable test mode in the Stripe extension like so:
+You can enable test mode in the Stripe extension like so:
 
 1. Navigate to **WooCommerce > Settings > Payments > Stripe > Settings**.
 2. Check the **Enable test mode** option in the *General* section.
@@ -376,6 +369,13 @@ After you’ve [connected to Stripe in test mode](#configuring), you can enable 
 ![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2026-06-16-at-08.13.29-UTC@2x.png?strip=all&w=704)
 
 1. Scroll to the bottom of the page and click **Save Changes**.
+
+Disabling test mode is as simple as unchecking the test mode box and saving.
+
+A couple notes on how test mode works:
+
+- The test mode setting is disabled if your site isn’t connected in test mode yet.
+- You cannot be connected to one Stripe account for live mode and a different Stripe account for test mode. Both modes will always use the same Stripe account.
 
 ## Using test mode
 
@@ -466,15 +466,15 @@ If you’ve created a Stripe account but not [set it up](https://docs.stripe.com
 
 ![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2024-08-07-at-19.16.19-UTC@2x.png?w=980)
 
-If you’d like to connect our Stripe plugin to this account, you can do so by using the **Create or connect a test account instead** link on the connection screen.
+If you’d like to connect our Stripe plugin to this account, you can do so by using the **Create or connect a test account** button on the connection screen.
 
-![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2024-08-07-at-19.20.52-UTC@2x.png?strip=all&w=704)
+![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2026-10-22-at-09.16.48-UTC@2x.png?strip=all&w=704)
 
 You’ll be taken to Stripe.com to connect, but since your account is test-only, you can simply click the **Skip this form** button.
 
 ![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2024-08-07-at-19.22.21-UTC@2x.png?strip=all&w=704)
 
-Doing so will return you to the WordPress dashboard with the Stripe plugin already in test mode and connected to your test-only Stripe.com account.
+Doing so will return you to the WordPress dashboard with the Stripe plugin already in test mode and connected to your test-only Stripe account.
 
 You can click the **Configure connection** button and then select the **Test** tab to verify that the plugin is working correctly.
 

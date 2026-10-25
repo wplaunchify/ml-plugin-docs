@@ -219,17 +219,9 @@ Grow your business with increased sales and an enhanced shopping experience — 
 
 [↑ Back to top](#doc-title)
 
-If you haven’t already created a Stripe account, you will be given the opportunity to create one during the connection process.
+If you haven’t already [created a Stripe account](https://dashboard.stripe.com/register), you will be given the opportunity to create one during the connection process.
 
 If you do already have a Stripe account, logging into it prior to connecting our Stripe extension will make the connection process easier.
-
-**NOTE:** 
-
-WooCommerce support can help with the Stripe extension on your WooCommerce site (installation, connection, webhooks, and checkout behavior). 
-
-WooCommerce support does not provide support for Stripe account-related queries or for settings inside the Stripe Dashboard. 
-
-If your question is about Stripe account onboarding or verification, business details, compliance requirements, payout settings, or required fields shown during setup in Stripe (for example tax/VAT fields), [please contact Stripe directly](https://support.stripe.com/).
 
 ## Connecting to a Stripe account
 
@@ -240,11 +232,10 @@ Once you’ve [installed the Stripe extension](https://woocommerce.com/document/
 1. Navigating to **WooCommerce > Settings > Payments** tab.
 2. Click the **Complete setup button** for the Stripe payment method.
 
-![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-2025-05-19-at-5.19.46 PM.png?strip=all&w=704)
+![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2026-10-22-at-09.10.32-UTC@2x.png?strip=all&w=704)
 
 1. Click the **Create or connect an account** button.
-- Clicking the **Create or connect a test account** button should only be used if you’re connecting to [a test-only Stripe account](https://woocommerce.com/document/stripe/customer-experience/testing/#test-only-stripe-account).
-- You’ll be redirected to connect.stripe.com where you can either connect to an existing Stripe account or create a new one. You’ll complete onboarding on Stripe’s site; any required fields shown there are controlled by Stripe.
+- The **Create or connect a test account** button should only be used if you want to connect to [a test-only Stripe account](https://woocommerce.com/document/stripe/customer-experience/testing/#test-only-stripe-account).
 2. You’ll be redirected to 
 ```
 connect.stripe.com
@@ -255,7 +246,9 @@ connect.stripe.com
 - ![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2025-02-14-at-09.02.52-UTC@2x.png?w=980)Connecting to an existing Stripe account (while logged in)
 - ![](https://woocommerce.com/wp-content/uploads/2024/08/Screenshot-taken-on-2025-02-14-at-09.04.27-UTC@2x.png?w=980)Creating a new Stripe account (not logged in)
 
-**NOTE:** If you are asked to “Re-use this business to create a new account”, that means that your Stripe account is already connected to a third-party platform. You must first [disconnect it](https://support.stripe.com/questions/disconnect-your-stripe-account-from-a-connected-third-party-platform) from the [Installed Apps settings page](https://dashboard.stripe.com/settings/apps) in the Stripe dashboard before you can use it for our Stripe plugin. Read more in the [Multiple accounts section](#multiple-accounts).
+**NOTE:** If you are asked to “Re-use this business to create a new account”, that means that your Stripe account is already connected to a third-party platform. You must first [disconnect it](https://support.stripe.com/questions/disconnect-your-stripe-account-from-a-connected-third-party-platform) from the [Installed Apps settings page](https://dashboard.stripe.com/settings/apps) in the Stripe dashboard before you can use it for our Stripe plugin. 
+
+Read more in the [Multiple accounts section](#multiple-accounts).
 
 1. Whether you simply connected to an existing account you were already logged into or created a brand new Stripe account, you’ll be redirected back to the WordPress admin dashboard once you’ve connected our Stripe extension.
 2. In the *Account details* section, ensure that the statuses of *Payment*, *Payout*, *Webhook*, and *Sync* are all green/”Enabled.”
@@ -268,11 +261,7 @@ Once that’s done, you’re all set to start using the Stripe extension!
 
 [↑ Back to top](#doc-title)
 
-### Not a connection problem?
-
-[↑ Back to top](#doc-title)
-
-If the issue is happening in Stripe’s onboarding flow or the Stripe Dashboard (for example a required VAT/Tax ID field, business verification, or account compliance questions), it’s a Stripe account question. Please [contact Stripe Support](https://support.stripe.com/) for these. The troubleshooting below is only for issues that occur while connecting WooCommerce to Stripe.
+If the issue is occurring in Stripe’s signup flow or the Stripe Dashboard (for example, a required VAT/Tax ID field, business verification, or account compliance question), then please [contact Stripe Support](https://support.stripe.com/) for these.
 
 ### “An issue occurred generating a connection to Stripe”
 
@@ -317,9 +306,7 @@ It may also sometimes be possible to disconnect an account from an integration f
 
 [↑ Back to top](#doc-title)
 
-Once you’ve connected our Stripe extension to a Stripe account, you’ll need to adjust some settings to ensure that your site receives all the information it needs to handle payments successfully.
-
-As a next step, we recommend [configuring test mode](https://woocommerce.com/document/stripe/customer-experience/testing/) and [adjusting the settings](https://woocommerce.com/document/stripe/setup-and-configuration/settings-guide/).
+Once you’ve connected our Stripe extension to a Stripe account, you’ll probably want to take a look at [the plugin settings](https://woocommerce.com/document/stripe/setup-and-configuration/settings-guide/) to make sure it’s configured to your liking.
 
 					
 		
@@ -755,7 +742,7 @@ By clicking the **Configure connection** button, you can see the status of the c
 
 If the Stripe extension is properly connected to your Stripe account, the *Account* status should be “Connected” and the *Webhooks* status should be “Configured.” If they say anything else (e.g. “Incomplete”), you may need to re-authenticate your connection.
 
-Note the tabs in the pop: **Live** and **Test**. Using them, you can check the *Account* and *Webhooks* statuses for each mode. Because each mode is configured separately, it’s possible to be connected to live mode but not to test mode, or vice versa.
+Note the tabs in the pop: **Live** and **Test**. Using them, you can check the *Account* and *Webhooks* statuses for each mode. In most cases, everything should be green.
 
 Lastly, if you’d like to disconnect the Stripe extension from your Stripe account, you can do so by clicking the three dots, and then **Disconnect**.
 
