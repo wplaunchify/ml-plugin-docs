@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01T00:51:40.506Z",
+  "last_updated": "2026-11-01T00:54:08.978Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -242,7 +242,7 @@
       "slug": "customize-my-account-page-for-woocommerce",
       "name": "Customize My Account Page For Woocommerce",
       "documentation_url": "https://woocommerce.com/document/customize-my-account-for-woocommerce/",
-      "last_scraped": "2026-10-25T01:13:09.839Z",
+      "last_scraped": "2026-11-01T00:54:08.978Z",
       "page_count": 1,
       "categories": [
         "overview"
