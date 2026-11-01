@@ -21,7 +21,7 @@ You can find your past events on your site at
 https://yoursite.com/events/list/?eventDisplay=past
 ```
 
-If you’d like to display your past events on your site, you can [add a menu item in WordPress](https://theeventscalendar.com/knowledgebase/k/adding-a-calendar-link-to-your-site-menu/) and link your site visitors to your past events directly.
+If you’d like to display your past events on your site, you can [add a menu item in WordPress](https://docs.nexcess.com/software/the-events-calendar/calendar-links/#h-linking-to-the-calendar-to-a-wordpress-menu) and link your site visitors to your past events directly.
 
 If you have Events Calendar Pro, you can use the [[tribe_events] shortcode](https://docs.nexcess.com/software/the-events-calendar/calendar-embed-shortcodes/) to display your past events using a past date.
 **Please Note:**the past events parameter for shortcodes is only available for Month view, as that article mentions as well.
@@ -30,7 +30,7 @@ You can also show past events in reverse order using the snippet provided in [th
 
 ## Importing Past Events
 
-If you’d like to import past events using our [Event Aggregator service](https://theeventscalendar.com/products/event-aggregator/), by default, these events won’t import. However, if you specify a date parameter, you will be able to get all of your past events imported onto your WordPress site alongside your other events.
+If you’d like to import past events using our Event Aggregator service, by default, these events won’t import. However, if you specify a date parameter, you will be able to get all of your past events imported onto your WordPress site alongside your other events.
 
 Learn more about importing your events in [this Knowledgebase article](https://docs.nexcess.com/software/the-events-calendar/import-events/).
 

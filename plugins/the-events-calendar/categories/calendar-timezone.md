@@ -121,7 +121,7 @@ If you’re experiencing timezone issues and haven’t been able to get to the b
 
 If that is the case, we’d recommend temporarily disabling your caching plugin to see if that makes a difference. If it does, you can likely tweak your caching plugin’s settings and exclusions in order to keep the plugin working with The Events Calendar.
 
-For more information, take a look at the [recommended settings](https://theeventscalendar.com/knowledgebase/?s=caching&post_type%5B%5D=post&submit=) in some popular caching plugins.
+For more information, take a look at the [recommended settings](https://docs.nexcess.com/software/the-events-calendar/calendar-caching/#h-using-caching-plugins) in some popular caching plugins.
 
 ## Updating Timezone Data
 

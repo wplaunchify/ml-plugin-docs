@@ -41,7 +41,7 @@ Configure both your WordPress settings and [Events Calendar settings](https://do
 
 ## Add the Calendar to the Site Menu
 
-[Add a link to your calendar](https://theeventscalendar.com/knowledgebase/k/adding-a-calendar-link-to-your-site-menu/) on your website so that visitors can find it.
+[Add a link to your calendar](https://docs.nexcess.com/software/the-events-calendar/calendar-links/#h-linking-to-the-calendar-to-a-wordpress-menu) on your website so that visitors can find it.
 
 ![How to add events page to menu: go to Appearance , Events, View all, and select the Events page to add to menu](https://docs.nexcess.com/wp-content/uploads/2026/06/add-events-page-to-menu.png)Go to Appearance > Menu to add your events page to the menu
 

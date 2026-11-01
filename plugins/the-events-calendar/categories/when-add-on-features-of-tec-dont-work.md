@@ -8,7 +8,7 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/when-add-on-features-of-tec-dont-work/](https://docs.nexcess.com/software/the-events-calendar/when-add-on-features-of-tec-dont-work/)
 
-Add-ons for The Events Calendar unlock powerful features, [community submissions](https://theeventscalendar.com/products/community/), [recurring events](https://theeventscalendar.com/products/wordpress-events-calendar/), [filter bar](https://theeventscalendar.com/products/wordpress-calendar-filter-bar/), etc. But sometimes those add-ons don’t function properly: they may not show at all, behave unexpectedly, or conflict with other themes/plugins. Here’s how to understand and resolve those issues.
+Add-ons for The Events Calendar unlock powerful features, community submissions, [recurring events](https://theeventscalendar.com/products/wordpress-events-calendar/), [filter bar](https://theeventscalendar.com/products/wordpress-calendar-filter-bar/), etc. But sometimes those add-ons don’t function properly: they may not show at all, behave unexpectedly, or conflict with other themes/plugins. Here’s how to understand and resolve those issues.
 
 ## Why Add-On Features Break: Root Causes
 

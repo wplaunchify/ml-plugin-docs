@@ -16,9 +16,9 @@ If you want to move events from one WordPress site to another as a one-time oper
 
 ### Using Event Aggregator
 
-[Event Aggregator](https://theeventscalendar.com/products/event-aggregator/) can import events from iCalendar and ICS files, as well as directly from other WordPress sites running The Events Calendar. Depending on your source, follow one of these guides:
+Event Aggregator can import events from iCalendar and ICS files, as well as directly from other WordPress sites running The Events Calendar. Depending on your source, follow one of these guides:
 
-- [Importing Events From an .ics File With Event Aggregator](https://theeventscalendar.com/knowledgebase/importing-events-from-an-ics-file-with-event-aggregator/)
+- [Importing Events From an .ics File With Event Aggregator](https://docs.nexcess.com/software/the-events-calendar/import-events/#h-ics-file)
 - [Importing Events from Another Calendar Feed or URL](https://docs.nexcess.com/software/the-events-calendar/import-events/)
 
 ### Using WP All Export and WP All Import Pro
@@ -47,7 +47,7 @@ Import in this order: venues and organizers first, then events, then tickets (if
 
 💡 This section covers sharing events from one calendar to another on an ongoing basis. True two-way sync — where both sites interchange events automatically in both directions — is not a built-in feature and would require advanced custom development.
 
-[Event Aggregator](https://theeventscalendar.com/products/event-aggregator/)‘s **Other URL** import source allows one site to continuously pull events from another WordPress site running The Events Calendar. This can be set up as a manual import or as a scheduled automatic import.
+Event Aggregator’s **Other URL** import source allows one site to continuously pull events from another WordPress site running The Events Calendar. This can be set up as a manual import or as a scheduled automatic import.
 
 ![The Event Aggregator import screen with Other URL selected as the import source](https://docs.nexcess.com/wp-content/uploads/2026/06/EA-Other-URL-2.jpg)
 
@@ -75,7 +75,7 @@ Event Aggregator’s **Other URL** import is particularly well suited for establ
 Before getting started, confirm your hub site meets the following requirements:
 
 - [The Events Calendar](https://theeventscalendar.com/product/wordpress-events-calendar/) must be installed and activated. This plugin provides the core calendar functionality and includes Event Aggregator, which must be activated separately.
-- An [Event Aggregator](https://theeventscalendar.com/products/event-aggregator/) license key must be purchased and activated to unlock the **Other URL** import option. Without a license, only the CSV import option is available. If you need help activating your license, check out the [New User Primer](https://docs.nexcess.com/software/the-events-calendar/event-imports/) for a quick walkthrough.
+- An Event Aggregator license key must be purchased and activated to unlock the **Other URL** import option. Without a license, only the CSV import option is available. If you need help activating your license, check out the [New User Primer](https://docs.nexcess.com/software/the-events-calendar/event-imports/) for a quick walkthrough.
 - [Events Calendar Pro](https://theeventscalendar.com/products/wordpress-events-calendar/) (optional): If you’ll be importing any events from sites that use Events Calendar Pro and wish to retain venue and organizer details from calendar events, you may wish to have Events Calendar Pro installed and activated on your hub site, as well. If it is not installed, venue and organizer data will still be imported, but venue and organizer pages will not be generated on the front end.
 
 Once your hub site is established, navigate to **Events → Settings → Imports** to review your settings. The **Other URL**import settings appear near the bottom of this tab.

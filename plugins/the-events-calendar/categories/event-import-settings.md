@@ -118,7 +118,7 @@ You can now use the “iCalendar” option with the “.ics” URL from the prev
 
 ### Can I import images with Event Aggregator?
 
-The short answer is yes, you can import images with Event Aggregator! However the types of imports that can handle this are limited. Images can be imported from Eventbrite, Other URLs (Other websites that use none other than The Events Calendar!) and through CSV files. Importing images is not possible when using ICS files, or iCal imports like [Google Calendar](https://www.theeventscalendar.com/knowledgebase/importing-events-from-google-calendar/) or Outlook.
+The short answer is yes, you can import images with Event Aggregator! However the types of imports that can handle this are limited. Images can be imported from Eventbrite, Other URLs (Other websites that use none other than The Events Calendar!) and through CSV files. Importing images is not possible when using ICS files, or iCal imports like [Google Calendar](https://docs.nexcess.com/software/the-events-calendar/import-events/#h-google-calendar) or Outlook.
 
 ### Event Aggregator Control
 

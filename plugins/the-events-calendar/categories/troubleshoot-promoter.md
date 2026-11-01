@@ -89,7 +89,7 @@ If your “active” events are appearing as archived in your Promoter dashboard
 
 #### How to Fix the Archived Events
 
-Make sure that the affected events are saved with the correct dates. Then you can trigger a [manual sync](https://theeventscalendar.com/knowledgebase/how-to-manually-sync-events-or-tickets-in-promoter-a-step-by-step-guide/) to see if those events are moved to the upcoming section on your Promoter account.
+Make sure that the affected events are saved with the correct dates. Then you can trigger a manual sync to see if those events are moved to the upcoming section on your Promoter account.
 
 If you have an active [caching](https://docs.nexcess.com/software/the-events-calendar/caching-with-the-events-calendar/), and you were able to set the excluded URL/path, we advise adding this wild carded 
 ```

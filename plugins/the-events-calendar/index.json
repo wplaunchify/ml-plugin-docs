@@ -2,9 +2,9 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-10-25T06:35:47.399Z",
-  "total_pages": 309,
-  "failed_urls_count": 1,
+  "last_scraped": "2026-11-01T06:24:59.438Z",
+  "total_pages": 300,
+  "failed_urls_count": 2,
   "sections": [
     {
       "title": "Accessibility",
@@ -133,19 +133,6 @@
         {
           "title": "Automatic Plugin Updates",
           "url": "https://docs.nexcess.com/software/the-events-calendar/automatic-updates/"
-        }
-      ]
-    },
-    {
-      "title": "Automatic Updates 2",
-      "slug": "automatic-updates-2",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/automatic-updates-2/",
-      "file": "categories/automatic-updates-2.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Plugin Update Notifications",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/automatic-updates-2/"
         }
       ]
     },
@@ -2152,32 +2139,6 @@
       ]
     },
     {
-      "title": "How To Disable Auto Updates For All Wordpress Plugins",
-      "slug": "how-to-disable-auto-updates-for-all-wordpress-plugins",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-disable-auto-updates-for-all-wordpress-plugins/",
-      "file": "categories/how-to-disable-auto-updates-for-all-wordpress-plugins.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Disable Auto-updates for All WordPress Plugins",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-disable-auto-updates-for-all-wordpress-plugins/"
-        }
-      ]
-    },
-    {
-      "title": "How To Disable Wp Cron And Set Up A Real Cron Job",
-      "slug": "how-to-disable-wp-cron-and-set-up-a-real-cron-job",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-disable-wp-cron-and-set-up-a-real-cron-job/",
-      "file": "categories/how-to-disable-wp-cron-and-set-up-a-real-cron-job.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Disable WP-Cron and Set up a Real Cron Job",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-disable-wp-cron-and-set-up-a-real-cron-job/"
-        }
-      ]
-    },
-    {
       "title": "How To Find And Share Slow Database Queries In Wordpress",
       "slug": "how-to-find-and-share-slow-database-queries-in-wordpress",
       "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-find-and-share-slow-database-queries-in-wordpress/",
@@ -2187,32 +2148,6 @@
         {
           "title": "How to find and share slow database queries in WordPress",
           "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-find-and-share-slow-database-queries-in-wordpress/"
-        }
-      ]
-    },
-    {
-      "title": "How To Fix The Wordpress White Screen Of Death Wsod",
-      "slug": "how-to-fix-the-wordpress-white-screen-of-death-wsod",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-fix-the-wordpress-white-screen-of-death-wsod/",
-      "file": "categories/how-to-fix-the-wordpress-white-screen-of-death-wsod.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Fix the WordPress White Screen of Death (WSOD)",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-fix-the-wordpress-white-screen-of-death-wsod/"
-        }
-      ]
-    },
-    {
-      "title": "How To Get The Fastest Support",
-      "slug": "how-to-get-the-fastest-support",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-get-the-fastest-support/",
-      "file": "categories/how-to-get-the-fastest-support.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Get the Fastest Support",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-get-the-fastest-support/"
         }
       ]
     },
@@ -2239,32 +2174,6 @@
         {
           "title": "Solving the “Discovered – currently not indexed” Notice on Google Search Console with The Events Calendar",
           "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-solve-warning-on-google-search/"
-        }
-      ]
-    },
-    {
-      "title": "How To Uninstall A Wordpress Plugin",
-      "slug": "how-to-uninstall-a-wordpress-plugin",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-uninstall-a-wordpress-plugin/",
-      "file": "categories/how-to-uninstall-a-wordpress-plugin.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How to Uninstall a WordPress Plugin",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-to-uninstall-a-wordpress-plugin/"
-        }
-      ]
-    },
-    {
-      "title": "How We Handle Bugs Tracking And Resolving Issues Explained",
-      "slug": "how-we-handle-bugs-tracking-and-resolving-issues-explained",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/how-we-handle-bugs-tracking-and-resolving-issues-explained/",
-      "file": "categories/how-we-handle-bugs-tracking-and-resolving-issues-explained.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "How We Handle Bugs: Tracking and Resolving Issues Explained",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/how-we-handle-bugs-tracking-and-resolving-issues-explained/"
         }
       ]
     },
@@ -2317,19 +2226,6 @@
         {
           "title": "Managing Imported Events",
           "url": "https://docs.nexcess.com/software/the-events-calendar/imported-events/"
-        }
-      ]
-    },
-    {
-      "title": "Install A Wordpress Theme",
-      "slug": "install-a-wordpress-theme",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/install-a-wordpress-theme/",
-      "file": "categories/install-a-wordpress-theme.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Install a WordPress Theme",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/install-a-wordpress-theme/"
         }
       ]
     },
@@ -2876,6 +2772,19 @@
         {
           "title": "Using Responsive Templates with The Events Calendar",
           "url": "https://docs.nexcess.com/software/the-events-calendar/responsive-templates/"
+        }
+      ]
+    },
+    {
+      "title": "Rsvp Migration",
+      "slug": "rsvp-migration",
+      "url": "https://docs.nexcess.com/software/the-events-calendar/rsvp-migration/",
+      "file": "categories/rsvp-migration.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "RSVP Migration",
+          "url": "https://docs.nexcess.com/software/the-events-calendar/rsvp-migration/"
         }
       ]
     },
@@ -3738,19 +3647,6 @@
       ]
     },
     {
-      "title": "Using One License For Live And Dev Sites",
-      "slug": "using-one-license-for-live-and-dev-sites",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/using-one-license-for-live-and-dev-sites/",
-      "file": "categories/using-one-license-for-live-and-dev-sites.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Using One License for Both a Live and Local Development Site",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/using-one-license-for-live-and-dev-sites/"
-        }
-      ]
-    },
-    {
       "title": "Venues Organizers",
       "slug": "venues-organizers",
       "url": "https://docs.nexcess.com/software/the-events-calendar/venues-organizers/",
@@ -3823,7 +3719,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "What Kind of Support Do You Provide for Paid Plugins?",
+          "title": "Software Support Policy and Contacting Support",
           "url": "https://docs.nexcess.com/software/the-events-calendar/what-support-is-provided-for-license-holders/"
         }
       ]
@@ -3838,19 +3734,6 @@
         {
           "title": "When Add-On Features of The Events Calendar Don’t Work",
           "url": "https://docs.nexcess.com/software/the-events-calendar/when-add-on-features-of-tec-dont-work/"
-        }
-      ]
-    },
-    {
-      "title": "Why Am I Being Told My License Key Is Out Of Installs",
-      "slug": "why-am-i-being-told-my-license-key-is-out-of-installs",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/why-am-i-being-told-my-license-key-is-out-of-installs/",
-      "file": "categories/why-am-i-being-told-my-license-key-is-out-of-installs.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Why Am I Being Told My License Key is Out of Installs?",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/why-am-i-being-told-my-license-key-is-out-of-installs/"
         }
       ]
     },

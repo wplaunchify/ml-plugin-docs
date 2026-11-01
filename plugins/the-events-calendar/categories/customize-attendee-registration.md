@@ -138,7 +138,7 @@ Please also note that this might expose your registration form to bots, which co
 
 ## Divide Name into Separate First and Last Name Fields
 
-**Note:**This workaround is valid for Tickets only and not for RSVPs. [Individual Attendee Collection](https://theeventscalendar.com/knowledgebase/enabling-attendee-information-for-tickets/) (IAC) should also be set to *Allowed*or *Required*.
+**Note:**This workaround is valid for Tickets only and not for RSVPs. [Individual Attendee Collection](https://docs.nexcess.com/software/the-events-calendar/attendee-registration/) (IAC) should also be set to *Allowed*or *Required*.
 
 By default, the attendee registration module has a single field to collect the full name, which isn’t always the desired behavior, as separate fields for first and last names are often needed. Here’s how this can be achieved:
 
@@ -222,7 +222,7 @@ While it is possible to add PHP code snippets similar to those provided in this 
 
 ## Allow Duplicate Email Addresses
 
-In [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/), the [Individual Attendee Collection (IAC)](https://theeventscalendar.com/knowledgebase/enabling-attendee-information-for-tickets/) feature requires all attendees to provide their details, including their name and email. By default, both the name and email fields must be unique for each attendee. While this ensures separate records, it may not be suitable for scenarios where parents buy tickets for themselves and their children, as children may not have individual email addresses.
+In [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/), the [Individual Attendee Collection (IAC)](https://docs.nexcess.com/software/the-events-calendar/attendee-registration/) feature requires all attendees to provide their details, including their name and email. By default, both the name and email fields must be unique for each attendee. While this ensures separate records, it may not be suitable for scenarios where parents buy tickets for themselves and their children, as children may not have individual email addresses.
 
 In this example, we will explore how to remove the requirement for the email field to be unique in order to accommodate specific use cases better. The snippet below will modify the attendee registration process and permit identical emails across different tickets and make the email field optional.
 

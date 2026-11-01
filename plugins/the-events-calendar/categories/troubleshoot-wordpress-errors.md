@@ -29,7 +29,8 @@ How do you turn off Debug Mode?
 
 ![kb-common_error_messages-latest_version](https://docs.nexcess.com/wp-content/uploads/2026/06/kb-common_error_messages-latest_version.jpg)
 
-This notice lets you know that you have an add-on for The Events Calendar plugins installed and activated, but need to have the actual [The Events Calendar plugin](http://tri.be/shop/wordpress-events-calendar/) itself installed activated as well. Our premium plugins are extensions of the core plugin and require it in order to properly function.
+This notice lets you know that you have an add-on for The Events Calendar plugins installed and activated, but need to have the actual The Events Calendar plugin itself installed and activated as well.
+ Our premium plugins are extensions of the core plugin and require it in order to properly function.
 
 Install and activate The Events Calendar plugin and those little error messages will go away.
 

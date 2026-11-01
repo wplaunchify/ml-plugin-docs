@@ -144,7 +144,7 @@ You can also combine the two types of links — for example, by linking to 
 
 ## Community Events Pages
 
-If you’re running the [Community Events](https://theeventscalendar.com/products/community/) add-on, users can submit and manage events from the front end of your site. Those submission, list, edit, and delete pages each have their own URLs.
+If you’re running the Community Events add-on, users can submit and manage events from the front end of your site. Those submission, list, edit, and delete pages each have their own URLs.
 
 To view and update the Community Events page URLs, go to **Events → Settings → Community** and look at the **Community rewrite slug** options. You can update the slugs there, as well as view the URLs to your Event Submission and Event List pages.
 

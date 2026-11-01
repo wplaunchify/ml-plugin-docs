@@ -10,7 +10,7 @@
 
 **To exercise your rights under GDPR or the California Consumer Privacy Act (CCPA) you can send a data request to The Events Calendar using the GDPR rights form.**
 
-Even though The Events Calendar is based in the United States, we strive to remain compliant with the EU’s GDPR directive for our EU users. As such, we’ve compiled the information below, which you may review at any time. If you have further questions, please contact us by [email](/cdn-cgi/l/email-protection#d8bfbca8aa98acb0bdbdaebdb6acabbbb9b4bdb6bcb9aaf6bbb7b5). Data requests must be done via our [request form](https://theeventscalendar.com/data-request/).
+Even though The Events Calendar is based in the United States, we strive to remain compliant with the EU’s GDPR directive for our EU users. As such, we’ve compiled the information below, which you may review at any time. If you have further questions, please contact us by [email](/cdn-cgi/l/email-protection#0166657173417569646477646f757262606d646f6560732f626e6c). Data requests must be done via our [request form](https://theeventscalendar.com/data-request/).
 
 ## What are your details?
 
@@ -24,7 +24,7 @@ USA
 
 ## What are the contract terms?
 
-When subscribed to our products or services, you are on a monthly or annual renewal [Agreement](https://theeventscalendar.com/terms/) but can cancel at any time.
+When subscribed to our products or services, you can cancel at any time.
 
 ## What personal data is held by The Events Calendar?
 

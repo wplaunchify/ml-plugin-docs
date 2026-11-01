@@ -302,7 +302,7 @@ You can find all Events Calendar template files [here](https://docs.nexcess.com/
 
 . Events Calendar Pro blocks include: Additional Fields, Recurrence, and Related Events.
 
-You can find all Events Calendar Pro template files [here](https://theeventscalendar.com/knowledgebase/k/events-calendar-pro-template-files/).
+You can find all Events Calendar Pro template files here.
 
 ## Example: Removing the Featured Image from List View
 

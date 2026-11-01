@@ -8,7 +8,7 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/beaver-builder-theme/](https://docs.nexcess.com/software/the-events-calendar/beaver-builder-theme/)
 
-The folks at Beaver Builder have rolled out some pretty incredible features for the page builder, including [integration](https://kb.wpbeaverbuilder.com/category/533-the-events-calendar-integration) with The Events Calendar and Event Tickets.
+The folks at Beaver Builder have rolled out some pretty incredible features for the page builder, including integration with The Events Calendar and Event Tickets.
 
 For these features, you’ll need to use [The Events Calendar](https://theeventscalendar.com/products/wordpress-events-calendar/), [Beaver Builder Plugin](https://www.wpbeaverbuilder.com/), and [Beaver Themer](https://www.wpbeaverbuilder.com/beaver-themer/).
 
@@ -46,7 +46,7 @@ To lay out each element on the remainder of your single events post, switch over
 
 ## Customizing the Events Page
 
-Let’s say you want to customize what displays on the main **Events**page. For that, you’ll still want to select your [default view](https://theeventscalendar.com/knowledgebase/k/important-settings-for-the-events-calendar-events-calendar-pro/#Setting_the_calendars_default_view). After that, create a new Themer Layout that is an **Archive** with a location of **Event Archive**.
+Let’s say you want to customize what displays on the main **Events**page. For that, you’ll still want to select your [default view](https://docs.nexcess.com/software/the-events-calendar/calendar-settings/#h-calendar). After that, create a new Themer Layout that is an **Archive** with a location of **Event Archive**.
 
 ![Beaver Builder Themer Layout Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/image-4-10.png)
 

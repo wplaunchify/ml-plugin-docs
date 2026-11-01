@@ -18,7 +18,7 @@ If you are new to our core plugin, The Events Calendar, you’ll want to make su
 
 3. [Configure your settings](https://docs.nexcess.com/software/the-events-calendar/eventbrite-tickets-settings/) so that your site is connected to Eventbrite.com properly. You’ll also want to make sure that you have your [Eventbrite.com settings](https://www.eventbrite.com/support/lifestages?focus=AccountSettings&lg=en_US) configured as you want.
 
-4. If you’d like, you can [import an event](https://theeventscalendar.com/knowledgebase/k/importing-events-from-eventbrite-com/) from your Eventbrite.com account into The Events Calendar.
+4. If you’d like, you can [import an event](https://docs.nexcess.com/software/the-events-calendar/import-events/#h-eventbrite) from your Eventbrite.com account into The Events Calendar.
 
 5. You can also [add Eventbrite tickets](https://docs.nexcess.com/software/the-events-calendar/publish-eventbrite/) to events in The Events Calendar and have those events added to your Eventbrite account.
 

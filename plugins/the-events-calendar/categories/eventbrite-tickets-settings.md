@@ -15,7 +15,7 @@ Before you can use it and start adding tickets, however, you will need to get yo
 1. Navigate to your **WP Admin → Events → Settings → Integrations → Import** and click the *Connect to Eventbrite* button.
 2. You will be redirected to your [Eventbrite.com](https://www.eventbrite.com/) account.
 3. After logging in, you will be asked to allow our *ea.theeventscalendar.com*application to access your account.
-4. Once you click “Allow,” your site will be connected and you’ll be redirected to your imports page where you can [import your first event from Eventbrite](https://theeventscalendar.com/knowledgebase/k/importing-events-from-eventbrite-com/).
+4. Once you click “Allow,” your site will be connected and you’ll be redirected to your imports page where you can [import your first event from Eventbrite](https://docs.nexcess.com/software/the-events-calendar/import-events/#h-eventbrite).
 
 And that’s it! From there, you’re ready to begin creating events. If you’re unsure how to get started, check out our [Eventbrite Tickets new user primer](https://docs.nexcess.com/software/the-events-calendar/eventbrite-tickets/) as further reading 🙂
 

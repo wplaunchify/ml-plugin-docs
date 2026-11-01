@@ -16,7 +16,7 @@ You may receive reports from users that they encounter the following error upon 
 "There was a problem saving your Event, please try again."
 ```
 
-When users encounter this error while submitting events via the [Community](https://theeventscalendar.com/products/community/) plugin, it’s often due to caching misconfigurations. Caching plugins or server-side caching can interfere with the submission process, leading to this issue.​
+When users encounter this error while submitting events via the Community plugin, it’s often due to caching misconfigurations. Caching plugins or server-side caching can interfere with the submission process, leading to this issue.​
 
 #### Identify and Disable Caching Plugins
 

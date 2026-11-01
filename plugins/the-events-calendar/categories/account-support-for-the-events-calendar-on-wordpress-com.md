@@ -16,7 +16,7 @@ All of our plugins are officially available for purchase on our [brand website](
 
 Note, though, that we do not sell our plugins anywhere else, so beware of plugins that may have been obtained outside our official channels.
 
-For licenses purchased through the WordPress.com dashboard, there will be no user account or license information on theeventscalendar.com. This means that our team does not have any access to be able to assist with things like:
+For licenses purchased through the WordPress.com dashboard, there will be no user account or license information in [our Portal](https://software.liquidweb.com/). This means that our team does not have any access to be able to assist with things like:
 
 - Account services – licensing issues, billing, refunds, subscription extensions, renewals, switching subscriptions, etc.
 - Upgrading/downgrading the plugin, providing copies of older or newer versions, etc.

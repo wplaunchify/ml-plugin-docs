@@ -130,7 +130,7 @@ To edit an existing attendee, hover over the attendee’s row in the Attendee Li
 
 With Event Tickets Plus, you can let attendees log in to your site and edit their RSVP or ticket information — meal choice, contact details, custom registration fields, and so on.
 
-👋 Note: This feature requires Event Tickets Plus (even for RSVPs) and works only for tickets where [Individual Attendee Collection (IAC)](https://theeventscalendar.com/knowledgebase/enabling-attendee-information-for-tickets/) is required.
+👋 Note: This feature requires Event Tickets Plus (even for RSVPs) and works only for tickets where [Individual Attendee Collection (IAC)](https://docs.nexcess.com/software/the-events-calendar/attendee-registration/) is required.
 
 #### Step 1: Allow User Registration
 

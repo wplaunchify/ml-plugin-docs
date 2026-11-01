@@ -10,7 +10,7 @@
 
 [BuddyBoss](https://www.buddyboss.com/ref/692/) is a popular platform that allows you to create a social network hosted right on your WordPress site. Using BuddyBoss can transform your website into an all-in-one interactive community for your users. By creating a BuddyBoss integration, you can transform your website into a social hub. And with [The Events Calendar](https://theeventscalendar.com/products/wordpress-events-calendar/), you can include calendar functionality as well.
 
-We’ve previously written about [integrating The Events Calendar with BuddyPress](https://theeventscalendar.com/knowledgebase/k/integrating-buddypress-with-the-events-calendar/), which is a standalone plugin. But here, we’ll walk you through all of the steps to easily integrate [BuddyBoss](https://www.buddyboss.com/ref/692/) with our plugins so that your WordPress site will have all of the bells and whistles that you need.
+We’ve previously written about [integrating The Events Calendar with BuddyPress](https://docs.nexcess.com/software/the-events-calendar/membership-plugin-integration/#h-using-buddypress), which is a standalone plugin. But here, we’ll walk you through all of the steps to easily integrate [BuddyBoss](https://www.buddyboss.com/ref/692/) with our plugins so that your WordPress site will have all of the bells and whistles that you need.
 
 So let’s get started!
 

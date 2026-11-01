@@ -123,7 +123,7 @@ With the above methods, a bit of time, and a bit of tinkering, you should be abl
 
 - If you want to learn more about the PHP involved in writing functions like those seen in Method One, check out [PHP’s official documentation website](http://php.net/docs.php) and the official WordPress [Codex](https://codex.wordpress.org/) and [Code Reference](http://developer.wordpress.org/reference).
 - If you want to make it easier to write the sort of CSS used in Method Two, check out a (free!) tool like [Firebug](http://getfirebug.com/) if you use FireFox, or the Developer Tools for either [Safari](http://developer.apple.com/technologies/tools/) or [Chrome](https://developers.google.com/chrome-developer-tools/docs/overview). They have “Inspector” tools that make it easy to find out what CSS is required to achieve a specific modification.
-- If you want to hire a professional developer to assist you, check out a list of highly-rated customizers that we have compiled [here](http://m.tri.be/18k1).
+- If you want to hire a professional developer to assist you, see [Can I Hire Your Team to Customize My Calendar?](https://docs.nexcess.com/software/the-events-calendar/custom-development/)
 
 ---
 

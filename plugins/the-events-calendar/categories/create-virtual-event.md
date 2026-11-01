@@ -64,7 +64,7 @@ If you have Event Tickets, you can use the *Show to:* option to hide virtual eve
 
 #### Share
 
-If you have Event Tickets, you can use the [Share option](https://theeventscalendar.com/knowledgebase/?post_type=post&p=1947346#Share) so that the video or meeting link is only provided with users who RSVP as Going or purchase a ticket. You’ll want to then either use the *Show to*: option to limit content visibility on the event page itself or de-select the Display options so that the virtual event content is only available through the email and never displays on the event page.
+If you have Event Tickets, you can use the [Share option](https://docs.nexcess.com/software/the-events-calendar/create-virtual-event/#h-share) so that the video or meeting link is only provided with users who RSVP as Going or purchase a ticket. You’ll want to then either use the *Show to*: option to limit content visibility on the event page itself or de-select the Display options so that the virtual event content is only available through the email and never displays on the event page.
 
 **Note**: If using the “share in tickets emails” option with a Series Pass, only the link for the first event in the Series will actually be included in the email.
 

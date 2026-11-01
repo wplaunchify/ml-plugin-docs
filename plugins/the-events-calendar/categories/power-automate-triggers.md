@@ -19,8 +19,6 @@ There are two Power Automate connectors available to handle triggers and actions
 
 Each of these connectors has its own set of triggers, operations, and data available for automation purposes.
 
-Check out the [Assessment](https://powerautomate.microsoft.com/en-gb/automation-solutions/) to help you get started.
-
 ---
 
 ## The Events Calendar connector

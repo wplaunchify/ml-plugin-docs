@@ -14,7 +14,9 @@ All settings are found under **Tickets → Settings** in the WordPress dashboard
 
 ## General Settings
 
-![The Event Tickets General Settings screen](https://docs.nexcess.com/wp-content/uploads/2026/06/Settings-E280B9-darian-E28094-WordPress-2025-05-06-at-1.08.29-AM.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/ET-only.png)
+
+#### Ticket Settings
 
 - **Post types that can have tickets** — Determines which types of posts support creating tickets. Custom post types are supported and appear as options if available. When The Events Calendar is active, an “Event” option is added to this list. With Events Calendar Pro, a “Series” option also appears.
 - **Remove all Event Tickets data upon uninstall?** — Deletes all Event Tickets data from the database when the plugin is deleted. Disabled by default.
@@ -29,13 +31,17 @@ All settings are found under **Tickets → Settings** in the WordPress dashboard
 - **Debug mode** — Logs debug information to your server’s PHP error log. Useful for troubleshooting. Disabled by default; only enable it for troubleshooting to maintain best performance.
 - **Compact Date Format** — Sets the date format used where space is tight, such as date pickers.
 
+#### Data sharing consent
+
+Enabling this option shares basic telemetry data to help us improve plugin performance and usability.
+
 ## Payments
 
-![The Event Tickets Payments settings screen showing the option to enable Tickets Commerce](https://docs.nexcess.com/wp-content/uploads/2026/06/Settings-E280B9-darian-E28094-WordPress-2025-05-06-at-1.09.32-AM.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/Settings-Payments-Event-Tickets.png)
 
 Tickets Commerce is always active. Under Payment Gateways, connect Stripe, Square or PayPal. Each gateway has its own sub-tab.
 
-![The Payments settings tab after Tickets Commerce is enabled, showing all available options](https://docs.nexcess.com/wp-content/uploads/2026/06/et-settings-june-23-tab-payments-2.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/Settings-Payments-Settings-Event-Tickets-773x1024.png)
 
 - **Enable Test Mode** — Allows you to test ticket sales without processing real payments. Disabled by default.
 - **Stock Handling** — Controls at which point in the purchase process the available ticket count decreases.
@@ -59,7 +65,7 @@ Tickets Commerce is always active. Under Payment Gateways, connect Stripe, Squar
 
 ## Emails
 
-![The Event Tickets Emails settings screen showing the list of configurable email types](https://docs.nexcess.com/wp-content/uploads/2026/06/Settings-E280B9-darian-E28094-WordPress-2025-05-06-at-1.10.38-AM-2.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/Settings-Emails-Event-Tickets.png)
 
 Event Tickets includes the following email types, each configurable independently:
 
@@ -74,7 +80,7 @@ Event Tickets includes the following email types, each configurable independentl
 
 Settings for each email type are detailed in the [Event Tickets Emails article](https://evnt.is/event-tickets-emails). Below the email list, the following global email settings apply to all emails:
 
-![The global email settings section at the bottom of the Emails tab](https://docs.nexcess.com/wp-content/uploads/2026/06/et-settings-june-23-tab-emails-2.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/Settings-Email-Settings-Event-Tickets-800x1024.png)
 
 - **Sender name** — The name shown as the sender in the recipient’s inbox.
 - **Sender email** — The email address used as the sender for all Event Tickets emails.
@@ -96,7 +102,7 @@ A **Preview** button is available on each email’s settings page to show how th
 
 **(Event Tickets Plus Only)**
 
-![The Attendee Registration settings screen in Event Tickets Plus](https://docs.nexcess.com/wp-content/uploads/2026/06/Settings-E280B9-TEC-Plugins-Internal-Use-Only-E28094-WordPress-2025-05-06-at-1.43.54-AM-1024x778-1.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/Settings-Attendee-Registration-Event-Tickets.png)
 
 - **Individual Attendee Collection Default Setting** — The default attendee collection option when creating new tickets. Can be customized per ticket.
 - **Attendee Registration Modal** — Enables a sales flow for purchasing tickets that includes attendee registration.
@@ -115,7 +121,7 @@ A **Preview** button is available on each email’s settings page to show how th
 
 #### Apple Wallet Passes
 
-![The Apple Wallet Passes settings screen in Event Tickets Plus](https://docs.nexcess.com/wp-content/uploads/2026/06/AppleWalletPasses-1024x640-1.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/Settings-Wallet-PDF-Event-Tickets.png)
 
 - **Enable Apple Wallet Passes** — Global toggle for Apple Wallet passes. When enabled, attendees can add passes to Apple Wallet after purchasing tickets or confirming RSVPs.
 - **Logo** — The logo shown on the pass. Defaults to the logo set in Emails settings if defined. If no logo is set, the site title is used.
@@ -126,7 +132,7 @@ A **Preview** button is available on each email’s settings page to show how th
 
 #### PDF Tickets
 
-![The PDF Tickets settings screen in Event Tickets Plus](https://docs.nexcess.com/wp-content/uploads/2026/06/PDFTickets-1024x862-1.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/Settings-PDF-Event-Tickets-730x1024.png)
 
 - **Enable PDF tickets** — Global toggle for PDF tickets. When enabled, attendees receive PDF tickets after purchasing or confirming RSVPs.
 - **Header image** — The image shown in the PDF header. Defaults to the Emails settings logo if defined.
@@ -149,16 +155,16 @@ A **Preview** button is available on each email’s settings page to show how th
 
 ### WooCommerce Support
 
-![The WooCommerce integration settings within the Integrations tab](https://docs.nexcess.com/wp-content/uploads/2026/06/et-settings-june-23-tab-integrations-2.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/Settings-WooCommerce-Support-Event-Tickets.png)
 
 - **When should attendee records be generated?** — Choose the order status at which attendee records are created.
 - **When should tickets be emailed to customers?** — Choose the order status at which ticket emails are sent. No email will be sent if no status is selected.
 
 ## Licenses
 
-![The Licenses settings screen in Event Tickets](https://docs.nexcess.com/wp-content/uploads/2026/06/Settings-E280B9-TEC-Plugins-Internal-Use-Only-E28094-WordPress-2025-05-06-at-1.42.28-AM.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/Settings-Licenses-Event-Tickets-1024x937.png)
 
-Event Tickets does not require a license. This tab is for managing legacy licenses from a previous The Events Calendar account, including a [Promoter](https://theeventscalendar.com/products/promoter/) license key. If you purchased a plan through Nexcess, your products are managed under **Settings → Nexcess Licensing**.
+Event Tickets does not require a license. This tab is for managing legacy licenses from a previous The Events Calendar account, including a Promoter license key. If you purchased a plan through Nexcess, your products are managed under **Settings → Nexcess Licensing**.
 
 ## The Events Calendar Integration
 
@@ -166,7 +172,7 @@ Event Tickets does not require a license. This tab is for managing legacy licens
 
 When Event Tickets is used alongside The Events Calendar, additional settings appear on **Tickets → Settings → General**, under The Events Calendar Integration.
 
-![The Ticket Settings section under Events Settings when The Events Calendar is active](https://docs.nexcess.com/wp-content/uploads/2026/06/Settings-E280B9-TEC-Plugins-Internal-Use-Only-E28094-WordPress-2025-05-06-at-1.43.09-AM-1024x600-1.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/settings-event-tickets-936x1024.png)
 
 - **Location of RSVP form** — Where the RSVP form displays on an event post. Options: Below the event details (default), Above the event details, Below the event description, Above the event description. This setting only affects events made with the classic editor.
 - **Location of Tickets form** — Where the Tickets form displays on an event post. Same options as the RSVP form. This setting only affects events made with the classic editor.
@@ -174,13 +180,13 @@ When Event Tickets is used alongside The Events Calendar, additional settings ap
 
 ## Adding Tickets to Custom Post Types
 
-Once your custom post type is configured, create a new post of that post type in the WordPress admin. For example, if your post type is called “Portfolio” then you might see an item in the WordPress admin menu with that same name, along with an option under it create a new Portfolio post.
+Once your custom post type is configured, create a new post of that post type in the WordPress admin. For example, if your post type is called “Portfolio” then you might see an item in the WordPress admin menu with that same name, along with an option under it to create a new Portfolio post.
 
 The first thing is to make sure that the Event Tickets plugin is configured to work with your custom post type. Event Tickets allows you to specify exactly which post types should be able to use tickets and RSVPs.
 
 Navigate to **Tickets** → **Settings** → **General**from the WordPress dashboard. There is an option to enable tickets and RSVPs for specific post types.
 
-![Select the post type](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-06-07-at-10.18.25-AM.jpg)In this example, the “Event” post type has enabled tickets and RSVPs. Be sure to save your settings before leaving the page.
+![](https://docs.nexcess.com/wp-content/uploads/2022/02/Settings-General-Event-Tickets.png)In this example, the “Event” post type has enabled tickets and RSVPs. Be sure to save your settings before leaving the page.
 
 The next step is to check that the custom post type supports custom fields for posts. Custom post types do not support them right out of the box, so that is something we need to enable.
 
@@ -195,7 +201,7 @@ $supports
 'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields' ),
 ```
 
-However, if you’re using the Custom Post Type UI plugin, then navigate to **CPT UI** → **Add/Edit Post Type** → **Edit Post Types** from the WordPress dashboard. Select the custom post type your created from the **Select** drop down menu, then scroll down to the **“Supports”** section of the page.
+However, if you’re using the Custom Post Type UI plugin, then navigate to **CPT UI** → **Add/Edit Post Type** → **Edit Post Types** from the WordPress dashboard. Select the custom post type you created from the **Select** drop-down menu, then scroll down to the **“Supports”** section of the page.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/456EDB9F-C7C3-43A7-9988-56449AEA7526.jpeg)Select the “Custom Fields” option and save your settings.
 

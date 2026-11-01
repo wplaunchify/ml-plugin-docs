@@ -8,7 +8,7 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/how-to-add-a-shortcode-in-wordpress/](https://docs.nexcess.com/software/the-events-calendar/how-to-add-a-shortcode-in-wordpress/)
 
-With [Events Calendar Pro](https://theeventscalendar.com/products/wordpress-events-calendar/), you can [add calendar content](https://theeventscalendar.com/knowledgebase/k/inserting-calendar-content-into-posts-or-pages/) to any WordPress page or post. There are a few different methods that you can use to add a shortcode to your WordPress site, and we’ll show you how to do it below.
+With [Events Calendar Pro](https://theeventscalendar.com/products/wordpress-events-calendar/), you can [add calendar content](https://docs.nexcess.com/software/the-events-calendar/calendar-embed-shortcodes/) to any WordPress page or post. There are a few different methods that you can use to add a shortcode to your WordPress site, and we’ll show you how to do it below.
 
 ## Add a shortcode with the Block Editor
 

@@ -299,7 +299,9 @@ For this example, we made use of the additional fields from Events Calendar Pro,
 #### Related Actions
 
 - [tribe_template_before_include](https://docs.theeventscalendar.com/reference/hooks/tribe_template_before_include/)
-- [tribe_template_before_include:$template](https://docs.theeventscalendar.com/reference/hooks/tribe_template_before_includehookname/)
+- ```
+tribe_template_before_include:$template
+```
 - [tribe_template_after_include](https://docs.theeventscalendar.com/reference/hooks/tribe_template_after_include/)
 - [tribe_template_after_include:$template](https://docs.theeventscalendar.com/reference/hooks/tribe_template_after_includehookname/)
 

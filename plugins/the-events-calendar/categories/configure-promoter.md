@@ -8,7 +8,7 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/configure-promoter/](https://docs.nexcess.com/software/the-events-calendar/configure-promoter/)
 
-[Promoter](https://theeventscalendar.com/products/promoter/) is an email marketing service built specifically for event organizers using The Events Calendar. It connects to your WordPress site, imports your events and attendees automatically, and lets you send scheduled messages, triggered emails, and full campaigns — without manually building email lists or exporting data.
+Promoter is an email marketing service built specifically for event organizers using The Events Calendar. It connects to your WordPress site, imports your events and attendees automatically, and lets you send scheduled messages, triggered emails, and full campaigns — without manually building email lists or exporting data.
 
 This article covers everything you need to get Promoter running: requirements, installation, connecting your account, verifying your domain for reliable mail delivery, syncing events, and creating your first campaign.
 
@@ -54,7 +54,7 @@ https://www.domain.com/subfolder/
 
 - [The Events Calendar](https://theeventscalendar.com/products/wordpress-events-calendar/) (free)
 - [Event Tickets](https://theeventscalendar.com/products/wordpress-event-tickets/) (free)
-- [Promoter](https://theeventscalendar.com/products/promoter/) (premium subscription)
+- Promoter (premium subscription)
 
 ![Promoter — automated email marketing for events](https://docs.nexcess.com/wp-content/uploads/2026/06/evergreen-ad-promoter-1024x384-1.png)
 
@@ -62,7 +62,7 @@ https://www.domain.com/subfolder/
 
 Install The Events Calendar and Event Tickets on your WordPress site if you haven’t already. Both are free and available under **Plugins → Add New** in your WordPress dashboard. For help, see [Downloading and Installing the Plugin](https://docs.nexcess.com/software/the-events-calendar/downloading-and-installing-the-plugin/).
 
-Next, purchase a Promoter license at [theeventscalendar.com/product/promoter/](https://theeventscalendar.com/product/promoter/). After checkout, your license key will appear in your account at [theeventscalendar.com/license-keys/](https://theeventscalendar.com/license-keys/).
+Next, purchase a Promoter license at theeventscalendar.com/product/promoter/. After checkout, your license key will appear in your account at [theeventscalendar.com/license-keys/](https://theeventscalendar.com/license-keys/).
 
 ![Promoter license key shown in the TEC account licenses page](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2020-10-15-at-5.16.29-PM.png)
 

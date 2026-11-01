@@ -30,7 +30,7 @@ Please note that if you are using any of our premium plugins (including Events C
 
 **Important:** Keep in mind that translations may not be 100% complete, or may only exist for some plugins. Further, any strings which are marked Yellow in glotpress have not been approved yet, and the updated version will not appear in the downloaded .po or .mo files until it is approved. You may still see some English on your site if this is the case.
 
-Interested in updating a translation, or adding a new one altogether? If so, learn about updating and adding translations for premium plugins [here](https://theeventscalendar.com/knowledgebase/k/translating-the-premium-plugins/). If you’re interested in contributing to The Events Calendar instead, [head here for more information](https://docs.nexcess.com/software/the-events-calendar/translating-the-events-calendar/).
+Interested in updating a translation, or adding a new one altogether? If so, learn about updating and adding translations for premium plugins [here](https://docs.nexcess.com/software/the-events-calendar/translate-events-calendar/#h-translating-premium-add-ons). If you’re interested in contributing to The Events Calendar instead, [head here for more information](https://docs.nexcess.com/software/the-events-calendar/translating-the-events-calendar/).
 
 ## Changing the Language of Your Calendar’s URL Slugs
 

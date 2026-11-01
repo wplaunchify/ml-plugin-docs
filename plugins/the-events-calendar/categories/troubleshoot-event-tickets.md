@@ -105,7 +105,7 @@ This is not an error — it’s an informational notice explaining that the free
 
 To understand what your options are: Event Tickets includes [Tickets Commerce](https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/), a lightweight built-in payment system that supports PayPal and Stripe. If you want to use WooCommerce instead — which offers a wider range of payment gateways and more control over order and attendee management — you need [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/).
 
-Event Tickets Plus also adds the ability to [collect attendee information](https://theeventscalendar.com/knowledgebase/enabling-attendee-information-for-tickets/) and [share stock between tickets](https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/#global-stock) on the same event.
+Event Tickets Plus also adds the ability to [collect attendee information](https://docs.nexcess.com/software/the-events-calendar/attendee-registration/) and [share stock between tickets](https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/#global-stock) on the same event.
 
 If you’d like to move from Tickets Commerce to WooCommerce, see [Switching from Tickets Commerce to WooCommerce](https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/).
 

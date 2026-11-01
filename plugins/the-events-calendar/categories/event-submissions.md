@@ -8,13 +8,13 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/event-submissions/](https://docs.nexcess.com/software/the-events-calendar/event-submissions/)
 
-Allowing users to submit and manage their own events directly on your site is a powerful way to build community engagement and reduce the admin work of curating a calendar. With The Events Calendar and the [Community Events](https://theeventscalendar.com/products/community/) add-on, you can enable frontend event submissions, review what comes in, and give users a dedicated page for managing their own events.
+Allowing users to submit and manage their own events directly on your site is a powerful way to build community engagement and reduce the admin work of curating a calendar. With The Events Calendar and the Community Events add-on, you can enable frontend event submissions, review what comes in, and give users a dedicated page for managing their own events.
 
 This article walks through the full lifecycle: configuring submissions, handling them as they arrive, and setting up a My Events page for your users. For a complete reference of every setting on the Community tab, see [Configuring Community Events](https://theeventscalendar.com/knowledgebase/configuring-community-events/).
 
 ## Setting Up Community Event Submissions
 
-First, make sure the [Community Events](https://theeventscalendar.com/products/community/) add-on is installed and activated alongside The Events Calendar. Then head to **Events → Settings → Community** in your WordPress dashboard to configure the submission form.
+First, make sure the Community Events add-on is installed and activated alongside The Events Calendar. Then head to **Events → Settings → Community** in your WordPress dashboard to configure the submission form.
 
 ![The Community tab in Events Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/CE-option-2.jpg)
 

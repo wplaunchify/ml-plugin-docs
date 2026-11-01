@@ -144,7 +144,8 @@ So let’s look at various ways that BuddyPress and our products can work togeth
 
 #### Add the Calendar to a Group Page
 
-So, yes, BuddyPress does indeed restrict access to certain pages, or groups in this case. While that doesn’t do much in the way of restricting access to the full calendar, group pages support shortcodes. That means, with the help of [shortcodes in Events Calendar Pro](https://theeventscalendar.com/knowledgebase/k/which-plugins-should-i-use-on-my-membership-site?), we can drop 
+So, yes, BuddyPress does indeed restrict access to certain pages, or groups in this case. While that doesn’t do much in the way of restricting access to the full calendar, group pages support shortcodes. That means, with the help of [shortcodes in Events Calendar Pro](https://docs.nexcess.com/software/the-events-calendar/shortcodes/),
+ we can drop 
 ```
 [tribe_events]
 ```
@@ -334,7 +335,7 @@ MemberPress is a pretty darn neat plugin, but that doesn’t mean it’s perfect
 
 Again, we think MemberPress is pretty fantastic. It’s going to have everything you need to create and manage memberships, as well as slew of things, like courses and subscriptions. And, of course, it works extremely well with The Events Calendar for lots of use cases.
 
-At the same time, MemberPress might be too much for your site, especially if you’re already using WooCommerce or Easy Digital Downloads as an e-commerce provider. There’s no need to manage two e-commerce systems. It’s probably more practical to look at either [WooCommerce Memberships](https://theeventscalendar.com/knowledgebase/integrating-woocommerce-memberships-with-the-events-calendar/) or [Restrict Content Pro](https://theeventscalendar.com/knowledgebase/integrating-restrict-content-pro-with-the-events-calendar/) with Event Ticket Plus in that scenario.
+At the same time, MemberPress might be too much for your site, especially if you’re already using WooCommerce or Easy Digital Downloads as an e-commerce provider. There’s no need to manage two e-commerce systems. It’s probably more practical to look at either [WooCommerce Memberships](https://theeventscalendar.com/knowledgebase/integrating-woocommerce-memberships-with-the-events-calendar/) or [Restrict Content Pro](https://docs.nexcess.com/software/the-events-calendar/membership-plugin-integration/#h-using-restrict-content-pro) with Event Ticket Plus in that scenario.
 
 Regardless of the situation, MemberPress is most certainly capable of everything you’d need from a membership-based calendar, from providing exclusive access to the calendar, and certain categories of events, specific events, to tickets and event submissions. There are so many
 

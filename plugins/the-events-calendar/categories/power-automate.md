@@ -15,7 +15,6 @@ Now you can use [Microsoft Power Automate (MSPA)](https://powerautomate.microsof
 - [Microsoft Learn](https://learn.microsoft.com/en-us/training/powerplatform/power-automate)
 - [List of connectors](https://learn.microsoft.com/en-us/connectors/connector-reference/connector-reference-powerautomate-connectors)
 - Go through the first 2 sections of [Get started with Power Automate](https://learn.microsoft.com/en-us/training/modules/get-started-flows/) (18 minutes)
-- Take the [Assessment](https://powerautomate.microsoft.com/en-gb/automation-solutions/) to get recommendations of helpful flows
 
 To explain how this works, we’ll be creating an actual automation! In this example, every time you publish an event (trigger), an email will be sent to someone using Gmail.
 

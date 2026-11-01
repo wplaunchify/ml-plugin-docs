@@ -21,13 +21,13 @@ As a site admin, you have a number of controls over how frontend event submissio
 - **Pending Review** – submissions will not display on the site until marked as Published by an administrator. This status makes it easier for admins to spot submissions that need review.
 - **Published** – submissions are publicly accessible on your site as soon as the person submits the event.
 
-![Community Submission Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/kb-community-submission-settings-665x171-1.jpg)
+![Community Content Creation settings showing Allow anonymous submissions, Use visual editor for event descriptions and Default status for submitted events.](https://docs.nexcess.com/wp-content/uploads/2019/10/1-community-content-creation-1024x579.png)Events → Settings → Community → Content Creation.
 
 #### Terms of Submission
 
 Set the Terms of Submission that event submitters will have to agree to upon adding or editing events.
 
-![Terms of Submission backend setting and frontend display](https://docs.nexcess.com/wp-content/uploads/2026/06/2020-05-20-Community-Events-terms-of-submission-1024x331-1.png)The backend setting and frontend display of the Community required Terms of Submission field.
+![](https://docs.nexcess.com/wp-content/uploads/2019/10/2-terms-of-submission-combined-1024x731.png)The Terms of Submission setting and how it appears on the submission form.
 
 #### Form Defaults
 
@@ -49,16 +49,16 @@ Edit the default URLs for the Community pages. These slugs are not translatable,
 
 Configuring these alerts is particularly important if you’ve set the default submission status to Draft or Pending Review, since an administrator will need to take action on every submission. Each address listed will receive an email whenever an event is submitted. Here’s an example:
 
-![Community Alert Email](https://docs.nexcess.com/wp-content/uploads/2026/06/kb-community-email-665x218-1.jpg)
+![Community Alerts settings with Send an email alert when a new event is submitted checked and events@example.com in Email addresses to be notified.](https://docs.nexcess.com/wp-content/uploads/2019/10/3-community-alerts-1024x427.png)Events → Settings → Community → Alerts.
 
 If you’d like to customize the information that displays in the Community alert email, you can override the 
 ```
 email-template.php
 ```
 
- file in the Community Events plugin directory. See our [Customizing Template Files guide](https://theeventscalendar.com/knowledgebase/themers-guide/) for more on performing template overrides.
+ file in the Community Events plugin directory. See [Customizing The Events Calendar Templates](https://docs.nexcess.com/software/the-events-calendar/customize-template-files/) for more on performing template overrides.
 
-![Community Alert Settings](https://docs.nexcess.com/wp-content/uploads/2026/06/kb-community-alert-settings-665x183-1.jpg)
+![ reCAPTCHA API Keys section on the Integrations tab with empty Site Key and Secret Key fields.](https://docs.nexcess.com/wp-content/uploads/2019/10/4-recaptcha-api-keys-1024x506.png)Events → Settings → Integrations → reCAPTCHA API Keys.
 
 ### Members
 

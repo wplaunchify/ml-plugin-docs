@@ -27,7 +27,7 @@ You can override the plugin’s CSS even with Default Styles enabled. See [Addin
 
 Found at: **Events → Settings → Display → Calendar → Calendar Template → Events template**
 
-💡 This option does not appear if you are using a Full Site Editor theme. See [The Events Calendar and Full Site Editor](https://theeventscalendar.com/knowledgebase/k/the-events-calendar--full-site-editor/).
+💡 This option does not appear if you are using a Full Site Editor theme. See [The Events Calendar and Full Site Editor](https://docs.nexcess.com/software/the-events-calendar/events-site-editor/).
 
 ![The Events Template dropdown in The Events Calendar Display settings](https://docs.nexcess.com/wp-content/uploads/2026/06/default-events-template.jpg)
 

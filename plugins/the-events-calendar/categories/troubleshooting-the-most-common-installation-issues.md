@@ -52,7 +52,7 @@ You installed the calendar, published some events and now need a way to add the 
 
 You can locate your exact calendar URL by logging into WordPress and selecting “View Calendar” from the Events dropdown in the top admin bar.
 
-Copy your calendar’s URL, then head to Appearance > Menus and add the calendar to your navigation as you would any other page. Need help? We’ve got [a handy walk through for you](https://theeventscalendar.com/knowledgebase/k/adding-a-calendar-link-to-your-site-menu/).
+Copy your calendar’s URL, then head to Appearance > Menus and add the calendar to your navigation as you would any other page. Need help? We’ve got [a handy walk through for you](https://docs.nexcess.com/software/the-events-calendar/calendar-links/#h-linking-to-the-calendar-to-a-wordpress-menu).
 
 ### My calendar layout doesn’t look right
 

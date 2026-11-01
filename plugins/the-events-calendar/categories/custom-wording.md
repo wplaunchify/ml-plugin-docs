@@ -498,7 +498,7 @@ tribe_hybrid_label_singular
 
 Inside each of those template tags is a filter by a similar name, so we’ll want to know which of these we’d like to change. In most cases, we’ll want to change all of them so that the verbiage stays consistent across all of our virtual events.
 
-We can also change the global “events” term, so a combination of filters can work here as well if we’d like the term “events” to be different everywhere on our site. We have an article about that here: [Changing the term “Event(s)”](https://theeventscalendar.com/knowledgebase/k/changing-the-term-events/). But the important part is that *if you use those filters to change the global event(s) term then the terms will change here as well – automatically.*
+We can also change the global “events” term, so a combination of filters can work here as well if we’d like the term “events” to be different everywhere on our site. We have an article about that here: [Changing the term “Event(s)”](https://docs.nexcess.com/software/the-events-calendar/custom-wording/#h-changing-the-term-events). But the important part is that *if you use those filters to change the global event(s) term then the terms will change here as well – automatically.*
 
 So if we set “Event” via the filter 
 ```

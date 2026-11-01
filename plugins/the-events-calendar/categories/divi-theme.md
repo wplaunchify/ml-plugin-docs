@@ -65,7 +65,7 @@ For single-event page control, use the **Events Page** module with a Divi Theme 
 
 #### Option 2: Custom CSS
 
-Whether you’re using Divi modules or TEC’s default templates, fine-grained appearance adjustments can always be made with CSS. See [Customizing CSS with The Events Calendar](https://docs.nexcess.com/software/the-events-calendar/customize-css/) and [Calendar View CSS Classes](https://theeventscalendar.com/knowledgebase/working-with-view-classes/) for reference.
+Whether you’re using Divi modules or TEC’s default templates, fine-grained appearance adjustments can always be made with CSS. See [Customizing CSS with The Events Calendar](https://docs.nexcess.com/software/the-events-calendar/customize-css/) for reference.
 
 ## Fixing Compatibility Issues
 

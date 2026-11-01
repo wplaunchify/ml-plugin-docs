@@ -4,55 +4,85 @@
 
 ---
 
-## What Kind of Support Do You Provide for Paid Plugins?
+## Software Support Policy and Contacting Support
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/what-support-is-provided-for-license-holders/](https://docs.nexcess.com/software/the-events-calendar/what-support-is-provided-for-license-holders/)
 
-We have a [dedicated help desk](https://software.liquidweb.com/support/) where we provide support services for our premium plugins. **Please note that it may be 24-48 hours before we respond to new tickets** and we do not generally provide support over weekends. While we aim to be as fast as we can, we ask for your patience during periods of peak support activity.
+Behind our plugins is a knowledgeable team of humans ready to guide you through setting up, using, and troubleshooting our products. Every one of our technical support agents has years of experience in the WordPress space. We also have a dedicated account services team ready to assist with all things related to your account.
 
-You must have an active subscription to receive support for our premium plugins and services. We [encourage you to log in](https://software.liquidweb.com/support/) before submitting a new ticket – that way, we’ll be able to connect you with the right team members a whole lot faster.
+## When is support available?
 
-Alternatively, if you are looking for free support (for The Events Calendar, Event Tickets, or another free plugin) you can head over to the relevant WordPress.org forum and post your question there. These forums are not monitored daily and are primarily a place for community members to help one another … but we do check in and try to assist whenever possible:
+Our software support team is available Monday through Friday from 4am to 7pm ET. You’ll receive a first response in under three hours. Note that fully resolving an issue may take longer, depending on the complexity of the problem.
 
-- [The Events Calendar forum for free users](https://wordpress.org/support/plugin/the-events-calendar)
-- [Event Tickets forum for free users](https://wordpress.org/support/plugin/event-tickets)
+## What methods of support do you offer?
 
-We do not currently provide [phone-based support](https://docs.nexcess.com/software/the-events-calendar/why-we-dont-offer-phone-support/). If you need assistance, our Help Desk is the best and fastest place to seek help.
+We do all of our support via tickets.
 
-We have decided to keep our support online for several reasons:
+Tickets let you share screenshots, links, system information, and logs all in one place. They also keep a written record of the investigation, so you and our team can refer back to earlier details. When an issue needs input from other teams, they can review all of the information quickly and easily to provide additional support.
 
-- **Efficiency.** We can troubleshoot issues, and we don’t need to put you on hold.
-- **Sharing information.** Many support requests require sharing details that are tough to transmit over a phone, like screenshots, links, code snippets and details about your system setup.
-- **Keeping records.** We want to be sure that useful information doesn’t get lost and we can use it as a reference for future support requests.
-- **Transparency and team effort.** We can join forces with our entire team to troubleshoot complex issues quickly.
-- **Better quality.** We work remotely around the globe across multiple time zones to better serve you. We value flexible working times with a great work/life balance to ensure that we are more focused and productive.
-- **Global clients.**By providing a text-based solution for support, our clients can use text translation tools as needed and understand responses.
+We do not currently offer phone / chat support. We have found that ticket-based support provides a better experience for our customers given the often complex questions and issues that can arise in WordPress environments.
 
-While we may not be available by phone, we are ready and looking forward to helping you in our [Help Desk](https://support.theeventscalendar.com/submit_ticket).
+## What does support cover?
 
-**The Events Calendar plugin support covers help with setting up the latest version of the product and direction on how to use the latest version of the product as advertised.** Our support service does not cover help with theme or plugin customization beyond the advertised features (see examples of support vs. customization below), nor does it cover help on sites that are heavily customized or in situations where the core plugin files have been modified. **Please note that we cannot provide support to users who refuse to follow our troubleshooting steps.**
+We will be happy to help you:
 
-It is also worth noting that we cannot assist with the setup and installation of both staging and live sites. We can help you set up The Events Calendar plugins but cannot provide services for general website setup.
+- Install, activate, update, and set up our plugins and themes
+- Use built-in settings and features to get the results you need
+- Configure and use our *built-in*integrations with third-party platforms
+- Troubleshoot unexpected behavior
 
-If a user finds a bug in our code, we will ticket it to be fixed in an upcoming maintenance release. We have a regular release cycle for bug fixes, but we can not guarantee nor can we commit to a timeframe for a specific fix. We do our best to update support tickets when a fix is coming soon.
+### What falls outside our scope of support?
 
-### Supported plugin support examples
+Support does not include custom development or changes beyond the product’s built-in features. This includes writing or changing code, building custom features or styles, and creating custom integrations with other plugins, themes, or services.
 
-- “I understand the plugin is capable of a certain feature but need help figuring out how to use it.”
-- “I’m trying to install and activate the plugin but am experiencing difficulties and need some help.”
-- “I’m following the tutorial/new user primer but it still isn’t working. What am I doing wrong?”
-- “I’m having trouble upgrading to the latest version.”
+If you need custom development, you can [hire a WordPress developer through Codeable](https://codeable.io/partners/the-events-calendar/?ref=gMH0m). You’ll work with the developer directly to agree on the scope and cost.
 
-### Unsupported plugin support examples
+## Before contacting support
 
-- “What functions or other code do I need to use to be able to achieve X?” (Where “X” is something that is not provided out-of-the-box by our plugins.)
-- “I wish to change the color, styling or layout of calendar views.”
-- “Your plugin is currently doing X. Please help me modify the code to make it do Y.”
-- “I would like to integrate the plugin with a third party plugin, theme or service.”
-- “I need to add extra functionality, meta boxes or user interface elements to the plugin’s admin screens.”
-- “I want to change the types of user who can and cannot access various plugin features to something other than the defaults.”
-- “I want to create a custom view that does X, Y, and Z.”
-- “My client has this list of requirements. Can your plugin do each of these things?”
+Check our documentation for help with the issue, and check whether updates are available. Before changing plugins or themes, take a full backup and use a staging site where possible.
+
+If you suspect a conflict, follow our [plugin conflict-testing guide](https://docs.nexcess.com/software/general/how-to-test-for-plugin-conflicts/). Tell us whether the issue still happens, and include the name and version of any conflicting plugin or theme you find. If you can’t complete a troubleshooting step, let us know when you contact us.
+
+## How do I contact support?
+
+You can contact our software support team by submitting a ticket through our [support request form](https://software.liquidweb.com/support/). If you are an active customer, **we strongly encourage you to log in prior to submitting a request**. This allows us to link your support request to your account from the start. Active customers receive a higher priority in our queue, so logging in ensures that you will receive help as quickly as possible!
+
+You can also log in to the [customer portal](https://software.liquidweb.com/) and select **Support** in the portal header.
+
+1. Under **What can we help with?**, choose the option that best describes your request.
+2. Select the product you need help with, if prompted.
+3. Fill in **Summary** and **Additional details**. For a technical issue, describe what happens and what you expected, and complete **What steps have you tried so far?**, **Website**, and **System Info** where relevant.
+4. Add the license key associated with your purchase if available.
+5. Check the **Reply to** email address, then select **Submit**.
+
+After submitting the form, you’ll receive a ticket confirmation. You can reply to that email to add more details, screenshots, screen recordings, or logs.
+
+[Contact Software Support](https://software.liquidweb.com/support/)
+
+## What should I include in a technical request?
+
+These details help us understand the request and provide faster resolutions:
+
+- A thorough description of the problem and the result you expected
+- The steps we can follow to reproduce it
+- The exact page URL and any error message you see
+- Your [system information](https://docs.nexcess.com/software/general/how-to-find-and-share-your-system-information/)
+- Relevant screenshots or a short screen recording
+- What you’ve already tested and whether anything changed before the problem started
+
+### Sharing your System Information
+
+Paste the complete text of your System Info into the form’s **System Info** field rather than sending a screenshot. [How to Find and Share Your System Information](https://docs.nexcess.com/software/general/how-to-find-and-share-your-system-information/) explains where to find the report for GiveWP, The Events Calendar, LearnDash, and Kadence.
+
+If you have any issues accessing your system information, you can alternatively go to **Tools > Site Health > Info** in WordPress, select **Copy site info to clipboard**, and paste it into your request. Note that a support tech may still need to help you find your system information report generated by the product(s) you’re using so that we can get more specific information.
+
+### Sharing logs
+
+For some issues, we may ask you to collect a [debug log](https://docs.nexcess.com/software/general/how-to-enable-debugging-in-wordpress/). Including this with your initial request can help speed up the process if you are seeing any fatal errors or other PHP-generated messages.
+
+## What happens next?
+
+An agent (a human!) will review your request and reply with guidance, questions, or troubleshooting steps. If we confirm a product bug, we’ll report it to our development team.
 
 ---
 

@@ -152,7 +152,7 @@ If you’ve noticed that some old events end up in the **Trash** while others ar
 
 ### Why Are Some Events Set to “Ignored” Instead of “Trashed”?
 
-When events are imported using [Event Aggregator](https://theeventscalendar.com/products/event-aggregator/), they’re handled differently. If you move an imported event to the Trash, Event Aggregator automatically places it on the **Ignore** list instead.
+When events are imported using Event Aggregator, they’re handled differently. If you move an imported event to the Trash, Event Aggregator automatically places it on the **Ignore** list instead.
 
 This prevents the same event from being re-imported later. If trashed events were deleted permanently in the usual way, Event Aggregator would see them as missing from your calendar and simply re-import them on the next scheduled run. Marking an event as Ignored tells the system: *“Don’t import this event again.”*
 

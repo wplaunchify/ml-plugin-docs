@@ -10,7 +10,7 @@
 
 Many of our users use the [Oxygen builder](https://oxygenbuilder.com) and its accompanying theme with our plugins. Sometimes they don’t work together seamlessly, but with a few tweaks, your single event page and your main calendar page will play together nicely with Oxygen.
 
-If you are using our legacy calendar views, make sure to [enable the updated calendar views](https://theeventscalendar.com/knowledgebase/k/enabling-updated-calendar-views/?id=legacyviews) under **Events →** **Settings → Display.**
+If you are using our legacy calendar views, make sure to enable the updated calendar views under **Events →** **Settings → Display.**
 
 Next, make sure that you choose the **Default Events Template** option.
 

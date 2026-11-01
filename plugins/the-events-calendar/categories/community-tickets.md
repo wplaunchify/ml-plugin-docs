@@ -82,9 +82,13 @@ Coupons are not functional or supported for payouts based on the PayPal Payments
 
 ## Split Payments
 
+### Manual Split Payments
+
 There are three ways to collect fees from ticket sales. The default option is to have all ticket sales collected via your [e-commerce engine](https://docs.nexcess.com/software/the-events-calendar/ecommerce/) (WooCommerce or Tickets Commerce). You can then divide up the money as needed. **With this method,** **it is your responsibility as the site admin to pay event organizers**– by whatever method you prefer. You can use the sales data for each event to track how much is owed to the organizer and how much you have earned in fees.
 
-The other two options are to enable split payments, which divide up each ticket sale according to your fee settings and immediately pays the site admin and the event organizer via PayPal.
+### PayPal Payouts
+
+The other two options are to enable the automatic Split Payments feature, which divides up each ticket sale according to your fee settings and immediately pays the site admin and the event organizer via PayPal. **This option only works if you use WooCommerce to sell tickets.**Be sure to have WooCommerce selected as the Default Provider under Events > Settings > Community > Community Tickets.
 
 When tickets are sold, you will automatically receive payments to the PayPal address defined in settings.  The amount you receive depends on the fees you’ve defined in the main Community Tickets fee option settings.
 
@@ -98,7 +102,7 @@ The organizer will then fill in their email address tied to their PayPal account
 
 **Note:** If you have enabled **Split Payments** but haven’t finished configuring your PayPal settings, links to reports won’t show on **My Events**
 
-### PayPal Payouts API
+#### PayPal Payouts API
 
 This is processed separately from your payment gateway. You can use any WooCommerce payment gateway. When the order proceeds to completed status, you will get a payout created and queued up to be paid via PayPal while the remainder of transactions remains with your preferred payment gateway.
 
@@ -122,11 +126,11 @@ wp cron event run tribe_community_tickets_payouts_process
 
 To be able to issue refunds, we recommend that you do not mark orders as [complete](https://docs.woocommerce.com/document/managing-orders/) until the event occurs. Once an order is marked as complete, payments are sent to organizers. Refunding tickets will not recover the payouts already sent to organizers. You could try to dispute that specific transaction with PayPal and say you did not receive what was paid for. However, we are unable to assist further with this step.
 
-### Deprecated PayPal Adaptive Payments
+### PayPal Adaptive Payments (Deprecated)
 
-It’s important to note that this functionality is currently based on PayPal’s Adaptive Payments API which was recently deprecated. If you do not already have a live, approved Adaptive Payments account then you may no longer be able to acquire one. Paypal is deprecating Adaptive Payments in favor of the Payouts API method.
+It’s important to note that this functionality is currently based on PayPal’s Adaptive Payments API which was deprecated. If you do not already have a live, approved Adaptive Payments account then you may no longer be able to acquire one. Paypal is deprecating Adaptive Payments in favor of the Payouts API method.
 
-If you already have a live, approved account however then you can enable split payments on the Community settings page. You will need to use a WooCommerce payment gateway that the customer would use to make their purchases. For more help, please refer to our overview on [Adaptive Payments](https://docs.nexcess.com/software/the-events-calendar/community-tickets/) and also  [PayPal’s support](https://developer.paypal.com/docs/classic/adaptive-payments/integration-guide/APIntro/).
+If you already have a live, approved account however then you can enable split payments on the Community settings page. You will need to use a WooCommerce payment gateway that the customer would use to make their purchases. For more help, please refer to our overview on Adaptive Payments and also  [PayPal’s support](https://developer.paypal.com/docs/classic/adaptive-payments/integration-guide/APIntro/).
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/payouts-api-setup.png)
 
@@ -187,8 +191,6 @@ If a buyer purchases tickets from several events by the same community organizer
 In the example below, a user has purchased tickets for 3 different events hosted by the same organizer. The Payouts tab shows all payouts related to this event, plus the transactions where the buyer purchased 2 other tickets in the same order — all from the same organizer.
 
 ![Payouts showing multiple tickets from different events with the same organizer](https://docs.nexcess.com/wp-content/uploads/2026/06/multiple-tickets-per-order-scaled.png)
-
-##
 
 ---
 

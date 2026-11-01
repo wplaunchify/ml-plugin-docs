@@ -42,7 +42,7 @@ By default, multi-day events appear on every calendar day between their start an
 
 If your event only has meaningful activity on the first day, you can suppress it from subsequent days:
 
-- Use a PHP snippet to automatically hide events once they’ve started, so they no longer appear after the first day. See [How to Hide Events That Have Already Started](https://theeventscalendar.com/knowledgebase/how-to-hide-events-that-have-already-started-in-the-events-calendar/).
+- Use a PHP snippet to automatically hide events once they’ve started, so they no longer appear after the first day. See [How to Hide Events That Have Already Started](https://docs.nexcess.com/software/the-events-calendar/customize-calendar-views/#h-hiding-events-that-have-already-started).
 - Create separate single-day events if your activities happen on specific days only.
 
 #### Use Clear Event Titles and Descriptions
