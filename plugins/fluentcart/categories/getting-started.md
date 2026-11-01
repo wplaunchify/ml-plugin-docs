@@ -123,6 +123,7 @@ This glossary defines common terms used throughout the FluentCart documentation 
 - **Activation Limit:** The maximum number of times a **License Key** can be used to activate a software product. This is set per **Variation** (e.g., a "Single Site" license has an activation limit of 1).
 - **Add-on:** An optional extension that adds new features and capabilities to FluentCart Pro, such as Subscriptions or advanced licensing.
 - **Advanced Filters:** A set of powerful tools in the admin dashboard for searching and segmenting records like orders or customers based on specific, detailed criteria.
+- **Advanced Inventory:** A Pro module that adds a central **Inventory** screen for viewing low and out-of-stock items, updating stock in bulk, and reviewing a history of every stock change.
 - **Advanced Variations:** A pricing method for products built from reusable **Attributes** such as Color, Size, or Material. You pick the option dimensions and their values, and FluentCart automatically generates every possible combination as a **Variation**. To learn more, read the [Advanced Variations](/guide/product-types-creation/advanced-variations) documentation.
 - **Applied Coupon:** A record that tracks the use of a specific **Coupon** on an order, detailing the discount amount that was applied.
 - **Attribute:** A reusable option dimension used to build product variations, such as Color or Size. Each attribute is made up of **Attribute Terms** (its individual values) and is managed globally under **Products > Attributes**.

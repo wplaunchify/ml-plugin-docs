@@ -24,7 +24,7 @@ This section covers the following essential aspects:
 - **Defining Upgrade Paths:** Set up seamless upgrade options for your tiered products, particularly for licensed and subscription items.
 - **Product List Overview:** Understand how to view, filter, and manage your entire product catalog efficiently.
 - **Inventory Management:** Understand how to track and adjust stock levels for your physical and licensed digital products.
-- **Advanced Inventory:** A dedicated Pro workspace for central stock management, bulk updates, adjustment history, and export.
+- **Advanced Inventory:** A dedicated Pro workspace for central stock management, bulk updates, and adjustment history.
 - **Creating & Managing Product Categories:** Learn how to organize your products into logical categories for better customer navigation and store management.
 - **Creating & Managing Product Brands:** Learn how to create and assign brands to your products, helping customers to shop by brand and improving your store's organization.
 
@@ -38,190 +38,165 @@ By mastering this section, you'll be able to effectively structure your product 
 
 # Advanced Inventory ​
 
-**Advanced Inventory** is a dedicated stock-management workspace for FluentCart Pro stores that need more than per-product stock fields. It gives you a central **Inventory** admin screen with cross-catalog views, bulk updates, an auditable adjustment history, and export — on top of everything the basic [Inventory Management](/guide/product-types-creation/inventory-management) screen already does.
+**Advanced Inventory** is a FluentCart Pro workspace that lets you manage the stock of every product and variation from one central screen. Instead of opening products one by one, you can spot low stock at a glance, update many variations at once, and keep a clear record of every stock change.
 
-If you're running a physical-goods store, a warehouse, or a mixed channel where stock moves often and needs accountability, this is the module to build on.
-
----
+If your stock moves often, or more than one person manages it, this is the module to build on top of the basic [Inventory Management](/guide/product-types-creation/inventory-management) fields.
 
 ## What Advanced Inventory Adds ​
 
-On top of basic stock tracking, Advanced Inventory gives you:
+- **A central Inventory screen:** Every stock-managed product and its variations in one list.
+- **Quick views:** Switch between **All**, **Low Stock**, and **Out of Stock** items.
+- **Inline stock edits:** Adjust a single variation's stock without opening the product.
+- **Bulk updates:** Increase the stock of many variations, or set them all to an exact number.
+- **Adjustment history:** Every change is logged with who made it, when, the old and new stock, and a reason.
+- **Advanced Filter:** Narrow the list by price, stock, variations, taxonomies, and more.
 
-- **A central Inventory screen** — every product (and every variation) in one place, with scope filters for *All*, *Low Stock*, and *Out of Stock*.
-- **Inline stock edits** — adjust a variant's total stock directly from the list without opening the product.
-- **Bulk updates** — update many variants at once in **Add** mode (increment existing stock) or **Set** mode (replace with a new total).
-- **Adjustment history** — every change is logged with who made it, when, the old and new values, and a reason.
-- **Reasons enum + custom reasons** — categorise stock movements as Restock, Damaged, Shrinkage, Correction, or Other (with a free-text note).
-- **Export** — download inventory by scope and state for reporting or handover to a third-party system.
-- **Stock stats** — a summary strip showing totals across the catalog, aggregated in SQL so it stays fast on large stores.
+## Enabling Advanced Inventory ​
 
----
+Advanced Inventory builds on the core **Stock Management** feature, so you need to turn on both.
 
-## Step 1: Enable the Module ​
+1. From your WordPress dashboard, navigate to **FluentCart > Settings**.
+2. Click **Features & addon** in the left-hand menu.
+3. Turn on **Stock Management**.
+4. Tick the **Enable Advanced Inventory** checkbox that appears right below it.
 
-Advanced Inventory layers on top of the core Stock Management feature, so both toggles must be on.
-
-1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
-2. Click the **Features & Addon** tab from the left-hand menu.
-3. Make sure **Stock Management** is enabled.
-4. Enable **Advanced Inventory** directly below it.
-5. Click **Save Settings**.
-
-Once both features are active, a new **Inventory** submenu appears in the FluentCart admin menu, directly after **Products**.
+Once both are active, an **Inventory** link appears in the **Products** menu.
 
 INFO
 
-If Advanced Inventory is disabled, the Inventory submenu disappears and no new adjustments are recorded to the history. Your existing per-product stock levels are untouched — the basic [Inventory Management](/guide/product-types-creation/inventory-management) screen still works.
----
+If Advanced Inventory is switched off, the **Inventory** link is hidden and new stock changes are no longer recorded in the history. Your existing stock levels stay untouched, and you can still manage stock from each product as described in [Inventory Management](/guide/product-types-creation/inventory-management).
+## Exploring the Inventory Screen ​
 
-## Step 2: The Inventory Screen ​
+Open **Products > Inventory** to see every product that has stock management turned on. Variable products are listed with each variation underneath, so you can see exactly which size or color is running low.
 
-Navigate to **FluentCart > Inventory** to open the Advanced Inventory workspace.
+### Quick Views ​
 
-### Scope tabs ​
+Three tabs sit at the top of the list:
 
-Across the top of the list you'll see three quick-filter tabs:
+- **All:** Every product with stock management enabled.
+- **Low Stock:** Products with a variation that has between 1 and 10 units available.
+- **Out of Stock:** Products with a variation that has no units available.
 
-- **All** — every tracked product and variant in your store.
-- **Low Stock** — items whose Available count has dropped to or below your configured low-stock threshold.
-- **Out of Stock** — items with an Available count of 
+The **Low Stock** tab is a handy daily checklist for restocking.
+
+When a product has at least one matching variation, the product appears in the tab together with all of its variations, so you can compare them side by side.
+
+### Understanding the Columns ​
+
+Each row is a product or one of its variations:
+
+- **Products:** The product name, or the variation name beneath it.
+- **SKU:** The variation's SKU, if you have set one.
+- **Total Stock:** All units you hold for the variation. You can edit this directly.
+- **Available:** Units that can still be sold. This is the total stock minus the units on hold and delivered.
+- **On hold:** Units reserved by orders that are not completed yet.
+- **Delivered:** Units already committed to completed orders.
+- **History icon:** At the end of each variation row, opens its adjustment history.
+
+### Expanding and Collapsing Products ​
+
+Variations are shown by default. Click the arrow beside a product to collapse it, or use **Collapse All** at the top right to collapse every product at once (the button then changes to **Expand All**). A collapsed product row shows the combined totals of all its variations.
+
+If a product has many variations, only the first few load at first. Click **Load More** under the list to show the rest.
+
+### Filtering and Searching ​
+
+Use the search icon to find a product by name, or a variation by its name or SKU. To go further, turn on **Advanced Filter**, click **Add**, and choose a condition from groups such as **Pricing**, **Stock**, **Order Property**, **Variations**, and **Taxonomies**. Click **+ OR** to add an alternative set of conditions, then click **Apply**. You can also click **Save as view** to keep a filter for later.
+
+## Updating Stock ​
+
+### Updating a Single Variation ​
+
+Now, let's adjust the stock of one variation directly from the list.
+
+1. Find the variation in the list.
+2. Click the small icon on the right side of its **Total Stock** field.
+3. In the popup, enter the change in **Adjust by**, or type the final number in **New Stock**. The two fields stay in sync, so entering 
+```
+-5
+```
+
+ in **Adjust by** on a stock of 
+```
+10
+```
+
+ shows 
+```
+5
+```
+
+ in **New Stock**.
+4. Choose a **Reason**.
+5. Click **Apply**.
+
+If you choose **Other** as the reason, a text box appears where you must describe what happened. Stock can never go below 
 ```
 0
 ```
 
 .
 
-### Advanced Filter ​
+### Updating Multiple Variations ​
 
-Toggle **Advanced Filter** on to refine the list by product, SKU, category, or custom criteria. Useful for large catalogs where you need to focus on a single supplier, brand, or segment.
+When you need to change many variations at once, such as after receiving a shipment, use the bulk update.
 
-### Column Reference ​
+1. Tick the checkboxes beside the variations you want to change. Ticking a product's checkbox selects all of its variations.
+2. Click **Update Stocks**, which appears next to **Collapse All** along with the number of selected items.
 
-Each row represents a single product or a single variation of a variable product:
+In the **Update Stocks** window, choose how the number should be applied:
 
-- **Products** — The product or variant name (expand the chevron on variable products to see each version listed individually).
-- **SKU** — The variant's Stock Keeping Unit. Shows 
+- **Increase Stock:** The amount you enter is added to each selected variation's current stock (for example, 10 + 5 = 15).
+
+- **Set Exact Stock:** The number you enter replaces the current stock of every selected variation. A warning reminds you that this replaces current inventory, and the list shows each change as 
 ```
-No SKU
-```
-
- or 
-```
---
+old → new
 ```
 
- when none is assigned.
-- **Total Stock** — The complete stock count. Editable inline — type a new value and click the adjuster icon next to the field.
-- **Available** — Units currently sellable (Total Stock minus On hold and Delivered).
-- **On hold** — Units reserved in pending or processing orders. Not available for sale.
-- **Delivered** — Units already fulfilled and shipped.
-- **History icon** (right edge) — Opens the adjustment history for that variant.
+.
 
-### Bulk selection ​
-
-Use the checkboxes at the start of each row (or the master checkbox in the header) to select multiple variants and open the bulk actions toolbar.
-
-### Expand All ​
-
-Click **Expand All** at the top right to reveal every variation under every variable product at once — useful before exporting or bulk editing a large catalog.
-
-### Products with many variants ​
-
-A product with a large number of variants doesn't load all of them at once. FluentCart shows the first batch and adds a **Load More** control beneath them; click it to pull in the next batch.
-
-This keeps the Inventory screen responsive on catalogs where a single product might carry hundreds of variants — the screen no longer has to build every row before it can show you anything. Bulk selection still applies to the variants currently loaded, so expand what you need before selecting.
-
----
-
-## Step 3: Updating Stock ​
-
-### Single Update (inline) ​
-
-1. Find the variant in the list.
-2. Click directly inside the **Total Stock** input for that row.
-3. Enter the new total, then click the small adjuster icon next to the field.
-4. A confirmation modal asks for a **Reason** — pick one from the dropdown, and if you choose **Other**, fill in the required **Custom Reason** field.
-5. Click **Apply**. The row updates, the new Available count recalculates, and a new entry is written to the adjustment history.
-
-### Bulk Update ​
-
-1. Select two or more rows using their checkboxes.
-2. Click **Bulk Update** in the actions bar.
-3. Choose the **Mode**: - **Add** — The value you enter is *added to* each selected variant's existing stock. Use a positive number to increase, a negative number to decrease (e.g., 
-```
-+50
-```
-
- to restock, 
-```
--3
-```
-
- to write off damaged units across all selected items).
-- **Set** — The value you enter *replaces* each selected variant's current stock. Use this for end-of-month resets or physical-count reconciliations.
-4. Pick a **Reason** from the enum, or select **Other** and enter a **Custom Reason**.
-5. Click **Apply**. Every selected variant is updated atomically; each change writes its own entry in the adjustment history.
+The window lists every variation that will change, so you can review it before saving. Pick a **Reason** and click **Update Stocks** to finish.
 
 TIP
 
-Prefer **Add** mode for routine receiving and write-offs — it avoids overwriting stock that might have moved since you loaded the list. Reserve **Set** mode for situations where a physical count has produced a definitive number.
+Use **Increase Stock** for routine restocking, and save **Set Exact Stock** for moments when you have a verified physical count.
 ### Adjustment Reasons ​
 
-Every stock change — single or bulk — must carry a reason. FluentCart records one of the following:
+Every stock change needs a reason. You can choose from:
 
-| Reason | Typical use |
-| --- | --- |
-| Restock | New inventory arriving from supplier or production |
-| Damaged | Units broken, expired, or unsellable |
-| Shrinkage | Missing stock (theft, misplacement, errors) |
-| Correction | Reconciliation against a physical count |
-| Other | Anything else — requires a Custom Reason free-text note |
+- **Received Stock:** New stock arrived from a supplier or production.
+- **Damage/Loss:** Units were damaged, expired, or lost.
+- **Return/Refund:** Units came back from a customer.
+- **Count Correction:** You are fixing the number after a stock count.
+- **Inventory Transfer:** Stock moved between locations.
+- **Other:** Anything else. A short description is required.
 
-Reasons are enforced at the API layer: attempts to save a stock change without a valid reason (or without a custom reason when "Other" is selected) are rejected.
+## Viewing the Adjustment History ​
 
----
+To see what happened to a variation's stock, click the history icon at the end of its row.
 
-## Step 4: Adjustment History ​
+A **Stock Adjustment History** panel slides in from the right. Each entry shows:
 
-Click the **history icon** at the end of any row to open the adjustment log for that variant. The log lists every stock change chronologically, showing:
+- The date, time, and the user who made the change.
+- The reason as a colored label.
+- The **Previous Stock** and **New Stock**.
+- The **Change** in units, shown in red for a decrease.
+- **Details:** The description you wrote, when the reason was **Other**.
 
-- **Timestamp** — when the change was made.
-- **User** — the WP user who made it.
-- **Old Stock → New Stock** — the transition, so deltas are obvious at a glance.
-- **Reason** — the reason picked from the enum.
-- **Custom Reason** — any free-text note captured when **Other** was selected.
-
-The history is append-only — adjustments cannot be edited or deleted, so the audit trail stays trustworthy. This is the record you reach for when reconciling a discrepancy, responding to a supplier dispute, or investigating a shrinkage pattern.
-
----
-
-## Step 5: Export ​
-
-For reporting, hand-off, or import into an external inventory system, use the **Export** action at the top of the inventory screen.
-
-- **Scope** — Export the current tab (All, Low Stock, Out of Stock) or a filtered subset.
-- **Inventory State** — Narrow further by state (e.g., only Available, only On hold).
-- **Format** — CSV is the default, suitable for spreadsheets and most downstream tools.
-
-Exports run against the same optimised SQL query used by the stats strip, so they stay fast even on catalogs with thousands of variants.
-
----
+The panel shows the 100 most recent changes for that variation, and entries cannot be edited or deleted. It is the place to check when numbers don't match what you expected.
 
 ## Permissions ​
 
-Access to Advanced Inventory follows the standard **Products** capability. Any role that can view and manage products — typically Store Manager and Administrator — can open the Inventory screen and adjust stock. Roles without the products capability do not see the Inventory menu entry at all.
-
-To customise this, see [Roles & Permissions](/guide/settings-configuration/roles-permissions/).
-
----
+Users need permission to view products to see the **Inventory** screen and its history, and permission to edit products to change stock. To adjust who can do what, see [Roles & Permissions](/guide/settings-configuration/roles-permissions/).
 
 ## Best Practices ​
 
-- **Always pick a specific reason** — "Other" works, but a typed-out custom reason helps Future You figure out what happened three months later.
-- **Prefer Add mode for routine movement** — it's safer when the list view might be slightly stale.
-- **Export before large bulk updates** — a CSV snapshot is the cheapest rollback if you need to undo a mistake.
-- **Review the history periodically** — patterns in Shrinkage or Damaged reasons often reveal process issues (bad packaging, theft, a warehouse bay with water damage).
+- **Choose the most accurate reason:** A clear reason, or a short description under **Other**, makes the history easy to understand months later.
+- **Prefer Increase Stock for routine changes:** It builds on the stock at the moment you save, rather than overwriting it.
+- **Check Low Stock regularly:** It shows what to reorder before items sell out.
+- **Review the history when counts look off:** It shows who changed what and why.
+
+Your store now has a central place to track, update, and audit stock for every product and variation.
 
 ---
 
@@ -1846,6 +1821,9 @@ To manually update your stock count for any variation:
 - **New Stock:** This field automatically previews the final stock total after your adjustment.
 3. Click the **Apply** button to save the new stock level.
 
+INFO
+
+Managing stock for many products? With [Advanced Inventory](/guide/product-types-creation/advanced-inventory), you can update stock across your whole catalog from one screen and keep a history of every change.
 ### Shipping Class ​
 
 You can assign a **Shipping Class** to any product to apply location-based shipping costs.
@@ -2168,7 +2146,7 @@ This guide will show you how to enable and manage inventory for your products.
 
 Need a central stock workspace, bulk updates, or an audit trail?
 
-For a dedicated **Inventory** admin screen with cross-catalog views, bulk stock updates, adjustment history, and exports, enable the **Advanced Inventory** module. See [Advanced Inventory](/guide/product-types-creation/advanced-inventory) for the full guide.
+With the Pro **Advanced Inventory** module, you get a dedicated **Inventory** screen under **Products** with Low Stock and Out of Stock views, bulk stock updates, and a history of every stock change. See [Advanced Inventory](/guide/product-types-creation/advanced-inventory) to set it up.
 ### Step 1: Enable the Stock Management Feature ​
 
 Before you can manage inventory for individual products, you must first activate the main Stock Management feature for your entire store.
