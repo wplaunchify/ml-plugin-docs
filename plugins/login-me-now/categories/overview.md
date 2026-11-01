@@ -228,6 +228,41 @@ Contributors
 ## Changelog
 
 	
+#### 1.18.0 – Oct 27, 2026
+
+- Security: Admin settings REST endpoints now require the 
+```
+manage_options
+```
+
+ capability (previously any user who could edit posts, e.g. Contributors, could read and change plugin settings).
+- Security: Settings are saved only for registered fields and are sanitized by field type.
+- Security: The default role for users who sign up via social login can no longer be a role with administrative capabilities.
+- Add: Dismissible Black Friday / Cyber Monday 2026 notices for administrators, shown only on the campaign dates and never in the block editor or when Pro is active.
+- Add: 
+```
+login_me_now_promotions
+```
+
+, 
+```
+login_me_now_show_promotions
+```
+
+ and 
+```
+login_me_now_is_premium
+```
+
+ filters.
+- Remove: The old New Year promotional notice and an unused 
+```
+upgrade_notice
+```
+
+ setting.
+- Fix: The license tab’s “Get it here” link now points to the Login Me Now store.
+
 #### 1.17 – Aug 29, 2026
 
 - Security: Hardened browser-extension token authentication. Token signing secrets are now generated from a cryptographically secure source, existing secrets are rotated automatically on update, and tokens are strictly bound to their owner during validation. Props to Wordfence for the responsible disclosure.
