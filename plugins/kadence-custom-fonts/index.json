@@ -2,7 +2,7 @@
   "plugin_slug": "kadence-custom-fonts",
   "plugin_name": "Kadence Custom Fonts",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-  "last_scraped": "2026-10-25T15:29:49.970Z",
+  "last_scraped": "2026-11-01T15:25:17.277Z",
   "total_pages": 137,
   "failed_urls_count": 0,
   "sections": [
@@ -1444,7 +1444,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Temporarily Deactivating Plugins",
+          "title": "How to Test for Plugin Conflicts",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/temporarily-deactivate-plugins/"
         }
       ]
