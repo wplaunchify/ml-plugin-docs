@@ -673,7 +673,7 @@ Open the payout at **AffiliateWP » Payouts**. On the bank option the payout rec
 
 Stripe sets a minimum amount for each payout, in the destination currency, and it differs by country. Before AffiliateWP sends a payment it asks Stripe to price it, so the amount is checked against the current minimum for that affiliate’s bank country rather than a list that could go stale. If the payout is under the floor, AffiliateWP stops and tells you the minimum and its currency instead of sending something Stripe will reject.
 
-![The Pay referral dialog blocked, headed "Can't pay this referral yet", showing a .00 payout to a Japanese bank account and a Below Stripe's minimum notice stating Stripe requires at least 1,000.00 JPY](https://affiliatewp.com/wp-content/uploads/2026/08/below-stripes-minimum-japan-1232x941.png)
+![The Pay referral dialog blocked, headed "Can't pay this referral yet", showing a $2.00 payout to a Japanese bank account and a Below Stripe's minimum notice stating Stripe requires at least 1,000.00 JPY](https://affiliatewp.com/wp-content/uploads/2026/08/below-stripes-minimum-japan-1232x941.png)
 
 If you hit this, either let that affiliate’s commissions build up, or raise the minimum earnings filter on the Pay Affiliates screen so small balances are not included in a run.
 
@@ -1789,7 +1789,18 @@ In This Article
 - [Checking an affiliate's setup](#managing-affiliate-connections)
 - [Getting an affiliate to finish setup](#getting-an-affiliate-to-finish-setup)
 - [Sending payouts](#aioseo-sending-payouts)
-- [Frequently asked questions](#frequently-asked-questions)
+- [Frequently asked questions](#frequently-asked-questions)- [Can I pay international affiliates with Stripe?](#does-this-support-cross-border-payments)
+- [Can I test Stripe payouts before going live?](#can-i-test-stripe-payouts-before-going-live)
+- [What happens if a payout fails?](#aioseo-what-happens-if-a-payout-fails)
+- [Can I customize the look of the onboarding experience for affiliates?](#what-if-an-affiliate-hasnt-connected-yet)
+- [Can I use a different currency in AffiliateWP than what’s set in my Stripe account?](#can-i-use-a-different-currency-in-affiliatewp-than-whats-set-in-my-stripe-account)
+- [Where can I view connected affiliates in my Stripe dashboard?](#where-can-i-view-connected-affiliates-in-my-stripe-dashboard)
+- [Are there any fees involved in sending payouts?](#are-there-any-fees-involved-in-sending-payouts)
+- [Does the Affiliate Portal addon support Stripe payouts?](#does-stripe-payouts-support-the-affiliate-portal-addon)
+- [What happens if I change my Stripe API key?](#what-happens-if-i-change-my-stripe-api-key)
+- [Can I use a restricted API key?](#aioseo-can-i-use-a-restricted-api-key)
+- [What if I reverse a payout in Stripe?](#what-if-i-reverse-a-payout-in-stripe)
+- [What can affiliates do in their Stripe Dashboard?](#what-can-affiliates-do-in-their-stripe-dashboard)
 
 ## Overview of Stripe
 
@@ -2141,7 +2152,7 @@ Once your Stripe account is connected and affiliates have linked their accounts,
 
 Navigate to **AffiliateWP » Payouts » Pay Affiliates**. On the **Configure** step, set your date range, optional minimum earnings threshold, and any affiliate filters. Under **Payout method**, either use each affiliate’s configured method, which sends Stripe affiliates through Stripe automatically and lets you restrict the batch to chosen methods, or pay everyone in the batch through one method regardless of what each affiliate picked. A **Holding period** toggle decides whether commissions still inside the holding period are included. The footer keeps a running count of eligible affiliates and the total, and **Preview payout** takes you to the grouped summary to confirm.
 
-![The Configure step of Pay Affiliates, with the date range set to all unpaid referrals through today, a Payout method choice between each affiliate's configured method and one method for the whole batch, and 99 affiliates eligible totalling ,422.74](https://affiliatewp.com/wp-content/uploads/2026/08/pay-affiliates-configure-1232x987.png)
+![The Configure step of Pay Affiliates, with the date range set to all unpaid referrals through today, a Payout method choice between each affiliate's configured method and one method for the whole batch, and 99 affiliates eligible totalling $24,422.74](https://affiliatewp.com/wp-content/uploads/2026/08/pay-affiliates-configure-1232x987.png)
 
 A referral that is already paid cannot be paid again. AffiliateWP refuses the second attempt, not Stripe, so this holds for every payout method rather than Stripe alone.
 
@@ -2156,7 +2167,7 @@ Go to **AffiliateWP » Referrals**. Next to each unpaid referral, you’ll see a
 
 Clicking **Pay** opens a popup so you can check the payout before it goes. It names the affiliate, the amount, the method, and where the money is going, and it blocks the send if anything is wrong, such as an amount below Stripe’s minimum for that country.
 
-![The Pay referral popup on the Referrals screen, showing a .00 Stripe payout to Carlos Rivera and a confirm button reading Pay .00](https://affiliatewp.com/wp-content/uploads/2026/08/pay-referral-popup-1232x969.png)
+![The Pay referral popup on the Referrals screen, showing a $12.00 Stripe payout to Carlos Rivera and a confirm button reading Pay $12.00](https://affiliatewp.com/wp-content/uploads/2026/08/pay-referral-popup-1232x969.png)
 
 The confirm button names the amount you are about to send. To stop, click **Cancel** or close the popup.
 
@@ -2211,6 +2222,20 @@ Yes. If your site is using the Affiliate Portal addon, Stripe payouts are fully 
 ### What happens if I change my Stripe API key?
 
 Generate the new key in Stripe, then paste it into the Stripe card at **AffiliateWP » Settings » Payouts** and save, or AffiliateWP keeps using the old one. If the new key belongs to the same Stripe account, that is all there is to it and every affiliate stays connected. However, if you switch to a different Stripe account, all affiliates must reconnect using the new onboarding flow.
+
+### Can I use a restricted API key?
+
+Yes. Paste it in the same field as a secret key. Restricted keys start with 
+```
+rk_live_
+```
+
+ for live mode or 
+```
+rk_test_
+```
+
+ for sandbox mode.
 
 ### What if I reverse a payout in Stripe?
 
@@ -8504,21 +8529,21 @@ Integrating LearnDash with AffiliateWP enables you to effectively manage affilia
 
 ## Affiliate Email Summaries
 
-**Source:** [https://affiliatewp.com/docs/affiliate-email-summaries/](https://affiliatewp.com/docs/affiliate-email-summaries/)
+**Source:** [https://affiliatewp.com/docs/affiliate-email-summaries-2/](https://affiliatewp.com/docs/affiliate-email-summaries-2/)
 
-Affiliate Email Summaries is a feature that will send emails direct to affiliates that show how they’ve performed for the past 30 days, starting on the day the feature is fully activated (including installing and configuring [WP Mail SMTP](https://wpmailsmtp.com)). To be eligible, the affiliate must have an **Active** status and registered for a minimum of 30 days.  After the initial email, they will receive a new email summary every 30 days.
+Affiliate Email Summaries is a feature that will send emails direct to affiliates that show how they’ve performed for the past 30 days, starting on the day the feature is fully activated (including setting up an SMTP or email service plugin, such as [WP Mail SMTP](https://wpmailsmtp.com/)). To be eligible, the affiliate must have an **Active** status and registered for a minimum of 30 days. After the initial email, they will receive a new email summary every 30 days. You can stop the summaries for a single affiliate from their Edit Affiliate screen, and the rest keep receiving theirs.
 
 Once the setting is enabled, they will begin sending within approximately 15 minutes.
 
-**Note**: We schedule individual affiliate summary emails to begin sending once per minute after the activation. For example, if you have 10 affiliates, it will take about 10 minutes for all emails to be sent — if you have 500 affiliates, it might take up to 8 hours for emails to reach all 500 affiliates.
+**Note**: We schedule individual affiliate summary emails to begin sending once per minute after the activation. For example, if you have 10 affiliates, it will take about 10 minutes for all emails to be sent. If you have 500 affiliates, it might take up to 8 hours for emails to reach all 500 affiliates.
 
 ---
 
 ### How To Enable This Feature
 
-To enable this feature, navigate to **AffiliateWP » Settings » Emails**, check the box next to **Affiliate Email Summaries**, and save your changes at the bottom of the screen.
+To enable this feature, navigate to **AffiliateWP » Settings » Emails**, turn on the **Affiliate Email Summaries** toggle, and save your changes at the bottom of the screen.
 
-![AffiliateWP - Settings - Emails screen showing the Affiliate Email Summaries setting](https://affiliatewp.com/wp-content/uploads/2022/10/affiliate-email-summaries-setting-1024x340.png)
+![](https://affiliatewp.com/wp-content/uploads/2022/10/affiliatewp-summaries-setting-1232x226.png)
 
 #### Affiliate Email Summary Examples
 
@@ -8532,15 +8557,31 @@ To see a preview of how the emails will appear, you can click the **View Example
 
 **Note:** At this time, this feature is not supported in WordPress Multisite so this setting will not be available.
 
-#### Requires WP Mail SMTP
+#### Requires an SMTP or email service plugin
 
-Once enabled, if you do not already have [WP Mail SMTP](https://wpmailsmtp.com/) enabled and configured, you will receive a notice at the top of the **Email** settings screen to do so:
+Summaries go out to all of your eligible affiliates, so AffiliateWP only sends them through an SMTP or email service plugin, such as [WP Mail SMTP](https://wpmailsmtp.com/), FluentSMTP, Post SMTP or Easy WP SMTP. Custom code that replaces how your site sends email works too. Summaries are never sent with PHP mail, the way WordPress sends email out of the box, because many web servers limit how many emails can be sent within a specific time period.
 
-![](https://affiliatewp.com/wp-content/uploads/2024/03/email-summaries-1024x262.png)
+Once enabled, if your site doesn’t send email through one of these plugins yet, you will see a notice at the top of the AffiliateWP screens with a link to install and set up [WP Mail SMTP](https://wpmailsmtp.com/):
 
-Once [WP Mail SMTP](https://wpmailsmtp.com/) is installed, activated [with any mailer](https://wpmailsmtp.com/docs/a-complete-guide-to-wp-mail-smtp-mailers/) (other than the default), and configured, you will be good to go to start sending affiliate email summaries.
+![](https://affiliatewp.com/wp-content/uploads/2022/10/affiliatewp-summaries-notice-no-mailer-1232x171.png)
 
-**Note:** If the **Default** mailer is selected, or WP Mail SMTP is not active, emails will not be sent. This is required since many web servers have limits to the number of emails that can be sent within a specific time period. WP Mail SMTP Pro helps ensure reliable email delivery, including the tools to troubleshoot should any emails not get delivered as expected.
+Once your plugin is installed, activated and connected to a mailer other than PHP mail, summaries start sending. With [WP Mail SMTP](https://wpmailsmtp.com/), that’s [any mailer](https://wpmailsmtp.com/docs/a-complete-guide-to-wp-mail-smtp-mailers/) other than the default. If you use a plugin other than WP Mail SMTP, the setting shows which one sends your summaries:
+
+![Affiliate Email Summaries setting showing that summaries are sent through FluentSMTP](https://affiliatewp.com/wp-content/uploads/2022/10/affiliatewp-summaries-setting-sent-through-1232x267.png)
+
+**Note:** We recommend [WP Mail SMTP](https://wpmailsmtp.com/) for reliable delivery. WP Mail SMTP Pro also includes tools to troubleshoot emails that don’t get delivered as expected.
+
+#### If your summaries are paused
+
+Earlier versions of AffiliateWP only sent summaries through WP Mail SMTP. If you turned summaries on while your site sent email through a different plugin, none were sent. AffiliateWP keeps those summaries paused, so your affiliates don’t get an email you weren’t expecting, and asks you what to do with a notice on its screens:
+
+![Notice on the AffiliateWP screens asking to start or turn off affiliate email summaries, with 6 affiliates due a summary](https://affiliatewp.com/wp-content/uploads/2022/10/affiliatewp-summaries-paused-notice-1232x278.png)
+
+Start the summaries to send them through your current plugin, or turn them off. You can preview a summary from the notice before you decide. On the Emails settings screen, the setting shows the summaries as paused, with the same option to start them.
+
+#### If summaries aren’t being sent
+
+Turn on **Enable Debug Mode** in **AffiliateWP » Settings » Advanced**, then check the log in **AffiliateWP » Tools » Debug Assistant**. It records when summaries were stopped because no SMTP or email service plugin was found, and why a particular affiliate didn’t get one, for example because they registered less than 30 days ago or already received a summary recently.
 
 ---
 
@@ -12781,7 +12822,7 @@ This guide will walk you through the process of installing and configuring the R
 
 **In This Article**
 
-- [1. ￼Supported Integrations](#supported-integrations)
+- [1. Supported Integrations](#supported-integrations)
 - [2. Installing the Recurring Referrals Addon](#installing-recurring-referrals)
 - [3. General configuration](#general-configuration)
 - [4. Affiliate configuration](#affiliate-configuration)
@@ -12789,19 +12830,18 @@ This guide will walk you through the process of installing and configuring the R
 - [6. Additional Recurring Referrals settings](#additional-recurring-referral-settings)
 - [7. Setting Recurring Referral rates](#setting-recurring-referral-rates)
 - [8. Enabling referrals on existing subscriptions](#recurring-existing-subscriptions)- [Easy Digital Downloads](#easy-digital-downloads)
-- [￼Gravity Forms](#aioseo-gravity-forms)
-- [￼LifterLMS](#aioseo-lifterlms)
-- [￼
-MemberMouse](#aioseo-membermouse)
-- [￼MemberPress](#aioseo-memberpress)
-- [￼Paid Memberships Pro](#aioseo-paid-memberships-pro)
-- [￼PayPal Buttons](#aioseo-paypal-buttons)
-- [￼Restrict Content Pro](#aioseo-restrict-content-pro)
-- [￼WP Simple Pay](#aioseo-wp-simple-pay)
-- [￼Woocommerce](#aioseo-woocommerce)
+- [Gravity Forms](#aioseo-gravity-forms)
+- [LifterLMS](#aioseo-lifterlms)
+- [MemberMouse](#aioseo-membermouse)
+- [MemberPress](#aioseo-memberpress)
+- [Paid Memberships Pro](#aioseo-paid-memberships-pro)
+- [PayPal Buttons](#aioseo-paypal-buttons)
+- [Restrict Content Pro](#aioseo-restrict-content-pro)
+- [WP Simple Pay](#aioseo-wp-simple-pay)
+- [Woocommerce](#aioseo-woocommerce)
 - [9. Recurring Referrals – Gravity Forms – Set up and Configuration](#existing-recurring-gf)
 - [10. Recurring Referrals – WP Simple Pay – Setup and configuration](#existing-recurring-wpsp)
-- [Frequently Asked Questions](#aioseo-frequently-asked-questions)
+- [Frequently Asked Questions](#aioseo-frequently-asked-questions)- [Why is a PayPal Buttons renewal referral pending or missing?](#aioseo-can-i-limit-the-number-of-recurring-commissions-an-affiliate-can-earn-2)
 
 **Requirements:** You will need a [Professional license](https://affiliatewp.com/pricing/) to access the Recurring Referrals addon.
 
@@ -13056,6 +13096,10 @@ Yes, you can set specific recurring commission rates for individual affiliates. 
 ### Can I limit the number of recurring commissions an affiliate can earn?
 
 Yes, you can specify the number of recurring payments for which affiliates will earn a commission. To do this, go to **AffiliateWP » Settings » Commissions** and set the **Recurring Referral Limit**.
+
+### Why is a PayPal Buttons renewal referral pending or missing?
+
+PayPal Buttons renewal referrals follow the same rule as the first payment. A renewal is marked Unpaid automatically when it went to your Store PayPal Email, in your store currency, and belongs to the same PayPal subscription as the original purchase. Otherwise it’s recorded as Pending for you to review. A renewal paid to a PayPal account that isn’t in your Store PayPal Email isn’t recorded. Set the email under AffiliateWP » Settings » Integrations. See [PayPal Buttons](https://affiliatewp.com/docs/paypal-buttons/).
 
 ---
 
@@ -13331,7 +13375,8 @@ In This Article
 - [Linking, Unlinking, and Removing Customers from Affiliates](#aioseo-linking-unlinking-and-removing-customers-from-affiliates)
 - [Visual Indicators for Referrals Generated by a Linked Lifetime Customer](#aioseo-visual-indicators-for-referrals-generated-by-a-linked-lifetime-customer)
 - [Setting Lifetime Referral Rates](#setting-lifetime-referral-rates)
-- [Frequently Asked Questions](#aioseo-frequently-asked-questions)
+- [Frequently Asked Questions](#aioseo-frequently-asked-questions)- [Why didn't a lifetime customer's PayPal Buttons payment earn a commission?](#aioseo-how-can-affiliates-view-their-lifetime-customers-2)
+- [How do I record PayPal Buttons payments that were missed?](#aioseo-how-can-affiliates-view-their-lifetime-customers-3)
 
 To use the Lifetime Commissions addon, you will need a [Pro license](https://affiliatewp.com/pricing/).
 
@@ -13344,6 +13389,8 @@ Once you’ve got AffiliateWP installed and [your license is verified](https://a
 ## Supported Integrations
 
 The Lifetime Commissions addon integrates with several popular WordPress plugins, ensuring seamless operation across different platforms. Currently, it supports [Easy Digital Downloads](https://affiliatewp.com/docs/easy-digital-downloads/), [WooCommerce](https://affiliatewp.com/docs/woocommerce/), [Gravity Forms](https://affiliatewp.com/docs/gravity-forms/), [Ninja Forms](https://affiliatewp.com/docs/ninja-forms/), [Paid Memberships Pro](https://affiliatewp.com/docs/paid-memberships-pro/), [PayPal Buttons](https://affiliatewp.com/docs/paypal-buttons/), [Restrict Content Pro](https://affiliatewp.com/docs/restrict-content-pro/), and [MemberPress](https://affiliatewp.com/docs/memberpress/).
+
+**PayPal Buttons.** Lifetime Commissions credits a lifetime customer’s PayPal Buttons payment only after you set the Store PayPal Email under AffiliateWP » Settings » Integrations, and only for payments to that account in your store currency. Buyers who pay with PayPal Buttons through an affiliate’s link, guests included, become that affiliate’s lifetime customers once their referral is marked Unpaid. See [PayPal Buttons](https://affiliatewp.com/docs/paypal-buttons/).
 
 ## Configuring the Lifetime Commissions
 
@@ -13462,6 +13509,20 @@ Yes, you can hide customer emails by enabling the **Lifetime Customers Hide Emai
 ### How can affiliates view their lifetime customers?
 
 The website administrator can display a list of customers linked to each affiliate by using the following shortcode **[affiliate_lifetime_customers]**
+
+### Why didn’t a lifetime customer’s PayPal Buttons payment earn a commission?
+
+Lifetime Commissions credits a PayPal Buttons payment only when all of these are true:
+
+- The Store PayPal Email is set under AffiliateWP » Settings » Integrations.
+- The payment went to that PayPal account, in your store currency.
+- Lifetime Commissions is up to date.
+
+A payment that arrived before these were in place wasn’t credited. You can still record it, as described below.
+
+### How do I record PayPal Buttons payments that were missed?
+
+First update Lifetime Commissions and set the Store PayPal Email. Then open PayPal’s IPN History and resend the notifications for the missed payments. AffiliateWP records each payment as its notification arrives again, and never records the same payment twice. PayPal only keeps recent notifications there, so do this soon after updating.
 
 ---
 
@@ -16980,6 +17041,8 @@ Yes. Referral statuses can be manually updated from the AffiliateWP » Referrals
 
 This usually means the connected order has not yet been completed. Check your eCommerce platform to confirm the order status, and verify that your integration is properly configured to update referrals automatically.
 
+With PayPal Buttons, a referral also stays Pending until your Store PayPal Email is set, or when the payment didn’t go to that PayPal account or wasn’t in your store currency. See [PayPal Buttons](https://affiliatewp.com/docs/paypal-buttons/).
+
 ---
 
 ## Modifying template files
@@ -18327,7 +18390,10 @@ That’s it! By integrating AffiliateWP with Formidable Pro, you can effectively
 
 **Important**: Only enable this integration if you are using PayPal’s standalone payment buttons. This means you have generated a PayPal button script on your PayPal account and copied to a page or post on your WordPress site. If your eCommerce/Membership system already provides PayPal functionality, do not enable this integration.
 
-To enable support for tracking affiliate referrals with [PayPal buttons](https://www.paypal.com/bm/webapps/mpp/buttons), go to **AffiliateWP » Settings » Integrations****and check the box that says **PayPal**:
+- [Set your Store PayPal Email](#aioseo-set-your-store-paypal-email)
+- [Important notes](#aioseo-important-notes)
+
+To enable support for tracking affiliate referrals with [PayPal buttons](https://www.paypal.com/bm/webapps/mpp/buttons), go to **AffiliateWP » Settings » Integrations****and check the box that says **PayPal Buttons**:
 
 ![PayPal Buttons integration](https://affiliatewp.com/wp-content/uploads/2021/11/paypal-buttons-1.png)
 
@@ -18335,7 +18401,31 @@ Once enabled, AffiliateWP will now be able to track affiliate referrals on purch
 
 If you are unsure of how to create a PayPal button or place it on your site, please see  [PayPal’s documentation](https://www.paypal.com/bm/webapps/mpp/buttons).
 
+### Set your Store PayPal Email
+
+Once PayPal Buttons is checked, the Store PayPal Email setting appears below the list of integrations. Enter the email address of the PayPal account that receives your PayPal Buttons payments, then save. Most stores have just one. If your buttons pay into more than one PayPal account of yours, enter one email per line. Your PayPal merchant account ID also works in place of the email.
+
+This is your store’s own PayPal account, not the account you use to pay affiliates. Until you save it, AffiliateWP shows a notice in the admin asking for it, and new PayPal Buttons referrals stay Pending for your review.
+
+**Let AffiliateWP find it for you**. While the setting is empty, AffiliateWP checks the PayPal Buttons forms in your published pages and posts and lists the PayPal accounts it finds under the setting. Add each one that belongs to your store with the button next to it, then save. Nothing is used until you save it, because a page can also carry a PayPal button that pays someone else, such as a partner’s or a charity’s donate button.
+
+![](https://affiliatewp.com/wp-content/uploads/2021/11/affiliatewp-store-paypal-email-field-1232x364.png)AffiliateWP lists the PayPal accounts it finds in your PayPal Buttons forms. Add only the ones that are your store’s.
+
+If your PayPal account isn’t listed, enter its email yourself. AffiliateWP can’t find the account for:
+
+- Buttons saved in your PayPal account. Their code has a button ID where your email would be.
+- Buttons added by another plugin’s shortcode or block, or placed in a widget or your theme.
+
 ### Important notes
+
+**How PayPal Buttons referrals are completed**
+
+When a visitor who came through an affiliate’s link clicks a PayPal button on your site, AffiliateWP creates a pending referral with an amount of 0.01. When PayPal reports the payment, AffiliateWP calculates the commission from the real purchase total and marks the referral Unpaid, but only when both of these are true:
+
+- The payment went to the PayPal account you saved as your Store PayPal Email (see Set your Store PayPal Email above).
+- The payment is in your store currency.
+
+If no Store PayPal Email is saved yet, or the payment is in another currency, the referral gets the real amount but stays Pending so you can approve or reject it. A payment to a PayPal account that isn’t in your Store PayPal Email is ignored, so its referral keeps the 0.01 amount and stays Pending.
 
 **Supported button types**
 
@@ -18351,15 +18441,13 @@ This integration fully supports the following PayPal button types:
 
 **Recurring payment tracking**
 
-This integration will generate referral commissions on the initial signup payment for a subscription. If you would like automatic renewal payments for subscriptions to *also* create referral commissions, you’ll need our  [Recurring Referrals add-on](https://affiliatewp.com/add-ons/pro/recurring-referrals/?) .
+This integration will generate referral commissions on the initial signup payment for a subscription. If you would like automatic renewal payments for subscriptions to *also* create referral commissions, you’ll need our  [Recurring Referrals add-on](https://affiliatewp.com/add-ons/pro/recurring-referrals/).
 
-**Referral amounts**
-
-Referral records are automatically created in AffiliateWP immediately after a potential customer clicks on a PayPal button on your site. An initial, pending referral will be created with an amount of 0.01. Once the purchase is completed through PayPal, the referral status will be updated to unpaid and the referral amount will be automatically updated to reflect the purchase total in PayPal.
+Renewal referrals follow the same rule as the first payment: they are marked Unpaid automatically only when the renewal went to your Store PayPal Email in your store currency. See the [Recurring Referrals](https://affiliatewp.com/docs/recurring-referrals-installation-and-usage/) doc for details.
 
 **Rejecting referrals when a refund is processed via PayPal**
 
-A referral status will update to **rejected** if a PayPal refund is issued for the transaction which generated the referral.
+When the Reject Unpaid Referrals on Refund setting is on, AffiliateWP rejects a referral automatically when PayPal refunds or reverses the payment that created it, as long as the referral hasn’t been paid. This includes referrals waiting as Pending for your review, so a refunded sale can’t be approved by mistake later. Paid referrals are never changed.
 
 ---
 
@@ -21383,6 +21471,8 @@ If JavaScript errors persist, enable the **Fallback Referral Tracking Method** i
 If visits are being tracked but referrals aren’t being created, the issue is likely with your integration or settings. Referrals can be viewed in **AffiliateWP » Referrals**. Use the following steps to diagnose the problem:
 
 Start by verifying that your chosen integration is installed, activated, and up-to-date. Ensure the integration is enabled in **AffiliateWP » Settings » Integrations**. Remember, referrals cannot be generated if you’re logged in as the affiliate or using the affiliate’s email during testing. By default, AffiliateWP prevents affiliates from generating referrals for their own purchases unless the **Allow Own Referrals** addon is enabled.
+
+If you use PayPal Buttons, referrals stay Pending until you set the Store PayPal Email. See [PayPal Buttons](https://affiliatewp.com/docs/paypal-buttons/).
 
 Check if the **Ignore Referrals with Zero Amounts** option is enabled in **AffiliateWP » Settings » Commissions**. If you’re attempting to generate $0.00 referrals (e.g., for lead generation), this setting may block those entries. Similarly, ensure the [Allowed Products addon](https://affiliatewp.com/docs/allowed-products-installation-and-usage/) is configured correctly if you’re using it; failure to specify products will result in $0.00 referrals, which may be ignored if the zero-amount setting is active.
 
