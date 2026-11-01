@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01T12:07:20.557Z",
+  "last_updated": "2026-11-01T12:20:26.038Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -381,7 +381,7 @@
       "slug": "fluent-forms",
       "name": "Fluent Forms",
       "documentation_url": "https://fluentforms.com/docs/documentation/",
-      "last_scraped": "2026-10-25T12:30:50.575Z",
+      "last_scraped": "2026-11-01T12:20:26.038Z",
       "page_count": 457,
       "categories": [
         "account-management",
