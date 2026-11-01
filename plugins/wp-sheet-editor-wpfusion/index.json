@@ -2,7 +2,7 @@
   "plugin_slug": "wp-sheet-editor-wpfusion",
   "plugin_name": "WP Sheet Editor - WPFusion",
   "documentation_url": "https://wpsheeteditor.com",
-  "last_scraped": "2026-10-25T07:05:16.167Z",
+  "last_scraped": "2026-11-01T07:02:31.387Z",
   "total_pages": 5,
   "failed_urls_count": 38,
   "sections": [
@@ -33,6 +33,19 @@
       ]
     },
     {
+      "title": "How To Add Meta Keywords Yoast Seo Spreadsheet",
+      "slug": "how-to-add-meta-keywords-yoast-seo-spreadsheet",
+      "url": "https://wpsheeteditor.comhow-to-add-meta-keywords-yoast-seo-spreadsheet/",
+      "file": "categories/how-to-add-meta-keywords-yoast-seo-spreadsheet.md",
+      "page_count": 1,
+      "pages": [
+        {
+          "title": "How to Add Meta Keywords Yoast SEO in a Spreadsheet",
+          "url": "https://wpsheeteditor.com/how-to-add-meta-keywords-yoast-seo-spreadsheet/"
+        }
+      ]
+    },
+    {
       "title": "How To Edit Woocommerce Stock In A Spreadsheet",
       "slug": "how-to-edit-woocommerce-stock-in-a-spreadsheet",
       "url": "https://wpsheeteditor.comhow-to-edit-woocommerce-stock-in-a-spreadsheet/",
@@ -42,19 +55,6 @@
         {
           "title": "How to Edit WooCommerce Stock in a Spreadsheet",
           "url": "https://wpsheeteditor.com/how-to-edit-woocommerce-stock-in-a-spreadsheet/"
-        }
-      ]
-    },
-    {
-      "title": "Learndash Google Sheets Integration",
-      "slug": "learndash-google-sheets-integration",
-      "url": "https://wpsheeteditor.comlearndash-google-sheets-integration/",
-      "file": "categories/learndash-google-sheets-integration.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Easy LearnDash Google Sheets Integration",
-          "url": "https://wpsheeteditor.com/learndash-google-sheets-integration/"
         }
       ]
     },
