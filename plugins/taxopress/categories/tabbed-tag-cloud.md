@@ -57,7 +57,7 @@ This guide shows you how to use and customize the shortcode for the Tabbed Tag C
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6adda09f86b3d', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6ae6d951e28cd', {"active":false}, true);
       return;
     }
 
@@ -68,7 +68,7 @@ This guide shows you how to use and customize the shortcode for the Tabbed Tag C
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6adda09f86b3d');
+    var element = document.getElementById('tag-groups-cloud-tabs-6ae6d951e28cd');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -83,7 +83,7 @@ This guide shows you how to use and customize the shortcode for the Tabbed Tag C
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6adda09f87dc2', {"collapsible":true,"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6ae6d951e382a', {"collapsible":true,"active":false}, true);
       return;
     }
 
@@ -94,7 +94,7 @@ This guide shows you how to use and customize the shortcode for the Tabbed Tag C
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6adda09f87dc2');
+    var element = document.getElementById('tag-groups-cloud-tabs-6ae6d951e382a');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
