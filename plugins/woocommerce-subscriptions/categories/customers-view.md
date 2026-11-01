@@ -902,7 +902,7 @@ Customers can use two methods to update their addresses if the subscription meet
 
 The video below and the rest of this guide explain the process to update shipping and billing addresses for a subscription in more detail.
 
-![](https://fast.wistia.com/embed/medias/ggrhhnw91u/swatch)
+![](https://embed-ssl.wistia.com/deliveries/2b18db84dc14561147f4f7e944e8f88a326ff533.jpg?image_crop_resized=960x540)Play video: Changing Address
 
 ### Change Shipping Address on One Subscription
 

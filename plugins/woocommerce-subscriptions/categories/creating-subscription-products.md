@@ -136,6 +136,17 @@ Customers can buy this product without subscribing
 
 When checked, customers will be offered the option to purchase the product as a one-time purchase in addition to the available subscription plans. When unchecked, the product can only be purchased on a subscription plan.
 
+Customers choose between a one-time purchase and a subscription on the product page. WooCommerce Subscriptions does not provide a selector to change that choice in the cart.
+
+To offer purchase-option selection in the cart, use an extension such as [Buy Once or Subscribe for WooCommerce Subscriptions](https://woocommerce.com/document/buy-once-or-subscribe-for-woocommerce-subscriptions/), which provides cart plan selection through its own subscription plans and settings.
+
+**Previously used All Products for WooCommerce Subscriptions?** Older versions included a plan selector in the classic cart. This selector was removed in WooCommerce Subscriptions 
+```
+9.0.1
+```
+
+ so the classic cart matched the Cart block.
+
 **Note:**
 
 If you only add a single subscription plan and disable one-time purchases, customers will not be offered any options above the add-to-cart button.
