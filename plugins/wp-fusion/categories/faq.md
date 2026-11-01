@@ -683,7 +683,6 @@ For details on our ratings and what each of the addons do, please [see the descr
 | Kartra | D |  |  |  |  |
 | Klaviyo | B |  |  |  |  |
 | Klick-Tipp | B |  |  |  |  |
-| Loopify | C |  |  |  |  |
 | MailChimp | A |  |  |  |  |
 | MailEngine | C |  |  |  |  |
 | MailerLite | B |  |  |  |  |
