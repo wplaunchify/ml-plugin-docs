@@ -2,7 +2,7 @@
   "plugin_slug": "starter-templates-by-kadence-wp",
   "plugin_name": "Starter Templates by Kadence WP",
   "documentation_url": "https://www.kadencewp.com/help-center/docs/kadence-theme/",
-  "last_scraped": "2026-10-25T20:31:12.081Z",
+  "last_scraped": "2026-11-01T20:25:10.095Z",
   "total_pages": 137,
   "failed_urls_count": 0,
   "sections": [
@@ -1444,7 +1444,7 @@
       "page_count": 1,
       "pages": [
         {
-          "title": "Temporarily Deactivating Plugins",
+          "title": "How to Test for Plugin Conflicts",
           "url": "https://www.kadencewp.com/help-center/docs/kadence-theme/temporarily-deactivate-plugins/"
         }
       ]
