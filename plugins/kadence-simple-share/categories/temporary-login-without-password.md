@@ -10,7 +10,7 @@
 
 Managing user access in WordPress can be challenging, especially when you need to give developers, support, or clients temporary access. Instead of creating accounts and sharing passwords, the **Temporary Login Without Password** plugin lets you generate secure, time-limited login links. You control the user’s role, set an expiration date, and avoid leaving unused accounts behind. In this guide, we’ll show you how to install the plugin, create and share links, and manage or revoke access to keep your site secure.
 
-Kadence support may ask for a temporary login link created with the **Temporary Login Without Password** plugin to help troubleshoot issues. Administrator access is often required, but for security it’s best to use a staging site or make backups before granting access. This way, your live site stays protected while support can securely log in without needing shared credentials.
+Our support team may ask for a temporary login link created with the **Temporary Login Without Password** plugin to help troubleshoot issues. Administrator access is often required, but for security it’s best to use a staging site or make backups before granting access. This way, your live site stays protected while support can securely log in without needing shared credentials.
 
 Installing the Temporary Login Without Password Plugin
 
@@ -60,11 +60,11 @@ Step 3: Choose a User Role
 - **Editor**: Can edit and publish content but cannot modify site settings.
 - **Subscriber**: Minimal access, typically just for viewing content.
 
-**Note:** when granting access to Kadence Technical support, typically **Administrator** access is required.
+**Note:** When granting access to our Technical support, typically **Administrator** access is required.
 
 Step 4: Set Expiration Date
 
-- Choose how long the login link will remain valid. You can set the expiration from **1 day** up to **1 month** or use a custom date. Once the expiration date is reached, the temporary account will automatically expire and the user will no longer have access.
+- Choose how long the login link will remain valid. You can set the expiration from **1 day** up to **1 month** or use a custom date. Once the expiration date is reached, the temporary account will automatically expire, and the user will no longer have access.
 
 Step 5: Generate the Login Link
 

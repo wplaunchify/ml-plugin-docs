@@ -4,110 +4,185 @@
 
 ---
 
-## Understanding Site Limits and License Usage Guidelines
+## Using Your License on Staging and Development Sites
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/site-limits-and-license-usage/](https://www.kadencewp.com/help-center/docs/kadence-general/site-limits-and-license-usage/)
 
-While Liquid Web software plans limit your number of active websites, testing and development sites don’t count toward your limit. You can simply use one of the approved staging domains listed below for your non-production/staging sites, and they won’t impact your license limit. 
+## Overview
 
-**Please note the list of whitelisted domains below:**
+You do not need a second license to test on a staging or development site. Your Liquid Web software plan limits the number of **live** sites you can activate, but sites on the approved domains and patterns listed below do not count toward that limit.
 
-**Generic TLDs and local environments**
+## How it works
 
-| Domain(s) |
+When you activate your license on a site, our licensing system checks the site’s domain. If the domain matches one of the patterns below, the site is treated as a staging or development site:
+
+- It still receives plugin updates.
+- It does not use one of your site activations.
+- You will not see an “out of installs” notice for it.
+
+If the domain doesn’t match an allowed pattern, it’s treated as a live site and counts toward your site limit. If you’ve already reached the limit for your plan, license validation will fail on this site.
+
+In the patterns below, 
+```
+*
+```
+
+ stands for any text. For example, 
+```
+staging.*
+```
+
+ matches 
+```
+staging.example.com
+```
+
+, and 
+```
+*.local
+```
+
+ matches 
+```
+mysite.local
+```
+
+.
+
+## Whitelisted domains and patterns
+
+### Local environments and testing domain endings
+
+| Pattern |
 | --- |
-| *.test |
-| test.* |
-| testing.*.* |
-| *.local |
+| localhost (any port, for example localhost:8888/example) |
+| 127.0.0.1 |
+| *.local, local.* |
 | *.localhost |
 | *.localnet |
-| local.* |
-| 127.0.0.1 |
+| *.test, test.* |
+| testing.*.* |
+| *.dev |
+| *.example |
+| *.invalid |
+| *.dev.cc |
+| *.ngrok.io (tunneling) |
 
-**Dev-site naming conventions**
+### Development naming patterns
 
-| Domain(s) |
+| Pattern |
 | --- |
-| dev.*, *.dev, *.dev.* |
+| dev.*, *.dev.* |
 | wpdev.*, webdev.*, devsite.* |
 | dev-*, *-dev.* |
 | qa-* |
 | wp-maint.* |
 
-**Staging naming conventions**
+### Staging naming patterns
 
-| Domain(s) |
+| Pattern |
 | --- |
 | staging.*, www.staging.* |
 | *.staging, *.staging.* |
 | staging2.*.* |
-| stage.*, *.stage, *.stage.*, *.stage.site |
+| stage.*, *.stage, *.stage.* |
+| *.stage.site |
 | sandbox.* |
 | composer.* |
 | beta.* |
 
-**Stellar-owned properties**
+### Hosting provider staging and temporary URLs
 
-| Domain(s) |
+| Provider | Pattern(s) |
+| --- | --- |
+| Nexcess | *.nxcli.net, *.nxcli.io |
+| WP Engine | *.wpengine.com, *.staging.wpengine.com, *dev.wpengine.com, *.wpenginepowered.com |
+| GoDaddy | *.myftpupload.com |
+| Bluehost | *.mybluehost.me |
+| DreamHost | *.dreamhosters.com, *.dream.press |
+| LightningBase | *.lightningbasehosted.com |
+| WordPress.com | *.wpcomstaging.com |
+| WordPress VIP | *.go-vip.net |
+| Kinsta | *.kinsta.cloud, staging-*.kinsta.com |
+| Flywheel | *.flywheelstaging.com, staging.*.flywheelsites.com |
+| Pantheon | *.pantheonsite.io, *.panth.io, *.pantheonlocal.com |
+| SiteGround | staging*, www.staging*, *sg-host.com |
+| Cloudways | *.cloudwaysapps.com, *.cloudwayssites.com |
+| WPMU DEV | *.staging.wpmudev.host |
+| WP Stagecoach | *.wpstagecoach.com, *.wpsc.site |
+| RAIDBOXES | *.myraidboxes.de, *.myraidbox.io, *.myrdbx.io |
+| Lando | *.lndo.site |
+| BlogVault | *.wpstage.net |
+| Pressable | *.mystagingwebsite.com |
+| DDEV | *.ddev.site |
+| Pagely | *.pressdns.com |
+| Krystal | *.onyx-sites.io |
+| xCloud | *.wp1.host, *.wp1.site, *.wp1.sh |
+| Plesk | *.plesk.page |
+| Rapyd Cloud | *.rapydapps.cloud |
+| CloudAccess.net | *.cloudaccess.host |
+| Hostinger | *.hostingersite.com |
+| Other temporary URLs | *.tempurl.host, *.staging.tempurl.host, *.pluginsupportwp.com |
+
+### Stellar owned domains
+
+| Pattern |
 | --- |
 | *.tribe, *.tri.be |
 | *.theeventscalendar.com |
 | *.loxi.io |
 
-**Hosting-provider staging/temporary URLs**
+### Examples of domains that do not count toward your limit
 
-| Domain(s) |
-| --- |
-| *.wpengine.com, *dev.wpengine.com, *.staging.wpengine.com |
-| staging.*.flywheelsites.com, *.flywheelstaging.com |
-| *.myftpupload.com |
-| *.mybluehost.me |
-| *.dreamhosters.com, *.dream.press |
-| *.lightningbasehosted.com |
-| *.wpcomstaging.com |
-| *.kinsta.cloud |
-| *.pantheonsite.io, *.panth.io, *.pantheonlocal.com |
-| *.cloudwaysapps.com |
-| *.staging.wpmudev.host |
-| *.wpstagecoach.com, *.wpsc.site |
-| *.myraidboxes.de |
-| *.lndo.site |
-| *.wpstage.net |
-| *.mystagingwebsite.com |
-| *.ddev.site |
-| *.nxcli.net, *.nxcli.io |
-| *.tempurl.host, *.staging.tempurl.host |
-| *.dev.cc |
-| *.pluginsupportwp.com |
+- ```
+dev.mysite.com
+```
+- ```
+staging.hello.net
+```
+- ```
+practice-site.staging.wpengine.com
+```
 
-*Legacy Content for Express/Plus/Ultimate/LTD Users:*
+## Examples
 
-As of February 1st, 2025, we introduced a new pricing structure to make our tools more accessible and to provide flexible options for users at every level. These updates include the launch of a new entry-level plan and a shift to a per-site licensing model.
+| Sites using one license | Works? | Why |
+| --- | --- | --- |
+| example.com and example.test | Yes | example.test matches *.test, so only example.com counts. |
+| example.com and staging.example.com | Yes | staging.example.com matches staging.*. |
+| example.com, example.test, example.staging, example.local, and localhost:8888/example | Yes | Every site except example.com matches a pattern. All sites get updates. |
+| example.com and devexample.com | No, on a single site license | devexample.com does not match any pattern, so it counts as a second live site. |
 
-All **Kadence** **Products** are sold as **Yearly Subscriptions**. As long as your subscription remains **active**, you will have access to plugin downloads, new feature releases, security updates, bug fixes, and premium support.
+## Product specific notes
 
-Think of your **Kadence** **subscription** like a magazine subscription: it **automatically** **renews** **each** **year** using the payment information on file.
+**Promoter (The Events Calendar):** Promoter does not work on a site that uses one of the whitelisted domains or patterns above. To set it up on a live site, see [Getting Started with Promoter](https://docs.nexcess.com/software/the-events-calendar/configure-promoter/).
 
-- We’ll send you reminders before your license renews so you’ll know when to expect it.
-- If you disable auto-renewal, your subscription will expire one year from the date of your last purchase or renewal.
-- Expired license holders can renew at any time to regain access to updates and support.
+**Seating (Event Tickets):** Seating follows different rules on staging domains. See the section at the bottom of [Connecting Event Tickets to the Seating Builder](https://docs.nexcess.com/software/the-events-calendar/seating-builder/). We do not recommend cloning a site with seating already set up between production and staging.
 
-An **active** **subscription** ensures **automatic** **updates** for installed plugins and **premium** **help** **desk** **support**.
+## My staging site’s domain does not match any pattern. What can I do?
 
- **Plans** include **Limits** on the **number of sites**.
+A domain that does not match a pattern above is treated as a live site and counts toward your limit. You have these options:
 
-| Plan | Express | Plus | Ultimate | Lifetime Ultimate |
-| --- | --- | --- | --- | --- |
-| Number of Sites | Up to 3 sites | Up to 10 sites | Up to 25 Sites (With an option to upgrade to 1,000 sites) | Up to 25 Sites (With an option to upgrade to 1,000 sites.) |
+1. **Use a matching domain for the staging site.** For example, set it up as 
+```
+staging.yoursite.com
+```
 
-What Counts Towards Site Limits?
+ or 
+```
+yoursite.test
+```
 
-Only **active** **sites** count towards your **allowed** **sites** **limit**. Our system will automatically ignore any staging or local development site and not count them against your allowed installations by your license key.
+ instead of a custom name.
+2. **Update the staging site manually.** Keep the license active on your live site and download the latest plugin files from your account to update the staging site by hand. See [Manual Plugin Updates](https://docs.nexcess.com/software/the-events-calendar/manual-updates/).
+3. **Move the license between sites.** To move your license to a new site, first disconnect it from the original site to free it up. Once released, you can activate it on the new site. See [Manage License Activations and Connected Sites](https://docs.nexcess.com/software/accounts-licensing/manage-license-activations-and-connected-sites/).
+4. **Request a new pattern.** If your domain follows a pattern that many customers are likely to use, contact support and we will consider adding it. This can take some time, and we do not add patterns that only apply to a single customer.
 
-Show More
+## Related articles
 
-Show Less
+- [Manage License Activations and Connected Sites](https://docs.nexcess.com/software/accounts-licensing/manage-license-activations-and-connected-sites/)
+- [Manage Your Subscriptions](https://docs.nexcess.com/software/accounts-licensing/manage-your-subscriptions/)
+- [Download Plugin and Theme Files](https://docs.nexcess.com/software/accounts-licensing/download-plugin-and-theme-files/)
 
 ---
 
