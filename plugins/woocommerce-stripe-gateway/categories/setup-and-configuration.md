@@ -65,22 +65,22 @@ However, there are also a number of options available that can help customize th
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
 
-### Stripe Tax
-
-	
-			by [Stripe](https://woocommerce.com/vendor/stripe/)
-
-Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
-
-### Klarna
+### WooCommerce Subscriptions
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna/)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+
+### Product Add-Ons
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -188,22 +188,22 @@ Some payment methods have limitations in their functionality. These are listed b
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
 
-### Stripe Tax
-
-	
-			by [Stripe](https://woocommerce.com/vendor/stripe/)
-
-Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
-
-### Klarna
+### WooCommerce Subscriptions
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna/)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+
+### Product Add-Ons
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -314,22 +314,22 @@ Once you’ve connected our Stripe extension to a Stripe account, you’ll proba
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
 
-### Stripe Tax
-
-	
-			by [Stripe](https://woocommerce.com/vendor/stripe/)
-
-Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
-
-### Klarna
+### WooCommerce Subscriptions
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna/)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+
+### Product Add-Ons
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -574,22 +574,22 @@ add_filter( 'wc_stripe_should_hide_express_checkout_button_based_on_tax_setup', 
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
 
-### Stripe Tax
-
-	
-			by [Stripe](https://woocommerce.com/vendor/stripe/)
-
-Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
-
-### Klarna
+### WooCommerce Subscriptions
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna/)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+
+### Product Add-Ons
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -639,22 +639,22 @@ If you’ve determined that the Stripe extension is *not* already installed on y
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
 
-### Stripe Tax
-
-	
-			by [Stripe](https://woocommerce.com/vendor/stripe/)
-
-Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
-
-### Klarna
+### WooCommerce Subscriptions
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna/)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+
+### Product Add-Ons
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -806,22 +806,22 @@ The **Layout** option controls how various payment methods are shown in the Opti
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
 
-### Stripe Tax
-
-	
-			by [Stripe](https://woocommerce.com/vendor/stripe/)
-
-Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
-
-### Klarna
+### WooCommerce Subscriptions
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna/)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+
+### Product Add-Ons
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
@@ -890,22 +890,22 @@ Any other endpoints you see [in the Stripe dashboard](https://dashboard.stripe.c
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
 
-### Stripe Tax
-
-	
-			by [Stripe](https://woocommerce.com/vendor/stripe/)
-
-Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
-
-### Klarna
+### WooCommerce Subscriptions
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna/)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+
+### Product Add-Ons
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 

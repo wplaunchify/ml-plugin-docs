@@ -114,22 +114,22 @@ While we are unable to assist with Stripe account issues (including but not limi
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
+	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
 
-### Stripe Tax
-
-	
-			by [Stripe](https://woocommerce.com/vendor/stripe/)
-
-Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
-				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
-
-### Klarna
+### WooCommerce Subscriptions
 
 	
-			by [Klarna](https://woocommerce.com/vendor/klarna/)
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
 
-Grow your business with increased sales and an enhanced shopping experience — at no extra cost.
+WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
+				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
+
+### Product Add-Ons
+
+	
+			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+
+Offer add-ons like gift wrapping, special messages or other special options for your products.
 
 ---
 
