@@ -202,7 +202,7 @@ The main table lists every referral with all the important details, giving you a
 - **Amount:** The commission amount earned from that specific referral.
 - **Description:** Details about the product or service that was purchased.
 - **Reference:** A source or order ID linked to the referral.
-- **Status:** The current status of the referral **Paid**, **Pending**, **Unpaid**, or **Rejected**.
+- **Status:** The current status of the referral **Paid**, **Pending**, **Unpaid**, or **Rejected**. If you have set a [holding period](/guide/settings-and-customization/referral-settings#how-the-holding-period-works), an unpaid referral that is still on hold also shows an **On hold until** date. It can't be added to a payout before this date.
 - **Type:** The source of the commission, such as a product sale or a form submission.
 - **Date:** The exact date the referral was created.
 
@@ -302,9 +302,9 @@ At the bottom of the table, you will find pagination controls to navigate throug
 
 # Payout Management ​
 
-FluentAffiliate provides a Payout option to manage affiliate payments, but all payments must be made manually. It doesn't send money through any payment gateways. Instead, it records each transaction and generates a detailed report showing who was paid and how much. You can also export this report for your records.
+FluentAffiliate provides a Payout option to manage affiliate payments. It records each transaction and generates a detailed report showing who was paid and how much. You can also export this report for your records.
 
-To pay an affiliate, you can use the PayPal email listed in their profile. In this guide, we'll walk you through the steps to complete manual payouts.
+You can pay your affiliates in two ways. You can make the payments manually, using the PayPal email listed in their profile. Or, if you are using FluentAffiliate Pro, you can send all the payments through **PayPal Payouts** in one step. In this guide, we'll walk you through both.
 
 Watch the payout process in action:
 
@@ -322,17 +322,24 @@ Here's what to fill out:
 - **Payout Description**: Enter a short note or description.
 - **Affiliates**: Select one or more affiliates to pay. Only affiliates with unpaid earnings will be listed here. If you leave this field blank, payment will be sent to all eligible affiliates.
 - **Start Date - End Date**: Choose the date range for which you want to process payouts. For example, select last month's range to pay commissions from that period.
+- **Holding Period**: This option only appears if you have set a [holding period](/guide/settings-and-customization/referral-settings#how-the-holding-period-works) in the Referral Settings. By default, referrals that are newer than the holding period are left out of the payout. Check the **Ignore the holding period** box if you want to pay them as well.
 - **Minimum Payout Amount**: Set a minimum amount that affiliates must reach to be eligible for payout.
+- **Payout Method**: Choose how you want to pay this payout. Select **Manual** to pay the affiliates yourself, or **PayPal Payouts** to send the money through PayPal. The PayPal Payouts option only appears once you have [set up PayPal Payouts](/guide/settings-and-customization/paypal-payouts).
 
 Once everything is filled out, click the **Next (Review Payout)** button to proceed.
+
+If some referrals are still in the holding period, the review page will show you how many of them are left out of this payout and their total amount.
 
 Now, on the Payout dashboard, you'll see your newly created payout listed.
 
 Now, click on the **Payout Name** to view its payment details. Here, you can see the total amount paid to your affiliates, along with which affiliates received commissions, the dates, and other important info.
 
-The right sidebar will show you additional payout details.
+The right sidebar will show you additional payout details. If you checked the **Ignore the holding period** option when creating the payout, you'll also see **Holding Period: Ignored** here.
 
-In the Transactions tab, you can generate a report for your transactions. Simply click the **Export** button to download a CSV file with your payout details.
+In the Transactions tab, you can generate a report for your transactions. Simply click the **Export** button and choose the file you need:
+
+- **CSV file:** Downloads all the columns of the transactions in the current view.
+- **PayPal Payouts file:** Downloads the processing transactions in a file that is ready to upload at PayPal.
 
 The **CSV** file will include the following details:
 
@@ -342,6 +349,84 @@ The **CSV** file will include the following details:
 - payout_email
 - amount
 - currency
+
+### Export a PayPal Payouts File ​
+
+Do you pay your affiliates manually through PayPal? Instead of sending each payment one by one, you can export a PayPal Payouts file and upload it to your PayPal Business account to pay all of them at once.
+
+To do this, click the **Export** button in the Transactions tab and select **PayPal Payouts file**. FluentAffiliate will download a CSV file in PayPal's Payouts upload format. Each row has the affiliate's payment email, the amount, and the currency, without a header row.
+
+Here are a few things to keep in mind:
+
+- **Processing transactions only:** The file only includes the transactions that are still processing, so affiliates you have already paid won't be paid again.
+- **Valid payment email:** Any affiliate without a valid payment email is left out of the file. You'll see a notice with their names, so you can pay them another way or ask them to update their email.
+- **5,000 rows limit:** PayPal accepts up to 5,000 payments in one file. If your payout has more transactions, the file includes the first 5,000.
+- **Manual payouts only:** You can't export a PayPal Payouts file for a payout sent through [PayPal Payouts](#pay-affiliates-with-paypal-payouts), because PayPal is already sending that money.
+
+After uploading the file at PayPal and sending the payments, come back to the payout and click the **Mark all as Paid** button to record the payments as paid.
+
+## Pay Affiliates with PayPal Payouts ​
+
+If you don't want to pay each affiliate one by one, you can use PayPal Payouts to send all the payments of a payout in one step. FluentAffiliate also updates the status of each payment for you, so you always know who has been paid.
+
+INFO
+
+To use PayPal Payouts, you must have **FluentAffiliate Pro** installed and activated. You also need to add your PayPal API keys and select PayPal as the payout method. Check out the [PayPal Payouts](/guide/settings-and-customization/paypal-payouts) guide to set it up.
+### Creating a PayPal Payout ​
+
+Create your payout the same way as shown above, and select **PayPal Payouts** from the **Payout Method** dropdown. Then, click the **Next (Review Payout)** button.
+
+On the review page, you'll see each affiliate, their PayPal email, the payout amount, and the total. Any affiliate without a valid PayPal email is left out of the payout. Don't worry, their referrals stay unpaid, so a later payout can pay them.
+
+No money is sent at this step. Click the **Create Payout** button to create the payout, and you can send it to PayPal from the next page.
+
+### Sending the Payout to PayPal ​
+
+After creating the payout, you'll land on the payout page. Here, each payment shows the **Ready to send** status. Simply click the **Send via PayPal** button at the top.
+
+A confirmation popup will show you the total amount, the number of affiliates, and the mode you are using:
+
+- **Sandbox Mode:** No real money moves. This is perfect for testing your setup.
+- **Live Mode:** This sends real money to your affiliates, and PayPal charges its fee. Keep in mind that you cannot undo this.
+
+Click **Send via PayPal** again in the popup to send the payout. It only takes a few seconds, and you can leave the page while it runs.
+
+### Tracking the Payment Status ​
+
+After the payout is sent, the payout page shows the **Sent to PayPal** message along with its PayPal batch ID and the status of each payment. FluentAffiliate updates these statuses automatically through the webhook and an hourly check. If you want the latest status right away, simply click the **Check now** button.
+
+Here are the payment statuses you might see:
+
+- **Waiting at PayPal:** PayPal is still processing the payment.
+- **Unclaimed:** The affiliate's email doesn't have a PayPal account yet. PayPal holds the money for up to 30 days and asks the affiliate to claim it. If it isn't claimed, PayPal returns the money and the payment is marked as **Failed**.
+- **Paid:** PayPal has sent the money to the affiliate.
+- **Failed:** PayPal couldn't pay the affiliate, for example, because the payment was denied, blocked, or returned.
+- **Refunded at PayPal:** The payment was made but later refunded in PayPal. You should check this payment with the affiliate.
+
+You'll also see the **PayPal Fee** for each payment. The site pays this fee, not the affiliate.
+
+The **PayPal Activity** section in the right sidebar lists the recent requests sent to PayPal for this payout. This can be helpful if you ever need to contact support. You can also click the **Export** button to download a CSV file of the payout, just like a manual payout.
+
+Back on the **Payouts** page, you can see the **Method** of each payout. A PayPal payout stays **Processing** while PayPal is still handling its payments, and it changes to **Paid** once all of them are paid.
+
+### Handling Failed Payments ​
+
+If a payment fails, you have two options:
+
+- **Mark as paid manually:** Pay the affiliate another way, then use this option to record the payment as paid.
+- **Remove from batch:** Remove the payment from this payout. The affiliate's referrals become unpaid again, so you can include them in a later payout.
+
+### When PayPal Doesn't Respond ​
+
+Sometimes the connection to PayPal can break while a payout is being sent. When this happens, the payout may already be at PayPal, and you'll see a **Payout may be sent** or **Batch ID missing** message on the payout page. To avoid paying your affiliates twice, don't send it again right away. Instead, follow these steps:
+
+1. Log in to your PayPal account and look for the payout.
+2. If you find the payout, copy its **PayPal batch ID**, paste it into the field on the payout page, and click **Add batch ID**. FluentAffiliate will check that the batch belongs to this payout and update the status of each payment.
+3. If you don't find the payout, click the **Send again** button.
+
+Please note that you can only send a payout again within 29 days of the first try. After that, the **Send again** button is no longer available. If the payout is not in your PayPal account, click the **Not in PayPal** button instead. Its payments will be marked as **Failed**, and you can pay them manually or remove them so a later payout can pay them.
+
+Only use the **Not in PayPal** option after checking your PayPal account. If PayPal already has the payout, your affiliates could be paid twice.
 
 ---
 

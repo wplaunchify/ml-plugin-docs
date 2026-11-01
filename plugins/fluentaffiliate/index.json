@@ -2,8 +2,8 @@
   "plugin_slug": "fluentaffiliate",
   "plugin_name": "FluentAffiliate",
   "documentation_url": "https://docs.fluentaffiliate.com/guide/",
-  "last_scraped": "2026-10-25T10:20:24.678Z",
-  "total_pages": 55,
+  "last_scraped": "2026-11-01T10:13:48.204Z",
+  "total_pages": 56,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -229,7 +229,7 @@
       "slug": "settings-and-customization",
       "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/",
       "file": "categories/settings-and-customization.md",
-      "page_count": 13,
+      "page_count": 14,
       "pages": [
         {
           "title": "Affiliate Manager Migration ​",
@@ -258,6 +258,10 @@
         {
           "title": "Notification Settings ​",
           "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/notification-settings"
+        },
+        {
+          "title": "PayPal Payouts ​",
+          "url": "https://docs.fluentaffiliate.com/guide/settings-and-customization/paypal-payouts"
         },
         {
           "title": "Permission Management ​",
