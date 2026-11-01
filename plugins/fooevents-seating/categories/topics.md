@@ -476,6 +476,14 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/check-ins-app-android/](https://help.fooevents.com/docs/topics/changelogs/check-ins-app-android/)
 
+## 3.1.14 (October 27, 2026)
+
+- Added individual status counters for each day of a multi-day event in the event info status summary with a picker to change the current day
+
+## 3.1.13 (September 9, 2026)
+
+- Added a setting to choose barcode scanner input mode for direct keystroke for speed vs keyboard emulation for higher compatibility
+
 ## 3.1.12 (Sep 3, 2026)
 
 - Cater for product add-ons on the ticket view
@@ -769,6 +777,14 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/check-ins-app-ios/](https://help.fooevents.com/docs/topics/changelogs/check-ins-app-ios/)
+
+## 3.1.14 (October 27, 2026)
+
+- Added individual status counters for each day of a multi-day event in the event info status summary with a picker to change the current day
+
+## 3.1.13 (September 9, 2026)
+
+- Added a setting to choose barcode scanner input mode for direct keystroke for speed vs keyboard emulation for higher compatibility
 
 ## 3.1.12 (Sep 3, 2026)
 
@@ -2333,6 +2349,12 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-express-check-in/](https://help.fooevents.com/docs/topics/changelogs/fooevents-express-check-in/)
 
+## 2.0.6 (27 October 2026)
+
+- NEW: UI improvements, column filtering, and enhanced status change notifications.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.3 and WooCommerce 11.2.1.
+
 ## 2.0.5 (20 October 2026)
 
 - FIXED: Various small bugs and performance updates.
@@ -2591,6 +2613,13 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/](https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/)
+
+## 2.0.27 (27 October 2026)
+
+- FIXED: Various security updates.
+- FIXED: Improved Thank-you page and My Account ticket status checks to prevent unnecessary polling and ensure ticket messages are replaced correctly.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.3 and WooCommerce 11.2.1.
 
 ## 2.0.24 (20 October 2026)
 
@@ -4684,6 +4713,15 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/](https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/)
 
+## 1.13.10 (27 Oct 2026)
+
+- Update: Cater for default check-in status when purchasing a FooEvents multi-day ticket through the POS
+- Fix: Continuing incomplete orders created from the admin dashboard in the POS and checking out using split payments as payment method
+- Fix: New line characters in receipt header and footer content
+- Fix: Payment methods on receipts when not using split payments
+- Fix: Removed empty payment methods on receipts when the order is a saved in-progress order
+- Fix: Removed online check using NetInfo for bundled web app
+
 ## 1.13.4 (6 Oct 2026)
 
 - Update: Optimized customer avatar fetching for stores with a large amount of customers
@@ -5271,6 +5309,11 @@ The following changelogs are updated after every release. Changes include new fe
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/ticket-themes/](https://help.fooevents.com/docs/topics/changelogs/ticket-themes/)
 
 Ticket themes are updated from time to time to improve layout, compatibility, and styling across different email clients. This changelog lists the updates we’ve made to each FooEvents ticket theme, including fixes, improvements, and any changes you may need to be aware of before updating. If you’ve customised a theme, review the notes carefully—updates can overwrite your modifications.
+
+## 2.0.3 (28 October 2026)
+
+- UPDATED: Updated Add to Calendar links to use the new secure access hash, improving calendar download security.
+- IMPORTANT: Calendar links in tickets generated with earlier ticket-theme versions will not include the required access hash and will no longer work.
 
 ## 2.0.2 (23 June 2026)
 
