@@ -4,33 +4,93 @@
 
 ---
 
-## Temporarily Deactivating Plugins
+## How to Test for Plugin Conflicts
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-theme/temporarily-deactivate-plugins/](https://www.kadencewp.com/help-center/docs/kadence-theme/temporarily-deactivate-plugins/)
 
-There are many plugins and many developers doing things in a lot of different ways. It’s very hard to isolate your code in WordPress so conflicts are inevitable. What’s crucial to be able to diagnose a problem and find a solution you have to be able to determine which plugins are conflicting. The simplest form of this is to deactivate plugins one by one until you uncover what the conflicting plugin is.
+When a feature on your website stops working as expected, such as layout breaks, editor errors, form submission failures, or unexpected display issues, the underlying cause is often a **plugin or theme conflict**.
 
-Many people do not want to deactivate their plugins one by one for fear of breaking something on their site, or breaking the site while a potential user is viewing the site. Thankfully there is a better way to test for conflicts by using the [Health Check & Troubleshooting plugin](https://wordpress.org/plugins/health-check/) developed by the WordPress community.
+In WordPress, plugins and themes are created by thousands of different developers. Because they share the same execution environment and hook into the same core scripts, styling rules, and database functions, two pieces of code occasionally run into each other and cause unintended errors.
 
-#### Using Troubleshooting Mode in Health Check
+Conflict testing is the process of systematically isolating your site’s software to identify exactly which plugin or theme is causing the issue.
 
-1. Install the Health Check Plugin by going to Plugins → Add new in your admin. Then in the search type “health check”. Install and activate the Health Check & Troubleshooting plugin by the WordPress Community.
+## Step 1: Prepare Your Website Before Testing
 
-![Add plugin - Health Check & Troubleshooting](https://docs.nexcess.com/wp-content/uploads/2026/06/install_healthcheck.jpg)
+Before making any changes to your site configuration, always complete the following preparatory steps:
 
-2. Navigate to the Tools → Site Health in your admin and there click on the “Troubleshooting” tab at the top of the page. That will reveal the “Enable Troubleshooting Mode” button.
+- **Update to the Latest Versions:** Ensure WordPress core, your active theme, and all installed plugins are updated to their latest versions. Known bugs and compatibility issues are frequently patched in software releases, so updating first might resolve the issue right away.
+- **Create a Full Backup:** Take a complete backup of your website’s database and files using your web host’s backup tool or a reliable backup plugin.
+- **Use a Staging Site (Recommended):** If your host provides a staging environment, perform your tests there to prevent downtime or visual disruption for live visitors. You can learn about different ways to set up a staging environment [here](https://docs.nexcess.com/software/troubleshooting/setup-wordpress-staging-site/).
+- **Clear Caches:** Clear your browser cache, along with any server-level caching or caching plugins (e.g., Redis, object cache, page cache), to ensure you see real-time changes during testing.
 
-![Site Health - Troubleshooting](https://docs.nexcess.com/wp-content/uploads/2026/06/trouble_shoot_mode.jpg)
+## Step 2: Test for a Theme or Plugin Conflict
 
-Troubleshooting mode will allow you, and only you, to view your site and admin with everything turned off. That way your users can keep using your site without issue and you can test and discover what conflicts might be going on. Once enabled you will be using a **default theme and no plugins** will be active. Usually, the first thing is to start by activating the Kadence Theme, then you can test by activating plugins one by one.
+The standard manual conflict test involves switching to a default theme and deactivating plugins to isolate the root cause.
 
-![Site Health - Troubleshooting mode](https://docs.nexcess.com/wp-content/uploads/2026/06/trouble_shoot_mode_02.jpg)
+### Phase A: Test for a Theme Conflict
 
-You can get out of troubleshooting mode at any time from your admin bar or from the home page in your admin dashboard. Now it’s time to test away without worry of breaking your site or ruining your user’s experience.
+1. Go to **Appearance > Themes**.
+2. Temporarily activate a standard, uncustomized default WordPress theme (such as **Twenty Twenty** or **Twenty Twenty-Four**).
+3. Clear your browser cache and retest the issue.
+- **If the issue resolves:** Your active theme is causing the conflict.
+- **If the issue remains:** Re-enable your preferred theme and proceed to Phase B.
 
-Test each plugin to see if one is causing an issue.  If you find a plugin causing an issue contact that plugin author to see about resolving it.
+### Phase B: Test for a Plugin Conflict
 
-If your issue is happening with all plugins deactivated let us know and we can help you resolve it.
+1. Go to **Plugins > Installed Plugins**.
+2. Select the checkbox next to every plugin **except** the core plugin you are testing (and any essential add-on required for it to run).
+3. From the **Bulk Actions** drop-down menu, select **Deactivate**, then click **Apply**.
+4. Clear your browser cache and retest your site.
+- **If the issue is resolved:** A plugin conflict is present. Proceed to find the specific culprit.
+- **If the issue persists:** The problem may be related to server configuration, database errors, or core settings rather than an active plugin conflict.
+5. Reactivate your remaining plugins **one by one** (or in groups), retesting your site after each activation.
+6. When the issue reappears, the plugin you just activated is the source of the conflict.
+
+## Method 2: Standard Manual Conflict Testing
+
+If you are working on a staging environment, you can perform manual conflict testing directly through your dashboard.
+
+### Phase A: Test for a Theme Conflict
+
+1. Go to **Appearance > Themes**.
+2. Temporarily activate a standard, uncustomized default WordPress theme (such as *Twenty Twenty* or *Twenty Twenty-Four*).
+3. Clear your browser cache and retest the issue.
+- **If the issue resolves:** Your active theme is causing the conflict.
+- **If the issue remains:** Re-enable your preferred theme and proceed to Phase B.
+
+### Phase B: Test for a Plugin Conflict
+
+1. Go to **Plugins > Installed Plugins**.
+2. Select the checkbox next to every plugin **except** the core plugin you are testing (and its required add-ons).
+3. From the **Bulk Actions** drop-down menu, select **Deactivate**, then click **Apply**.
+4. Clear your browser cache and retest your site.
+- **If the issue is gone:** A plugin conflict is confirmed.
+5. Reactivate your plugins **one by one**, retesting your site after each single activation.
+6. When the error returns, the plugin you just activated is the source of the conflict.
+
+**Note on Testing Safely on a Live Site:**
+
+If a staging environment is unavailable, the **Health Check & Troubleshooting** plugin (developed by the WordPress Community) can help simplify this process. Using its built-in **Troubleshooting Mode** (*Tools > Site Health > Troubleshooting*), you can temporarily deactivate plugins and switch themes **only for your logged-in session**. Your site visitors will continue to see your live site normally while you test.
+
+## Step 3: Common Troubleshooting Scenarios
+
+If you have isolated a conflict or if the issue persists even with all third-party software disabled. Check these common scenarios:
+
+- **T****heme Overrides:** Custom template files in your child theme folder can become outdated after plugin updates. Try temporarily renaming your custom override folder (e.g., adding -bak to the end of the folder name) to see if older template files are breaking functionality.
+- **JavaScript Errors:** Open your browser’s Developer Tools console (**F12** or **Cmd + Option + I**) and refresh the page. Identifying red console errors can provide specific script paths or function names causing issues.
+- **404 Page Not Found Errors:** Common after updates or changing custom post type settings. Go to **Settings > Permalinks** in your admin area and click **Save Changes** (without changing settings) to flush rewrite rules.
+- **403 Forbidden / API Restrictions:** Caching, security, firewall, or membership plugins may block access to WordPress REST API endpoints (/wp-json/). Temporarily disable endpoint restrictions or whitelist REST API routes to test.
+- **Performance / Slow Loading:** Often caused by large database queries resulting from un-indexed data, extensive transient data, or recurring entries without set end dates.
+
+## Reporting Your Findings to Support
+
+If you have confirmed a conflict involving our software and a third-party product, reach out to our support team with the following details so we can assist you quickly:
+
+1. **Conflicting Software Details:** The exact name and version number of the conflicting plugin or theme.
+2. **Issue Description:** Step-by-step instructions to reproduce the exact error when both products are active together.
+3. **System Information:** Send a copy of your site system status (found under your plugin’s help/tools tab, or via **Tools > Site Health > Info**).
+
+*For conflicts involving unmaintained or third-party software outside our direct codebase, our team is happy to point you in the right direction or suggest alternative compatibility approaches.*
 
 ---
 

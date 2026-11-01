@@ -29,7 +29,7 @@ How to remove PHP Deprecated Notices
 While it might seem alarming, these notices don’t need to be reported to support. They’re not critical errors and won’t affect your site’s performance or functionality. Instead, here’s what you can do to remove or hide these errors.
 
 - **Turn off debugging on live sites**. For any live or production site, debugging should be disabled. This keeps *PHP notices* (including deprecated warnings) from showing up to visitors. [Click here](https://docs.nexcess.com/software/kadence/enable-wordpress-error-logs/#disabling-debugging-after-use) to learn how.
-- **Keep your Kadence products up to date.** Kadence regularly releases updates to ensure compatibility with the latest WordPress-supported PHP versions. Updating your theme and plugins helps ensure everything stays smooth and secure.
+- **Keep your theme, plugins, and WordPress core up to date.** Developers regularly release updates to ensure compatibility with newer PHP versions. Running the latest versions helps eliminate deprecation warnings and prevents future breaking changes.
 - **Stick with a supported PHP version.**Even if newer versions display more notices, it’s still best to use a PHP version that WordPress officially supports. [Click here](https://wordpress.org/about/requirements/) to see the current WordPress requirements.
 
 ---
