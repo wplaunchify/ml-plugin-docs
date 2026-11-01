@@ -1471,6 +1471,26 @@ How to use custom PHP code?PHP code can be added to your (child) theme's functio
 }, 100 );
 ```
 
+## Disable the automatic refresh when selecting a suggestion
+
+By default, selecting an Autocomplete suggestion from the dropdown will immediately trigger a refresh. If you want to disable this auto-refresh, add the following snippet to your (child) theme’s functions.php.
+
+With the snippet in place, a refresh will only be triggered when you click the “Go” button, or when you use Enter/Return in the field.
+
+```
+How to use custom PHP code?PHP code can be added to your (child) theme's functions.php file. Alternatively, you can use the Custom Hooks add-on, or a code snippets plugin. More infoadd_action( 'facetwp_scripts', function() {
+  ?>
+  <script>
+    document.addEventListener('facetwp-loaded', function() {
+      document.querySelectorAll('.facetwp-autocomplete.fcomplete-enabled').forEach(function(el) {
+        el.fcomplete.settings.onSelect = null;
+      });
+    });
+  </script>
+  <?php
+}, 100 );
+```
+
 ## Exclude certain Autocomplete matches
 
 The Autocomplete facet does not have a “Value modifiers” setting, like many other facets, with which you can exclude certain choices from displaying.
@@ -1663,7 +1683,7 @@ If you want to add a clear button/icon to an Autocomplete facet’s input box, c
 - [How to add a “Clear” button to a Search or Autocomplete facet](https://facetwp.com/how-to-add-a-clear-button-to-a-search-or-autocomplete-facet/)
 - [The facetwp_facet_display_value hook](https://facetwp.com/help-center/developers/hooks/output-hooks/facetwp_facet_display_value/)
 
-                    Last updated: July 17, 2026
+                    Last updated: October 28, 2026
 
 ---
 
@@ -20534,7 +20554,7 @@ Note: when a Load more Pager facet type exists on the page, this will always be 
 [per_page] – Number of posts per page
 [total_pages] – Total number of pages
 [total] – Total number of filtered results
-[total_unfiltered] – Total number of unfiltered results
+[total_unfiltered] – Total number of unfiltered results (available in FacetWP v4.6+)
 
 Usage examples:
 [lower] - [upper] of [total] results
@@ -21132,7 +21152,7 @@ You can use [this CSS](/help-center/facets/facet-types/dropdown/#style-select-dr
 - [How to use get_query_var(‘paged’) with FacetWP](https://facetwp.com/how-to-use-get_query_varpaged-with-facetwp/)
 - [Using FacetWP with WPML or Polylang](https://facetwp.com/help-center/using-facetwp-with/multilingual/)
 
-                    Last updated: October 23, 2026
+                    Last updated: October 26, 2026
 
 ---
 
