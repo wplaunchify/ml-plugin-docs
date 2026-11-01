@@ -2,7 +2,7 @@
   "plugin_slug": "affiliatewp-affiliate-landing-pages",
   "plugin_name": "AffiliateWP - Affiliate Landing Pages",
   "documentation_url": "https://affiliatewp.com/docs/documentation/",
-  "last_scraped": "2026-10-25T01:04:40.221Z",
+  "last_scraped": "2026-11-01T00:47:01.718Z",
   "total_pages": 220,
   "failed_urls_count": 0,
   "sections": [
@@ -247,7 +247,7 @@
         },
         {
           "title": "Affiliate Email Summaries",
-          "url": "https://affiliatewp.com/docs/affiliate-email-summaries/"
+          "url": "https://affiliatewp.com/docs/affiliate-email-summaries-2/"
         },
         {
           "title": "Troubleshooting Issues With AffiliateWP",
