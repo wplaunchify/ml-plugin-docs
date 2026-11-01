@@ -2,8 +2,8 @@
   "plugin_slug": "woocommerce",
   "plugin_name": "WooCommerce",
   "documentation_url": "https://woocommerce.com/documentation/",
-  "last_scraped": "2026-10-25T18:52:22.968Z",
-  "total_pages": 3746,
+  "last_scraped": "2026-11-01T18:56:14.177Z",
+  "total_pages": 3781,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -11,8 +11,276 @@
       "slug": "uncategorized",
       "url": "https://woocommerce.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 3746,
+      "page_count": 3781,
       "pages": [
+        {
+          "title": "Membership Suite – Member Menu",
+          "url": "https://woocommerce.com/document/membership-suite-for-woocommerce/membership-suite-member-menu/"
+        },
+        {
+          "title": "DigitalCraft AI Content Generator PRO",
+          "url": "https://woocommerce.com/document/digitalcraft-content-generator-pro/"
+        },
+        {
+          "title": "AI Image Generator and Virtual try-on",
+          "url": "https://woocommerce.com/document/ai-image-generator-try-on/"
+        },
+        {
+          "title": "Kadar",
+          "url": "https://woocommerce.com/document/kadar/"
+        },
+        {
+          "title": "Diagnose ShipStation HTTPS authentication",
+          "url": "https://woocommerce.com/document/shipstation-for-woocommerce/diagnose-https-authentication/"
+        },
+        {
+          "title": "CSV Order Status Changer",
+          "url": "https://woocommerce.com/document/csv-order-status-changer/"
+        },
+        {
+          "title": "Bespoke Product Options – Developer Documentation",
+          "url": "https://woocommerce.com/document/bespoke-product-options-developer-documentation/"
+        },
+        {
+          "title": "Bespoke Product Options",
+          "url": "https://woocommerce.com/document/bespoke-product-options/"
+        },
+        {
+          "title": "Troubleshooting Gift Cards",
+          "url": "https://woocommerce.com/document/gift-cards/troubleshooting-gift-cards/"
+        },
+        {
+          "title": "Show ShipStation rates at checkout",
+          "url": "https://woocommerce.com/document/shipstation-for-woocommerce/checkout-rates/"
+        },
+        {
+          "title": "Use WordPress.com Transport with ShipStation",
+          "url": "https://woocommerce.com/document/shipstation-for-woocommerce/wordpress-com-transport/"
+        },
+        {
+          "title": "VariantFlow Variations as Single Product",
+          "url": "https://woocommerce.com/document/variantflow-variations-as-single-product/"
+        },
+        {
+          "title": "Frequently Asked Questions",
+          "url": "https://woocommerce.com/document/custom-product-designer/frequently-asked-questions/"
+        },
+        {
+          "title": "How to Get the Pixabay API Key?",
+          "url": "https://woocommerce.com/document/custom-product-designer/how-to-get-the-pixabay-api-key/"
+        },
+        {
+          "title": "Text Templates",
+          "url": "https://woocommerce.com/document/custom-product-designer/text-templates/"
+        },
+        {
+          "title": "Design Templates",
+          "url": "https://woocommerce.com/document/custom-product-designer/design-templates/"
+        },
+        {
+          "title": "Clip Arts",
+          "url": "https://woocommerce.com/document/custom-product-designer/clip-arts/"
+        },
+        {
+          "title": "Product Builder",
+          "url": "https://woocommerce.com/document/custom-product-designer/product-builder/"
+        },
+        {
+          "title": "Product Views",
+          "url": "https://woocommerce.com/document/custom-product-designer/product-views/"
+        },
+        {
+          "title": "Product Level Settings for Designer",
+          "url": "https://woocommerce.com/document/custom-product-designer/product-level-settings-for-designer/"
+        },
+        {
+          "title": "Pricing Rules",
+          "url": "https://woocommerce.com/document/custom-product-designer/pricing-rules-2/"
+        },
+        {
+          "title": "Customization Settings",
+          "url": "https://woocommerce.com/document/custom-product-designer/customization-settings/"
+        },
+        {
+          "title": "General Settings",
+          "url": "https://woocommerce.com/document/custom-product-designer/general-settings/"
+        },
+        {
+          "title": "Export custom order fields to ShipStation",
+          "url": "https://woocommerce.com/document/shipstation-for-woocommerce/custom-order-fields/"
+        },
+        {
+          "title": "Change the ShipStation gift message limit",
+          "url": "https://woocommerce.com/document/shipstation-for-woocommerce/gift-message-limit/"
+        },
+        {
+          "title": "Gift Cards database tables",
+          "url": "https://woocommerce.com/document/gift-cards/gift-cards-database-tables/"
+        },
+        {
+          "title": "Add a recipient name field to gift cards",
+          "url": "https://woocommerce.com/document/gift-cards/add-a-recipient-name-field-to-gift-cards/"
+        },
+        {
+          "title": "Match the gift card recipient and billing email at checkout",
+          "url": "https://woocommerce.com/document/gift-cards/match-the-gift-card-recipient-and-billing-email-at-checkout/"
+        },
+        {
+          "title": "Limit the gift card message field in the browser",
+          "url": "https://woocommerce.com/document/gift-cards/limit-the-gift-card-message-field-in-the-browser/"
+        },
+        {
+          "title": "Choose the characters used in gift card codes",
+          "url": "https://woocommerce.com/document/gift-cards/choose-the-characters-used-in-gift-card-codes/"
+        },
+        {
+          "title": "Generate gift cards when an order moves to Processing",
+          "url": "https://woocommerce.com/document/gift-cards/generate-gift-cards-when-an-order-moves-to-processing/"
+        },
+        {
+          "title": "Show a quantity selector for gift card products",
+          "url": "https://woocommerce.com/document/gift-cards/show-a-quantity-selector-for-gift-card-products/"
+        },
+        {
+          "title": "Change the gift card delivery calendar styling",
+          "url": "https://woocommerce.com/document/gift-cards/change-the-gift-card-delivery-calendar-styling/"
+        },
+        {
+          "title": "Set a fixed expiration time for gift cards",
+          "url": "https://woocommerce.com/document/gift-cards/set-a-fixed-expiration-time-for-gift-cards/"
+        },
+        {
+          "title": "Show gift cards on a custom account page",
+          "url": "https://woocommerce.com/document/gift-cards/show-gift-cards-on-a-custom-account-page/"
+        },
+        {
+          "title": "Show the remaining balance of applied gift cards",
+          "url": "https://woocommerce.com/document/gift-cards/show-the-remaining-balance-of-applied-gift-cards/"
+        },
+        {
+          "title": "Remove coupons when a gift card is used for payment",
+          "url": "https://woocommerce.com/document/gift-cards/remove-coupons-when-a-gift-card-is-used-for-payment/"
+        },
+        {
+          "title": "Hide the gift card delivery date field",
+          "url": "https://woocommerce.com/document/gift-cards/hide-the-gift-card-delivery-date-field/"
+        },
+        {
+          "title": "Remove the gift card form from classic checkout",
+          "url": "https://woocommerce.com/document/gift-cards/remove-the-gift-card-form-from-classic-checkout/"
+        },
+        {
+          "title": "Set a scheduled gift card delivery time",
+          "url": "https://woocommerce.com/document/gift-cards/set-a-scheduled-gift-card-delivery-time/"
+        },
+        {
+          "title": "Automatically redeem gift cards for signed-in customers",
+          "url": "https://woocommerce.com/document/gift-cards/automatically-redeem-gift-cards-for-signed-in-customers/"
+        },
+        {
+          "title": "Prevent partial gift card payments on subscription renewals",
+          "url": "https://woocommerce.com/document/gift-cards/prevent-partial-gift-card-payments-on-subscription-renewals/"
+        },
+        {
+          "title": "GP Product history and Inventory logs",
+          "url": "https://woocommerce.com/document/gp-inventory-logs/"
+        },
+        {
+          "title": "Style links as buttons in AutomateWoo emails",
+          "url": "https://woocommerce.com/document/automatewoo-email-button-classes/"
+        },
+        {
+          "title": "How to Add a Design Template to a WooCommerce Product",
+          "url": "https://woocommerce.com/document/how-to-add-a-design-template-to-a-woocommerce-product/"
+        },
+        {
+          "title": "How to Charge Extra for Cliparts and Shapes in WooCommerce",
+          "url": "https://woocommerce.com/document/how-to-charge-extra-for-cliparts-and-shapes-in-woocommerce/"
+        },
+        {
+          "title": "How to Organize Cliparts and Shapes into Categories in WooCommerce",
+          "url": "https://woocommerce.com/document/how-to-organize-cliparts-and-shapes-into-categories-in-woocommerce/"
+        },
+        {
+          "title": "How to Add Cliparts and Shapes for Customers to Use on WooCommerce Products",
+          "url": "https://woocommerce.com/document/how-to-add-cliparts-and-shapes-for-customers-to-use-on-woocommerce-products/"
+        },
+        {
+          "title": "How to Add Fonts and Upload Custom Brand Fonts for Customers in WooCommerce",
+          "url": "https://woocommerce.com/document/how-to-add-fonts-and-upload-custom-brand-fonts-for-customers-in-woocommerce/"
+        },
+        {
+          "title": "How to Set the Design Canvas Size and Element Size Limits in Smart Product Designer",
+          "url": "https://woocommerce.com/document/how-to-set-the-design-canvas-size-in-smart-product-designer/"
+        },
+        {
+          "title": "How to Create a Product Design Template with Multiple Design Areas in WooCommerce",
+          "url": "https://woocommerce.com/document/how-to-create-a-product-design-template-with-multiple-design-areas-in-woocommerce/"
+        },
+        {
+          "title": "Exclude products from Min/Max Quantities order totals",
+          "url": "https://woocommerce.com/document/min-max-quantities-exclude-products-from-order-totals/"
+        },
+        {
+          "title": "Min/Max Quantities REST API reference",
+          "url": "https://woocommerce.com/document/min-max-quantities-rest-api-reference/"
+        },
+        {
+          "title": "Sync unpaid bookings to Google Calendar",
+          "url": "https://woocommerce.com/document/sync-unpaid-bookings-to-google-calendar/"
+        },
+        {
+          "title": "Add Product Add-Ons to a cart with the Store API",
+          "url": "https://woocommerce.com/document/product-add-ons-store-api-cart/"
+        },
+        {
+          "title": "Manage product-specific add-ons with the REST API",
+          "url": "https://woocommerce.com/document/product-add-ons-api-manage-product-add-ons/"
+        },
+        {
+          "title": "Manage global Product Add-Ons groups with the REST API",
+          "url": "https://woocommerce.com/document/product-add-ons-api-manage-global-groups/"
+        },
+        {
+          "title": "Display an order barcode in a custom admin screen",
+          "url": "https://woocommerce.com/document/display-order-barcode-custom-admin-screen/"
+        },
+        {
+          "title": "Inspect Bookings Calendar Availability Data",
+          "url": "https://woocommerce.com/document/inspect-bookings-calendar-availability-data/"
+        },
+        {
+          "title": "QuixWP Address Autocomplete",
+          "url": "https://woocommerce.com/document/quixwp-address-autocomplete/"
+        },
+        {
+          "title": "Bulk Price Editor – Developer Documentation",
+          "url": "https://woocommerce.com/document/bulk-price-editor-developer-documentation/"
+        },
+        {
+          "title": "Order Messenger for WooCommerce – Developer Documentation",
+          "url": "https://woocommerce.com/document/order-messenger-developer-documentation/"
+        },
+        {
+          "title": "Tiered Pricing Table – Developer Documentation",
+          "url": "https://woocommerce.com/document/tiered-pricing-table-developer-documentation/"
+        },
+        {
+          "title": "PDF Catalog Builder for WooCommerce",
+          "url": "https://woocommerce.com/document/pdf-catalog-builder/"
+        },
+        {
+          "title": "Easy Mail Voucher",
+          "url": "https://woocommerce.com/document/easy-mail-voucher/"
+        },
+        {
+          "title": "Smart Reels – Shoppable Videos",
+          "url": "https://woocommerce.com/document/smart-reels/"
+        },
+        {
+          "title": "Smart Force Sell",
+          "url": "https://woocommerce.com/document/smart-force-sell/"
+        },
         {
           "title": "Recurring Reports",
           "url": "https://woocommerce.com/document/recurring-reports/"
@@ -348,6 +616,10 @@
         {
           "title": "Keep tax-inclusive product prices across customer locations",
           "url": "https://woocommerce.com/document/keep-tax-inclusive-prices-across-locations/"
+        },
+        {
+          "title": "AI Product Bundles",
+          "url": "https://woocommerce.com/document/ai-product-bundle/"
         },
         {
           "title": "Wix Data Migrator",
@@ -6702,46 +6974,6 @@
           "url": "https://woocommerce.com/document/woocommerce-shortcodes/related-products-add-to-cart-and-notification-shortcodes/"
         },
         {
-          "title": "Troubleshooting shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/troubleshooting-shortcodes/"
-        },
-        {
-          "title": "Product Category Shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/product-category/"
-        },
-        {
-          "title": "Product shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/products/"
-        },
-        {
-          "title": "Page Shortcodes",
-          "url": "https://woocommerce.com/document/woocommerce-shortcodes/page-shortcodes/"
-        },
-        {
-          "title": "B2B Invoice Payment Method",
-          "url": "https://woocommerce.com/document/b2b-invoice-payment-method/"
-        },
-        {
-          "title": "Order Statuses",
-          "url": "https://woocommerce.com/document/managing-orders/order-statuses/"
-        },
-        {
-          "title": "Orders Overview and Bulk Order Management",
-          "url": "https://woocommerce.com/document/managing-orders/overview-and-bulk-management/"
-        },
-        {
-          "title": "Single Order Page and Manually Adding an Order",
-          "url": "https://woocommerce.com/document/managing-orders/view-edit-or-add-an-order/"
-        },
-        {
-          "title": "Paying for Orders",
-          "url": "https://woocommerce.com/document/managing-orders/paying-for-orders/"
-        },
-        {
-          "title": "Removing personal data from orders",
-          "url": "https://woocommerce.com/document/managing-orders/removing-personal-data-from-orders/"
-        },
-        {
           "title": "Testing orders",
           "url": "https://woocommerce.com/document/managing-orders/testing-orders/"
         },
@@ -9146,10 +9378,6 @@
           "url": "https://woocommerce.com/document/syncee-start-up-guide/"
         },
         {
-          "title": "Frequently Asked Questions",
-          "url": "https://woocommerce.com/document/gift-cards/faq/"
-        },
-        {
           "title": "All Products for WooCommerce Subscriptions",
           "url": "https://woocommerce.com/document/all-products-for-woocommerce-subscriptions/"
         },
@@ -10244,10 +10472,6 @@
         {
           "title": "Product Questions And FAQ by Aheadworks",
           "url": "https://woocommerce.com/document/aheadworks-product-questions/"
-        },
-        {
-          "title": "Snippets",
-          "url": "https://woocommerce.com/document/gift-cards/snippets/"
         },
         {
           "title": "Order Messenger for WooCommerce",
@@ -11382,7 +11606,7 @@
           "url": "https://woocommerce.com/document/woocommerce-one-page-checkout/"
         },
         {
-          "title": "ShipStation",
+          "title": "Connect WooCommerce to ShipStation",
           "url": "https://woocommerce.com/document/shipstation-for-woocommerce/"
         },
         {
@@ -12122,7 +12346,7 @@
           "url": "https://woocommerce.com/document/woocommerce-store-credit/"
         },
         {
-          "title": "Tiered Pricing Table for WooCommerce",
+          "title": "Tiered Pricing Table",
           "url": "https://woocommerce.com/document/tiered-pricing-table/"
         },
         {
@@ -12550,46 +12774,6 @@
           "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_reset/"
         },
         {
-          "title": "Product Filter – Reset",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/widgets/product-filter-reset/"
-        },
-        {
-          "title": "Sending SMS from a workflow",
-          "url": "https://woocommerce.com/document/automatewoo/twilio/sending-sms-from-a-workflow/"
-        },
-        {
-          "title": "Twilio SMS",
-          "url": "https://woocommerce.com/document/automatewoo/twilio/"
-        },
-        {
-          "title": "Setting up the Twilio integration",
-          "url": "https://woocommerce.com/document/automatewoo/twilio/setup-2/"
-        },
-        {
-          "title": "FAQ",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/faq/"
-        },
-        {
-          "title": "Selling Unlimited Memberships",
-          "url": "https://woocommerce.com/document/groups-woocommerce/memberships/selling-unlimited-memberships/"
-        },
-        {
-          "title": "Selling Time-limited Memberships",
-          "url": "https://woocommerce.com/document/groups-woocommerce/memberships/selling-time-limited-memberships/"
-        },
-        {
-          "title": "Legacy Setup",
-          "url": "https://woocommerce.com/document/groups-woocommerce/memberships/legacy-setup/"
-        },
-        {
-          "title": "Group Assignments",
-          "url": "https://woocommerce.com/document/groups-woocommerce/memberships/group-assignments/"
-        },
-        {
-          "title": "FAQ",
-          "url": "https://woocommerce.com/document/groups-woocommerce/faq/"
-        },
-        {
           "title": "Shortcodes",
           "url": "https://woocommerce.com/document/groups-woocommerce/shortcodes/"
         },
@@ -12694,20 +12878,20 @@
           "url": "https://woocommerce.com/document/mailchimp-for-woocommerce-memberships/"
         },
         {
-          "title": "[woocommerce_product_filter_category]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_category/"
+          "title": "Add to Cart Redirect",
+          "url": "https://woocommerce.com/document/add-to-cart-redirect/"
         },
         {
-          "title": "[woocommerce_product_filter_attribute]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_attribute/"
+          "title": "WooCommerce site and data security FAQ",
+          "url": "https://woocommerce.com/document/woocommerce-security-faq/"
         },
         {
-          "title": "[woocommerce_product_filter_price]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter_price/"
+          "title": "Mix and Match Version 1.3.0 – What’s New",
+          "url": "https://woocommerce.com/document/woocommerce-mix-and-match-products/version-1-3/"
         },
         {
-          "title": "[woocommerce_product_filter]",
-          "url": "https://woocommerce.com/document/woocommerce-product-search/shortcodes/woocommerce_product_filter/"
+          "title": "Filters",
+          "url": "https://woocommerce.com/document/woocommerce-product-search/api/filters/"
         },
         {
           "title": "[woocommerce_product_search]",
@@ -13630,10 +13814,6 @@
           "url": "https://woocommerce.com/document/woocommerce-pdf-watermark/"
         },
         {
-          "title": "Online Shipping Calculators & Debug Mode",
-          "url": "https://woocommerce.com/document/online-shipping-calculators-debug-mode/"
-        },
-        {
           "title": "Order Delivery for WooCommerce Overview",
           "url": "https://woocommerce.com/document/woocommerce-order-delivery/"
         },
@@ -14098,10 +14278,6 @@
           "url": "https://woocommerce.com/document/subscriptions/develop/functions/management-functions/"
         },
         {
-          "title": "Add a message above the login / register form",
-          "url": "https://woocommerce.com/document/add-a-message-above-the-login-register-form/"
-        },
-        {
           "title": "Authipay",
           "url": "https://woocommerce.com/document/authipay/"
         },
@@ -14158,10 +14334,6 @@
           "url": "https://woocommerce.com/document/permalinks/"
         },
         {
-          "title": "Add a new country to countries list",
-          "url": "https://woocommerce.com/document/add-a-new-country-to-countries-list/"
-        },
-        {
           "title": "Introduction to Product CSV Import Suite",
           "url": "https://woocommerce.com/document/product-csv-import-suite/"
         },
@@ -14180,10 +14352,6 @@
         {
           "title": "PDF Invoices",
           "url": "https://woocommerce.com/document/woocommerce-pdf-invoice-setup-and-customization/"
-        },
-        {
-          "title": "Adjust the quantity input values",
-          "url": "https://woocommerce.com/document/adjust-the-quantity-input-values/"
         },
         {
           "title": "See You Later",
@@ -14276,10 +14444,6 @@
         {
           "title": "Troubleshooting a slow site",
           "url": "https://woocommerce.com/document/troubleshooting-a-slow-site/"
-        },
-        {
-          "title": "Change a currency symbol",
-          "url": "https://woocommerce.com/document/change-a-currency-symbol/"
         },
         {
           "title": "Exporting Products and Variations",
@@ -14392,10 +14556,6 @@
         {
           "title": "WooCommerce Wishlists",
           "url": "https://woocommerce.com/document/woocommerce-wishlists/"
-        },
-        {
-          "title": "Rename a country in WooCommerce",
-          "url": "https://woocommerce.com/document/rename-a-country-in-woocommerce/"
         },
         {
           "title": "Remove product content based on category",
@@ -14530,7 +14690,7 @@
           "url": "https://woocommerce.com/document/twilio-sms-notifications/"
         },
         {
-          "title": "Subscriber to Newsletter",
+          "title": "Subscribe to Newsletter",
           "url": "https://woocommerce.com/document/newsletter-subscription/"
         },
         {
@@ -14670,10 +14830,6 @@
           "url": "https://woocommerce.com/document/states-not-in-core/"
         },
         {
-          "title": "Unhook/remove WooCommerce Emails",
-          "url": "https://woocommerce.com/document/unhookremove-woocommerce-emails/"
-        },
-        {
           "title": "WooCommerce Kissmetrics",
           "url": "https://woocommerce.com/document/kiss-metrics/"
         },
@@ -14692,10 +14848,6 @@
         {
           "title": "WooCommerce Customer / Coupon / Order CSV Import Suite",
           "url": "https://woocommerce.com/document/customer-order-csv-import-suite/"
-        },
-        {
-          "title": "Add/Modify States",
-          "url": "https://woocommerce.com/document/addmodify-states/"
         },
         {
           "title": "SSL, HTTPS, and WooCommerce",
@@ -14764,10 +14916,6 @@
         {
           "title": "Shipment Tracking",
           "url": "https://woocommerce.com/document/shipment-tracking/"
-        },
-        {
-          "title": "Override loop template and show quantities next to add to cart buttons.",
-          "url": "https://woocommerce.com/document/override-loop-template-and-show-quantities-next-to-add-to-cart-buttons/"
         },
         {
           "title": "WooCommerce CyberSource SA SOP Payment Gateway",
@@ -14918,10 +15066,6 @@
           "url": "https://woocommerce.com/document/change-number-of-upsells-output/"
         },
         {
-          "title": "Change number of related products output",
-          "url": "https://woocommerce.com/document/change-number-of-related-products-output/"
-        },
-        {
           "title": "WooCommerce Dynamic Pricing",
           "url": "https://woocommerce.com/document/woocommerce-dynamic-pricing/"
         },
@@ -14968,10 +15112,6 @@
         {
           "title": "Exclude products from a particular category on the shop page",
           "url": "https://woocommerce.com/document/exclude-a-category-from-the-shop-page/"
-        },
-        {
-          "title": "Add a custom currency/symbol",
-          "url": "https://woocommerce.com/document/add-a-custom-currency-symbol/"
         },
         {
           "title": "Sample products loop",
