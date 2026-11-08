@@ -596,17 +596,37 @@ To find these pieces of information, log in to your Customer.io account.
 
 Navigate to Settings » Account Settings » API Credentials.
 
-![](https://wpfusion.com/wp-content/uploads/2023/12/customer.io-API-Key-1024x545.png)
+![customer.io account settings menu showing options for account, workspaces, security, and api credentials, with api credentials highlighted to help connect customer.io.](https://wpfusion.com/wp-content/uploads/2023/12/Customer-io-Account-Settings-Page-1024x579.png)
 
-For the ‘API Key’, go to the ‘App API Keys‘ tab. Click ‘Create App API Key’, copy the ‘API Key’, and paste it into the appropriate field in WP Fusion.
+For the **API Key**, go to the **API Keys** tab and click **Create API Key**.
 
-![](https://wpfusion.com/wp-content/uploads/2023/12/customer.io-API-Key-01-1024x368.png)
+![the manage api credentials settings page for the customer.io wordpress integration, with an orange arrow pointing to the create api key button.](https://wpfusion.com/wp-content/uploads/2023/12/Customer.io-Create-API-Key-1024x248.png)
 
-And for the ‘Tracking Site ID’, and ‘Tracking API Key’, go to the ‘Tracking API Keys‘ tab. Click ‘Create Tracking API Key’, copy the ‘Site ID’ and ‘API Key, and paste it into the appropriate fields in WP Fusion.
+In the **Create API Key** settings:
 
-![](https://wpfusion.com/wp-content/uploads/2023/12/customer.io-Tracking-API-Key-01-1024x340.png)
+1. Select your workspace.
 
-Finally, click on ‘Connect’.
+2. Under **Choose a key type**, select **Private API** key.
+
+![create api key modal for the customer.io wordpress integration, showing options for public api key, private api key, and track site id + key, with the private api key option currently selected.](https://wpfusion.com/wp-content/uploads/2023/12/Interface-for-creating-an-API-key-1024x1011.png)
+
+3. Under **Choose where it’s used**, select **None (Track and App API only)**.
+
+![create api key modal window for customer.io integration showing steps to choose a workspace, key type, and usage, with a dropdown menu selected for the final step.](https://wpfusion.com/wp-content/uploads/2023/12/Step-By-Step-Process-For-Creating-A-Private-API-Key-948x1024.png)
+
+4. Enter a name for your API key.
+
+Then proceed with creating the key.
+
+Once the API key has been created, copy it and paste it into the **API Key** field in WP Fusion’s settings.
+
+For the **Tracking Site ID** and **Tracking API Key**, follow the same process to create an API key, but this time, under **Choose a key type**, select**Track site ID + key**.
+
+Then proceed with creating the Track key pair.
+
+![a customer.io create api key modal window displaying a tracking site id and api key pair, with a copy to clipboard icon for wordpress integration.](https://wpfusion.com/wp-content/uploads/2023/12/API-Key-Generation-Interface-1024x504.png)
+
+Once created, copy the **Track site ID** and **Track key**, and paste them into their corresponding fields in the WP Fusion settings. Finally, click on ‘Connect’.
 
 WP Fusion will now establish a direct connection to your Customer.io account and import your tags and custom fields.
 
