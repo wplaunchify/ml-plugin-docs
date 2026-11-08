@@ -71,7 +71,11 @@ duplicate-page
 
 ## Reviews
 
-	![](https://secure.gravatar.com/avatar/23f0f6161bcf3a93ffc7b9ec00bfe065d0c40f8f8692a6a96c35105d69eaac08?s=60&d=retro&r=g)### A must-have plugin
+	![](https://secure.gravatar.com/avatar/09bce5acb0e206cd63cbb3ff5686e763bc1d60d3b52e0caf2b1e859fe382da3e?s=60&d=retro&r=g)### Excellent plugin!
+							[janwouters](https://profiles.wordpress.org/janwouters/)
+								November 1, 2026
+						Duplicate Page is an excellent and must have plugin!
+							![](https://secure.gravatar.com/avatar/23f0f6161bcf3a93ffc7b9ec00bfe065d0c40f8f8692a6a96c35105d69eaac08?s=60&d=retro&r=g)### A must-have plugin
 							October 16, 2026
 						Does what's needed without fuss.
 							![](https://secure.gravatar.com/avatar/7d33550df58ff981903e2c4a20100ce62f2f1709e4f37ac142758788d5aebc2f?s=60&d=retro&r=g)### Läuft prima!
@@ -94,13 +98,8 @@ duplicate-page
 								June 2, 2026
 																1 reply
 						Tbh this is my go-to for cloning landing pages. Saves me tons of time instead of redoing everything. It works fine mostly, tho sometimes custom block settings glitch a bit. Still pretty solid overall.
-							![](https://secure.gravatar.com/avatar/ec7d830f7fb9b7dc869a3c54284840ce273be9baa890096977d1847132a6bef0?s=60&d=retro&r=g)### Works exactly as it should
-							[jenjen888](https://profiles.wordpress.org/jenjen888/)
-								June 1, 2026
-																1 reply
-						Works great, super easy plugin
 
-		[Read all 466 reviews](https://wordpress.org/support/plugin/duplicate-page/reviews/)
+		[Read all 467 reviews](https://wordpress.org/support/plugin/duplicate-page/reviews/)
 
 ## Contributors & Developers
 
