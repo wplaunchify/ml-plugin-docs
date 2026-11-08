@@ -8,9 +8,7 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/site-limits-and-license-usage/](https://www.kadencewp.com/help-center/docs/kadence-general/site-limits-and-license-usage/)
 
-## Overview
-
-You do not need a second license to test on a staging or development site. Your Liquid Web software plan limits the number of **live** sites you can activate, but sites on the approved domains and patterns listed below do not count toward that limit.
+You do not need a second license to test on a staging or development site. Your Liquid Web software plan limits the number of live sites you can activate, but sites on the approved domains and patterns listed below do not count toward that limit.
 
 ## How it works
 
@@ -20,34 +18,9 @@ When you activate your license on a site, our licensing system checks the site�
 - It does not use one of your site activations.
 - You will not see an “out of installs” notice for it.
 
-If the domain doesn’t match an allowed pattern, it’s treated as a live site and counts toward your site limit. If you’ve already reached the limit for your plan, license validation will fail on this site.
+If the domain does not match any pattern, the site is treated as a live site and counts toward your limit.
 
-In the patterns below, 
-```
-*
-```
-
- stands for any text. For example, 
-```
-staging.*
-```
-
- matches 
-```
-staging.example.com
-```
-
-, and 
-```
-*.local
-```
-
- matches 
-```
-mysite.local
-```
-
-.
+In the patterns below, * stands for any text. For example, staging.* matches staging.example.com, and *.local matches mysite.local.
 
 ## Whitelisted domains and patterns
 
@@ -132,17 +105,11 @@ mysite.local
 | *.theeventscalendar.com |
 | *.loxi.io |
 
-### Examples of domains that do not count toward your limit
+## Examples of domains that do not count toward your limit
 
-- ```
-dev.mysite.com
-```
-- ```
-staging.hello.net
-```
-- ```
-practice-site.staging.wpengine.com
-```
+- dev.mysite.com
+- staging.hello.net
+- practice-site.staging.wpengine.com
 
 ## Examples
 
@@ -155,28 +122,18 @@ practice-site.staging.wpengine.com
 
 ## Product specific notes
 
-**Promoter (The Events Calendar):** Promoter does not work on a site that uses one of the whitelisted domains or patterns above. To set it up on a live site, see [Getting Started with Promoter](https://docs.nexcess.com/software/the-events-calendar/configure-promoter/).
+**Promoter (The Events Calendar):** Promoter does not work on a site that uses one of the whitelisted domains or patterns above. To set it up on a live site, see Getting Started with Promoter.
 
-**Seating (Event Tickets):** Seating follows different rules on staging domains. See the section at the bottom of [Connecting Event Tickets to the Seating Builder](https://docs.nexcess.com/software/the-events-calendar/seating-builder/). We do not recommend cloning a site with seating already set up between production and staging.
+**Seating (Event Tickets):** Seating follows different rules on staging domains. See the section at the bottom of Connecting Event Tickets to the Seating Builder. We do not recommend cloning a site with seating already set up between production and staging.
 
 ## My staging site’s domain does not match any pattern. What can I do?
 
 A domain that does not match a pattern above is treated as a live site and counts toward your limit. You have these options:
 
-1. **Use a matching domain for the staging site.** For example, set it up as 
-```
-staging.yoursite.com
-```
-
- or 
-```
-yoursite.test
-```
-
- instead of a custom name.
-2. **Update the staging site manually.** Keep the license active on your live site and download the latest plugin files from your account to update the staging site by hand. See [Manual Plugin Updates](https://docs.nexcess.com/software/the-events-calendar/manual-updates/).
-3. **Move the license between sites.** To move your license to a new site, first disconnect it from the original site to free it up. Once released, you can activate it on the new site. See [Manage License Activations and Connected Sites](https://docs.nexcess.com/software/accounts-licensing/manage-license-activations-and-connected-sites/).
-4. **Request a new pattern.** If your domain follows a pattern that many customers are likely to use, contact support and we will consider adding it. This can take some time, and we do not add patterns that only apply to a single customer.
+- Use a matching domain for the staging site. For example, set it up as staging.yoursite.com or yoursite.test instead of a custom name.
+- Update the staging site manually. Keep the license active on your live site and download the latest plugin files from your account to update the staging site by hand. See Manual Plugin Updates.
+- Move the license between sites. Disconnect the license from the first site so you can activate it on another site. See Manage License Activations and Connected Sites.
+- Request a new pattern. If your domain follows a pattern that many customers are likely to use, contact support and we will consider adding it. This can take some time, and we do not add patterns that only apply to a single customer.
 
 ## Related articles
 

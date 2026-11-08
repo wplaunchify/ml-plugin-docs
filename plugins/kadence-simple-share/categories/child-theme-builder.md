@@ -8,184 +8,151 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-general/child-theme-builder/](https://www.kadencewp.com/help-center/docs/kadence-general/child-theme-builder/)
 
-Kadence makes it easy to turn your WordPress website creations into importable child themes. Similar to our Starter Templates process, Kadence Child Themes can be imported via the AI-Starter Templates by Kadence plugin. Allowing you to import essentially entire websites. This includes customizer settings, free plugins, pages, taxonomies, etc. 
+**Kadence Child Theme Builder** allows you to turn your WordPress website designs into distributable, importable child themes. Similar to the official Kadence Starter Templates, child themes packaged with this tool can bundle customizer configurations, layouts, pages, taxonomies, and required plugins, allowing clients or customers to import complete turnkey sites.
 
-The Kadence Child Theme Builder plugin is a premium plugin that is only available in our **Ultimate** or **Ultimate Lifetime** plans. [Click here to view our pricing](//www.kadencewp.com/pricing/).
+## Licensing Kadence Child Theme Builder
 
-**Requirements to export a Child Theme:**
+**Nexcess Software** manages your licensing through the[Nexcess Portal.](https://software.liquidweb.com/) For full instructions on downloading, installing, and licensing your product, see the official [How to Activate Your License](https://docs.nexcess.com/software/accounts-licensing/how-to-activate-a-unified-license/) document.
 
-- The website that is being exported must use the Kadence Theme.
+## Requirements for Exporting and Importing
+
+#### Requirements to Export:
+
+- The development/staging website being packaged must have the parent **Kadence Theme** installed and active.
+- If you want a lightweight, standard child theme (without demo content or Starter Template wizard integration), leave the **Demo Import Config** and **Pattern Hub Config** fields blank.
+
+#### Requirements to Import via Starter Templates:
+
+- The destination site must have the parent[Kadence Theme](https://wordpress.org/themes/kadence/)installed.
+- The destination site must have the free **Kadence Starter Templates** plugin installed and active.
+- The child theme package must have been generated with the **Demo Import Config** fields completed.
 - If you want to export a regular Child Theme that doesn’t import through the Starter Templates plugin, leave the Demo Config and Pattern Hub Config information empty when generating a Child Theme. This will generate a regular Kadence Child Theme.
 
-**Requirements to import a Child Theme with Starter Templates:**
+#### Requirements for Premium & Third-Party Plugins:
 
-- The [Kadence Parent Theme](https://wordpress.org/themes/kadence/) must be installed on the website.
-- The [AI-Starter Templates](https://wordpress.org/plugins/kadence-starter-templates/) by Kadence plugin must be installed and activated on the website.
-- Must fill out the Demo Config plugin settings for the Child Theme Builder Plugin.
+- If the child theme relies on premium plugins (such as *Kadence Blocks Pro*, *Kadence Shop Kit*, or third-party tools), those plugins must be pre-installed, activated, and licensed on the destination site **before** initiating the demo import. This ensures all custom post types, metadata, and pro block attributes populate correctly.
 
-**Requirements for Premium Plugins:**
+## Image Handling & Optimization
 
-- If a Child Theme uses **Premium Kadence Products**, the user who imports the Child Theme should have the premium plugins pre-installed, pre-activated, and pre-licensed on the website before importing the Child Theme. This will ensure the pro contents are properly imported.
-- The same goes for **3rd Party Premium Plugins**. The user who imports the Child Theme should complete the process of installing, activating, and licensing their 3rd party premium plugins before importing the Child Theme.
+The import process uses standard WordPress core import protocols. During demo installation, the importer fetches the full-size version of each source image rather than cloning every thumbnail iteration, which keeps import speeds fast and avoids inflating destination media libraries.
 
-## Installing Kadence Child Theme Builder
-
-Installing the Kadence Child Theme Builder plugin is easy. Just follow the steps below to get started.
-
-Once you have access to the Kadence Child Theme Builder plugin, you can download it from your Kadence [Downloads & License](https://www.kadencewp.com/my-account/downloads/) page.
-
-![Downloads and licenses](https://docs.nexcess.com/wp-content/uploads/2026/06/Downloads-and-licenses-1024x601-1.jpg)
-
-You will see Kadence Child Theme Package Builder listed in your Products list. You can click on the Download button to download the Kadence Child Theme Builder Zip. Be sure to leave the file compressed and don’t unzip it.
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Download-the-Child-Theme-builder-1024x773-1.jpg)
-
-Next, navigate to your WordPress Dashboard and go to Plugins -> Add New Plugin. At the top of the Add New Plugin page, click on the **Upload** **Plugin** button.
-
-![Upload Kadence Blocks Pro](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Kadence-Blocks-Pro-scaled-1.jpg)
-
-Click on the **Choose** **File** button, select the **Kadence Child Theme Builder** **Zip** file and click the **Install** **Now** button.
-
-![Upload Child Theme builder](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Child-Theme-builder.jpg)
-
-Once the plugin is installed, click the blue **Activate** **Plugin** button to activate your plugin. Now your **Kadence Child Theme Builder** plugin is activated on your website. You must now license your plugin.
-
-### Licensing Kadence Child Theme Builder
-
-Once you activate the Kadence Child Theme Builder plugin, you will get a prompt in your WordPress Dashboard that says *The following plugins have not been activated: Kadence Child Theme Builder. Click here to activate.*You can click on the link in the prompt to get to your Kadence License Activation page.
-
-![Notice License](https://docs.nexcess.com/wp-content/uploads/2026/06/Notice-License.jpg)
-
-Once you click on the link, you will be brought to your Kadence License Activation page. If you do not get the prompt in your Dashboard, you can simply navigate to your WordPress Dashboard -> Settings -> Kadence License Activation page to get here manually.
-
-![License Plugin](https://docs.nexcess.com/wp-content/uploads/2026/06/Activate-Plugin.jpg)
-
-Once you are on the Kadence Child Theme Builder Page, you can input your License API Key, API License Email, and License your Kadence Child Theme Builder plugin. Your License API Key and Email can be found on your Kadence [Downloads & License](https://www.kadencewp.com/my-account/downloads/) page. You can click on the Copy button next to your License Key to copy it directly to your clipboard.
-
-![License Key](https://docs.nexcess.com/wp-content/uploads/2026/06/License-Key-1024x356-1.jpg)
-
-Once you have your API Key, you can input it in your Kadence Child Theme Builder API License Key field. Then you can put your Account Email in the API License Email field and press the **Save** **Changes** button.
-
-![License Plugin](https://docs.nexcess.com/wp-content/uploads/2026/06/Activated-Plugin.jpg)
-
-That’s it, your Kadence Child Theme Builder plugin is ready to be used.
-
-## Child theme images
-
-We follow how WordPress importer works. When importing content, the site only imports the full-size version of each image. This approach prevents the media library from being flooded with multiple size variations for every image, which would significantly increase import time.
-
-After import, when image URLs are updated in the content to match the local site, only the main URL of the image is replaced. The 
+When image URLs update to point to the new domain, only the root URL string is replaced dimensions (e.g., 
 ```
--300x300
+-300x300.jpg
 ```
 
-(*or similar*) part in the filename that indicates a specific image size remains unchanged.
+) appended to filenames remain untouched.
 
-For this reason, *it’s recommended to use optimized images on your templates and select full sizes to prevent missing images* after importing your child theme on other websites
+> Best Practice: When assembling pages for your export site, always select full-size images or properly scaled assets within your layout blocks to prevent missing image paths on destination sites after import.
 
-Exporting a Child Theme
+## Configuring and Exporting a Child Theme
 
-Exporting a theme is easy. First, you should ensure the website that will export the Child Theme is complete and ready to be packaged. Then, you can navigate to your Dashboard -> Child Builder page. Here, you can access the Child Theme Config, Demo Import Config, Pattern Hub Config, and Generate Child Theme settings.
+Once the Child Theme Builder plugin is active and your site styling is complete, navigate to **Dashboard → Child Builder**:
 
-- To export a regular Child Theme, you must fill out the Child Theme Config settings, and then you can generate the Child Theme.
-- To export a Starter Template Child Theme, you must also fill out at least the Demo Import Config settings.
-- If you wish to also export a Pattern Hub Library (previously known as Kadence Cloud) you can do so using the Pattern Hub Config settings.
+#### Child Theme Config (Required)
 
-Child Theme Config Settings
+This tab controls how your child theme displays in WordPress under **Appearance → Themes**:
 
-Navigate to the Child Builder from your admin dashboard, and Kadence will present you with the Child Theme Config tab. This is the main configuration for how your Child Theme will display.
+- **Child Theme Name:** The display name of your child theme (defaults to 
+```
+Pro Design
+```
 
-![Child Theme Config](https://docs.nexcess.com/wp-content/uploads/2026/06/Child-Theme-Confic-scaled-1.jpg)
+).
+- **Child Theme Slug:** The folder/directory slug (defaults to 
+```
+child-theme-name
+```
 
-**Child Theme Name:** Enter the name of your child theme. If left empty, the default name will be “Pro Design.”
+). Use lowercase alphanumeric characters and hyphens without spaces.
+- **Author:** Your agency or brand name (defaults to 
+```
+Pro Author
+```
 
-**Child Theme Slug:** This is the folder name for the child theme. If left empty, the default slug will be “child-theme-name.” Slugs should be unique and should not contain spaces.
+).
+- **Child Theme Description:** A brief summary explaining the theme.
+- **Child Theme Screenshot:** Upload an image (
+```
+screenshot.png
+```
 
-**Author:** Enter the name of the author of the child theme. If left empty, the name will be “Pro Author.”
+, recommended size 
+```
+1200x900px
+```
 
-**Child Theme Description:** Fill in a description of the child theme. If left empty, the default description is “Child Theme Description.”
+). **This field is required**; WordPress will reject child themes lacking a screenshot.
+- **Optional Details:** Add your **Theme URL**, **Author URL**, and **Version** (defaults to 
+```
+1.0
+```
 
-**Child Theme Screenshot:**Upload an image to serve as the theme’s screenshot. This field is REQUIRED, and there is no default WordPress will not install the theme generated via the Child Theme Builder plugin if you do not upload a photo for this field.
+).
+- Click **Save Changes**. (If you only complete this tab, your generated ZIP will function as a standard child theme).
 
-**Optional – Theme URL:** The default theme URL is n/a.
+![child theme config](https://docs.nexcess.com/wp-content/uploads/2022/07/child-theme-config-1024x527.png)
 
-**Optional – Author URL:** The default author URL is n/a.
+#### Demo Import Config (Starter Template Import)
 
-**Optional – Version:** The default version is 1.0.
+Complete this tab to enable users to import your demo layouts via the Kadence Starter Templates wizard:
 
-After filling out the Child Theme Config options, you can save your changes by pressing the Save Changes button at the bottom of the page. If you export a Child Theme and only fill out the Child Theme Config information, then your export will be of a regular Kadence Child Theme. To make your Child Theme have the ability to import like a Starter Template, you must also fill out the Demo Import Config settings.
+- **Template Name (Required):** The public name of the template.
+- **Template Preview URL:** A live URL where customers can preview your template demo.
+- **Template Preview Image (Required):** The card thumbnail displayed inside the Starter Templates browser.
+- **Template Brand Name:** Your business or collection brand name.
+- **Template Brand Logo:** Upload a brand mark logo.
 
-Demo Import Config
+![Demo Import config](https://docs.nexcess.com/wp-content/uploads/2022/07/demo-import-config-1024x546.png)
 
-The Demo Import Configuration provides settings for importing your Child Theme through our AI Starter Templates by Kadence plugin. If you leave these settings blank, you won’t have the option to import the Child Theme through our Starter Templates plugin.
+#### Pattern Hub Library Config (Optional)
 
-![Demo Import Config](https://docs.nexcess.com/wp-content/uploads/2026/06/Demo-Import-Config.jpg)
+If you operate a centralized Pattern Hub and want to grant child theme users automatic access:
 
-**Template Name:** This field is required. Give your starter template a name. There is no default value. Without this input, the Starter Template plugin will not find your starter template.
-
-**Template Preview URL:** Lists the URL for a preview of the template.
-
-**Template Preview Image:**This is the other required field in this tab. Without a Template Preview Image (or a Template Name), the Kadence Starter Template plugin will not locate your child theme to import your demo.
-
-**Template Brand Name:** Enter the name of your brand.
-
-**Template Brand Logo:**You can also upload a logo for your brand.
-
-Pattern Hub Library Config
-
-The Pattern Hub Library Config settings allow you to link a Pattern Hub. This will automatically import the Pattern Hub when importing the Child Theme as a Starter Template. You can learn about Kadence Pattern Hub Connections by [Clicking Here](https://docs.nexcess.com/software/kadence/create-a-pattern-hub/).
+- **Pattern Hub Name:** Enter the display name for the cloud collection.
+- **Pattern Hub Access URL:** Enter your cloud access endpoint.
+- **Pattern Hub Access Key:** Provide the valid subscriber access key.
 
 ![Pattern Hub Config](https://docs.nexcess.com/wp-content/uploads/2026/06/Pattern-Hub-Config.jpg)
 
-**Pattern Hub Name:** Enter the name of the Pattern Hub.
+#### Generating the ZIP Package
 
-**Pattern Hub Access URL:** Enter the Access URL for your Pattern Hub connection.
+1. Go to the **Generate Child Theme** tab.
+2. Click **Generate Child Theme**.
+3. Your browser will download the compiled, distributable 
+```
+.zip
+```
 
-**Pattern Hub Access Key:** Enter the Access Key for your Pattern Hub connection.
-
-If valid, the Pattern Hub Library will be imported whenever the Child Theme is imported as a Starter Template.
-
-Generate Child Theme
-
-Once you have filled out the appropriate Settings, you can go to the Generate Child Theme settings to generate the Child Theme.
+ archive containing your styles, demo configurations, and theme metadata.
 
 ![Generate Child Theme](https://docs.nexcess.com/wp-content/uploads/2026/06/Generate-Child-Theme-1024x406-1.jpg)
 
-You can click on the Generate Child Theme button. This will trigger a download for your new Child Theme.
+## Importing a Kadence Child Theme
 
-Importing a Kadence Child Theme
+- On the destination WordPress site, navigate to **Appearance → Themes → Add New**.
+- Click **Upload Theme**, select your generated child theme 
+```
+.zip
+```
 
-Importing a Kadence Child Theme is easy. First, you must ensure the website that is importing the Child Theme has the Kadence Theme installed. If you are importing Demo Content, the website must also have the Kadence Starter Templates plugin installed and activated.
-
-You can upload the Kadence Child Theme in the Dashboard -> Appearance -> Themes. Click the Add New button near the top of the page, then click the Upload Theme button. Choose the Child Theme Zip file that was exported and upload it to the website.
+ file, and click **Install Now**.
+- Click **Activate**.
 
 ![Upload Child Theme](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Child-Theme-scaled-1.jpg)
 
-Then, Activate the Child Theme and you will now have an active Kadence Child Theme on the website.
-
 ![Active Child Theme](https://docs.nexcess.com/wp-content/uploads/2026/06/Active-ChildTheme.jpg)
 
-Importing Demo Content (Starter Template)
+#### Importing Demo Content via Starter Templates
 
-If you filled out the Demo Import Config and wish to import your Child Theme content fully, there are a few additional steps you must take. You should first ensure the website that is importing the content has the [AI-Starter Templates](https://wordpress.org/plugins/kadence-starter-templates/) by Kadence plugin activated on it for the remaining steps.
-
-Once the Child Theme is Activated, go to the Dashboard -> Kadence -> Starter Templates page. Click on the dropdown menu on the top right of the page. The dropdown may contain either Elementor, Block Editor, or Kadence AI by default.
-
-![Starter Templates Page](https://docs.nexcess.com/wp-content/uploads/2026/06/Starter-Templates-Page-scaled-1.jpg)
-
-From the dropdown, select the Brand of the Child Theme that was set up in the Demo Config settings.
-
-![Dropdown Sample](https://docs.nexcess.com/wp-content/uploads/2026/06/Dropdown-Sample.jpg)
-
-Once selected, the Child Theme Starter Template will be available to import.
-
-![Starter Template Child Theme](https://docs.nexcess.com/wp-content/uploads/2026/06/Starter-Template-Child-Theme.jpg)
-
-Click on the Child Theme Demo to import the content. This will give you the option to toggle the import customizer settings to on or off. This includes all customizer settings, including the header and footer settings. Additionally, there will be a list of the required plugins. Plugins marked with red text saying NOT INSTALLED indicate that a Premium Plugin is required. These Premium Plugins should be installed, activated, and licensed before importing the Child Theme Starter Template.
-
-![Finish and launch](https://docs.nexcess.com/wp-content/uploads/2026/06/Finish-and-launch-scaled-1.jpg)
-
-Once ready, you can click on Finish and Launch. This will prompt you to verify that you want to import the Child Theme Starter Template. Once the import is completed, you can view your website and see your new content.
+- Ensure the free **Kadence Starter Templates** plugin is active on the site.
+- Go to **Dashboard → Site Assist**
+- In the upper-right corner dropdown menu, locate and select the custom **Brand Name** assigned during export setup.
+- Click on your custom child theme demo card.
+- Review the import wizard:
+- Toggle **Import Customizer Settings** to copy global color palettes, typography, and header/footer configurations.
+- Review the **Required Plugins** list. If any premium plugins display with an uninstalled or unlicensed status, install and license them before continuing.
+- Click **Finish and Launch** to import content, media, and configurations.
 
 ---
 
