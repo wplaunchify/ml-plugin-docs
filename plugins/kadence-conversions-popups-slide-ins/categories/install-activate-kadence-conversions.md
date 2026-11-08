@@ -8,37 +8,54 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-conversions/install-activate-kadence-conversions/](https://www.kadencewp.com/help-center/docs/kadence-conversions/install-activate-kadence-conversions/)
 
-Installing [Kadence Conversions](https://www.kadencewp.com/kadence-conversions/) is straightforward. Begin by downloading the plugin from the [Downloads](https://www.kadencewp.com/my-account/downloads/) section of your Kadence account. If you’re subscribed to the Kadence Full Bundle or Lifetime Bundle, Kadence Conversions is already included with your plan. You can also [purchase it separately](https://www.kadencewp.com/kadence-conversions/pricing/) as an individual plugin if you prefer.
+**Kadence Conversions** is a lightweight, conversion-focused WordPress plugin that allows you to create targeted popups, slide-ins, and notification banners using the native WordPress Block Editor. Built for optimal performance without heavy script bloat, Kadence Conversions helps drive opt-ins, sales announcements, and user engagement while tracking views, conversions, and conversion rates.
+
+## Before You Begin
 
 To use Kadence Conversions, you must also have the **free** **Kadence** **Blocks** **plugin** installed on your site. If you don’t have Kadence Blocks, you will be prompted to install Kadence Blocks during the installation of Kadence Conversions.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/kadence-blocks-required.png)
 
-Getting Started
+## Licensing Kadence Conversions
 
-Download the Kadence Conversions ZIP file from the Kadence Account Downloads page.
+**Nexcess Software** manages your licensing through the [Nexcess Portal](https://software.nexcess.com/). For full instructions on downloading, installing, and licensing your product, see the official [How to Activate Your License](https://docs.nexcess.com/software/accounts-licensing/how-to-activate-a-unified-license-and-add-a-product/) document.
 
-![Downloads](https://docs.nexcess.com/wp-content/uploads/2026/06/Downloads-and-licenses-1024x601-2.jpg)
+## Creating a Conversion Item
 
-![Download Conversions](https://docs.nexcess.com/wp-content/uploads/2026/06/Download-Conversions-scaled-1.jpg)
+- In your WordPress dashboard, navigate to **Conversions → Add New**.
+- Choose your preferred starting point:
+- **Pre-Built Library:** Select from professionally designed conversion patterns (modals, slide-ins, and banners).
+- **Blank Canvas:** Build a custom layout from scratch using standard Gutenberg blocks and Kadence Blocks.
+- Add your content, buttons, or form fields inside the block editor canvas.
 
-Once the file has been downloaded, open your WordPress Admin area and go to the Plugins page. At the top of the page, select **“Add New”**, then choose the **“Upload Plugin”** option.
+## Conversion Types & Display Triggers
 
-![Upload Plugin](https://docs.nexcess.com/wp-content/uploads/2026/06/Upload-Plugin.jpg)
+Select the root **Conversion Block** to configure layout behavior and targeting rules in the right-hand settings panel:
 
-Click **“Choose File”** and locate the Kadence Conversions ZIP file you just downloaded from Kadence. After selecting the file, click **“Install Now.”** When the installation is complete, click **“Activate”** to enable the plugin.
+#### Conversion Types:
 
-Once the plugin is activated, the next step is to add your license key.
+- **Popup (Modal):** Centered overlay window that focuses visitor attention.
+- **Slide In:** Corner element that slides into view without obstructing full-page reading.
+- **Banner:** Responsive bar docked to the top or bottom edge of the screen.
 
-Licensing Kadence Conversions
+#### Launch Triggers:
 
-After Kadence Conversions has been installed, a message will appear at the top of your WordPress Admin screen stating that Kadence Conversions has not yet been activated. You can click the link provided in that message to proceed with activation. 
+- Time delay (seconds after page load).
+- Scroll distance (percentage of page scrolled).
+- Exit intent (visitor cursor moves toward closing the browser tab).
+- User click (open on custom button or link click).
 
-*(Alternatively, you can navigate to the Dashboard –> Kadence -> Conversions -> Dashboard page from the WordPress dashboard.)*
+**Targeting Rules:** Filter display by post type, taxonomy, device type (Desktop, Tablet, Mobile), user login state, URL query strings, or WooCommerce cart totals.
 
-Once on the Conversions dashboard, you will need to input your Kadence License Key. This can be found in your Kadence Account Downloads page. Once you enter your key, click the Save Changes button, and Kadence Conversions is ready to use.
+## Analytics & Goal Tracking
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Kadence-Conversions-‹-teejay-—-WordPress-2025-06-30-at-12.10.12-PM.jpg)*Enter your Kadence API License key from Kadence Conversions or Kadence Plan account.*
+Kadence Conversions includes native tracking to evaluate performance:
+
+- **Conversion Goals:** Measure conversions by **Form Submission** (e.g., Advanced Form block) or **Button Click**.
+- **Automatic Dismissal:** Optionally toggle **Close Conversion on Goal Event** to dismiss the element immediately upon action completion.
+- **Performance Dashboard:** Navigate to **Conversions → Dashboard** to inspect total impressions, successful goal conversions, and real-time conversion rates across your active campaigns.
+
+![conversion-settings](https://docs.nexcess.com/wp-content/uploads/2021/12/conversion-settings-370x1024.png)
 
 ---
 
