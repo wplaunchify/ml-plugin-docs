@@ -3705,7 +3705,7 @@ Initially, users cannot register as affiliates on your site, allowing you to set
 
 #### Require Approval
 
-By default, new affiliate registrations are automatically set to Active. Enable this setting to manually review and approve new affiliate applications, ensuring they meet your criteria before becoming active.
+This setting is on by default, so new affiliates start as Pending until you approve them. Turn it off to make new affiliates Active as soon as they register.
 
 ![Require Approval](https://affiliatewp.com/wp-content/uploads/2024/08/require-approval.png)
 
