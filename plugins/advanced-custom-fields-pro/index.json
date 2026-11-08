@@ -2,8 +2,8 @@
   "plugin_slug": "advanced-custom-fields-pro",
   "plugin_name": "Advanced Custom Fields PRO",
   "documentation_url": "https://www.advancedcustomfields.com/documentation/",
-  "last_scraped": "2026-11-01T03:52:16.246Z",
-  "total_pages": 272,
+  "last_scraped": "2026-11-08T03:52:38.094Z",
+  "total_pages": 281,
   "failed_urls_count": 2,
   "sections": [
     {
@@ -11,8 +11,44 @@
       "slug": "uncategorized",
       "url": "https://www.advancedcustomfields.com/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 272,
+      "page_count": 281,
       "pages": [
+        {
+          "title": "acf/fields/allow_append_choices",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-allow_append_choices/"
+        },
+        {
+          "title": "acf/form/{context}/allowed_field_keys",
+          "url": "https://www.advancedcustomfields.com/resources/acf-form-context-allowed_field_keys/"
+        },
+        {
+          "title": "acf/bidirectional/can_update_target",
+          "url": "https://www.advancedcustomfields.com/resources/acf-bidirectional-can_update_target/"
+        },
+        {
+          "title": "acf/is_trusted_save_context",
+          "url": "https://www.advancedcustomfields.com/resources/acf-is_trusted_save_context/"
+        },
+        {
+          "title": "acf/fields/relational/hide_unreadable_posts",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-relational-hide_unreadable_posts/"
+        },
+        {
+          "title": "acf/fields/relational/unreadable_post_statuses",
+          "url": "https://www.advancedcustomfields.com/resources/acf-fields-relational-unreadable_post_statuses/"
+        },
+        {
+          "title": "acf/user_can_read_post",
+          "url": "https://www.advancedcustomfields.com/resources/acf-user_can_read_post/"
+        },
+        {
+          "title": "acf/bindings/allow_user_data",
+          "url": "https://www.advancedcustomfields.com/resources/acf-bindings-allow_user_data/"
+        },
+        {
+          "title": "acf/upload/generate_previews",
+          "url": "https://www.advancedcustomfields.com/resources/acf-upload-generate_previews/"
+        },
         {
           "title": "How to set placeholder content in custom ACF Blocks",
           "url": "https://www.advancedcustomfields.com/resources/set-placeholder-content-in-custom-acf-blocks/"

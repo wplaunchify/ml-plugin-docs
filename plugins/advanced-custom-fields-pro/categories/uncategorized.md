@@ -4,6 +4,994 @@
 
 ---
 
+## acf/fields/allow_append_choices
+
+**Source:** [https://www.advancedcustomfields.com/resources/acf-fields-allow_append_choices/](https://www.advancedcustomfields.com/resources/acf-fields-allow_append_choices/)
+
+Control who can add new choices to Checkbox, Radio, and Select fields that save submitted custom values.
+
+## Description
+
+Checkbox, Radio, and Select fields can be set to save custom values submitted by users to the field’s list of choices. This filter controls whether a submitted value is added to the field’s choices. When it returns 
+```
+false
+```
+
+, the field’s settings are left unchanged, but the submitted value still saves to the post, user, or other object being edited.
+
+It applies to the Checkbox field’s “Save Custom Values” setting, the Radio field’s “Save Other Choice” setting, and the Select field’s “Save Options” setting.
+
+By default, anyone who can submit the field can add choices, including logged-out visitors using a front-end form. If visitors can submit these fields on your site, we recommend using this filter to restrict who can add choices.
+
+## Parameters
+
+```
+apply_filters( 'acf/fields/allow_append_choices', $allow, $field, $post_id );
+```
+
+```
+$allow
+```
+
+*(bool)* Whether to add the submitted value to the field’s choices. Default: 
+```
+true
+```
+
+```
+$field
+```
+
+*(array)* The field array containing all settings.
+
+```
+$post_id
+```
+
+*(int|string)* The ID of the object the value is being saved to.
+
+## Example
+
+### Only allow users who can edit posts to add choices
+
+```
+add_filter( 'acf/fields/allow_append_choices', function () {
+    return current_user_can( 'edit_posts' );
+} );
+```
+
+### Stop a specific field from adding choices
+
+```
+add_filter( 'acf/fields/allow_append_choices', function ( $allow, $field, $post_id ) {
+    if ( 'favorite_color' === $field['name'] ) {
+        return false;
+    }
+    return $allow;
+}, 10, 3 );
+```
+
+## Changelog
+
+- Added in version 6.8.11
+
+## Notes
+
+- The submitted value always saves to the object being edited. This filter only controls whether it’s added to the field’s list of choices.
+- Fields registered with PHP, or only stored in local JSON, never add choices, so this filter doesn’t run for them.
+- For Checkbox and Select fields, this filter runs on every save, even when every submitted value is already a choice. Don’t assume a new choice is about to be added.
+- ```
+$field
+```
+
+ is the field as it’s stored, so for a sub field inside a Repeater or Group, 
+```
+$field['name']
+```
+
+ is the sub field’s own name.
+- To limit how many choices can be added, use the 
+```
+acf/fields/max_appended_choices
+```
+
+ filter. The default limit is 1,000.
+
+---
+
+## acf/form/{context}/allowed_field_keys
+
+**Source:** [https://www.advancedcustomfields.com/resources/acf-form-context-allowed_field_keys/](https://www.advancedcustomfields.com/resources/acf-form-context-allowed_field_keys/)
+
+Allow extra field keys to be saved when ACF saves submitted field values.
+
+## Description
+
+When ACF saves submitted field values, it only saves fields that were shown on the form for the content being saved, or whose field group’s location rules match that content. Any other submitted fields are not saved.
+
+Use this filter to allow additional field keys, for example when your own JavaScript adds ACF inputs to a form, or when you render a field outside a field group whose location rules match the content.
+
+The dynamic portion of the hook name, 
+```
+{context}
+```
+
+, is the type of content being saved:
+
+- ```
+post
+```
+- ```
+user
+```
+- ```
+taxonomy
+```
+- ```
+comment
+```
+- ```
+attachment
+```
+- ```
+nav_menu
+```
+- ```
+nav_menu_item
+```
+- ```
+widget
+```
+- ```
+options_page
+```
+- ```
+woo_order
+```
+- ```
+datastore
+```
+- ```
+block_meta
+```
+
+ (ACF Blocks that save to post meta)
+
+## Parameters
+
+```
+apply_filters( "acf/form/{$context}/allowed_field_keys", $keys, $post_id );
+```
+
+```
+$keys
+```
+
+*(array)* The top-level field keys allowed to save, such as 
+```
+field_abc123
+```
+
+.
+
+```
+$post_id
+```
+
+*(int|string|array)* The object being saved. The user ID or comment ID for the 
+```
+user
+```
+
+ and 
+```
+comment
+```
+
+ contexts, the options page settings for the 
+```
+options_page
+```
+
+ context, and the ACF post ID for all other contexts. For the post and datastore contexts, this is the revision ID when saving a preview or autosave.
+
+## Example
+
+### Allow a field added to the post edit screen with JavaScript
+
+```
+add_filter( 'acf/form/post/allowed_field_keys', function ( $keys, $post_id ) {
+    // Previews and autosaves save to a revision, so check the post it belongs to.
+    $parent_id = wp_is_post_revision( $post_id );
+
+    if ( 'product' === get_post_type( $parent_id ? $parent_id : $post_id ) ) {
+        $keys[] = 'field_abc123';
+    }
+    return $keys;
+}, 10, 2 );
+```
+
+### Allow a field only for a specific post type
+
+```
+add_filter( 'acf/form/post/allowed_field_keys', function ( $keys, $post_id ) {
+    if ( 'product' === get_post_type( $post_id ) ) {
+        $keys[] = 'field_abc123';
+    }
+    return $keys;
+}, 10, 2 );
+```
+
+## Changelog
+
+- Added in version 6.8.7 for the 
+```
+user
+```
+
+ and 
+```
+comment
+```
+
+ contexts
+- Added in version 6.8.11 for all other contexts
+
+## Notes
+
+- Keys are top-level field keys. Sub fields of a Repeater, Group, or Flexible Content field save with their parent field, so allow the parent’s key.
+- To find out which fields aren’t being saved, enable 
+```
+WP_DEBUG
+```
+
+ and 
+```
+WP_DEBUG_LOG
+```
+
+, then save again. ACF logs a line starting with 
+```
+ACF:
+```
+
+ for each save that drops fields, including the context and the field keys.
+- Before using this filter, check the field group’s location rules. Often the fix is to make them match where the field is used.
+- Options pages also have the 
+```
+acf/options_page/allowed_field_keys
+```
+
+ filter, which passes the options page settings as its second argument. Front-end forms created with 
+```
+acf_form()
+```
+
+ have the 
+```
+acf/form/allowed_field_keys
+```
+
+ filter, which passes the form settings.
+
+---
+
+## acf/bidirectional/can_update_target
+
+**Source:** [https://www.advancedcustomfields.com/resources/acf-bidirectional-can_update_target/](https://www.advancedcustomfields.com/resources/acf-bidirectional-can_update_target/)
+
+Control whether a bidirectional field can update the other side of a relationship.
+
+## Description
+
+When a bidirectional field is saved, ACF also updates the field on the other side of the relationship. When values are submitted through a form or the REST API, ACF checks that the current user can update the other side before adding a reference:
+
+- Posts: the user must be able to edit the post.
+- Terms: the user must be able to assign the term.
+- Users: the user must be able to edit the user, or be able to edit other people’s posts of the origin post’s type, as they could already set that user as the post’s author. On multisite, this only applies to members of the current site who aren’t Super Admins, and users who can promote users, such as site administrators, can also link members of their site.
+
+If the check fails, the value still saves on the object being edited, but the other side isn’t updated. Removing a reference isn’t permission checked. Values saved with 
+```
+update_field()
+```
+
+, or from a trusted context such as WP-CLI or cron, aren’t checked.
+
+Use this filter to allow or prevent updates to the other side, for example on a front-end form where visitors are meant to create bidirectional links.
+
+## Parameters
+
+```
+apply_filters( 'acf/bidirectional/can_update_target', $can_update, $target_id, $post_id, $field, $action );
+```
+
+```
+$can_update
+```
+
+*(bool)* Whether the other side can be updated. Always 
+```
+false
+```
+
+ for targets that don’t exist.
+
+```
+$target_id
+```
+
+*(int|string)* The ACF post ID of the object on the other side, such as 
+```
+123
+```
+
+, 
+```
+user_5
+```
+
+, or 
+```
+term_12
+```
+
+.
+
+```
+$post_id
+```
+
+*(int|string)* The ACF post ID of the object being saved.
+
+```
+$field
+```
+
+*(array)* The field being saved.
+
+```
+$action
+```
+
+*(string)* Either 
+```
+'add'
+```
+
+ or 
+```
+'remove'
+```
+
+.
+
+## Example
+
+### Allow a specific field to update the other side
+
+```
+add_filter( 'acf/bidirectional/can_update_target', function ( $can_update, $target_id, $post_id, $field, $action ) {
+    // related_events links to posts, so $target_id is a post ID. Check it exists before allowing the update.
+    if ( 'related_events' === $field['name'] && get_post( (int) $target_id ) ) {
+        return true;
+    }
+    return $can_update;
+}, 10, 5 );
+```
+
+## Changelog
+
+- Added in version 6.8.11
+
+## Notes
+
+- Scope this filter to specific fields rather than returning 
+```
+true
+```
+
+ for every field.
+- Only return 
+```
+true
+```
+
+ for targets that exist. If you return 
+```
+true
+```
+
+ for a target that doesn’t exist, ACF saves the reference anyway, and a post, user, or term created later with that ID inherits it. For User and Taxonomy fields, check the target with 
+```
+get_userdata()
+```
+
+ or 
+```
+get_term()
+```
+
+.
+- If a link was only saved on one side because the user couldn’t update the other side, it’s added the next time someone who can update the other side saves the object.
+
+---
+
+## acf/is_trusted_save_context
+
+**Source:** [https://www.advancedcustomfields.com/resources/acf-is_trusted_save_context/](https://www.advancedcustomfields.com/resources/acf-is_trusted_save_context/)
+
+Control whether ACF treats the current save as trusted, skipping user permission checks on submitted values.
+
+## Description
+
+When ACF saves values submitted through a form or the REST API, it checks that the current user can make two kinds of change: adding a reference to the other side of a bidirectional field, and selecting a new post in a Relationship, Post Object, or Page Link field. Saves from a trusted context, where values come from code rather than a request, skip these checks. Other protections, such as nonces, validation, and the fields a form is allowed to save, aren’t affected.
+
+By default, ACF treats WP-CLI commands and cron jobs as trusted. Use this filter to mark other server-side saves as trusted, such as a custom import that calls 
+```
+acf_save_post()
+```
+
+.
+
+## Parameters
+
+```
+apply_filters( 'acf/is_trusted_save_context', $trusted );
+```
+
+```
+$trusted
+```
+
+*(bool)* Whether the current save is trusted. Default: 
+```
+true
+```
+
+ for WP-CLI and cron, otherwise 
+```
+false
+```
+
+## Example
+
+### Trust saves made during a custom import
+
+```
+add_filter( 'acf/is_trusted_save_context', function ( $trusted ) {
+    if ( doing_action( 'my_plugin_run_import' ) ) {
+        return true;
+    }
+    return $trusted;
+} );
+```
+
+## Changelog
+
+- Added in version 6.8.11
+
+## Notes
+
+- Never return 
+```
+true
+```
+
+ for saves that include values submitted by users, such as front-end forms or REST API requests. Doing so removes the permission checks that protect other content on your site.
+- Values saved with update_field() and ACF’s other value functions, such as update_sub_field(), add_row(), and update_row(), aren’t permission checked, even during a submitted save. You don’t need this filter for them.
+
+---
+
+## acf/fields/relational/hide_unreadable_posts
+
+**Source:** [https://www.advancedcustomfields.com/resources/acf-fields-relational-hide_unreadable_posts/](https://www.advancedcustomfields.com/resources/acf-fields-relational-hide_unreadable_posts/)
+
+Control whether Relationship, Post Object, and Page Link values leave out posts that can’t be read.
+
+## Description
+
+When an ACF Block renders, ACF leaves out any posts in its Relationship, Post Object, and Page Link values that can’t be read, such as another user’s unpublished drafts. This includes values returned by 
+```
+get_field()
+```
+
+ in a block template.
+
+Block data is stored in the post content, so ACF checks it when the block renders:
+
+- On the front end, a block saved in a post or synced pattern is checked against the author of that post or pattern. Posts that author could read show to every visitor.
+- Block previews in the editor, and previews of posts, are checked against the current user.
+- Blocks that aren’t saved in a post or synced pattern, such as in template parts and widgets, are checked against the current user in the admin, AJAX, and REST API requests, and aren’t checked on the front end.
+
+Use this filter to turn the check off for blocks, or to apply it to other values too, such as 
+```
+get_field()
+```
+
+ in theme templates.
+
+## Parameters
+
+```
+apply_filters( 'acf/fields/relational/hide_unreadable_posts', $hide, $post_id, $field );
+```
+
+```
+$hide
+```
+
+*(bool)* Whether to leave out posts that can’t be read. Default: 
+```
+true
+```
+
+ for values formatted while an ACF Block renders, except blocks on the front end that aren’t saved in a post or synced pattern. Otherwise 
+```
+false
+```
+
+.
+
+```
+$post_id
+```
+
+*(int|string)* The ACF post ID the value is formatted for. For ACF Blocks, this starts with 
+```
+block_
+```
+
+.
+
+```
+$field
+```
+
+*(array)* The field array containing all settings.
+
+## Example
+
+### Turn off the check for ACF Blocks
+
+```
+add_filter( 'acf/fields/relational/hide_unreadable_posts', '__return_false' );
+```
+
+### Leave out unreadable posts everywhere
+
+```
+add_filter( 'acf/fields/relational/hide_unreadable_posts', '__return_true' );
+```
+
+When this returns 
+```
+true
+```
+
+ outside a block, values are checked against the current user. Visitors who aren’t logged in can only read published posts and posts with a public status, of post types that are public or that the field lists.
+
+## Changelog
+
+- Added in version 6.8.11
+
+## Notes
+
+- If a block isn’t showing a related post to visitors, the referenced post usually isn’t published, or the block’s post author can’t read it.
+- To change who can read a post, use the 
+```
+acf/user_can_read_post
+```
+
+ filter.
+
+---
+
+## acf/fields/relational/unreadable_post_statuses
+
+**Source:** [https://www.advancedcustomfields.com/resources/acf-fields-relational-unreadable_post_statuses/](https://www.advancedcustomfields.com/resources/acf-fields-relational-unreadable_post_statuses/)
+
+Include posts with extra statuses in Relationship, Post Object, and Page Link field searches, where each is still checked.
+
+## Description
+
+When a logged-in user searches in a Relationship, Post Object, or Page Link field, ACF leaves out other users’ posts with statuses the user can’t normally read, such as drafts, pending, scheduled, and private posts.
+
+Use this filter when your site grants access to individual posts, such as through a membership or editorial plugin, a 
+```
+map_meta_cap
+```
+
+ callback, or the 
+```
+acf/user_can_read_post
+```
+
+ filter. Statuses removed from the list are included in the search query, and each post is then checked to see whether the user can read it, so posts they can’t read are still left out.
+
+WordPress hides other users’ private posts itself, so removing 
+```
+private
+```
+
+ from the list doesn’t include them.
+
+## Parameters
+
+```
+apply_filters( 'acf/fields/relational/unreadable_post_statuses', $statuses, $post_type );
+```
+
+```
+$statuses
+```
+
+*(string[])* The statuses of other users’ posts hidden from the current user.
+
+```
+$post_type
+```
+
+*(string)* The post type being searched.
+
+## Example
+
+### Include drafts in searches for a post type
+
+```
+// Pair with a map_meta_cap callback or the acf/user_can_read_post filter that
+// lets the user read these drafts. Otherwise they're still left out.
+add_filter( 'acf/fields/relational/unreadable_post_statuses', function ( $statuses, $post_type ) {
+    if ( 'lesson' === $post_type ) {
+        $statuses = array_diff( $statuses, array( 'draft' ) );
+    }
+    return $statuses;
+}, 10, 2 );
+```
+
+## Changelog
+
+- Added in version 6.8.11
+
+## Notes
+
+- Because each post is checked after the query runs, a page of search results may contain fewer posts than usual, or none. Loading more results still continues to the next page.
+- This filter only affects searches. To change whether a user can read a post, use the 
+```
+acf/user_can_read_post
+```
+
+ filter.
+- This filter doesn’t run for visitors who aren’t logged in. Their search results are still checked post by post, so 
+```
+acf/user_can_read_post
+```
+
+ alone decides which posts they see.
+- Other users’ posts of non-public post types are left out of searches before this filter applies, unless the field’s “Filter by Post Type” setting includes the post type. This filter can’t include them.
+
+---
+
+## acf/user_can_read_post
+
+**Source:** [https://www.advancedcustomfields.com/resources/acf-user_can_read_post/](https://www.advancedcustomfields.com/resources/acf-user_can_read_post/)
+
+Change whether a user can read a post referenced by a Relationship, Post Object, or Page Link field.
+
+## Description
+
+ACF checks whether a user can read a post before showing its title in a Relationship, Post Object, or Page Link field (including search results), saving a newly selected post, or including it in an ACF Block’s values. Posts that fail the check are left out of search results, and selected ones show as “(Restricted item)”. By default, ACF follows WordPress: published and publicly viewable posts can be read by anyone, and other posts need the 
+```
+read_post
+```
+
+ capability. There are two stricter cases:
+
+- Posts of non-public post types, such as WooCommerce coupons, are only readable by users who can edit the post, or, if it’s published, by users who can open that post type’s list in the admin. This doesn’t apply when the field’s “Filter by Post Type” setting includes the post type.
+- Revisions are only readable by users who can edit them.
+
+Use this filter to change the result, for example when a membership plugin grants access to individual posts.
+
+## Parameters
+
+```
+apply_filters( 'acf/user_can_read_post', $can_read, $post, $field, $user );
+```
+
+```
+$can_read
+```
+
+*(bool)* Whether the user can read the post.
+
+```
+$post
+```
+
+*(WP_Post|null)* The post object, or 
+```
+null
+```
+
+ if the post doesn’t exist.
+
+```
+$field
+```
+
+*(array)* The field referencing the post, if any.
+
+```
+$user
+```
+
+*(WP_User)* The user being checked.
+
+## Example
+
+### Let members read posts granted to them
+
+```
+add_filter( 'acf/user_can_read_post', function ( $can_read, $post, $field, $user ) {
+    if ( $post && my_membership_user_has_access( $user->ID, $post->ID ) ) {
+        return true;
+    }
+    return $can_read;
+}, 10, 4 );
+```
+
+## Changelog
+
+- Added in version 6.8.11
+
+## Notes
+
+- Check 
+```
+$user
+```
+
+ rather than the current user. While an ACF Block renders on the front end, 
+```
+$user
+```
+
+ is the author of the post the block is saved in.
+- Returning 
+```
+false
+```
+
+ removes a post from field search results. Returning 
+```
+true
+```
+
+ doesn’t add posts the search query has already left out: other users’ posts with unreadable statuses, and other users’ posts of non-public post types the field doesn’t list. Use the 
+```
+acf/fields/relational/unreadable_post_statuses
+```
+
+ filter to include posts with those statuses.
+
+---
+
+## acf/bindings/allow_user_data
+
+**Source:** [https://www.advancedcustomfields.com/resources/acf-bindings-allow_user_data/](https://www.advancedcustomfields.com/resources/acf-bindings-allow_user_data/)
+
+Allow the  shortcode and ACF block bindings to output full User field data.
+
+## Description
+
+By default, the  shortcode and ACF block bindings output only user IDs for User fields, so personal data such as names and email addresses isn’t shown to visitors. This applies whatever the field’s return format.
+
+Returning 
+```
+true
+```
+
+ skips this. Only values that can be shown as text are output, so a single User field set to return User Array outputs its data as a comma-separated list. User Object fields, and multiple users returned as arrays, output nothing.
+
+## Parameters
+
+```
+apply_filters( 'acf/bindings/allow_user_data', $allow, $field, $post_id, $context );
+```
+
+```
+$allow
+```
+
+*(bool)* Whether to output full User field data. Default: 
+```
+false
+```
+
+```
+$field
+```
+
+*(array)* The field array containing all settings.
+
+```
+$post_id
+```
+
+*(int|string)* The ACF post ID the value is loaded from.
+
+```
+$context
+```
+
+*(string)* Where the value is output. Either 
+```
+'shortcode'
+```
+
+ or 
+```
+'bindings'
+```
+
+.
+
+## Example
+
+### Show a user’s display name instead (recommended)
+
+Rather than using this filter, convert the user IDs into the text you want when they’re output. This only changes the shortcode and block bindings, so 
+```
+get_field()
+```
+
+ still returns the field’s normal value.
+
+```
+function my_user_ids_to_names( $value ) {
+    $names = array();
+
+    foreach ( explode( ',', (string) $value ) as $id ) {
+        $user = get_userdata( (int) $id );
+        if ( $user ) {
+            $names[] = $user->display_name;
+        }
+    }
+
+    return esc_html( implode( ', ', $names ) );
+}
+
+// The  shortcode.
+add_filter( 'do_shortcode_tag', function ( $output, $tag, $attr ) {
+    if ( 'acf' === $tag && is_array( $attr ) && 'post_contact' === ( $attr['field'] ?? '' ) ) {
+        return my_user_ids_to_names( $output );
+    }
+    return $output;
+}, 10, 3 );
+
+// ACF block bindings.
+add_filter( 'acf/blocks/binding_value', function ( $value, $source_attrs ) {
+    if ( 'post_contact' === ( $source_attrs['key'] ?? '' ) ) {
+        return my_user_ids_to_names( $value );
+    }
+    return $value;
+}, 10, 2 );
+```
+
+### Restore full output for one field in the shortcode
+
+```
+add_filter( 'acf/bindings/allow_user_data', function ( $allow, $field, $post_id, $context ) {
+    if ( 'shortcode' === $context && 'post_contact' === $field['name'] ) {
+        return true;
+    }
+    return $allow;
+}, 10, 4 );
+```
+
+## Changelog
+
+- Added in version 6.8.11
+
+## Notes
+
+- Returning 
+```
+true
+```
+
+ shows the user’s personal data, including their email address, to every visitor who can see the output. Only do this if that’s what you intend.
+- This filter applies to both the shortcode and block bindings. Use 
+```
+$context
+```
+
+ to target one.
+- This filter only runs for User fields.
+
+---
+
+## acf/upload/generate_previews
+
+**Source:** [https://www.advancedcustomfields.com/resources/acf-upload-generate_previews/](https://www.advancedcustomfields.com/resources/acf-upload-generate_previews/)
+
+Control whether files uploaded through the basic uploader get preview images.
+
+## Description
+
+When a File or Image field uses the basic uploader, such as in a front-end form, ACF asks WordPress to generate the attachment’s metadata. For users without the 
+```
+upload_files
+```
+
+ capability, ACF tells WordPress not to render PDF preview images or save cover art embedded in audio and video files. This includes logged-out visitors, Subscribers, and Contributors. Images uploaded this way still get their normal thumbnail sizes.
+
+Use this filter to turn previews back on if you trust the people uploading through your forms, or to turn them off for everyone.
+
+## Parameters
+
+```
+apply_filters( 'acf/upload/generate_previews', $generate_previews, $file, $id );
+```
+
+```
+$generate_previews
+```
+
+*(bool)* Whether to generate preview images. Default: 
+```
+true
+```
+
+ for users with the 
+```
+upload_files
+```
+
+ capability, otherwise 
+```
+false
+```
+
+```
+$file
+```
+
+*(string)* The path to the uploaded file.
+
+```
+$id
+```
+
+*(int)* The attachment ID.
+
+## Example
+
+### Generate previews for logged-in users
+
+```
+add_filter( 'acf/upload/generate_previews', function () {
+    return is_user_logged_in();
+} );
+```
+
+### Generate previews for everyone
+
+```
+add_filter( 'acf/upload/generate_previews', '__return_true' );
+```
+
+## Changelog
+
+- Added in version 6.8.11
+
+## Notes
+
+- Generating PDF previews sends the uploaded file to the server’s image libraries, such as Imagick and Ghostscript. Only turn previews on for uploaders you trust.
+- Uploads through the Media Library aren’t affected by this filter.
+- Without previews, PDFs show a generic document icon in the Media Library.
+
+---
+
 ## How to set placeholder content in custom ACF Blocks
 
 **Source:** [https://www.advancedcustomfields.com/resources/set-placeholder-content-in-custom-acf-blocks/](https://www.advancedcustomfields.com/resources/set-placeholder-content-in-custom-acf-blocks/)
@@ -20726,15 +21714,6 @@ functions.php
 ## acf_register_block_type()
 
 **Source:** [https://www.advancedcustomfields.com/resources/acf_register_block_type/](https://www.advancedcustomfields.com/resources/acf_register_block_type/)
-
-** Since ACF 6.0, we recommend you register blocks with the new [block.json syntax](https://www.advancedcustomfields.com/resources/acf-blocks-with-block-json/) syntax rather than the deprecated 
-```
-acf_register_block_type()
-```
-
- detailed here.
-
-Functionality detailed in this documentation may not work with modern versions of WordPress.
 
 ## Description
 
