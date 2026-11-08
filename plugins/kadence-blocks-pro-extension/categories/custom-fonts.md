@@ -8,76 +8,93 @@
 
 **Source:** [https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-fonts/](https://www.kadencewp.com/help-center/docs/kadence-blocks/custom-fonts/)
 
-All of the Kadence Plans give you access to the **Kadence Custom Fonts Plugin**. You can upload custom font files to your website or import your Adobe Type Kit Project fonts directly to your Kadence website with ease. The Custom Fonts plugin is available in the **Express** **Plan** and greater. You can [click here](https://www.kadencewp.com/pricing/) to view our plan pricing.
+The Kadence Custom Fonts plugin allows you to upload custom web font files (.woff, .woff2) directly to your website or import your Adobe Typekit (Adobe Fonts) web projects into WordPress.
 
-Kadence includes built-in support for **Google** **Fonts** in both the free Kadence Theme and the free Kadence Blocks plugin. The Kadence Custom Fonts solution is for fonts that are not included in Google Fonts.
+Kadence includes native support for Google Fonts within the free Kadence Theme and free Kadence Blocks. Kadence Custom Fonts is designed for custom, self-hosted, or commercial brand typefaces not available in the Google Fonts library.
 
-Get the Kadence Custom Fonts plugin
+## Licensing Kadence Custom Fonts
 
-- You can download the **Kadence Custom Fonts** plugin by logging into your [Kadence Account](https://www.kadencewp.com/my-account/) and navigating to your **Product Downloads** page.
+**Liquid Web Software**manages your licensing through the **Liquid Web Portal**. For full instructions on downloading, installing, and licensing your product, see the official **How to Activate a Unified License** document.
 
-![Custom Fonts](https://docs.nexcess.com/wp-content/uploads/2026/06/Custom-Fonts.jpg)
+## Upload Your Font
 
-- From your WordPress Dashboard, navigate to Plugins → Add New → Upload Plugin.
-- Find the Custom Fonts ZIP file, install it, and then activate it.
+To upload self-hosted fonts to your site:
 
-Upload Your Font
+- Go to **Dashboard → Appearance → Kadence → Custom Fonts**.
+- Click the **Add A New Custom Font** button.
+- Configure the font settings:
+- **Font Type:** Select **Upload File**.
+- **Font Family Name:** Enter the display name for your font family.
+- **Font Specific Style Name (Optional):** Leave blank unless you need a specific CSS style identifier.
+- **Add Files:** Upload your 
+```
+.woff2
+```
 
-To upload your font, go to Dashboard → Appearance → Kadence → Custom Fonts and click the **Add A New Custom Font** button.
+ and 
+```
+.woff
+```
 
-The Custom Fonts plugin allows you to upload variable fonts, but they will be treated as static fonts. You must select a single weight when uploading, and only that weight will be available for use. To use multiple weights, you can create separate custom fonts for each, but they will not function as a variable font.
+ font files (modern web standards). You can optionally upload 
+```
+.ttf
+```
 
-Ensure the font you want to use is downloaded and ready.
+, 
+```
+.eot
+```
 
-**Font Type:**  Select Upload File.
+, or 
+```
+.svg
+```
 
-**Font Family Name:**  Specify the name of the font.
+ formats for legacy browser fallbacks.
+- **Fallback Font Stack:** Specify fallback system fonts separated by commas (e.g., 
+```
+Arial, sans-serif
+```
 
-**Font Specific Style Name:** (Optional)  If you do not know what this is, you can leave it blank.
+). Wrap font names with spaces in quotes (e.g., 
+```
+'Source Serif 4', serif
+```
 
-**Add files:**  upload the .woff and .woff2 font files.
+).
+- **Font Weight:** Select the specific weight (e.g., 400 for regular, 700 for bold).
+- **Font Style:** Choose between **Normal** or **Italic**.
+- **Load Display Swap?:** Enable this setting to apply 
+```
+font-display: swap
+```
+
+, ensuring text remains visible with fallback fonts while your custom font loads.
+- Once you **publish** your new font, it will be available in your Kadence theme and block settings.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/SelectFont.jpg)
 
-**Fallback Font Stack:** Setting a fallback font is recommended. You can use *serif*, *sans-serif* and/or common fonts such as Helvetica or Arial. Separate multiple fonts with a comma.
-
-*Note: if you are going to use a fallback font with spaces and numbers in its name, wrap the name in quotes (e.g., ‘Source Serif 4’)*
-
-**Font Weight:**  Set the weight for your font (i.e. 400, 600, etc…)
-
-**Font Style:** Set the font style (i.e. normal or italic)
-
-**Load Display Swap?:**  Enable to use the fallback font to display text until the custom font has fully downloaded (recommended).
-
-**OPTIONAL:** you can upload the EOT, TTF, and/or SVG versions of the font.
-
 ![Select Font Styles](https://docs.nexcess.com/wp-content/uploads/2026/06/SelectFontStyles-988x1024-1.jpg)
-
-Once you publish your new font, it will be available in your Kadence theme and block settings.
 
 ---
 
-Adobe TypeKit Fonts
+> Note on Variable Fonts: If you upload variable font files, they will be handled as static fonts. You must select a single weight when uploading. To make multiple weights available, upload separate entries for each required weight.
 
-To use Adobe Fonts in Kadence Pro, you must have an active Adobe Creative Cloud subscription ([see Adobe Creative Cloud](https://www.adobe.com/creativecloud.html)).
+## Adobe TypeKit Fonts
 
-To add your Adobe Web Fonts, go to Dashboard → Appearance → Kadence → Custom Fonts and click **Add New Custom Font**.  When adding a new custom font, the first option is **Font Type**. From the dropdown menu, select **Adobe Type Kit**. You can learn more about adding fonts to your website using Adobe TypeKit **here**.
+To use Adobe Fonts, you must have an active Adobe Creative Cloud subscription ([see Adobe Creative Cloud](https://www.adobe.com/creativecloud.html)) with an active Web Project:
 
-Next, you’ll be prompted to enter your **Adobe TypeKit Project ID**.
-
-![Adobe Type Kit Font](https://docs.nexcess.com/wp-content/uploads/2026/06/Adobe-Type-Kit-Font-1024x329-1.jpg)
-
-You can find your Project ID on the Adobe Web Fonts website.  Your web project, and all the fonts you’ve added to it, will be listed under **Manage Fonts**.  Locate your project and click the **Edit Project** button.  You should see the **Project ID** listed along the top next to the project name.
-
-![Adobe Fonts - locating your Project ID](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-26-at-1.40.00-PM-1024x523-1.png)
-
-Once you’ve added the Project ID, publish the new custom font. The Custom Fonts Plugin will import all of the fonts and variations included in the Adobe web project.
-
-![Adobe TypeKit 2](https://docs.nexcess.com/wp-content/uploads/2026/06/Adobe-TypeKit-2-1024x515-1.jpg)
+- Go to **Dashboard → Appearance → Kadence → Custom Fonts** and click **Add New Custom Font**.
+- ![Adobe Type Kit Font](https://docs.nexcess.com/wp-content/uploads/2026/06/Adobe-Type-Kit-Font-1024x329-1.jpg)
+- Set **Font Type** to **Adobe Type Kit**.
+- In the **Project ID** field, enter your Adobe Web Project ID.
+- *Where to find your Project ID:* Log in to Adobe Fonts, go to **Manage Fonts → Web Projects**, and locate your project. Your Project ID is displayed along the top next to the project title.
+- Click **Publish**.
 
 Your Adobe Web Fonts can now be used in your Kadence theme and block settings.
 
-**Note:** When using Typekit (Adobe Fonts) with Kadence Custom Fonts, variable fonts are treated as static. Only the weights and basic styles (like regular, bold, or italic) are recognized. Other axes, such as width or slant, are not imported and cannot be adjusted.
+> Note on Adobe Variable Fonts: Variable fonts imported from Adobe Typekit are treated as static instances. Only standard weights and basic styles (regular, bold, italic) defined in your project are imported; additional axes like width or slant are not currently supported.
 
 #### East Asian or CJK (Chinese, Japanese, Korean) TypeKit fonts
 
