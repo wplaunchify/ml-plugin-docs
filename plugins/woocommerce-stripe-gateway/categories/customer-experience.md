@@ -20,22 +20,22 @@ If you wish to test the 3D Secure checkout flow on your store, you can use one o
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Subscriptions
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
-
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
-
-### Product Add-Ons
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
-Offer add-ons like gift wrapping, special messages or other special options for your products.
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
+
+Offer flexible ways to pay: in full, later, or over time. Merchants get paid upfront; Klarna handles credit and fraud risk.
 
 ---
 
@@ -59,22 +59,22 @@ The extension now offers the Optimized Checkout Suite to use machine learning to
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Subscriptions
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
-
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
-
-### Product Add-Ons
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
-Offer add-ons like gift wrapping, special messages or other special options for your products.
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
+
+Offer flexible ways to pay: in full, later, or over time. Merchants get paid upfront; Klarna handles credit and fraud risk.
 
 ---
 
@@ -103,22 +103,22 @@ If you want to test the co-badged card checkout process on your store, you can u
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Subscriptions
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
-
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
-
-### Product Add-Ons
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
-Offer add-ons like gift wrapping, special messages or other special options for your products.
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
+
+Offer flexible ways to pay: in full, later, or over time. Merchants get paid upfront; Klarna handles credit and fraud risk.
 
 ---
 
@@ -165,22 +165,22 @@ For customers who have a saved card, they are presented with the stored card opt
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Subscriptions
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
-
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
-
-### Product Add-Ons
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
-Offer add-ons like gift wrapping, special messages or other special options for your products.
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
+
+Offer flexible ways to pay: in full, later, or over time. Merchants get paid upfront; Klarna handles credit and fraud risk.
 
 ---
 
@@ -296,22 +296,22 @@ Known incompatibilities with express checkout buttons include but are not limite
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Subscriptions
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
-
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
-
-### Product Add-Ons
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
-Offer add-ons like gift wrapping, special messages or other special options for your products.
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
+
+Offer flexible ways to pay: in full, later, or over time. Merchants get paid upfront; Klarna handles credit and fraud risk.
 
 ---
 
@@ -490,22 +490,22 @@ Note that as long as your Stripe account is restricted to test mode only, you wi
 
 	
 	
-	![](https://woocommerce.com/wp-content/uploads/2012/09/Woo_Subscriptions_icon-marketplace-160x160-2.png)
+	![](https://woocommerce.com/wp-content/uploads/2024/05/stripe-tax.jpg)
 
-### WooCommerce Subscriptions
-
-	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
-
-WooCommerce Subscriptions is a WooCommerce extension that lets customers subscribe to your products or...
-				![](https://woocommerce.com/wp-content/uploads/2013/05/Product_Addons_icon-marketplace-160x160-2.png)
-
-### Product Add-Ons
+### Stripe Tax
 
 	
-			by [Woo](https://woocommerce.com/vendor/woocommerce/)
+			by [Stripe](https://woocommerce.com/vendor/stripe/)
 
-Offer add-ons like gift wrapping, special messages or other special options for your products.
+Calculate and collect tax globally in your WooCommerce store, and file returns automatically anywhere you do business.
+				![](https://woocommerce.com/wp-content/uploads/2018/01/icon-80@2x.png)
+
+### Klarna
+
+	
+			by [Klarna](https://woocommerce.com/vendor/klarna/)
+
+Offer flexible ways to pay: in full, later, or over time. Merchants get paid upfront; Klarna handles credit and fraud risk.
 
 ---
 
