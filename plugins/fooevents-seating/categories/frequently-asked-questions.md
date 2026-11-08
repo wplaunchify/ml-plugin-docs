@@ -1964,13 +1964,13 @@ Please refer to the WooCommerce variable product documentation for further infor
 
 **Source:** [https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-delete-tickets/](https://help.fooevents.com/docs/frequently-asked-questions/tickets/how-do-i-delete-tickets/)
 
-Deleting individual tickets:
+## Deleting individual tickets:
 
 - Go to **FooEvents** -> **Tickets**
 - Hover over a ticket number
 - Click on **Trash**
 
-Deleting more than one ticket at once:
+## Deleting more than one ticket at once:
 
 - Select all the tickets that you would like to delete
 - Click on **Bulk Actions** -> **Move to Trash** -> **Apply**
@@ -1981,6 +1981,14 @@ If you are experiencing difficulty deleting tickets in bulk using this method, p
 - Click on **Bulk Actions** -> **Edit** -> **Apply**
 - Set the Status to **Draft** and **Update**
 - Select them again and move them to the trash
+
+## Removing FooEvents Files
+
+Please note that deleting tickets from the Admin Dashboard will **not** automatically remove their associated barcode images, ICS files, or PDF ticket files from your server. This follows standard WordPress plugin practices to protect your data integrity and maximize server security.
+
+To delete these files, you would need to connect to your web server via an FTP client and navigate to ‘**wp-content/uploads/fooevents**‘ in the WordPress directory and delete the corresponding files.
+
+Here’s some more information: [https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-plugin-privacy-policy/#how-to-remove-data](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-plugin-privacy-policy/#how-to-remove-data)
 
 ---
 
