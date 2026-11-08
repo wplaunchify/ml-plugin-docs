@@ -476,6 +476,10 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/check-ins-app-android/](https://help.fooevents.com/docs/topics/changelogs/check-ins-app-android/)
 
+## 3.1.16 (November 2, 2026)
+
+- Minor bug fixes
+
 ## 3.1.14 (October 27, 2026)
 
 - Added individual status counters for each day of a multi-day event in the event info status summary with a picker to change the current day
@@ -778,6 +782,10 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/check-ins-app-ios/](https://help.fooevents.com/docs/topics/changelogs/check-ins-app-ios/)
 
+## 3.1.16 (November 2, 2026)
+
+- Minor bug fixes
+
 ## 3.1.14 (October 27, 2026)
 
 - Added individual status counters for each day of a multi-day event in the event info status summary with a picker to change the current day
@@ -1077,6 +1085,18 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-bookings/](https://help.fooevents.com/docs/topics/changelogs/fooevents-bookings/)
+
+## 2.0.25 (5 November 2026)
+
+- FIXED: Bookings admin filter white page bug.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.4 and WooCommerce 11.2.2.
+
+## 2.0.24 (2 November 2026)
+
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.4 and WooCommerce 11.2.1.
 
 ## 2.0.19 (20 October 2026)
 
@@ -1540,6 +1560,12 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-calendar/](https://help.fooevents.com/docs/topics/changelogs/fooevents-calendar/)
 
+## 2.0.6 (2 November 2026)
+
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.4 and WooCommerce 11.2.1.
+
 ## 2.0.5 (20 October 2026)
 
 - FIXED: Date format event listing bug.
@@ -1994,6 +2020,12 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-custom-attendee-fields/](https://help.fooevents.com/docs/topics/changelogs/fooevents-custom-attendee-fields/)
 
+## 2.0.6 (2 November 2026)
+
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.4 and WooCommerce 11.2.1.
+
 ## 2.0.5 (20 October 2026)
 
 - FIXED: Various small bugs and performance updates.
@@ -2349,6 +2381,12 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-express-check-in/](https://help.fooevents.com/docs/topics/changelogs/fooevents-express-check-in/)
 
+## 2.0.7 (2 November 2026)
+
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.4 and WooCommerce 11.2.1.
+
 ## 2.0.6 (27 October 2026)
 
 - NEW: UI improvements, column filtering, and enhanced status change notifications.
@@ -2613,6 +2651,25 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/](https://help.fooevents.com/docs/topics/changelogs/fooevents-for-woocommerce/)
+
+## 2.0.31 (5 November 2026)
+
+- FIXED: Single-day event ICS files used the ticket generation date when no end date was set.
+- FIXED: Admin settings redirect bug.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.4 and WooCommerce 11.2.2.
+
+## 2.0.30 (3 November 2026)
+
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.4 and WooCommerce 11.2.1.
+
+## 2.0.29 (2 November 2026)
+
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.4 and WooCommerce 11.2.1.
 
 ## 2.0.27 (27 October 2026)
 
@@ -3897,6 +3954,12 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-multi-day/](https://help.fooevents.com/docs/topics/changelogs/fooevents-multi-day/)
+
+## 2.0.6 (2 November 2026)
+
+- FIXED: Various security updates.
+- FIXED: Various small bugs and performance updates.
+- TESTED ON: WordPress 7.1.4 and WooCommerce 11.2.1.
 
 ## 2.0.5 (20 October 2026)
 
@@ -8732,489 +8795,7 @@ The FooEvents Seating plugin is an extension for FooEvents that allows your gues
 ## Articles
 
 	- [Seating Selection and Checkout Workflow](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/seating-selection-and-checkout-workflow/)
-- [New FooEvents Seating (Beta)](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/)
-
----
-
-## FooEvents Help Center
-
-**Source:** [https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/)
-
-**Do not use these versions of FooEvents, FooEvents Seating, or FooEvents Bookings on a live site or for a live event. Only use the beta versions for testing on a staging or test site.**
-
-![fooevents seating version 2 beta cover](https://help.fooevents.com/wp-content/uploads/2026/06/fooevents-seating-version-2-beta_cover.png)
-
-We’ve completed development on the new **FooEvents Seating Version 2** and need your help testing it. Please configure and test FooEvents Seating Version 2 Beta on a**staging or test site only**.
-
-Please thoroughly test the full seating workflow, including building seating charts, configuring and managing seating for a product, selecting and reserving seats, purchasing tickets, and managing orders. Let us know if you encounter any issues or feel anything is missing.
-
-Download and install the following beta plugins to test the new FooEvents Seating experience:
-
-- [FooEvents](https://downloads.fooevents.com/_temp/beta/01/fooevents.zip) (Version 2.0.16-seating-beta.4)
-- **FooEvents Seating**(Version 2.0.2-seating-beta.4)
-- [FooEvents Bookings](https://downloads.fooevents.com/_temp/beta/01/fooevents_bookings.zip) (Version 2.0.16-seating-beta.4)
-- For any other FooEvents extensions, you can use the latest available versions. Ignore plugin update messages.
-
-Thanks again for helping us test and improve the new FooEvents Seating.
-
-[Send Beta Feedback](mailto:support@fooevents.com?subject=FooEvents%20Seating%20Beta%20Feedback)
-
-## Introduction
-
-FooEvents Seating has been rebuilt from the ground up to deliver a more flexible, reliable, and powerful seating experience, shaped by years of customer feedback and real-world event requirements.
-
-The new seating system gives you the freedom to create virtually any seating arrangement without the limitations of traditional row-based layouts. Instead of building a seating setup from scratch for every event, you can create highly customizable, reusable seating chart templates and apply them across multiple events, venues, dates, and time slots.
-
-At the core of the new system is a completely redesigned reservation engine that validates seat availability and reservation ownership throughout the cart and checkout process to help prevent double bookings, incorrect assignments, and unexpected releases. It has also been optimized for mobile, making it easier for customers to select seats on any device.
-
-The new FooEvents Seating Version 2 is fully integrated with [FooEvents Bookings](https://www.fooevents.com/products/fooevents-bookings/), allowing you to set up an event once and use the same seating chart across multiple bookable dates and time slots. Each date and time slot can be managed separately, including its own bookings, seat allocations, and seat selections.
-
-The system also includes change histories for seating chart templates and product-level seating changes, including manual releases and variation mappings. These logs are exportable, making them useful for troubleshooting, support, and reviewing seating-related admin activity.
-
-This is not just an evolution of FooEvents Seating. It is a major step forward in our pursuit of the most flexible, reliable, and sophisticated event seating and booking system available for WordPress.
-
-## Getting Started
-
-### Step 1: Enable the new seating experience
-
-1. Go to **FooEvents** > **Settings**.
-2. Open the **Seating** tab.
-3. Enable **Enable Seating** (Enable the new FooEvents Seating Version 2 (Beta)).
-4. **Save** your settings.
-
-Once this is enabled, you will see a new **Seating** settings tab marked **V2 Beta**. FooEvents also creates a published **Sample Seating Chart** the first time Version 2 is enabled, provided that sample chart does not already exist.
-
-![Screenshot 2026 08 24 at 14.26.11](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-14.26.11-1024x709.png)
-
-A few important things to know:
-
-- The new seating system is currently optional while it is in beta, and is disabled by default.
-- Turning it on does **not** automatically change your existing legacy seating products.
-
-### Step 2: Configure global seating settings
-
-![Screenshot 2026 08 24 at 14.27.21](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-14.27.21-1024x583.png)
-
-Go to **FooEvents** > **Settings** > **Seating (V2 Beta)** and review the available options.
-
-**Reservation hold (minutes)**
-
-This controls how long selected seats remain reserved in the cart before they are released. The default is 15 minutes. A shorter hold time can help with faster seat turnover during busy sales periods, while a longer hold time gives customers more time to complete checkout. The cart displays the approximate reservation time remaining for each selection.
-
-**Make seats available on order status**
-
-This controls when booked seats should be released automatically after an order status changes. The default and recommended option is **Never make seats available automatically**, which lets you release seats manually. You can opt to release seats when an order becomes **Cancelled** or **Failed**, but use these options with care. In particular, do not use **Failed** if customers can return and pay failed orders later, as the released seats could be booked by somebody else.
-
-**Disable Legacy Seating**
-
-This disables the older V1 seating system and hides the legacy **Seating** event type. Only enable this once you are sure you no longer need the old seating setup.
-
-### Step 3: Plan your migration
-
-If you still have active events using legacy seating, it is best to leave legacy seating enabled until those events have been fully moved over.
-
-It is not possible to convert an existing event with live seating sales from legacy seating to the new seating system. We recommend using the new seating only for events where ticket sales have not yet started, and gradually phasing out legacy seating usage.
-
-Once you have finished migrating, you can enable **Disable Legacy Seating** to keep things cleaner and reduce confusion for your team.
-
-## Creating Seating Chart Templates
-
-Templates are the foundation of the new seating system.
-
-Instead of rebuilding the same layout for every event, you can create one chart and reuse it wherever needed, including bookable events. This saves time and helps keep your venue layout consistent across performances, dates, and products.
-
-### Where to manage templates
-
-Go to **FooEvents > Seating Charts**. Templates are saved as **Seating Charts**.
-
-### How to create a template
-
-![Launch Seating Chart Builder](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.31.25.png)
-
-1. Go to **FooEvents > Seating Charts**.
-2. Click **Add New Seating Chart**.
-3. Click **Launch Seating Chart Builder**.
-4. Build your layout, then save or publish it.
-
-### What you can add in the builder
-
-![Screenshot 2026 08 24 at 10.07.44](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.07.44-1024x698.png)
-
-The seating chart builder supports a range of layout elements, including:
-
-- **Seating** sections with configurable rows, seats, numbering, chair styles, spacing, colors, and curved-row controls.
-- **Standing** sections with a capacity and a rectangle, circle, or polygon shape.
-- **Table** layouts with square or circular tables, configurable chair counts, and different chair styles.
-- **Shapes** such as squares, circles, polygons, and straight or curved lines for structure and visual guidance.
-- **Text** labels to help with directions and naming sections.
-- **Icons** for entrances, exits, accessibility points, restrooms, and more.
-- **Canvas controls** for adjusting selection colors, the background, workspace dimensions, and zoom.
-- **Layers** for finding chart elements and controlling their front-to-back order.
-- **Import / Export** JSON tools for backups or moving charts between environments.
-
-### Creating curved seating rows
-
-Seating sections can be curved to follow stages, fields, arenas, and other venue shapes.
-
-1. Add a new **Seating** section, or select an existing seating section.
-2. Under **Display**, adjust the **Curve** slider. Positive and negative values bend the rows in opposite directions, while a value of zero keeps them straight.
-3. Choose a **Curve Anchor**: **Center** creates a symmetrical curve, **Left** keeps the left end anchored, and **Right** keeps the right end anchored.
-
-The curve is preserved when the chart is saved and is used in the builder, product seating manager, and customer-facing seating chart.
-
-### Creating straight and curved lines
-
-Lines are useful for stages, aisles, barriers, boundaries, and other floor-plan details.
-
-1. Choose **Shape**, then select **Line**.
-2. Set the line width, color, and **Curve**. A value of zero creates a straight line; positive and negative values curve it in opposite directions.
-3. Select the line and drag either endpoint to change its length and direction. Hold **Shift** while dragging an endpoint to constrain it horizontally or vertically.
-
-### Selecting and moving builder items
-
-- Click an item to select it and open its editing controls.
-- Hold **Shift** and click items to add or remove them from a multi-item selection.
-- Hold **Shift** and drag from an empty part of the canvas to select multiple items with a selection box.
-- Drag any selected item to move the entire selected group together.
-- Use the arrow keys to move selected items by 1 pixel, or **Shift + Arrow key** to move them by 10 pixels.
-- Use **Cmd/Ctrl + D** to duplicate the primary selected item, **Backspace/Delete** to delete it, and **Esc** to close the editing panel and clear the selection.
-
-When multiple items are selected, the editing sidebar and duplicate/delete actions apply to the primary selected item, while dragging and keyboard movement apply to the full selection.
-
-### Layers and canvas controls
-
-Open **Layers** to see every element in the chart. Select a layer to edit its item, or drag layers to change their front-to-back order. When the layer’s drag handle is focused, use the up and down arrow keys to reorder it. You can also use **Bring to Front** and **Send to Back** from an item’s editing controls.
-
-Open **Canvas** to set the customer selection colors, canvas background color, width, height, and zoom. You can also drag the handles on the right and bottom edges of the canvas to resize it, or focus a resize handle and use the arrow keys to resize in 10-pixel steps. Dragging an empty area inside the canvas moves all chart elements together.
-
-### Understanding seat states
-
-![Screenshot 2026 08 24 at 10.10.02](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.10.02-1024x698.png)
-
-As you work with templates and live event seating, you will see different seat states:
-
-- **Available:**The seat can be selected and purchased.
-- **Unavailable:**The seat is visible, but customers cannot select it.
-- **Blocked:**The seat has been intentionally blocked by an administrator.
-- **Reserved:**The seat is temporarily being held in a customer’s cart.
-- **Booked:**The seat has been allocated to an order and ticket.
-
-### Hidden and pre-blocked chairs
-
-At template level, select a seating or table section and use **Shift + click** on a chair to cycle it from available to hidden, hidden to blocked, and blocked back to available. You can also hold **Shift** and drag across multiple chairs in the selected section to cycle their states in bulk.
-
-This is useful for things like:
-
-- obstructed view seats,
-- camera or technical areas,
-- permanently unavailable seats,
-- venue-specific exclusions.
-
-Hidden chairs will not appear as selectable seats, and pre-blocked chairs remain protected when the chart is used on products.
-
-### A note on editing live templates
-
-If a template is already being used by active events, structural changes should be made carefully.
-
-The system keeps a **Change History** and warns you that changing things like section IDs, row names, or seat numbers may affect sold tickets.
-
-![Seating Chart Builder change history](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.44.26.png)
-
-Best practice is to:
-
-- avoid major structural edits on live templates,
-- test updated templates before using them on active events.
-
-### Importing and Exporting Charts (JSON)
-
-Use the JSON tools to back up a chart or move it between environments, for example from staging to production.
-
-![Seating Chart Builder Import and Export](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.45.27.png)
-
-**How it works**
-
-1. Open the source seating chart’s edit screen.
-2. Click **Export** below the builder launcher, then copy the full JSON content.
-3. Create a **new** seating chart.
-4. On the new chart’s edit screen, click **Import**, paste the JSON, and confirm the import. Review the imported layout in the builder, then publish or save the chart.
-
-**Important**
-
-Importing JSON replaces the chart currently loaded in the builder and recreates its visual layout, including sections, rows, seats, shapes, labels, canvas settings, layers, and structure. Existing valid section IDs are preserved where possible, while missing or duplicate IDs are regenerated when the chart is saved. If you import a layout into a new chart, treat that chart as a separate template and test it before using it on active products.
-
-## Configuring Seating Charts in Products
-
-The new FooEvents Seating works with:
-
-- **Single**
-- **Sequential days**
-- **Specific days**
-- **Bookable**
-
-It does not work with the legacy **Seating** event type from V1.
-
-If your product is currently using the old **Seating** event type and you want to use the new seating system, change the event type to **Single** or another supported option first, then configure the chart settings. Existing seating selections from the old seating will not carry over, so be sure to only do this for events where seats have not yet been booked.
-
-### Product setup workflow
-
-1. Open the WooCommerce product.
-2. In **Event Details**, choose a supported event type.
-3. In **Seating Settings**, select your **Seating Chart**.
-4. **Save** the product so the seating options can be applied.
-5. Reopen the product settings to configure additional chart options.
-6. Use the **Manage Seating** buttons to view and adjust live seating availability for that product.
-
-### What the Seating Settings do
-
-![FooEvents Seating Chart settings](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.48.29.png)
-
-These settings let you control how customers interact with the chart for a specific event.
-
-**Seat grouping**
-
-Enable this to enforce grouped seat selection. Customers choose how many tickets they need, and FooEvents attempts to select an adjacent group that includes the seat they clicked. For seating rows, the selection logic also avoids leaving unusable gaps at row edges where possible. Square-table selections prioritize nearby chairs.
-
-**Default number of seats in a group**
-
-Sets the ticket quantity shown when the seat selector opens. Customers can adjust this quantity in the selector when grouping is enabled.
-
-**Maximum number of selectable items**
-
-Limits how many seats or standing places can be selected in one booking flow.
-
-These options let you fine-tune the customer experience without changing the actual seating template.
-
-### Grouped, single, and flexible selection
-
-- **Seat grouping disabled:** Customers can select any available seats individually, up to the configured maximum.
-- **Seat grouping enabled with a quantity greater than one:** Clicking a seat selects an adjacent group of the requested size where a suitable group is available.
-- **Seat grouping enabled with a quantity of one:** Single Selection Mode lets customers select an isolated seat or build a contiguous group by adding adjacent seats one at a time. After a standard row seat is selected, non-adjacent standard seats are temporarily unavailable, while genuine isolated seats remain selectable.
-
-Single Selection Mode is useful when you want to allow single-ticket purchases without encouraging customers to leave unnecessary one-seat gaps. When isolated seats are detected, the selector displays guidance explaining this flexible selection behaviour.
-
-### Managing Seating for Bookable Events
-
-![Manage seating for bookable events](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.48.10-1024x529.png)
-
-For events using [FooEvents Bookings](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-bookings/), seating is managed separately for each booking date and time slot combination. This means you can reuse the same seating chart across many dates, while keeping availability and bookings separate for each performance or timeslot.
-
-For example, a theatre could use the same seating layout every night, while still tracking sold and available seats independently for each show.
-
-This gives your team better control and keeps seating accurate across recurring bookings.
-
-### WooCommerce Stock Management
-
-When using a seating chart, ticket availability is managed by the availability of seats on the seating chart rather than by WooCommerce stock quantities. Seats that are reserved or booked are automatically marked as unavailable on the seating chart.
-
-As such, it is not necessary to set stock quantities for simple or variable products. The products only need to be set to **In stock**. Similarly, when using **FooEvents Bookings**, booking slot availability can be left at the default unlimited amount.
-
-For products that use seating, we recommend configuring WooCommerce stock as follows:
-
-1. Edit the WooCommerce product and open the **Inventory** settings.
-2. Disable **Stock management** or **Manage stock**.
-3. Set the **Stock status** to **In stock**.
-4. If you are using a variable product, apply these settings to every variation used by the seating chart.
-5. If you are using a bookable product, leave the booking slot stock quantity blank or set to unlimited.
-
-Setting the product to **In stock** ensures that customers can access the product and open the seating chart to select their seats. It does not mean that every seat is available. The seating chart remains the authoritative source for seat availability.
-
-Do not enter the total number of seats as the WooCommerce stock quantity. Doing so creates a second, independent availability limit. This could result in WooCommerce preventing a purchase even when the selected seats are still available on the seating chart.
-
-Variation-level stock settings can still prevent valid seat purchases, so make sure stock management is disabled for every variation linked to the seating chart.
-
-The standard WooCommerce **In stock** message is not normally displayed on shop or product pages when stock quantities are not being managed. However, this can vary depending on your theme or other plugins. If your theme displays an **In stock** message, we recommend disabling the messaging, as it could incorrectly suggest that seats are still available when the event is fully booked.
-
-### Legacy Seating and Migration
-
-The legacy **Seating** event type is the older V1 seating workflow. The new seating chart settings do not apply to those products.
-
-Existing seating selections from the old seating will not carry over to the new charts, so be sure to only do this for events where seats have not yet been booked.
-
-To move a legacy product to the new system:
-
-1. Change the event type from **Seating** to **Single** or another supported type.
-2. Assign a chart in **Seating Settings**.
-3. Configure the chart interaction settings.
-4. Save the product and test the setup from start to finish.
-
-Once all of your legacy seating products have been migrated, you can enable **Disable Legacy Seating** to simplify the admin experience.
-
-### Mapping Seating Sections to Variations
-
-If you are using variable products, you can map specific chart sections to individual variations. This is useful when different seating areas need different pricing.
-
-Open the variation settings and press the **Map Seating Sections** button:
-
-![Map seating sections on a product variation](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-12.51.55.png)
-
-Select the sections that should map to this variation:
-
-![Screenshot 2026 08 24 at 10.11.12](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.11.12-1024x697.png)
-
-When those areas are selected by customers, the mapped variation is applied to the selected item in the cart.
-
-![Screenshot 2026 08 24 at 10.14.01](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.14.01-1024x674.png)
-
-For example:
-
-- Balcony seats could be linked to one variation.
-- Floor seats could be linked to another.
-
-### Workflow
-
-1. Set up your product variations in WooCommerce as usual.
-2. Open the variation settings and use **Map Seating Sections** on each variation.
-3. Select the chart sections that variation should apply to.
-4. Save the product.
-
-A couple of things to keep in mind:
-
-- Sections that are not mapped will not be available in that variation.
-- Customers can only select seats that belong to the chosen variation.
-
-### Mobile experience
-
-On mobile, the seating interface guides customers through the booking flow in a more step-by-step way.
-
-- If seat grouping is enabled, customers are first asked how many tickets they want and can adjust the quantity from the selection panel.
-- If the ticket quantity is set to one, Single Selection Mode allows isolated seats or lets customers build a contiguous selection one adjacent seat at a time.
-- For bookable events, customers then choose the booking date and time slot before selecting seats.
-- After selecting chairs or standing areas, customers can use the mobile menu to review tickets, remove selections, or change the booking date where applicable.
-- Once they are happy with their selections, they continue using **Book Now**.
-
-## Product Page Experience for Customers
-
-When a seating chart is enabled on a purchasable product, the standard WooCommerce add-to-cart flow is replaced with a **Buy Tickets** button. This replacement supports both classic WooCommerce single-product templates and current block-based add-to-cart templates.
-
-When customers click **Buy Tickets**, a full-screen seating interface opens.
-
-![Screenshot 2026 08 24 at 10.16.19](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.16.19-1024x674.png)
-
-Here they can:
-
-- view the event details,
-- choose a booking date or slot if needed (FooEvents Bookings),
-- choose mapped variation or ticket options where applicable,
-- select seats or standing areas,
-- review their selections in a live summary,
-- continue using **Book Now**.
-
-This creates a much clearer experience for customers because they can see exactly what is available before going to checkout.
-
-## Checkout, Reservations, and the Seat Lifecycle
-
-### Reservation flow
-
-When a customer clicks **Book Now**:
-
-1. FooEvents checks that the selected seats are still available.
-2. The seats are temporarily reserved.
-3. They are added to the cart as individual selections.
-4. The customer is redirected to the cart.
-
-### Cart behavior
-
-![Reserved seating selections in the WooCommerce cart](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-13.04.15.png)
-
-- Customers cannot freely change the quantity of chart-based seat selections in the cart.
-- Removing a seating item from the cart releases that reservation, provided it is still tied to that session.
-- Reservation time limits are controlled by your global hold setting, and the cart shows the approximate number of minutes remaining.
-
-### Checkout behavior
-
-Before checkout is completed, reservations are checked again.
-
-If a reservation has expired or a seat is no longer valid, checkout will be stopped and the customer will need to reselect.
-
-Once checkout successfully creates the order and ticket data, the seat moves from **Reserved** to **Booked**.
-
-### Reservation Checks
-
-FooEvents Seating checks each selected seat before checkout can continue. These checks help prevent the same seat from being booked more than once.
-
-The system verifies that:
-
-- The seat reservation still exists.
-- The seat is still reserved and has not expired.
-- The reservation belongs to the current cart/session.
-- The seat has not already been booked by another order.
-- The seat has not been blocked or marked unavailable.
-- The reserved seat is still within the configured reservation hold time.
-- Seating products are added as individual seats, not grouped quantities.
-- The reserved seat can be safely converted into a booked seat when the order is placed.
-- Tickets are only generated after the seat has been successfully booked for the order.
-
-If any of these checks fail, checkout will be stopped and the customer will need to remove the expired or unavailable seat from their cart and select a seat again.
-
-### Automatic seat release rules
-
-The **Make seats available on order status** setting controls if and when seats are released automatically after order status changes.
-
-You can choose to release seats on:
-
-- **Cancelled**
-- **Failed**
-
-The default and recommended option is **Never make seats available automatically**, which leaves releases under manual control. Enable **Cancelled** or **Failed** only when those statuses reliably mean that the seats can be sold again in your order workflow. Use **Failed** with particular caution: if a customer can pay a failed order later, its released seats may already have been booked by somebody else.
-
-## Managing Tickets and Live Seating
-
-### Product-level seating management
-
-![Screenshot 2026 08 24 at 10.18.06](https://help.fooevents.com/wp-content/uploads/2026/06/Screenshot-2026-08-24-at-10.18.06-1024x697.png)
-
-From the product’s **Seating Viewer / Manage Seating**, admins can:
-
-- update live seat availability,
-- see reserved and booked seats,
-- open booking details for selected seats,
-- release booked seats where needed,
-- manage standing-area reservations.
-
-This is especially useful for support teams or venue staff who need to deal with seating issues quickly.
-
-### Ticket-level seating management
-
-![Manage Seating from a FooEvents ticket](https://help.fooevents.com/wp-content/uploads/2026/03/Screenshot-2026-03-20-at-13.03.39.png)
-
-On the ticket edit screen, admins can:
-
-- view the current seat or area,
-- use **Change Selection** to move it,
-- use **Release Selection** to remove it.
-
-If a new seat is not available, the original seat stays unchanged so that no data is lost.
-
-### Cancellations and refunds
-
-This is important to understand:
-
-- Canceling or deleting a ticket does **not** automatically release the seat.
-- Refunding an order item does **not** automatically release the seat.
-
-If you want a seat to become available again, it needs to be released manually through the seating management tools, or handled through your chosen order-status release rules.
-
-## Recommended Rollout Plan
-
-A safe way to introduce the new seating system is to do it in stages:
-
-1. Enable it on a staging site first.
-2. Build and test templates for real venue layouts, including curved rows or lines, hidden seats, and pre-blocked seats where applicable.
-3. Apply charts to a small number of products first.
-4. Test key flows, including single-day, sequential days, specific days, bookable, and variation-based seating.
-5. Test selection with grouping disabled, grouped quantities greater than one, and Single Selection Mode with a quantity of one. Include isolated seats, tables, standing areas, and maximum ticket limits where applicable.
-6. Test both classic and block-based WooCommerce product templates if your site uses them.
-7. Test reservation expiry, the cart countdown, conflict handling, order-status releases, and manual seat releases.
-8. Make sure your support or admin team knows how to manage seating live.
-9. Migrate the rest of your products in phases.
-10. Disable legacy seating only when you are fully done with V1.
-
-## Currently not supported
-
-The following functionality is not yet supported in the FooEvents Seating Version 2 beta:
-
-- **FooEvents Check-ins app:** Seating Version 2 information is not currently displayed in the publicly available FooEvents Check-ins app. Support will be added before launch.
-- **FooEvents Point of Sale:** Support for FooEvents Seating Version 2 is under development and will be added in a future release.
+- [Protected: New FooEvents Seating (Beta)](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/)
 
 ---
 
@@ -10049,7 +9630,7 @@ Setting the slider to its minimum value of **0 minutes** (zero) will disable aut
 
 If you would like to clear all cached data on your device, you can do so by simply tapping the **Resync** button on the **Settings** screen to remove all locally stored data and resynchronize your store data. This can be a helpful troubleshooting step in solving certain issues such as duplicate products and problems with database resync. This might take a few minutes and you won’t be able to use the app until the process is complete. After this has been done, **FooEvents POS** will store the data locally on the device again.
 
-![Screenshot 2022 11 07 at 11.24.06](https://help.fooevents.com/wp-content/uploads/2022/10/Screenshot-2022-11-07-at-11.24.06.png)
+![fooevents pos clear cache](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents_pos_clear_cache-1024x347.png)
 
 ---
 
@@ -10556,10 +10137,10 @@ If you plan on integrating **FooEvents POS** with a [Square Terminal](https://a
 Click on the “**Add subscription**” button and enter a name for the webhook such as “**FooEvents Terminal API**“. Enter the webhook URL for **your websit****e** e.g.:
 
 ```
-[YOUR SITE]/wp-json/fooeventspos/v5/webhook_square
+[YOUR SITE]/wp-json/fooeventspos/v6/webhook_square
 ```
 
-![square webhook create](https://help.fooevents.com/wp-content/uploads/2022/10/square_webhook_create-913x1024.png)
+![fooevent pos square webhook add](https://help.fooevents.com/wp-content/uploads/2022/10/fooevent_pos_square_webhook_add-1024x744.png)
 
 Next, you will need to let Square know which events it needs to send to **FooEvents POS** by checking each relevant event.
 
@@ -10573,11 +10154,15 @@ Next, you will need to let Square know which events it needs to send to **FooEve
 
 ![square webhook created](https://help.fooevents.com/wp-content/uploads/2022/10/square_webhook_created-1024x480.png)
 
+Click on the newly created webhook name to show its details. Copy the Signature key and URL to a safe place which will be used to set up your [FooEvents POS WordPress Plugin Settings](#plugin-settings) described below.
+
+![fooevents pos webhook settings copy](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents_pos_webhook_settings_copy-1024x761.png)
+
 ## Plugin Settings
 
-After copying your production **Application ID** and **Access Token**, navigate to your **WordPress dashboard** and open the **plugin settings**. Under **Square Integration**, paste your **Application ID** and **Access Token**, then **save your settings** and you’re good to go!
+After copying your production **Application ID**, **Access Token**, **Webhook URL** and **Webhook Signature Key**, navigate to your **WordPress dashboard** and open the **plugin settings**. Under **Square Integration**, paste your **Application ID**, **Access Token**, **Webhook URL** and **Webhook Signature Key**, then **save your settings** and you’re good to go!
 
-![square integration settings](https://help.fooevents.com/wp-content/uploads/2022/10/square_integration_settings-1024x388.png)
+![fooevents pos square plugin settings](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents_pos_square_plugin_settings-1024x509.png)
 
 ## Pairing a Square Terminal
 
@@ -10854,11 +10439,15 @@ To view the **FooEvents POS****plugin settings**, login to your **WordPress dash
 
 ## General
 
-![FooEvents payment settings screen](https://help.fooevents.com/wp-content/uploads/2022/10/FooEvents_payment_settings_screen-1024x955.png)
+![fooevents pos settings general](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-general-1024x364.png)
 
 | FooEvents license key | Required for automatic plugin updates. |
 | --- | --- |
+
+![fooevent pos settings appearance](https://help.fooevents.com/wp-content/uploads/2022/10/fooevent-pos-settings-appearance-1024x695.png)
+
 | Use FooEvents Check-ins app appearance settings | Use the same custom appearance settings for FooEvents POS that are selected for the Check-ins app. |
+| --- | --- |
 | App title | The title that displays on the sign-in screen beneath the app logo and is also used to name the page that loads the POS for further customization. |
 | App logo | Upload or select an existing image that will be used as the main app logo (PNG format with transparency is recommended). |
 | Primary interface color | The primary color that will be used to style various interface elements in the app such as buttons, spinners, order list headers and sliders. |
@@ -10867,32 +10456,52 @@ To view the **FooEvents POS****plugin settings**, login to your **WordPress dash
 
 ## Users
 
-![FooEvents POS Customer settings](https://help.fooevents.com/wp-content/uploads/2022/10/Screenshot-2023-08-22-at-15.56.45-1024x609.png)
+![fooevents pos settings users settings](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-users-settings.png)
 
-| POS Customers |
-| --- |
-| Customer user role | The FooEvents POS app will only fetch users with the selected roles. This can be customized by selecting other user role(s) in the multi-select box. |
+| User roles with FooEvents POS access | The list of user roles that have the “fooeventspos_pos_app” capability. Edit a role to specify which capabilities are allowed for each role. The administrator role automatically receives all capabilities so it can only be viewed, not edited. |
+| --- | --- |
+| Add new user role | The new user role will automatically gain access to FooSales POS and allow users of that role to log in and manage sales through FooSales POS. |
+| Allow user switching | Allow switching to a different POS user after successfully connecting to your store. Please note that PIN lock will be enabled automatically for improved security. |
+| Enable PIN lock | Secure the POS using the unique PIN set in each user’s profile. If user switching is enabled and a user has the capability to switch users, they will have to enter the new user’s PIN when switching. |
+| Auto-lock timeout (minutes) | Enter the number of minutes of inactivity before the POS automatically locks. Leave blank to disable auto-lock. |
+
+![fooevents pos settings users users](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-users-users-1024x480.png)
+
+| Set PIN | Set a PIN for a POS user if PIN lock is enabled. |
+| --- | --- |
+| Update PIN | Set a new PIN for a POS user if they already have a PIN set and PIN lock is enabled. |
+| Capabilities | Customize which capabilities in addition to their role’s capabilities each POS user is allowed. |
+
+## Customers
+
+![fooevents pos settings customers](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-customers-1024x533.png)
+
+| Enable dynamic loading | Fetches customers dynamically from the server as they are searched, rather than loading and storing all customer data locally on the device. |
+| --- | --- |
+| User role(s) to load as customers | The FooEvents POS app will only fetch users with the selected roles. This can be customized by selecting other user role(s) in the multi-select box. |
 | Default Customer | Select the customer that should be used by default for any new orders created in the FooEvents POS app. |
-| POS Users | By default, access to FooEvents POS is restricted to users with the “Administrator” or “Cashier” user role. However, if you would like other users to have access to the FooEvents POS app but don’t necessarily want to grant them Admin access to your site, you can manage permissions for other user roles by installing a free WordPress plugin called User Role Editor. |
 
 ## Products
 
-![Screenshot 2022 11 07 at 09.24.48 e1667808999778](https://help.fooevents.com/wp-content/uploads/2022/10/Screenshot-2022-11-07-at-09.24.48-e1667808999778.png)
+![fooevents pos settings products](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-products-1002x1024.png)
 
-| Product categories to display | The FooEvents POS app will display all published products by default, but you can select specific product categories to display instead from the multi-select box. |
+| Enable dynamic loading | Fetches products dynamically from the server as they are searched or scanned, rather than loading and storing all product data locally on the device. |
 | --- | --- |
+| Product categories to display | The FooEvents POS app will display all published products by default, but you can select specific product categories to display instead from the multi-select box. |
 | Product status | The FooEvents POS app will only fetch products with the selected status. |
 | Products per request | When fetching all data you can specify how many products the FooEvents POS app should load in each request (lower values will result in slower product load times but this usually works better for servers with limited resources). |
 | Only fetch in stock products | The FooEvents POS app will only display products that have a status of ‘In Stock’. |
 | Show attribute labels | Display attribute labels next to their values for product variations. |
-| Use decimal values in quantities | Enable the use of decimal values in the quantity field. |
+| Use decimal values in quantities | Enable the use of decimal values in the quantity field.ImportantThis setting will add decimal fields to all your products in FooEvents POS as well as your online store. We strongly recommend that you rigorously test this functionality on a staging site first before using it on a production site. Use of this functionality is at your own risk!You can set the default minimum cart quantity and step value on the WooCommerce Product Inventory settings page after first saving the settings on this page. If you would like to use different values instead of the defaults for a specific product or variation, you can manually set them on the product’s edit screen by opening the inventory tab. If you would like to use different values instead of the defaults for a specific product or variation, you can manually set them on the product’s edit screen by opening the inventory tab. |
 
 ## Orders
 
-![Screenshot 2023 08 22 at 15.57.05](https://help.fooevents.com/wp-content/uploads/2022/10/Screenshot-2023-08-22-at-15.57.05.png)
+![fooevents pos settings orders](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-orders-1017x1024.png)
 
-| Order statuses to load | The FooEvents POS app will only fetch orders with the selected statuses. This can be customized by selecting each status using the multi-select box. |
+| Enable dynamic loading | Fetches orders dynamically from the server as they are searched, rather than loading and storing all order data locally on the device. |
 | --- | --- |
+| Only load POS orders | Enable this option to only load orders that were placed in the POS. |
+| Order statuses to load | The FooEvents POS app will only fetch orders with the selected statuses. This can be customized by selecting each status using the multi-select box. |
 | Order load limit | Limit the number of recent orders to load in the FooEvents POS app. |
 | Fetch order notes | The FooEvents POS app will fetch and display corresponding order notes in the Order Details section. This may cause performance issues and the FooEvents POS app might run out of memory on certain platforms when a large volume of orders is fetched. Disabling this setting will still load notes to customers. |
 | Order submit statuses | Select the statuses that will be shown on the checkout screen to override the default order submit status when submitting an order. |
@@ -10904,7 +10513,7 @@ To view the **FooEvents POS****plugin settings**, login to your **WordPress dash
 
 ## Receipts
 
-![Screenshot 2022 11 07 at 09.26.48 e1667809054513](https://help.fooevents.com/wp-content/uploads/2022/10/Screenshot-2022-11-07-at-09.26.48-e1667809054513.png)
+![fooevents pos settings receipts](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-receipts-654x1024.png)
 
 | Store logo | Select an existing image to use as the logo on receipts or upload a new file (preferably hi-res black and white). |
 | --- | --- |
@@ -10917,6 +10526,7 @@ To view the **FooEvents POS****plugin settings**, login to your **WordPress dash
 | Price column title | Title of the price column (e.g. “Price”). |
 | Subtotal column title | Title of the subtotal column (e.g. “Subtotal”). |
 | Show product SKU | Display the product SKU on the receipt. |
+| Show product GTIN, UPC, EAN or ISBN | Display the product GTIN, UPC, EAN or ISBN on the receipt. |
 | Inclusive abbreviation | Abbreviation used to indicate the inclusive price (e.g. “incl.”). |
 | Exclusive abbreviation | Abbreviation used to indicate the exclusive price (e.g. “excl.”). |
 | Discounts title | Title of the discounts field (e.g. “Discounts”). |
@@ -10924,14 +10534,16 @@ To view the **FooEvents POS****plugin settings**, login to your **WordPress dash
 | Tax title | Title used for the combined tax total (e.g. “Tax”). |
 | Total title | Title of the combined total (e.g. “Total”). |
 | Payment method title | Title of the payment method (e.g. “Payment Method”). |
+| Display billing address | Display the customer’s billing address on the receipt. |
 | Billing address title | Title of the billing address (e.g. “Billing Address”). |
+| Display shipping address | Display the customer’s shipping address on the receipt. |
 | Shipping address title | Title of the shipping address (e.g. “Shipping Address”). |
 | Footer content | Optional content displayed at the bottom of receipts and invoices. |
 | Display FooEvents POS logo | Display the FooEvents POS logo at the bottom of receipts and invoices. |
 
 ## Payments
 
-![FE payment settings](https://help.fooevents.com/wp-content/uploads/2022/10/FE_payment_settings-1024x396.png)
+![fooevents pos settings payments](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-payments-1024x463.png)
 
 | Payment Methods | Select which payment methods should show in the POS by enabling or disabling the WooCommerce payment methods. Refer to the Payments section for more information. |
 | --- | --- |
@@ -10939,19 +10551,21 @@ To view the **FooEvents POS****plugin settings**, login to your **WordPress dash
 
 ## Integration
 
-![Screenshot 2022 11 07 at 09.34.06 1](https://help.fooevents.com/wp-content/uploads/2022/10/Screenshot-2022-11-07-at-09.34.06-1.png)
+![fooevents pos settings integration](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-integration-1024x733.png)
 
 | Square Payments |
 | --- |
 | Application ID | Enables secure communication between FooEvents POS and the Square Point of Sale app. |
 | Access Token | Links WooCommerce orders to Square transactions and enables automatic Square refunds in the FooEvents POS app. |
+| Webhook URL | Enter the exact notification URL configured for this webhook subscription in Square. The default is the current FooSales Square webhook URL. |
+| Webhook Signature Key | Enter the signature key shown in Square for this webhook subscription. When set, FooSales verifies the signature of every Square webhook and ignores replayed events. |
 | Stripe Payments |
 | Publishable key | Used for initializing a secure Stripe manual card payment form in the FooEvents POS app. This option can be left empty if the Stripe manual card payment method will not be used. |
 | Secret key | Enables secure communication between FooEvents POS and your Stripe account. |
 
 ## Analytics
 
-![Screenshot 2022 11 07 at 09.34.25 e1667809080281](https://help.fooevents.com/wp-content/uploads/2022/10/Screenshot-2022-11-07-at-09.34.25-e1667809080281-1024x475.png)
+![fooevents pos settings analytics](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-analytics-1024x498.png)
 
 | Enable ‘Sales Channel’ filter | Enables a ‘Sales Channel’ filter on the Orders report in WooCommerce Analytics so you can filter between orders placed online and through the FooEvents POS app. |
 | --- | --- |
@@ -10961,7 +10575,7 @@ To view the **FooEvents POS****plugin settings**, login to your **WordPress dash
 
 FooEvents POS performs various checks which show critical information about your store’s configuration and issues that require your attention.
 
-![Screenshot 2022 11 07 at 09.34.44](https://help.fooevents.com/wp-content/uploads/2022/10/Screenshot-2022-11-07-at-09.34.44-1024x161.png)
+![fooevents pos settings status](https://help.fooevents.com/wp-content/uploads/2022/10/fooevents-pos-settings-status-1024x266.png)
 
 ---
 
@@ -11593,8 +11207,7 @@ Since FooEvents is a WooCommerce plugin, you can make use of thousands of WooCom
 
 ## Articles
 
-	- [Now2Wallet Integration](https://help.fooevents.com/docs/topics/third-party-integration/now2wallet-integration/)
-- [Recommended Plugins](https://help.fooevents.com/docs/topics/third-party-integration/suggested-plugins/)
+	- [Recommended Plugins](https://help.fooevents.com/docs/topics/third-party-integration/suggested-plugins/)
 - [WooCommerce Product Add-Ons](https://help.fooevents.com/docs/topics/third-party-integration/woocommerce-product-add-ons/)
 - [Incompatible Plugins](https://help.fooevents.com/docs/topics/third-party-integration/incompatible-plugins/)
 - [Hardware](https://help.fooevents.com/docs/topics/third-party-integration/hardware/)
@@ -11614,6 +11227,7 @@ Since FooEvents is a WooCommerce plugin, you can make use of thousands of WooCom
 - [WooCommerce Follow-ups Integration](https://help.fooevents.com/docs/topics/third-party-integration/woocommerce-follow-ups/)
 - [AutomateWoo Integration](https://help.fooevents.com/docs/topics/third-party-integration/automatewoo/)
 - [AddToWallet Integration](https://help.fooevents.com/docs/topics/third-party-integration/addtowallet/)
+- [Now2Wallet Integration](https://help.fooevents.com/docs/topics/third-party-integration/now2wallet-integration/)
 
 ---
 
@@ -12473,6 +12087,15 @@ Deleting an order does not automatically delete and deactivate the tickets that 
 **Canceling** an order, however, will set the ticket status to “Canceled”.
 
 Here is some more information: [https://help.fooevents.com/docs/frequently-asked-questions/tickets/are-tickets-still-valid-if-the-order-was-deleted/](https://help.fooevents.com/docs/frequently-asked-questions/tickets/are-tickets-still-valid-if-the-order-was-deleted/)
+
+## Removing FooEvents Files
+
+Please note that deleting tickets from the Admin Dashboard will **not** automatically remove their associated barcode images, ICS files, or PDF ticket files from your server. This follows standard WordPress plugin practices to protect your data integrity and maximize server security.
+
+To delete these files, you would need to connect to your web server via an FTP client and navigate to ‘**wp-content/uploads/fooevents**‘ in the WordPress directory and delete the corresponding files there.
+
+Here’s some more information:
+[https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-plugin-privacy-policy/#how-to-remove-data](https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-plugin-privacy-policy/#how-to-remove-data)
 
 ---
 
