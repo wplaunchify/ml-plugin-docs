@@ -316,6 +316,24 @@ If for any reason the zip file is too big to upload inside WordPress (this would
 8. Find the # corresponding with the shortcode in step 6 and go into it.
 9. Upload the large files to wherever they’re supposed to be.
 
+### Bulk and scripted uploads
+
+Tin Canny Reporting for LearnDash has no bulk upload, and no documented API, WordPress hook or WP-CLI command that uploads a module. Upload modules one at a time, through the uploader in the block editor or the Classic Editor, or from Upload new content on the Manage Content page (see Managing Elearning Content). The REST route the uploader itself calls needs a security token the admin upload screen creates, so it is for the browser uploader, not for scripts.
+
+A script or plugin that copies packages into /wp-content/uploads/uncanny-snc/ registers nothing. Tin Canny only knows a module the uploader processed, because the uploader does more than copy files. For every module, the uploader does all of the following.
+
+It unzips the package into its own folder under /wp-content/uploads/uncanny-snc/, and flattens the package if the zip wraps everything in one subfolder.
+
+It adds a row for the module to Tin Canny’s content table. That row gives the module its Module ID, the number in its shortcode and on the Manage Content page. The module’s folder is named by that ID.
+
+It detects the authoring tool and standard from marker files in the package: imsmanifest.xml for SCORM, tincan.xml for xAPI, a story_content folder for Storyline, and so on.
+
+It modifies some JavaScript files in the module so that statements are tracked properly. Which files it changes depends on the authoring tool and on how the module was published. For a SCORM package that did not come from one of the authoring tools it recognises, it reads imsmanifest.xml, finds the launch file and writes its own launch page, tc_index.html, into the module folder. That page loads Tin Canny’s SCORM driver and opens the module in a frame.
+
+It records the module’s type and launch URL on its row.
+
+Tracking and reporting depend on the uploader registering the module and preparing its files, which is why a module must go through the uploader. Tick Upload entire zip file (see the steps above) to send a package as a single file, which is faster. It may not work in all environments or with large file sizes. If an upload fails, untick it and upload normally. When you upload without that option, the uploader leaves out files a module does not need, such as a __MACOSX folder or .DS_Store files added by a Mac. With the option ticked, the package is unpacked on the server as it is.
+
 ### Multisite
 
 If you use Tin Canny in a multisite network, it is possible to broadcast Tin Canny modules to other network sites using the Broadcast plugin from Plainview Plugins. See [https://broadcast.plainviewplugins.com](https://broadcast.plainviewplugins.com) for more information.
@@ -12612,8 +12630,22 @@ If for any reason the zip file is too big to upload inside WordPress (this would
 5. Upload the zip file through the Tin Canny uploader as before. if there’s an error, maybe it wasn’t zipped back up again properly.
 6. On the lesson/topic edit page, note the identifier in the shortcode. You’ll see an snc one.
 7. Connect to the site by FTP. Navigate to /wp-content/uploads/uncanny-snc/.
-8. Find the # corresponding with the shortcode in step 6 and go into it.
-9. Upload the large files to wherever they’re supposed to be.
+8. Upload the large files to wherever they’re supposed to be.
+9. Find the # corresponding with the shortcode in step 6 and go into it.
+
+### Bulk and scripted uploads
+
+Tin Canny Reporting for LearnDash has no bulk upload, and no documented API, WordPress hook or WP-CLI command that uploads a module. Upload modules one at a time, through the uploader in the block editor or the Classic Editor, or from Upload new content on the Manage Content page (see Managing Elearning Content). The REST route the uploader itself calls needs a security token the admin upload screen creates, so it is for the browser uploader, not for scripts.
+
+A script or plugin that copies packages into /wp-content/uploads/uncanny-snc/ registers nothing. Tin Canny only knows a module the uploader processed, because the uploader does more than copy files. For every module it:
+
+- Unzips the package into its own folder under /wp-content/uploads/uncanny-snc/, and flattens the package if the zip wraps everything in one subfolder.
+- Adds a row for the module to Tin Canny’s content table. That row gives the module its Module ID, the number in its shortcode and on the Manage Content page. The module’s folder is named by that ID.
+- Detects the authoring tool and standard from marker files in the package: imsmanifest.xml for SCORM, tincan.xml for xAPI, a story_content folder for Storyline, and so on.
+- Modifies some JavaScript files in the module so that statements are tracked properly. Which files it changes depends on the authoring tool and on how the module was published. For a SCORM package that did not come from one of the authoring tools it recognises, it reads imsmanifest.xml, finds the launch file and writes its own launch page, tc_index.html, into the module folder. That page loads Tin Canny’s SCORM driver and opens the module in a frame.
+- Records the module’s type and launch URL on its row.
+
+Tracking and reporting depend on the uploader registering the module and preparing its files, which is why a module must go through the uploader. Tick Upload entire zip file (see the steps above) to send a package as a single file, which is faster. It may not work in all environments or with large file sizes. If an upload fails, untick it and upload normally. When you upload without that option, the uploader leaves out files a module does not need, such as a __MACOSX folder or .DS_Store files added by a Mac. With the option ticked, the package is unpacked on the server as it is.
 
 ### Single Page Courses
 
@@ -13393,6 +13425,8 @@ Click a course’s **See details** link to open its detail report: overall perfo
 ### Tin Canny Reporting – Version 4.0 and up
 
 Starting with Tin Canny 4.0, we will provide support for **almost all standards-compliant SCORM and xAPI/Tin Can modules**. This includes dispatch files, but not all authoring tools that publish dispatch have full support for resume (and in some cases tracking) behaviours in Tin Canny. Multi-SCO modules are currently not supported. A good test for compatibility is trying the module on [SCORM Cloud](https://cloud.scorm.com/sc/guest/SignInForm), but in some cases, due to WordPress architecture and behaviour, we cannot guarantee support for all authoring tools. Tin Canny testing is done primarily against Storyline, iSpring, Rise, Captivate and H5P.
+
+AICC (HACP) modules are not supported. Tin Canny Reporting for LearnDash and Tin Canny xAPI/SCORM for WordPress track SCORM 1.2, SCORM 2004 and xAPI (Tin Can) modules. If your authoring tool can publish the module as SCORM 1.2, SCORM 2004 or xAPI, upload that instead.
 
 ### Tin Canny Reporting – Versions earlier than 4.0
 
@@ -17991,7 +18025,7 @@ Track exactly how long learners spend inside your LearnDash courses — on cours
 
 The Simple Course Timer records the time each learner spends in a course and its lessons, topics, and quizzes. You can display that time to learners in real time, surface total and completion times in your reports, and use time as a gate — for example, requiring learners to spend a minimum amount of time in the material before they can attempt a quiz, or logging out learners who go idle.
 
-This is a core tool for **seat-time compliance** (continuing education, certifications) and for **reducing cheating** by stopping learners from racing through content.
+Use it for time in course records and to discourage click-through: a learner can’t attempt the quiz until they have spent the minimum time you set in the course.
 
 **Important — tracking starts when you enable it.** The timer only records time from the moment the module is activated, and only while it stays active. Historical time is not available, so enable the module before you need the data.
 
@@ -18026,6 +18060,38 @@ Instead of showing the inactivity popup when a learner goes idle, you can enable
 
 Place any of these on a page to display tracked time. A matching block is available for each.
 
+Shortcode
+
+What it displays
+
+[uo_time course-id=””]
+
+Total time spent in the course
+
+[uo_time_course_completed course-id=””]
+
+Time at the point of completion (populated only after the course is completed)
+
+[uo_time_lesson lesson-id=””]
+
+Time in a lesson, plus its associated topics and quizzes
+
+[uo_time_topic topic-id=””]
+
+Time in a topic and its associated quiz
+
+[uo_time_quiz quiz-id=””]
+
+Time in a quiz
+
+[uo_time_total user-id=””]
+
+Total time across all courses since the module was activated
+
+[uo_time_live]
+
+A real-time, live-counting display of active course time
+
 | Shortcode | What it displays |
 | --- | --- |
 | [uo_time course-id=""] | Total time spent in the course |
@@ -18042,17 +18108,27 @@ When the Simple Course Timer module is enabled, both **total time** in course an
 
 Time starts being tracked as soon as the module is enabled. The time columns are also added to the LearnDash course report automatically.
 
-The module also integrates with [Tin Canny LearnDash Reporting](https://www.uncannyowl.com/knowledge-base/tin-canny-reporting-for-learndash-overview/), adding the same columns there.
+The module also integrates with [Tin Canny LearnDash Reporting](https://www.uncannyowl.com/knowledge-base/tin-canny-reporting-for-learndash-overview/), adding the same columns there. Each time column in a LearnDash report is one total per learner per course; there is no per-session breakdown.
+
+### What the Timer Stores
+
+For each learner, the timer keeps one running total of seconds per course, lesson, topic, and quiz page. It adds to the total in short steps while the learner is active on that page. The step is the Timer Polling Interval module setting: 15 seconds unless you change it (20 with Performance Mode disabled). When the learner completes the course, the timer also saves the total at that moment as the completion time. That is all it keeps:
+
+- No session log. There is no record of individual visits: no date, start time or end time for any session. Time cannot be broken down by date range. If you need per-session attendance records, this module does not provide them.
+- Stored on your site. The totals are saved in your own WordPress database, as user meta (WordPress’s per-user data), through a request to your own site. No time data is sent to Uncanny Owl or to any other server.
+- Kept until deleted. The module never deletes the time on its own. The time is removed when an administrator deletes a user’s LearnDash data from the user’s profile, which clears the time for every course. The Reset Progress Button module leaves the time in place, unless the site turns on the uo_course_timer_data_reset_enabled filter (see For Developers) to clear it. Even then, the saved completion time stays.
 
 ### Limitations to Know
 
 - **Mobile devices:** time isn’t tracked when a learner is taken away from WordPress (e.g. opening a PDF or a link in a new window) on iOS/Android, and tracking pauses while WordPress is in a background tab — an operating-system constraint, not a plugin setting.
 - **Caching:** some caching plugins can cause high resource usage with the timer active. If you see performance issues, test with caching disabled.
+- Video playback: the timer records time on the page, not whether a learner played an embedded video or for how long. To know whether a learner watched a video, play it through Presto Player and use Uncanny Automator’s Presto Player integration: its triggers, “A user completes a video” (free) and “A user watches at least a specific percentage of a video” (paid plans), run when a learner does either, and your recipe takes it from there.
 
 ### For Developers
 
 - **uo_course_timer_time_display** *(v4.4.1)* — Filter the way tracked time is displayed.
 - **uo_course_timer_time_display_completion** *(v4.4.1)* — Filter the way completion time is displayed.
+- uo_course_timer_data_reset_enabled — Return true to have the Reset Progress Button also delete the learner’s running time totals for that course (the saved completion time is not removed). Off by default.
 
 ### Related Articles
 
