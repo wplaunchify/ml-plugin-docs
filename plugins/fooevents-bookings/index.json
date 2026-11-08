@@ -2,8 +2,8 @@
   "plugin_slug": "fooevents-bookings",
   "plugin_name": "FooEvents Bookings",
   "documentation_url": "https://help.fooevents.com/docs/",
-  "last_scraped": "2026-11-01T01:11:53.129Z",
-  "total_pages": 330,
+  "last_scraped": "2026-11-08T01:11:40.608Z",
+  "total_pages": 329,
   "failed_urls_count": 0,
   "sections": [
     {
@@ -604,7 +604,7 @@
       "slug": "topics",
       "url": "https://help.fooevents.com/docs/topics/",
       "file": "categories/topics.md",
-      "page_count": 184,
+      "page_count": 183,
       "pages": [
         {
           "title": "FooEvents Help Center",
@@ -893,10 +893,6 @@
         {
           "title": "FooEvents Help Center",
           "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/"
-        },
-        {
-          "title": "FooEvents Help Center",
-          "url": "https://help.fooevents.com/docs/topics/fooevents-plugins/fooevents-seating/new-fooevents-seating/"
         },
         {
           "title": "FooEvents Help Center",
