@@ -16,13 +16,26 @@ Post Grid/Carousel Example (Carousel Layout)
 
 ![Post Grid:Carousel Sample](https://docs.nexcess.com/wp-content/uploads/2026/06/Post-GridCarousel-Sample-1024x522-1.jpg)
 
-General Settings
+## General Settings
 
 The **Post Type** setting allows you to specify which *Post Type* you would like to show on your Post Grid/Carousel Block. 
 
 You can select the post by query or you can select them individually using the **Select Posts By:** setting.
 
 The **Order By** setting allows you to order your posts from newest to oldest, oldest to newest, modified ascending, modified descending, A -> Z, Z -> A, menu order, or by a random order.
+
+Note
+
+				
+
+If your site is hosted on WP Engine, the random order option may not work by default because WP Engine disables 
+```
+ORDER BY RAND
+```
+
+ queries. To enable it, go to **WP Engine > General Settings** in your WordPress dashboard and turn on **ORDER_BY_RAND**.
+
+Also note that if the page is cached, visitors will see the same order until the cache is cleared.
 
 When using**Individual Posts**, the **Post** that you selected **First** will appear **First**, and the **Post** that you selected **Last** will appear **Last**.
 
@@ -50,7 +63,7 @@ The**Allow Sticky Posts**? setting allows you to enable sticky posts on your pos
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/more-general-settings.jpg)
 
-Layout Settings
+## Layout Settings
 
 The **Layout Settings** allow you to customize the layout of your *Post Grid/Carousel Block*. 
 
@@ -72,7 +85,7 @@ You can also adjust the **Column Gap** for *desktop, tablet, and mobile devices*
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Layout-Settings-344x1024-1.jpg)
 
-Grid and Masonry Layout Settings
+## Grid and Masonry Layout Settings
 
 Whenever you select the **Grid Layout** or the **Masonry Layout**, the block settings will differ.
 
@@ -84,7 +97,7 @@ You can also set the **Row Gap** for *desktop, tablet, and mobile devices.*
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Grid-Layout-Settings.jpg)
 
-Image Settings
+## Image Settings
 
 The **Image Settings**allow you to customize the images on your *Post Grid/Carousel Block*.
 
@@ -104,7 +117,7 @@ Use the **Border** **Radius** settings to add a border radius to the Post Grid/C
 
 ![Border Radius](https://docs.nexcess.com/wp-content/uploads/2026/06/Border-Radius.jpg)
 
-Respecting Aspect Ratios in Side Image Layouts
+## Respecting Aspect Ratios in Side Image Layouts
 
 When using a **Post Grid/Carousel** with a layout where the image is **on the side of the content**, you may notice the **aspect ratio** isn’t always respected when the **Force Image to Height of Container** setting is enabled. This is because the image in this design is intended to cover the available space rather than use an aspect ratio.
 
@@ -116,7 +129,7 @@ Use the **Respect Aspect Ratio** setting to ensure all *Post Grid/Carousel* imag
 
 ![Image Ratio](https://docs.nexcess.com/wp-content/uploads/2026/06/Image-Ratio.gif)
 
-Style Settings
+## Style Settings
 
 The **Style Settings** allow you to adjust the styling of your block.
 
@@ -134,7 +147,7 @@ You can also enable and use a **Box Shadow**.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Style-Settings-436x1024-1.jpg)
 
-Header Settings
+## Header Settings
 
 The **Header Settings**allow you to adjust the header section of each post.
 
@@ -142,7 +155,7 @@ You can adjust the **Header Background** color. You can also adjust the **Header
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/header-settings-1.jpg)
 
-Content Settings
+## Content Settings
 
 The **Content Settings**allow you to adjust the content section of each post.
 
@@ -150,7 +163,7 @@ You can adjust the **Content Background** color. You can also adjust the**Paddin
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/content-settings-1.jpg)
 
-Footer Settings
+## Footer Settings
 
 The **Footer Settings**allow you to adjust the footer section of each post.
 
@@ -160,13 +173,13 @@ You can use the **Footer Border Color** and **Footer Border Width** settings to 
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Footer-Settings-1.jpg)
 
-Advanced Settings
+## Advanced Settings
 
 You can use the **Advanced Settings** to adjust the more advanced settings on your block. There are multiple tabs that you can expand and adjust. We will go over each advanced setting.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Advanced-Settings-1-1.jpg)
 
-Display Filter Settings
+## Display Filter Settings
 
 The **Display Filter**settings allow you to display and customize a filter.
 
@@ -182,7 +195,7 @@ You can also adjust the **Filter Item Padding** and **Filter Item Margin**on you
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Display-Filter-Settings-345x1024-1.jpg)
 
-Filter Colors
+## Filter Colors
 
 You can expand the **Filter Colors** setting to adjust the colors of your filter.
 
@@ -198,7 +211,7 @@ The **Font Family** setting allows you to change the filter font. You can also c
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Filter-Colors-and-Typography-Settings-372x1024-1.jpg)
 
-Above Title Categories Settings
+## Above Title Categories Settings
 
 You can enable and **Show Categories Above the Title**.
 
@@ -216,7 +229,7 @@ The **Font Family** setting allows you to change the filter font. You can also c
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Above-Title-Categories-Settings-329x1024-1.jpg)
 
-Title Settings
+## Title Settings
 
 The **Title Settings** allow you to **Show the Title** and set the **Title** as a **Link to post**.
 
@@ -234,7 +247,7 @@ The **Font Family** setting allows you to change the filter font. You can also c
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Title-Settings-358x1024-1.jpg)
 
-Below Title Meta
+## Below Title Meta
 
 You can enable different **Below Title Meta Elements**.
 
@@ -248,7 +261,7 @@ You can enable/disable the **Show** **Category** setting and you can set a **Cat
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Below-Title-Meta-361x1024-1.jpg)
 
-Meta Divider
+## Meta Divider
 
 The **Meta** **Divider** setting allows you to select a **Meta** **Divider** style. You can also adjust the **Meta** **Colors** and **Meta** **Typography** **Settings**.
 
@@ -264,7 +277,7 @@ The **Font Family** setting allows you to change the filter font. You can also c
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/meta-divider-settings-364x1024-1.jpg)
 
-Excerpt
+## Excerpt
 
 You can enable and customize the **Excerpt**. You can use the **Excerpt Color** setting to set a color for the excerpt text.
 
@@ -276,7 +289,7 @@ You can use the **Enable Custom Excerpt Length** and **Max number of words in ex
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Excerpt-Settings-424x1024-1.jpg)
 
-Read More
+## Read More
 
 You can enable the option to **Show Read More**.
 
@@ -304,7 +317,7 @@ You can add **Padding** or **Margin** to the read more text.
 
 ![Post Grid/Carousel - Read More settings - Part 2](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-04-at-1.48.48-PM-531x1024-1.png)
 
-Footer Meta
+## Footer Meta
 
 You can force the footer to align to the bottom of the post container.
 
@@ -316,7 +329,7 @@ You will also be able to adjust the standard typography settings for the **Foote
 
 ![Post Grid/Carousel - Footer Meta settings](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2025-06-04-at-1.55.17-PM-336x1024-1.png)
 
-Block Defaults
+## Block Defaults
 
 Kadence blocks have a **Block Defaults**section under the Advanced tab in the block settings. After you adjust the settings to the desired defaults, find the **Block Defaults** section and click the button that reads **Save as Default**.
 
@@ -328,7 +341,7 @@ Remember, the default settings only apply to newly added blocks, not existing bl
 
 ![Modify block defaults](https://docs.nexcess.com/wp-content/uploads/2026/06/Modify-block-defaults.jpeg)Modify block defaults
 
-Advanced Settings
+## Advanced Settings
 
 The **Advanced Settings**allow you to enable the option to **Open Post Links in new Tab.**
 
@@ -336,9 +349,9 @@ You can also add **Additional CSS class(es)** to your block.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/advanced-settings-2-1.jpg)
 
-Customizations
+## Customizations
 
-Pagination button colors
+### Pagination button colors
 
 The pagination buttons inherit colors from the *Kadence Theme’s color palette*:
 
