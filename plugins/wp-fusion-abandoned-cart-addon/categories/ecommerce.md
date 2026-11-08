@@ -1537,23 +1537,23 @@ For more information see the [exporting data documentation](https://wpfusion.com
 
 ---
 
-## Studiocart
+## PublishPress Cart
 
-**Source:** [https://wpfusion.com/documentation/ecommerce/studiocart/](https://wpfusion.com/documentation/ecommerce/studiocart/)
+**Source:** [https://wpfusion.com/documentation/ecommerce/publishpress-cart/](https://wpfusion.com/documentation/ecommerce/publishpress-cart/)
 
 ### Overview
 
-WP Fusion includes an integration with [Studiocart](https://wpfusion.com/go/studiocart) to sync your customers with contact records in [any one of 50+ CRMs and marketing automation tools.](https://wpfusion.com/documentation/faq/crm-compatibility-table/)
+WP Fusion includes an integration with [PublishPress Cart](https://wpfusion.com/go/publishpress-cart) to sync your customers with contact records in [any one of 50+ CRMs and marketing automation tools.](https://wpfusion.com/documentation/faq/crm-compatibility-table/)
 
 You can also apply tags (or lists) to your customers based on product purchases, as well as events like payment failures and subscription cancellations.
 
 ### Setup
 
-When editing any Studiocart product, in the Product Settings meta box click on the Integrations tab, and then press **Add New** to add a new integration.
+When editing any PublishPress Cart product, in the Product Settings meta box click on the Integrations tab, and then press **Add New** to add a new integration.
 
 From the Service dropdown, select either **WP Fusion – Apply Tags** or **WP Fusion – Remove Tags**.
 
-![](https://wpfusion.com/wp-content/uploads/2022/12/studiocart-settings-998x1024.jpg)
+![](https://wpfusion.com/wp-content/uploads/2022/12/publishpress-cart-settings-998x1024.jpg)
 
 Next, select your triggers. The available triggers are:
 
