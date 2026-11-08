@@ -5089,7 +5089,7 @@ Cannot use object of type WP_Post as array
 
 #### # 3.40.45 - 12/19/2022
 
-- ✨ New Added [Studiocart integration](https://wpfusion.com/documentation/ecommerce/studiocart/)
+- ✨ New Added [PublishPress Cart integration](https://wpfusion.com/documentation/ecommerce/publishpress-cart/)
 - ✨ New Added support for [WooCommerce High Performance Order Storage](https://developer.woocommerce.com/2022/09/14/high-performance-order-storage-progress-report/)
 - ✨ New Added [Optin Status field for sync with MailerLite](https://wpfusion.com/documentation/crm-specific-docs/mailerlite-double-opt-ins/) — you can sync a value of 
 ```
