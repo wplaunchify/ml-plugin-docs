@@ -1293,8 +1293,8 @@ As mentioned above, let's see how to import WooCommerce categories and products 
 
 Before starting the import process, ensure the following setup on your **target site**:
 
-- Install and activate [WPML core plugin](https://wpml.org/purchase/), WPML String Translation, [WooCommerce Multilingual & Multicurrency](https://wpml.org/documentation/related-projects/woocommerce-multilingual/), WPML Export and Import, and WooCommerce.
-- Complete the setup wizards for WooCommerce, WPML (enabling all the languages you will import), and WooCommerce Multilingual & Multicurrency.
+- Install and activate [WPML core plugin](https://wpml.org/purchase/), WPML String Translation, [WPML Multilingual & Multicurrency for WooCommerce](https://wpml.org/documentation/wpml-core-and-add-on-plugins/woocommerce-multilingual/), WPML Export and Import, and WooCommerce.
+- Complete the setup wizards for WooCommerce, WPML (enabling all the languages you will import), and WPML Multilingual & Multicurrency for WooCommerce.
 - Install and activate [WP All Import PRO](https://www.wpallimport.com/pricing/) and its [WooCommerce Import Add-On Pro](https://www.wpallimport.com/woocommerce-product-import/)
 
 ## Preparing Your Spreadsheets
