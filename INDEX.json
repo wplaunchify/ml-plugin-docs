@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-08T05:32:31.829Z",
+  "last_updated": "2026-11-08T05:43:50.407Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -2521,7 +2521,7 @@
       "slug": "searchwp",
       "name": "SearchWP",
       "documentation_url": "https://searchwp.com/documentation/",
-      "last_scraped": "2026-11-01T05:44:00.224Z",
+      "last_scraped": "2026-11-08T05:43:50.407Z",
       "page_count": 57,
       "categories": [
         "uncategorized"
