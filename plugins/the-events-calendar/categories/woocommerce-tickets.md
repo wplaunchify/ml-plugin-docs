@@ -8,21 +8,17 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/woocommerce-tickets/](https://docs.nexcess.com/software/the-events-calendar/woocommerce-tickets/)
 
-[Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/) integrates tightly with [WooCommerce](https://woocommerce.com/), transforming each event ticket into a simple [virtual product](https://woocommerce.com/document/managing-products/virtual-downloadable/) within WooCommerce. [Creating a ticket](https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/) for an event using Event Tickets Plus automatically generates a corresponding WooCommerce product. This product is usually set with hidden catalog visibility by default, ensuring ticket sales are managed discreetly within your event workflow​.
+When you use Event Tickets with a premium license, you can integrate with [WooCommerce](https://woocommerce.com/), transforming each event ticket into a simple [virtual product](https://woocommerce.com/document/managing-products/virtual-downloadable/) within WooCommerce. [Creating a ticket](https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/) for an event automatically generates a corresponding WooCommerce product. This product is usually set with hidden catalog visibility by default, ensuring ticket sales are managed discreetly within your event workflow​.
 
 This [integration](https://www.theeventscalendar.com/blog/sell-event-tickets-with-woocommerce/) allows for flexible ticket management, leveraging WooCommerce’s powerful e-commerce features. The event details, ticket quantities, and attendee information are all maintained within The Events Calendar, while WooCommerce handles the transactional processes such as payments, stock control, and order statuses. This integration provides a unified solution where WooCommerce manages the purchasing experience, processing payments, sending order confirmations, and handling refunds, just like any other product​.
 
-Tickets created with Event Tickets Plus can be sold through the event page and WooCommerce product listings, offering a versatile approach to ticket sales. Additionally, WooCommerce’s extensive library of plugins and extensions can enhance the ticket purchasing experience by enabling features like discount codes and flexible payment plans​. This integration maximizes control and flexibility, making it easier for event organizers to manage tickets and for attendees to make purchases through a familiar, user-friendly interface.
+Tickets can be sold through the event page and WooCommerce product listings, offering a versatile approach to ticket sales. Additionally, WooCommerce’s extensive library of plugins and extensions can enhance the ticket purchasing experience by enabling features like discount codes and flexible payment plans​. This integration maximizes control and flexibility, making it easier for event organizers to manage tickets and for attendees to make purchases through a familiar, user-friendly interface.
 
 ## Getting Started
 
-⚠️ **NOTE**: If you plan on using **only WooCommerce** to sell tickets, we suggest disabling Tickets Commerce by going to **Tickets > Settings > Payments**and disabling it there. In case you want to use both and switch between them for some tickets please check out [our article here.](https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/)
-
-To get started, you’ll need a bare minimum of 3 plugins: Event Tickets, Event Tickets Plus, and WooCommerce.
+To get started, you’ll need a bare minimum of 3 plugins: Event Tickets,, WooCommerce, and a premium license for The Events Calendar.
 
 Event Tickets and WooCommerce are both free and can be added via the official WordPress plugin repository by clicking on **Plugins**in your WordPress dashboard, and clicking on **Add New**. Simply search for Event Tickets, install and activate, then do the same for WooCommerce.
-
-Event Tickets Plus can be purchased and downloaded from our website at [https://theeventscalendar.com/](https://theeventscalendar.com/products/wordpress-event-tickets/). Once it’s downloaded, go back to your WordPress dashboard, navigate to **Plugins** > **Add** **New**, and click Upload. Find the zip file, upload it, and once it’s uploaded, be sure to click **Activate**.
 
 👋 Event Tickets will display a welcome screen after you activate it. You can ignore that and go back to installing WooCommerce.
 
@@ -66,17 +62,17 @@ Now that WooCommerce is installed and your payment gateway is all setup and read
 
 ## Order Statuses and Ticket Emails
 
-When purchasing tickets with [Event Tickets Plus](https://theeventscalendar.com/products/wordpress-event-tickets/) with WooCommerce, emails won’t be sent to attendees until the order has been marked as **Complete**. By default, this process needs to be done manually by the administrator.
+When purchasing tickets with with WooCommerce, emails won’t be sent to attendees until the order has been marked as **Complete**. By default, this process needs to be done manually by the administrator.
 
 This is default WooCommerce behaviour and not something that we can change.
 
 You can change when Event Tickets sends the emails by going to **Tickets > Settings > Integrations**and in the WooCommerce section, select the order statuses you want:
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-2-1024x433-1.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/02-woocommerce-support-settings-1024x750.png)
 
 ## Stock Management
 
-For optimal functionality with Event Tickets Plus, we recommend that you check *Enable stock management*under **WooCommerce > Settings > Products > Inventory**. If you leave this option *unchecked*, it may result in ticket capacity showing as “unlimited” regardless of your ticket stock.
+For optimal functionality, we recommend that you check *Enable stock management*under **WooCommerce > Settings > Products > Inventory**. If you leave this option *unchecked*, it may result in ticket capacity showing as “unlimited” regardless of your ticket stock.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/woo-stock-management-1024x485-1.png)
 
@@ -109,57 +105,13 @@ To see the WooCommerce Price Suffix on your Event Tickets, view a published tick
 
 ## Switching from Tickets Commerce to WooCommerce
 
-Tickets Commerce is the lightweight eCommerce solution that comes as part of the Event Tickets plugin. This solution is simpler in features and functionality compared to WooCommerce. You may run into limitations after using Tickets Commerce for a little while and decide to make the move to WooCommerce. In this article, we’ll show you how to easily switch from Tickets Commerce to WooCommerce with the Event Tickets and Event Tickets Plus plugins.
+Tickets Commerce is the ecommerce option that comes with Event Tickets. If you want to use WooCommerce instead, you’ll need to have it installed as well as a premium licennse. Tickets are specific to the ecommerce provider they were created for. You can only have one provider per event, and you can’t switch providers on an event once you’ve made a ticket.
 
-To use WooCommerce for tickets, you must have both the Event Tickets and Event Tickets Plus plugins installed and activated.
+If you have WooCommerce, you can find the **Payment provider** option in the “gear icon” settings of the tickets form when using the Classic Editor, and will show in the editor sidebar when the tickets block is selected when using the Block Editor.
 
-Tickets are specific to the eCommerce provider they were created for. **Once a particular eCommerce solution is deactivated, any associated tickets will no longer be available.** However, note that any existing attendees for those tickets will still show on the event’s attendees page.
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/07-ticket-settings-payment-provider-1024x611.png)Sell tickets using: option in the Classic Editor
 
-**Note:** When making the switch to WooCommerce, you will have to manually re-create tickets that were created while you were still using Tickets Commerce.
-
-#### Switching the Ticket Provider
-
-Any given event can only use one eCommerce provider at a time. You can set this independently for each event.
-
-You can find the **Sell tickets using** option in the “gear icon” settings of the tickets form when using the Classic Editor, and will show in the editor sidebar when the tickets block is selected when using the Block Editor.
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Ticket-Settings-Gear-1024x120-1.jpg)Ticket Settings in the Classic Editor
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Tickets-Commerce-to-WooCommerce-1024x646-1.jpg)Sell tickets using: option in the Classic Editor
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Tickets-Commerce-to-WooCommerce-Block-Editor-1024x383-1.jpg)Sell tickets using: option in the Block Editor
-
-Depending on your situation when switching between Tickets Commerce and WooCommerce, you will take one of two approaches.
-
-#### Events Already Using Tickets Commerce
-
-If you have ongoing events with tickets that were created with Tickets Commerce but want to start using WooCommerce for new events and tickets, you can leave Tickets Commerce enabled until those events have finished ticket sales.
-
-Once all of the Tickets Commerce events are finished, you can disable Tickets Commerce under **Tickets > Settings > Payments**, and any new tickets will automatically be created as WooCommerce tickets.
-
-You can also move the attendees from the original ticket to a new one if desired. See our [Moving Tickets](https://docs.nexcess.com/software/the-events-calendar/move-tickets-attendees/) article for these steps.
-
-#### New Events
-
-If you’re using Tickets Commerce and WooCommerce, make sure the **Sell tickets using** option is set to “WooCommerce” before creating new tickets on new events.
-
-If you do not have any current tickets for sale with Tickets Commerce, you can simply enable WooCommerce and disable Tickets Commerce under **Tickets > Settings > Payments**, and any new tickets will automatically use WooCommerce.
-
-## Limiting to One Ticket per Purchase
-
-When the time comes to create a new ticket for our events, we can always choose the number of tickets we need before purchasing them.
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-3-1024x374-1.jpg)
-
-But sometimes, we need to limit the quantity to **only one ticket** per purchase. If it is the case that we are selling our tickets through WooCommerce, we can do this limitation by directly editing our ticket as WooCommerce Product, and in the Inventory section, we can check the “Limit purchases to 1 item per order” option.
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-4-1024x418-1.jpg)
-
-In this way, the ticket quantity selection form will allow you to select up to only 1 ticket per purchase.
-
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-5-1024x349-1.jpg)
-
-An alternative option, which requires users to log in to WordPress, is explained in this other [guide](https://docs.nexcess.com/software/the-events-calendar/customize-rsvp/).
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/08-block-editor-payment-provider-1024x478.png)Sell tickets using: option in the Block Editor
 
 ## Adding Tickets Fees
 

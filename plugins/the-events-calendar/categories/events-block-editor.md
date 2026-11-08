@@ -12,7 +12,7 @@ The Events Calendar and Event Tickets include a full set of custom blocks for cr
 
 ## Enabling the Block Editor for Events
 
-The block editor is WordPress’s default editor for posts and pages. For events, it needs to be enabled separately. Go to **Events → Settings → General → Editing** and check the box to activate the block editor for events.
+The block editor is WordPress’s default editor for posts and pages. For events, it needs to be enabled separately. Go to **Events → Settings**, open the **General** tab, then the **Editing** sub-tab. Check **Activate Block Editor for Events** and click **Save Changes**.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-5-9.jpg)
 
@@ -22,11 +22,11 @@ Once enabled, new events will open in the block editor with the default set of E
 
 If you’ve been using the classic editor and are switching to the block editor for events, it’s worth testing on a [staging site](https://docs.nexcess.com/software/the-events-calendar/creating-and-using-a-wordpress-staging-site/) first. A staging site is a copy of your live site where you can verify that your theme and other plugins behave as expected before making the change in production.
 
-The latest versions of The Events Calendar, Events Calendar Pro, Event Tickets, and Event Tickets Plus are all compatible with the block editor. What varies is how your theme and other plugins handle it — particularly page builder themes, which can behave differently. Our [Testing for Conflicts](https://docs.nexcess.com/software/the-events-calendar/testing-for-conflicts/) guide can help if you run into issues. If you want to keep using the classic editor for events, see [Using the Classic Editor to Manage Events](https://theeventscalendar.com/knowledgebase/k/using-the-classic-editor-to-manage-events/).
+The latest version of The Events Calendar is compatible with the block editor. What varies is how your theme and other plugins handle it — particularly page builder themes, which can behave differently. Our [Testing for Conflicts](https://docs.nexcess.com/software/the-events-calendar/testing-for-conflicts/) guide can help if you run into issues. If you want to keep using the classic editor for events, see [Using the Classic Editor to Manage Events](https://theeventscalendar.com/knowledgebase/k/using-the-classic-editor-to-manage-events/).
 
 ## Event Blocks
 
-The following blocks are added by The Events Calendar and Events Calendar Pro. You’ll find them in the block inserter under the **Events** section.
+You’ll find these blocks in the block inserter under the **Events** section.
 
 ![The Events section in the WordPress block inserter showing the available event blocks](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2018-12-04-at-8.27.24-PM-e1543984117727-249x300-1.jpg)
 
@@ -34,7 +34,7 @@ The following blocks are added by The Events Calendar and Events Calendar Pro. Y
 
 The Event Date Time block is required on every event — it’s where you set the date, time, and duration. Click the calendar to pick a date, use the time dropdowns, or type directly into the field at the top. Select **All Day** from the start time dropdown for all-day events. Toggle **multi-day** to set separate start and end dates.
 
-Events Calendar Pro users will see a **Repeat This Event** option in the block panel, which exposes all recurrence rule and exception settings for creating recurring events.
+Premium users will see a **Repeat This Event** option in the block panel, which exposes all recurrence rule and exception settings for creating recurring events.
 
 ![The Event Date Time block in the editor showing date and time fields](https://docs.nexcess.com/wp-content/uploads/2026/06/KB-The-Event-Date-Time-block.jpg)
 
@@ -72,9 +72,9 @@ The Event Website block creates a linked button pointing to an external event UR
 
 #### Event Sharing
 
-The Event Sharing block lets you position and customize the Google Calendar and iCal subscribe buttons. You can change the labels, hide one of the options, or remove the block entirely.
+The Event Sharing block adds an **Add to Calendar** dropdown to your event, with Google Calendar, iCalendar, Outlook 365 and Outlook Live options. You can move the block, edit the labels, turn each option on or off under **Share Settings** in the block sidebar, or remove the block entirely.
 
-![The Event Sharing block showing the Google Calendar and iCal button options](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-02-18-at-7.27.25-AM.jpg)
+![The Event Sharing block showing the Add to Calendar dropdown](https://docs.nexcess.com/wp-content/uploads/2026/11/12-event-sharing-block-1024x133.png)
 
 #### Event Categories
 
@@ -86,11 +86,11 @@ Event Categories assigned in the Document Settings sidebar can also be displayed
 
 Tags added in the Document Settings sidebar can be displayed in the event content using the Tags block.
 
-#### Related Events (Events Calendar Pro)
+#### Related Events (premium)
 
 The Related Events block displays up to three upcoming events that share the same categories or tags as the current event. If no matching upcoming events exist, nothing is displayed.
 
-#### Additional Fields Blocks (Events Calendar Pro)
+#### Additional Fields Blocks (premium)
 
 When you create custom Additional Fields under **Events → Settings → Additional Fields**, a corresponding block is automatically created for each field. The block takes the title you entered and gives event creators the configured input options.
 
@@ -98,9 +98,9 @@ When you create custom Additional Fields under **Events → Settings → Additio
 
 ![An example Additional Fields block showing a dropdown-type custom field](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2018-12-04-at-8.34.23-PM.jpg)
 
-#### Virtual Event (Events Calendar Pro)
+#### Virtual Event (premium)
 
-The Virtual Event block acts as a placeholder for virtual event content. Add it to the editor, fill in the virtual event details at the bottom of the page, then move the block to the position you want on the event layout.
+The Virtual Event block acts as a placeholder for virtual event content. Add it to the editor, then scroll to the **Virtual Event** box at the bottom of the page and click **Configure Virtual Event** to add the video or meeting link and other details. Then move the block to the position you want on the event layout.
 
 ![The Virtual Event placeholder block in the editor](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2021-10-05-at-2.41.17-PM.jpg)
 
@@ -126,11 +126,11 @@ Event Tickets adds its own set of blocks for managing ticket sales and RSVPs. Lo
 
 The Tickets block lets you create and manage tickets directly in the editor. You can create and edit individual tickets, reorder them, and monitor sales from the block. On the front end, visitors see a ticket form for purchasing and checkout.
 
-![The Tickets block in the editor showing the list of tickets and a sales summary](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-ticket-block-1024x554-1.jpg)
+![The Tickets block in the editor showing the list of tickets and a sales summary](https://docs.nexcess.com/wp-content/uploads/2026/11/21-tickets-block-1024x617.png)
 
-![The ticket editing panel within the Tickets block](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-ticket-block-edit-1024x725-1.jpg)
+![The ticket editing panel within the Tickets block](https://docs.nexcess.com/wp-content/uploads/2026/11/22-ticket-edit-form-608x1024.png)
 
-💡 Some features shown in these screenshots require Event Tickets Plus.
+💡 Some features shown in these screenshots require a premium license.
 
 #### RSVP
 
@@ -150,7 +150,7 @@ For more on creating and managing tickets, see [Making Tickets](https://docs.nex
 
 ## Adding Event Blocks to WordPress Pages and Posts
 
-With [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/) and [Events Calendar Pro](https://theeventscalendar.com/products/wordpress-events-calendar/), in addition to adding event blocks to your events using the Block Editor, you can also add any of our available [event blocks](https://docs.nexcess.com/software/the-events-calendar/events-block-editor/) to a WordPress page or post.
+In addition to adding event blocks to your events using the Block Editor, you can also add any of our available [event blocks](https://docs.nexcess.com/software/the-events-calendar/events-block-editor/) to a WordPress page or post.
 
 To add an event block to a WordPress page, head over to a new page in the Block Editor. Click on the + symbol and search for “event” to see all available event blocks. From there, click on your block of choice to see your event content embedded on your WordPress page.
 
@@ -158,9 +158,7 @@ To add an event block to a WordPress page, head over to a new page in the Block 
 
 ### Events List Block
 
-This Pro block is also available with the free The Events Calendar, though it contains limited options. With the Events List block, you’ll find a list of upcoming events. After adding it to your WordPress page, click on the block to change the display of the options that appear.
-
-o your WordPress page, click on the block to change the display of the options that appear.
+With the Events List block, you’ll find a list of upcoming events. After adding it to your WordPress page, click on the block to change the display of the options that appear. Note: some of these options are only available with a premium license.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-01-18-at-6.55.57-AM-1.jpg)The Events Calendar Events List Block
 
@@ -170,25 +168,25 @@ o your WordPress page, click on the block to change the display of the options t
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-01-18-at-7.01.21-AM-1.jpg)Events Calendar Pro Events List Block
 
-### Mini Calendar Block
+### Mini Calendar Block (premium)
 
-lock for Events Calendar Pro displays a Month View calendar on any WordPress page or post. You’ll find additional options to configure the display of the calendar by clicking on the Mini Calendar block in the Block Editor.
+This block displays a Month View calendar on any WordPress page or post. You’ll find additional options to configure the display of the calendar by clicking on the Mini Calendar block in the Block Editor.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-01-18-at-7.02.43-AM-1.jpg)
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-01-18-at-7.09.39-AM-1.jpg)
 
-### Featured Venue Block
+### Featured Venue Block (premium)
 
-With this Events Calendar Pro block, you can select a venue to display upcoming events for. Click on the block to choose the venue to feature, along with other options.
+With this block, you can select a venue to display upcoming events for. Click on the block to choose the venue to feature, along with other options.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-01-18-at-7.07.15-AM-1.jpg)
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-01-14-at-12.29.31-PM-1.jpg)
 
-### Event Countdown Block
+### Event Countdown Block (premium)
 
-This Pro block displays a countdown until the event of your choice occurs. After selecting the block, you can click on it to choose a countdown for the next upcoming event or choose your specific event from the dropdown menu.
+This block displays a countdown until the event of your choice occurs. After selecting the block, you can click on it to choose a countdown for the next upcoming event or choose your specific event from the dropdown menu.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-01-14-at-12.36.01-PM-1.jpg)
 

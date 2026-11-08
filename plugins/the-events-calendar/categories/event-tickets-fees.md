@@ -10,7 +10,7 @@
 
 ## Why Use Fees?
 
-When selling tickets to events, you may want to cover processing costs, venue fees, or other expenses without adjusting the base ticket price. The new**Fees** feature in **Event Tickets** allows you to automatically apply **percentage-based** or **flat-rate fees** to ticket purchases. This feature provides flexibility in how fees are structured, ensuring you can recover costs while maintaining clear and transparent pricing for attendees.
+When selling tickets to events, you may want to cover processing costs, venue fees, or other expenses without adjusting the base ticket price. The**fees** feature in **Event Tickets** allows you to automatically apply **percentage-based** or **flat-rate fees** to ticket purchases. This feature provides flexibility in how fees are structured, ensuring you can recover costs while maintaining clear and transparent pricing for attendees.
 
 👋 Note: This feature currently only works with Tickets Commerce.
 
@@ -34,13 +34,13 @@ Once there, you will be met with the following screen:
 
 ## How to Apply Fees to Events and Tickets
 
-The **Fees**feature currently only works with Tickets Commerce, and does not yet support other ecommerce solutions like WooCommerce, so be sure to set up Tickets Commerce from **Tickets > Settings > Payments** in order to use it.
+The **Fees**feature currently only works with Tickets Commerce, and does not yet support WooCommerce, so be sure to set up Tickets Commerce from **Tickets > Settings > Payments** in order to use it.
 
 Once you’ve created fees, go to **Events > Add New** and create a new event. Then, when adding a ticket you will see the **Ticket Fees**section:
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-23-1024x984-1.jpg)Classic Editor
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/03-classic-ticket-fees-852x1024.png)Classic Editor
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-26-613x1024-1.jpg)Gutenberg Editor
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/04-block-ticket-fees-652x1024.png)Gutenberg Editor
 
 Here you can see the “**Processing Fee**” which is a fee added to “**All Tickets**“, so it is automatically added.
 
@@ -55,8 +55,6 @@ Additionally, you have an option to select fees that were configured to be set *
 Once a ticket with a fee has been selected to be purchased, customers will get an itemized list of the fees during checkout:
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-25-1024x428-1.jpg)
-
-If you should get stuck or need any further help, please don’t hesitate to post to [our help desk](https://support.theeventscalendar.com/submit_ticket) and let us know.
 
 ---
 

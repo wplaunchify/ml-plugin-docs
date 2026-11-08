@@ -2,8 +2,8 @@
   "plugin_slug": "the-events-calendar",
   "plugin_name": "The Events Calendar",
   "documentation_url": "https://docs.nexcess.com/software/the-events-calendar/",
-  "last_scraped": "2026-11-01T06:24:59.438Z",
-  "total_pages": 300,
+  "last_scraped": "2026-11-08T06:23:47.306Z",
+  "total_pages": 292,
   "failed_urls_count": 2,
   "sections": [
     {
@@ -1281,19 +1281,6 @@
       ]
     },
     {
-      "title": "Downgrading Wordpress",
-      "slug": "downgrading-wordpress",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/downgrading-wordpress/",
-      "file": "categories/downgrading-wordpress.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Downgrading WordPress",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/downgrading-wordpress/"
-        }
-      ]
-    },
-    {
       "title": "Duplicate Events",
       "slug": "duplicate-events",
       "url": "https://docs.nexcess.com/software/the-events-calendar/duplicate-events/",
@@ -1918,19 +1905,6 @@
       ]
     },
     {
-      "title": "Finding And Inputting Your License Key",
-      "slug": "finding-and-inputting-your-license-key",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/finding-and-inputting-your-license-key/",
-      "file": "categories/finding-and-inputting-your-license-key.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Finding and Inputting Your License Key",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/finding-and-inputting-your-license-key/"
-        }
-      ]
-    },
-    {
       "title": "Fix 404 Errors",
       "slug": "fix-404-errors",
       "url": "https://docs.nexcess.com/software/the-events-calendar/fix-404-errors/",
@@ -1953,19 +1927,6 @@
         {
           "title": "Troubleshooting CORS and Mixed Content Errors with The Events Calendar",
           "url": "https://docs.nexcess.com/software/the-events-calendar/fix-content-errors/"
-        }
-      ]
-    },
-    {
-      "title": "Fixing The Please Install Or Upgrade Warning For Events Calendar Pro Or Event Tickets Plus",
-      "slug": "fixing-the-please-install-or-upgrade-warning-for-events-calendar-pro-or-event-tickets-plus",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/fixing-the-please-install-or-upgrade-warning-for-events-calendar-pro-or-event-tickets-plus/",
-      "file": "categories/fixing-the-please-install-or-upgrade-warning-for-events-calendar-pro-or-event-tickets-plus.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Fixing the “Please Install or Upgrade” Warning for Events Calendar Pro or Event Tickets Plus",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/fixing-the-please-install-or-upgrade-warning-for-events-calendar-pro-or-event-tickets-plus/"
         }
       ]
     },
@@ -2295,19 +2256,6 @@
       ]
     },
     {
-      "title": "Licenses For Multisites",
-      "slug": "licenses-for-multisites",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/licenses-for-multisites/",
-      "file": "categories/licenses-for-multisites.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Multisite Licenses",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/licenses-for-multisites/"
-        }
-      ]
-    },
-    {
       "title": "Loco Translate",
       "slug": "loco-translate",
       "url": "https://docs.nexcess.com/software/the-events-calendar/loco-translate/",
@@ -2369,19 +2317,6 @@
         {
           "title": "Moving Event Tickets and Attendees",
           "url": "https://docs.nexcess.com/software/the-events-calendar/move-tickets-attendees/"
-        }
-      ]
-    },
-    {
-      "title": "Moving Your License Key",
-      "slug": "moving-your-license-key",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/moving-your-license-key/",
-      "file": "categories/moving-your-license-key.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Moving a License Key From One Site to Another",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/moving-your-license-key/"
         }
       ]
     },
@@ -2581,19 +2516,6 @@
       ]
     },
     {
-      "title": "Promoter License Key Is Invalid",
-      "slug": "promoter-license-key-is-invalid",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-license-key-is-invalid/",
-      "file": "categories/promoter-license-key-is-invalid.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Promoter License Key is Invalid",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-license-key-is-invalid/"
-        }
-      ]
-    },
-    {
       "title": "Promoter Messages",
       "slug": "promoter-messages",
       "url": "https://docs.nexcess.com/software/the-events-calendar/promoter-messages/",
@@ -2746,19 +2668,6 @@
         {
           "title": "Uploading Unsupported File Types",
           "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-sorry-you-are-not-allowed-to-upload-this-file-type/"
-        }
-      ]
-    },
-    {
-      "title": "Resolved Your License Validation Request Is Missing A Valid Domain",
-      "slug": "resolved-your-license-validation-request-is-missing-a-valid-domain",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-your-license-validation-request-is-missing-a-valid-domain/",
-      "file": "categories/resolved-your-license-validation-request-is-missing-a-valid-domain.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "Resolved: Your license validation request is missing a valid domain",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/resolved-your-license-validation-request-is-missing-a-valid-domain/"
         }
       ]
     },
@@ -3604,19 +3513,6 @@
         {
           "title": "Common Installation Issues",
           "url": "https://docs.nexcess.com/software/the-events-calendar/troubleshooting-the-most-common-installation-issues/"
-        }
-      ]
-    },
-    {
-      "title": "Upgrade To Pro Message Appears Despite Having A Valid License",
-      "slug": "upgrade-to-pro-message-appears-despite-having-a-valid-license",
-      "url": "https://docs.nexcess.com/software/the-events-calendar/upgrade-to-pro-message-appears-despite-having-a-valid-license/",
-      "file": "categories/upgrade-to-pro-message-appears-despite-having-a-valid-license.md",
-      "page_count": 1,
-      "pages": [
-        {
-          "title": "The Events Calendar “Upgrade to Pro” Message Appears Despite Having a Valid License",
-          "url": "https://docs.nexcess.com/software/the-events-calendar/upgrade-to-pro-message-appears-despite-having-a-valid-license/"
         }
       ]
     },

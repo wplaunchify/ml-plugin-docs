@@ -41,6 +41,18 @@ When exporting, customize the file to include the relevant [custom fields](https
 
 Import in this order: venues and organizers first, then events, then tickets (if applicable).
 
+You can also use the plugin’s core export feature to generate a 
+```
+.ics
+```
+
+ file and convert it to CSV using a third-party tool. However, converting 
+```
+.ics
+```
+
+ files can lead to formatting issues and the loss of custom event metadata. For a reliable, complete export, using a dedicated export plugin such as **WP All Export** remains the recommended method.
+
 💡 Always make a backup before importing, or test the import on a [staging site](https://docs.nexcess.com/software/the-events-calendar/creating-and-using-a-wordpress-staging-site/) first.
 
 ## Sharing Events Between Sites (Ongoing)

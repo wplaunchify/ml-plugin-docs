@@ -16,53 +16,53 @@ Ticket presets are designed to save you time when managing multiple events with 
 
 ## How to Create Ticket Presets
 
-In your WordPress dashboard, head to **Tickets → All Tickets →** Tickets Presets, where you will find all your Ticket Presets. If you don’t have any, you can add them by clicking on “Add New”.
+In your WordPress dashboard, head to **Tickets → All Tickets →** Ticket Presets, where you will find all your Ticket Presets. If you don’t have any, you can add them by clicking on “Add New”.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-5-1024x171-1.jpg)
 
 Once you click on “Add New”, you will see the preset creation screen.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/1-1.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/02-add-new-ticket-preset.png)
 
-A slight difference from regular ticket creation is the **Start Sale** and **End Sale**options.
+A slight difference from regular ticket creation is that the **Start Sales** and **End Sales** options of a preset don’t include **On a specific date**.
 
-For the Start Sale Date, you can choose to begin ticket sales immediately or on a relative date.
+For **Start Sales**, you can choose to begin ticket sales now or on a relative date.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-1-7.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/03-start-sales-options.png)
 
-If you set the sale start to **Immediately**, it will use the current time as the start time.
+If you set the sale start to **Now**, it will use the current time as the start time.
 
-If you choose **On a relative date** option, you’ll be able to set the sale to start a certain number of hours, days, or weeks before the event starts or ends.
+If you choose **On a relative date** option, you’ll be able to set the sale to start a certain number of minutes, hours, days, or weeks before the event starts or ends.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-3-4.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/04-start-sales-relative.png)
 
-For the End Sale Date, you can choose to end the sale when the event starts or on a relative date.
+For **End Sales**, you can choose to end the sale when the event starts or on a relative date.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-2-5.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/05-end-sales-options.png)
 
-If you select the **When event starts** option, the sale will end at the event’s start time.
+If you select the **When the event starts** option, the sale will end at the event’s start time.
 
-Alternatively, choosing**On a relative date** lets you set the sale to start a specific number of hours, days, or weeks before the event begins or ends.
+Alternatively, choosing**On a relative date** lets you set the sale to end a specific number of minutes, hours, days, or weeks before the event begins or ends.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-4-5.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/06-end-sales-relative.png)
 
 Just like with regular tickets, you can select a default method for handling attendee information. After making your selection, click “Save Preset” to apply it.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-7-3.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/07-attendee-collection.png)
 
 ## A second way to create a Ticket Preset
 
 A Ticket Preset can be created from a new Ticket when it is created.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/NewTicket.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/08-new-ticket-form.png)
 
 Once a new Ticket is created and saved, a “Save as preset” option will be displayed when you edit the Ticket.
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/07/SaveasPreset-2025-06-12-at-5.12.34-PM.PNG-Explorador-de-archivos.jpeg)
 
-If we check this option and save the ticket, a dialog box will be shown to us to specify the Ticket Preset Name, and the Start and End Date method, the same as when we created it from the **Tickets → All Tickets →** Tickets Presets section.
+If we check this option and save the ticket, a dialog box will be shown to us to specify the Ticket Preset Name, and the Start and End Date method, the same as when we created it from the **Tickets → All Tickets →** Ticket Presets section.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/NewTicketPresetSave.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/10-new-ticket-preset-dialog.png)
 
 Please note that this method to **create a Ticket Preset** from a new Ticket only works when we use the **Classic Editor** and we set the **Capacity for this Ticket only**. (If the Ticket is created with a shared capacity, cannot be saved as a Ticket Preset)
 
@@ -72,7 +72,7 @@ Please note that this method to **create a Ticket Preset** from a new Ticket onl
 
 To get started, click on ‘New Ticket’ as you normally would. You’ll then see a screen where you can either select one of your previously created presets or create a brand-new ticket for this event.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-9-1.jpg)
+![](https://docs.nexcess.com/wp-content/uploads/2026/11/11-tickets-box.png)
 
 ![](https://docs.nexcess.com/wp-content/uploads/2026/06/image-10-2.jpg)
 

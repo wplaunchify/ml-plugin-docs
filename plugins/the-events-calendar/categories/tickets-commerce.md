@@ -18,6 +18,12 @@ The first thing you’ll want to do is head over to **Tickets > Settings > Payme
 
 Next, you can integrate PayPal, Stripe, or Square as your preferred payment gateways.
 
+RSVP Migration
+
+				
+
+For sites that have completed the [RSVP Migration](https://docs.nexcess.com/software/the-events-calendar/rsvp-migration/) (introduced in Event Tickets 5.30.0), **Tickets Commerce is enabled by default** to power RSVP functionality, and the toggle to disable it has been removed.
+
 ## Connecting to PayPal
 
 1. Go to **Tickets > Settings > Payments**. Click the **Connect to PayPal** button.

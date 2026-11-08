@@ -8,144 +8,219 @@
 
 **Source:** [https://docs.nexcess.com/software/the-events-calendar/create-tickets/](https://docs.nexcess.com/software/the-events-calendar/create-tickets/)
 
-Creating tickets with Event Tickets and Event Tickets Plus is easy and fast. This page walks you through the process of making tickets for your site’s posts, pages, or events. Before getting started, make sure you [review your settings](https://docs.nexcess.com/software/the-events-calendar/event-tickets-settings/). The article is divided up into two main parts:
+Tickets let visitors buy a spot at your event, or access to any other post or page on your site. This article shows you how to create and edit a ticket, and how to set capacity, share capacity between tickets, add a sale price, choose when tickets are on sale, and collect attendee details.
 
-1. **Setting up basic tickets**– creating basic tickets with a specific or unlimited capacity
-2. **Shared Capacity**– creating two or more tickets that pull from a shared capacity for the event
+## Where tickets live in the editor
 
-You can get a quick overview of using Block Editor with Tickets in [An Introduction to Tickets Blocks](https://docs.nexcess.com/software/the-events-calendar/events-block-editor/#h-ticket-and-rsvp-blocks).
+You can add tickets to events, or to any post type enabled in **Ticket Settings** ([see ticket settings](https://docs.nexcess.com/software/the-events-calendar/event-tickets-settings/#h-general-settings)). The Ticket Settings control which post types can have tickets. In the Classic Editor, you’ll find the Tickets metabox below the main content.
 
-With Event Tickets and Events Calendar Pro you can also create a pass ticket that gives attendees access to an event [Series](https://docs.nexcess.com/software/the-events-calendar/event-series/) (a group of multiple events). Find out more about this amazing new ticket type, [Series Passes](https://google.com).
+![The Tickets metabox below the content in the Classic Editor, with a New ticket button](https://docs.nexcess.com/wp-content/uploads/2025/10/Screenshot-2026-10-20-at-12.26.56-PM-1024x150.png)Classic Editor Tickets metabox
 
-## Setting Up Basic Tickets
+In the Block Editor, default Ticket and RSVP blocks may appear when you create an event. You can also add Ticket and RSVP blocks to the main content of any post type. For a quick tour, see [An Introduction to Tickets Blocks](https://docs.nexcess.com/software/the-events-calendar/events-block-editor/#h-ticket-and-rsvp-blocks).
 
-Tickets can be added to posts, pages, or events. In the Classic Editor, you will find the *Tickets meta box b*elow the main content of the post type*:*
+## Create your first ticket
 
-![](https://docs.nexcess.com/wp-content/uploads/2025/10/Screenshot-2026-10-20-at-12.26.56-PM.png)Classic Editor Tickets metabox
+These steps cover the essentials. Where a step has further options, it links to a detailed section later in this article.
 
-In the Block Editor, default Ticket blocks or RSVP blocks may appear if you are creating an event.  You can also add Ticket and RSVP blocks to the main content of any post type.
+1. Open the event, post, or page where you want to sell tickets.
+2. Find the Tickets metabox (Classic Editor) or Tickets block (Block Editor), then click **+ New ticket**. The ticket form opens.
+3. Enter a name for the ticket, such as Standard, Adult, or Concession.
+4. Optional: add a description with anything buyers should know, such as “bring waterproof jackets” or “not recommended for children”.
+5. Enter the price. Leave it blank for a free ticket. To discount the price for a limited time, see [Add a sale price](#h-add-a-sale-price).
+6. Choose how many tickets are available. For details, see [Set capacity](#h-set-capacity).
+7. Set when sales start and end. By default, sales start Now and end When the event starts. See [Choose when tickets are on sale](#h-choose-when-tickets-are-on-sale).
+8. You can also collect details about each attendee. See [Collect attendee information](#h-collect-attendee-information).
+9. Save the ticket.
 
-We’ll create a basic ticket with a capacity for this ticket only for this example. (Using a shared capacity for two or more tickets is discussed in another [section below](#global-stock).)
+![Classic Editor Add New Ticket form with fields for name, description, start and end sales, price, sale price, and capacity](https://docs.nexcess.com/wp-content/uploads/2026/11/02-classic-new-ticket-form-957x1024.png)Classic Editor: Add New Ticket
 
-When clicking on the **+ New ticket** button you will be presented with some additional options:
+![Block Editor new ticket form with ticket name, price, capacity, sale duration, and attendee collection](https://docs.nexcess.com/wp-content/uploads/2026/11/03-block-new-ticket-form-1024x838.png)Block Editor: Add New Ticket
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2023-12-20-at-14-40-51-Add-New-Event-‹-Test-Flexible-Tickets-—-WordPress.jpg)Classic Editor: Add New Ticket
+## Set capacity
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-06-41.jpg)Block Editor: Add New Ticket
+Capacity is how many tickets you can sell. If your event has a limited number of spots, set it so you never oversell.
 
-When creating tickets with [Tickets Commerce](https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/), you will also have the option to add a sale price, and the dates for the sale price.
+### Set capacity for a ticket
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/tickets-commerce-sale-price-1024x794-1.jpg)Adding a sale price of $20 for Tickets Commerce tickets.
+If you use the free Event Tickets plugin without a premium license, enter the number of tickets available in the ticket’s **Capacity** field. Leave it blank for no limit.
 
-In addition to the basic options outlined in the section above, you’ll see the [Capacity](https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/)options.
+With a premium license, the field becomes a **Ticket Capacity** setting with three options:
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-16-45.jpg)Classic Editor: Ticket Capacity
+- **Share capacity with other tickets**: this ticket draws from a pool shared with your event’s other tickets. See [Share capacity between tickets](#h-share-capacity-between-tickets).
+- **Set capacity for this ticket only**: this ticket has its own number of spots.
+- **Unlimited capacity**: buyers can purchase as many as they like.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-21-17.jpg)Block Editor: Ticket Capacity
+![Classic Editor capacity options: share capacity with other tickets, capacity for this ticket only, and unlimited capacity](https://docs.nexcess.com/wp-content/uploads/2026/11/05-classic-capacity-options.png)Classic Editor: Ticket Capacity
 
-If you want your ticket to share the capacity for your event but also impose a sales limit on it (for example, if you want to only allow up to 50 children at your event out of your shared capacity of 100 attendees) you can *Sell up to*a certain number of tickets*.*
+![Block Editor Ticket Capacity dropdown set to share capacity, with a limit sales of this ticket to field](https://docs.nexcess.com/wp-content/uploads/2026/11/06-block-edit-ticket-limit-sales-1024x123.png)Block Editor: Ticket Capacity
 
-Clicking on *Advanced* will show the following additional field.
+### Share capacity between tickets
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/Screenshot-2023-12-20-at-15-14-31-Add-New-Event-‹-Test-Flexible-Tickets-—-WordPress.jpg)Classic Editor: Event Tickets Plus Advanced Options
+Shared capacity lets several tickets come out of one pool of stock. Say your venue has 100 seats and you sell three ticket types: children, adults, and seniors. If you set each ticket’s capacity to 100, you could sell more than 100 tickets in total and run out of seats. Instead, set a shared capacity of 100 for the event. Attendees can buy any of the three tickets, but no more than 100 tickets sell in total.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-ticket-etp-1024x834-1.jpg)Block Editor: Event Tickets Plus Advanced Options
+To set it up:
 
-Many of the fields in the tickets meta box are self-explanatory, but let’s run through each just to be sure.
+1. On each ticket, choose **Share capacity with other tickets**.
+2. Enter your event’s total in **Set shared capacity**. In the example above, that’s 100.
+3. Optional: to cap how many of one ticket can sell, fill in **Sell up to** (Classic Editor) or **Limit sales of this ticket to** (Block Editor). For example, allow at most 50 children’s tickets out of your 100.
 
-- **Name**lets you set a unique name for the ticket – which might be something like *Standard, Adult, Concession, etc.*
-- **Price**controls the price of each ticket. If the tickets are not going to be sold – but rather you are going to give them away for free – you can leave this field blank or set it to *0.*
-- **Sale Price**: This option is only available if you’re using Tickets Commerce
-- **Capacity**is the number of tickets that are available: if you leave this blank it is assumed that there is no limit and customers can buy as many as they would like. If you have a limited number of spots for your event, you’ll want to make sure to set this accordingly.
+You can also change the shared total later. Click **Settings** in the Tickets metabox, then edit **Shared Capacity**. The panel also shows Independent Capacity and Total Capacity.
 
-Advanced:
+![Classic Editor Ticket Settings panel showing Shared Capacity, Independent Capacity, and Total Capacity](https://docs.nexcess.com/wp-content/uploads/2026/11/13-classic-ticket-settings-1024x460.png)Classic Editor: Ticket Settings
 
-- **Ticket description** is optional, but it’s a good space to add any information customers might be interested in, such as *bring waterproof jackets* or *not recommended for children.*You can choose to show or not in the front-end ticket form.
-- **Start sale** dictates when the tickets are available for sale. If you’re making tickets on a post or page, this field is required. If you are making tickets for an event, you don’t need to set this field – by default, sales will start when you publish the event or ticket.
-- **End sale** does the reverse – you can set this to a date after which the tickets should no longer be available for customers to buy. As with the start sale field, setting this is optional for events and the default is to stop sales when the event itself starts.
-- **SKU**lets you set a unique code to help identify the tickets. This is another optional field and is of most use to merchants with an existing stock-keeping unit system.
+![Block Editor Ticket Settings panel showing shared capacity, independent capacity, and total capacity](https://docs.nexcess.com/wp-content/uploads/2026/11/14-block-ticket-settings-1024x541.png)Block Editor: Ticket Settings
 
-By default, the name and contact information of the person buying the tickets is collected during the purchase process. If you want to collect additional information (such as names of all attendees, t-shirt sizes, etc.) then you can implement the [Attendee Information feature](https://docs.nexcess.com/software/the-events-calendar/attendee-registration/) (Available only with Tickets Plus) by clicking + **Attendee Information**. This feature is explored in [another article](https://docs.nexcess.com/software/the-events-calendar/attendee-registration/), and this walkthrough assumes that you do not need to collect additional information.
+As tickets sell, the remaining stock drops for every ticket that shares it.
 
-As soon as you’re ready, simply click on **Save/Update Ticket** and you’re done … and never fear, if you make a mistake you can correct it by clicking on the edit link (pencil icon) later on:
+For more on how capacity and remaining stock are calculated, see [How Event Tickets Are Calculated](https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/).
 
-![Classic Editor: Edit tickets](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2022-05-09-at-9.33.32-AM.jpg)Classic Editor: Edit Tickets
+## Choose when tickets are on sale
 
-If you’d like to delete a ticket when using the Classic Editor, simply click on the trash icon located below the pencil icon on the right side of your ticket.
+### Set the sales window
 
-You can duplicate a ticket when using the Classic Editor by clicking on the middle rectangle button. This will prompt a copy of the ticket to appear directly below the one you’ve duplicated.
+**Start Sales** sets when tickets become available and **End Sales** sets when they stop. For tickets on an event, the defaults are Now and When the event starts. Change them if you want sales to open later or close earlier. For tickets on a post or page, you must set a start date. You can pick a calendar date and time, or choose a date relative to the event.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/2024-02-14_20-12-49.jpg)Block Editor: Edit Tickets
+### Relative sales dates
 
-As your tickets start to sell, the stock for all tickets in global stock will decrease accordingly.
+Instead of picking a calendar date, you can tie the start or end of ticket sales to the event’s start time. For example, start sales 2 weeks before the event starts.
 
-Next up we recommend that you learn about [managing ticket orders and attendees](https://docs.nexcess.com/software/the-events-calendar/ticket-orders/) as well as reviewing [How Event Tickets are Calculated](https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/). If you have any further questions please don’t hesitate to connect with the team via our help desk.
+1. Open the **Start Sales** or **End Sales** dropdown.
+2. Choose **On a relative date**.
+3. Enter a number and choose a unit of time. For example, 2 weeks sets the date to 2 weeks before the event starts.
 
-See [Common Stock Issues](https://docs.nexcess.com/software/the-events-calendar/troubleshoot-tickets-purchases/#h-ticket-stock-issues-with-cart-abandonment) for help troubleshooting.
+## Add a sale price
 
-### Note
+A sale price is a special lower price for a set period during the ticket sale window. It’s only available when you sell tickets with [Tickets Commerce](https://docs.nexcess.com/software/the-events-calendar/tickets-commerce/).
 
-If the tickets **are for sale but just sold out**, then the form will still show. But purchasing tickets won’t be possible, and there will be an “Out of Stock!” message as shown in [this screenshot](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2016-06-01-at-3.46.09-PM.jpg).
+To add one:
 
-What about if the tickets are not sold out but are only going to be sold between certain dates, and a website visitor views the event page outside of that time window? **In this case, the ticket form will not show up at all.** A simple “Tickets are not yet available”-type message will be displayed instead, as shown in [this screenshot](https://docs.nexcess.com/wp-content/uploads/2026/06/Screen-Shot-2016-06-01-at-3.37.16-PM.jpg).
+1. Enter the regular price.
+2. Check **Add Sale Price**.
+3. Enter the **Sale Price**.
+4. Set the window when the sale price applies, using **Sale Starts** and **Sale Ends**. This is separate from the ticket’s own sales window (**Start Sales** and **End Sales**), and the sale price can only apply while tickets are on sale. Pick **Now** to start right away, or **On a relative date** to tie a date to the event, such as 1 week before the event starts. The form shows how long the sale lasts, for example “Tickets on sale for 25 days”.
 
-## Event Ticket Types
+![Ticket price of 65 with a sale price of 55 that ends on a relative date, 1 week before the event starts](https://docs.nexcess.com/wp-content/uploads/2026/11/04-classic-sale-price-1024x581.png)Adding a sale price of $55 to a $65 ticket. The sale ends 1 week before the event starts.
 
-Different ticket types allow you the flexibility to sell tickets to various kinds of events. Users with Event Tickets have access to one ticket type: standard ticket. If you also have Events Calendar Pro, you can also use the [Series Pass](https://evnt.is/-series-passes) ticket type.
+Don’t see the sale price option? Check the **Payment provider** under [Event-level ticket settings](#h-event-level-ticket-settings).
 
-### Standard Tickets
+## Collect attendee information
 
-Standard tickets are the default option for single events, posts, or pages, granting access to one specific date and time. They can be created directly within the WordPress editor and are ideal for most standalone occurrences. While these support **Assigned Seating** for venue-specific layouts, please note that they cannot currently be added to recurring events.
+By default, checkout collects only the buyer’s name and contact details. Two premium features let you collect more: details for each attendee, and custom questions.
+
+### Collect details for each attendee
+
+When someone buys several tickets at once, **Attendee Collection** lets you record a name and email for each ticket, not just for the buyer. In the ticket form, choose one of three options:
+
+- **No Individual Attendee Collection** (the default): every ticket uses the buyer’s name and email, and the buyer gets one email containing all their tickets.
+- **Allow Individual Attendee Collection**: the buyer can keep themselves as the attendee or enter someone else’s details.
+- **Require Individual Attendee Collection**: the buyer must enter a unique name and email for every ticket before checkout. Each attendee gets their own ticket email.
+
+To change the default for new tickets, go to **Tickets › Settings › Attendee Registration**.
+
+### Build a custom form
+
+Attendee Information lets you build a custom form to collect extra details from attendees, such as t-shirt sizes. Add the fields you need to a ticket, save them as a fieldset to reuse on other tickets, and review the responses from the event’s Attendees screen. For field types, managing saved fieldsets, and more, see [Using Attendee Registration Forms with Event Tickets](https://docs.nexcess.com/software/the-events-calendar/attendee-registration/).
+
+## Edit, duplicate, or delete a ticket
+
+Each ticket in the Tickets metabox has options to edit, duplicate, or delete it.
+
+![Classic Editor Tickets metabox listing three tickets with edit, duplicate, and delete icons, plus Purchase Rules and Settings buttons](https://docs.nexcess.com/wp-content/uploads/2026/11/09-classic-ticket-list-1024x487.png)Classic Editor: Edit Tickets
+
+- Edit: open the ticket, change what you need, and save.
+- Duplicate: makes a copy of the ticket directly below the original.
+- Delete: removes the ticket. Deleting a ticket does not delete its existing attendees or orders.
+
+In the Block Editor, select a ticket to open its form. Click **Update Ticket** to save changes, or use **Remove Ticket** to delete it. **Move Ticket** moves it to another event or post. See [Moving Event Tickets and Attendees](https://docs.nexcess.com/software/the-events-calendar/move-tickets-attendees/).
+
+![Block Editor ticket form with Remove Ticket, Move Ticket, Cancel, and Update Ticket buttons](https://docs.nexcess.com/wp-content/uploads/2026/11/10-block-editor-ticket-1024x983.png)Block Editor: Edit Tickets
+
+## View attendees and orders
+
+After tickets start selling, you can see who bought them and manage each order. The Tickets metabox has **View Attendees** and **View Orders** links. You can also reach an event’s attendees and orders from **Events** by hovering over the event and clicking **Attendees** or **Orders**. To see all attendees for all events in one list, go to **Tickets › Attendees**.
+
+For how orders are completed, order statuses, refunds, and resending confirmations, see [Managing Ticket Orders and Attendees](https://docs.nexcess.com/software/the-events-calendar/ticket-orders/).
+
+## Purchase rules
+
+Purchase rules are a premium feature that automatically controls how tickets can be bought, such as offering discounts, setting limits or minimums, restricting by user role, or requiring certain ticket combinations. They work only when you sell tickets with Tickets Commerce. Create and manage them under **Tickets › Purchase Rules**, or use the **Purchase Rules** button in the Tickets metabox.
+
+To set one up, see [Using Purchase Rules for Event Tickets](https://docs.nexcess.com/software/the-events-calendar/purchase-rules/).
+
+## What buyers see
+
+If a ticket is for sale but sold out, the ticket form still shows. Buyers can’t purchase it, and it’s marked “Sold Out” with 0 available. With the premium waitlist feature, buyers can leave their details and get an email with a purchase link when a spot opens. See [Creating Waitlists for Event Tickets](https://docs.nexcess.com/software/the-events-calendar/attendee-waitlist/).
+
+![Front-end ticket form with a Workshop Seat marked Sold Out, 0 available, and a disabled Get Tickets button](https://docs.nexcess.com/wp-content/uploads/2026/11/11-frontend-sold-out-1024x429.png)A sold out ticket on an event page.
+
+If tickets aren’t sold out but a visitor views the event page outside the sales dates, the ticket form doesn’t show at all. A short message appears instead, such as “Tickets will be available on December 1, 2026”.
+
+![Front-end Tickets box that reads Tickets will be available on December 1, 2026](https://docs.nexcess.com/wp-content/uploads/2026/11/12-frontend-not-yet-available-1024x273.png)A ticket box before sales open.
+
+## Ticket types
+
+Different ticket types let you sell tickets to different kinds of events. Standard tickets are included. The Series Pass type is a premium feature.
+
+### Standard tickets
+
+Standard tickets are the default for single events, posts, or pages. They give access to one specific date and time, and you create them in the WordPress editor. They support [assigned seating](#h-assigned-seating). They can’t currently be added to recurring events.
 
 ### Series Passes
 
-Available with **Events Calendar Pro**, a Series Pass grants access to *all* events within a specific Series, including both single and recurring events. These are managed from the Series admin page and can be purchased from the main Series page or any individual event included in that Series. Unlike standard tickets, Series Passes do not support Assigned Seating.
+Available as a premium feature, a Series Pass gives access to all events in a [Series](https://docs.nexcess.com/software/the-events-calendar/event-series/), including single and recurring events. You manage them from the Series admin page, and buyers can purchase one from the Series page or from any event in the Series. Series Passes work well for multi-day events, events with several venues or stages, or any time you want to upsell attendees to more events. They don’t support assigned seating. Learn more in [Creating Series Pass Tickets](https://docs.nexcess.com/software/the-events-calendar/series-passes/).
 
-Series Passes can be purchased from the Series page and from any event in that Series. Series Passes are perfect for multi-day events, events with multiple venues or stages, or any time you want to up-sell attendees to more events.
+## Event-level ticket settings
 
-Ready to get started with Series Passes? Learn more in [this article](https://docs.nexcess.com/software/the-events-calendar/series-passes/).
+### Choose the payment provider
 
-## Shared Capacity
+The **Payment provider** option sets which ecommerce provider handles ticket sales for an event. If you use WooCommerce, it lets you choose the provider that handles ticket creation, checkout, and order management for that specific event. In the Block Editor, these options are in the block sidebar.
 
-The shared capacity feature allows you to create multiple tickets that all come out of one pool of stock. For example, say you have a venue that has 100 seats, and you are selling three different priced tickets for children, adults, and seniors. If you listed the capacity of each ticket at 100, you might accidentally sell over 100 total tickets and run out of seats. Instead, you can set a *Shared Capacity* of 100 for the event. Your attendees can choose to buy any of the three tickets, but only up to 100 individual ticket sales.
+![Payment provider setting with Tickets Commerce selected and WooCommerce as the other option](https://docs.nexcess.com/wp-content/uploads/2026/11/15-payment-provider-setting.png)The Payment provider setting in Ticket Settings.
 
-To enable the shared capacity for your event, click the **Settings**button in the tickets meta box. A field will appear for *Shared Capacity*. Edit that number to your event capacity. In the example described above, that number would be 100.
+An event can use only one payment provider, so the setting locks as soon as you add the event’s first ticket. To switch providers, delete all of the event’s existing tickets first.
 
-![Ticket Settings for an event](https://docs.nexcess.com/wp-content/uploads/2026/06/TER-Ticket-Settings.jpg)Classic Editor: Ticket Settings
+The setting also appears locked if the event belongs to a Series that has a Series Pass. An event must use the same provider as its Series.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-ticket-settings.jpg)Block Editor: Ticket Settings
+### Show who’s attending
 
-## Ticket Settings
+To display the Gravatar of each attendee who buys a ticket on the event page, use the setting for your editor. In the Classic Editor, check **Show attendees list on Event page**. In the Block Editor, the event page shows attendees only if you add the **Attendees** block to the event.
 
-The **Sell tickets using** option provides control over which ecommerce provider is used to manage ticket sales for an event. If you use WooCommerce, this button allows you to specify the provider that will handle ticket creation, checkout, and order management for that specific event.
+![Classic Editor Ticket Settings with the Show attendees list on Event page checkbox](https://docs.nexcess.com/wp-content/uploads/2026/11/13-classic-ticket-settings-1024x460.png)Classic Editor: Show attendees list
 
-![](https://docs.nexcess.com/wp-content/uploads/2025/10/Screenshot-2026-10-20-at-12.33.24-PM-1024x198.png)
+![Block inserter search for tickets, showing the Tickets, RSVP, and Attendee List blocks](https://docs.nexcess.com/wp-content/uploads/2026/11/16-block-inserter-tickets.png)Block Editor: Add attendees block
 
-When using the Block Editor, the available options are in the block sidebar.
+![The Attendees block in the Block Editor](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-attendees-1-1024x435.jpg)Block Editor: Attendees block
 
-If you check the *Show attendees list on event page*checkbox in the Classic Editor, attendees who purchase tickets will have their [Gravatar](https://gravatar.com) displayed in a [Who’s Attending feature](https://cloudup.com/cHoh6LrI4H1) on the event page.
+## Assigned seating
 
-If you display attendees on the front of your site, attendees can participate in the [Public Attendees List](https://docs.nexcess.com/software/the-events-calendar/public-attendee-list/). We are excluding users from the Public Attendees List if the attendees are not displayed on the front of your site. If you are displaying attendees, the default option for users is to be excluded (opted-out), to adhere to GDPR regulations.
+Assigned seating is a premium feature that lets attendees pick their own seat from a visual layout when they buy. Each ticket’s capacity comes from your event’s Seat Layout and the ticket’s Seat Type. Read more in [Creating Tickets with Assigned Seating](https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/).
 
-![Ticket Settings for an event](https://docs.nexcess.com/wp-content/uploads/2026/06/TER-Ticket-Settings.jpg)Classic Editor: Show attendees list
+## Link to the ticket form
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-add.jpg)Block Editor: Add attendees block
+Event pages include an anchor link that sends people straight to the ticket form on a single event page.
 
-![](https://docs.nexcess.com/wp-content/uploads/2026/06/new-blocks-attendees-1.jpg)Block Editor: Attendees block
+The default link looks like 
+```
+yoursite.com/event/[event-slug]/#buy-tickets
+```
 
-## Using Assigned Seating with Event Tickets
+, for example 
+```
+yoursite.com/event/rock-concert/#buy-tickets
+```
 
-If you are using our Seating add-on, you can enable assigned seating with tickets. The capacity for each ticket will be defined by your event’s Seat Layout and your ticket’s Seat Type. This tool allows your attendees to choose from a visual seat layout when they’re purchasing tickets, so they can pick their perfect spot and have a specific seat assignment for the event. Read more about [using Seating with Event Tickets](https://docs.nexcess.com/software/the-events-calendar/assigned-seating-tickets/).
+.
 
-## Linking to the Tickets Form
+Not sure how to build it? Open your event’s page, add 
+```
+#buy-tickets
+```
 
-Event Tickets Plus has a built-in anchor link so that you can link users directly to the ticket sales form on a single event page. (⚠ **Please Note:** This is only true for tickets being used on the “event” post type—tickets on “posts”, “pages”, and other post types will not have this anchor link at this time.)
+ to the end of the URL, then copy the full address from your browser.
 
-The default link to the ticket form is *yoursite.com/[event-slug]/[event-slug]/#buy-tickets*. For example: *yoursite.com/event/rock-concert/#buy-tickets*.
+## Next steps and related articles
 
-If you’re not sure how to construct the link, go to your event’s page and add *#buy-tickets* to the URL. Then copy the full text of your browser’s URL field, and that’s the link to the tickets form.
-
-## Related Articles
+Next, learn how to [manage ticket orders and attendees](https://docs.nexcess.com/software/the-events-calendar/ticket-orders/) and how [Event Tickets calculates availability](https://docs.nexcess.com/software/the-events-calendar/event-tickets-availability/). For stock problems, see [Common Stock Issues](https://docs.nexcess.com/software/the-events-calendar/troubleshoot-tickets-purchases/#h-ticket-stock-issues-with-cart-abandonment). Still stuck? Contact the team through the help desk.
 
 - [Charging Fees with Event Tickets](https://docs.nexcess.com/software/the-events-calendar/event-tickets-fees/)
 - [Creating Coupons for Event Tickets](https://docs.nexcess.com/software/the-events-calendar/event-tickets-coupons/)
