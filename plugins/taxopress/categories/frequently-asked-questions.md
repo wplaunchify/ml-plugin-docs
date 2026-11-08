@@ -44,7 +44,7 @@ Example:
 ```
 (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-tabs-6ae6d94f83a14', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-tabs-6af013b5272d7', {"active":false}, true);
       return;
     }
 
@@ -55,7 +55,7 @@ Example:
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-tabs-6ae6d94f83a14');
+    var element = document.getElementById('tag-groups-cloud-tabs-6af013b5272d7');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }

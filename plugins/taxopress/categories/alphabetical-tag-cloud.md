@@ -104,7 +104,7 @@ WooCommerce WooCommerce Product Categories WooCommerce Product Tags WordPress AP
 
   (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-alphabet-tabs-6ae6d951f227b', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-alphabet-tabs-6af013b712440', {"active":false}, true);
       return;
     }
 
@@ -115,7 +115,7 @@ WooCommerce WooCommerce Product Categories WooCommerce Product Tags WordPress AP
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-alphabet-tabs-6ae6d951f227b');
+    var element = document.getElementById('tag-groups-cloud-alphabet-tabs-6af013b712440');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
@@ -162,7 +162,7 @@ WooCommerce WooCommerce Product Categories WooCommerce Product Tags WordPress AP
 
   (function tagGroupsInitTabs(retries) {
     if (typeof jQuery !== 'undefined' && typeof jQuery.ui !== 'undefined' && typeof jQuery.ui.tabs !== 'undefined' && typeof jQuery.widget !== 'undefined' && typeof TagGroupsBase !== 'undefined') {
-      TagGroupsBase.tabs('tag-groups-cloud-alphabet-tabs-6ae6d9520d88e', {"active":false}, true);
+      TagGroupsBase.tabs('tag-groups-cloud-alphabet-tabs-6af013b717e65', {"active":false}, true);
       return;
     }
 
@@ -173,7 +173,7 @@ WooCommerce WooCommerce Product Categories WooCommerce Product Tags WordPress AP
       return;
     }
 
-    var element = document.getElementById('tag-groups-cloud-alphabet-tabs-6ae6d9520d88e');
+    var element = document.getElementById('tag-groups-cloud-alphabet-tabs-6af013b717e65');
     if (element) {
       element.className = element.className.replace(/\btag-groups-cloud-hidden\b/g, '');
     }
