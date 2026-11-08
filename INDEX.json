@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-08T06:53:04.168Z",
+  "last_updated": "2026-11-08T07:03:17.601Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -3717,7 +3717,7 @@
       "slug": "wp-sheet-editor-wpfusion",
       "name": "WP Sheet Editor - WPFusion",
       "documentation_url": "https://wpsheeteditor.com",
-      "last_scraped": "2026-11-01T07:02:31.387Z",
+      "last_scraped": "2026-11-08T07:03:17.601Z",
       "page_count": 5,
       "categories": [
         "convert-woocommerce-product-categories-into-tags",
