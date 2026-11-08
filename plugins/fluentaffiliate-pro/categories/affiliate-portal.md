@@ -267,7 +267,7 @@ This section shows the list of all payouts that have been made to your account. 
 - **Date** – When the payout was processed.
 - **Amount** – The total amount you received in that payout.
 - **Status** – Whether the payout is Paid, Unpaid, or Pending.
-- **Descrption** – This provides details about the payouts.
+- **Description** – This provides details about the payouts.
 
 All of this helps you quickly understand how much you've earned, what's been paid out, and what's still pending.
 

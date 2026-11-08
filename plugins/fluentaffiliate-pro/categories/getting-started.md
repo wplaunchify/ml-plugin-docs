@@ -120,11 +120,15 @@ A field in the affiliate's settings where they can add or update their PayPal em
 
 ### Payout ​
 
-The action of sending earned commissions to your affiliates. FluentAffiliate helps you track and record these payments manually and generate reports, but it does not automatically send money through payment gateways.
+The action of sending earned commissions to your affiliates. FluentAffiliate helps you track and record these payments and generate reports. You can pay affiliates manually, or send the payments through PayPal Payouts with FluentAffiliate Pro.
 
 ### Payout Management ​
 
-A section in the admin dashboard for managing affiliate payments. While payments must be made manually, this area lets you record each transaction, generate a detailed report of who was paid, and export the report for your records.
+A section in the admin dashboard for managing affiliate payments. This area lets you record each transaction, generate a detailed report of who was paid, and export the report for your records. You can also export a PayPal Payouts file or send a payout through PayPal Payouts.
+
+### PayPal Payouts ​
+
+A FluentAffiliate Pro feature that sends all the payments of a payout to your affiliates' PayPal emails in one step. It also updates the status of each payment for you. You set it up in **Settings → PayPal Payouts**.
 
 ### Percentage Rate ​
 
