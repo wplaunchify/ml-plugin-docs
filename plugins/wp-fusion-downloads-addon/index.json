@@ -2,7 +2,7 @@
   "plugin_slug": "wp-fusion-downloads-addon",
   "plugin_name": "WP Fusion - Downloads Addon",
   "documentation_url": "https://wpfusion.com/documentation/",
-  "last_scraped": "2026-11-01T07:52:59.410Z",
+  "last_scraped": "2026-11-08T07:52:52.268Z",
   "total_pages": 486,
   "failed_urls_count": 0,
   "sections": [
@@ -454,8 +454,8 @@
           "url": "https://wpfusion.com/documentation/ecommerce/surecart/"
         },
         {
-          "title": "Studiocart",
-          "url": "https://wpfusion.com/documentation/ecommerce/studiocart/"
+          "title": "PublishPress Cart",
+          "url": "https://wpfusion.com/documentation/ecommerce/publishpress-cart/"
         },
         {
           "title": "WooCommerce Payments",
