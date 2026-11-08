@@ -59,6 +59,10 @@ When data is exported, the user is given a file that contains their data. Both e
 Example of the Woo Subscriptions portion of a data export:
 
 ![Example Subscription Related Portion of Data Export](https://woocommerce.com/wp-content/uploads/2019/03/gdpr_3_data_export.png?strip=all&w=704)Example Subscription Related Portion of Data Export
+
+ 
+
+**Gifted subscriptions:**A gift recipient’s export includes two extra groups:**Subscriptions Purchased for You**and**Orders Purchased for You**.**Orders Purchased for You**includes the shipping address for renewal, switch and resubscribe orders that contain only the recipient’s items. Starting in version 9.4.0, those orders also include the shipping phone number. Once the recipient has taken over the shipping address, a purchaser’s export doesn’t include the recipient’s shipping address or shipping phone for that gifted subscription or for renewal orders created from then on.
 ### Data erasure
 
 [↑ Back to top](#doc-title)
@@ -85,6 +89,19 @@ To erase personal data on subscriptions:
 4. Click **Apply**
 
 ![Bulk Remove Personal Data from Subscriptions](https://woocommerce.com/wp-content/uploads/2019/03/gdpr_5_bulk_edit.png?strip=all&w=704)Bulk Remove Personal Data from Subscriptions
+
+### 
+
+#### How removals are recorded
+
+When personal data is removed from a subscription, a note is added to the subscription that says what removed it:
+- **Bulk action**: “Personal data removed via the subscriptions bulk action.” Added when you use**Cancel and remove personal data**on the Subscriptions list.
+- **Erasure request**: “Personal data removed following a personal data erasure request.” Added when an account erasure request is processed and**Remove personal data from subscriptions**is enabled.
+- **Retention cleanup**: “Personal data removed by the personal data retention cleanup.” Added when the**Retain ended subscriptions**period has passed.
+
+For the bulk action and erasure requests, the note also shows the user who ran the removal. Retention cleanup runs automatically in the background, so its note is not credited to a user.
+
+Starting in version 9.4.0, these notes replace the earlier note, “Personal data removed.”, which did not say what removed the data. That note is still added when another plugin or custom code removes the data without naming a source.
 ## Privacy Policy Guide
 
 [↑ Back to top](#doc-title)

@@ -22,6 +22,8 @@ Once enabled, WooCommerce Subscriptions switching feature allows your customers 
 
 Switching is possible between the subscription plans available on a product, between the variations of a variable product, and between products within a grouped product. It is also possible for shoppers to update the quantity of any product on their subscription.
 
+When a customer starts a switch, the product page preselects the subscription plan that matches the billing schedule they already pay on. This works for simple and variable products. Variable products with more than 30 variations (WooCommerce’s default limit) don’t get this preselection and show the product’s default purchase option instead. If such a product also allows one-time purchase, the one-time option is offered during the switch too (and is selected when it is the product’s default), and submitting with it selected makes the switch fail with the error “You can only switch to a subscription product”. If no plan matches, or more than one plan matches, the product’s default plan is selected. A subscription with no next payment date, for example one in its final billing period, matches no plan, so the default plan is selected.
+
 ## Subscription Switching Settings
 
 [↑ Back to top](#doc-title)
@@ -48,6 +50,8 @@ The three different kinds of switching options allow your subscribers to:
 - Grouped subscriptions – switch between products within the same grouped product. Products must be published to be available as switching options.
 
 In either case, products must be **published**to be available as switching options.
+
+A grouped product can include products sold through subscription plans. When a customer switches from a grouped product page, each of these products that can be bought and is in stock shows a **Select plan** button instead of a quantity box. The button opens the product’s own page, where the customer chooses a plan and clicks **Switch subscription**. The same button appears when the product page uses WooCommerce’s Add to Cart + Options block. Subscription products without plans keep their quantity box on the grouped page. Variable products keep WooCommerce’s own options button. Customers subscribed to a product sold through plans can switch from the grouped page when **Subscription plans** is enabled, even if **Grouped subscriptions** is off. The product they’re subscribed to must offer more than one plan. Customers subscribed to a simple subscription product in the group need **Grouped subscriptions** enabled.
 
 A subscription may be switched if it is active but will require payment if it is switched from a free to paid subscription, so future payments can be processed automatically (unless the store has disabled automatic payments). Customers cannot switch subscriptions that are in the on hold or pending cancellation [statuses](https://woocommerce.com/document/subscriptions/statuses/).
 

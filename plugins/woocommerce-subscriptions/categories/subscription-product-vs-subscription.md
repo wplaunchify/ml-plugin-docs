@@ -172,6 +172,8 @@ Each month’s magazine also does not need to be a *subscription product*, it ca
 
 It’s also possible to add a non-subscription product to an existing subscription using the **Add to subscription** setting with **Eligible products** set to **Any product**. For example, a customer could add a different kind of coffee bean to their existing monthly coffee subscription. Products added this way inherit the subscription’s billing schedule.
 
+Customers can only add products to an active subscription paid with a payment method that supports changes to the recurring amount. See [Add to Subscription](https://woocommerce.com/document/subscriptions/store-manager-guide/) for the full rules.
+
 Again, while the products on the subscription change, no other subscription details, like its billing schedule, will be changed when the new product is added.
 
 ![A checkbox that a customer ticks to add a product to an existing subscription when All Products for WooCommerce Subscriptions is installed. Located under the quantity box and add to cart button on the product page.](https://woocommerce.com/wp-content/uploads/2015/09/subscribe-all-the-things-add-to-existing-subscription.png?w=950)

@@ -69,7 +69,8 @@ If subscriptions appear active but have a renewal date in the past, there may be
 Start by verifying that WordPress cron is enabled. Go to **WooCommerce > Status > System status** and check the **WordPress cron** row. If WordPress cron is disabled, [re-enable it](https://woocommerce.com/document/subscriptions/develop/complete-guide-to-scheduled-events-with-subscriptions/#debugging-wp-cron) before relying on scheduled subscription renewals.
 
 1. After confirming cron is enabled and your payment gateway supports date changes, try changing the next payment date of the subscription to one hour from now.
-2. If subscription renewals still do not process, consult the [Complete Guide to Scheduled Events with Subscriptions](https://woocommerce.com/document/subscriptions/develop/complete-guide-to-scheduled-events-with-subscriptions/) to troubleshoot WP Cron and scheduled events.
+2. If an active subscription that renews automatically has a future next payment date but no pending woocommerce_scheduled_subscription_payment action, run the [Subscriptions health check](https://woocommerce.com/document/woocommerce-subscriptions-health-check/) (**WooCommerce > Status > Subscriptions**). Starting in version 9.4.0, once a scan has run, the health check lists these subscriptions under **Missing scheduled actions**. Click **Resolve** and then **Schedule renewal** to recreate the action for the subscription’s existing next payment date. No payment is taken at that point, and the renewal processes on its due date as usual.
+3. If subscription renewals still do not process, consult the [Complete Guide to Scheduled Events with Subscriptions](https://woocommerce.com/document/subscriptions/develop/complete-guide-to-scheduled-events-with-subscriptions/) to troubleshoot WP Cron and scheduled events.
 
 ### Diagnosing stalled renewal payments
 

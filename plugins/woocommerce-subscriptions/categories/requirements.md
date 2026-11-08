@@ -57,6 +57,8 @@ After confirming WordPress cron is enabled, check scheduled subscription events 
 - Use the [Testing Subscription Renewal Payments](https://woocommerce.com/document/subscriptions/testing-subscription-renewal-payments/) guide to run a controlled test renewal on a staging site.
 - Use the [Subscriptions Scheduled Action Errors](https://woocommerce.com/document/subscriptions/scheduled-action-errors/) guide if subscription actions are failing or remaining pending.
 - For developer-level troubleshooting, see the [Complete Guide to Scheduled Events with Subscriptions](https://woocommerce.com/document/subscriptions/develop/complete-guide-to-scheduled-events-with-subscriptions/#debugging-wp-cron).
+- If your host’s cron runs too rarely, you can enable **Allow a web cron service to run pending subscription events** in WooCommerce > Settings > Subscriptions > Processing reliability and add the web cron URL to an external web cron service. Requests to that URL are logged in the woocommerce-subscriptions-external-trigger log under WooCommerce > Status > Logs. Starting in version 9.4.0, rejected requests (for example, with a wrong token) are logged at most once every five minutes.
+- Run the Subscriptions health check (WooCommerce > Status > Subscriptions) to find subscriptions whose next payment date is missing or past due, or active, automatic subscriptions whose upcoming renewal action is missing.
 
 					
 		

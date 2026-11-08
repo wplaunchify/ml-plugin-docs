@@ -179,6 +179,12 @@ The system displays a new tax column next to the *Total* column for each line it
 
 **Note:** You can also set tax values manually by editing each line item and clicking the *pencil* icon on that row.
 
+**Do line item prices include tax?** A new subscription records whether its prices include tax when you create it, and keeps that setting. Changing your tax settings later does not change existing subscriptions.
+
+A subscription you add on this screen when your store uses High-performance order storage, or one created by code without an order, includes tax in its prices only when both of these are set, unless code on your site filters this setting: **Enable tax rates and calculations** is ticked under **WooCommerce > Settings > General**, and **Prices entered with tax** is set to “Yes, I will enter prices inclusive of tax” under **WooCommerce > Settings > Tax**. If taxes are turned off, its prices are treated as excluding tax, whatever the “Prices entered with tax” setting says. In WooCommerce 11.3 and earlier, a subscription added on this screen when your store uses WordPress posts storage, or created through the REST API subscriptions endpoint, follows the **Prices entered with tax** setting alone. The older wc/v1 subscriptions endpoint does this with every WooCommerce version. Subscriptions created from an existing order, such as at checkout, keep that order’s setting.
+
+Subscriptions started taking **Enable tax rates and calculations**, and any code that filters these settings, into account in version 9.4.0, for subscriptions created by code or added on this screen with High-performance order storage.
+
 ![Add recurring taxes](https://woocommerce.com/wp-content/uploads/2013/10/Add_9_tax.png?w=950)Add Recurring Taxes
 
 ### Calculate recurring totals
@@ -274,6 +280,8 @@ You can then use this new order to control activation of the subscription. For e
 To import a subscription created with another subscription management system, [add the subscription](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/#manually-add-a-subscription) as outlined above. If you want to charge automatic payments, follow the instructions for [charging renewal payments](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/#create-pending-renewal-order). If you’re migrating your customers from another subscription service to WooCommerce Subscriptions, you’ll want to read [Migrating Subscribers to WooCommerce Subscriptions](https://woocommerce.com/document/subscriptions/migrating-subscribers-woocommerce-subscriptions/).
 
 **Payment gateways that don’t support changing recurring payment amounts or dates:** if the subscription uses PayPal Standard or another payment gateway which does not support changing recurring amounts or dates, **be sure to set the billing schedule and totals before changing the subscription’s status from Pending to Active**. Once you activate the subscription, the billing schedule and dates will not be editable and you would need to delete the subscription and start again.
+
+Imported subscriptions record whether prices include tax from your current WooCommerce tax settings when they are created. If the subscriptions you are importing were priced with a different tax setting, recalculating their totals later (for example after editing their items) can change the amounts, so check them after any recalculation.
 
 ## Questions and support
 

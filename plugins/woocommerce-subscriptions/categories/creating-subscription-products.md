@@ -118,6 +118,8 @@ Subscribers can still cancel an expiring subscription before it reaches its sche
 
 Add a one-time fee that customers pay when they first subscribe.
 
+Customers can’t add a product to an existing subscription on a plan that has a sign-up fee, because adding to a subscription doesn’t take a payment. They need to buy it as a new subscription instead. See [Add to Subscription](https://woocommerce.com/document/subscriptions/store-manager-guide/).
+
 ### Free trial
 
 [↑ Back to top](#doc-title)
@@ -346,9 +348,9 @@ If you enable [$0 initial checkout without a payment method](https://woocommerce
 
 [↑ Back to top](#doc-title)
 
-If [Gifting is enabled](https://woocommerce.com/document/subscriptions/store-manager-guide/#gifting) in the subscription settings, the option to enable and disable gifting for the product will be visible in the General product settings. If no option is selected, the global settings will apply to the product.
+Tick **Allow shoppers to purchase subscriptions as gifts for others** to let customers buy this product as a gift. For variable subscriptions, the option is set on each variation. New products aren’t giftable until you tick this box. The checkbox is only shown, and only has an effect, while **Enable gifting for subscriptions** is turned on in **WooCommerce > Settings > Subscriptions > Gifting**, and gifting is never offered for renewals or subscription switches.
 
-![](https://woocommerce.com/wp-content/uploads/2026/04/gifting.png?strip=all&w=704)
+![](https://woocommerce.com/wp-content/uploads/2024/07/gifting-simple-subscription.png?strip=all&w=704)
 
 ### Billing date alignment
 
@@ -419,6 +421,8 @@ When a subscription is limited to *any status* by the **Limit subscriptions** se
 
 The customer cannot purchase that subscription product again unless the existing subscription is **trashed** or **permanently deleted** by a store manager. This feature ensures that each customer account only receives one free trial period to a product.
 
+A customer can still renew, pay for or resubscribe to a limited subscription using the links that Subscriptions provides, such as the **Renew now**, **Pay** and **Resubscribe** buttons in My Account, subject to the cart rules below.
+
 **Cart enforcement**
 
 When a product has Limit Subscriptions enabled, the limit is also enforced at cart and checkout:
@@ -438,6 +442,12 @@ If you [allow switching](https://woocommerce.com/document/subscriptions/switchin
 **Note:**
 
 To limit the initial purchase of a product to one, also check the box for “Sold Individually.” Enable this to only allow one of this item to be bought in a single order in the Inventory section of the edit product page.
+
+### Private subscription products
+
+[↑ Back to top](#doc-title)
+
+Setting a Simple subscription or Variable subscription product’s visibility to **Private** stops new customers from buying it. Existing subscribers can keep their subscription. Their automatic renewals continue, and they can still pay for a renewal order manually or renew early from **My Account > Subscriptions** when early renewal is enabled. Customers whose subscription to a private product has ended can’t resubscribe to it, because the **Resubscribe** button is shown only for published products.
 
 ## Questions and support
 

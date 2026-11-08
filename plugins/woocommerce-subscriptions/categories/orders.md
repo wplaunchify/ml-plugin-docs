@@ -71,6 +71,8 @@ While checkout usually automatically creates Parent Orders, you can also [add th
 
 **A subscription can have only one Parent Order**. Since you can only create. a subscription once, it requires only one Parent Order. However, a single Parent Order can link to multiple subscriptions if the customer purchases [different subscription products in the same transaction](https://woocommerce.com/document/subscriptions/multiple-subscriptions/).
 
+In the admin, the **Parent order** field is shown only while a subscription has no parent order, and you can link only an existing order that you are allowed to edit.
+
 [Manually creating a subscription](https://woocommerce.com/document/subscriptions/add-or-modify-a-subscription/) does not automatically generate a parent order. You’ll need to use the “Create pending parent order” option under “Subscription Actions” to create one. Then, use the “email order invoice” action in the order actions for the parent order, to send an invoice to the customer to pay for the transaction.
 
 **Important**!

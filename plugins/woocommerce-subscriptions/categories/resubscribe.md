@@ -22,6 +22,8 @@ After a customer’s subscription has *expired* or been *cancelled*, they can cr
 
 Resubscribing to a subscription that ended will create a new subscription for the same product or products; but it does not have the same behavior as purchasing a new subscription, or [renewing a subscription](https://woocommerce.com/document/subscriptions/renewal-process/).
 
+If a product’s **Limit subscription** setting is “Limit to one of any status”, a customer whose subscription has ended can’t buy the product again, unless that subscription was cancelled before any payment was made. They must resubscribe instead, using the **Resubscribe** button on the subscription in My Account or the **Resubscribe** button on the product page (both use the same link). The resubscribe link works only for that customer’s own subscription and the products on it, and it stops working once they have resubscribed.
+
 ### Free Trials on Resubscribe
 
 [↑ Back to top](#doc-title)

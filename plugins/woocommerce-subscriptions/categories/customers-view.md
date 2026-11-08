@@ -208,6 +208,14 @@ On the checkout page, the customer can see the recipient’s email address under
 
 ![](https://woocommerce.com/wp-content/uploads/2025/08/gifting-checkout-page.png?w=980)
 
+### Which items can be gifted
+
+[↑ Back to top](#doc-title)
+
+The **This is a gift** option (its wording can be changed in the **Gift option text** setting) appears only for subscription products, and products sold on subscription plans, that have gifting enabled, and only while **Enable gifting for subscriptions** is turned on in **WooCommerce > Settings > Subscriptions > Gifting**. It isn’t offered for renewals, early renewals or subscription switches, including in the Cart block.
+
+Starting in version 9.4.0, if a recipient is already in the cart for an item that can no longer be gifted (for example, when resubscribing to a gift whose product no longer allows gifting, or after the store turned gifting off), the recipient is removed before payment and the customer sees: *“[Product name]” can no longer be bought as a gift, so its gift recipient has been removed.* The subscription is then created as a regular subscription for the purchaser.
+
 ### Recipient account creation
 
 [↑ Back to top](#doc-title)
@@ -239,6 +247,8 @@ In order to provide a level of privacy between purchaser and recipient and to ma
 ![](https://cldup.com/SQlwLVPxHG.png)
 
 The purchaser’s name will also appear under the related order to indicate that they paid for the order.
+
+Starting in version 9.4.0, once the shipping address belongs to the recipient, the purchaser’s View Subscription page, and renewal orders created from then on, show *Only the gift recipient can view the shipping address.* in place of the shipping address.
 
 ### Completing an order with a subscription gift
 
@@ -291,9 +301,23 @@ To add these details:
 
 When a subscription gift is purchased, the shipping address of the subscription is set to the recipient’s shipping address. This streamlines the process for customers proceeding through the checkout when purchasing subscription products for other users.
 
-If the recipient does not have an account or has not set the shipping address on their account at the time of purchasing the subscription, the subscription’s shipping address will not be set and will display as **N/A**. This will be updated when the recipient logs in and enters their details on the [Account Details page](#recipientaccountcreation).
+If the recipient does not have an account or has not set the shipping address on their account at the time of purchasing the subscription, the subscription’s shipping address will not be set and will display as **N/A**. This will be updated when the recipient logs in and enters their details on the [Account Details page](#recipientaccountcreation). Once the shipping address belongs to the recipient (see **Shipping address privacy** below), the purchaser sees *Only the gift recipient can view the shipping address.* instead of N/A or the address.
 
-In order to maintain a gifted subscription’s shipping address when paying for a renewal order through the checkout, the **recipient’s shipping address will automatically be entered into the shipping fields on checkout**.
+When the recipient pays for a renewal order or renews early through the checkout, the shipping fields are filled in with the shipping address saved in the recipient’s account.
+
+**Shipping address privacy**
+
+Starting in version 9.4.0, the gift’s shipping address belongs to the recipient once the recipient already had an account on your store, or has activated the account created for them. From then on, the purchaser:
+
+- Sees *Only the gift recipient can view the shipping address.* in place of the address on **My Account > View Subscription**, on renewal orders created after that point, and in the emails for those renewal orders.
+- No longer sees the **Change address** button for the subscription.
+- Doesn’t get the address in their personal data export for the subscription or for renewal orders created after that point.
+
+Until a newly invited recipient activates their account, the purchaser still sees the subscription’s shipping address (or N/A if none has been set). Renewal orders created before the recipient activated keep showing that original address. This applies to recipients who activate after your store updates to 9.4.0; for recipients who activated earlier, the address is withheld on all renewal orders. Store managers can always see and edit the address on the **Edit Subscription** screen. If you set an existing customer as the recipient on the **Edit Subscription** screen, the purchaser can no longer see the subscription’s shipping address either, even if they entered it themselves.
+
+**When the purchaser pays a renewal**
+
+Once the shipping address belongs to the recipient, if the purchaser pays a renewal order or renews early through the checkout, the checkout doesn’t show shipping fields and doesn’t change the subscription’s shipping address. Shipping costs, and taxes if your store calculates tax from the customer’s shipping address, are calculated from the shipping address already on the renewal order (or on the subscription, for an early renewal), and the renewal ships to that address. If there is no shipping address yet for the renewal to ship to, the checkout asks the purchaser for an address as usual. When the purchaser resubscribes to such a gift, the checkout doesn’t prefill the recipient’s address, and when the purchaser switches the subscription, its shipping address stays the same.
 
 ![](https://cldup.com/SUqkqsuqPf.png)
 
@@ -310,6 +334,8 @@ In order to keep recipients up-to-date with their gifted subscriptions, Gifting 
 
 As with general [WooCommerce emails](https://woocommerce.com/document/configuring-woocommerce-settings/emails/), you can enable, disable, edit and customize these emails. To edit emails sent by Gifting for WooCommerce Subscriptions, go to *WooCommerce > Settings > Emails*.
 
+Renewal order emails sent to the purchaser don’t include the recipient’s shipping address for renewal orders created after the recipient owns it. They show *Only the gift recipient can view the shipping address.* instead. Emails sent to the store admin always include the address.
+
 ## Shared subscription management
 
 [↑ Back to top](#doc-title)
@@ -325,12 +351,14 @@ The table below outlines the actions recipients and purchasers can make on subsc
 | Reactivate Subscription | ✓ | ✓ |
 | Cancel Subscription | ✓ | ✓ |
 | Resubscribe | ✕ | ✓ |
-| Change Shipping Address | ✓ | ✓ |
+| Change Shipping Address | ✓* | ✓ |
 | Change Payment Method | ✕ | ✓ |
 | Manually Renew | ✓ | ✓ |
 | Switch (upgrade/downgrade) | ✕ | ✓ |
 | View Parent Orders | ✕ | ✓ |
 | View Renewal Orders | ✕ | ✓ |
+
+*The purchaser can change the shipping address only until the recipient owns it, that is, until a newly invited recipient activates their account. If the recipient already had an account when the gift was bought, only the recipient can change it. See **Shipping address** above.
 
 ## WooCommerce Memberships integration
 
@@ -359,6 +387,12 @@ To enable dual permissions:
 
 Similar to the normal process for downloading files, recipients can download the files they have been granted access to from the **My Account** page and the *My Account > View Subscription* page.
 
+### Managing download access on a gifted subscription
+
+[↑ Back to top](#doc-title)
+
+On the **Edit Subscription** screen, the **Downloadable product permissions** box lists one row per person and file. Purchaser rows appear for access granted while **Allow gift purchasers to download files** is turned on, and for any access the purchaser already had before the subscription became a gift. Each row is labeled **Recipient** or **Purchaser**, followed by that person’s name, so you can see who holds each permission. **Revoke access** removes only the row you click, so you can remove the purchaser’s access to a file without removing the recipient’s, or the other way round. When you use **Grant access**, each person who receives access gets their own row, showing the name of the product it belongs to.
+
 ## FAQs
 
 [↑ Back to top](#doc-title)
@@ -382,6 +416,12 @@ It’s important to note that the subscription(s) will not be deleted. The subsc
 If your store is selling corporate products, it’s likely a purchasing officer may wish to buy and manage subscriptions for members of their team.
 
 The [Subscriptions Use Case: Corporate Purchasing](https://woocommerce.com/document/subscriptions/corporate-subscription-purchasing/) steps through this use case in more detail.
+
+### Why can’t the purchaser see the gift’s shipping address?
+
+[↑ Back to top](#doc-title)
+
+Starting in version 9.4.0, the shipping address of a gifted subscription is private to the recipient once the recipient has an account on your store, either because they already had one or because they activated the account created for them. The purchaser sees *Only the gift recipient can view the shipping address.* instead and can’t change the address (see **Shipping address** above). The store manager can still view and edit it on the **Edit Subscription** screen.
 
 					
 		
@@ -432,6 +472,8 @@ The **Pay** action is only displayed when:
 Clicking the **Pay** button on a subscription will direct the customer through a normal WooCommerce checkout process to pay for the subscription’s renewal. Once payment is completed for the renewal order, the subscription will be reactivated.
 
 If the payment is being made because an automatic renewal payment failed, Subscriptions will attempt to update the payment method on the subscription so that future recurring payments will use the new payment method rather than the failed payment method (**Note:** This is only possible with payment gateways which support [Recurring Payment Method Changes](https://woocommerce.com/document/subscriptions/payment-gateways/)).
+
+**Gifted subscriptions:** When the purchaser of a gift pays a renewal and the recipient has taken over the shipping address, the checkout doesn’t show shipping fields. The renewal still ships to the shipping address already saved for the gift, and shipping costs are calculated from that address, as are taxes if your store calculates tax based on the customer shipping address. If no shipping address has been saved yet, the checkout asks for one as usual. See the **Shipping address** section of [Gifting a Subscription](https://woocommerce.com/document/subscriptions/customers-view/gifting-a-subscription/).
 
 ## Make an Early Renewal Payment
 
@@ -582,6 +624,9 @@ It’s not always possible, or necessary, for a customer to be able to change th
 - site is not in [Staging Mode](https://woocommerce.com/document/subscriptions/faq/#section-39). In Staging Mode, WooCommerce treats all subscriptions as requiring manual renewal to avoid duplicate payments.
 - uses a payment gateway that supports [canceling the subscription](https://woocommerce.com/document/subscriptions/payment-gateways/)
 - has at least one **future automatic payment scheduled**. There is no need to change a payment method if no payments will occur.
+- belongs to the customer who is viewing it.
+
+For a gifted subscription, the owner is the purchaser, so the gift recipient doesn’t see the **Change payment** button.
 
 					
 		
@@ -639,6 +684,8 @@ It’s not always possible, or necessary, for a customer to be able to resubscri
 - the subscription does not include products “[limited to one active subscription](https://woocommerce.com/document/subscriptions/creating-subscription-products/#limit-subscriptions)“.
 - a customer has not already resubscribed to the same subscription. This prevents customers from resubscribing more than once to the same subscription.
 
+**Gifted subscriptions:** When a purchaser resubscribes to a gift, the gift recipient is kept. Once the recipient has taken over the shipping address, the purchaser’s checkout doesn’t prefill it. If the product can no longer be bought as a gift, the recipient is removed before payment with a notice, and the new subscription is created for the purchaser.
+
 					
 		
 ## Related Products
@@ -680,7 +727,8 @@ To switch subscriptions, the customer:
 
 1. **Clicks** on **My Account > Subscriptions**, and **View** next to the subscription they want to switch.
 2. Clicks the **Switch** button on the line item they want to switch.
-3. **Selects**a new subscription product and clicks **Switch subscription**.
+3. Selects a new subscription product, variation or subscription plan and clicks **Switch subscription**.
+- If one of the product’s plans matches the customer’s current billing schedule, that plan is usually selected by default. On a grouped product page, simple products sold through subscription plans show a **Select plan** button that opens the product’s own page, where the customer chooses a plan.
 - This adds the subscription to the cart with “(upgrade) or “(downgrade) added to the product’s title. On the checkout page, a **Switch Subscription** button invites the customer to complete the checkout.
 4. **Completes** the checkout form for the new subscription.
 - This displays the standard **Order Received**page and displays details of any up-front/immediate payments and upcoming recurring payments.
@@ -748,7 +796,7 @@ Offer add-ons like gift wrapping, special messages or other special options for 
 
 Active subscriptions display a **Cancel** button by default on the View Subscription page. There is no setting to disable cancellations; [the Cancel button can be removed from the View Subscription page](https://woocommerce.com/document/subscriptions/develop/remove-an-action-button/) only via custom code.
 
-You can optionally enable **subscriber suspensions** in [Subscription Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#suspensions), allowing customers to suspend their subscriptions themselves with a **Suspend** button added next to the **Cancel** button. A suspended subscription appears as *on-hold* both to the store manager and the customer.
+You can optionally enable **Customer Suspensions** in [Subscription Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#misc-settings), allowing customers to suspend their subscriptions themselves with a **Suspend** button added next to the **Cancel** button. A suspended subscription appears as *on-hold* both to the store manager and the customer.
 
 When a subscription is put *on-hold*, either by you or the customer, a **Reactivate** button is added to the customer’s view, allowing the customer to restart their subscription. However, if the subscription is put *on-hold* because payment is due, then the **Reactivate** button is not displayed. In that case, the customer must [pay for the renewal](https://woocommerce.com/document/subscriptions/customers-view/pay-for-renewal/) before a subscription is reactivated.
 
@@ -761,7 +809,7 @@ For the *suspend* button to be displayed:
 - the [WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) plugin must be active
 - the payment gateway used to purchase the subscription must support [subscription suspension](https://woocommerce.com/document/subscriptions/payment-gateways/)
 - the subscription must currently have a status of *active* or *pending*
-- customer suspension is enabled in the [Subscription Settings](https://woocommerce.com/document/subscriptions/store-manager-guide/#suspensions), or is a viewed as a store admin
+- customer suspension is enabled in the [Subscription Settings](https://woocommerce.com/document/store-manager-guide/#misc-settings), or is a viewed as a store admin
 
 **Requirements to Display Cancel Button**
 
@@ -784,6 +832,8 @@ Follow these steps as a customer to cancel a subscription:
 3. Click **View** next to the respective subscription
 4. Click the **Cancel** action button
 
+If the store has enabled the Customer Cancelled Subscription email, the customer receives an email confirming the cancellation of an active or on-hold subscription and the date the subscription ends. For a gifted subscription, the email goes to the person who bought it.
+
 ### How to cancel a subscription as a store manager
 
 [↑ Back to top](#doc-title)
@@ -804,6 +854,8 @@ A store manager can cancel a subscription in 2 ways. Method 1 sets the subscript
 3. In the **Subscription details** panel select the **Subscription status dropdown**
 4. Choose either **Cancelled** to end subscription benefits immediately, or **Pending Cancellation** to let the benefits continue until the next billing cycle.
 5. Click **Update** to save the changes.
+
+Starting in version 9.4.0, you can let subscribers know by email when their subscription is cancelled. Enable the Customer Cancelled Subscription email in WooCommerce > Settings > Emails. It’s sent when an active or on-hold subscription is changed to Pending Cancellation or Cancelled, whether by the customer or a store manager. It’s sent again if a Pending Cancellation subscription is cancelled more than an hour before its end date. It is not sent when a subscription is cancelled because all of its items were switched to a new subscription, because the customer resubscribed, or because the subscription was trashed or deleted or its personal data was erased. The email is disabled by default. See [Email Settings](https://woocommerce.com/document/subscriptions/emails/).
 
 ### How to suspend a subscription as a customer
 
@@ -892,6 +944,9 @@ Customers will see this button when:
 - at least [one shipping method](https://woocommerce.com/document/setting-up-shipping-zones/) is setup in WooCommerce.
 - the subscription is a physical product that needs shipping (i.e.: not set to virtual).
 - the subscription must be in either **Active** or **On-hold** status.
+- for a gifted subscription, the customer is the gift recipient, or is the purchaser and the recipient hasn’t taken over the address yet.
+
+Starting in version 9.4.0, the recipient takes over the address if they already had an account on your store when the gift was bought, or once they activate the account created for them.
 
 ![Change Subscription Shipping Address Button](https://woocommerce.com/wp-content/uploads/2013/09/change-subscription-shipping-address.png?strip=all&w=704)Change Subscription Shipping Address Button
 
@@ -928,10 +983,12 @@ Customers should follow these steps when they need to update the shipping addres
 1. **Go to** the **My Account** page.
 2. **Select** the **Edit** link next to **shipping** or **billing** address at the bottom of the page.
 3. **Enter** the new address details in the form.
-4. **Tick** the box: *Update the address used for all of my active subscriptions.*
+4. Make sure the box **Update the Shipping Address used for all future renewals of my active subscriptions** (or **Update the Billing Address used for all future renewals of my active subscriptions**) is ticked. It is ticked by default.
 5. **Save Address**.
 
-![Change Address on Account Link](https://woocommerce.com/wp-content/uploads/2013/09/change-addresses-for-all-subscriptions.png?strip=all&w=704)Change Address on Account Lin
+**Note for gifted subscriptions:** Updating the shipping address on all subscriptions doesn’t change the shipping address of subscriptions the customer bought as gifts for others. Updating the billing address doesn’t change subscriptions someone else bought for them. The checkbox shows a note saying so: *Note: This will not update the shipping address of subscriptions you have purchased for others.* or *Note: This will not update the billing address of subscriptions purchased for you by someone else.* Starting in version 9.4.0, this also works on stores whose My Account address links are translated: those subscriptions are left out of the update, and the note is shown.
+
+![Change Address on Account Link](https://woocommerce.com/wp-content/uploads/2013/09/change-addresses-for-all-subscriptions.png?strip=all&w=704)Change Address on Account Link
 
 ![Change Address on Account Form](https://woocommerce.com/wp-content/uploads/2013/09/change-address-for-all-subscriptions-form.png?strip=all&w=704)Change Address on Account Form
 

@@ -52,6 +52,8 @@ During this time, the user associated with the subscription retains the [subscri
 
 When the pre-paid term ends, the subscription’s status transitions to *Cancelled*.
 
+If the Customer Cancelled Subscription email is enabled, the customer receives it when the subscription moves to Pending Cancellation, telling them when the cancellation was received and the date it stays active until. No second email is sent when the subscription reaches that date and becomes Cancelled. If the subscription is cancelled more than an hour before that date, the customer receives the email again. This doesn’t happen if it was cancelled because the customer resubscribed, because the subscription was trashed or deleted, or because its personal data was removed.
+
 ## Cancelled Subscription Status
 
 [↑ Back to top](#doc-title)

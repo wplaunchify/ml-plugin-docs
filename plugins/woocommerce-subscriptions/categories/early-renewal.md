@@ -49,6 +49,8 @@ To process an early renewal as a [subscriber](https://woocommerce.com/document/s
 3. In the first table, the **Renew Now** button will appear in the Actions row
 4. Click **Renew Now** and complete checkout or use the modal
 
+If a subscription was bought as a gift and its shipping address belongs to the recipient, the purchaser won’t see shipping fields when they renew early through the checkout, and the renewal ships to the shipping address saved on the subscription. If the subscription has no shipping address saved yet, the checkout asks for one as usual.
+
 ![Renew Now Button](https://woocommerce.com/wp-content/uploads/2018/12/ER_2_button.png?strip=all&w=704)Renew Now Button
 
 ## Early Renewal Requirements
@@ -66,6 +68,8 @@ In order for the Renew Now button to appear, the following conditions must be me
 - Subscription does not contain any subscription products with aligned billing dates
 - Subscription must not currently be in a trial period
 - The next payment date is approaching the point at which the subscription billing is set to expire
+
+Customers can still renew early if the subscription’s product has since been set to **Private** or uses **Limit subscription**, because they are renewing a subscription they already have.
 
 ## Next Payment Date After Early Renewal
 

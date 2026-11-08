@@ -653,6 +653,112 @@ WC_Subscription
 - the customer has manually suspended the subscription from their My Account page
 - a renewal payment is due (subscriptions are suspended temporarily for automatic renewal payments until the payment is processed successfully and indefinitely for manual renewal payments until the customer logs in to the store to pay for the renewal. For more information, see the [subscription renewal guide](https://woocommerce.com/document/subscriptions/renewal-process/)).
 
+---
+
+**Action:** 
+```
+cancelled_subscription_notification
+```
+
+**Parameters:**
+
+```
+$subscription
+```
+
+ A 
+```
+WC_Subscription
+```
+
+ object representing the subscription whose status changed.
+
+```
+$new_status
+```
+
+ The new status, without the 
+```
+wc-
+```
+
+ prefix (for example, 
+```
+pending-cancel
+```
+
+ or 
+```
+cancelled
+```
+
+). Added in version 9.4.0.
+
+```
+$old_status
+```
+
+ The status before the change, without the 
+```
+wc-
+```
+
+ prefix. Added in version 9.4.0.
+
+**Description:** Triggered by 
+```
+WC_Subscriptions_Email::send_cancelled_email()
+```
+
+ each time a subscription changes from one status to another, after it loads the WooCommerce mailer. Unlike the other hooks in this section, it is not fired on staging (duplicate) sites, where Subscriptions emails are turned off, unless 
+```
+WCS_FORCE_EMAIL
+```
+
+ is defined. The Cancelled Subscription and Customer Cancelled Subscription emails send from this hook, and each checks the status itself, so callbacks should check 
+```
+$new_status
+```
+
+ and 
+```
+$old_status
+```
+
+ before acting.
+
+Starting in version 9.4.0, 
+```
+WC_Subscriptions_Email::send_cancelled_email( $subscription, $new_status = '', $old_status = '' )
+```
+
+ accepts the optional 
+```
+$new_status
+```
+
+ and 
+```
+$old_status
+```
+
+ arguments and passes them to this action. Code that removes 
+```
+send_cancelled_email()
+```
+
+ from 
+```
+woocommerce_subscription_status_updated
+```
+
+ to stop the admin email now also stops the Customer Cancelled Subscription email. Code that removes 
+```
+send_cancelled_email()
+```
+
+ and adds it back must register it with three accepted arguments, or the Customer Cancelled Subscription email is not sent.
+
 ## Subscription Life Cycle Actions
 
 [↑ Back to top](#doc-title)
@@ -836,6 +942,69 @@ $role_old
 ```
 
  hook.
+
+---
+
+**Action:** 
+```
+woocommerce_remove_subscription_personal_data
+```
+
+**Parameters:**
+
+```
+$subscription
+```
+
+ A 
+```
+WC_Subscription
+```
+
+ object for the subscription to remove personal data from.
+
+```
+$source
+```
+
+ (string) What triggered the removal. The bulk action passes 
+```
+bulk_action
+```
+
+. The 
+```
+$source
+```
+
+ parameter was added in version 9.4.0.
+
+**Description:** Fired for each selected subscription that the current user can edit when the **Cancel and remove personal data** bulk action is applied. Subscriptions uses this action to cancel the subscription if it can be cancelled, remove its personal data, delete its existing notes, and add a note that names the source. When no source is passed, the note is “Personal data removed.” instead. Personal data erasure requests and the scheduled retention cleanup call 
+```
+WCS_Privacy_Erasers::remove_subscription_personal_data()
+```
+
+ directly, so callbacks on this action do not run for them. If your code extends 
+```
+WCS_Privacy_Erasers
+```
+
+ and overrides 
+```
+remove_subscription_personal_data()
+```
+
+ or 
+```
+erase_subscription_data_and_generate_response()
+```
+
+, the override must accept the optional 
+```
+$source
+```
+
+ argument.
 
 ---
 
@@ -1606,6 +1775,8 @@ active
 ```
 
 . When the next payment date is updated if the subscription has an active status.
+
+**Restored**: Starting in version 9.4.0, when a store manager clicks Schedule renewal in the Subscriptions health check (Missing scheduled actions tab) for an active, automatic subscription whose action is missing. The action is added for the existing next payment date, and no payment is taken at that time.
 
 **Unscheduled**: When a subscription’s status is changed to 
 ```
@@ -4023,6 +4194,228 @@ wcs_get_all_user_actions_for_subscription()
 
  function, which passes its return value through this filter to allow 3rd party code to add additional buttons to this section of the **View Subscription** page.
 
+---
+
+**Filter:** 
+```
+'woocommerce_subscriptions_product_limited_for_user'
+```
+
+**Parameters:**
+
+```
+$is_limited_for_user
+```
+
+ (
+```
+bool
+```
+
+) Whether the customer has reached the product’s **Limit subscription** setting.
+
+```
+$product
+```
+
+ (
+```
+WC_Product
+```
+
+) The product being checked.
+
+```
+$user_id
+```
+
+ (
+```
+int
+```
+
+) The ID of the customer being checked.
+
+```
+$excluded_subscription_ids
+```
+
+ (
+```
+int[]
+```
+
+) The IDs of subscriptions to leave out of the limit check. When Subscriptions checks whether the product can be purchased, these are the customer’s subscriptions to this product that they are currently paying a pending or failed order for. The array is empty when no such order is being paid, and other checks always pass an empty array. Starting in version 9.4.0, this filter receives the additional 
+```
+$excluded_subscription_ids
+```
+
+ argument.
+
+**Description:** Use this filter to change whether a customer has reached a limited subscription product’s limit, which decides whether they can buy the product again. Renewals and resubscribes are still allowed when the filter returns 
+```
+true
+```
+
+, and so are switches of a subscription the customer already has to this product, such as between its variations. Returning 
+```
+true
+```
+
+ doesn’t stop a customer buying a product whose **Limit subscription** setting is “Do not limit”. If your callback counts the customer’s subscriptions itself, skip the IDs in 
+```
+$excluded_subscription_ids
+```
+
+. Otherwise the customer can be blocked from paying for their own subscription.
+
+---
+
+## Gifting and Address Filters
+
+[↑ Back to top](#doc-title)
+
+**Filter:** 
+```
+'wcsg_enable_gifting'
+```
+
+**Parameters:** 
+```
+$enabled
+```
+
+ (
+```
+bool
+```
+
+) Whether the **Enable gifting for subscriptions** setting is on.
+
+**Description:** Turns gifting on or off for the whole store in code. The gift option on product, cart and checkout pages follows it, and so does the check on whether a request may set a gift recipient. Existing gifted subscriptions keep their recipient and keep renewing either way. To turn gifting on in code, use this filter: starting in version 9.4.0, 
+```
+wcsg_is_giftable_product
+```
+
+ can’t do it.
+
+---
+
+**Filter:** 
+```
+'wcsg_is_giftable_product'
+```
+
+**Parameters:** 
+```
+$is_giftable
+```
+
+ (
+```
+bool
+```
+
+) Whether the product can be gifted. 
+```
+$product
+```
+
+ (
+```
+WC_Product
+```
+
+) The product.
+
+**Description:** Decides whether a single product can be gifted. Starting in version 9.4.0, returning 
+```
+true
+```
+
+ doesn’t make a product giftable while gifting is turned off for the store. Renewals and subscription switches are never giftable, whatever this filter returns.
+
+**Filter:** 
+```
+'woocommerce_subscriptions_can_user_edit_subscription_address'
+```
+
+**Parameters:** 
+```
+$can_edit
+```
+
+ (
+```
+bool
+```
+
+) Whether the user may edit the address. 
+```
+$subscription
+```
+
+ (
+```
+WC_Subscription
+```
+
+) The subscription. 
+```
+$user_id
+```
+
+ (
+```
+int
+```
+
+) The user editing the address. 
+```
+$address_type
+```
+
+ (
+```
+string
+```
+
+) 
+```
+'billing'
+```
+
+, 
+```
+'shipping'
+```
+
+, or 
+```
+''
+```
+
+ when it couldn’t be determined (treated like 
+```
+'billing'
+```
+
+).
+
+**Description:** Introduced in version 9.4.0. Decides whether a customer can edit a subscription’s address from My Account. It applies to the **Change address** button, the edit-address form and the save handler, so returning 
+```
+false
+```
+
+ removes every way to change the address from My Account. It runs after the built-in checks and isn’t applied when no user is logged in, or when someone other than the subscription’s customer edits a billing address, so returning 
+```
+true
+```
+
+ can’t allow either of those. Gifting uses it to stop a purchaser editing a gift’s shipping address once the recipient owns it.
+
+---
+
 ## Subscription Formatting Filters
 
 [↑ Back to top](#doc-title)
@@ -4278,6 +4671,96 @@ $switch_item
 
 ---
 
+## Add to Subscription Filters
+
+[↑ Back to top](#doc-title)
+
+**Filter:** 
+```
+'wcsatt_is_matching_subscription'
+```
+
+**Parameters:**
+
+```
+$is_match
+```
+
+ (
+```
+bool
+```
+
+) Whether the subscription is one the Add to Subscription views would offer: Active, paid with a payment method that supports changes to the recurring amount, and matched by one of the plans.
+
+```
+$subscription
+```
+
+ A 
+```
+WC_Subscription
+```
+
+ object representing the subscription being checked.
+
+```
+$schemes
+```
+
+ An array of the plans being matched, keyed by plan key. 
+```
+null
+```
+
+ or empty when any eligible subscription matches, for example when adding a cart of one-time products.
+
+**Description:** Introduced in version 9.4.0. Decides whether a subscription is eligible to receive a product or the cart. The customer must still own the subscription, and the request’s other checks, such as refusing a plan that charges up front, still apply. It runs both when the list of subscriptions is built and when the customer submits the request, so a change made here applies to both. The list is built from the customer’s active subscriptions, so returning 
+```
+true
+```
+
+ here does not add a subscription with another status to it.
+
+Starting in version 9.4.0, the request is checked again against the same rules when the customer submits it, so a subscription added to the list only through the 
+```
+wcsatt_subscriptions_matching_product
+```
+
+ or 
+```
+wcsatt_subscriptions_matching_cart
+```
+
+ filters can no longer be added to. If your code uses them to add a subscription to the list, also return 
+```
+true
+```
+
+ from 
+```
+wcsatt_is_matching_subscription
+```
+
+ for that subscription, or the request is refused. A cart whose products carry plans is still refused unless exactly one of those plans matches the subscription’s billing schedule. Code that widens the subscription query (for example with 
+```
+woocommerce_get_subscriptions_query_args
+```
+
+) to offer subscriptions that are not active must also return 
+```
+true
+```
+
+ from 
+```
+wcsatt_is_matching_subscription
+```
+
+ for them; otherwise they are left out of the list, and refused if submitted.
+
+---
+
 ## Subscriptions Administration Filters
 
 [↑ Back to top](#doc-title)
@@ -4314,6 +4797,92 @@ woocommerce_update_options()
 ```
 
 .
+
+---
+
+**Filter:** 
+```
+'woocommerce_subscriptions_health_check_inter_batch_delay_seconds'
+```
+
+**Parameters:**
+
+```
+$delay
+```
+
+ (int) The number of seconds to wait before the next Subscriptions health check scan batch is due. Default 1.
+
+**Description:**
+
+Starting in version 9.4.0, this filter sets the delay between successful Subscriptions health check scan batches. Return an integer (or a string of digits) from 1 to 300; any other value, including 0, is ignored and the one-second default is used. The delay is the earliest time the next batch can run. The actual start time depends on Action Scheduler. The filter doesn’t change the 60-second retry after a failed batch or the five-minute back-off.
+
+```
+add_filter( 'woocommerce_subscriptions_health_check_inter_batch_delay_seconds', function () {    return 30; // Space scan batches 30 seconds apart.} );
+```
+
+---
+
+## Privacy Filters
+
+[↑ Back to top](#doc-title)
+
+**Filter:** 
+```
+'woocommerce_subscriptions_privacy_remove_subscription_personal_data_note'
+```
+
+**Parameters:**
+
+```
+$note
+```
+
+ (
+```
+string
+```
+
+) The note to add to the subscription, for example “Personal data removed via the subscriptions bulk action.”
+
+```
+$source
+```
+
+ (
+```
+string
+```
+
+) What removed the data: 
+```
+bulk_action
+```
+
+, 
+```
+erasure_request
+```
+
+, 
+```
+retention_cleanup
+```
+
+, a custom value passed by your own code, or an empty string.
+
+```
+$subscription
+```
+
+ (
+```
+WC_Subscription|null
+```
+
+) The subscription the data was removed from.
+
+**Description:** Use this filter to change the note added to a subscription when its personal data is removed, for example to describe a custom source. If the callback returns a value that is not a string, or a string that is empty or contains only spaces, the default note is used. Available since version 9.4.0.
 
 ---
 

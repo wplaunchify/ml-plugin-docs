@@ -340,6 +340,8 @@ These subscriptions use WordPress scheduled actions for renewal payment automati
 - Check that your [site’s cron system is functioning](https://woocommerce.com/document/subscriptions/requirements/)
 - Ensure Action Scheduler is not [experiencing errors](https://woocommerce.com/document/subscriptions/scheduled-action-errors/)
 
+To find subscriptions affected by missed or missing renewal actions, run the [Subscriptions health check](https://woocommerce.com/document/woocommerce-subscriptions-health-check/) under WooCommerce > Status > Subscriptions. The Missing renewals tab lists subscriptions whose next payment date is missing or has passed without a renewal. Starting in version 9.4.0, the Missing scheduled actions tab lists active, automatic subscriptions whose upcoming renewal action is missing, so you can restore it for the existing date without charging the customer. After you update, this tab shows Not scanned until a scan finishes.
+
 ### Subscriptions with payment gateway-controlled billing
 
 [↑ Back to top](#doc-title)

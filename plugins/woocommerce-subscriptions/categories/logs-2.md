@@ -17,6 +17,8 @@ The types of logs you’ll find for WooCommerce Subscriptions are
 - **Error Logs** – Failed Status Change Logs, Failed Scheduled Action Logs, Failed PayPal IPN logs, and PayPal Logs.
 - **Upgrade Logs**– General notes about upgrades.
 - **Switch Logs** – Log that records details about when and how a subscription was upgraded, downgraded, or items switched.
+- **Web Cron Logs**– Requests to your web cron URL, when the web cron service setting is enabled.
+- **Health Check Logs**– Subscriptions health check activity and fixes.
 - **PayPal Standard Logs** – While not directly created by WooCommerce Subscriptions, it does add certain, related subscription info to them.
 
 ## Where to find WooCommerce Subscriptions error logs
@@ -30,12 +32,7 @@ You can find the subscription logs on the WP Admin dashboard of a site. To view 
 3. Click on the **Source** name of a log to view its contents
 4. Or arrange logs by **Source**, **Date created**, **Date modified**, or **File size**, by clicking the respective column heading.
 
-Log names will begin with 
-```
-wcs-
-```
-
- and, like other logs, contain the date it was created, the date it was last updated, and the filesize of the log.
+Most Subscriptions log names begin with wcs-, but the web cron log is named woocommerce-subscriptions-external-trigger. Like other logs, each one shows the date it was created, the date it was last updated, and its file size.
 
 ![WooCommerce Subscription logs start with "wcs" when viewing the Logs tab under WooCommerce > Status. ](https://woocommerce.com/wp-content/uploads/2024/07/the-logs-tab-under-status.webp?strip=all&w=704)WooCommerce Logs Tab
 
@@ -69,6 +66,12 @@ This log has a failed-scheduled-actions label. Failed scheduled actions are reco
 Example log entry:
 
 ![](https://woocommerce.com/wp-content/uploads/2018/10/failed-scheduled-actions-log.webp?strip=all&w=704)Failed Scheduled Action Log Example
+
+**Web Cron Logs**
+
+When **Allow a web cron service to run pending subscription events** is enabled in WooCommerce > Settings > Subscriptions > Processing reliability, requests to your web cron URL are recorded in the woocommerce-subscriptions-external-trigger log. Entries are written at the debug level and show when a request started a run of your pending subscription events, was skipped because it arrived too soon after the last run, wasn’t run because your store has no subscription events scheduled yet, or was rejected.
+
+Starting in version 9.4.0, rejected requests (for example, a request with a missing or invalid token) are logged at most once every five minutes. The entry ends with “Similar entries will not be logged for the next 300 seconds.” This keeps the log from growing if someone else finds the URL. If your web cron service isn’t working, check this log for an “invalid token” entry. If you generated a new URL, update your web cron service with it.
 
 ## Upgrade Logs
 
@@ -134,6 +137,12 @@ wcs-switch-cart-items
 Example entry log:
 
 ![An example WooCommerce switch cart items log](https://woocommerce.com/wp-content/uploads/2018/10/wcs-switch-cart-items-log.webp?strip=all&w=704)An example WooCommerce switch cart items log
+
+## Health Check Logs
+
+[↑ Back to top](#doc-title)
+
+The wcs-health-check log records Subscriptions health check activity, including each fix run from the **Resolve** dialog and problems with scans or fixes (for example, a scan that couldn’t query the database, or a Schedule renewal fix that couldn’t add the renewal action).
 
 ## PayPal Standard Logs
 

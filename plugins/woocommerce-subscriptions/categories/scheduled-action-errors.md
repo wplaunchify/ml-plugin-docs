@@ -46,6 +46,8 @@ To fix an affected subscription, follow the steps below.
 
 The notice that appears after an action timeout contains a note with the subscription number and a link to the edit subscription page for that subscription. Use this to investigate if there are issues with the last renewal payment for the subscription that you need to address manually.
 
+**Tip:** The Subscriptions health check (WooCommerce > Status > Subscriptions) can help you find some of these subscriptions. The **Missing renewals** tab lists subscriptions whose next payment date is missing or past due. Starting in version 9.4.0, the **Missing scheduled actions** tab lists active, automatic subscriptions with an upcoming payment date but no scheduled renewal action, and lets you restore that action without charging the customer. Until a scan completes after you update, this tab shows **Not scanned**. Click **Run scan** to start a scan now; the tab fills in when the scan finishes. See [WooCommerce Subscriptions Health Check](https://woocommerce.com/document/woocommerce-subscriptions-health-check/).
+
 ### 2. Track the Payment Process
 
 [↑ Back to top](#doc-title)

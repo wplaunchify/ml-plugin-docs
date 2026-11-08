@@ -46,11 +46,16 @@ These emails keep shop managers and subscribers informed about the status of ren
 
 [↑ Back to top](#doc-title)
 
-These emails keep shop managers informed about subscriptions being paused, cancelled, reaching their end date, or being [switched](https://woocommerce.com/document/subscriptions/switching-guide/).
+These emails keep shop managers and subscribers informed about subscriptions being paused, cancelled, reaching their end date, or being [switched](https://woocommerce.com/document/subscriptions/switching-guide/).
 
 - **Suspended Subscription**: Sent when a customer manually suspends their subscription from the **My Account** page. Sent to the store manager by default.
 - **Expired Subscription**: Sent when a subscription reaches the end of its term and its status is changed to *expired*. Sent to the store manager by default.
-- **Cancelled Subscription**: Sent when a subscription has been canceled by the customer (at the time when they click ‘cancel’) or store manager. Sent to the store manager by default.
+- **Cancelled Subscription**: Sent when a subscription has been canceled by the customer (at the time when they click ‘cancel’) or store manager. Sent to the store manager by default. To notify the subscriber as well, enable the Customer Cancelled Subscription email.
+- **Customer Cancelled Subscription:** Sent to the subscriber when their active or on-hold subscription is cancelled or set to Pending Cancellation, and again if a subscription that is pending cancellation ends more than an hour before its scheduled end date. For gifted subscriptions, it is sent to the purchaser. The email states when the cancellation was received and when the subscription ends (or ended). If the subscription is pending cancellation, it also tells the subscriber that the subscription stays active until the end date and that no more renewal payments are scheduled. 
+
+This email is disabled by default. To use it, go to WooCommerce > Settings > Emails, open Customer Cancelled Subscription and enable it. Available starting in version 9.4.0.
+
+The email is not sent when a subscription is cancelled because the subscriber switched all of its items to a new subscription, resubscribed, had their personal data erased, or because the subscription was trashed or deleted. It is also not sent when a pending-cancellation subscription reaches its end date as scheduled.
 - **Subscription Switched**: Sent when a subscriber [switches their subscription](https://woocommerce.com/document/subscriptions/switching-guide/) from the *My Account* page. Sent to the store manager by default.
 - **Subscription Switch Complete**: Sent to the subscriber when they successfully [switch a subscription](https://woocommerce.com/document/subscriptions/switching-guide/). Orders that switch subscriptions receive this email instead of the WooCommerce *Completed Order* email.
 

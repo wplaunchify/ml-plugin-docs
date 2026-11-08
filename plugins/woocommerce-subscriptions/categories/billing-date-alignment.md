@@ -162,6 +162,8 @@ At least one product type must be selected. Product types not selected will be c
 
 **Tip:** Proration is most common for virtual products like software access or digital content, where customers receive less value during a partial billing period. Physical products such as subscription boxes are typically not prorated, since the customer receives the full product regardless of when they sign up.
 
+Customers can’t add a product on an aligned subscription plan with a prorated first payment to an existing subscription, because adding to a subscription doesn’t take a payment.
+
 ### Comparison
 
 [↑ Back to top](#doc-title)
@@ -246,6 +248,8 @@ The options displayed in the Align billing drop-down depend on the billing inter
 - **Weekly**: You can pick any day of the week, like Monday or Sunday.
 - **Monthly**: You can pick a specific day of the month from the 1st to the 27th, or set renewals to process on the last day of the month, which varies: the 28th, 30th, or 31st, depending on the month.
 - **Yearly**: You can pick a specific day of the year, like January 18 or May 22.
+
+When **Add to Subscription** is enabled, customers can add a product on an aligned plan to an existing active subscription if all of these are true: the subscription has the same billing schedule and its next payment falls on the plan’s renewal day; the plan has no sign-up fee and no prorated first payment; the subscription’s payment method supports changes to the recurring amount; and, for a plan with a fixed length, the subscription has the same number of renewals left. See [Add to Subscription](https://woocommerce.com/document/subscriptions/store-manager-guide/) for the full rules. This applies to plans aligned to a day of the week or month and, starting in version 9.4.0, to plans aligned to a day of the year. When you add the product to such a subscription from the admin, Subscriptions uses the plan’s price.
 
 ### How does the sign-up date affect alignment for longer billing intervals?
 
