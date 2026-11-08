@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-08T04:38:10.501Z",
+  "last_updated": "2026-11-08T04:44:41.673Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -778,8 +778,8 @@
       "slug": "fluentcart",
       "name": "FluentCart",
       "documentation_url": "https://docs.fluentcart.com/guide/",
-      "last_scraped": "2026-11-01T04:44:27.496Z",
-      "page_count": 177,
+      "last_scraped": "2026-11-08T04:44:41.673Z",
+      "page_count": 185,
       "categories": [
         "browsing-history",
         "changelog",

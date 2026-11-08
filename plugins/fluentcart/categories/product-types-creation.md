@@ -48,34 +48,39 @@ If your stock moves often, or more than one person manages it, this is the modul
 - **Quick views:** Switch between **All**, **Low Stock**, and **Out of Stock** items.
 - **Inline stock edits:** Adjust a single variation's stock without opening the product.
 - **Bulk updates:** Increase the stock of many variations, or set them all to an exact number.
-- **Adjustment history:** Every change is logged with who made it, when, the old and new stock, and a reason.
+- **Adjustment history:** Every change you make on the Inventory screen is logged with who made it, when, the old and new stock, and a reason.
 - **Advanced Filter:** Narrow the list by price, stock, variations, taxonomies, and more.
 
 ## Enabling Advanced Inventory ​
 
 Advanced Inventory builds on the core **Stock Management** feature, so you need to turn on both.
 
-1. From your WordPress dashboard, navigate to **FluentCart > Settings**.
-2. Click **Features & addon** in the left-hand menu.
-3. Turn on **Stock Management**.
-4. Tick the **Enable Advanced Inventory** checkbox that appears right below it.
+1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
+2. Click the **Features & addon** tab from the left-hand menu.
+3. Turn on the **Stock Management** switch. Its options expand below the description.
+4. Tick **Enable Advanced Inventory** inside the **Stock Management** card.
+5. Click **Save Settings**.
 
-Once both are active, an **Inventory** link appears in the **Products** menu.
+**Enable Advanced Inventory** is a FluentCart Pro option. Without Pro, the checkbox is disabled and shows an **Upgrade to Pro** link.
+
+Once both are on, an **Inventory** item appears under **Products**: in the WordPress sidebar as **↳ Inventory** directly below **Products**, and in the FluentCart top menu under the **Products** dropdown.
 
 INFO
 
 If Advanced Inventory is switched off, the **Inventory** link is hidden and new stock changes are no longer recorded in the history. Your existing stock levels stay untouched, and you can still manage stock from each product as described in [Inventory Management](/guide/product-types-creation/inventory-management).
+
+If you open the Inventory screen while **Stock Management** is off, FluentCart shows a **Stock Management Inactive** notice with a link to the module settings. Without FluentCart Pro, the screen shows an upgrade notice instead.
 ## Exploring the Inventory Screen ​
 
-Open **Products > Inventory** to see every product that has stock management turned on. Variable products are listed with each variation underneath, so you can see exactly which size or color is running low.
+Navigate to **FluentCart Pro > Products > Inventory** to see every product that has inventory tracking turned on. Variable products are listed with each variation underneath, so you can see exactly which size or color is running low.
 
 ### Quick Views ​
 
 Three tabs sit at the top of the list:
 
-- **All:** Every product with stock management enabled.
-- **Low Stock:** Products with a variation that has between 1 and 10 units available.
-- **Out of Stock:** Products with a variation that has no units available.
+- **All:** Every product that has **Inventory Management** turned on, with its stock-tracked variations. Products without inventory tracking don't appear on this screen.
+- **Low Stock:** Products with at least one tracked variation that has between 1 and 10 units available. The threshold of 10 is fixed; there is no setting for it.
+- **Out of Stock:** Products with at least one tracked variation that has 0 units available.
 
 The **Low Stock** tab is a handy daily checklist for restocking.
 
@@ -87,7 +92,7 @@ Each row is a product or one of its variations:
 
 - **Products:** The product name, or the variation name beneath it.
 - **SKU:** The variation's SKU, if you have set one.
-- **Total Stock:** All units you hold for the variation. You can edit this directly.
+- **Total Stock:** All units you hold for the variation. The field is read-only; click the adjuster icon next to it to change stock (see Updating Stock below).
 - **Available:** Units that can still be sold. This is the total stock minus the units on hold and delivered.
 - **On hold:** Units reserved by orders that are not completed yet.
 - **Delivered:** Units already committed to completed orders.
@@ -110,8 +115,8 @@ Use the search icon to find a product by name, or a variation by its name or SKU
 Now, let's adjust the stock of one variation directly from the list.
 
 1. Find the variation in the list.
-2. Click the small icon on the right side of its **Total Stock** field.
-3. In the popup, enter the change in **Adjust by**, or type the final number in **New Stock**. The two fields stay in sync, so entering 
+2. Click the adjuster icon on the right side of its **Total Stock** field. A small panel opens.
+3. In the panel, enter the change in **Adjust by**, or type the final number in **New Stock**. The two fields stay in sync, so entering 
 ```
 -5
 ```
@@ -128,7 +133,7 @@ Now, let's adjust the stock of one variation directly from the list.
 
  in **New Stock**.
 4. Choose a **Reason**.
-5. Click **Apply**.
+5. Click **Apply**. The button stays disabled until you pick a reason. The row and its **Available** count update, and an entry is added to the adjustment history.
 
 If you choose **Other** as the reason, a text box appears where you must describe what happened. Stock can never go below 
 ```
@@ -155,7 +160,7 @@ old → new
 
 .
 
-The window lists every variation that will change, so you can review it before saving. Pick a **Reason** and click **Update Stocks** to finish.
+The window lists every variation that will change, so you can review it before saving. Pick a **Reason** (and describe it if you choose **Other**), then click **Update Stocks** to finish. Each variation gets its own entry in the adjustment history.
 
 TIP
 
@@ -175,7 +180,7 @@ Every stock change needs a reason. You can choose from:
 
 To see what happened to a variation's stock, click the history icon at the end of its row.
 
-A **Stock Adjustment History** panel slides in from the right. Each entry shows:
+A **Stock Adjustment History** panel slides in from the right. Entries are listed newest first, and each one shows:
 
 - The date, time, and the user who made the change.
 - The reason as a colored label.
@@ -185,14 +190,18 @@ A **Stock Adjustment History** panel slides in from the right. Each entry shows:
 
 The panel shows the 100 most recent changes for that variation, and entries cannot be edited or deleted. It is the place to check when numbers don't match what you expected.
 
+INFO
+
+Only changes made on the **Inventory** screen are recorded here. Stock you adjust from a product's edit page, and stock movements caused by orders and refunds, are not added to this history.
 ## Permissions ​
 
-Users need permission to view products to see the **Inventory** screen and its history, and permission to edit products to change stock. To adjust who can do what, see [Roles & Permissions](/guide/settings-configuration/roles-permissions/).
+Opening the **Inventory** screen and its history needs the **products/view** permission. Changing stock, single or bulk, needs **products/edit**. Roles without **products/view** don't see the **Inventory** menu entry. To adjust who can do what, see [Roles & Permissions](/guide/settings-configuration/roles-permissions/).
 
 ## Best Practices ​
 
 - **Choose the most accurate reason:** A clear reason, or a short description under **Other**, makes the history easy to understand months later.
 - **Prefer Increase Stock for routine changes:** It builds on the stock at the moment you save, rather than overwriting it.
+- **Check the history before large bulk updates:** Open **Stock Adjustment History** for a few key variations so you know the starting counts if you need to reverse a change.
 - **Check Low Stock regularly:** It shows what to reorder before items sell out.
 - **Review the history when counts look off:** It shows who changed what and why.
 
@@ -422,7 +431,7 @@ You will now be looking at a blank Bulk Insert page. This is where you will hand
 1. A popup window will appear asking for your file.
 2. Here upload your CSV file that is saved to your computer, simply drag and drop the file into the upload area, or click the **Browse/Upload Files** text to select it.
 
-> Note: FluentCart can handle massive catalogs! The maximum file size allowed is a generous 300 MB.
+> Note: The largest file you can upload is your server's upload limit, shown in the upload area (Any Format upto …). Ask your host to raise it if your CSV is bigger.
 
 > Need a template? If you are unsure how to format your spreadsheet, look at the bottom left of this popup and click Download a Sample CSV File. This gives you a perfectly formatted template you can fill out in Excel or Google Sheets!
 
@@ -438,12 +447,13 @@ Once your file uploads, the Map Columns screen will automatically appear.
 Carefully match them up. For example:
 
 - Map **Post Title** to your spreadsheet's **Name** or **Product Name** column.
-- Map **Post Name** to your spreadsheet's **SKU** column.
+- **Post Name** is the product's URL slug. FluentCart pre-selects a column named **SKU** for it; if you leave it unmapped, the slug is built from the title.
+- Map **SKU** to your spreadsheet's **SKU** column so each variation gets its SKU.
 - Map **Post Content** to your spreadsheet's **Description** column.
 
 > Helpful Tip: FluentCart is smart! If your spreadsheet headers have common names (like "Price" or "Name"), the system will automatically try to match them for you. Just double-check its work.
 
-When everything looks correctly matched, click the **Add Products** button at the bottom of the window.
+When everything looks correctly matched, click **Add Products** at the bottom of the window to add the rows to the table, or **Clear and Add Products** to empty the table first.
 
 ## Step 4: The Staging Table (Your Safe Review Zone) ​
 
@@ -456,6 +466,8 @@ Think of this as a final rehearsal. You can use this table to quickly review and
 - **Manage Variations Easily:** If you imported products with different sizes or colors (variable products), you will see them neatly nested under the main product. Forgot a size? Just click the **+ Add Variant** text directly in the table to create a new row for it instantly.
 - **Clean Up Mistakes (Row Actions):** If a product got imported by mistake, simply check the box next to its name on the far left, and click the red **Delete** button at the top. You can also use the **Duplicate** button to quickly copy a product setup.
 - **Pin Actions:** If you have many columns and need to scroll horizontally, check the **Pin Actions** box at the top right. This freezes your action buttons so they are always visible, no matter how far you scroll.
+- **Link rows:** Select two or more products and click **Link** to edit them together. Click **Unlink** to stop.
+- **Add Product:** Adds an empty row you can fill in by hand.
 
 ## Step 5: Save and Publish (Going Live!) ​
 
@@ -468,7 +480,7 @@ Once you are 100% satisfied that your data is perfect:
 1. Click the dark **Save All Products** button located at the top right of the screen.
 2. A progress bar will appear as FluentCart processes the data.
 
-Congratulations! FluentCart has now officially added all of those products and variations to your live store catalog. Your customers can now find and purchase them!
+Congratulations! FluentCart has now added all of those products and variations to your store catalog. Each product's **Status** column decides whether it goes live: products set to published appear in your store; drafts stay hidden.
 
 ---
 
@@ -496,6 +508,14 @@ To get started, open any product in edit mode and scroll down to the **Pricing**
 - **Simple Variations** — For products that come in multiple versions, like different colors, sizes, or license tiers, each with its own unique price
 - **Advanced Variations** — For products built from reusable attributes (Color, Size, Material), where FluentCart generates every combination automatically. See the [Advanced Variations](/guide/product-types-creation/advanced-variations) guide.
 
+WARNING
+
+Switching a product from **Simple Variations** to **Simple** keeps only the first variation and removes any image attached to it. Switching to **Advanced Variations** deletes the current variations and can't be undone, so you can't switch back afterwards. In both cases, FluentCart asks you to type 
+```
+proceed
+```
+
+ to confirm.
 ## Option 1: Simple Pricing ​
 
 Choose **Simple** when your product has one version and one price. A single ebook, a standard service, a fixed-rate subscription plan — this is the right mode for all of them.
@@ -573,11 +593,11 @@ The **Shipping** section at the bottom of the pricing panel is where you define 
 
 **Package** Select a pre-configured package from the dropdown. This is the box, envelope, or mailer your product ships in, and it helps FluentCart (and your connected shipping carriers) calculate accurate delivery rates based on real dimensions and weight. If no packages have been created yet, you can add one directly from here — see [Adding a New Package](#adding-a-new-package) below.
 
-**Product weight** Enter the weight of this product and choose the unit (**kg** or **lb**) from the dropdown next to the field. Accurate weights are essential for carrier-calculated shipping rates to work correctly.
+**Product weight** Enter the weight of this product and choose the unit (**kg**, **g**, **lbs**, or **oz**) from the dropdown next to the field. Accurate weights are essential for carrier-calculated shipping rates to work correctly.
 
 **Copy Variation ID** *(Action)* Click **Copy Variation ID** to copy the simple product's underlying variant ID to your clipboard. This is the value you'll need when wiring the product into custom code, REST endpoints, automations, or shortcodes that expect a specific variant reference.
 
-**Direct Checkout** *(Link)* This generates a unique URL that takes customers straight to the checkout page with this product pre-loaded — bypassing the product page and cart entirely. It's perfect for email campaigns, social media promotions, or any landing page where you want to reduce the number of steps to purchase.
+**Direct Checkout** *(Link)* Copies a URL that takes customers straight to the checkout page with this product pre-loaded, bypassing the product page and cart entirely. It's perfect for email campaigns, social media promotions, or any landing page where you want to reduce the number of steps to purchase. The link is only available once the product is published (or private); it doesn't appear while the product is a draft.
 
 ---
 
@@ -593,9 +613,9 @@ Here's what to fill in:
 - **Envelope** — A flat mailer, padded envelope, or document sleeve
 - **Soft package** — A poly mailer, bubble wrap, or any flexible pouch
 
-**Dimensions** Enter the **Length**, **Width**, and **Height** of the package, then select the measurement unit — **in** (inches) or **cm** (centimetres) — from the dropdown next to the fields.
+**Dimensions** Enter the **Length**, **Width**, and **Height** of the package, then select the measurement unit (**cm**, **mm**, **in**, or **m**) from the dropdown next to the fields.
 
-**Weight (empty)** The weight of the empty packaging itself. Enter the value and choose the unit (**kg** or **lb**). This gets added to your product's weight to give carriers an accurate total shipment weight.
+**Weight (empty)** The weight of the empty packaging itself. Enter the value and choose the unit (**kg**, **g**, **lbs**, or **oz**). This gets added to your product's weight to give carriers an accurate total shipment weight.
 
 **Package name** Give your package a name you'll recognise later (e.g., 
 ```
@@ -619,37 +639,37 @@ Once everything looks correct, click **Add package** to save it. Your new packag
 
 Toggle the **Subscription** switch to the on position and the pricing fields transform to everything you need for a recurring billing setup.
 
-**Installment Price** *(Required)* The amount charged to the customer on each billing cycle. The 
+**Price** *(Required)* The amount charged to the customer on each billing cycle. When you turn on **Enable installment payment**, this field is relabelled **Installment Price** and shows 
 ```
-x1
+x
 ```
 
- indicator next to the field reflects how many times this price is charged per interval — this updates automatically when you configure installments.
+ followed by the installment count.
 
 **Additional display prices** *(Collapsible section)* Expand this section to access the subscription-specific display and billing options:
 
 - **Compare at price** *(Optional)* — A higher price displayed with a strikethrough, showing customers the value of the subscription rate.
-- **Interval** *(Required)* — How frequently the customer is billed. Choose from:
+- **Interval** *(Required)*: How frequently the customer is billed. When you turn on **Subscription**, Interval starts at **Yearly**. Choose from:
 
 - **Daily**
 - **Weekly**
 - **Monthly**
 - **Quarterly**
-- **Half Yearly (Six Month)**
+- **Half Yearly**
 - **Yearly**
-- **Trial Days** *(Optional)* — Enter the number of free days before the first billing cycle begins. Set to 
+- **Trial Days** *(Optional)*: Enter the number of free days before the first billing cycle begins. Leave it empty (or 
 ```
 0
 ```
 
- if you don't want a trial period. For example, 
+) for no trial. The trial can't be longer than 365 days. For example, 
 ```
 14
 ```
 
  gives customers a two-week free trial — a powerful conversion tool for subscription products.
 
-**Enable installment payment** *(Checkbox — Optional)* Check this box if you want to offer the subscription for a fixed number of payments instead of recurring indefinitely. Once checked, two fields appear:
+**Enable installment payment** *(Checkbox, optional, FluentCart Pro)* Check this box if you want to offer the subscription for a fixed number of payments instead of recurring indefinitely. Without Pro, this option and **Setup fee** are disabled and marked with a crown icon. Once checked, two fields appear:
 
 - **Installment Count** — The total number of payments the customer will make (e.g., 
 ```
@@ -661,7 +681,9 @@ x1
 
 > 💡 Pro Tip: Installment plans are ideal for online courses, coaching programs, or any product where you want customers to pay over time with a clear end date — no cancellation anxiety for them, guaranteed revenue for you.
 
-**Setup fee** *(Toggle — Optional)* Enable this to charge a one-time fee at the very start of the subscription, in addition to the recurring price. When toggled on, two sub-fields appear:
+Early payment
+
+Customers can pay their remaining installments ahead of schedule from their subscription screen. This is controlled by **Enable early payment for installment** (the **Early Payment** row) under **FluentCart Pro > Settings > Store Settings > Subscriptions**. It's on by default and requires FluentCart Pro.**Setup fee** *(Toggle, optional, FluentCart Pro)* Enable this to charge a one-time fee at the very start of the subscription, in addition to the recurring price. When toggled on, two sub-fields appear:
 
 - **Setup fee label** — The name customers see for this charge at checkout (e.g., 
 ```
@@ -729,10 +751,11 @@ Pro License
 
 **The three-dot icon** gives you these quick options:
 
-- **Duplicate** — Instantly copy this variation to use as a starting point for a new one
-- **Direct Checkout** — Generate a unique buy-now link for this specific variation
-- **Delete** — Permanently remove this variation from the product
-- **Skip inventory** — Exclude this variation from stock tracking if needed
+- **Skip inventory:** Stop tracking stock for this variation. Shown only when the product's **Inventory Management** is on.
+- **Duplicate:** Copy this variation to use as a starting point for a new one.
+- **Copy Variation ID:** Copy the variation's ID for shortcodes, custom code, or integrations.
+- **Direct Checkout:** Copy a buy-now link for this specific variation. Unavailable while the product is a draft.
+- **Delete:** Permanently remove this variation from the product. Not shown when only one variation is left.
 
 > 📝 Note: You can make quick edits to Title, Price, and Compare at price directly in the table rows. For everything else — images, inventory, subscriptions, SKU, and shipping — click the pencil icon to open the full editor.
 
@@ -786,6 +809,8 @@ XL
 - **On Hold** — Units reserved in pending or processing orders (read-only)
 - **Delivered** — Units that have been fulfilled and shipped (read-only)
 
+The switch works only when the product's **Inventory Management** is on. If it's off, the box shows a notice with a switch you can use to turn on inventory for the whole product. The Inventory box is available for Simple Variations and Advanced Variations, and only while Stock Management is enabled in your store settings.
+
 > 💡 Pro Tip: Managing inventory at the variation level means you'll never accidentally oversell the Red hoodie just because you still have plenty of Teal ones. Each color stays tracked independently.
 
 **SKU** Expand the collapsible **SKU** section to assign a unique tracking code to this specific variation (e.g., 
@@ -799,7 +824,7 @@ HOO-WHT-M
 
 - **Physical Product** — Toggle on if this variation requires physical shipment
 - **Package** — Select the package type for this variation (different variations can use different package sizes)
-- **Product weight** — Enter the weight for this specific variation, with your preferred unit (**kg** or **lb**). Since different sizes or configurations often weigh differently, per-variation weight ensures your carrier rates stay accurate
+- **Product weight** — Enter the weight for this specific variation, with your preferred unit (**kg**, **g**, **lbs**, or **oz**). Since different sizes or configurations often weigh differently, per-variation weight ensures your carrier rates stay accurate
 
 **Tax** *(visible only when store-level tax is enabled)* Each variation also has its own tax controls — a Tax Inclusion override in the Pricing section, a Charge-tax checkbox, and a per-variation Tax Class. See [Per-Variation Tax Settings](/guide/product-types-creation/per-variation-tax) for the full walkthrough.
 
@@ -819,19 +844,19 @@ All the same subscription fields are available here as in Simple pricing:
 
 **Interval** *(Required)* The billing frequency for this specific variation — choose from **Daily**, **Weekly**, **Monthly**, **Quarterly**, **Half Yearly**, or **Yearly**. Different variations can have different intervals, so you could offer a "Monthly" and a "Yearly" tier side by side.
 
-**Trial Days** *(Optional)* The number of free days before the first charge is made. Set to 
+**Trial Days** *(Optional)* The number of free days before the first charge is made. Leave it empty (or 
 ```
 0
 ```
 
- for no trial. Offering even a 7-day trial on higher-priced tiers can meaningfully improve sign-up rates.
+) for no trial. The trial can't be longer than 365 days. Offering even a 7-day trial on higher-priced tiers can meaningfully improve sign-up rates.
 
-**Enable installment payment** *(Checkbox — Optional)* Limit this variation's subscription to a fixed number of payments. When checked:
+**Enable installment payment** *(Checkbox, optional, FluentCart Pro)* Limit this variation's subscription to a fixed number of payments. Without Pro, this option and **Setup fee** are disabled and marked with a crown icon. When checked:
 
 - **Installment Count** — Total number of billing cycles before the subscription ends automatically. Must be **2 or more**
 - **Total Price** — Auto-calculated total (Installment Price × Count)
 
-**Setup fee** *(Toggle — Optional)* Charge a one-time fee at signup for this variation. When toggled on:
+**Setup fee** *(Toggle, optional, FluentCart Pro)* Charge a one-time fee at signup for this variation. When toggled on:
 
 - **Setup fee label** — The customer-facing name for this charge (e.g., 
 ```
@@ -887,7 +912,7 @@ By the end, you will be able to confidently sell and manage any downloadable ite
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Products** in the left WordPress sidebar.
 2. On the **Products** screen, click the **"Add Product"** button at the top right.
-3. This will open the **Add New Product** popup from where you have to give the product name and select the product type **Digital Product** then the **Edit Product** page will come.
+3. In the **Add New Product** popup, enter the **Product Title**, choose a **Variation Type** (**Simple**, **Simple Variations**, or **Advanced Variations**), and keep **Digital Product** selected (it's the default). Click **Add Product** to open the **Edit Product** page.
 
 ### 1. Basic Product Information ​
 
@@ -912,8 +937,8 @@ Once you've picked your files or linked your URLs, just click the **Save** butto
 
 Categorize and type your digital product for better structured organization.
 
-- **Product Categories:** Assign the product to relevant categories (e.g., "E-Books", "Software"). Click **"+ Add More Category"** to assign additional categories.
-- **Product Brand:** Assign the product to relevant brands. Click to **"+Add Brand”** to assign additional brands.
+- **Product Categories:** Assign the product to relevant categories (e.g., "E-Books", "Software"). Click **+ Add Category** to assign additional categories.
+- **Product Brand:** Assign the product to relevant brands. Click **+ Add Brand** to assign additional brands.
 
 ### 4. Pricing & Variations ​
 
@@ -976,12 +1001,12 @@ EBOOK-MKT-01
 
 Toggle the **Subscription** switch on and the pricing fields transform into everything you need for recurring billing — ideal for software tools, membership content, course access, or any digital product your customers return to over time.
 
-**Installment Price** *(Required)* The amount charged on each billing cycle. The 
+**Price** *(Required)* The amount charged on each billing cycle. When you turn on **Enable installment payment**, this field is relabelled **Installment Price** and shows 
 ```
-x1
+x
 ```
 
- indicator next to the field reflects how many times this price is charged per interval — it updates automatically when you configure installments.
+ followed by the installment count.
 
 **Additional display prices** *(Collapsible section)*
 
@@ -992,16 +1017,16 @@ x1
 - **Weekly**
 - **Monthly**
 - **Quarterly**
-- **Half Yearly (Six Month)**
+- **Half Yearly**
 - **Yearly**
-- **Trial Days** *(Optional)* — The number of free days before the first charge. Set to 
+- **Trial Days** *(Optional)*: The number of free days before the first charge. Leave it empty or set it to 
 ```
 0
 ```
 
- for no trial. Even a 7-day trial on a higher-priced plan can meaningfully improve sign-up rates — it lowers the barrier to committing.
+ for no trial; the maximum is 365 days. Even a 7-day trial on a higher-priced plan can meaningfully improve sign-up rates — it lowers the barrier to committing.
 
-**Enable installment payment** *(Checkbox — Optional)* Check this box to limit the subscription to a fixed number of payments instead of running indefinitely. Two fields appear:
+**Enable installment payment** *(Checkbox, optional, FluentCart Pro)* Check this box to limit the subscription to a fixed number of payments instead of running indefinitely. Two fields appear:
 
 - **Installment Count** — The total number of payments (e.g., 
 ```
@@ -1013,7 +1038,7 @@ x1
 
 > 💡 Pro Tip: Installment plans work brilliantly for online courses or coaching programs — customers pay over time with a clear end date, eliminating cancellation anxiety while guaranteeing your revenue.
 
-**Setup fee** *(Toggle — Optional)* Enable this to charge a one-time fee at the very start of the subscription, in addition to the recurring price. Two sub-fields appear:
+**Setup fee** *(Toggle, optional, FluentCart Pro)* Enable this to charge a one-time fee at the very start of the subscription, in addition to the recurring price. Two sub-fields appear:
 
 - **Setup fee label** — The name customers see for this charge at checkout (e.g., 
 ```
@@ -1030,7 +1055,7 @@ Enrollment Fee
 
 **Calculate profit/cost** *(Toggle — Optional)* Toggle on to track **Cost per item**, **Profit**, and **Margin** for this subscription for internal reporting.
 
-> 📝 Note: The SKU section works exactly the same in subscription mode as it does for one-time payments. Digital products don't need a shipping package or physical weight — so those fields don't appear here.
+> 📝 Note: The SKU section works exactly the same in subscription mode as it does for one-time payments. The Shipping box still shows a Physical Product switch. Leave it off for digital products; the package and weight fields appear only when it's on.
 
 ---
 
@@ -1072,9 +1097,9 @@ The **three-dot icon** gives you:
 
 - **Duplicate** — Copy this variation as a starting point for a new one
 - **Copy Variation ID** — Get the unique ID for developers or shortcode use
-- **Direct Checkout** — Generate a buy-now link for this specific version
+- **Direct Checkout** — Copy a buy-now link for this specific version. Unavailable while the product is a draft.
 - **Delete** — Remove this variation permanently
-- **Skip inventory** — Exclude this variation from stock tracking
+- **Skip inventory** — Exclude this variation from stock tracking (shown only when the product's **Inventory Management** is on)
 
 > 📝 Note: Quick edits to Title, Price, and Compare at price can be made directly in the table rows. For images, subscription configuration, and everything else — click the pencil icon.
 
@@ -1127,19 +1152,19 @@ Toggle the **Subscription** switch on inside the variation editor to configure t
 
 **Interval** *(Required)* The billing frequency for this specific variation — choose from **Daily**, **Weekly**, **Monthly**, **Quarterly**, **Half Yearly**, or **Yearly**. Different variations can have different intervals, so you can offer a "Monthly" and a "Yearly" tier side by side on the same product page.
 
-**Trial Days** *(Optional)* Free days before the first charge. Set to 
+**Trial Days** *(Optional)* Free days before the first charge. Leave it empty or set it to 
 ```
 0
 ```
 
- for no trial. Offering even a short trial on a higher-priced tier can meaningfully improve sign-up rates.
+ for no trial; the maximum is 365 days. Offering even a short trial on a higher-priced tier can meaningfully improve sign-up rates.
 
-**Enable installment payment** *(Checkbox — Optional)* Limit this variation to a fixed number of billing cycles:
+**Enable installment payment** *(Checkbox, optional, FluentCart Pro)* Limit this variation to a fixed number of billing cycles:
 
 - **Installment Count** — Total payments before the subscription ends automatically
 - **Total Price** — Auto-calculated total (Installment Price × Count)
 
-**Setup fee** *(Toggle — Optional)* Charge a one-time fee at signup for this variation:
+**Setup fee** *(Toggle, optional, FluentCart Pro)* Charge a one-time fee at signup for this variation:
 
 - **Setup fee label** — The customer-facing name (e.g., 
 ```
@@ -1165,12 +1190,12 @@ The **Add Downloadable Asset(s)** modal opens with the following options:
 
 **Storage Providers modal**
 
-The **Storage Providers** modal is where you manage and select the file to attach. The left panel lists your configured providers — **Local** (your WordPress server) and **Cloudflare R2** if you have it connected. Select a provider to load its contents on the right.
+The **Storage Providers** modal is where you manage and select the file to attach. The left panel lists your configured providers: **Local** (your WordPress server), [Amazon S3](/guide/storage/aws-s3) once you've connected it, and [Cloudflare R2](/guide/storage/cloudflare-r2) (FluentCart Pro). Select a provider to load its contents on the right.
 
 Each provider offers two tabs:
 
 - **Select Files** — Browse files already uploaded to that provider. Use the search bar to find a file by name, check the box next to it, and click **Confirm** to attach it.
-- **Upload** — Drag and drop a new file directly onto the upload area, or click **Browse/Upload Files** to pick one from your computer. Any file format is accepted, up to **300 MB** per file.
+- **Upload** — Drag and drop a new file directly onto the upload area, or click **Browse/Upload Files** to pick one from your computer. Any file format is accepted, up to your server's maximum upload size (shown in the upload area as **Any Format upto …**). File names can be at most 160 characters.
 
 Once you've selected or uploaded your file, click **Confirm** to return to the asset modal, then click **Save Asset** to attach it to your product.
 
@@ -1182,7 +1207,7 @@ To learn more, read this documentation of the [Digital Product License](/guide/p
 
 ### Shipping Class ​
 
-You can assign a **Shipping Class** to any product to apply location-based shipping costs.
+You can assign a **Shipping Class** to a product with physical variations to apply location-based shipping costs.
 
 To add a shipping class:
 
@@ -1192,7 +1217,7 @@ To add a shipping class:
 
 Shipping classes work with **Shipping Zones** and **Shipping Methods** to control how and where you deliver products.
 
-> Note: Digital products typically don’t require shipping, but you can still assign a class if needed for special handling or hybrid products.
+> Note: The Shipping Class card appears only when at least one variation has Physical Product turned on. A purely digital product doesn't show it.
 
 INFO
 
@@ -1201,7 +1226,7 @@ To learn more about how shipping classes work, see the [Understanding Shipping C
 
 Once you have configured all the necessary details:
 
-1. Set the **Status** to **"Published"** in the "Publishing" section.
+1. Set the **Status** to **Publish** in the "Publishing" section.
 2. Click the **"Update"** (or "Save") button on the top right to make your digital product live in your store.
 
 ---
@@ -1225,6 +1250,9 @@ In this guide, you will learn how to:
 
 Follow these steps to confidently configure all the necessary settings for your licensed digital products.
 
+INFO
+
+Licensing is a FluentCart Pro feature. Bundle products don't have their own license settings. Each item inside the bundle issues licenses from its own settings, and only the billing interval follows the bundle.
 ## Steps to Create a New Licensed Digital Product ​
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Products** in the left WordPress sidebar.
@@ -1260,8 +1288,8 @@ Once you've picked your files or linked your URLs, just click the **Save** butto
 
 Categorize and type your product for better organization.
 
-- **Product Categories:** Assign the product to relevant categories (e.g., "Software"). Click **"+ Add More Category"** to assign additional categories.
-- **Product Brand:** Assign the product to relevant brands. Click to **"+Add Brand”** to assign additional brands.
+- **Product Categories:** Assign the product to relevant categories (e.g., "Software"). Click **+ Add Category** to assign additional categories.
+- **Product Brand:** Assign the product to relevant brands. Click **+ Add Brand** to assign additional brands.
 
 ### 5. Pricing & Variations ​
 
@@ -1288,11 +1316,11 @@ Single Site Yearly
 ). Editable directly in the table.
 - **Price** — The selling price for this tier. Editable inline.
 - **Compare at price** — The "was" price shown with a strikethrough for this tier. Also editable inline.
-- **Action** — A **pencil icon** to open the full tier editor, and a **three-dot icon** for quick actions (Duplicate, Direct Checkout, Delete).
+- **Action** — A **pencil icon** to open the full tier editor, and a **three-dot icon** for quick actions (Duplicate, Copy Variation ID, Direct Checkout, Delete).
 
 Click **+ Add more** at the bottom to add a new tier. Fill in the title and price inline, then click the pencil icon to configure the billing details.
 
-> 📝 Note: You can make quick edits to Title, Price, and Compare at price directly in the table. For payment term, subscription settings, setup fee, and SKU — you'll need to open the full editor with the pencil icon.
+> 📝 Note: You can make quick edits to Title, Price, and Compare at price directly in the table. For the Subscription switch, interval, trial, setup fee, and SKU, open the full editor with the pencil icon.
 
 **Editing a License Tier (Pencil Icon)**
 
@@ -1321,10 +1349,10 @@ Lifetime Access
 
 **Compare at price** *(Optional)* A higher original price shown with a strikethrough — great for communicating annual savings when customers compare your monthly and yearly plans.
 
-**Payment Term — the heart of license pricing** This is where you tell FluentCart *how* this tier is paid for. Your options are:
+**Subscription switch: the heart of license pricing** Use the **Subscription** switch in the **Pricing** box to choose how this tier is paid for:
 
-- **One Time** — For lifetime licenses. The customer pays once and owns access permanently. No recurring billing, no renewal reminders.
-- **Subscription** *(toggle ON)* — For renewable licenses. When you switch to subscription mode, the full recurring billing setup becomes available:
+- **Off (one-time):** For lifetime licenses. The customer pays once and owns access permanently. No recurring billing, no renewal reminders.
+- **On (subscription):** For renewable licenses. **Interval** starts at **Yearly**; change it if needed. When you turn the switch on, the full recurring billing setup becomes available:
 
 - **Interval** *(Required)* — How frequently the license renews: **Daily**, **Weekly**, **Monthly**, **Quarterly**, **Half Yearly**, or **Yearly**. A "Yearly" license renews once per year; a "Monthly" license renews each month.
 - **Trial Days** *(Optional)* — Free days before the first charge begins. Set to 
@@ -1333,9 +1361,9 @@ Lifetime Access
 ```
 
  for no trial. Even a 7-day trial can meaningfully lift conversion rates for higher-priced tiers.
-- **Enable installment payment** *(Optional)* — Limit the subscription to a fixed number of payments instead of renewing indefinitely: - **Installment Count** — Total billing cycles before the license ends automatically
-- **Total Price** — Auto-calculated (Price × Count)
-- **Setup fee** *(Toggle — Optional)* — A one-time charge at the very start of the subscription, in addition to the recurring price: - **Setup fee label** — What customers see at checkout (e.g., 
+- **Enable installment payment** *(Pro, optional)* — Limit the subscription to a fixed number of payments instead of renewing indefinitely. When installments are on, the price field is labelled **Installment Price**: - **Installment Count** — Total billing cycles before the license ends automatically
+- **Total Price** — Auto-calculated (Installment Price × Installment Count)
+- **Setup fee** *(Pro, optional)* — A one-time charge at the very start of the subscription, in addition to the recurring price: - **Setup fee label** — What customers see at checkout (e.g., 
 ```
 Activation Fee
 ```
@@ -1359,7 +1387,7 @@ For the complete, field-by-field reference on every pricing option — including
 
 This section is where you manage the digital files associated with your licensed product.
 
-- Click **"+ Add Asset"** to upload or link your software package, documentation, or other digital content.
+- Turn on the **Downloadable Asset(s)** switch, then click **Add** to upload or link your software package, documentation, or other digital content.
 - You can choose to link assets to **specific variants** (e.g., a "pro" version download for a higher-tier license) or leave it empty for all variants.
 - See [Adding & Managing Downloadable Assets](/guide/product-types-creation/creating-digital-products#_5-downloadable-asset-s) for detailed steps.
 
@@ -1372,7 +1400,7 @@ This is the most important section for licensed digital products, offering granu
 Before you can set up licenses for a specific product, you need to make sure the main licensing feature is turned on for your entire store. This is a quick, one-time step.
 
 1. Navigate to **FluentCart Pro** > **Settings** from the left WordPress sidebar.
-2. Click on the **Features & Add-ons** tab.
+2. Click on the **Features & addon** tab.
 3. Locate the **Product Licensing** option and click the **toggle** button to enable it.
 4. Click the **Save Settings** button to apply the change.
 
@@ -1381,15 +1409,20 @@ Before you can set up licenses for a specific product, you need to make sure the
 Once the add-on is enabled, you can configure the license settings for each product. On the Product Edit screen, click the **License Settings** tab.
 
 1. On the Product Edit screen, click the **"License Settings"** tab.
-2. **Enable Licensing for this product:** Ensure this checkbox is enabled to activate licensing for this product.
+2. **Enable Licensing for this product:** Turn on the **Enable Licensing for this product** switch at the top of the **License Settings** card.
 3. **License Configuration Table (Per Variant):**
 
-- **Activation Limit:** For each license variant (e.g., "Single Site Annual License"), set the number of times the license key can be activated (e.g., 50, 100).
+- **Activation Limit:** For each license variant (e.g., "Single Site Annual License"), set how many sites or devices can use the license key (e.g., 50). Use 
+```
+0
+```
+
+ or leave it empty for unlimited activations. The license stays valid for the same period as the variation's billing interval (a yearly subscription gives a one-year license; a one-time price gives a lifetime license).
 4. **Software/Plugin Specific Information:**
 
 - **Version Number:** Enter the current version of your digital product (e.g., "1.0.1").
-- **License Key Prefix:** This adds a short prefix to every license key generated for this product. It's a great way to quickly identify keys from different products. For example, you could use ff- for Fluent Forms.
-- **Update File:** This field shows the main downloadable file that will be used for software updates.
+- **License Key Prefix (Optional):** This adds a short prefix to every license key generated for this product. It's a great way to quickly identify keys from different products. For example, you could use ff- for Fluent Forms.
+- **Update File:** Choose which of the product's downloadable files is delivered as the automatic update. If the product has no downloadable files yet, add one under **Downloadable Asset(s)** first.
 - **Changelog Description:** Here, you can write down what's new or what has changed in the latest version of your product. This information will be visible to your users.
 5. **Is WP Plugin?:** If the digital product you're selling is a WordPress plugin, check this box. This will reveal a few more fields specific to WordPress plugins.
 
@@ -1398,7 +1431,7 @@ Once the add-on is enabled, you can configure the license settings for each prod
 - **Icon URL:** Provide a link to an icon image for your plugin.
 - **Required PHP Version (optional):** If your plugin needs a minimum version of PHP to work, you can specify it here.
 - **Required WP Version (optional):** Similarly, if your plugin requires a minimum WordPress version, enter it here.
-6. **Signed Releases (optional):** If you sign your releases, you can publish a signature alongside each version so customer sites can verify a package before installing it.
+6. **Signed Releases (optional):** These fields are hidden by default and appear only after a developer turns on signed releases for your store with a code snippet. There's no switch for it in the admin. Once enabled, you can publish a signature alongside each version so customer sites can verify a package before installing it.
 
 - **Release Manifest:** The signed manifest for the current release, as a base64 value.
 - **Release Signature:** The detached signature for that manifest, also base64.
@@ -1407,7 +1440,7 @@ Both values are stored and served exactly as you enter them. Paste each one as a
 
 Off unless you sign your releases
 
-Signed releases are optional and disabled by default. Most vendors don't sign, and nothing about licensing or updates depends on this — leave the fields empty if signing isn't part of your release process.
+Signed releases are optional and disabled by default. Most vendors don't sign, and nothing about licensing or updates depends on this. If signing isn't part of your release process, you won't see these fields and don't need to do anything.
 
 FluentCart never generates, verifies, or parses these values. The signing key belongs to your release pipeline and should never be stored on your store's server.
 
@@ -1418,7 +1451,7 @@ After you've configured these settings, just click the **Update Settings** butto
 On the Product Edit screen, click the **"Integrations"** tab.
 
 - Here you can connect this specific product to other FluentCart modules or third-party services that have a direct impact on its functionality, sales, or fulfillment.
-- For example, you might integrate a specific product with **FluentCRM** to add customers who purchase this product to a particular list, or with **FluentForms** if product purchase triggers a form submission.
+- For example, you might connect a product to **FluentCRM** to add buyers to a list, or to **LearnDash** to enrol them in a course.
 
 > To learn more about managing product integrations, see the Managing Product Integrations guide.
 
@@ -1427,8 +1460,8 @@ On the Product Edit screen, click the **"Integrations"** tab.
 On the Product Edit screen, click the **"Upgrade Paths"** tab.
 
 - This powerful feature allows you to create seamless upgrade options for customers holding a license for this product.
-- You can define paths from a **"From Plan"** (e.g., "Single Site Yearly License") to a **"To Plan"** (e.g., "5 Sites Yearly License" or "Single Site Lifetime License").
-- Specify a **"Discount Amount"** and whether the upgrade is **"Prorated"** (meaning the customer gets credit for unused time on their old plan).
+- Upgrade paths require FluentCart Pro and aren't available for bundle products.
+- Click **Add Path**, pick a **From Plan** (e.g., "Single Site Yearly License") and one or more **To Plan(s)** (e.g., "5 Sites Yearly License" or "Single Site Lifetime License"), then set an optional **Discount Amount** and the **Prorate** checkbox (which credits the customer for what they already paid on their old plan).
 
 > To learn more about upgrade paths, see the Defining Upgrade Paths guide.
 
@@ -1436,8 +1469,8 @@ On the Product Edit screen, click the **"Upgrade Paths"** tab.
 
 Once you have configured all the necessary details:
 
-1. Set the **Status** to **"Published"** in the "Publishing" section.
-2. Click the **"Update"** (or "Save") button on the top right to make your product live in your store.
+1. In the **Publishing** card, set **Status** to **Publish**.
+2. Click **Update** at the top right to make your product live in your store.
 
 ---
 
@@ -1489,9 +1522,9 @@ To manage your brands:
 Once your brands are created, you can assign them to your products.
 
 1. Navigate to the product you want to assign a brand to by going to **FluentCart Pro → Products** and clicking on a product to open its editor.
-2. On the product edit page, look for the Brands section on the right-hand side of the screen.
-3. In the **Brands** box, you can assign one or more brands to the product by checking the box next to any existing brand in the list.
-4. After assigning the brand(s), click the **Update** or **Publish** button at the top right of the page to save your changes. The brand will now be associated with that product.
+2. In the **Product Taxonomies** card on the right, find **Brands**.
+3. Open the **Brands** dropdown and check one or more brands. To create a new one without leaving the page, click **+ Add Brand**, type the name, and click **Add**.
+4. After assigning the brand(s), click **Update** in the save bar to save your changes. The brand will now be associated with that product.
 
 ---
 
@@ -1559,7 +1592,7 @@ By the end of this guide, you will be able to confidently list and manage any ph
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Products** in the left sidebar.
 2. On the **Products** screen, click the **"Add Product"** button at the top right.
-3. This action will open a new **Add New Product** modal, where you’ll enter the product name and select the product type, either **Physical Product** or **Digital Product**. After making your selection, click on the **Add Product** button and you’ll be redirected to the **Edit Product** page to configure all product details.
+3. This action will open a new **Add New Product** modal. Enter the **Product Title**, choose a **Variation Type** (**Simple**, **Simple Variations**, or **Advanced Variations**), and select **Physical Product** (the modal starts on **Digital Product**). Check **Add as a Bundle** only if you're creating a bundle. Then click the **Add Product** button and you’ll be redirected to the **Edit Product** page to configure all product details.
 
 ### 1. Basic Product Information ​
 
@@ -1616,7 +1649,7 @@ Open the **Pricing** panel and look at the dropdown in the top right corner — 
 
 - **Simple** — One version, one price. The right choice for any product with no variations.
 - **Simple Variations** — Multiple versions of the same product, each with its own price, image, SKU, and shipping details.
-- **Advanced Variations** — Versions built from reusable attributes like Color and Size, where FluentCart generates every combination automatically. See the [Advanced Variations](/guide/product-types-creation/advanced-variations) guide.
+- **Advanced Variations** — Versions built from reusable attributes like Color and Size, where FluentCart generates every combination automatically. See the [Advanced Variations](/guide/product-types-creation/advanced-variations) guide. With two or more attributes, a **Group by** dropdown above the variants table lets you choose which attribute groups the variants while you manage them.
 
 Pick the method that matches your product structure, and the fields below will adapt accordingly.
 
@@ -1709,10 +1742,11 @@ Click **+ Add more** at the bottom to create a new variation. A blank row appear
 
 The **three-dot icon** gives you these quick actions:
 
-- **Duplicate** — Copy this variation to use as a starting point for a new one
-- **Direct Checkout** — Generate a buy-now link for this specific version
-- **Delete** — Remove this variation permanently
-- **Skip inventory** — Exclude this variation from stock tracking if needed
+- **Skip inventory:** Stop tracking stock for this variation (shown only when the product's **Inventory Management** is on)
+- **Duplicate:** Copy this variation to use as a starting point for a new one
+- **Copy Variation ID:** Copy the variation's ID for shortcodes, custom code, or integrations
+- **Direct Checkout:** Copy a buy-now link for this specific version. It's unavailable while the product is a draft.
+- **Delete:** Remove this variation permanently (not shown when only one variation is left)
 
 > 📝 Note: You can make quick edits to Title, Price, and Compare at price directly in the table rows. For everything else — images, inventory, per-variation shipping — click the pencil icon to open the full editor.
 
@@ -1760,6 +1794,8 @@ Slim Fit
 - **On Hold** — Units reserved in pending or processing orders (read-only)
 - **Delivered** — Units fulfilled and shipped (read-only)
 
+The switch works only when the product's **Inventory Management** is on. If it's off, the box shows a notice with a switch you can use to turn on inventory for the whole product. The **Inventory** box is available for **Simple Variations** and **Advanced Variations**, and only while **Stock Management** is enabled in settings.
+
 > 💡 Pro Tip: Per-variation inventory means you'll never oversell the Red hoodie just because you still have plenty of Teal ones. Every version stays tracked independently.
 
 **SKU** Expand the collapsible **SKU** section to assign a unique tracking code to this variation (e.g., 
@@ -1773,7 +1809,7 @@ HOO-RED-M
 
 - **Physical Product** *(Toggle)* — On by default for physical products.
 - **Package** — Select the box or mailer for this specific variation. Different sizes can ship in different packages, so a small item and a large item don't have to share the same box.
-- **Product weight** — Enter the weight for this variation with your preferred unit (**kg** or **lb**). Per-variation weights keep your carrier rates accurate when sizes genuinely differ.
+- **Product weight** — Enter the weight for this variation with your preferred unit (**kg**, **g**, **lbs**, or **oz**). Per-variation weights keep your carrier rates accurate when sizes genuinely differ.
 
 When you're done, click **Update** to save all your changes.
 
@@ -1782,9 +1818,9 @@ INFO
 For the complete field-by-field reference — including the full subscription setup for physical subscription boxes, installment plans, trial days, setup fees, and a step-by-step walkthrough of the Add Package modal — see the [Configuring Product Pricing & Variations](/guide/product-types-creation/configuring-product-pricing) guide.
 ### 5. Inventory Management ​
 
-To track the stock for your product, first, make sure the [Stock Management](/guide/product-types-creation/inventory-management) feature is enabled from the settings section.
+To track the stock for your product, first make sure the [Stock Management](/guide/product-types-creation/inventory-management) feature is enabled in settings. Then turn on the **Inventory Management** switch in the inventory card below **Pricing**.
 
-An inventory table will then be displayed, with a separate row for each product variation. This table helps you monitor your stock levels at a glance.
+Once the switch is on, an inventory table appears with a separate row for each product variation. This table helps you monitor your stock levels at a glance.
 
 #### Understanding the Inventory Table ​
 
@@ -1793,14 +1829,6 @@ An inventory table will then be displayed, with a separate row for each product 
 - **Available:** The number of units currently available for customers to purchase.
 - **On hold:** Units that are part of a pending order but have not yet been shipped.
 - **Delivered:** The total number of units that have been successfully sold and fulfilled.
-
-### Downloadable Asset(s) ​
-
-FluentCart allows you to attach digital files to your physical products, which is perfect for selling hybrid items (like a textbook that comes with a PDF guide, or a piece of hardware with its software drivers).
-
-At the very bottom of the product editing page, you will see a checkbox for Downloadable Asset(s).
-
-Check this box to enable the feature. Once enabled, a new section will appear where you can upload and manage the files that customers will be able to download after purchasing the product.
 
 #### How to Adjust Stock Levels ​
 
@@ -1818,20 +1846,26 @@ To manually update your stock count for any variation:
 ```
 
 ) to remove it.
-- **New Stock:** This field automatically previews the final stock total after your adjustment.
-3. Click the **Apply** button to save the new stock level.
+- **New Stock:** Shows the resulting total. You can also type the final count here directly; **Adjust by** updates to match.
+3. Click **Apply**. The new stock level is saved right away.
 
 INFO
 
 Managing stock for many products? With [Advanced Inventory](/guide/product-types-creation/advanced-inventory), you can update stock across your whole catalog from one screen and keep a history of every change.
+### Downloadable Asset(s) ​
+
+FluentCart allows you to attach digital files to your physical products, which is perfect for selling hybrid items (like a textbook that comes with a PDF guide, or a piece of hardware with its software drivers).
+
+Near the bottom of the product edit page, turn on the **Downloadable Asset(s)** switch, then click **Add** to attach files. Customers can download these files after purchasing the product.
+
 ### Shipping Class ​
 
-You can assign a **Shipping Class** to any product to apply location-based shipping costs.
+You can assign a **Shipping Class** to any product to apply location-based shipping costs. The **Shipping Class** card appears only when at least one of the product's variations is a physical product.
 
 To add a shipping class:
 
 1. Scroll to the **Shipping Class** section (right side of the product edit screen).
-2. Select or create a shipping class (e.g., *NYC Zone*).
+2. Select an existing shipping class (e.g., *NYC Zone*), or click **Add Shipping Class** to create one.
 3. The defined shipping cost will automatically apply at checkout for that region.
 
 Shipping classes work with **Shipping Zones** and **Shipping Methods** to control how and where you deliver products.
@@ -1843,7 +1877,7 @@ To learn more about how shipping classes work, see the [Understanding Shipping C
 
 The **Tax Class** allows you to apply specific tax rules to your product. It is set per variation and only appears when tax is enabled for your store.
 
-To assign a tax class:
+For a **Simple** product, the **Tax** controls are directly in the **Pricing** panel. For products with variations, follow these steps to assign a tax class:
 
 1. Click the **pencil icon** in the **Action** column of the variation to open the variation editor.
 2. In the **Tax** section, keep **Charge tax on this variation** checked, then click the **pencil icon** beside **Class** and select a tax class from the dropdown. The corresponding tax rate will then be automatically applied to this variation during checkout. To create or rename classes, see [tax configuration and classes](/guide/tax-&-duties/configuration-and-classes).
@@ -1854,13 +1888,14 @@ For the full walkthrough, see [Per-Variation Tax Settings](/guide/product-types-
 
 This section on the right side of the product edit page controls your product's visibility and key purchasing rules.
 
-- **Status:** This sets whether your product is live on your store (Publish) or saved as a hidden Draft.
+- **Status:** Choose **Draft** (hidden while you edit), **Scheduled** (goes live on the date you pick), **Private (Invisible except Admin)** (hidden from the store but still purchasable through a direct checkout link), or **Publish** (live). You can change the status once pricing is set.
 - **URL Slug:** This is the unique, URL-friendly part of the web address for this product. FluentCart automatically creates one from the title, but you can click it to make edits.
 - **Default Variant:** If your product has options (like different sizes or subscription plans), this setting pre-selects one for the customer when they visit the page.
-- **Group By:** If your product uses [Advanced Variations](/guide/product-types-creation/advanced-variations) with two or more attribute groups (e.g., Color and Size), a **Group by** dropdown appears in the variations editor, letting you choose which attribute group the variations are grouped by while you manage them.
+- **Pricing Table Layout:** *(Simple Variations only)* Choose how variations are organised on the product page: **Payment Term** (one-time vs. subscription), **Repeat Interval** (Monthly, Yearly, and so on), or **None**.
 - **Limit purchases to 1 item per order:** Check this box to prevent customers from buying more than one of this specific item in a single transaction. This is useful for things like event tickets or exclusive items.
+- **Disable reviews for this product:** *(Shown only while Product Reviews is enabled)* Check this to turn off reviews for this product.
 
-Once you have configured all the necessary details, click the **"Update"** (or "Save") button on the top right to make your product live in your store. You can also click **"Preview"** to see how the product page will look before publishing.
+Once you have configured all the necessary details, click **Update** in the save bar to save your changes. To see the product page, open the **more actions** menu (three dots) at the top and choose **Preview**.
 
 ---
 
@@ -1872,7 +1907,7 @@ Once you have configured all the necessary details, click the **"Update"** (or "
 
 The **Bundles** feature in **FluentCart** allows you to group multiple products into a single bundle and sell them together as one offer. You can create bundles using digital products or physical products, making it easy to build starter packs, special deals, or upgrade offers.
 
-Each product in a bundle still works independently, licenses, and fulfillment rules. This means you get the benefits of bundling without losing control over individual products.
+Each item in a bundle keeps its own downloads, licenses, and fulfillment rules. This means you get the benefits of bundling without losing control over individual products.
 
 In this guide, you’ll learn how to create, configure, and manage bundle products in FluentCart step by step.
 
@@ -1896,10 +1931,13 @@ In this guide, you’ll learn how to create, configure, and manage bundle produc
 
 ### 2. Map Bundle Items ​
 
-This section is unique to bundles and allows you to link the individual products that make up the package.
+This section is unique to bundles and allows you to link the individual products that make up the package. Mapping bundle items requires FluentCart Pro; without Pro this card shows **This feature is only available for pro version.**
 
-1. Scroll down to the **Map bundle items** section.
-2. Under **Bundle Items**, use the dropdown to select the existing products you wish to include in this bundle.
+To choose what goes into the bundle:
+
+1. Scroll down to the **Map bundle items** card.
+2. Each row is one of the bundle's variations (for a Simple bundle there is one row). In the **Bundle Items** column, open the dropdown and select the product variations to include. You can pick several. Other bundles can't be added.
+3. Close the dropdown. FluentCart saves the selection immediately and confirms with **Bundle info saved successfully**.
 
 NOTE
 
@@ -1952,7 +1990,7 @@ BUNDLE-STARTER-01
 
 ). Click **Generate SKU** to auto-generate one. Accepts up to 30 characters.
 
-**Direct Checkout** *(Link)* Generates a unique URL that takes customers straight to checkout with this bundle pre-loaded. Great for promotional landing pages, email campaigns, or limited-time offers where you want to reduce every step between interest and purchase.
+**Direct Checkout** *(Link)* Copies a URL that takes customers straight to checkout with this bundle pre-loaded. Great for promotional landing pages, email campaigns, or limited-time offers where you want to reduce every step between interest and purchase. The link is only available once the bundle is published (or private); it doesn't appear while the bundle is a draft.
 
 ---
 
@@ -1992,10 +2030,11 @@ Click **+ Add more** at the bottom to add a new bundle tier. Fill in the title a
 
 The **three-dot icon** gives you:
 
-- **Duplicate** — Copy this bundle tier as a starting point for a new one
-- **Direct Checkout** — Generate a buy-now link that bypasses the product page entirely, sending customers straight to checkout for this specific tier
-- **Delete** — Remove this bundle tier permanently
-- **Skip inventory** — Exclude this tier from stock tracking if you don't need to limit how many bundles you sell
+- **Skip inventory:** Stop tracking stock for this tier if you don't need to limit how many bundles you sell (shown only when the product's **Inventory Management** is on)
+- **Duplicate:** Copy this bundle tier as a starting point for a new one
+- **Copy Variation ID:** Copy the tier's variation ID for shortcodes, custom code, or integrations
+- **Direct Checkout:** Copy a buy-now link that sends customers straight to checkout for this specific tier. It's unavailable while the product is a draft.
+- **Delete:** Remove this bundle tier permanently (not shown when only one tier is left)
 
 > 📝 Note: Quick edits to Title, Price, and Compare at price can be made directly in the table rows. To set up images, inventory tracking, and SKUs per tier — click the pencil icon to open the full editor.
 
@@ -2033,6 +2072,8 @@ Agency Bundle
 - **On Hold** — Units reserved in pending orders (read-only)
 - **Delivered** — Units fulfilled (read-only)
 
+The switch works only when the product's **Inventory Management** is on. If it's off, the box shows a notice with a switch you can use to turn on inventory for the whole product. The **Inventory** box is available for **Simple Variations** and **Advanced Variations**, and only while **Stock Management** is enabled in settings.
+
 **SKU** Expand the collapsible **SKU** section to assign a unique tracking code to this bundle tier (e.g., 
 ```
 BUNDLE-PRO-01
@@ -2047,24 +2088,30 @@ INFO
 For the complete field-by-field reference on every pricing option — including subscription setup, installment plans, trial days, setup fees, and the Add Package walkthrough — see the [Configuring Product Pricing & Variations](/guide/product-types-creation/configuring-product-pricing) guide.
 ### 6. Inventory Management ​
 
-To track stock, ensure **Stock Management** is enabled in your settings.
+To track bundle stock, make sure **Stock Management** is enabled in settings and turn on the **Inventory Management** switch in the product's inventory card. Once it's on, you can work with these tools:
 
 - **Inventory Table:** Displays **Total Stock**, **Available** units, and units **On hold** or **Delivered**.
 - **Adjusting Stock:** Click the adjustment icon in the **Total Stock** field to add or remove inventory.
 
+INFO
+
+If a bundled item tracks stock, the bundle can't be bought in a quantity larger than that item's available stock. Customers see an out-of-stock message instead.
 ### 7. Shipping and Tax Classes ​
 
-- **Shipping Class:** Assign a class to apply location-based shipping costs at checkout. This works with your defined Shipping Zones and Methods.
-- **Tax Class:** Select a pre-configured tax class to automatically apply the correct tax rate to the bundle during checkout.
+- **Shipping Class:** Assign a class to apply location-based shipping costs at checkout. This works with your defined Shipping Zones and Methods. The **Shipping Class** card is shown only when the bundle has a physical variation.
+- **Tax Class:** Set per variation in the **Tax** section of the pricing form (for **Simple** bundles in the **Pricing** panel, for variations in the variation editor). It appears only when tax is enabled for your store.
 
 ### 8. Publishing Settings ​
 
-- **Status:** Set the product to **'Publish'** to make it live or **'Draft'** to keep it hidden while editing.
+- **Status:** Choose **Draft** (hidden while you edit), **Scheduled** (goes live on the date you pick), **Private (Invisible except Admin)** (hidden from the store but still purchasable through a direct checkout link), or **Publish** (live). You can change the status once pricing is set.
 - **URL Slug:** This is the unique web address for the bundle. FluentCart creates this automatically, but you can edit it manually.
 - **Limit purchases to 1 item per order:** Check this box if the bundle is an exclusive item or limited offer.
 
 Once all details are configured, click the **"Update"** or **"Save"** button at the top right to make your bundle live.
 
+INFO
+
+Bundles don't have their own **Downloadable Asset(s)** section or license settings. Downloads and licenses come from the bundled items. Upgrade paths aren't available for bundle products.
 ---
 
 ---
@@ -2083,7 +2130,9 @@ This streamlines the customer experience and encourages upsells, maximizing your
 
 Upgrade path settings are found within the **Edit Product** screen for individual products that support tiered offerings (typically digital products with licenses or subscriptions).
 
-1. Navigate to **FluentCart Pro > Products** in your WordPress dashboard.
+INFO
+
+Upgrade paths are a FluentCart Pro feature. They aren't available for bundle products yet, and the product needs at least two variations so there's something to upgrade to.1. Navigate to **FluentCart Pro > Products** in your WordPress dashboard.
 2. [Edit an existing product](/guide/product-types-creation/product-list-overview) that has multiple license tiers (e.g., "Fluent Forms").
 3. On the **Edit Product** screen, click on the **"Upgrade Paths"** tab.
 
@@ -2093,15 +2142,18 @@ The "Upgrade Paths" tab displays a table where you define the upgrade logic.
 
 ### 1. Adding a New Upgrade Path ​
 
-1. Click the **"+ Add Path"** button at the bottom of the table.
-2. A new row will appear, allowing you to configure the upgrade details:
+To create a path from one variation to another, follow these steps:
 
-- **From Plan:** Select the specific product plan or license variation that a customer currently owns and wishes to upgrade *from* (e.g., "Single Site Yearly License").
-- **To Plan:** Select the higher-tier product plan or license variation that the customer can upgrade *to* (e.g., "5 Sites Yearly License" or "50 Sites Lifetime License").
-- **Discount Amount:** This field specifies the discount applied to the "To Plan" price during the upgrade. This is typically the value of the "From Plan" or a specific monetary discount.
-- **Is Prorate:** Select "Yes" or "No". - **Yes (Prorated):** This means the customer will receive credit for the unused portion of their existing "From Plan" license/subscription. This credit is then applied towards the cost of the "To Plan," ensuring they only pay the difference. This is commonly used for subscriptions.
-- **No:** The upgrade will simply apply the "Discount Amount" without considering any remaining value from the old plan.
-3. After configuring the path, ensure you save your product settings by clicking the **"Save"** button on the bottom of the Edit screen.
+1. Click **Add Path** below the table. The **Add Upgrade Path** panel opens.
+2. Configure the path:
+
+- **From Plan:** The variation the customer owns now (e.g., "Single Site Yearly License").
+- **To Plan(s):** One or more variations of the same product they can upgrade to (e.g., "5 Sites Yearly License" or "50 Sites Lifetime License"). Variations already targeted from this plan aren't listed.
+- **Prorate:** Tick this to credit the customer for what they already paid. For a subscription, the credit covers the unused days left in the current billing period. For a one-time purchase, it's the full amount they paid. No credit is given during a real free trial.
+- **Discount Amount:** A fixed amount in your store currency taken off the upgrade price. It's added on top of any prorate credit. The combined credit never exceeds the price of the new plan.
+3. Click **Save**. The path is saved straight away, so you don't need to update the product.
+
+Each row in the table has an edit button and a delete button. The **Is Prorate** column shows **Yes** or **No**.
 
 ## The Customer Upgrade Experience ​
 
@@ -2126,11 +2178,16 @@ When you publish a path for a product sold as a one-time purchase, the customer 
 
 ### Conditions for One-Time Upgrades ​
 
-The button only appears on items that qualify based on three specific conditions:
+The button only appears on items that meet four conditions:
 
 - The item was bought as a one-time purchase, not as part of a subscription.
 - The order is paid, partially paid, or partially refunded (unpaid orders show no button).
 - The store has published an upgrade path for that exact product variation.
+- The item isn't part of a bundle.
+
+### Each Purchase Can Be Upgraded Once ​
+
+An order's value can be carried into an upgrade only once. If the customer tries to upgrade the same original order again, FluentCart stops them with *This order has already been upgraded.* They can upgrade further from their new plan.
 
 ---
 
@@ -2146,18 +2203,21 @@ This guide will show you how to enable and manage inventory for your products.
 
 Need a central stock workspace, bulk updates, or an audit trail?
 
-With the Pro **Advanced Inventory** module, you get a dedicated **Inventory** screen under **Products** with Low Stock and Out of Stock views, bulk stock updates, and a history of every stock change. See [Advanced Inventory](/guide/product-types-creation/advanced-inventory) to set it up.
+With the **Advanced Inventory** option (FluentCart Pro), you get a dedicated **Inventory** screen under **Products** with Low Stock and Out of Stock views, bulk stock updates, and a history of every stock change. See [Advanced Inventory](/guide/product-types-creation/advanced-inventory) to set it up.
 ### Step 1: Enable the Stock Management Feature ​
 
 Before you can manage inventory for individual products, you must first activate the main Stock Management feature for your entire store.
 
 1. From your WordPress dashboard, navigate to **FluentCart** > **Settings**.
-2. Click on the **Features & Addon** tab from the left-hand menu.
-3. You will see a list of available features. Find **Stock Management** and make sure the toggle next to it is enabled.
+2. Click the **Features & addon** tab from the left-hand menu.
+3. You will see a list of available features. Find **Stock Management** and turn on the switch next to it.
 4. Click the **Save Settings** button.
 
-Once this feature is active, the **Inventory Management** section will become available on the product edit screen for your individual products.
+Stock Management is included in the free plugin and is off by default. Once this feature is active, the **Inventory Management** section will become available on the product edit screen for your individual products.
 
+Out-of-stock products on shop pages
+
+While Stock Management is on, products that are out of stock are hidden from shop listings. To keep showing them, turn on **Allow Out Of Stock** in the shop block's **Default Filter** settings.
 ---
 
 ### Step 2: Accessing and Managing Inventory for a Product ​
@@ -2166,14 +2226,16 @@ With the main feature enabled, you can now manage stock levels for each of your 
 
 1. Navigate to **FluentCart** > **Products** in your WordPress dashboard.
 2. Find the product you want to manage and click on its name to open the product editor.
-3. On the Product Edit screen, scroll down to the **Inventory Management** section.
+3. Scroll down to the inventory card below **Pricing**.
+4. Turn on the **Inventory Management** switch in the card's header. New products start with it off, and the stock table stays hidden until you turn it on.
+5. For products with variations, you can also stop tracking stock for one variation: open it with the pencil icon and turn off the switch in its **Inventory** box, or use **Skip inventory** in the row's three-dot menu.
 
 #### Understanding the Inventory Metrics ​
 
 The **Inventory Management** section gives you a clear, real-time overview of the stock status for each of your product's variations:
 
 - **Title:** The name of the product variant.
-- **SKU:** The unique Stock Keeping Unit identifier used to track this specific variation in your inventory.
+- **SKU:** The variation's Stock Keeping Unit. You can edit it right in this table.
 - **Total Stock:** The total quantity of this variant you have in your inventory.
 - **Available:** The number of units that are currently available for customers to purchase.
 - **On hold:** The number of units that are currently reserved in pending or processing orders. These units are not available for sale.
@@ -2183,9 +2245,10 @@ The **Inventory Management** section gives you a clear, real-time overview of th
 
 You can easily add or remove stock manually right from this screen.
 
-1. In the Inventory Management table, find the variant you want to adjust.
-2. In the input field under the Title, enter the quantity by which you want to change the stock.
-3. Click to **Apply** button for the stock adjustment. The **"Total Stock"** and **"Available"** quantities will update instantly.
+1. In the inventory table, find the variant you want to adjust.
+2. Click the adjuster icon inside its **Total Stock** field. A small panel opens.
+3. Enter the change in **Adjust by** (use a negative number to remove stock), or type the final count in **New Stock**. Each field updates the other.
+4. Click **Apply**. **Total Stock** and **Available** update and the change is saved right away.
 
 Stock Management Best Practices
 
@@ -2221,14 +2284,23 @@ This section displays a list of all existing automation feeds created for this p
 
 - **Status:** A simple toggle switch allows you to instantly turn any integration feed **On** or **Off** without deleting the setup.
 - **Integration:** You will see the name and icon of the connected module (e.g., **FluentCRM** or **FluentCommunity**).
-- **Triggers:** Triggers are specific events in FluentCart that start an automation for this product. You can choose the exact point in the customer journey, like when an order is paid, refunded, shipped, or when a subscription changes status, to run your integration feed.
+- **Title:** The feed name you gave it, so you can tell several feeds for the same service apart.
+- **Triggers:** Triggers are specific events in FluentCart that start an automation for this product. Pick one or more events under **Event Trigger**: **Order Paid (Payment / Subscription)**, **Order Canceled**, **Order Refunded (Full)**, **Subscription Activated**, **Subscription Reactivated**, **Subscription Canceled**, **Subscription Renewed**, **Subscription End of Term (Completed)**, **Subscription Expired / End of Access Validity**, **Order Shipped**, or **Order Delivered**.
+
+Use the edit and delete buttons at the end of each row to change or remove a feed.
 
 #### Creating a New Integration Feed ​
 
-Click the **Add Integration** button to set up a new automation rule. You will be given options to connect to installed Fluent products:
+Click **Add Integration** and pick a service from the dropdown. The list only includes integrations that are ready to use. For example, **FluentCRM**, **FluentCommunity**, **LearnDash**, and **LifterLMS** appear only when that plugin is active.
 
-- [FluentCRM Integration:](/guide/integrations/fluentcrm-integration) This allows you to automatically manage the customer who buys this product in FluentCRM. You can configure actions such as **Adding a user to a specific list**, **Removing a user from a list**, **Applying a Tag**, or **Removing a Tag**, based on the purchase.
-- [FluentCommunity Integration:](/guide/integrations/fluentcommunity-integration) This allows you to automatically manage user access to your community or courses. You can set actions such as **Adding a user to a specific Space** or **Course**, or **Removing a user from a Space** or **Course**.
+- [FluentCRM](/guide/integrations/fluentcrm-integration): **Add to Lists**, **Add to Tags**, **Remove From Lists**, **Remove From Tags**, plus an optional contact note and double opt-in.
+- [FluentCommunity](/guide/integrations/fluentcommunity-integration): **Add to Spaces**, **Add to Courses**, **Remove From Spaces**, **Remove From Courses**.
+- [LearnDash](/guide/integrations/learndash-integration) *(Pro)*: Enrol buyers in LearnDash courses.
+- [LifterLMS](/guide/integrations/lifterlms-integration) *(Pro)*: Enrol buyers in LifterLMS courses.
+- **WP User Create/Update** *(Pro)*: Create or update the buyer's WordPress user account and assign roles.
+- [Webhook](/guide/integrations/webhook-integration) *(Pro)*: Send the order data to any URL.
+
+If no integration is ready, the tab shows a message with a **Configure Modules** button instead of **Add Integration**. Activate the plugin you want to connect, or set it up under **FluentCart Pro > Integrations**, first.
 
 ---
 
@@ -2258,7 +2330,7 @@ The main dashboard is a powerful table that gives you a complete overview of eve
 - **Billing:** The price and billing frequency of the subscription (e.g., "$99.00 per year, until cancel").
 - **Created At:** The date the subscription was first initiated.
 - **Next Billing Date:** The upcoming date when the next automatic renewal payment is scheduled to be processed.
-- **Collection Method:** How payments are processed. **Automatic** means the payment gateway charges the customer's saved payment method on its own schedule without any action required from them. **Manual** means your store owns the billing schedule and the customer pays each renewal through a **Pay Now** link. To learn how store-owned billing works, see [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions).
+- **Collection Method:** How payments are processed. **Automatic** means the payment gateway charges the customer's saved payment method on its own schedule without any action required from them. **Manual** means your store owns the billing schedule and the customer pays each renewal through a **Pay Now** link. **Auto-charge** means your store owns the schedule and charges the customer's saved payment method on each due date (Store Billing with auto-charge). To learn how store-owned billing works, see [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions).
 - **Bills Count:** The number of successful payments that have been made for this subscription, including the initial purchase.
 - **Payment Method:** The payment gateway used for the subscription (e.g., Stripe, PayPal).
 - **Order ID:** The ID of the very first order that created this subscription.
@@ -2281,12 +2353,11 @@ At the top of the list, you will find several tabs to quickly view subscriptions
 
 For even more specific searches, you can use the **Advanced Filter** to build complex queries. Simply click the toggle to open the filter builder. You can add one or more rules to segment your subscriptions based on a wide range of properties, including:
 
-- **Subscription properties**
-- **Billing Property**
-- **Transaction Property**
-- **Products**
-- **License Property**
-- **Labels**
+- **Subscription:** Subscription ID, Status, Order Items, Billing Interval, Payment Method, Created At, Next Billing Date, and Bill Count.
+- **Transaction Property:** Transaction ID and payment method.
+- **Products:** Filter by the products in the subscription.
+- **License Property:** License key and License Status. This group appears only when FluentCart Pro is active and **Product Licensing** is enabled.
+- **Labels:** Filter by the labels you have added to subscriptions.
 
 You can combine multiple rules to create highly targeted lists of your subscribers.
 
@@ -2300,6 +2371,8 @@ This detailed view is broken down into several key sections:
 - **Related Orders:** This section provides a complete financial history of the subscription. It lists every order associated with it, from the initial purchase to every successful renewal. You can quickly see the date, total amount, payment status, and type of each order.
 - **Customer Information:** This sidebar gives you a quick overview of the customer, including their contact details, their total lifetime value (LTV), and a direct link to their full customer profile.
 - **Labels:** Here, you can add internal labels to help you organize and segment your subscribers for your own reference (e.g., "VIP," "Early Adopter"). This is a great way to add internal notes and context to a subscriber's record.
+- **Related Licenses:** On licensed products (FluentCart Pro with Product Licensing on), the license keys issued for this subscription.
+- **Activity:** A timeline of what happened to the subscription, such as renewals, pauses, skips, and edits.
 
 ### Subscription Actions ​
 
@@ -2307,11 +2380,11 @@ Every subscription carries a badge next to the **Subscription Details** heading 
 
 - **Sync from gateway:** Pulls the latest state straight from the payment gateway, with the gateway's name shown in the menu item. Use this when you suspect FluentCart and the gateway have drifted apart.
 - **Edit Subscription:** Opens the subscription's terms for editing. See [Editing Subscription Terms](#editing-subscription-terms) below.
-- **Pause Subscription:** Temporarily halts billing while keeping the subscription intact.
-- **Resume Subscription:** Restarts billing on a paused subscription.
-- **Reactivate Subscription:** Brings a cancelled, expired, failing, or past due subscription back to life.
+- **Pause Subscription:** Temporarily halts billing while keeping the subscription intact. On a store-billed subscription you can pause only while it is **Active** or **Trialing** and its next billing date is still in the future. A **Past Due** subscription can't be paused, so its open invoice stays payable. On a gateway-billed subscription, the item appears only if that gateway supports pausing.
+- **Resume Subscription:** Restarts billing on a paused subscription. A store-billed subscription comes back as **Active** if its next billing date is still ahead, or as **Past Due** if that date has already passed.
+- **Reactivate Subscription:** Brings a cancelled, expired, or past due store-billed subscription back to life. It requires FluentCart Pro and isn't shown for gateway-billed subscriptions. Those are reactivated by the customer, who goes through checkout again from their dashboard or the link in the cancellation email.
 - **Cancel Subscription:** Ends the subscription. The customer receives a cancellation email that includes their access end date.
-- **Send Reminder:** Emails the customer a reminder about a pending renewal payment.
+- **Send Renewal Reminder:** Emails the customer a reminder about their upcoming renewal. On a subscription that is still in a real free trial, the item reads **Send Trial End Reminder** instead. It only appears when reminders are turned on under [Reminders](/guide/settings-configuration/email-configuration/reminders) and the matching reminder email is enabled.
 - **Create Renewal Now:** Generates the next renewal order ahead of schedule and emails it to the customer with a **Pay Now** link. On a subscription that charges saved payment methods automatically, this item instead reads **Charge Next Renewal Now** and creates the renewal *and* charges it in one step.
 - **Skip Next Period:** Pushes the next billing date forward by one full cycle without charging the customer. FluentCart records who skipped it and shows "Billing resumes on the date shown" on the subscription.
 - **Charge Now:** Immediately attempts to charge an open renewal against the saved payment method, rather than waiting for the scheduled attempt.
@@ -2325,22 +2398,29 @@ Occasionally those identifiers need correcting by hand — most often after migr
 
 This is an opt-in repair tool, not a routine action
 
-The menu item is hidden unless it has been deliberately enabled, because a wrong vendor ID silently breaks renewals: FluentCart charges or matches against something that isn't your customer's subscription. Nothing warns you — renewals simply stop working, or attach to the wrong record.
+The menu item is hidden by default and there is no setting for it in the admin. A developer has to switch it on with a code snippet. Even then, it appears only on gateway-billed subscriptions that have a payment method and haven't **Completed**. It stays hidden because a wrong vendor ID silently breaks renewals: FluentCart charges or matches against something that isn't your customer's subscription. Nothing warns you — renewals simply stop working, or attach to the wrong record.
 
 Only use it when you know the correct identifier from the gateway's own dashboard, and verify the subscription's next renewal afterwards.INFO
 
-Menu items appear only when they apply. A gateway-billed subscription hides the store-owned actions such as **Skip Next Period** and **Charge Now**, because the gateway owns that schedule rather than your store. To understand which mode a subscription is in, see [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions).
+Menu items appear only when they apply. A gateway-billed subscription hides the store-owned actions (**Edit Subscription**, **Create Renewal Now**, **Skip Next Period**, **Charge Now**, and **Reactivate Subscription**), because the gateway owns that schedule rather than your store. **Sync from gateway** is shown only on gateway-billed subscriptions. To understand which mode a subscription is in, see [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions).
 #### Editing Subscription Terms ​
 
-Choosing **Edit Subscription** lets you correct the commercial terms of a running subscription without cancelling and recreating it. You can change:
+Choosing **Edit Subscription** lets you correct the commercial terms of a running subscription without cancelling and recreating it. The dialog shows these fields in order:
 
-- **Recurring amount:** What the customer is billed each cycle. It cannot be negative.
-- **Billing interval:** How often the subscription renews.
-- **Billing count:** How many times the subscription bills in total. Leave it at zero for a subscription that runs until cancelled.
-- **Next billing date:** When the next renewal is due. Moving this date reschedules the whole cycle from that point.
-- **Status:** Set the subscription to Active, Paused, Trialing, Cancelled, Expired, Completed, or Past Due.
+- **Next Renewal Amount:** What the customer pays from the next renewal onward. It cannot be negative. If a renewal invoice is already open, it is updated to the new amount.
+- **Billing Times:** How many payments the subscription runs for in total. 
+```
+0
+```
 
-> 📝 Note: Editing terms is available for store-billed subscriptions. When the payment gateway owns the billing schedule, the gateway is the source of truth for the amount and dates, so those values are changed on the gateway's side instead.
+ means it renews until cancelled. Otherwise the value can't be lower than the number of payments already made.
+- **Billing Interval:** Daily, Weekly, Monthly, Quarterly, Half Yearly, or Yearly.
+- **Status:** **Active**, **Paused**, **Trialing**, **Past Due**, **Expired**, or **Completed**. To cancel, use **Cancel Subscription** from the menu instead. Choosing **Paused** for a subscription that can't be paused is refused with *This subscription cannot be paused.*
+- **Next Billing Date:** The date and time the next renewal falls due. Moving this date reschedules the whole cycle from that point.
+
+Click **Save Changes**, then confirm with **Yes, Update**.
+
+> 📝 Note: Editing terms is available for store-billed subscriptions. When the payment gateway owns the billing schedule, the gateway is the source of truth for the amount and dates, so those values are changed on the gateway's side instead. Edit Subscription isn't offered once a subscription is Canceled, Expired, or Completed.
 
 ### Renewal and Payment History ​
 
@@ -2353,7 +2433,7 @@ INFO
 If your store has **Saved Payment Methods** enabled, the card a customer marks as their default is what renewals draw on. When a renewal keeps failing, the quickest fix is often for the customer to add a fresh card and set it as their default from [Payment Methods](/guide/customer-dashboard/payment-methods) in their dashboard. A card that is actively paying for a subscription cannot be removed until that subscription is moved to another card, so renewals do not break silently.
 ### Subscription Cart Rules ​
 
-To keep recurring billing predictable, FluentCart enforces two rules at the cart level whenever a customer tries to purchase a subscription:
+To keep recurring billing predictable, FluentCart enforces three rules at the cart level whenever a customer tries to purchase a subscription:
 
 - **One subscription per cart.** A customer cannot add more than one subscription to the cart at the same time. If they try to add a second subscription, they'll see the message *"Subscription items can't be combined with other products in the cart."*
 - **Quantity is always one.** Subscriptions can't be purchased in bulk in a single transaction. Attempting to set quantity above one returns *"You cannot purchase more than one subscription at a time."*
@@ -2363,7 +2443,7 @@ These rules run automatically — there is nothing for you to configure. Custome
 
 ### Reactivating a Cancelled Subscription ​
 
-If a customer's subscription has been **cancelled**, **paused**, **expired**, **failing**, or **past due**, you can bring it back to life from the **Subscription Details** page. Look for the **Reactivate** action — when reactivation is available for a subscription, FluentCart shows it inline so you don't have to recreate the subscription from scratch.
+If a store-billed subscription has been **cancelled**, has **expired**, or is **past due**, you can bring it back from the **Subscription Details** page. Open the **more options** menu and choose **Reactivate Subscription**. A **paused** subscription isn't reactivated; use **Resume Subscription** instead. Gateway-billed subscriptions are reactivated by the customer, who checks out again from their dashboard.
 
 Subscriptions that were cancelled because of a refund are **also reactivatable** in v1.3.27 and later. Previously a refund-driven cancellation locked the subscription out of reactivation; now the action is available, and FluentCart correctly recalculates the next billing date based on the most recent successful (non-refunded) charge. If every previous charge has already been fully refunded, the next renewal starts a fresh billing cycle.
 
@@ -2397,9 +2477,7 @@ These controls are visible **only when store-level tax is enabled** on the [Tax 
 
 ## Opening the Variation Editor ​
 
-1. Open the product you want to edit.
-2. In the **Pricing** section, make sure the pricing method is set to **Simple Variations**.
-3. Click the **pencil icon** in the **Action** column of the variation you want to configure.
+The tax controls are available for every pricing method. For **Simple** products, they appear directly in the **Pricing** panel. For **Simple Variations** and **Advanced Variations**, open the product, then click the **pencil icon** on the variation (or click the variant) to open the variation editor.
 
 The variation editor opens as a side panel. The three tax controls are split across two sections: a **Tax** dropdown in **Pricing** (next to the **Price** field) and a **Tax** block further down (below **Shipping**).
 
@@ -2431,7 +2509,7 @@ Free Sample
 
 ### 3. Tax Class (Tax section) ​
 
-When **Charge tax on this variation** is checked, a **Class:** row appears below the checkbox showing the active class (for example, **Standard**). Click the **pencil icon** beside the class name to open a dropdown and pick a different class.
+When **Charge tax on this variation** is checked, a **Class:** row appears below the checkbox showing the active class (for example, **Standard**). Click the **pencil icon** beside the class name to open a dropdown and pick a different class. The pencil icon appears only when your store has more than one tax class.
 
 The list includes every tax class configured on your store: **Standard** (default), **Reduced**, **Zero**, and any custom classes you've created. To add or rename classes store-wide, use [Configuring Tax Settings & Classes](/guide/tax-&-duties/configuration-and-classes) or the class tabs on [Tax Rates](/guide/tax-&-duties/tax-rates).
 
@@ -2487,15 +2565,15 @@ The Products list table provides key information for each product at a glance:
 - **Stock:** Shows the current stock level for the product or its variants.
 - **Status:** Indicates the product's publishing status.
 - **Date:** The date and time the product was created or last updated.
-- **Actions:** (Implied) Typically includes icons or links for editing, viewing, or deleting the product.
+- **Actions:** **Edit**, **Duplicate**, or **Delete** the product.
 
 ## Managing Products from the List ​
 
 From the Products list screen, you have several quick actions:
 
-- **Create Dummy Product:** A button to quickly populate your store with placeholder products for testing or setup.
+- **More actions:** A dropdown with **Add Dummy Product** (creates sample products for testing), **Bulk Product Insert** (see [Bulk Product Import](/guide/product-types-creation/bulk-product-import)), and **Bulk Product Edit**.
 - **Add Product:** Click this button to [create a new product](/guide/product-types-creation/creating-physical-products) listing from scratch.
-- **View Product:** A general link, likely to see a live preview of the product on your storefront.
+- **Bulk actions:** Select products with the checkboxes, then choose **Duplicate** or **Delete** from **Select Bulk Action** and click **Confirm**.
 
 ## Filtering Products ​
 
@@ -2511,6 +2589,8 @@ At the top of the Products list, you'll find tabs that allow you to quickly filt
 - **By Type:**- **Physical:** Filters to show only physical products.
 - **Digital:** Filters to show only digital products.
 - **Subscribable:** Filters to show only subscription-based products.
+- **Bundle:** Shows only bundle products.
+- **Non Bundle:** Shows only products that are not bundles.
 
 ### 2. Using the Advanced Filter ​
 
@@ -2519,8 +2599,10 @@ For more detailed control, use the **Advanced Filter** option:
 1. Click the **"Advanced Filter"** button located at the top right of the Products screen.
 2. The Advanced Filter section will expand, allowing you to define your filtering criteria, such as:
 
-- **Order Property:** Filter products based on properties related to orders they are part of.
-- **Product Variation:** Filter products by their variations, including "Variation Count, Variation, and Variation Type."
+- **Pricing:** **Min Price** and **Max Price**.
+- **Stock:** **Stock Status** (In Stock / Out of Stock) and **Available Quantity**.
+- **Order Property:** **Order Count**, the number of orders that include the product.
+- **Variations:** **Variation Count**, **Variation**, and **Variation Type** (Simple, Simple Variations, Advanced Variations).
 - **Taxonomies:** Filter products by their classification, including Product Categories, and Product Brands.
 - **Reviews:** *(Appears only while Product Reviews is enabled)* Filter by **Reviews** or **Written Reviews**, each **Has** or **Has no** reviews that are **Approved**, **Not approved**, or of **Any status**. Filter by **Average Rating** **Same or higher than** or **Same or lower than** a chosen star count.
 - **Conditional Logic:** Use the **"+ Add"** button for "AND" conditions and the **"+ OR"** button for "OR" conditions to combine multiple criteria.
@@ -2649,7 +2731,7 @@ At the bottom of the product list, pagination controls allow you to navigate thr
 
 With **Store Billing**, your store owns the renewal schedule instead of the payment gateway. FluentCart creates each renewal invoice itself, then either emails the customer a **Pay Now** link or charges their saved card for them.
 
-That makes recurring products work with any gateway you have enabled, including offline methods like bank transfer and cash on delivery, and it lets you change a subscriber's price, dates, or status whenever you need to.
+That makes recurring products work with almost any gateway you have enabled, including offline methods like bank transfer and cash on delivery, and it lets you change a subscriber's price, dates, or status whenever you need to.
 
 ## Ways to Bill a Subscription ​
 
@@ -2675,12 +2757,12 @@ Go to **FluentCart Pro → Settings → Store Settings → Subscriptions**. The 
 
 1. Click **Change** and pick a mode:
 
-- **Gateway Billing** *(Recommended)*: Stripe, PayPal, and other subscription-ready gateways charge customers automatically each cycle.
+- **Gateway Billing** *(Recommended)*: Stripe, PayPal, and other subscription-ready gateways charge customers automatically each cycle. Selecting **Gateway Billing** reveals **Allow all payment methods**. Turn it on to let gateways without built-in recurring billing (bank transfer, Authorize.Net, SSLCommerz, and similar) sell subscriptions too. Their renewals are invoiced by email before each due date. With it on, the badge reads **Gateway Billing · All methods**.
 - **Store Billing:** Your store creates a renewal invoice before each due date, and customers pay through a link in the email.
 2. Selecting **Store Billing** reveals **Auto-charge saved payment methods**. Leave it off if you want customers to pay each invoice themselves. Turn it on to charge their saved payment method automatically on every due date, which **Stripe** and **PayPal** support. Expand **When are renewal orders created?** to see the schedule.
 3. Click **Apply**. The change saves right away, with no separate save step, and the badge updates to **Store Billing**.
 
-With auto-charge on, the badge reads **Store Billing · Auto-Charge** instead.
+With auto-charge on, the badge reads **Store Billing · Auto-charge** instead.
 
 INFO
 
@@ -2689,9 +2771,12 @@ INFO
 | Renewal Billing mode | Gateway at checkout | How the renewal gets paid |
 | --- | --- | --- |
 | Gateway Billing | Stripe, PayPal, Paddle, Mollie, Square, and other subscription-ready gateways | The gateway charges the customer |
-| Store Billing, auto-charge off | Any enabled gateway, offline methods included | The customer pays each invoice |
+| Gateway Billing, all payment methods allowed | A gateway without built-in recurring billing | The customer pays each invoice from the email |
+| Store Billing, auto-charge off | Offline methods, one-time gateways, and Stripe, PayPal, Mollie, or Authorize.Net | The customer pays each invoice |
 | Store Billing, auto-charge on | Stripe or PayPal | Your store charges the saved payment method |
 | Store Billing, auto-charge on | Any other gateway | The customer pays each invoice |
+
+In Store Billing mode, gateways that can only bill through their own subscription engine, such as **Paddle**, aren't offered at checkout for new subscriptions. When nothing is due at checkout (for example, a free trial), only offline methods are offered. With auto-charge on, Stripe and PayPal are offered too, because they can save the card without charging it.
 
 ## Keeping Staging Sites from Billing Customers ​
 
@@ -2794,12 +2879,14 @@ The fields worth knowing:
 - **Billing Cycle:** The recurring terms, such as *$103.50 per year until cancel*.
 - **Active Payment Gateway:** The gateway currently tied to the subscription.
 - **Initial Purchase ID:** The order that started it.
-- **Auto-cancellation:** The payment count after which it stops on its own, or 
+- **Installment Progress:** Shown on subscriptions with a fixed number of payments, as payments made / total payments (for example, *2 / 6*).
+- **Auto-cancellation:** The date the subscription ends on its own, or 
 ```
 ---
 ```
 
- when it renews indefinitely.
+ when it has no end date.
+- **Started:** The date the subscription began.
 - **Next renewal:** The amount due and the date it falls due.
 - **Vendor Customer ID:** The customer's ID at the gateway, shown when the gateway stores one. Handy when you need to look them up in Stripe or PayPal.
 
@@ -2820,9 +2907,9 @@ Pick **Edit Subscription** to change the recurring terms. You can do this on sto
 1
 ```
 
- or more stops it after that many payments.
+ or more stops it after that many payments. You can't set it lower than the number of payments already made.
 - **Billing Interval:** How often it renews. Changing it also changes how early invoices are created and how long the grace period lasts.
-- **Status:** Choose **Active**, **Paused**, **Trialing**, **Past Due**, **Expired**, or **Completed**.
+- **Status:** Choose **Active**, **Paused**, **Trialing**, **Past Due**, **Expired**, or **Completed**. Choosing **Paused** when pausing isn't allowed is refused with *This subscription cannot be paused.*
 - **Next Billing Date:** The exact date and time the next renewal falls due. Push it out to give someone extra time, or pull it in to bill sooner.
 
 Click **Save Changes** to apply.
@@ -2848,11 +2935,11 @@ If the attempt is declined, nothing is lost. The invoice stays open and the norm
 
 ### Other Actions in the Menu ​
 
-- **Pause Subscription:** Halt billing temporarily. The menu then offers **Resume Subscription**.
+- **Pause Subscription:** Halt billing temporarily. It's available only while the subscription is **Active** or **Trialing** and its next billing date is still ahead. A **Past Due** subscription can't be paused, so the open invoice stays payable. The menu then offers **Resume Subscription**, which returns the subscription to **Active**, or to **Past Due** if the billing date has passed while it was paused.
 - **Cancel Subscription:** Stop the subscription and its schedule.
-- **Reactivate Subscription:** Bring a cancelled, paused, or expired subscription back. It replaces the pause and cancel actions once a subscription is no longer running.
+- **Reactivate Subscription:** Bring a cancelled, expired, or past due subscription back. This action requires FluentCart Pro. A paused subscription uses **Resume Subscription** instead.
 - **Skip Next Period:** Move the next billing date forward one cycle without charging, giving the customer a free period.
-- **Send Renewal Reminder:** Email a reminder about the open renewal by hand. On a subscription still in its trial it reads **Send Trial End Reminder**.
+- **Send Renewal Reminder:** Email a reminder about the open renewal by hand. On a subscription still in its trial it reads **Send Trial End Reminder**. The item appears only when reminders are turned on under **Reminders** and the matching email is enabled.
 - **Charge Now:** On an auto-charge subscription with an invoice already open, run one more attempt straight away. The confirmation names the card it will use.
 
 ## What Your Customers See ​

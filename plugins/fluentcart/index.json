@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-11-01T04:44:27.496Z",
-  "total_pages": 177,
+  "last_scraped": "2026-11-08T04:44:41.668Z",
+  "total_pages": 185,
   "failed_urls_count": 5,
   "sections": [
     {
@@ -493,7 +493,7 @@
       "slug": "reporting-analytics",
       "url": "https://docs.fluentcart.com/guide/reporting-analytics/",
       "file": "categories/reporting-analytics.md",
-      "page_count": 15,
+      "page_count": 19,
       "pages": [
         {
           "title": "Reporting & Analytics ​",
@@ -508,6 +508,10 @@
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/cohorts"
         },
         {
+          "title": "Coupons Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/coupons-report"
+        },
+        {
           "title": "Customer Report Dashboard ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/customer-report"
         },
@@ -516,12 +520,28 @@
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/future-renewals"
         },
         {
+          "title": "How Reports Count ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/how-reports-count"
+        },
+        {
+          "title": "Installments Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/installments-report"
+        },
+        {
+          "title": "Locations Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/locations-report"
+        },
+        {
           "title": "Order Sources Report ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/order-sources-report"
         },
         {
           "title": "Orders Report ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/orders-report"
+        },
+        {
+          "title": "Payment Methods Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/payment-methods-report"
         },
         {
           "title": "Compare Products Report ​",
@@ -546,10 +566,6 @@
         {
           "title": "Revenue Report ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/revenue-report"
-        },
-        {
-          "title": "Sales Report ​",
-          "url": "https://docs.fluentcart.com/guide/reporting-analytics/sales-report"
         },
         {
           "title": "Subscription Report ​",
@@ -675,7 +691,7 @@
       "slug": "shipping",
       "url": "https://docs.fluentcart.com/guide/shipping/",
       "file": "categories/shipping.md",
-      "page_count": 6,
+      "page_count": 9,
       "pages": [
         {
           "title": "Shipping Overview ​",
@@ -690,12 +706,24 @@
           "url": "https://docs.fluentcart.com/guide/shipping/configuring-shipping-zones"
         },
         {
+          "title": "Connecting Shippo ​",
+          "url": "https://docs.fluentcart.com/guide/shipping/connecting-shippo"
+        },
+        {
           "title": "Managing Packages ​",
           "url": "https://docs.fluentcart.com/guide/shipping/packages"
         },
         {
           "title": "Setting Up Shipping Methods ​",
           "url": "https://docs.fluentcart.com/guide/shipping/setting-up-shipping-methods"
+        },
+        {
+          "title": "Shipping Carriers ​",
+          "url": "https://docs.fluentcart.com/guide/shipping/shipping-carriers"
+        },
+        {
+          "title": "Shippo Rates, Labels and Tracking ​",
+          "url": "https://docs.fluentcart.com/guide/shipping/shippo-rates-labels-tracking"
         },
         {
           "title": "Understanding and Using Shipping Classes ​",
@@ -729,7 +757,7 @@
       "slug": "store-management",
       "url": "https://docs.fluentcart.com/guide/store-management/",
       "file": "categories/store-management.md",
-      "page_count": 24,
+      "page_count": 25,
       "pages": [
         {
           "title": "Store Management ​",
@@ -782,6 +810,10 @@
         {
           "title": "Instant Modal Checkout ​",
           "url": "https://docs.fluentcart.com/guide/store-management/orders-management/instant-modal-checkout"
+        },
+        {
+          "title": "Managing Shipments ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/managing-shipments"
         },
         {
           "title": "Order Bump ​",

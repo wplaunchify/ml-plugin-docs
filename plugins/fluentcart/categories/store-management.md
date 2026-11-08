@@ -526,7 +526,8 @@ This section covers the following aspects of order management:
 - **Creating New Orders (Manually):** Steps to manually create an order directly from the backend, useful for phone orders or custom requests.
 - **Order Details Overview:** A comprehensive guide to understanding all the information displayed on an individual order's detail page, including items, financial summaries, customer info, and activity logs.
 - **Editing Existing Orders:** How to modify an order after it has been placed, including adding/removing products, adjusting quantities, and applying coupons.
-- **Processing Refunds:** Detailed steps on how to issue full or partial refunds, with options to cancel associated subscriptions and revoke licenses.
+- **Processing Refunds:** Detailed steps on how to issue full or partial refunds, choose item quantities and shipping, restock items, and cancel associated subscriptions.
+- **Managing Shipments:** Create one or more shipments for an order, add tracking, notify the customer, and follow each shipment's status.
 - **Collecting Payments for Modified Orders:** How to collect outstanding balances after an order has been modified, including generating custom payment links and marking payments as received.
 - **Changing Order Statuses:** Learn how to update the status of an order (e.g., Processing, Completed, On Hold, Canceled) and manage shipping statuses.
 
@@ -948,6 +949,123 @@ Whichever method you choose, your customers can now complete their purchase in s
 
 ---
 
+## Managing Shipments ​
+
+**Source:** [https://docs.fluentcart.com/guide/store-management/orders-management/managing-shipments](https://docs.fluentcart.com/guide/store-management/orders-management/managing-shipments)
+
+# Managing Shipments ​
+
+When you send out a physical order, you record it as a shipment right on the order. FluentCart lets you split one order into several shipments, add tracking when you have it, and email the customer about each parcel as it leaves your store. This page covers shipments you send yourself with **Manual / Other**, using your own zone-based shipping methods and any carrier you like.
+
+If you buy carrier labels through Shippo, the same panel is used with a few extra steps. See [Shippo Rates, Labels and Tracking](/guide/shipping/shippo-rates-labels-tracking) for that flow.
+
+## Creating a Shipment ​
+
+You create shipments from the order screen. First, open an order that contains physical items.
+
+1. Go to **FluentCart Pro > Orders** and open the order.
+2. In the **Order items** card, click **Create shipment**.
+3. The **Create shipment** panel opens with three steps: **Items**, **Method**, and **Review**.
+
+The **Create shipment** button only appears while the order still has physical items left to ship. It is also hidden when the order's shipping status is **Delivered** or **Unshippable**, because you set those statuses on purpose. If you need to add a shipment to such an order, change its shipping status first.
+
+### Step 1: Items ​
+
+Choose which items go in this shipment and how many units of each. Each item shows how many of its units have shipped so far, for example "1 of 3 shipped".
+
+- **Clear all:** Sets every quantity to zero, so you can pick only the items in this parcel.
+- **Ship all remaining:** Fills in every unit that has not shipped yet.
+
+Set at least one item to a quantity above zero, then click **Continue**.
+
+#### Splitting an Order into Several Shipments ​
+
+To ship an order in parts, ship only some of the items or units now and leave the rest at zero. After you create the shipment, the **Create shipment** button stays available for the remaining units, and the next shipment only offers what is still left to ship. Repeat this for each parcel until everything has shipped.
+
+### Step 2: Method ​
+
+Make sure **Ship with** is set to **Manual / Other**. FluentCart lists the shipping methods from your shipping zones that match this order's address, with their prices. Pick one of these methods, or choose **Custom price**.
+
+- **A zone method:** The shipment uses the method's name and price, so the **Carrier Name** and **Shipping Cost** fields are hidden.
+- **Custom price:** Enter the cost yourself in **Shipping Cost**. Use 
+```
+0
+```
+
+ for free shipping. You can also type an optional **Carrier Name**, such as the courier you used.
+- **Tracking Number:** *(Optional)* The tracking number from your carrier. You can leave it empty, for example when you deliver locally or send an untracked parcel.
+- **Tracking URL:** *(Optional)* A link where the customer can follow the parcel. If the picked shipping method has a **Tracking URL Pattern**, this field fills in for you as you type the tracking number. A URL you type yourself is kept.
+
+The shipping cost you enter is recorded on the shipment and shown in the **Cost** column. It does not change what the customer paid.
+
+Setting a tracking URL pattern
+
+To fill tracking links automatically, edit a shipping method in your shipping zone and enter a **Tracking URL Pattern**. Use 
+```
+{tracking_number}
+```
+
+ where the number goes, for example 
+```
+https://track.dhl.com/{tracking_number}
+```
+
+. See [Setting Up Shipping Methods](/guide/shipping/setting-up-shipping-methods) for where shipping methods are edited.If no zone method matches the order, or the methods could not be loaded, you can still continue to the next step.
+
+### Step 3: Review ​
+
+Check the summary of items, carrier, tracking, and cost. A tracking number you left empty shows as **Not set**. You can also set the following:
+
+- **Shipped now / Change:** Keeps the time you click **Create Shipment** as the shipping time, or lets you set a different **Shipped At** date and time.
+- **Add a note for the customer:** An optional **Note to customer** that is shown with this shipment, in the shipment email and on the customer's order page.
+- **Notify Customer:** Selected by default. When it is selected, the customer gets the shipment email for this shipment. Clear it to create the shipment silently.
+
+Click **Create Shipment**. The new shipment appears in the **Shipments** card on the order.
+
+### The Shipment Email ​
+
+The **Notify Customer** checkbox is the only switch for the shipment email. There is no store-wide toggle for it in your email settings, so whatever you choose here is what happens for this shipment.
+
+While a shipment is being created, FluentCart does not also send the general "order shipped" email, so the customer gets one email per shipment instead of two. To change the wording of the shipment email, see [Configuring Email Notifications](/guide/settings-configuration/email-configuration/configuring-email-notification#shipment-email).
+
+## Order Shipping Status ​
+
+FluentCart updates the order's shipping status for you as you add shipments:
+
+- **Unshipped:** No units have shipped yet.
+- **Partially Shipped:** Some units have shipped and some are still waiting.
+- **Shipped:** Every physical unit is in a shipment.
+- **Delivered:** Every unit has shipped and every shipment on the order is marked **Delivered**.
+
+## Managing Shipments ​
+
+The **Shipments** card appears on the order once it has at least one shipment. It has columns for **Status**, **Shipment**, **Tracking**, and **Cost**. Each row shows the method or carrier, the items shipped, and the date. A manual shipment without a tracking number reads **No tracking number**.
+
+Click a row to expand its details, such as **Shipped via** and **Note to customer**.
+
+### Shipment Statuses ​
+
+A new shipment starts as **Dispatched**. The **Status** badge is a dropdown, so if you can manage order statuses, you can move a shipment through these statuses by hand:
+
+- **Dispatched:** The parcel has left your store.
+- **In Transit:** The parcel is on its way.
+- **Delivered:** The parcel has arrived. When every shipment on the order is Delivered, the order's shipping status becomes **Delivered**.
+- **Returned:** The parcel came back to you.
+- **Failed:** The parcel could not be delivered.
+
+Manual shipments do not receive carrier updates, so their status only changes when you change it. Customers see the status on their order page in the [customer portal](/guide/customer-dashboard/purchase-history#tracking-your-delivery).
+
+### Shipment Actions ​
+
+Click the three-dot button on a shipment to open its actions:
+
+- **Copy tracking number:** Copies the number to your clipboard. Shown when the shipment has one.
+- **Delete shipment:** Removes the shipment after you confirm. Its items go back to unshipped, so you can create a new shipment for them.
+
+You now have every parcel of the order recorded, and your customer can follow each one from their account.
+
+---
+
 ## Order Bump ​
 
 **Source:** [https://docs.fluentcart.com/guide/store-management/orders-management/order-bump](https://docs.fluentcart.com/guide/store-management/orders-management/order-bump)
@@ -1031,7 +1149,11 @@ On the main **Order Bumps** screen, you can manage all your existing offers:
 
 ) icon provides options to **Delete** an existing bump offer.
 
-- **Checkout View:** Once active, the offers appear on your store's checkout page, clearly labeled (e.g., **Recommended**) with the title, description, and discount, ready for the customer to accept with a single click.
+- **Checkout View:** Once active, the offers appear on your store's checkout page under a section heading (**Recommended** by default). Each offer shows as its own card with: - The product image (the variation's image, then the product's featured image, then your store's placeholder).
+- Your **Bump Name** as a badge, followed by the product name and, when it differs, the variation name.
+- The price. When the offer has a discount, the original price is struck through beside the discounted price, with the amount saved (for example **(Save 5.00)**).
+- Your description, when you added one.
+- A **Yes, add this to my order** checkbox. Ticking it adds the item to the cart, and unticking it removes the item again.
 
 INFO
 
@@ -1066,7 +1188,18 @@ The Order Details screen is organized into several panels, each providing specif
 
 At the top of the screen, you’ll see the main order information and quick action buttons.
 
-- **Receipt Number:** A unique number that identifies the order.
+- **Order Number:** The order's unique 12-character code, shown as **Order #** after the breadcrumb (for example 
+```
+#A7K2P9X4M1Q8
+```
+
+). Older orders keep their longer code, which is shortened here; hover over it to see the full value. This is the number your customers see on their order pages and emails.
+- **Receipt Number:** The receipt number, such as 
+```
+INV-1001
+```
+
+, shown below the title next to the order date. It is assigned when the order is paid, so an unpaid order does not have one yet. You set its prefix and starting number in the [checkout settings](/guide/settings-configuration/cart-checkout-settings).
 - **Order Status:** Shows the current state of the order (like pending or completed).
 - **Refund Button:** Initiates the [refund process](/guide/store-management/orders-management/processing-refunds) for the order.
 - **Edit Button:** Allows you to enter [edit mode for the order](/guide/store-management/orders-management/editing-existing-orders).
@@ -1079,7 +1212,7 @@ This section lists all the products included in the order.
 - **Product Name:** The name of the purchased product.
 - **Quantity:** The number of units purchased.
 - **Individual Item Price:** The price of a single unit of the product.
-- For physical products, you might see an "Order Items Delivered" button to mark fulfillment for specific items.
+- For orders with physical products, a **Create shipment** button appears in the card header while items are left to ship. Shipments you create are listed in a **Shipments** card below. See [Managing Shipments](/guide/store-management/orders-management/managing-shipments) for splitting an order into shipments and adding tracking.
 
 ### 3. Payment & Financial Summary ​
 
@@ -1227,28 +1360,65 @@ This section on the sidebar shows the tax details the customer provided during c
 
 # Processing Refunds ​
 
-FluentCart provides a straightforward way to process refunds for your orders, whether it's a full refund or a partial amount. You can also manage related subscriptions and licenses during the refund process.
+FluentCart lets you refund an order in full or in part, pick the exact items and shipping you are refunding, and restock the items in the same step. Refunds go through your payment gateway first, and FluentCart records the refund once the gateway accepts it.
 
-## Steps to Process a Refund ​
+## Opening the Refund Modal ​
 
-1. Navigate to the **Order Details** screen for the specific order you wish to refund.
-2. In the top right corner of the Order Details screen, click the **"Refund"** button.
-3. A **"Refund Payment"** modal window will appear.
-4. Configure the refund details:
+1. Open the **Order Details** screen for the order you want to refund.
+2. In the top right corner, click the **Refund** button.
+3. The **Refund Transaction** modal opens.
 
-- **Refund with transaction:** Use the dropdown to select the specific payment transaction you wish to refund. This is crucial if an order had multiple payments or partial payments.
-- **Select Item/s:** This is a crucial step for keeping your records straight. Click this dropdown to choose the specific products the customer is returning. This helps keep your sales reports and inventory accurate, especially for partial returns.
-- **Refund amount:** Enter the amount you wish to refunds. - FluentCart displays the **"Max refund amount for this transaction"**, ensuring you don't refund more than was paid in that specific transaction. This allows for **partial refunds**. You can manually adjust the amount if needed.
-- **Restock Quantity:** If a customer purchased a simple or variable product (such as a shirt), you’ll see a Restock Quantity section. This option allows you to restore product stock directly while processing a refund. You can specify how many units of each product should be added back to your store’s inventory from the same screen.
-- **Reason of refund:** Add a short Description to note the reason for the refund (this helps you remember why this refund).
-- **Subscription:** If the order includes a subscription, you will see a checkbox for **"Cancel Subscription (if any)"**. - Checking this box will not only process the refund but also automatically cancel the associated subscription.
-- **License:** If the order includes a digital product with a license, you will see a checkbox for **"Revoke License (if any)"**. - Checking this box will revoke the issued license in addition to processing the refund, ensuring proper access control for licensed digital goods.
-5. After configuring all options, click the **"Refund"** button at the bottom of the modal (e.g., "Refund $51.3") to confirm and process the refund.
+INFO
 
-## Post-Refund Status ​
+An order that has been upgraded to another order cannot be refunded. FluentCart shows "Order can not be refunded." if you try.
+## Configuring the Refund ​
 
-- After a refund is processed, the order's financial summary on the Order Details screen will update to reflect the refund amount (e.g., **"Total Refund Owed"** alert).
-- The **Activity Log** for that order will also record the refund event, including details like who processed it and when.
+The modal fills itself in with the full refundable amount, so you only change what you need.
+
+- **Refund with transaction:** Choose the payment you are refunding. Only paid transactions are listed, shown with the amount paid (for example, "#5 - Paid $11.20"). This matters when an order has more than one payment.
+- **Items:** Every item on the order is listed with a checkbox, its price, and a quantity stepper. Items are ticked by default. - Untick an item to leave it out of the refund, or lower its quantity to refund only some units.
+- When an item's tax is charged on top of the price, the row shows the tax per unit, such as "+$1.20 tax/qty".
+- An item that is already fully refunded is greyed out. If an earlier refund covered all of an item's units but left some money on it, the row shows "$X left" and starts unticked.
+- When an item has shipments, the row shows how many units shipped and their shipment status, for example "Shipped: 1 (In Transit), 1 (Delivered)".
+- For physical items that have already shipped, an **Already shipped** stepper appears. Use it to tell FluentCart how many of the refunded units had already left your store, so they are not counted as still waiting to ship. FluentCart starts it at the lowest possible number.
+- **Include shipping:** Shown when some of the order's shipping can still be refunded. Tick it to refund shipping, and adjust the amount in the field beside it. When the shipping was taxed, the label shows the shipping amount plus its tax.
+- **Restock items to inventory:** Shown when a selected item has stock management turned on. It is ticked by default, and it puts the refunded units back into your inventory. It is not shown for a canceled order, because cancelling already restocked the items. Only units that never left your store go back into stock. If some of the refunded units had already shipped, the modal notes "Shipped units will not be restocked."
+- **Refund amount:** With items or shipping selected, FluentCart works out the amount for you, and that amount is also the most you can refund. You can lower it, for example to refund part of an item's price. Any amount you enter must be at least the shipping you are refunding plus the smallest unit of your currency. With nothing selected, you can type any amount up to the **Max refund amount for this transaction** shown below the field.
+- **Reason of refund:** An optional note. Your customers can see this reason. Hover over the information icon for the values Stripe accepts here.
+- **Subscription:** If the order includes a subscription that is still active, you will see **Cancel Subscription (if any)**. It is ticked by default, and it cancels the subscription at your payment provider immediately.
+
+INFO
+
+There is no license checkbox in the modal. With FluentCart Pro, the licenses issued for an order are disabled automatically when the order is refunded in full.When you are ready, click the **Refund** button at the bottom of the modal. The button shows the amount, for example "Refund $11.20".
+
+## What Happens When You Refund ​
+
+FluentCart refunds through the payment gateway first, and only records the refund on the order once the gateway accepts it. Messages in the modal tell you what happened, such as "Refund processed on FluentCart." and the result from the gateway.
+
+Some payment methods cannot return money automatically, for example offline payments. For those, FluentCart records the refund on the order and tells you to return the money through that method yourself.
+
+Only one refund can run on an order at a time. If you start a second one too quickly, FluentCart asks you to try again in a moment.
+
+### When the Gateway Refund Fails ​
+
+If the gateway cannot be reached or rejects the refund, FluentCart records nothing on the order except an entry in its Activity log, and shows **Refund failed on** your gateway's name along with the gateway's message.
+
+If the failure was a timeout, check your gateway's dashboard first, because the refund may already be there. Otherwise you can choose:
+
+- **Cancel:** Go back without refunding anything.
+- **Record locally only:** Record the refund on the order without refunding through the gateway. The prompt lists what will change: the refund amount, the items and whether their stock is restored, the shipping amount, the new payment status, and that the subscription is not cancelled. No money is returned to the customer, so you need to refund them outside FluentCart. FluentCart adds a "Refund recorded locally only" entry to the order's Activity log as a reminder.
+
+## After the Refund ​
+
+- **Payment status:** The order becomes **Refunded** once the total refunded reaches the net amount paid. Until then, it is **Partially Refunded**.
+- **Order summary:** The refund appears in the order's payment and financial summary, and the refunded items show their refunded quantities.
+- **Stock:** Items you chose to restock are added back to your inventory.
+- **Activity log:** The order's Activity log records the refund event.
+- **Customer email:** FluentCart can email the customer after a refund. You control this with the **Send mail to customer after a refund** option in your [email notification settings](/guide/settings-configuration/email-configuration/configuring-email-notification).
+
+INFO
+
+The **Total Refund Owed** line on the Order Details screen is not part of a normal refund. It appears only when the customer has paid more than the order now totals, after refunds are taken into account.Your refund is now recorded, and the order's payment status reflects it.
 
 ---
 

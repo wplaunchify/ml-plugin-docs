@@ -438,8 +438,7 @@ If you need help with CSS variables or encounter issues:
 
 1. Check the [Troubleshooting & Support](/guide/troubleshooting-support/common-issues-faqs) section
 2. Use browser DevTools to inspect elements and identify variables
-3. Visit our [support forums](https://fluentcart.com/support) for community help
-4. Contact our support team for advanced customization assistance
+3. Contact our [support team](https://wpmanageninja.com/support-tickets/) for advanced customization assistance
 
 > Note: CSS customizations are theme-independent and will persist even if you switch themes, as long as FluentCart remains active.
 
@@ -1111,7 +1110,7 @@ shop.example.com
 
 INFO
 
-FluentCart applies no internal domains by default, so attribution behaves exactly as before until you add this snippet. Campaign values are stored in the visitor's browser for 30 days. The captured data then appears in your reports under marketing source, which you can read about in [Sales Report](/guide/reporting-analytics/sales-report).
+FluentCart applies no internal domains by default, so attribution behaves exactly as before until you add this snippet. Campaign values are stored in the visitor's browser for 30 days. The captured data then appears in your reports under marketing source, which you can read about in [Order Sources Report](/guide/reporting-analytics/order-sources-report).
 ### Gating Attribution Storage on Cookie Consent ​
 
 Campaign attribution is kept in the visitor's browser, and privacy rules such as GDPR and the German TDDDG treat that storage the way they treat cookies. If your store runs a consent banner, this is how you put attribution behind it.

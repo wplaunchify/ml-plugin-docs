@@ -256,7 +256,8 @@ Once the order is placed, customers will see a confirmation message with a green
 This page contains a clear summary of the order, including:
 
 - **Customer Name:** The name of the customer who completed the purchase.
-- **Order ID:** A unique identifier for the order (e.g., #INV-6).
+- **Order #:** The order's unique 12-character code (e.g., A7K2P9X4M1Q8). It is the same number the customer sees in **Purchase History** in their account.
+- **Invoice number #:** The receipt number (e.g., INV-6), made of your receipt prefix and a running number. It only appears once the order is paid, so an unpaid order, such as an offline payment that has not been confirmed yet, shows only the **Order #**.
 - **Purchased Item(s):** A list of purchased products and their respective plans (e.g., FluentCRM – Solo/Blogger). When a [Dynamic Pricing](/guide/marketing-sales-tools/dynamic-pricing) discount applied to an item, its original price appears struck through.
 - **Price & Total:** The total purchase amount and payment method (e.g., VISA ending in 4242).
 - **Subscription Details:** Information about renewal periods and next billing dates.
@@ -285,7 +286,7 @@ FluentCart automatically generates an invoice receipt for every order. This invo
 **What the Invoice Includes:**
 
 - Customer name
-- Order ID and purchase date
+- Order number, receipt number (once the order is paid), and purchase date
 - Product name and price breakdown
 - Payment method used
 - Total paid amount
@@ -303,7 +304,12 @@ If the purchased subscription includes a **Setup Fee**, it now appears as a clea
 At the bottom of the **Purchase Successful** page, customers will find two key buttons:
 
 - **View Order:** Opens the full order details inside their account dashboard.
-- **Download Receipt:** Generates a PDF version of the official invoice that customers can save or print for their records.
+- **Download Receipt:** Generates a PDF version of the official invoice that customers can save or print for their records. The file is named after the receipt number, such as 
+```
+receipt-INV-6.pdf
+```
+
+, or after the order number if the order is not paid yet.
 
 This allows users to quickly access their payment confirmation and keep a digital copy for bookkeeping or support purposes.
 
@@ -344,6 +350,8 @@ When you go to the Purchase History page, you'll see a list of all your orders. 
 - **Status**: A simple badge shows the current status, like **Completed**, **On-Hold**, or **Canceled**.
 - **Amount**: This is the total price you paid for the order.
 
+Once the store ships a physical order, a delivery badge and a short line appear under its items. For a single shipment, the badge shows its status, such as **Shipped**, **On the way**, **Out for delivery**, or **Delivered**, and the line shows the carrier and the expected delivery date when the carrier provides one. An order sent in several parts shows **Partly shipped** (or **Shipped in parts** once every item has gone out), with a count of units per status, for example "4 on the way · 1 shipped · 1 not shipped yet".
+
 ## Searching Your Orders ​
 
 Have a lot of past orders? No problem. Use the **Search bar** (look for the magnifying glass icon) at the top-right of your order list to quickly find the purchase you're looking for.
@@ -359,6 +367,21 @@ Here’s what you might see on the details page:
 - **Downloads**: For any digital products, a 'Download' section will appear with a list of your files. Simply click the **Download** button to save the file to your device.
 - **Transaction and Billing Info**: At the bottom of the page, you can find the specific **Related Transactions** for your payment and the **Billing Address** that was used for the order.
 - **License Details**: If your order included a product with a software license, you would also see a section here with your license key and activation details.
+
+## Tracking Your Delivery ​
+
+When part or all of an order has shipped, the order details page shows a **Delivery** card above the **Summary**. Each shipment is listed as **Shipment 1**, **Shipment 2**, and so on, with its status, the time of its last update, the expected delivery date (when the carrier provides one), and a **Track** button when the carrier has a tracking page. Items that have not shipped yet are listed under **Not shipped yet**, with a note that you'll get an email when they ship.
+
+The shipment with the newest update opens on its own, along with any shipment that has a delivery problem. Click another shipment to see its details:
+
+- **Delivery progress:** Three steps, **Shipped**, **On the way**, and **Delivered**, with the current step highlighted. When the carrier reports the parcel is out for delivery, the status reads **Out for delivery** and **Expected today**.
+- **Latest carrier update:** The carrier's most recent tracking message and when it arrived.
+- **Carrier and Tracking Number:** The carrier and service, and the tracking number. Click **Copy tracking number** to copy it, or **Track on** the carrier's site to follow the parcel. If the store didn't add a tracking number, you see **No tracking number available**.
+- **Parcels in this shipment:** For a shipment sent in more than one parcel, each parcel with its own tracking link.
+- **In this shipment:** The items and quantities in that shipment.
+- **Note from the store:** Any note the store added for you when it shipped the order.
+
+If the carrier could not deliver a parcel or it went back to the store, the shipment opens with a red notice, such as **The carrier could not deliver this parcel**, and asks you to check the carrier page or contact the store.
 
 ## Upgrading a One time Purchases ​
 
