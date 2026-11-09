@@ -1,7 +1,7 @@
 {
   "plugin_slug": "fooevents-multi-day",
-  "chunk_count": 2384,
-  "built_at": "2026-11-02T06:39:48.093Z",
+  "chunk_count": 2357,
+  "built_at": "2026-11-09T06:41:02.758Z",
   "max_chunk_chars": 1200,
   "format_version": 1
 }
