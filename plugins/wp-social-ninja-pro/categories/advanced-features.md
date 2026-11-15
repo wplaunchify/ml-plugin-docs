@@ -264,7 +264,11 @@ This is the most important section for controlling how, where, and when your pop
 
 Here’s what each setting does:
 
-- **Custom Notification Title:** Change the default text. For example, you can write "Just left us a 5-star review!" to add a personal touch.
+- **Notification Style:** Choose how each popup looks: - **Rotating Card:** The classic popup. It shows one review at a time and rotates through your reviews.
+- **Review Spotlight:** *(Pro)* A richer review card with a rating word (such as "Excellent"), a short excerpt of the review, and its source. Use **Source Display** to show the source as **Logo only** or **Logo + platform name**.
+- **Rating Pulse:** *(Pro)* A single card with your overall rating and total number of reviews, instead of individual reviews. It stays on screen without rotating. If you select more than one platform, it combines their ratings and shows a small logo for each platform.
+
+- **Custom Notification Title:** Change the default text. For example, you can write "Just left us a 5-star review!" to add a personal touch. Not available with Rating Pulse, which shows your overall score instead.
 - **Notification Position:** Choose which corner of the screen the pop-up will appear in (e.g., "Float Left Bottom" or "Float Right Bottom").
 - **Display Reviews in:** Select what happens when a visitor clicks the pop-up. The **Popup** option will open a larger lightbox showing a feed of all your reviews.
 - **Display 'Read all reviews' Button:** Toggle this on to show a button that links to your main reviews page (if you have one).
@@ -273,11 +277,21 @@ Here’s what each setting does:
 - **Or Display by Post Type:** This is another option to control display. For example, you could choose to only show popups on your "Posts."
 - **Hide Notification on Desktop / Mobile:** Use these toggles to hide the pop-ups on certain devices.
 - **Display Close Button:** This shows a small "X" on the pop-up so users can close it.
-- **Display Date:** Show or hide the date the review was left.
+- **Display Date:** Show or hide the date the review was left. Not available with Rating Pulse.
 - **Initial Delay:** This is the time (in milliseconds) to wait before the first pop-up appears after a visitor loads your page. (e.g., 6000ms = 6 seconds).
-- **Delay Between:** This is the time (in milliseconds) to wait between each notification. (e.g., 5000ms = 5 seconds). Display For: This sets how long (in milliseconds) a single pop-up will stay on the screen before hiding. (e.g., 6000ms = 6 seconds).
+- **Delay Between:** This is the time (in milliseconds) to wait between each notification. (e.g., 5000ms = 5 seconds).
+- **Display For:** This sets how long (in milliseconds) a single pop-up will stay on the screen before hiding. (e.g., 6000ms = 6 seconds).
 
-When you're all done, don't forget to click the **Save** button! You can also use the **Filters, Header, and Style** tabs to refine further which reviews are shown and how they look, just like a standard feed template.
+When you're all done, don't forget to click the **Save** button! You can also use the **Filters, Header, and Style** tabs to refine further which reviews are shown and how they look, just like a standard feed template. The **Style** tab shows only the controls that apply to the Notification Style you picked.
+
+## How Popups Behave for Visitors ​
+
+Notification popups are designed to stay out of your visitors' way:
+
+- **They pause in background tabs.** If a visitor switches to another tab, the popups stop and pick up again when they come back.
+- **Closing is remembered.** Once a visitor closes a popup, it stays closed for the rest of their visit.
+- **They respect reduced motion.** If a visitor has turned on "reduce motion" in their device settings, the popups appear without sliding animations.
+- **They work with a keyboard.** Visitors can reach and use the close button and the popup itself with the keyboard alone.
 
 ---
 

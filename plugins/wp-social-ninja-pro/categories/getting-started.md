@@ -82,8 +82,8 @@ Prefer a more hands-on setup? Some platforms also keep a **manual** connection m
 
 Once you've connected, WP Social Ninja works to keep you connected:
 
-- **Google Reviews, YouTube, and TikTok** refresh automatically in the background — you generally won't need to reconnect.
-- **Facebook and Instagram** may occasionally ask you to reconnect when their access expires. If a feed or review stops updating, simply open that platform and reconnect it.
+- **Google Reviews, YouTube, TikTok, and Instagram** refresh automatically in the background. Instagram access tokens are renewed before they expire, so you generally won't need to reconnect.
+- **Facebook** may occasionally ask you to reconnect when its access expires. If a feed or review stops updating, simply open that platform and reconnect it.
 
 With your accounts connected and kept fresh by the bridge, you're ready to start pulling in feeds and reviews and showing off your social proof.
 

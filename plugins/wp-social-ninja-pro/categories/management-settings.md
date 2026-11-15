@@ -286,5 +286,11 @@ Once you have entered all your translations, scroll to the bottom of the page an
 
 That's all it takes! The changes are instant. Now, when a visitor views your social feeds on your website, they will see the translated words you just entered instead of the English defaults. Your "Load More" button will now say "Cargar Más," providing a fully native language experience for your audience.
 
+## Right-to-Left (RTL) Languages ​
+
+WP Social Ninja supports right-to-left languages such as Arabic, Hebrew, and Persian. When your site uses a right-to-left language, your feeds, reviews, and chat widget display in the correct reading direction on your website. The WP Social Ninja admin screens do the same.
+
+You don't need to turn anything on. To use RTL, set your site language to a right-to-left language under **Settings → General → Site Language** in WordPress. You can then translate the plugin's default text using the **Translation** settings above.
+
 ---
 

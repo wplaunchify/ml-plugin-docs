@@ -285,68 +285,79 @@ Now that your product is connected, you're ready for the fun part:
 
 # Booking.com Reviews ​
 
-WP Social Ninja enables you to showcase reviews directly from your Booking.com business profile, adding credibility to your business and enhancing trust among potential customers. With this feature, you can create customized templates to make your reviews look more appealing and aligned with your website's style.
+WP Social Ninja enables you to showcase reviews directly from your Booking.com property, adding credibility to your business and enhancing trust among potential guests. With this feature, you can create customized templates to make your reviews look more appealing and aligned with your website's style.
 
-In this guide, we’ll walk you through the steps to display Booking.com reviews on your website.
+In this guide, we'll walk you through connecting your hotel and displaying its Booking.com reviews on your website.
 
 TIP
 
-You’ll need WP Social Ninja Pro to access and display Booking.com reviews on your site.
+You'll need WP Social Ninja Pro with an **active license** to access and display Booking.com reviews on your site.
 ## Enable Booking.com Platform ​
 
 Navigate to your **WP Social Ninja** dashboard and select [Platform](../getting-started/all-platforms-of-wp-social-ninja) from the navigation bar. Locate the **Booking Platform** and click on the **Settings** icon to configure it.
 
-## Steps to Configure Booking.com Reviews ​
+## Connect Your Hotel ​
 
-Before fetching reviews from Booking.com using your Business Profile URL, you need to complete three additional steps:
+You connect a property with its Booking.com hotel ID. You no longer need a cookie value or a code snippet. WP Social Ninja fetches Booking.com reviews through its own review service.
 
-- **Copy the Cookie AWS-WAF-Token Cookie Value from the Booking.com Site**
-- **Add the AWS-WAF-Token Cookie Value to a Snippet**
+The **Booking.com Configuration** pop-up has two fields: **Enter your Booking.com hotel ID** and **Hotel name**.
 
-Below is a step-by-step guide to complete these settings:
+### How to Find Your Hotel ID ​
 
-## Copy the Cookie AWS-WAF-Token ​
-
-Open **Booking.com** and navigate to the business profile whose reviews you want to display on your website.
-
-Access your browser's **Inspect** mode (usually by right-clicking on the page and selecting "Inspect").
-
-In the Inspect mode, go to the **Application** tab and select **Cookies**.
-
-Search for the **AWS-WAF-Token** in the cookies list then copy the value of the AWS-WAF-Token cookie and save it for later use.
-
-## Add the AWS-WAF-Token in a Snippet ​
-
-To use the **AWS-WAF-Token** cookie value you copied earlier, you'll need to add it to your site using a code snippet. This can be done easily with a snippet plugin.
-
-TIP
-
-We recommend using **FluentSnippet** on your WordPress site for a seamless experience. However, you can use any other snippet plugin of your choice.Follow these steps to add the code snippet:
-
-- Open **FluentSnippet** and click on the **Create Snippet** button.
-
-php
+1. Open your hotel's page on Booking.com in a computer browser.
+2. Open the page source: press **Ctrl+U** (Windows) or **Option+Command+U** (Mac). In Firefox on a Mac, press **Command+U**. In Safari, first turn on **Settings → Advanced → "Show features for web developers"**.
+3. Press **Ctrl+F** (Windows) or **Command+F** (Mac), and search for 
 ```
-add_filter('wpsocialreviews/booking_header_request_cookie_set', function($headers) {
+b_hotel_id
+```
 
-    $headers['cookie'] = 'aws-waf-token=(Cookie value goes here)';    return $headers;
+.
+4. You'll see a line like 
+```
+b_hotel_id: '62665', b_hotel_name: 'Your Hotel'
+```
 
-});
-```- In the code editor field, insert the code above:
-- Replace **Cookie value goes here** with the **AWS-WAF-Token** value you copied earlier.
-- Save the snippet to apply the changes.
+. Check that the name is your hotel.
+5. Copy the line, or only the number, and paste it into the **hotel ID** field.
 
-## Business URL from Booking ​
+If you paste the whole line, WP Social Ninja fills in the **Hotel name** field for you. Otherwise, type the name you want your widgets to show. Then click **Save**.
 
-Navigate to your business profile on Booking.com and copy the **Business URL** directly from the address bar of your browser.
+NOTE
 
-Next, return to your **WP Social Ninja Booking Configuration** and paste the **Booking.com Business Profile URL** you copied earlier. Click on the **Save** button, and you’ll see that your business has been successfully added.
+If you see **"No reviews found for Booking.com hotel ID …"**, double-check the number. It must be the 
+```
+b_hotel_id
+```
 
-If you wish to add another business profile, simply click on the **Add More Business** button and repeat the same steps.
+ value from your own hotel's page.
+### Is This Hotel Already on Your Site? ​
+
+If you connected Booking.com properties in an earlier version of WP Social Ninja (using a page link), those properties can no longer get new reviews. You'll see a notice naming them on the Booking.com screen. Add each one again with its hotel ID, as described above.
+
+When you save a hotel, WP Social Ninja asks **Is this hotel already on your site?** and lists your older properties, marking the one that **looks like a match**:
+
+- **Choose the matching property** so your existing templates keep working. Its saved reviews are imported again and the old copies removed, because the old and new sets can't be matched up and every review would otherwise show twice. The list tells you how many saved reviews would be replaced.
+- **Choose No, this is a new property** if it's a different hotel. Nothing you already saved is changed.
+
+Click **Continue** to finish.
+
+### One Hotel Per Site ​
+
+Each website can connect **one** Booking.com hotel. Once a hotel is connected, the Booking.com screen shows a notice naming it in place of the **Add More Business** button.
+
+To show reviews for a different hotel, delete the connected hotel from the Booking.com screen first, then connect the new one with its hotel ID.
+
+## How Syncing Works ​
+
+- **Reviews in every language.** Booking.com reviews are imported in all the languages your guests wrote them in, not just English.
+- **The latest 20 reviews per sync.** Each sync adds the 20 most recent reviews. Reviews already saved on your site are kept, so your collection grows over time.
+- **A sync interval of at least 1 Week.** Under **Settings → Reviews Settings**, the shortest option offered for Booking.com is **1 Week**. If your connection was on a shorter schedule, it moves to 1 week automatically.
+
+## Create a Template ​
 
 To customize your **Booking.com Reviews Template**, click on the **Create a Template** button and start personalizing your [template](./create-template). Keep in mind, if you don't create a template, your reviews won't be displayed, as the template won't be created automatically.
 
-That's how you can easily fetch your **Booking.com** business profile reviews on your site using **WP Social Ninja**.
+That's how you can easily show your **Booking.com** reviews on your site using **WP Social Ninja**.
 
 ---
 
@@ -591,9 +602,34 @@ This section controls the visual structure and arrangement of your reviews.
 - **Layout Type:** This is the foundational structure of your feed. - **Grid:** Creates a clean, organized, multi-column grid. All review boxes are forced to be the same height, which creates a very neat and symmetrical look.
 - **Slider:** Displays your reviews in a horizontal, swipe-able carousel. This is perfect for saving space on a homepage.
 - **Masonry:** A "Pinterest-style" grid where boxes have different heights based on their review text, fitting together like bricks.
-- **Badge:** A small, compact layout that is often used to show a summary of your rating (e.Example, "4.9 out of 5 stars").
+- **Badge:** A small, compact layout that is often used to show a summary of your rating (e.g., "4.9 out of 5 stars").
+- **Score Slider:** *(Pro)* A slider with your overall rating summary in its own column beside the scrolling reviews. It uses the header for that summary, so keep **Display Header** on in the **Header** section. With the header off, it shows as a regular Slider.
+- **Marquee:** *(Pro)* Reviews scroll continuously across the page, like a news ticker. With four or more reviews, they're split into two rows that scroll in opposite directions. Visitors can stop and restart the movement with the pause button.
+- **Feature Grid:** *(Pro)* A grid with a repeating pattern: one tall featured card with a large quote mark, two regular cards, and one wide card. It keeps the pattern going as more reviews load.
 - **Select a Template:** These are pre-designed visual "skins" for your feed (e.g., Vega, Spica, Sirius). Each one changes the styling of the review boxes, fonts, and layout.
 - **Number of Columns:** This is a crucial responsive setting. You can set the number of columns you want to show on **Desktops**, **Tablets**, and **Mobile** phones.
+
+NOTE
+
+Switching **Layout Type** keeps every setting you've changed, including **Minimum Rating**, so you can try different layouts freely before you save.
+#### Badge Templates ​
+
+When the Layout Type is **Badge**, pick one of six badge designs:
+
+- **Badge 1** and **Badge 2:** The classic rating badges.
+- **Badge 3:** *(Pro)* An avatar stack: overlapping reviewer photos next to your rating, with a "+N" count for the rest.
+- **Badge 4:** *(Pro)* A score strip: a one-line bar with a rating label (such as "Excellent"), stars, your rating summary and the platform icon.
+- **Badge 5:** *(Pro)* A circle sticker: a round medallion with the rating label, a large rating, stars, review count and platform logo.
+- **Badge 6:** *(Pro)* A rounded-square sticker with the same details as Badge 5.
+
+#### Marquee Settings ​
+
+When the Layout Type is **Marquee**, a **Marquee** section appears in the General tab:
+
+- **Scroll Speed:** How fast the reviews move: **Slow**, **Normal** or **Fast**.
+- **Card Width (px):** The width of each review card.
+
+Marquee and Slider layouts show all their reviews at once, so they don't use pagination. Set how many appear with **Number of Reviews** in the **Filters** section.
 
 ### 3. Filters ​
 
@@ -778,6 +814,10 @@ After you grant permission, you will be brought back to a WP Social Ninja pop-up
 The pop-up will close, and you will be returned to the main **Platforms** page.
 
 You will now see that the **Facebook** row has a green "Connected" status and lists the Page(s) you just added.
+
+### How Syncing Works ​
+
+Each time WP Social Ninja syncs your Facebook reviews, it loads every page of reviews up to the review limit. Reviews already saved on your site are kept, even if they are older than the ones in the latest sync.
 
 ### Next Steps ​
 
@@ -987,7 +1027,7 @@ If a product already has its own WP Social Ninja integration set up directly in 
 That's it. In one click, WP Social Ninja will:
 
 - Create a [Native Review Form](./native-review-forms) automatically
-- Build a matching display [template](./create-template) with the **Write a Review** button already connected to that form
+- Build a matching display [template](./create-template), styled with the **Polaris** skin, with the **Write a Review** button already connected to that form
 - Turn on **Make WP Social Ninja Your Main Review Hub**
 
 There's nothing else to configure — your store is ready to collect and display reviews right away.
@@ -1143,8 +1183,9 @@ When using the filtered publishing mode, you can define the following criteria:
 WP Social Ninja integrates with AI platforms to provide summarized versions of your reviews.
 
 - **Enable AI Review Summarizer**: Toggle this option to activate AI-powered review summaries.
-- **AI Platform & Model**: Select your preferred AI provider (e.g., OpenAI) and the specific model (e.g., gpt-4o) you wish to use.
-- **API Key**: Enter the unique API key provided by your selected AI platform to securely connect the service.
+- **AI Platform**: Select your AI provider: **OpenAI**, **OpenRouter**, or **WordPress AI (Recommended)**. WordPress AI appears on sites running WordPress 7.0 or later and uses the AI service already set up in WordPress. See [WordPress AI Integration](../ai-integration/wordpress-ai-integration-for-review).
+- **Model**: Choose the model used to write your summaries. The first option, **Default (currently …)**, always follows the model we recommend for that provider. Models a provider is phasing out are tagged **Deprecated**, and models it no longer serves are tagged **Unavailable**. If your saved model is retired, a note appears under the field and your summaries use the Default model until you pick another.
+- **API Key**: Enter the unique API key provided by your selected AI platform to securely connect the service. If a key is already saved, the field shows it masked. Type a new key to replace it, or clear the field to remove it. WordPress AI doesn't need a key.
 
 After setting up all the configurations to your preference, click on the **"Save Settings"** button located at the top right corner to apply the changes.
 
@@ -1190,7 +1231,12 @@ Google Reviews connect through WP Social Ninja's [secure connection bridge](../g
 
 TIP
 
-Manage reviews for more than one location? Click **+ Add Business** to bring in reviews from multiple Business Profiles. And because Google Reviews connect through the secure bridge, WP Social Ninja refreshes the connection automatically in the background — so your reviews keep syncing without you having to reconnect.You've successfully connected your **Google Business Profile Reviews**! Now head over to [Create a Template](./create-template) to display these reviews on your website.
+Manage reviews for more than one location? Click **+ Add Business** to bring in reviews from multiple Business Profiles. And because Google Reviews connect through the secure bridge, WP Social Ninja refreshes the connection automatically in the background — so your reviews keep syncing without you having to reconnect.
+## How Syncing Works ​
+
+Each time WP Social Ninja syncs your Google reviews, it loads every page of reviews up to the review limit. Reviews already saved on your site are kept, even if they are older than the ones in the latest sync. Your collection grows over time instead of being replaced.
+
+You've successfully connected your **Google Business Profile Reviews**! Now head over to [Create a Template](./create-template) to display these reviews on your website.
 
 ---
 
@@ -1436,6 +1482,9 @@ While the **General Settings** tab controls *what* content is shown (e.g., your 
 
 The **Style** tab is organized into several sections, each controlling a different part of your review feed.
 
+TIP
+
+**Start over with Reset All** *(Pro)*: The bar at the top of the Style tab has a **Reset All** button. It returns every style on this template to its default. Nothing changes on your site until you click **Save**, so you can still back out by leaving the editor without saving.
 ### 1. Star Rating ​
 
 This section styles the (★) star ratings that appear on your reviews and in the header.
@@ -1566,7 +1615,7 @@ This section styles the platform label (e.g., "Google," "Facebook") that can app
 
 ### 11. Badge ​
 
-This section styles your template only if you selected the "Badge" layout type in the General tab.
+This section styles your template only if you selected the "Badge" layout type in the General tab. It shows only the controls your chosen badge design uses, so some of the groups below appear only for certain badges.
 
 #### Rating Title ​
 
@@ -1582,6 +1631,26 @@ This section styles your template only if you selected the "Badge" layout type i
 
 - **Text Color:** Sets the color of the total reviews text (e.g., "Based on 150 reviews").
 - **Typography:** Opens font controls for this text.
+
+#### Quality Label ​
+
+*(Badge 4, 5 and 6)* Styles the rating word, such as "Excellent" or "Great".
+
+- **Text Color** and **Background Color:** Set the colors of the label.
+- **Typography:** Opens font controls for the label.
+
+#### More Reviews Count ​
+
+*(Badge 3)* Styles the "+N" circle at the end of the avatar stack.
+
+- **Text Color** and **Background Color:** Set the colors of the circle.
+- **Typography:** Opens font controls for the count.
+
+#### Header Band ​
+
+*(Badge 6)* Styles the colored band across the top of the rounded-square sticker.
+
+- **Background Color:** Sets the color of the band.
 
 #### Box ​
 
@@ -1882,6 +1951,19 @@ https://www.trustpilot.com/review/davidsw.com
 
 You will now see that the **Trustpilot** row has a green "Connected" status and lists your business domain. This confirms that WP Social Ninja is successfully connected to your Trustpilot page and is ready to start syncing your reviews.
 
+## How Syncing Works ​
+
+WP Social Ninja fetches Trustpilot reviews through its own review service, so you don't need to set anything else up. Fetching reviews needs WP Social Ninja Pro with an **active license**.
+
+- **The latest 20 reviews per sync.** Each sync adds the 20 most recent reviews. Reviews already saved on your site are kept, so your collection grows over time.
+- **A sync interval of at least 1 Week.** Under **Settings → Reviews Settings**, the shortest option offered for Trustpilot is **1 Week**. If your connection was on a shorter schedule, it moves to 1 week automatically.
+
+## One Trustpilot Business Per Site ​
+
+Each website can connect **one** Trustpilot business. Once a business is connected, the Trustpilot screen shows a notice naming it in place of the **Add More Business** button.
+
+To show reviews for a different business, delete the connected business from the Trustpilot screen first, then connect the new one.
+
 ## Next Steps ​
 
 Congratulations! Your Trustpilot account is fully connected and ready to sync reviews.
@@ -1889,7 +1971,7 @@ Congratulations! Your Trustpilot account is fully connected and ready to sync re
 Now that your account is connected, you're ready for the fun part:
 
 - Click the **Add New Template** button to go to the [template editor](./create-template) and start designing your **Business Reviews** template for Trustpilot.
-- You can click the **Add More Business** button if you run another company and want to connect its Trustpilot page as well.
+- Want to show a different company's reviews? See [One Trustpilot Business Per Site](#one-trustpilot-business-per-site).
 
 ---
 
@@ -2024,7 +2106,7 @@ Setting up a review hub used to take four separate steps — and it was easy to 
 **Now**, in the **Make WP Social Ninja your WooCommerce review hub** card, just click the **Set Up Review Hub** button. In one click, WP Social Ninja will:
 
 - Create a [Native Review Form](./native-review-forms) automatically
-- Build a matching display [template](./create-template) with the **Write a Review** button already connected to that form
+- Build a matching display [template](./create-template), styled with the **Polaris** skin, with the **Write a Review** button already connected to that form
 - Turn on **Make WP Social Ninja Your Main Review Hub**
 
 There's nothing else to configure — your store is ready to collect and display reviews right away.
