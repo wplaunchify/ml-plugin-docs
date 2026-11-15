@@ -1452,6 +1452,59 @@ In the **Payload Format**, select “x-www-form-urlencoded”
 
 ![screenshot of groundhogg webhooks settings using the post method to https://mysite.com/. payload format is x www form urlencoded, displaying contact id, wpf action, and access key fields with example values.](https://wpfusion.com/wp-content/uploads/2021/09/Groundhogg-flow-webhook-setting1-1024x647.png)
 
+**Note:** There’s a known issue where the 
+```
+wpf_action
+```
+
+ value may not be sent correctly in the webhook payload.
+
+Until this is fixed in Groundhogg, you can use either of the following workarounds:
+
+1. Instead of entering the action value directly, use the corresponding merge tag in the
+```
+wpf_action
+```
+
+field:
+
+- ```
+add
+```
+
+:
+```
+{meta.wpf_action::add}
+```
+- ```
+update
+```
+
+:
+```
+{meta.wpf_action::update}
+```
+- ```
+update_tags
+```
+
+:
+```
+{meta.wpf_action::update_tags}
+```
+2. Alternatively, add the corresponding
+```
+wpf_action
+```
+
+value directly to the webhook’s Target URL (e.g.,
+```
+wpf_action=update
+```
+
+) and leave it out of the payload.
+
+**Until Groundhogg releases a fix, we recommend using one of the workarounds above when configuring these webhook actions.**
 The values in the **Payload**section depend on the type of webhook you want to send. See below for examples.
 
 For each you will need to supply your access key, which can be obtained from the bottom of the General tab in the WP Fusion settings:

@@ -970,7 +970,24 @@ The version numbers are broken into three, and sometimes four parts. For example
 			top: 5px;
 			word-spacing: 2px;
 			color: #fff;
-		}#### # 3.48.1 - 10/13/2026
+		}#### # 3.48.2 - 11/13/2026
+
+- ✨ New Added a [404 Not Found option](https://wpfusion.com/documentation/getting-started/access-control/#404-not-found) to Redirect if access is denied, plus a Default to 404 Not Found setting. Visitors without access get a real 404 and the theme's 404 template instead of a redirect, so they can't tell the content exists. Works on posts, archives, post type rules, the WooCommerce shop, LearnDash, and Download Manager / Download Monitor downloads
+- ✨ New Added [Group Parent User ID, Email, and Username fields](https://wpfusion.com/documentation/membership/paid-memberships-pro/) for Paid Memberships Pro Group Accounts. A child member syncs the parent account, and those fields are cleared when the child leaves the group
+- ✨ New Added support for [PublishPress Cart](https://wpfusion.com/documentation/ecommerce/publishpress-cart/) 1.1 (formerly Studiocart). The integration is now labeled PublishPress Cart, and existing Studiocart settings carry over
+- ⚡️ Improved Omnisend now uses the v2026-03-15 API. Omnisend shuts off the v3 API on December 31, 2027. Removing a tag in WP Fusion now removes it from the contact in Omnisend, instead of setting a tag_ custom property to false. A [Legacy API setting](https://wpfusion.com/documentation/installation-guides/how-to-connect-omnisend-to-wordpress/) switches back to v3 if needed
+- ⚡️ Improved HighLevel tags are now added and removed one by one instead of replacing the contact's full tag list, and contact updates no longer send tags. A HighLevel workflow that adds a tag no longer loses it to the next WP Fusion update
+- ⚡️ Improved WooCommerce order links in the activity logs show the order number from sequential order number plugins
+- 🔧 Fixed Fixed HighLevel token refresh retrying until PHP ran out of memory when a contact belonged to another location. A slow or overlapping refresh no longer saves a refresh token that has already been used
+- 🔧 Fixed Fixed WooCommerce refunds keeping a purchase tag because of a WooCommerce Subscriptions order whose subscription is cancelled, expired, or on hold
+- 🔧 Fixed Fixed Gifting for WooCommerce Subscriptions ignoring recipient changes made by an admin. The recipient tags move to the new recipient, the old recipient keeps them while they have another active subscription to the product, and purchaser tags stay when tag removal is turned off
+- 🔧 Fixed Fixed GiveWP 4 recurring donation renewals not syncing
+- 🔧 Fixed Fixed removing a student from a FluentCommunity course not removing the course's linked tags
+- 🔧 Fixed Fixed PublishPress Cart / Studiocart guest checkouts applying tags that were set to be removed
+- 🔧 Fixed Fixed WPForms running out of memory splitting name fields on forms with more than one connection
+- 🔧 Fixed Fixed a fatal error rendering modules on older Divi 5 builds
+
+#### # 3.48.1 - 10/13/2026
 
 - ✨ New Added [Divi 5 support](https://wpfusion.com/documentation/page-builders/divi/) for restricting modules, rows, and sections with tag pickers under Advanced » WP Fusion. Divi 4 tag rules carry over when a page is converted. Converting a page no longer saves those modules as disabled when the person running the conversion does not have the required tags
 - ⚡️ Improved BuddyBoss Settings 2.0 now has WP Fusion tag fields on groups, group types, forums, discussions, replies, and profile types. A profile type can apply tags when a member is assigned to it
@@ -5089,7 +5106,7 @@ Cannot use object of type WP_Post as array
 
 #### # 3.40.45 - 12/19/2022
 
-- ✨ New Added [PublishPress Cart integration](https://wpfusion.com/documentation/ecommerce/publishpress-cart/)
+- ✨ New Added [Studiocart integration](https://wpfusion.com/documentation/ecommerce/studiocart/)
 - ✨ New Added support for [WooCommerce High Performance Order Storage](https://developer.woocommerce.com/2022/09/14/high-performance-order-storage-progress-report/)
 - ✨ New Added [Optin Status field for sync with MailerLite](https://wpfusion.com/documentation/crm-specific-docs/mailerlite-double-opt-ins/) — you can sync a value of 
 ```
