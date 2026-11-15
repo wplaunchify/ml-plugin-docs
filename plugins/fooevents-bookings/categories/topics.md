@@ -476,9 +476,9 @@ The following changelogs are updated after every release. Changes include new fe
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/check-ins-app-android/](https://help.fooevents.com/docs/topics/changelogs/check-ins-app-android/)
 
-## 3.1.16 (November 2, 2026)
+## 3.1.19 (November 13, 2026)
 
-- Minor bug fixes
+- Fix: Keep native libraries in the base Android APK to reduce launch failures when ABI splits are unavailable
 
 ## 3.1.14 (October 27, 2026)
 
@@ -781,6 +781,10 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/check-ins-app-ios/](https://help.fooevents.com/docs/topics/changelogs/check-ins-app-ios/)
+
+## 3.1.17 (November 9, 2026)
+
+- Minor bug fixes
 
 ## 3.1.16 (November 2, 2026)
 
@@ -4775,6 +4779,17 @@ The following changelogs are updated after every release. Changes include new fe
 ## FooEvents Help Center
 
 **Source:** [https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/](https://help.fooevents.com/docs/topics/changelogs/fooevents-pos/)
+
+## 1.14.3 (10 Nov 2026)
+
+- Fix: Updated Stripe payment intent creation for the Endive API version.
+- Fix: Minor bug fixes when dynamic loading is enabled and you disconnect from the store with a search active
+
+## 1.14.1 (9 Nov 2026)
+
+- New: Added dynamic loading for customers, products and orders for stores with a large amount of data
+- Update: Various security improvements
+- Update: Added settings for hardening Square webhook security
 
 ## 1.13.10 (27 Oct 2026)
 
@@ -9585,7 +9600,8 @@ FooEvents POS fully supports all the FooEvents extensions so you can capture [cu
 
 ## Articles
 
-	- [POS User Management](https://help.fooevents.com/docs/topics/point-of-sale/pos-user-management/)
+	- [Dynamic data loading](https://help.fooevents.com/docs/topics/point-of-sale/dynamic-data-loading/)
+- [POS User Management](https://help.fooevents.com/docs/topics/point-of-sale/pos-user-management/)
 - [Plugin settings](https://help.fooevents.com/docs/topics/point-of-sale/plugin-settings/)
 - [Customers](https://help.fooevents.com/docs/topics/point-of-sale/customers/)
 - [Orders](https://help.fooevents.com/docs/topics/point-of-sale/orders/)
@@ -9865,6 +9881,26 @@ Once the product is in the cart, any subsequent clicks on the product in the pro
 ## Refunding Orders
 
 If you have a completed order containing products that use decimal quantities, you can refund and restock those products following the normal refund process, albeit, with decimal quantity amounts to refund and restock instead. After making changes to any of the decimal quantity values mentioned above, whether it be the default values or the values entered on a per-product basis, it is recommended that you **resync your store’s data** in the **FooEvents POS****app** by clearing locally stored data from the **Settings** screen.
+
+---
+
+## FooEvents Help Center
+
+**Source:** [https://help.fooevents.com/docs/topics/point-of-sale/dynamic-data-loading/](https://help.fooevents.com/docs/topics/point-of-sale/dynamic-data-loading/)
+
+If you have a store with a large amount of data, it might take a very long time to connect to your store initially. Depending on the amount of data, performance and memory capabilities of the device you’re using, this large amount of data could cause interface slowdown or unexpected behaviour.
+
+Starting with plugin version 1.14.1 and app version 3.2.1 you can enable the **dynamic loading** setting in the Customers, Products and/or Orders tab which fetches data dynamically from the server as you search, rather than loading and storing all data locally on the device.
+
+![fooevents pos enable dynamic loading](https://help.fooevents.com/wp-content/uploads/2026/11/fooevents_pos_enable_dynamic_loading-1024x79.png)
+
+On the customer, product or order screen, no data is initially shown. Perform a search or scan a product to fetch results from your store. Results are fetched in batches of 20 and more results are loaded as you scroll down to the bottom of the list until all results have loaded.
+
+![fooevents pos empty products](https://help.fooevents.com/wp-content/uploads/2026/11/fooevents_pos_empty_products-1024x628.png)
+
+## Pinned Products
+
+Even if dynamic loading is enabled for products, you can pin certain products that you want to always have visible after you’re done searching for products in the POS. Edit a product in your WordPress back-end and navigate to the **POS Settings** tab. Check the **Pin this product in the POS** option and reload the app to have pinned products fetched. You might have to [clear the app cache](https://help.fooevents.com/docs/topics/point-of-sale/background-data-refresh/#clearing-locally-stored-data) by navigating to the **Settings** screen in the POS and tapping the **Clear Cache** button.
 
 ---
 
@@ -11268,10 +11304,10 @@ Make sure that you are using the most recent “Default ticket theme”. [Follow
 Alternatively, you can paste the following code snippet directly into your ticket theme’s *ticket.php* file:
 
 ```
-<?php if ( ! empty( $ticket['WooCommerceEventsTicketDisplayAddToWallet'] ) && 'off' != $ticket['WooCommerceEventsTicketDisplayAddToWallet'] ) : ?>
+<?php if ( ! empty( $ticket['WooCommerceEventsTicketDisplayAddToWallet'] ) &amp;&amp; 'off' != $ticket['WooCommerceEventsTicketDisplayAddToWallet'] ) : ?>
 <span class="no-print">
 <br /><br />
-<a href="<?php echo site_url(); ?>/wp-admin/admin-ajax.php?action=fooevents_wallet_pass&ticket=<?php echo $ticket['ID']; ?>">
+<a href="<?php echo esc_attr( $addtowallet_url ); ?>">
 <?php _e( 'Add pass to wallet', 'woocommerce-events' ); ?></a>
 </span>
 <?php endif; ?>
@@ -11317,10 +11353,14 @@ You can set what information should display on the pass if you edit your event a
 
 ## Background pass generation
 
-You can set it up so that all AddToWallet passes are generated at the same time as tickets, as opposed to being generated when the attendee specifically clicks on the “Add To Wallet” button in the ticket email or ticket PDF file with QR code that they receive. Activating background pass generation means that the pass will load faster, but you might use more AddToWallet credits. If you would like to activate this functionality then you can follow these steps:
-
 1. Go to **FooEvents** > **Settings** > **Integration** in your WordPress Admin Dashboard
 2. Check the box that says **Generate passes in the background**
+
+You can set it up so that all AddToWallet passes are generated at the same time as tickets, as opposed to being generated when the attendee specifically clicks on the “Add To Wallet” button in the ticket email or ticket PDF file with QR code that they receive. Activating background pass generation means that the pass will load faster, but you might use more AddToWallet credits. If you would like to activate this functionality then you can follow these steps:
+
+## Troubleshooting
+
+If you see a message that says “Hash code is invalid or missing” then you might need to [update your ticket theme](https://help.fooevents.com/docs/topics/third-party-integration/addtowallet/#update-your-ticket-theme), as well as your FooEvents plugins, to the most recent versions.
 
 ---
 
