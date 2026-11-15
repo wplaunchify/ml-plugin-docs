@@ -41,71 +41,30 @@ The calculation follows these general steps:
 
 1. **Zone Matching**: The customer's shipping address is matched to an [applicable shipping zone](/guide/shipping/configuring-shipping-zones).
 2. **Method Selection**: All [shipping methods](/guide/shipping/setting-up-shipping-methods) configured for that zone become potential options.
-3. **Base Method Cost**: For each applicable method, its base cost is calculated based on its "Rate Type" (e.g., a fixed amount, total items, or total order value).
+
+INFO
+
+Only physical items count. Carts with only digital products are not charged shipping. Items added through an order bump with **Free shipping for this offer item** turned on are left out of the shipping calculation.
+3. **Base Method Cost**: For each method, FluentCart calculates its base cost from its **Configure Rate** setting: **Per Order** (one charge), **Per Item** (Amount × physical item quantity), **Percentage** (a percentage of the physical items' subtotal after discounts) or **Per Weight** (the matching weight tier). Free Shipping methods always cost 0.
 4. **Shipping Class Contributions**: This is where the complexity comes in. For each product in the cart, its assigned [shipping class](/guide/shipping/understanding-shipping-classes) (if any) and its quantity are considered.
 
-- The "Cost Adjustment" for that shipping class is applied based on its "Cost Type" (
-```
-Per Item
-```
-
- or 
-```
-Fixed Amount
-```
-
-).
+- Each product's class cost is worked out from the class **Cost** and **Cost Type** (**Fixed Amount** or **Percentage** of the product's unit price). If **Apply to quantity** is checked, the cost is multiplied by the product's quantity.
 - These individual class contributions are then gathered per class, not per cart line. Products that share a class are charged together: a class without **Apply to quantity** is charged once, however many products in the cart use it.
-5. **Class Aggregation (Crucial Step)**: If the cart contains products from *multiple distinct shipping classes*, the 
-```
-Class Aggregation
-```
+5. **Class Aggregation (Crucial Step)**: The chosen method's **Class Aggregation** setting decides how the class costs are combined:
 
- setting of the *chosen shipping method* dictates how these class contributions are combined into a single subtotal for shipping class adjustments.
+- **Combined Cost**:
 
-- **"Sum all class costs"**:
-
-- **Concept**: This option adds up the calculated cost for *each distinct shipping class* present in the cart.
-- **Scenario**: Your cart contains: - Product A: 
-```
-Quantity: 2
-```
-
-, 
-```
-Shipping Class: Heavy Items
-```
-
- (Cost Adjustment: $15, Type: Per Item)
-- Product B: 
-```
-Quantity: 1
-```
-
-, 
-```
-Shipping Class: Small Envelopes
-```
-
- (Cost Adjustment: $5, Type: Per Item)
-- Product C: 
-```
-Quantity: 3
-```
-
-, 
-```
-Shipping Class: Fragile Items
-```
-
- (Cost Adjustment: $4, Type: Fixed Amount)
+- **Concept**: This option adds up the calculated cost for *each shipping class* present in the cart.
+- **Scenario**: Your cart contains: - Product A: Quantity 2, Heavy Items (Cost $15, Fixed Amount, **Apply to quantity** on)
+- Product B: Quantity 1, Small Envelopes (Cost $5, Fixed Amount, **Apply to quantity** on)
+- Product C: Quantity 3, Fragile Items (Cost $4, Fixed Amount, **Apply to quantity** off)
 - **Calculation**: - Contribution from "Heavy Items" = $15 (per item) * 2 items = $30
 - Contribution from "Small Envelopes" = $5 (per item) * 1 item = $5
 - Contribution from "Fragile Items" = $4 (fixed amount, applied once for the class) = $4
 - **Total Aggregated Class Cost** = $30 (Heavy) + $5 (Small) + $4 (Fragile) = **$39**.
-- **"Take highest class cost"**:
+- **Highest Cost**:
 
-- **Concept**: This option applies only the highest individual shipping cost derived from any *distinct shipping class* present in the cart.
+- **Concept**: This option adds only the single highest class total among the shipping classes present in the cart.
 - **Scenario**: Using the same cart as above: - Contribution from "Heavy Items" = $30
 - Contribution from "Small Envelopes" = $5
 - Contribution from "Fragile Items" = $4
@@ -164,7 +123,7 @@ Now you are on the setup page for your new zone. Here, you will name your zone a
 
 - **Whole world:** Select this if the shipping methods in this zone apply globally to every single country and territory.
 
-- **Selected countries only:** Select this to ship exclusively to specific countries. A *Countries* dropdown box will appear below. You can search and check the boxes next to the specific countries you want to include (e.g., just the United States and Canada).
+- **Selected countries only:** Select this to ship exclusively to specific countries. A *Countries* dropdown box will appear below. You can search and check the boxes next to the specific countries you want to include (e.g., just the United States and Canada). If you pick exactly one country, each shipping method in this zone can also be limited to specific states or provinces. Zones that cover several countries, or the whole world, can't be split by state.
 
 - **All countries except:** Select this if you ship globally but want to exclude a few specific places. Use the *Countries* dropdown box to search and select the regions where you do not want to offer these shipping methods.
 
@@ -172,9 +131,11 @@ Now you are on the setup page for your new zone. Here, you will name your zone a
 
 Once you are happy with the name and the coverage regions you have configured, simply click the **Save** button at the top right of the screen.
 
-Your new shipping zone will now appear in your list of zones, and you can proceed to add specific [shipping methods](/guide/shipping/setting-up-shipping-methods) and rates to it!
+After you click **Save**, FluentCart opens the zone in edit mode and a **Shipping Methods** card appears below **Zone Details**. Add your [shipping methods](/guide/shipping/setting-up-shipping-methods) and rates there. The **Shipping Methods** card only shows after the zone has been saved.
 
-> INFO: Customers will only see the shipping methods that are applicable to the zone their shipping address falls into during checkout.
+INFO
+
+Customers will only see the shipping methods that are applicable to the zone their shipping address falls into during checkout.
 
 ---
 
@@ -374,12 +335,12 @@ This guide walks you through adding, managing, and configuring your store's pack
 
 TIP
 
-You can also add a new package directly from the product editor. When configuring a physical product's shipping details — under the **Pricing** panel in the **Shipping** section — you'll find a **Package** dropdown. If no packages have been created yet, simply open that dropdown and select the option to add a new one without leaving the product page.
+You can also add a new package directly from the product editor. When configuring a physical product's shipping details — under the **Pricing** panel in the **Shipping** section — you'll find a **Package** dropdown. Open it and choose **+ Add new package** to create one without leaving the product page. The option is always available, not only when no packages exist.
 
 The package you create will be saved to your store and available here in the Packages settings as well. See [Creating Physical Products](/guide/product-types-creation/creating-physical-products) for more details.
 ## Accessing Packages ​
 
-To get started, navigate to **FluentCart Pro** > **Settings** > **Shipping** > **Packages** from your WordPress dashboard.
+To get started, navigate to **FluentCart** > **Settings** > **Shipping** > **Packages** from your WordPress dashboard.
 
 You will see a list of all the packages you have already created. From here, you can add new packages or manage existing ones.
 
@@ -401,10 +362,12 @@ Enter the physical measurements of your empty package:
 
 - **Length** — The longest dimension of the package.
 - **Width** — The width of the package.
-- **Height** — The height (or depth) of the package.
+- **Height** — The height (or depth) of the package. Height is disabled for **Envelope** packages.
 - **Weight (empty)** — The weight of the packaging itself when empty. It is added once for each box an order needs, both in weight-based shipping rates and in carrier quotes. A product with no weight of its own is still quoted in its box, at this empty weight.
 
-You can set the unit for dimensions (e.g., **in**, **cm**) and the unit for weight (e.g., **kg**, **lb**) using the dropdowns next to each field. Make sure these match the units configured in your store settings.
+Pick the dimension unit (**cm**, **mm**, **in** or **m**) and the weight unit (**kg**, **g**, **lbs** or **oz**) from the dropdowns. New packages start in cm and kg. You don't have to match your store's units: FluentCart converts the package weight to your store weight unit when it calculates rates.
+
+For shipping methods priced **Per Weight**, the empty package weight is added to the products' weight. Products with no package assigned use your default package.
 
 ### Package Name ​
 
@@ -412,19 +375,19 @@ Give your package a clear, descriptive name (e.g., "Small Box," "Large Envelope,
 
 ### Use as Default Package ​
 
-Check **Use as default package** to make this package the store-wide default. The default package is used to calculate shipping rates at checkout and is pre-selected when assigning packages to products.
+Check **Use as default package** to make this package the store-wide default. The default package is used for any product that has no package assigned, both for Per Weight rate calculations and as the pre-selected package in the product editor.
 
 INFO
 
-Only one package can be the store default at a time. Setting a new package as the default will automatically remove the default designation from the previously selected package.Once you have filled in all the details, click **Add package** to save it. Your new package will now appear in the Packages list.
+Only one package can be the store default at a time. Setting a new package as the default will automatically remove the default designation from the previously selected package.Once you have filled in all the details, click **Add package** to save it. The button stays disabled until you enter a name, length and width, plus height for boxes and soft packages. Your new package will now appear in the Packages list.
 
 ## Managing Existing Packages ​
 
 Each package in your list has a three-dot menu (**⋮**) on the right side. Click it to reveal the available actions:
 
-- **Edit** — Opens the package settings so you can update its name, type, dimensions, or weight.
-- **Set as default** — Marks this package as the store default, which will be used for shipping rate calculations at checkout.
-- **Delete** — Permanently removes the package from your store. Deleting a package cannot be undone.
+- **Edit** — Opens the package settings so you can update its name, type, dimensions, or weight. The modal's button reads **Update package**.
+- **Set as default** — Marks this package as the store default, which is used for any product that has no package assigned. This option is hidden on the package that is already the default, which shows a **Store default** label.
+- **Delete** — Permanently removes the package from your store. FluentCart asks you to confirm. Deleting a package cannot be undone.
 
 ---
 
@@ -442,55 +405,65 @@ This guide will show you how to add and configure shipping methods for your ship
 
 Before you can add a method, you must have already created a shipping zone.
 
-1. From your WordPress dashboard, navigate to **FluentCart Pro** > **Settings** > **Shipping**. The **Carriers** page opens.
+1. From your WordPress dashboard, navigate to **FluentCart** > **Settings** > **Shipping**. The **Carriers** page opens.
 2. Click **Manage** next to **Manual / Other** to see your **Shipping Zones** list.
 3. Find the shipping zone you want to add a method to and click on its name to edit it.
 4. Inside the zone's settings, scroll down to the **Shipping Methods** section and click the **Add Shipping Method** button. You can also manage your existing shipping methods from this screen. To update a method's settings, click the Edit button located on the same row as its title.
-5. This will open a pop-up window where you can configure the details of your new shipping method.
+5. A panel slides in from the right where you configure the details of your new shipping method.
 
 ### Configuring the Shipping Method ​
 
 This is where you define how your shipping option will work.
 
-- **Enable Shipping Method:** This toggle at the top of the pop-up acts as the master switch for this specific method. If it's disabled, the method will be saved but won't appear as an option for customers at checkout.
+- **Enable Shipping Method:** This toggle at the top of the panel acts as the master switch for this specific method. If it's disabled, the method will be saved but won't appear as an option for customers at checkout.
 - **Method Title:** Enter a clear and user-friendly name for this shipping option (e.g., "Standard Shipping," "Express Delivery," "Local Pickup"). This is the name your customers will see at checkout.
-- **State:** (Optional) If this shipping method should only be available for specific states or provinces within the shipping zone's country, you can select them here. Leave it blank to have the method apply to the entire country.
+- **States** *(optional, single-country zones only)*: Limit this method to specific states or provinces of the zone's country. The label follows the country's own term, for example **Provinces** or **Counties**. Leave it empty to apply the method to the whole country (the methods list then shows **Applied To All States**). The field doesn't appear on zones that cover several countries or the whole world.
 - **Method Type:** Choose the type of shipping method you want to offer:
 
 - **Flat Rate:** This is a fixed-cost shipping option. Use this to set a single rate for delivery.
-- **Free Shipping:** As the name suggests, this option is free for the customer. It's an excellent incentive to encourage sales.
-- **Local Pickup:** This allows customers to pick up their order directly from your physical store or a designated location, bypassing shipping costs entirely.
-- **Amount:** If you selected "Flat Rate," enter the cost for this shipping method here (e.g., enter **10** for $10.00). The Amount field hides automatically when **Configure Rate** is set to **Per Weight**, because the cost then comes from your weight tiers instead of a flat value.
+- **Free Shipping:** Charges nothing. When you choose it, the **Amount**, **Configure Rate** and **Class Aggregation** fields are hidden, and shipping-class costs are not added.
+- **Local Pickup:** A pickup option with the same pricing fields as Flat Rate. FluentCart does not zero the cost for you: set **Amount** to 
+```
+0
+```
+
+ if pickup should be free, or enter a handling fee.
+- **Amount:** The cost for **Flat Rate** and **Local Pickup** methods (e.g., enter **10** for $10.00). The field is hidden when **Configure Rate** is **Per Weight**, because the cost then comes from your weight tiers.
 - **Configure Rate**
 
 This setting determines how the "Flat Rate" cost is calculated if a customer has multiple items in their cart.
 
 - **Per Order:** Applies a single, fixed charge for the entire order, no matter how many items are purchased. This is the most common setup.
-- **Per Item:** The shipping cost is multiplied by the number of items in the cart. For example, if the cost is $2 and a customer buys 3 items, the total shipping cost will be $6.
-- **Percentage:** The shipping cost is calculated as a percentage of the total order price. For example, a 10% rate on a $50 order would result in a $5 shipping fee.
+- **Per Item:** The amount is multiplied by the total quantity of physical items in the cart. For example, if the cost is $2 and a customer buys 3 items, the total shipping cost will be $6.
+- **Percentage:** The amount is a percentage of the physical items' subtotal after discounts. Shipping, tax and digital items are not included. For example, 10% of a $50 subtotal is $5.
 - **Per Weight:** Charges shipping based on the total weight of the cart, using a set of tiered rates you define (see **Weight Tiers** below). Ideal for carriers that price by weight brackets — light envelopes at one rate, medium parcels at another, heavy freight higher still.
 
 #### Weight Tiers (Per-Weight Rates) ​
 
 When **Configure Rate** is set to **Per Weight**, a **Weight Tiers** editor appears in place of the fixed Amount field. Each tier defines a weight range and the shipping cost that applies when the cart's total weight falls inside that range.
 
-Each row has three fields:
+Each row has three fields. The weight columns use your store's weight unit:
 
-- **Min (weight)** — The lower bound of the tier, inclusive. Editable on every tier, including the first one (it does not have to start at 
+- **Min Weight (kg):** The lower bound, inclusive. You can edit it on every tier, including the first (it does not have to start at 
 ```
 0
 ```
 
 ).
-- **Max (weight)** — The upper bound of the tier. Must be greater than the tier's Min.
-- **Cost** — The shipping amount charged when the cart's total weight lands inside this tier.
-
-Click **Add Tier** to append a new row. A new tier defaults to 
+- **Max Weight (kg):** The upper bound, inclusive. It must be greater than Min. Set it to 
 ```
-previous max + 0.01
+0
 ```
 
- for Min so you can chain ranges quickly, but every field stays editable.
+ on the last tier to mean "and above" (unlimited).
+- **Cost:** The shipping amount when the cart weight falls in this tier.
+
+Click **Add Tier** to append a row. The new row's Min defaults to the previous Max + 0.01, but every field stays editable. **Add Tier** is disabled while the last tier is unlimited (Max 
+```
+0
+```
+
+), so give that tier a Max first. FluentCart sorts tiers by Min when you edit them.
 
 **Flexible, non-contiguous ranges**
 
@@ -506,11 +479,16 @@ Tiers do not have to be continuous. You can leave gaps between ranges — for ex
 
  — when your carrier simply does not offer rates in the gap, or when weights in that gap should fall back to a different shipping method.
 
-If the cart weight falls in a gap, above your last tier, or the method has no tiers at all, the method is hidden at checkout instead of being offered for free. If a customer had already picked it before the cart changed, placing the order fails with "The selected shipping method is not available." so they can choose another method.
+If the cart weight falls in a gap, above your last tier, or the method has no tiers at all, the method is hidden at checkout instead of being offered for free. If a customer had already picked it before the cart changed, placing the order fails with "The selected shipping method is not available." so they can choose another method. To keep the method available for every cart, make the last tier unlimited (Max 
+```
+0
+```
+
+).
 
 **How the cart weight is counted**
 
-The cart weight is the weight of the products plus the empty weight of each box they are packed in. FluentCart packs the items into their assigned [packages](/guide/shipping/packages), counting each box's own weight once per box, not once per unit. For example, three 0.9 kg items that fit in one 0.25 kg box weigh 2.95 kg. When items are heavier than a box's maximum weight, they are split across more boxes, and each extra box adds its own weight.
+The cart weight is the weight of the products plus the empty weight of each box they are packed in. FluentCart packs the items into their assigned [packages](/guide/shipping/packages), counting each box's own weight once per box, not once per unit. For example, three 0.9 kg items that fit in one 0.25 kg box weigh 2.95 kg. When items are heavier than a box's maximum weight, they are split across more boxes, and each extra box adds its own weight. Items with no package assigned use your default package.
 
 **Validation**
 
@@ -528,6 +506,7 @@ The editor validates tiers inline before you can save:
 ```
 
 ) shows an error — overlapping ranges would create ambiguity when a cart weight fits both tiers.
+- If every tier has a **Cost** of 0, saving shows "Weight tiers must have a cost greater than zero". Per Weight methods also need at least one tier.
 
 Correct the highlighted tier and the error clears immediately, re-enabling the **Add Tier** button and the **Save** action.
 
@@ -542,13 +521,15 @@ This advanced setting is for when a customer's cart contains products from diffe
 - **Combined Cost:** The shipping costs for each distinct shipping class in the cart are calculated and then added together to get the final total.
 - **Highest Cost:** Only the single highest shipping cost among all the shipping classes present in the cart is applied.
 
+Class Aggregation is hidden for Free Shipping methods.
+
 INFO
 
 The Configure Rate and Class Aggregation settings work together to give you precise control over your shipping fees. For a more detailed guide with advanced examples of how these calculations work, especially when a cart contains multiple items from different shipping classes, please see our documentation on [Advanced Shipping Calculations](/guide/shipping/advanced-shipping-calculations).- **Description:**
 
-You can add a short description for the shipping method. Depending on your theme, this might be displayed to the customer at checkout to provide more context (e.g., "Delivered in 3-5 business days").
+You can add a short description for the shipping method. FluentCart shows it in small text under the method name in **Shipping Options** at checkout (e.g., "Delivered in 3-5 business days").
 
-Once you have configured all the details, click the **Save** button. Your new shipping method is now active and will be offered to customers in the selected shipping zone.
+Once you have configured all the details, click **Save** (or **Update** when editing an existing method). Your new shipping method is now active and will be offered to customers in the selected shipping zone.
 
 ### Where the Method Name Appears After Checkout ​
 
@@ -597,10 +578,12 @@ Before you start, make sure you have:
 
 The add-on is available from the **Features & addon** screen in FluentCart.
 
-1. Go to **FluentCart Pro > Settings** in your WordPress dashboard.
-2. Click **Features & addon** in the left-hand menu.
+1. Click the **Settings** icon (the gear) at the top right of the FluentCart bar.
+2. Click **Features & addon** in the settings menu.
 3. Scroll to the **Plugin Addons** list and find **Shipping For FluentCart**.
 4. Click **Install & Activate**. If FluentCart Pro is not active on your site, this button reads **Download** instead. It does not install anything: it opens the FluentCart add-ons page in a new tab, and you install the plugin yourself.
+
+You can also install it straight from the Carriers page. Until the add-on is installed, the page shows it as an **Add-on** row under **Manual / Other**, visible to administrators, with an **Install & Activate** button (**Download** without FluentCart Pro) or **Activate** when it is already installed. FluentCart installs it in place and reloads the Carriers page, where the add-on's carriers then show.
 
 Once the add-on is active, a **Shippo (Beta)** row appears on the **Carriers** page under **Settings > Shipping**, and the card gets a settings icon that opens it.
 
@@ -831,14 +814,15 @@ This guide explains how to use Shipping Classes to group products with similar s
 - Click the **"Add Shipping Class"** button.
 3. **Define Class Details**:
 
-- **Class Name**: Give your shipping class a descriptive name (e.g., "Bulky Items").
-- **Cost**: Enter the numerical value for the additional cost associated with this class. This is an *adjustment* that will be added to the base shipping method cost.
-- **Cost Type**: This defines how the "Cost Adjustment" is applied: - **Percentage**: The "**Cost Adjustment**" will be applied by percentage.
-- **Fixed Amount**: The "**Cost Adjustment**" will be applied by a fix amount.
+- **Class Name**: A descriptive name (e.g., "Bulky Items").
+- **Description** *(optional)*: An internal note. Customers don't see it.
+- **Cost**: The extra shipping cost for products in this class. It is added on top of the shipping method's own rate.
+- **Cost Type**: How the Cost is applied: - **Fixed Amount**: Adds the Cost as a fixed amount.
+- **Percentage**: Adds the Cost as a percentage of the product's unit price.
 - **Apply to quantity**: Select this checkbox if you want the cost multiplied by the number of units in the cart that belong to this class. For example, a $5 class with 3 units adds $15. Leave it unchecked to charge the class once per order, however many products or units use it.
 4. **Save the Shipping Class**:
 
-- Click the **"Save"** or **"Add Class"** button.
+- Click **Save**. When editing an existing class, the button reads **Update**.
 
 ## Assigning Shipping Classes to Products ​
 
@@ -850,8 +834,8 @@ Once you have created your shipping classes, you need to assign them to your pro
 - Edit an existing product or create a new one.
 2. **Select Shipping Class**:
 
-- On the product editing page, locate the **"Shipping Class"** dropdown or selector (usually under a "Shipping" or "Product Data" tab).
-- Choose the appropriate shipping class from the list.
+- In the right-hand sidebar of the product editor, find the **Shipping Class** card. It only appears when the product has at least one physical variation.
+- Search for a class and select it, or click **Add Shipping Class** to create one without leaving the page. The class applies to the whole product, not to individual variations.
 3. **Update Product**:
 
 - Save your product to apply the assigned shipping class.
@@ -861,7 +845,8 @@ Once you have created your shipping classes, you need to assign them to your pro
 - The actual final shipping cost will combine the shipping method's base rate with these shipping class adjustments, and then apply the "Class Aggregation" rule defined in the shipping method.
 - Class charges are grouped by class, not by cart line. If two different products share a **Fixed Amount** class and **Apply to quantity** is off, the class is charged once, not once for each product.
 - A **Percentage** class with **Apply to quantity** off is charged once, as a percentage of the highest unit price among the products in that class.
-- With **Highest Class** aggregation, FluentCart compares the total of each class and charges the largest one, instead of the most expensive single cart line.
+- With **Highest Cost** aggregation, FluentCart compares the total of each class and charges the largest one, instead of the most expensive single cart line.
+- Shipping-class costs are never added to **Free Shipping** methods.
 
 ---
 

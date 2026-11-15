@@ -12,24 +12,40 @@
 
 The **Payments** section in FluentCart is fundamental to your online store's operation. This is where you configure how your customers pay for their purchases and how the checkout experience is managed. FluentCart offers robust options for integrating popular payment gateways and customizing various aspects of the checkout process.
 
-### Available Payment Gateways ​
+## Available Payment Gateways ​
 
-This section, found under **Payment Settings** in FLuentCart **Settings**, displays all the payment gateways supported by your store along with their current status and management options. You can see a status along with the payment gateways that whether each gateways are Active or Disabled. Here click on the **Manage** button to configure its specific settings.
+Go to **FluentCart > Settings > Payment Settings** (the menu reads **FluentCart Pro** when Pro is active). The list shows every gateway with an **Active** or **Inactive** badge. Click **Manage** next to a gateway to configure it.
 
-The available gateways include:
+The available gateways are grouped by what you need to use them:
+
+**Included in FluentCart:**
 
 - **Stripe:** Accepts global payments via credit/debit cards and other methods.
 - **PayPal:** Enables secure online transactions and money transfers.
-- **Paddle:** Offers a complete payment solution for worldwide transactions.
-- **Mollie:** A popular European payment gateway supporting major cards and local methods.
-- **Paystack:** A modern payment gateway focused on helping businesses in Africa accept payments from anyone, anywhere in the world.
-- **Razorpay:** A popular payment solution for businesses in India, supporting UPI, Cards, NetBanking, and Wallets.
-- **Authorize.net:** A trusted payment gateway (Visa solution) that securely accepts credit cards, debit cards, and e-checks (ACH).
-- **Square:** A globally trusted payment gateway that accepts Credit and Debit Cards, Apple Pay, Google Pay, and Cash App Pay through a single inline checkout.
-- **Airwallex:** A global financial platform for accepting payments worldwide, with support for refunds, disputes, and subscriptions (Pro).
 - **Cash on Delivery (COD):** Lets customers pay in cash when their order is delivered.
 
-By setting up these features correctly, you can ensure a smooth, secure, and flexible payment process for your customers, leading to higher conversion rates and a better shopping experience.
+**Require FluentCart Pro:**
+
+- **Paddle:** Offers a complete payment solution for worldwide transactions.
+- **Mollie:** A popular European payment gateway supporting major cards and local methods.
+- **Authorize.net:** A trusted payment gateway (Visa solution) that securely accepts credit cards, debit cards, and e-checks (ACH).
+
+**Free add-ons:**
+
+- **Paystack:** A modern payment gateway focused on helping businesses in Africa accept payments from anyone, anywhere in the world.
+- **Razorpay:** A popular payment solution for businesses in India, supporting UPI, Cards, NetBanking, and Wallets.
+- **Flutterwave:** Accepts payments globally with a strong focus on African markets, including cards, bank transfers, and mobile money.
+- **Mercado Pago:** A leading payment platform for Latin America, supporting cards, Pix, Boleto, OXXO, and bank transfers.
+- **SSLCommerz:** Accepts payments via cards, mobile banking, and internet banking.
+
+**Add-ons that require FluentCart Pro:**
+
+- **Square:** A globally trusted payment gateway that accepts credit and debit cards through a single inline checkout, with support for subscriptions and webhook-synced refunds.
+- **Airwallex:** A global financial platform for accepting payments worldwide, with support for refunds, disputes, and subscriptions.
+
+INFO
+
+To set up an add-on gateway, click **Manage** on it in the list. With FluentCart Pro active, click **Install & Activate** on the gateway page. On the free version the button reads **Download** and opens the FluentCart add-ons page, so you download the plugin and upload it under **Plugins > Add New**.By setting up these features correctly, you can ensure a smooth, secure, and flexible payment process for your customers, leading to higher conversion rates and a better shopping experience.
 
 ---
 
@@ -45,16 +61,17 @@ This guide will walk you through every step of connecting your Airwallex account
 
 INFO
 
-Airwallex is a Pro feature. It is only available when **FluentCart Pro** is installed and active on your site.
+Airwallex is a separate add-on that requires **FluentCart Pro**. Without Pro active, the Airwallex page shows **Requires Pro** with an **Upgrade to Pro** button.
 ## Step 1: Accessing Airwallex Settings ​
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
 2. Click on the **Payment Settings** tab.
 3. Locate **Airwallex** in the list of payment gateways and click the **Manage** button next to it.
+4. If the add-on is not installed yet, the Airwallex Payment Gateway page opens. Click **Install & Activate**. Once it is active, the Airwallex settings page appears.
 
 ## Step 2: Connect Your Airwallex Account ​
 
-Once you open the Airwallex settings page, you can connect your store in both Test and Live modes. Choose the mode that matches your store's current **Order Mode** before you start entering credentials.
+Once you open the Airwallex settings page, you can connect your store in both Test and Live modes. Choose the mode that matches your store's current **Store Mode** before you start entering credentials.
 
 - **Store Mode Notice:** At the top of the page, a message shows whether your store is currently in Test mode or Live mode. If your store is in Test mode, remember to switch to Live mode before accepting real transactions.
 - **Select Credentials Mode:**
@@ -177,7 +194,7 @@ When you're ready to accept real payments, follow these steps to switch from Tes
 2. Repeat **Step 4** in your live account to create a webhook and copy its **signing secret**.
 3. In FluentCart, open the Airwallex settings page and select the **Live credentials** tab.
 4. Paste the live **Client ID**, **API Key**, and **Webhook Secret**, then click **Save Settings**.
-5. Finally, make sure your store's **Order Mode** is set to **Live** under **FluentCart Pro > Settings > Store Settings**.
+5. Finally, make sure your store's **Store Mode** is set to **Live** under **FluentCart Pro > Settings > Store Settings > Store Setup**.
 
 Your store is now configured to securely accept payments through Airwallex.
 
@@ -193,6 +210,9 @@ Authorize.net is one of the most trusted payment gateways, allowing you to secur
 
 This guide provides a step-by-step walkthrough to connect your Authorize.net account, configure your checkout appearance, and set up webhooks for automated order processing.
 
+INFO
+
+Authorize.net requires **FluentCart Pro**.
 ## Step 1: Accessing Authorize.net Settings ​
 
 First, you need to locate the integration settings within your WordPress site.
@@ -225,19 +245,19 @@ Now, return to your WordPress site to input the credentials you just gathered.
 - **Live credentials:** Switch to this tab once you are ready to go live.
 2. **Enter the Keys:** Paste the **API Login ID**, **Transaction Key**, **Client Key**, and **Signature Key** into their respective fields.
 3. **Enable e-Check (ACH):** If you want customers to pay directly via their bank accounts, check the **Enable e-Check (ACH)** box.
-4. **Customize the Checkout UI:**- **Authorize.Net Checkout Form Button Text:** Change the text that appears on the Authorize.net popup (e.g., "Pay Now").
-- **Authorize.Net Checkout Form Header Text:** Set a custom title for the payment popup (e.g., "Secure Checkout").
-- **FluentCart Checkout Button Text:** This is the text for the main button on your checkout page (e.g., "Place Order").
-- **Button Colors:** Use the color pickers to match the button background and hover colors to your website's branding.
+4. **Customize the Checkout UI:**- **Authorize.Net checkout Form Button Text:** Change the text on the button inside the Authorize.net popup (default placeholder "Pay now").
+- **Authorize.Net Checkout Form Header Text:** Set a custom title for the payment popup (default "Enter Payment Details").
+- **Fluent Cart Checkout Button Text:** This is the text for the main button on your checkout page (default "Place Order").
+- **Button Background Color** (default #0F4B8D) and **Button Hover Color** (default #0d3d75): Use the color pickers to match the buttons to your website's branding.
 5. **Enable Debug Logging:** Log Authorize.Net API interactions for troubleshooting.
 
 ## Step 4: Configure Webhooks ​
 
 Webhooks are critical for communication. They allow Authorize.net to notify FluentCart the moment a payment is successful, failed, or a subscription is renewed.
 
-1. **Copy the Webhook URL:** On the FluentCart Authorize.net settings page, locate the **Webhook URL** (it looks like 
+1. **Copy the Webhook URL:** On the FluentCart Authorize.net settings page, locate the **Webhook URL**. It is your site's home URL (for example, 
 ```
-https://your-site.com/?fluentcart_api...
+https://your-site.com/
 ```
 
 ). Click the copy icon.
@@ -266,6 +286,18 @@ net.authorize.payment.refund.created
 net.authorize.customer.subscription.cancelled
 ```
 - ```
+net.authorize.customer.subscription.terminated
+```
+- ```
+net.authorize.customer.subscription.suspended
+```
+- ```
+net.authorize.customer.subscription.failed
+```
+- ```
+net.authorize.customer.subscription.updated
+```
+- ```
 net.authorize.customer.subscription.expired
 ```
 - ```
@@ -286,13 +318,24 @@ net.authorize.customer.subscription.expiring
 
 # Cash on Delivery (COD) & Offline Payments ​
 
-Cash on Delivery allows customers to pay with cash directly upon receiving their order. This section also covers settings for other manual, offline payment processes like bank transfers.
+Cash on Delivery allows customers to pay with cash directly upon receiving their order. You can also use this method for bank transfers or other manual payments. Orders paid this way stay pending until you mark them paid. This method is included in the free version of FluentCart.
 
-1. On the **Payment Settings** screen, locate **"Cash on Delivery"** and click the **"Manage"** button next to it.
-2. This will open the **Offline Payment Settings** screen.
-3. **Enable Cash on Delivery:** Check the box next to "Customers can pay for their orders by cash upon delivery." to activate this method.
-4. **Payment Activation:** In the top right corner of this page, ensure the **Payment Activation** option is "**Enabled**".
-5. Click the **"Save Settings"** button to apply your changes.
+1. On the **Payment Settings** screen, find the **Cash** gateway (described as **Pay with cash upon delivery**) and click **Manage**.
+2. This opens the **Cash** settings screen.
+3. **Review the note:** The settings screen only shows a short note: customers pay in cash on delivery, and you can also collect payment by bank transfer or another manual process. There is nothing to fill in.
+4. **Payment Activation:** Switch on the **Payment Activation** toggle at the top right.
+5. Click the **Save Settings** button to apply your changes.
+
+## Renaming the Method at Checkout ​
+
+Customers see this method as **Cash** at checkout. To rename it (for example to "Cash on Delivery" or "Bank Transfer"), click the pencil icon next to the gateway title to open **Checkout Customization**. There you can set these options:
+
+- **Checkout Label:** The name customers see for this method.
+- **Checkout Logo:** An image shown next to the method.
+- **Checkout Instructions:** Text shown in the payment section at checkout.
+- **Thank you page Instruction:** Text shown on the receipt after the order is placed.
+
+Click **Update** to save. Your customers now see the method under the name and instructions you chose.
 
 ---
 
@@ -311,7 +354,7 @@ wp-config.php
 
 > Info: Storing your API keys in the wp-config.php file is a security best practice. It keeps your credentials outside of the WordPress database, protecting them from potential database-related vulnerabilities.
 
-### Step 1: Get Your API Keys from Stripe ​
+## Step 1: Get Your API Keys from Stripe ​
 
 First, you need to collect your **Publishable Key** and **Secret Key** from your Stripe dashboard.
 
@@ -331,7 +374,7 @@ sk_...
 
 > Note on Test vs. Live Keys: Your Stripe account has two sets of keys: one for testing (Test data) and one for real payments (Live data). It is recommended to start with your Test keys to ensure the connection is working correctly before switching to your Live keys.
 
-### Step 2: Add the Keys to Your wp-config.php File ​
+## Step 2: Add the Keys to Your wp-config.php File ​
 
 Next, you will add the copied keys to your WordPress site's configuration file.
 
@@ -372,13 +415,15 @@ wp-config.php
 
  file and close it.
 
-### Step 3: Configure Webhooks ​
+Reload the Stripe settings page. When FluentCart detects the keys, it shows **Your API setup is Up & Running** with the note **Payment API settings is enabled by defined API keys.**
+
+## Step 3: Configure Webhooks ​
 
 Webhooks are essential for the integration to function correctly. They allow Stripe to send real-time notifications to your store about payment events, such as successful charges, refunds, and subscription updates.
 
 1. **Copy Your Webhook URL:** On the FluentCart Stripe settings page, you will see your unique **Webhook URL**. **Copy** this **URL** to your clipboard.
-2. **Configure in Stripe:** Click the **Add Endpoint** link, and you’ll be redirected to your **Create an event destination** page.
-3. **Select the Important Events:** Now, choose the events recommended by **FluentCart** for **Stripe** to send to your **endpoint**. Under **Events**, click the **All events** tab. Click the checkboxes to select these specific events:
+2. **Configure in Stripe:** Click the **Add endpoint** link under **How to configure?** on the FluentCart Stripe page. It opens Stripe's **Create an event destination** page with FluentCart's events already selected.
+3. **Check the Important Events:** Make sure the events below are ticked, then click **Continue**.
 
 The Events recommended by FluentCart are briefly explained below:
 
@@ -387,17 +432,18 @@ The Events recommended by FluentCart are briefly explained below:
 - **charge.refund.updated:** Details of a refund were updated (like the amount or reason).
 - **charge.succeeded:** The customer’s payment went through successfully.
 - **invoice.paid:** A subscription invoice was paid by the customer.
-- **invoice.payment.failed:** A subscription invoice payment failed (e.g., card declined).
+- **invoice.payment_failed:** A subscription invoice payment failed (e.g., card declined).
 - **customer.subscription.deleted:** The customer canceled their subscription.
 - **customer.subscription.updated:** The customer’s subscription was changed (e.g., upgraded or downgraded).
+- **setup_intent.succeeded:** A card was saved for future payments without an immediate charge (for example, a card a customer adds from their account).
 
-Once you select all the suggested **Webhook Events**, click the **Continue** button.
+Once the suggested **Webhook Events** are selected, click the **Continue** button.
 
 Then, select the **Webhook endpoint** and again click the **Continue** button.
 
 Next, type a destination name, **paste** the **webhook URL** you copied earlier into the **Endpoint URL** field, and then click the “**Create Destination**” button.
 
-#### Step 4: Activate and Save ​
+## Step 4: Activate and Save ​
 
 1. **Payment Activation:** Back on the **FluentCart Stripe settings** page, ensure the **Payment Activation** toggle at the top right is switched on.
 2. **Save Settings:** Click the **Save Settings** button at the bottom to finalize the setup.
@@ -406,11 +452,11 @@ Your Stripe integration is now ready to securely process payments for your store
 
 ---
 
-## Flutterwave Integration ​
+## Flutterwave Settings ​
 
 **Source:** [https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/flutterwave-settings](https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/flutterwave-settings)
 
-# Flutterwave Integration ​
+# Flutterwave Settings ​
 
 Flutterwave is a powerful payment gateway that allows you to accept payments globally, with a strong focus on African markets. By connecting Flutterwave to your FluentCart store, your customers can pay securely using their Credit/Debit Cards, Bank Transfers, Mobile Money, USSD, M-Pesa, and more.
 
@@ -426,7 +472,7 @@ Before you can connect your account, you need to enable the Flutterwave module i
 4. Scroll down the list of available payment methods until you find **Flutterwave**.
 5. Click the **Manage** button next to it.
 
-1. You will see a prompt saying the add-on is not installed. Click the blue **Install & Activate** button. This will instantly install the free integration.
+1. You will see a prompt saying the add-on is not installed. Click **Install & Activate** (FluentCart Pro active). On the free version, the button reads **Download**: download the add-on from the page that opens, then upload and activate it under **Plugins > Add New**.
 
 1. Once activated, the Flutterwave settings panel will open automatically.
 
@@ -441,8 +487,8 @@ To link your store securely, you need special codes called "API Keys." You can g
 3. Under the Developers menu, click on **API keys**.
 
 1. Look for the section labeled **V3 API keys** (Make sure you are viewing the "Test API Keys" if you are setting up a test environment, or "Live API Keys" for your actual store).
-2. You will see a **Public key**, **Secret key**, and **Encryption Key**.
-3. Use the Copy buttons next to each key. Leave this browser tab open, as you will need it again.
+2. Copy the **Public key** and **Secret key** using the copy buttons next to them. FluentCart does not need the **Encryption Key**.
+3. Leave this browser tab open, as you will need it again.
 
 ## Step 3: Connect the Keys to FluentCart ​
 
@@ -508,10 +554,10 @@ This guide will walk you through the entire process of connecting your Mercado P
 
 First, you need to enable Mercado Pago as a payment method in your store.
 
-1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
+1. From your WordPress dashboard, navigate to **FluentCart > Settings**.
 2. Click on the **Payment Settings** tab.
 3. Find **Mercado Pago** in the list of available gateways and click the **Manage** button.
-4. If the addon is not yet installed, click the **Install & Activate** button to begin the setup.
+4. If the addon is not yet installed, click the **Install & Activate** button to begin the setup (FluentCart Pro active). On the free version, the button reads **Download**: upload and activate the downloaded add-on under **Plugins > Add New**. Mercado Pago is a free add-on.
 
 ## Step 2: Configure Mercado Pago Settings ​
 
@@ -571,7 +617,10 @@ Mollie is a popular and flexible payment gateway, primarily used in Europe, that
 
 This guide will walk you through every step of connecting your Mollie account to FluentCart.
 
-### Step 1: Get Your API Keys from Mollie ​
+INFO
+
+Mollie requires **FluentCart Pro**.
+## Step 1: Get Your API Keys from Mollie ​
 
 First, you need to get your **API Key** from your Mollie dashboard. This key is like a password that allows your FluentCart store to securely communicate with Mollie.
 
@@ -584,7 +633,7 @@ First, you need to get your **API Key** from your Mollie dashboard. This key is 
 
 For now, click the **Copy** button next to your **Test API key**.
 
-### Step 2: Configure Mollie in FluentCart ​
+## Step 2: Configure Mollie in FluentCart ​
 
 Now that you have your test key, let's go back to your WordPress dashboard to paste it into FluentCart.
 
@@ -598,10 +647,13 @@ Now that you have your test key, let's go back to your WordPress dashboard to pa
 - **Payment Activation:** First, ensure the **Payment Activation** toggle at the top right is switched **ON**. This makes Mollie available as an option at checkout.
 - **Select Credentials Tab:** You will see two tabs: **Live credentials** and **Test credentials**. Click on the **Test credentials** tab.
 - **Paste Your Key:** Paste the Test API key you copied from Mollie into the **Test API Key** field.
-- **You can configure methods here:** From here you can directly visit to select Payment page of Mollie.
+- **Activated Methods:** Lists the payment methods enabled in your Mollie account. Click **here** to open your Mollie dashboard and change them.
 - **Save Settings:** Click the **Save Settings** button at the bottom of the page.
 
-### Step 3: Go Live with Real Payments ​
+INFO
+
+Most Mollie methods work without a billing address. Buy Now Pay Later methods (Klarna, Billie, in3, Riverty) need a complete one. If you accept them, enable **Street Address**, **City**, **Post Code** and **Country** in [Checkout Fields](/guide/settings-configuration/checkout-fields).
+## Step 3: Go Live with Real Payments ​
 
 When you are ready to start accepting real money, follow these simple steps to switch from Test to Live mode:
 
@@ -610,14 +662,13 @@ When you are ready to start accepting real money, follow these simple steps to s
 3. Click on the **Live credentials** tab.
 4. Paste your **Live API key** into the **Live API key** field.
 5. Click **Save Settings**.
-6. Finally, make sure your store's main **Order Mode is set to Live** (
-```
-FluentCart Pro > Settings > Store Settings
-```
-
-).
+6. Finally, set **Store Mode** to **Live** under **FluentCart Pro > Settings > Store Settings > Store Setup**.
 
 Your Mollie integration is now live and ready to securely process payments for your store!
+
+## Troubleshooting ​
+
+If a customer pays a different amount or currency than the order expects, FluentCart does not confirm the order and adds a **Mollie Payment Mismatch** entry to the logs.
 
 ---
 
@@ -631,6 +682,9 @@ Paddle is an all-in-one payment solution that simplifies selling globally by han
 
 This guide will walk you through the entire process of connecting your Paddle account to FluentCart.
 
+INFO
+
+Paddle requires **FluentCart Pro**. Without Pro, the Paddle page in Payment Settings shows an upgrade prompt instead of the settings.
 ## Step 1: Activate Paddle in FluentCart ​
 
 1. First, you need to enable **Paddle** as a payment method in your store.
@@ -640,7 +694,7 @@ This guide will walk you through the entire process of connecting your Paddle ac
 
 This will take you to the main Paddle settings page, where you will configure the entire integration.
 
-### Step 2: Configure Paddle Settings ​
+## Step 2: Configure Paddle Settings ​
 
 On this page, you need to provide your Paddle API credentials and customize the checkout experience.
 
@@ -648,11 +702,14 @@ First, enable the payment gateway by toggling the **Payment Activation** switch 
 
 - **Test/Live Credentials:** You can switch between Test credentials and Live credentials. It's recommended to start with the test mode to ensure everything is working correctly before accepting real payments.
 - **Sandbox/Live API Key:** Enter your API Key from your Paddle dashboard.
-- **Sandbox/Live Client Token / Public Key:** Enter your Client Token or Public Key from Paddle.
+- **Sandbox/Live Client Token / Public Key:** Enter your Client Token or Public Key from Paddle (optional; used for the on-page Paddle checkout).
 - **Sandbox/Live Webhook Secret:** Enter your Webhook Secret Key. You'll get this when you set up the webhook in your Paddle account (see next step).
 
 To find your API Keys and Client Token, log in to your [Paddle account](https://login.paddle.com/login) and navigate to the **Developer Tools → Authentication** section.
 
+INFO
+
+Paddle redirects customers to your receipt page after payment. If no valid receipt page is set (for example, it is a draft or deleted), the Paddle settings page shows a red warning with a link to **Store Settings > Pages Setup**.
 #### Generating API Key ​
 
 Once you log in to the Paddle Dashboard, open the **Developer Tools** dropdown list from the left sidebar, and click **Authentication**. Now, go to the **API keys** section and click the **+ New API key** button.
@@ -669,7 +726,7 @@ Now, provide the **Name** and **Description** for your client token, click the *
 
 Here, you can see the newly generated Client Token. Now, click the **Three-dot icon** and press the **Copy Token** button.
 
-### Step 3: Set up Webhooks in Paddle ​
+## Step 3: Set up Webhooks in Paddle ​
 
 Webhooks are essential for FluentCart to receive real-time updates about transaction statuses, subscriptions, and other events from Paddle.
 
@@ -703,6 +760,9 @@ subscription.activated
 subscription.updated
 ```
 - ```
+subscription.past_due
+```
+- ```
 subscription.paused
 ```
 - ```
@@ -716,21 +776,21 @@ After selecting the events, save the webhook by clicking the **Save destination*
 
 #### Add Webhook Secret to FluentCart: ​
 
-Go back to your FluentCart **Paddle Settings** page in WordPress. Then, **paste** the API key, Secret key, and Webhook Secret into their respective fields.
+Go back to your FluentCart **Paddle Settings** page in WordPress. Then, **paste** the **API Key**, **Client Token / Public Key** and **Webhook Secret** into their fields.
 
 ## Customization Options ​
 
 You can also customize the appearance and text of the Paddle checkout button:
 
-- **Tax Mode:** This setting determines how taxes are calculated for your transactions.
+- **Tax Mode:** Paddle is the Merchant of Record, so it ignores FluentCart's tax rates and its tax-inclusive/exclusive setting. Only this option decides how Paddle taxes your prices:
 
-- **Use paddle account settings:** This is the recommended option. It leverages Paddle's powerful tax platform to automatically calculate and remit sales tax and VAT for you worldwide. All tax settings will be managed directly from your Paddle dashboard.
-- **Internal:** Select this if you want to use the tax rates you have configured within FluentCart's own tax settings (**FluentCart → Tax & Duties**).
-- **External:** Choose this option if you are using a third-party service to handle tax calculations or if you do not need to charge tax. FluentCart will not add any tax to the transaction.
+- **External** (default): Tax is added on top of your price, so the customer pays price plus VAT. Choose this if your prices exclude tax.
+- **Internal:** Your price already includes tax. Paddle deducts VAT from it, so you receive less than the listed price.
+- **Use Paddle Account Settings:** Follows the default in your Paddle dashboard, which is tax-inclusive on new Paddle accounts.
 - **Paddle Checkout Theme:** Select a **Light** or **Dark** theme for the Paddle checkout modal.
 - **Paddle Checkout Button Text:** Customize the text that appears on the payment button (e.g., "Pay with Card", "Proceed to Paddle").
 - **Button Styling:** Adjust the **Button Color**, **Button Hover Color**, **Button Text Color**, and **Button Font Size** to match your store's design.
-- **Disable Webhook Verification:** This security feature ensures that webhook notifications are genuinely coming from Paddle. It should only be disabled for specific debugging or testing scenarios. For a live store, always keep this setting enabled to protect your store from fraudulent requests.
+- **Disable Webhook Verification (Test purpose only):** Leave this unchecked. Webhook verification confirms that notifications really come from Paddle. Tick the box only while debugging in test mode, never on a live store.
 
 Once you have configured all the settings, click the **Save Settings** button. Your Paddle integration is now complete!
 
@@ -744,22 +804,22 @@ Once you have configured all the settings, click the **Save Settings** button. Y
 
 PayPal provides a fast and secure way for customers to send and receive money or make online payments.
 
-1. On the **Payment Settings** screen, locate **"PayPal"** and click the **"Manage"** button next to it.
+1. Go to **FluentCart > Settings > Payment Settings**, find **PayPal** and click **Manage**.
 2. This will open the **PayPal Settings** screen.
 
 INFO
 
-Please note that you must have a PayPal Business or Merchant account to accept payments through this integration. The following step will prompt you to log in to this account.1. **Test Mode Warning:** If your store is in Test mode, a banner will remind you: "Your Store is in Test mode, Change Store's 'Order Mode' to 'Live' and update related settings to enable Live payment !!" This is crucial to switch to live mode for real transactions.
+Please note that you must have a PayPal Business or Merchant account to accept payments through this integration. The following step will prompt you to log in to this account.1. **Test Mode Warning:** If your store is in Test mode, a banner reminds you to switch to Live before taking real payments. You change this under **Settings > Store Settings > Store Setup > Store Mode**.
 2. **Connect Your PayPal Account:** Here, you don't need any API keys. Just click on the **Connect with PayPal** button. You'll then be directed to "PayPal" to log in to your account. Once logged in, you will see that your PayPal account is successfully connected with your FluentCart store.
-3. **Brand Name:** *(Optional)* Enter a name to show on the PayPal checkout popup instead of your PayPal business account's name, up to 127 characters. Leave it blank to show your business account's name as usual.
-4. **Payment Activation:** In the top right corner of this page, ensure the PayPal **Payment Activation** option is "Active".
+3. **Brand name:** *(Optional)* Enter a name to show on the PayPal checkout popup instead of your PayPal business account's name, up to 127 characters. Leave it blank to show your business account's name as usual.
+4. **Payment Activation:** Switch on the **Payment Activation** toggle at the top right.
 5. Click the **"Save Settings"** button to apply your changes.
 
 ## Letting Customers Save Their PayPal Account ​
 
-PayPal is also a supported gateway for FluentCart's **Saved Payment Methods** feature, alongside Stripe. It lets logged-in customers keep a PayPal account on file and pay with it in a single step next time, without being redirected to PayPal again.
+PayPal is also supported by the **Saved Payment Methods** feature in **FluentCart Pro**, alongside Stripe. It lets logged-in customers keep a PayPal account on file and pay with it in a single step next time, without being redirected to PayPal again.
 
-Your store never stores PayPal login details. PayPal keeps the account and returns a token, which is charged only for an order the customer places or a subscription they already signed up for. Customers opt in with an unticked checkbox at checkout and can remove a saved PayPal account whenever they want, just like a saved card.
+Your store never stores PayPal login details. PayPal keeps the account and returns a token, which is charged only for an order the customer places or a subscription they already signed up for. Customers opt in with the save checkbox at checkout. It is unticked unless you turn on **Pre-select it at checkout** in Cart & Checkout Settings. Customers can remove a saved PayPal account whenever they want, just like a saved card.
 
 INFO
 
@@ -781,10 +841,11 @@ This guide will walk you through the entire process of connecting your Paystack 
 
 First, you need to install and enable Paystack as a payment method in your store.
 
-1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
+1. From your WordPress dashboard, navigate to **FluentCart > Settings**.
 2. Click on the **Payment Settings** tab.
-3. You will see a list of available payment gateways. Find **Paystack** and click the **Install & Activate** button next to it.
-4. After a moment, the page will refresh, and the button will change to **Manage**. Click the **Manage** button to open the Paystack Settings page.
+3. You will see a list of available payment gateways. Find **Paystack** and click **Manage**.
+4. On the Paystack Payment Gateway page, click **Install & Activate** (FluentCart Pro active). On the free version, the button reads **Download**: it opens the FluentCart add-ons page, where you download the Paystack add-on and then upload and activate it under **Plugins > Add New**.
+5. Once the add-on is active, the Paystack settings open.
 
 ## Step 2: Configure Paystack Settings in FluentCart ​
 
@@ -820,7 +881,7 @@ Now, open a new tab and log in to your **Paystack dashboard**. Go to **Settings 
 
 Your Paystack integration is now complete and in **Test Mode**. We recommend running a test transaction with a Paystack test card to ensure the connection is working.
 
-To go live, simply repeat Step 3 using the **Live credentials** tab in FluentCart and the **Live API Keys** and **Live Webhook URL** fields in your Paystack dashboard.
+To go live, simply repeat Steps 3 and 4 using the **Live credentials** tab in FluentCart and the **Live API Keys** and **Live Webhook URL** fields in your Paystack dashboard.
 
 If you have any questions or need further assistance, feel free to reach out to our [support team](https://wpmanageninja.com/support-tickets/?utm_source=wpsnsite&utm_medium=popup&utm_campaign=spring#/).
 
@@ -840,10 +901,10 @@ This guide will walk you through how you can get Razorpay up and running on your
 
 Before you can use Razorpay, you need to add the feature to your FluentCart store.
 
-1. Log in to your WordPress dashboard and go to **FluentCart Pro > Settings**.
+1. Log in to your WordPress dashboard and go to **FluentCart > Settings**.
 2. Click on the **Payment Settings** tab on the left.
 3. You will see a list of available payment gateways. Find **Razorpay** and click the **Manage** button next to it.
-4. If it isn't ready yet, you will see a screen with an **Install & Activate** button. Click on it.
+4. If the add-on isn't installed yet, click **Install & Activate** on the Razorpay page (FluentCart Pro active). On the free version, click **Download**, then upload and activate the add-on under **Plugins > Add New**. Razorpay is a free add-on.
 
 ## Step 2: Configure Razorpay Settings ​
 
@@ -951,15 +1012,16 @@ Now, take those keys and put them into your store settings.
 3. Paste your **Key ID** and **Key Secret** into the corresponding fields.
 4. Paste the **Test or Live Webhook Secret** you copied earlier from Razorpay.
 
-> [Tip] We recommend starting with "Test" mode to make sure everything works before you take real money!
+TIP
 
+We recommend starting with "Test" mode to make sure everything works before you take real money!
 ---
 
 ### Important: International Payments ​
 
 If you want to sell to customers outside of India, there is an extra step:
 
-- You must enable **International Payments** inside your actual **Razorpay Dashboard settings**.
+- You must enable **International Payments** in your Razorpay Dashboard. Go to **Settings > Configuration > Payment Methods** and enable it there.
 - Without this, customers using cards from other countries might see their payments declined.
 
 ---
@@ -982,7 +1044,7 @@ First, you need to install and enable **Square** as a payment method in your sto
 2. Click on the **Payment Settings** tab.
 3. You will see a list of available payment gateways. Find **Square** and click the **Manage** button next to it.
 
-1. Since Square is a premium add-on, you will be taken to the Square Payment Gateway page. Click the **Install & Activate** button to enable it for your store.
+1. Square is an add-on that requires **FluentCart Pro**. On the Square Payment Gateway page, click **Install & Activate** to enable it for your store. If Pro is not active, the page shows **Requires Pro** with an **Upgrade to Pro** button instead.
 
 Once activated, you will land on the main **Square Settings** page where you will configure the connection.
 
@@ -1095,7 +1157,7 @@ When you're ready to start accepting real payments, follow these simple steps to
 2. Repeat **Step 3** and **Step 4** to collect your **Production Application ID**, **Production Access Token**, **Production Location ID**, and **Production Webhook Signature Key**.
 3. Return to your FluentCart **Square Settings** page and click the **Live credentials** tab.
 4. Paste the production credentials into their matching fields and click **Save Settings**.
-5. Finally, make sure your store's main **Order Mode is set to Live** under **FluentCart Pro > Settings > Store Settings**.
+5. Finally, make sure your store's main **Store Mode** is set to **Live** under **FluentCart Pro > Settings > Store Settings > Store Setup**.
 
 Your Square integration is now live and ready to securely process payments for your store.
 
@@ -1105,53 +1167,52 @@ Square Wallet payment support (Apple Pay, Google Pay, Cash App Pay) is disabled 
 
 ---
 
-## SSL Commerz Settings ​
+## SSLCommerz Settings ​
 
 **Source:** [https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/sslcommerz-settings](https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/sslcommerz-settings)
 
-# SSL Commerz Settings ​
+# SSLCommerz Settings ​
 
-SSL Commerz is a popular payment gateway that allows you to accept payments securely via cards, mobile banking, and internet banking. Integrating it with FluentCart gives your customers flexible local payment options, ensuring a smooth and reliable checkout experience.
+SSLCommerz is a popular payment gateway that allows you to accept payments securely via cards, mobile banking, and internet banking. Integrating it with FluentCart gives your customers flexible local payment options, ensuring a smooth and reliable checkout experience.
 
-This guide will walk you through installing the SSL Commerz add-on and connecting your account to FluentCart to begin accepting payments.
+This guide will walk you through installing the SSLCommerz add-on and connecting your account to FluentCart to begin accepting payments.
 
-## Step 1: Accessing SSL Commerz Settings ​
+## Step 1: Accessing SSLCommerz Settings ​
 
-Before configuring the gateway, you need to install the specific add-on for it.
+Before configuring the gateway, you need to install the SSLCommerz add-on.
 
-1. Download the [SSL Commerz add-on](https://fluentcart.com/fluentcart-addons/) from the FluentCart website.
-2. Go to your **WordPress dashboard → Plugins → Add New**, **upload** the plugin file, and **activate** it.
-3. Then, go to **FluentCart → Settings → Payment Settings**.
-4. Locate **SSLCommerz** in the list and click the **Manage** button.
+1. From your WordPress dashboard, go to **FluentCart > Settings > Payment Settings**.
+2. Locate **SSLCommerz** in the list and click the **Manage** button.
+3. If the add-on isn't installed yet, click **Install & Activate** (FluentCart Pro active). On the free version, click **Download** (or download the [SSLCommerz add-on](https://fluentcart.com/fluentcart-addons/) from the FluentCart website), then upload and activate it under **Plugins > Add New**.
 
 ## Step 2: Getting Your Credentials ​
 
 To connect your store, you need your unique Store ID and Secret Key directly from your merchant account.
 
-- Log in to your [SSL Commerz dashboard](https://merchant.sslcommerz.com/?request=dTFyQWlsb2dpbjp2aWV3dTFyQWk%3D&id=dTFyQWkxdTFyQWk%3D).
+- Log in to your [SSLCommerz dashboard](https://merchant.sslcommerz.com/?request=dTFyQWlsb2dpbjp2aWV3dTFyQWk%3D&id=dTFyQWkxdTFyQWk%3D).
 - Navigate to the **My Stores** tab.
 - **Store ID:** Locate your specific ID in the table under the **Store ID** column.
 - **Store Secret Key:** In the same table, look for the **Store Name**; this value acts as your **Secret Key**.
 
 **Copy** both of these values so you can **paste** them into your FluentCart payment settings.
 
-## Step 3: Configuring SSL Commerz Settings ​
+## Step 3: Configuring SSLCommerz Settings ​
 
-Once you are on the SSL Commerz settings page in FluentCart, you can enter your credentials and customize how the checkout behaves. It is recommended to start in the Test credentials tab to ensure everything works before moving to live payments.
+Once you are on the SSLCommerz settings page in FluentCart, you can enter your credentials and customize how the checkout behaves. It is recommended to start in the Test credentials tab to ensure everything works before moving to live payments.
 
-- **Test store ID:** **Paste** the **Store ID** you copied from your **SSL Commerz dashboard**.
+- **Test store ID:** **Paste** the **Store ID** you copied from your **SSLCommerz dashboard**.
 - **Test store secret key:** **Paste** the **Store Name (Secret Key)** you copied from your dashboard.
-- **Checkout Type:** Choose how the payment interface is displayed to the customer. - **Hosted Checkout (Redirect):** Sends the customer to the secure SSL Commerz website to complete the payment.
+- **Checkout Type:** Choose how the payment interface is displayed to the customer. - **Hosted Checkout (Redirect):** Sends the customer to the secure SSLCommerz website to complete the payment.
 - **Modal Checkout (Popup):** Opens a secure payment window directly on your checkout page so the customer never leaves your site.
 - **Modal Checkout Button Settings:** If you select the Modal Checkout, you can customize the Button Text, Button Color, Hover Color, and Text Color to match your brand's design.
-- **Payment Activation:** **Toggle** this switch at the top right to turn the SSL Commerz gateway on or off for your store.
+- **Payment Activation:** **Toggle** this switch at the top right to turn the SSLCommerz gateway on or off for your store.
 
 ## Step 4: Setting Up the IPN/Webhook URL ​
 
 To ensure FluentCart receives automatic updates when a customer completes a payment, you need to configure the IPN (Instant Payment Notification).
 
-1. **Copy** the **IPN/Webhook URL** from your FluentCart SSL Commerz settings page.
-2. Log in to your SSL Commerz dashboard and go back to the **My Stores** tab.
+1. **Copy** the **IPN/Webhook URL** from your FluentCart SSLCommerz settings page.
+2. Log in to your SSLCommerz dashboard and go back to the **My Stores** tab.
 3. Click on the **IPN Settings** link located in the Action column for your specific store.
 4. A new settings window will appear. Check the box to **Enable HTTP Listener**.
 5. **Paste** the URL you copied from FluentCart into the provided input field.
@@ -1159,10 +1220,10 @@ To ensure FluentCart receives automatic updates when a customer completes a paym
 
 ## Step 5: Activate and Save ​
 
-1. **Payment Activation:** Back on the **FluentCart SSL Commerz settings** page, ensure the **Payment Activation** toggle at the top right is switched on.
+1. **Payment Activation:** Back on the **FluentCart SSLCommerz settings** page, ensure the **Payment Activation** toggle at the top right is switched on.
 2. **Save Settings:** Click the **Save Settings** button at the bottom to finalize the setup.
 
-Your store is now configured to securely accept payments through SSL Commerz. Giving customers the choice to pay via their preferred mobile wallet or bank transfer reduces checkout friction and helps lower cart abandonment rates.
+Your store is now configured to securely accept payments through SSLCommerz. Giving customers the choice to pay via their preferred mobile wallet or bank transfer reduces checkout friction and helps lower cart abandonment rates.
 
 ---
 
@@ -1178,7 +1239,7 @@ This guide will walk you through connecting your Stripe account to FluentCart to
 
 ## Step 1: Accessing Stripe Settings ​
 
-1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings**.
+1. From your WordPress dashboard, navigate to **FluentCart > Settings** (shown as **FluentCart Pro** if you have Pro active).
 2. Click on the **Payment Settings** tab.
 3. Locate **Stripe** in the list of payment gateways and click the **Manage** button next to it.
 
@@ -1191,17 +1252,22 @@ The Stripe settings page allows you to connect your store in both Test and Live 
 
 - **Test credentials:** Select this tab if you want to connect your Stripe account in Test Mode. This is perfect for testing your checkout flow without processing real payments.
 - **Live credentials:** Select this tab when you are ready to start accepting real payments from customers.
-- **Connect with Stripe:** After selecting the appropriate tab (Test or Live), click the **Connect with stripe** button. This will redirect you to Stripe's website, where you will be prompted to log in and authorize the connection with FluentCart. This is a secure process that automatically syncs your account for the selected mode.
+- **Connect with Stripe:** After selecting the appropriate tab (Test or Live), click **Connect with Stripe**. This will redirect you to Stripe's website, where you will be prompted to log in and authorize the connection with FluentCart. This is a secure process that automatically syncs your account for the selected mode.
 
 INFO
 
 FluentCart securely stores your Stripe connection information using a salt key encryption method. This ensures your informations remain fully encrypted in the database and protected from unauthorized access.
 ## Step 3: Choose Your Checkout Mode ​
 
-FluentCart gives you two different ways for customers to pay:
+FluentCart gives you two different ways for customers to pay. Under **Checkout Mode**, choose:
 
-- **Embedded checkout (Recommended):** This keeps the customer on your website. It’s a customizable block that lets you control the design.
-- **Stripe Hosted checkout:** This sends the customer to a secure page managed by **Stripe**. This is great for high-volume stores or if you want Stripe to handle all the complex security rules for you.
+- **Embedded checkout (Recommended):** Renders the payment form inside your checkout page, so the customer stays on your website.
+- **Stripe Hosted Checkout:** Redirects the customer to a payment page hosted by **Stripe**. Use it if you accept bank transfers, or if a payment method you enabled in Stripe does not appear on the embedded form. The 
+```
+checkout.session.completed
+```
+
+ webhook event is only sent in this mode.
 
 INFO
 
@@ -1230,8 +1296,8 @@ The Submit Button Label setting only reaches Stripe Hosted checkout. Embedded ch
 Webhooks are essential for the integration to function correctly. They allow Stripe to send real-time notifications to your store about payment events, such as successful charges, refunds, and subscription updates.
 
 1. **Copy Your Webhook URL:** On the FluentCart Stripe settings page, you will see your unique **Webhook URL**. **Copy** this **URL** to your clipboard.
-2. **Configure in Stripe:** Click the **Add Endpoint** link, and you’ll be redirected to your **Create an event destination** page.
-3. **Select the Important Events:** Now, choose the events recommended by **FluentCart** for **Stripe** to send to your **endpoint**. Under **Events**, click the **All events** tab. Click the checkboxes to select these specific events:
+2. **Configure in Stripe:** Click the **Add endpoint** link under **How to configure?** on the FluentCart Stripe page. It opens Stripe's **Create an event destination** page with FluentCart's events already selected.
+3. **Check the Important Events:** Make sure the events below are ticked, then click **Continue**.
 
 The Events recommended by FluentCart are briefly explained below:
 
@@ -1240,11 +1306,12 @@ The Events recommended by FluentCart are briefly explained below:
 - **charge.refund.updated:** Details of a refund were updated (like the amount or reason).
 - **charge.succeeded:** The customer’s payment went through successfully.
 - **invoice.paid:** A subscription invoice was paid by the customer.
-- **invoice.payment.failed:** A subscription invoice payment failed (e.g., card declined).
+- **invoice.payment_failed:** A subscription invoice payment failed (e.g., card declined).
 - **customer.subscription.deleted:** The customer canceled their subscription.
 - **customer.subscription.updated:** The customer’s subscription was changed (e.g., upgraded or downgraded).
+- **setup_intent.succeeded:** A card was saved for future payments without an immediate charge (for example, a card a customer adds from their account).
 
-Once you select all the suggested **Webhook Events**, click the **Continue** button.
+Once the suggested **Webhook Events** are selected, click the **Continue** button.
 
 Then, select the **Webhook endpoint** and again click the **Continue** button.
 
@@ -1267,11 +1334,11 @@ wp-config.php
  file for more secure setup. For detailed instructions on this advanced method, please see our guide on [Configuring Stripe via wp-config.php](/guide/payments-checkout/connecting-payment-gateways/configure-stripe-via-wpconfig).
 ## Letting Customers Save Their Card ​
 
-Stripe is the gateway behind FluentCart's **Saved Payment Methods** feature, which lets logged-in customers keep a card on file and pay with it in a single step next time.
+Stripe is one of the two gateways, with PayPal, behind the **Saved Payment Methods** feature in **FluentCart Pro**, which lets logged-in customers keep a card on file and pay with it in a single step next time.
 
-Your store never stores the card itself. Stripe keeps it and returns a token, which is charged only for an order the customer places or a subscription they already signed up for. Customers opt in with an unticked checkbox at checkout and can remove a saved card whenever they want.
+Your store never stores the card itself. Stripe keeps it and returns a token, which is charged only for an order the customer places or a subscription they already signed up for. At checkout, customers tick **Save this card for faster checkout next time** to opt in. The box is unticked unless you turn on **Pre-select it at checkout**. Customers can remove a saved card whenever they want.
 
-The feature is turned off until you enable it in [Cart & Checkout Settings](/guide/settings-configuration/cart-checkout-settings). Once it is on, the card a customer marks as their default is also used for their subscription renewals, so updating it in one place keeps their recurring payments running.
+The feature is off until you tick **Enable saved payment methods** in [Cart & Checkout Settings](/guide/settings-configuration/cart-checkout-settings). Once it is on, the card a customer marks as their default is also used for their subscription renewals, so updating it in one place keeps their recurring payments running.
 
 ---
 

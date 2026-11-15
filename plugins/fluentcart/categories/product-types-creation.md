@@ -1499,8 +1499,9 @@ Fill in the details for your brand:
 - **Slug:** This is the URL-friendly version of the name, used in the web address for the brand's archive page. It should be all lowercase and contain only letters, numbers, and hyphens. FluentCart will automatically generate this from the name if you leave it blank.
 - **Parent Brand:** This feature lets you create and organize brand levels. For example, if you sell a specific product line from a larger company, you could make "Air Jordan" a child of the "Nike" parent brand. For a top-level brand, simply leave this as "None."
 - **Description:** Add a short description for the brand. Depending on your website's theme, this description may be displayed on the brand's archive page, providing customers with more context.
+- **Products:** *(Optional)* Search for products and pick the ones that belong to this brand. The picker lists products of any status except trash. The field is shown to roles that can edit products.
 
-Click the **Add New Brand** button to save the brand. It will now appear in the list on the right.
+Click the **Add New Brand** button to save the brand. It will now appear in the list on the right, and any products you picked are assigned to it.
 
 ### Managing Existing Brands ​
 
@@ -1512,7 +1513,7 @@ To manage your brands:
 
 **Sort the List:** You can organize the list by clicking the small arrows next to a column title, such as "Name" or "Count." This makes it easy to find brands alphabetically or see which ones have the most products. **Edit, Delete, and More:** When you move your mouse over a brand in the list, a set of options will appear right below its name:
 
-- **Edit:** This takes you to a separate screen to change all the brand's details.
+- **Edit:** This takes you to a separate screen to change all the brand's details, including its **Products**. Remove a product from the picker or add new ones, then click **Update**. Only the products you added or removed change, so the rest of the brand's products stay as they are. When the brand has a lot of products, the picker shows the first 200 and adds an **and N more products** link that opens the product list filtered to this brand.
 - **Quick Edit:** Allows you to make fast changes to the name and slug without leaving the page.
 - **Delete:** Permanently removes the brand.
 - **View:** Lets you see how the brand's page looks on your live website.
@@ -1553,8 +1554,9 @@ Here’s a breakdown of the fields:
 - **Slug:** This is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens. FluentCart will automatically create a slug from the name, but you can edit it if needed.
 - **Parent Category:** This allows you to create a hierarchy of categories. For example, you could create a "Clothing" category and then create "T-Shirts" and "Hoodies" as child categories underneath it. To create a top-level category, leave this set to "None."
 - **Description:** (Optional) You can add a short description for the category. Depending on your theme, this might be displayed at the top of the category page on your storefront.
+- **Products:** (Optional) Search for products and pick the ones that belong to this category. The picker lists products of any status except trash. The field is shown to roles that can edit products.
 
-After filling in the details, click the **Add New Category** button. Your new category will now appear in the list on the right.
+After filling in the details, click the **Add New Category** button. Your new category will now appear in the list on the right, and any products you picked are assigned to it.
 
 ### Managing Existing Categories ​
 
@@ -1562,7 +1564,7 @@ The table on the right side of the screen lists all your existing product catego
 
 To manage a category, hover your mouse over its name, and a set of action links will appear:
 
-- **Edit:** Click this to open a dedicated editor for that category, where you can change its name, slug, parent, or description.
+- **Edit:** Click this to open a dedicated editor for that category, where you can change its name, slug, parent, description, or **Products**. Add or remove products in the picker, then click **Update**. Only the products you added or removed change. When the category has a lot of products, the picker shows the first 200 and adds an **and N more products** link that opens the product list filtered to this category.
 - **Quick Edit:** This allows you to make quick changes to the name and slug without leaving the main screen.
 - **Delete:** This will permanently remove the category.
 - **View:** This will take you to the public-facing category page on your storefront, showing all the products that belong to it.
@@ -1600,7 +1602,9 @@ By the end of this guide, you will be able to confidently list and manage any ph
 - **Short description:** Write a brief, simple summary of what the product is. This usually shows up quickly near the product picture or price, giving customers a quick, important overview.
 - **Long Description:** This is the large area for all the detailed information, like features, materials, and how to use the product. FluentCart offers two great ways to build this content:
 
-**Using the Visual Builder (Recommended for Dynamic Content)** [​](#using-the-visual-builder-recommended-for-dynamic-content)The **Builder** option uses the powerful block editor built into WordPress (Gutenberg). This lets you design rich, visual, and highly effective product pages.
+INFO
+
+If Elementor, Bricks, or Divi is active on your site but its FluentCart add-on is not, administrators see a **Design product pages in** notice under the Long Description. It offers **Install & Activate** (**Download** without FluentCart Pro) or **Activate**, and a close button (**Don't show again**) to hide it.**Using the Visual Builder (Recommended for Dynamic Content)** [​](#using-the-visual-builder-recommended-for-dynamic-content)The **Builder** option uses the powerful block editor built into WordPress (Gutenberg). This lets you design rich, visual, and highly effective product pages.
 
 1. Click the **Builder** button, located next to the **Classic Editor** option.
 2. Click **Show Content Editor** to open the design screen.
@@ -1918,6 +1922,7 @@ In this guide, you’ll learn how to create, configure, and manage bundle produc
 3. This action will open a new **Add New Product** modal.
 
 - Enter the **Bundle Title**.
+- Choose a **Variation Type** from the dropdown.
 - Select the product type, either **Physical Product** or **Digital Product**.
 - Check the box labeled **Add as a Bundle** to combine multiple items into one package.
 4. Click the **"Add Product"** button, and you will be redirected to the **"Edit Product"** page to configure all details.
@@ -2107,7 +2112,7 @@ If a bundled item tracks stock, the bundle can't be bought in a quantity larger 
 - **URL Slug:** This is the unique web address for the bundle. FluentCart creates this automatically, but you can edit it manually.
 - **Limit purchases to 1 item per order:** Check this box if the bundle is an exclusive item or limited offer.
 
-Once all details are configured, click the **"Update"** or **"Save"** button at the top right to make your bundle live.
+Once all details are configured, click **Update** in the **Unsaved Changes** bar to save your bundle. Set the **Status** to **Publish** to make it live.
 
 INFO
 

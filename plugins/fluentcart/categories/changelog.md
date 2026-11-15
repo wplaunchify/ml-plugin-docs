@@ -12,6 +12,40 @@
 
 Stay updated with the latest improvements, new features, bug fixes, and performance enhancements in FluentCart.
 
+## FluentCart v2.3.1 ​
+
+*Released on Nov 10, 2026*
+
+✨ Newly Added🚀 Improvements🐞 Bug fixesmarkdown
+```
+• Adds new order bump placements, six card layouts, custom cards, and optional images
+• Adds a Licenses report under Reports
+• Adds address field rearranging in Checkout Fields settings
+• Adds shipping methods and charges to manual order creation
+• Adds a Products field to categories and brands
+• Adds a checkout payment loading placeholder
+• Adds CNY and RUB support for PayPal
+• Adds recommended add-ons and new developer hooks
+```markdown
+```
+• Improves PayPal, Mollie, Authorize.Net, and Paddle subscription and payments
+• Improves update payment method on the customer profile
+• Improves order bump management, discount validation, and subtotal conditions
+• Improves Payment Settings, add-on installation, and reorder controls
+• Improves Product Compare and E-Invoice setup
+• Improves admin accessibility and screen reader support
+```markdown
+```
+• Fixes shipping tax calculations, renewal taxes, and accounting exports
+• Fixes refunded order totals and missing bundle items
+• Fixes coupon expiry dates, repeated variations, and grouped price formatting
+• Fixes saved cards appearing on free orders and unlimited license counts
+• Fixes payment method settings and shipping tier errors
+• Fixes integration settings, report dialogs, and keyboard accessibility
+• Fixes variation pricing, table layouts, and advanced filtering
+• Fixes customer portal translations, badges, and labels
+• Fixes Firefox compatibility and SEO plugin and Breakdance conflicts
+```
 ## FluentCart v2.3.0 ​
 
 *Released on Nov 3, 2026*
@@ -421,9 +455,12 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 
 *Released on Jul 17, 2026*
 
-✨ Newly Addedmarkdown
+🚀 Improvements🐞 Bug fixesmarkdown
 ```
-• Improves PayPal payment and subscription confirmation flow against unverified payment states
+• Improves Security by hardening the PayPal payment and subscription confirmation flow against unverified payment states
+```markdown
+```
+• Fixes PayPal one-time payments to capture server-side so an order is marked paid only after the payment is actually completed
 ```
 ## FluentCart v1.5.4 ​
 
@@ -735,9 +772,33 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 • Fixes Safari chevron icon visibility issue
 • Fixes Menu button and dropdown styling issues
 • Fixes LearnDash course expiry resolution for users
+• Fixes Skip subscription field validation when subscription is disabled
+• Fixes Auto-expand Additional display prices section when subscription is enabled
 ```markdown
 ```
 • Improves button feedback with visual indicators only
+```
+## FluentCart v1.3.25 ​
+
+*Released on April 30, 2026*
+
+🐞 Bug fixes🚀 Improvementsmarkdown
+```
+• Fixes Sites with www and non-www counted as separate activations
+• Fixes Subscription orders with coupon discounts getting stuck after checkout
+• Fixes Duplicate renewal records created during payment processing
+• Fixes Page freeze when clicking empty mini cart
+• Fixes Max-width constraints and responsive padding on product pages
+• Fixes Incorrect coupon expiration time in admin dashboard
+• Fixes Shipping overcharge with multiple shipping classes in cart
+• Fixes Free shipping adding class surcharges with multiple shipping classes
+• Fixes Paddle subscriptions not cancelling immediately after refund
+• Fixes Customer lifetime stats not updating after refund
+• Fixes Double encryption when saving Stripe settings
+• Fixes Raw transaction and subscription status keys shown in customer portal
+```markdown
+```
+• Improves Product variation management
 ```
 ## FluentCart v1.3.23 ​
 
@@ -771,6 +832,22 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 ```
 • Enhanced Paddle - allows all default emails, modifiable via filter hook
 • Enhanced Adjust product-card and single-product styles
+```
+## FluentCart v1.3.22 ​
+
+*Released on April 23, 2026*
+
+✨ Newly Added🚀 Improvements🐞 Bug fixesmarkdown
+```
+• Adds Gutenberg Package Description block
+• Adds New stock management in Pro
+```markdown
+```
+• Improves Package Description support for block themes & emails
+• Improves Email templates with 5 new merge tags
+```markdown
+```
+• Fixes Shipping zone list loading issue
 ```
 ## FluentCart v1.3.21 ​
 
@@ -985,7 +1062,7 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 ```
 ## FluentCart v1.3.9 ​
 
-*Released on January 28, 2026*
+*Released on January 27, 2026*
 
 ✨ Newly Added🚀 Improvements🐞 Bug fixesmarkdown
 ```
@@ -1114,6 +1191,14 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 • Fixes Get paypal plan api endpoints issue
 • Fixes Variation View Image & Text issue for Gutenberg
 ```
+## FluentCart v1.3.3 ​
+
+*Released on December 3, 2025*
+
+🐞 Bug fixesmarkdown
+```
+• Fixes Authorize.net compatibility issue with PHP versions
+```
 ## FluentCart v1.3.2 ​
 
 *Released on December 2, 2025*
@@ -1142,6 +1227,14 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 • Fixes EU VAT renderer issue on initial load
 • Fixes variation title not showing for bump product
 • Fixes wrong Stripe canceled_at date
+```
+## FluentCart v1.3.1 ​
+
+*Released on November 19, 2025*
+
+🐞 Bug fixesmarkdown
+```
+• Hotfix: License API Issues Fixed
 ```
 ## FluentCart v1.3.0 ​
 
@@ -1250,6 +1343,18 @@ Stay updated with the latest improvements, new features, bug fixes, and performa
 • Remove force POST request validation for IPN
 • Translation strings issue for all modules
 • Payment method not showing issue on stripe
+```
+## FluentCart v1.2.3 ​
+
+*Released on October 22, 2025*
+
+✨ Newly Added🐞 Bug fixesmarkdown
+```
+• Added LifterLMS integration
+• Added LearnDash integration
+```markdown
+```
+• Fixed Webhook Config Issue
 ```
 ## FluentCart v1.2.2 ​
 

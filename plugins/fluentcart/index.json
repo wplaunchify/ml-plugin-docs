@@ -2,8 +2,8 @@
   "plugin_slug": "fluentcart",
   "plugin_name": "FluentCart",
   "documentation_url": "https://docs.fluentcart.com/guide/",
-  "last_scraped": "2026-11-08T04:44:41.668Z",
-  "total_pages": 185,
+  "last_scraped": "2026-11-15T04:44:30.366Z",
+  "total_pages": 187,
   "failed_urls_count": 5,
   "sections": [
     {
@@ -207,7 +207,7 @@
           "url": "https://docs.fluentcart.com/guide/integrations/fluentbooking-integration"
         },
         {
-          "title": "FluentCommunity Integrating ​",
+          "title": "FluentCommunity Integration ​",
           "url": "https://docs.fluentcart.com/guide/integrations/fluentcommunity-integration"
         },
         {
@@ -366,7 +366,7 @@
           "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/configure-stripe-via-wpconfig"
         },
         {
-          "title": "Flutterwave Integration ​",
+          "title": "Flutterwave Settings ​",
           "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/flutterwave-settings"
         },
         {
@@ -398,7 +398,7 @@
           "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/square-settings"
         },
         {
-          "title": "SSL Commerz Settings ​",
+          "title": "SSLCommerz Settings ​",
           "url": "https://docs.fluentcart.com/guide/payments-checkout/connecting-payment-gateways/sslcommerz-settings"
         },
         {
@@ -493,7 +493,7 @@
       "slug": "reporting-analytics",
       "url": "https://docs.fluentcart.com/guide/reporting-analytics/",
       "file": "categories/reporting-analytics.md",
-      "page_count": 19,
+      "page_count": 20,
       "pages": [
         {
           "title": "Reporting & Analytics ​",
@@ -526,6 +526,10 @@
         {
           "title": "Installments Report ​",
           "url": "https://docs.fluentcart.com/guide/reporting-analytics/installments-report"
+        },
+        {
+          "title": "Licenses Report ​",
+          "url": "https://docs.fluentcart.com/guide/reporting-analytics/licenses-report"
         },
         {
           "title": "Locations Report ​",
@@ -757,7 +761,7 @@
       "slug": "store-management",
       "url": "https://docs.fluentcart.com/guide/store-management/",
       "file": "categories/store-management.md",
-      "page_count": 25,
+      "page_count": 26,
       "pages": [
         {
           "title": "Store Management ​",
@@ -820,6 +824,10 @@
           "url": "https://docs.fluentcart.com/guide/store-management/orders-management/order-bump"
         },
         {
+          "title": "Order Bump Card Design ​",
+          "url": "https://docs.fluentcart.com/guide/store-management/orders-management/order-bump-design"
+        },
+        {
           "title": "Order Details Overview ​",
           "url": "https://docs.fluentcart.com/guide/store-management/orders-management/order-details-overview"
         },
@@ -856,7 +864,7 @@
           "url": "https://docs.fluentcart.com/guide/store-management/product-schema"
         },
         {
-          "title": "FluentCart status Overview ​",
+          "title": "FluentCart Status Overview ​",
           "url": "https://docs.fluentcart.com/guide/store-management/understanding-statuses"
         }
       ]

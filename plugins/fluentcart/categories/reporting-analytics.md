@@ -25,12 +25,15 @@ This section covers various types of reports to give you a holistic view of your
 - **Future Renewals Report:** Forecasted subscription renewal revenue and counts to help with near-term cash flow planning.
 - **Installments Report:** Collected, scheduled, and overdue payments on your installment plans, with the plans that stopped paying.
 - **Product Report:** Detailed analytics on individual product performance, including units sold and top-selling items.
-- **Compare Products Report:** Side-by-side comparison of the products or variations you pick, with a chart and a totals table.
+- **Compare Products Report (Pro):** Side-by-side comparison of the products or variations you pick, with a chart and a totals table.
 - **Order Sources Report:** Revenue grouped by marketing campaign, source, and medium, so you can see which channels produce paying customers.
 - **Coupons Report:** Discount given, how much of your store relies on coupons, and how each coupon code performs.
 - **Payment Methods Report:** Sales, refunds, payment success, and failing subscriptions for each payment gateway, so you can spot payment problems early.
 - **Locations Report:** Net sales, customers, and refunds by country on a world map, with international share and per-country breakdowns.
-- **Accounting Export:** A CSV or JSON file of every sale and refund with its tax line, currency, and exchange rates, for your accountant or tax software.
+- **Licenses Report (Pro):** New licenses, site activations, valid and expired licenses, site limit use, and the plugin versions your customers run.
+- **Accounting Export (Pro):** A CSV or JSON file of every sale and refund with its tax line, currency, and exchange rates, for your accountant or tax software.
+
+All reports are included in the free plugin except **Compare**, **Licenses**, and **Export**, which need FluentCart Pro. Advanced Filters and changing the compare period also need Pro.
 
 By regularly reviewing these reports, you can gain a deeper understanding of your store's health and strategize for future growth.
 
@@ -114,7 +117,7 @@ The **Cohorts** report provides a detailed look at customer behavior over time b
 
 ## Accessing the Cohorts Report ​
 
-Go to your WordPress dashboard, navigate to **FluentCart Pro → Reports**, and select the **Cohorts** sub-tab under the **Subscriptions** category.
+Go to your WordPress dashboard, navigate to **FluentCart → Reports**, and select the **Cohorts** sub-tab under the **Subscriptions** category.
 
 ---
 
@@ -373,7 +376,7 @@ The **Future Renewals** report provides a predictive look into your store's upco
 
 ## Accessing Future Renewals ​
 
-Go to your WordPress dashboard, navigate to **FluentCart Pro → Reports**, and select the **Future Renewals** sub-tab under the **Subscriptions** category.
+Go to your WordPress dashboard, navigate to **FluentCart → Reports**, and select the **Future Renewals** sub-tab under the **Subscriptions** category.
 
 ## Report Filters and Controls ​
 
@@ -696,6 +699,85 @@ The **Overdue** and **Lapsed** tabs list customers by name and email, so they ap
 - If a request fails, an error message appears. Pick a filter again to reload the page's figures.
 
 Your installment plans are now easy to track, from the money already collected to the customers who need a reminder to finish paying.
+
+---
+
+## Licenses Report ​
+
+**Source:** [https://docs.fluentcart.com/guide/reporting-analytics/licenses-report](https://docs.fluentcart.com/guide/reporting-analytics/licenses-report)
+
+# Licenses Report ​
+
+The **Licenses** report shows how your software licenses are doing: how many you issue, where customers use them, which licenses are close to their site limit, and which plugin versions your customers run. Use it to find customers who still need help getting started and expired licenses that are good renewal leads.
+
+INFO
+
+The Licenses report belongs to **FluentCart Pro**. It appears in the Reports menu while the **Product Licensing** module is switched on, and only for roles that can view both reports and licenses.
+## Accessing the Licenses Report ​
+
+Go to your WordPress dashboard, then go to **FluentCart > Reports** and click **Licenses** in the reports menu on the left.
+
+## Report Filters ​
+
+The **Date Range** button in the filter bar sets the period for the figures that depend on a range, such as **New Licenses** and the trend chart. Other cards describe your licenses as of today, and each card says which kind it is.
+
+## Summary Cards ​
+
+Six cards sit at the top of the page. Hover over the info icon beside a card to read its definition. A small caption under each card tells you whether it follows the date range (**In date range**) or shows today's picture (**Today**).
+
+- **New Licenses:** Licenses issued in the date range.
+- **Site Activations:** License activations on production sites in the date range. A site activated with a new license counts again. Local and staging sites are left out, and so are sites deactivated since.
+- **Valid Licenses:** Active licenses and licenses not activated yet, as of today. The date range does not apply.
+- **Live Sites:** Production sites on valid licenses, as of today.
+- **Not Activated:** Valid licenses that were never activated on a site. These customers may need help to get started.
+- **Expired, Still Installed:** Expired licenses that still have production sites. They are your best renewal leads.
+
+## Licenses and Activations ​
+
+The **Licenses and Activations** chart plots new licenses and production-site activations over the date range, in your site timezone.
+
+- **Group by:** Choose **Auto**, **Daily**, **Monthly**, or **Yearly**. **Auto** picks a grouping that fits the length of the range.
+- **Cumulative:** Tick this to switch from new figures per period to running totals. The chart then shows the total number of licenses and production-site activations at the end of each period, and a site activated with two licenses counts twice.
+
+When nothing happened in the range, the chart reads **No licenses or activations in this date range**.
+
+## Products ​
+
+The **Products** table shows licenses and sites for each product and variation, as of today. The date range does not apply here.
+
+- **Licenses:** All licenses for the product or variation.
+- **Active:** Licenses that are in use.
+- **Not activated:** Valid licenses with no site yet.
+- **Expired:** Licenses past their expiry.
+- **Live sites:** Production sites on valid licenses.
+- **Site limit use:** The average number of sites used per valid license with a limit, out of the average limit. It reads **Unlimited** when 90% or more of the valid licenses have no limit.
+- **At limit:** Valid licenses that use every site they allow. These are candidates for a bigger plan.
+- **Expired, installed:** Expired licenses that still have production sites.
+
+Click a product to see its versions in the next section. Use the **Export CSV** button above the table to download the table. The CSV also includes the **Disabled** count, the average sites used, and the average site limit.
+
+## Versions in Use ​
+
+The **Versions in Use** card shows which plugin versions your customers' production sites run, as of today. Pick a product from the **Select a product** dropdown, or click one in the Products table.
+
+- **On the latest version:** The share of sites on the release version set in your license settings. When no release version is set, the card says **No release version in the license settings**.
+- **Sites that report a version:** Sites that have checked for updates and told you their version.
+- **Sites with no version yet:** Production sites that have not reported a version.
+- **Version bars:** One bar per version, newest first, split by **Valid license** and **Expired or disabled license**. The newest version carries a **Latest** badge, and smaller versions are grouped under **Other**.
+
+A site reports its version only when it checks for updates, so older installs may show none.
+
+## Site Environment ​
+
+The **Site Environment** card shows the **Server** and **Platform** versions of the selected product's production sites, as each site reports them. Use it to choose the minimum requirements for your next release. Sites that have not reported a value are counted in a note under each chart.
+
+## How Sites Are Counted ​
+
+- Only production sites are counted. Local and staging sites are left out of site counts.
+- A site that has both an expired license and a newer one counts once, as valid.
+- Activations of licenses that were deleted are skipped.
+
+Your license figures now sit alongside your sales reports, so you can follow a license from purchase to renewal.
 
 ---
 
@@ -1217,6 +1299,9 @@ You pick the products on the page itself, not in the **Filters** menu. The page 
 1. Open the first **Pick a product or variation** dropdown and choose a product. Choose **All variants** to compare the whole product, or pick a single variation.
 2. Do the same in the second dropdown, beside **vs**.
 3. Click **+ Add** to add more, up to six items in total. Click the **✕** beside a dropdown to remove it.
+4. Click the **Compare** button. It becomes available once you have picked at least two items, and the report only loads when you click it.
+
+If you change a pick or a filter after comparing, the page shows **The picks or filters changed. Click Compare to update.** and keeps the earlier results on screen until you click **Compare** again. Changing the currency clears the results, because the amounts are shown in the live currency.
 
 Each item gets its own color, which it keeps on the chart and in the table. Your picks are saved in the page address, so you can bookmark or share a comparison.
 
@@ -1271,7 +1356,7 @@ This group appears when at least one item sells subscriptions.
 
 The **Customer overlap** table shows, for each item's customers in the period, how many have ever bought each of the other items, and how many bought that other item first. Use it to see whether two products compete for the same buyers or lead customers from one to the other.
 
-If the report cannot load, the page shows **This report could not be loaded.** with a **Retry** button.
+If the report cannot load, the page shows **This report could not be loaded.** with a **Retry** button. The subscriptions and customer overlap cards load on their own, so a slow or failed card does not hold up the others, and each one has its own **Retry**.
 
 Your product comparison now shows you which products are pulling their weight, and which variations deserve more attention.
 
@@ -1419,6 +1504,9 @@ The **Overview** page is the first stop. It gathers the headline figure from eac
 
 Go to your WordPress dashboard, then go to **FluentCart** > **Reports**. The section always opens on the **Overview** page, and the menu on the left lets you switch to any other report.
 
+INFO
+
+Reports are included in the free FluentCart plugin. A few extras need **FluentCart Pro**: the **Compare** report, the **Licenses** report, the **Export** (accounting export) page, **Advanced Filters**, and changing the compare period.
 ## The Full Report Section ​
 
 The Reports menu is divided into focused pages, each covering one area of your store:
@@ -1428,13 +1516,14 @@ The Reports menu is divided into focused pages, each covering one area of your s
 - **Revenue:** What you actually earned after refunds and tax, with trend charts and breakdowns.
 - **Refunds:** How often and how much money goes back to customers.
 - **Subscriptions:** Recurring revenue and subscriber movement. Its sub-pages cover **Retention**, **Cohorts**, **Future Renewals**, and [Installments](/guide/reporting-analytics/installments-report).
-- **Products:** How each product sells. Its **Compare** sub-page puts the products you pick side by side.
+- **Products:** How each product sells. Its **Compare** sub-page (FluentCart Pro) puts the products you pick side by side.
 - **Customers:** New and returning customers and what they are worth.
 - **Sources:** Orders grouped by marketing channel, campaign, source, and medium.
 - **Coupons:** How much discount you give and how each coupon code performs. See the [Coupons Report](/guide/reporting-analytics/coupons-report).
 - **Payment Methods:** Sales, refunds, and payment failures for each payment gateway. See the [Payment Methods Report](/guide/reporting-analytics/payment-methods-report).
 - **Locations:** Sales and customers by country, with a world map. See the [Locations Report](/guide/reporting-analytics/locations-report).
-- **Export:** An accounting export of your sales and refunds. This page is added by FluentCart Pro.
+- **Licenses:** New licenses, site activations, and the versions your customers run. This page is added by FluentCart Pro while Product Licensing is on. See the [Licenses Report](/guide/reporting-analytics/licenses-report).
+- **Export:** An accounting export of your sales and refunds. This page is added by FluentCart Pro and appears only when your role can export reports.
 
 INFO
 
@@ -1575,7 +1664,7 @@ The **Retention** report in FluentCart provides a deep dive into your subscripti
 
 ## Accessing the Retention Report ​
 
-Go to your WordPress dashboard, navigate to **FluentCart Pro → Reports**, and select the **Retention** sub-tab under the **Subscriptions** category.
+Go to your WordPress dashboard, navigate to **FluentCart → Reports**, and select the **Retention** sub-tab under the **Subscriptions** category.
 
 ## Report Filters and Controls ​
 

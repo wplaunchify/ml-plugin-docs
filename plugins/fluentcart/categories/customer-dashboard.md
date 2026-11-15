@@ -12,7 +12,7 @@
 
 Tired of answering emails from customers asking for their past orders or download links? The FluentCart Customer Dashboard serves as a comprehensive and personalized portal for every customer, offering a centralized location to manage all aspects of their interactions with your e-commerce store. This powerful dashboard empowers customers to efficiently handle their orders, subscriptions, licenses, and personal details.
 
-Ensure you have set the Customer Dashboard page from **FluentCart Pro** > **Settings** > **Pages Setup**, and your users can access their dashboard on that particular page. For detailed instructions on setting this up, please refer to our [Pages Setup documentation](/guide/settings-configuration/pages-setup).
+Ensure you have set the **Customer Profile Page** under **FluentCart Pro > Settings > Store Settings > Pages Setup**, and your users can access their dashboard on that particular page. For detailed instructions on setting this up, please refer to our [Pages Setup documentation](/guide/settings-configuration/pages-setup).
 
 ## Confirming Your Email Address ​
 
@@ -29,12 +29,15 @@ This confirmation step also runs again if a customer's account email changes and
 
 When a customer logs in, they'll see a quick summary of their activity. From there, they can dive into several key sections to manage their account:
 
+The menu shows **Dashboard**, **Purchase History**, **Subscription Plans** (only for customers who have a subscription), **Licenses** (only when FluentCart Pro and Product Licensing are active), **Downloads**, **My Reviews** (only while Product Reviews are switched on), and **Profile**. Each section is covered below:
+
 - **View Purchase History (Orders & Payment Details)**: Provides a complete and detailed record of all past orders, including transaction details, payment statuses, and options to download invoices.
 - **Managing Subscriptions**: If you sell subscription products, this is where customers can view and control their recurring plans. They can check the status, see upcoming renewal dates, and manage other details.
 - **Managing Licenses**: For software or other digital products that use license keys, this is a dedicated area for customers to find their keys, check activation limits, and see renewal information.
 - **Digital Product Downloads**: This section gives customers a neat list of all the digital products they've purchased, with a simple download button next to each one.
 - **Update Profile Settings**: Where customers can update their personal contact information, manage billing addresses, and shipping addresses for future orders.
-- **Payment Methods**: If your store allows saved payment methods, this is where customers add a card, choose which one is used by default, and remove cards they no longer want on file.
+- **Payment Methods** (inside **Profile**): With FluentCart Pro and saved payment methods enabled, the Profile page includes a Payment Methods section. This is where customers add a card, choose which one is used by default, and remove cards they no longer want on file.
+- **My Reviews**: When Product Reviews are switched on, customers find purchased products waiting under **To Be Reviewed**, write or edit their reviews, and see their past reviews under **History**.
 
 This comprehensive structure ensures that customers have all the necessary tools at their fingertips for a seamless and efficient experience with your FluentCart store.
 
@@ -68,6 +71,9 @@ To save a file to your computer, just click the **Download** button next to it. 
 
 The **Licenses** section of your FluentCart Customer Profile is where you can view and manage all your purchased software licenses. This is particularly useful for digital products like plugins or themes that require activation.
 
+INFO
+
+The **Licenses** menu item appears only when the store has FluentCart Pro with Product Licensing enabled.
 ## Viewing All Licenses ​
 
 The main Licenses page presents a list of all your available licenses. Each license entry typically includes:
@@ -114,7 +120,7 @@ Your payment details are never stored on this site. Your payment provider keeps 
 
 INFO
 
-This section appears only when your store has **Saved Payment Methods** turned on. If you do not see **Payment Methods** in your dashboard menu, the store has not enabled the feature.
+This section appears only when your store has **Saved Payment Methods** (FluentCart Pro) turned on. It sits on your **Profile** page, not in the dashboard menu. If you do not see a **Payment Methods** section on **Profile**, the store has not enabled the feature.
 ## Saving a Payment Method While You Check Out ​
 
 The easiest moment to save a payment method is when you are already paying with it.
@@ -122,7 +128,9 @@ The easiest moment to save a payment method is when you are already paying with 
 - **Card:** On the checkout page, look under the card fields for the **Save this card for faster checkout next time** checkbox and tick it before you pay.
 - **PayPal:** When PayPal is your selected payment method, the same **Save this card for faster checkout next time** checkbox appears before you are sent to approve the payment. Tick it and approve the save agreement on PayPal's own screen to save the account for next time.
 
-The box is always unticked to begin with, so a payment method is only ever saved because you asked for it. Nothing is charged until you place the order, and the store still receives a token rather than your card or account details.
+The checkbox appears when you are logged in, or when you are buying a subscription. Guests making a one-time purchase don't see it.
+
+Depending on the store's settings, the box may start ticked. You can clear it before you pay if you don't want to save the payment method. Nothing is charged until you place the order, and the store still receives a token rather than your card or account details.
 
 Once the order goes through, that payment method appears in your **Payment Methods** list, ready for next time.
 
@@ -139,7 +147,7 @@ Your bank may still ask you to confirm the payment, which is a normal security s
 
 ## Viewing Your Saved Payment Methods ​
 
-To see everything you have saved, open the **Payment Methods** item in your dashboard menu. A saved card shows its brand, its last four digits, and its expiry date; a saved PayPal account shows its email address instead. Either entry can carry a couple of helpful labels:
+To see everything you have saved, open **Profile** in your dashboard and scroll to the **Payment Methods** section. Older links to a separate Payment Methods page now take you to **Profile**. A saved card shows its brand, its last four digits, and its expiry date; a saved PayPal account shows its email address instead. Either entry can carry a couple of helpful labels:
 
 - **Default:** The payment method that gets selected automatically at checkout and used for subscription renewals. Only a saved card can currently be set as the default.
 - **On a subscription:** The payment method is currently paying for an active subscription.
@@ -148,9 +156,9 @@ If you have not saved anything yet, you will see **No saved cards yet** instead,
 
 ## Adding a Card Without Buying Anything ​
 
-You do not have to wait for a purchase to save a card. You can add one directly from your dashboard, which is handy when your old card is about to expire and you want the new one ready.
+You do not have to wait for a purchase to save a card. You can add one directly from your dashboard, which is handy when your old card is about to expire and you want the new one ready. Adding a card here is available when the store uses Stripe.
 
-1. Open **Payment Methods** from your dashboard menu.
+1. Open **Profile** in your dashboard and scroll to the **Payment Methods** section.
 2. Click the **Add payment method** button.
 3. In the **Add a payment method** window, fill in your **Cardholder name**, **Card number**, **Expiry**, and **CVC**.
 4. Tick **Set as default payment method** if you want this card used automatically from now on.
@@ -217,15 +225,21 @@ This first section displays your basic account information.
 
 This section allows you to provide or update the address where your billing statements and invoices will be sent.
 
-- **Add New Address:** Click the **+ ADD NEW ADDRESS** button to add a new billing address.
-- **Default Address:** You can view your saved billing addresses.
+- **Add New Address:** Click the **Add New Address** button to add a new billing address.
+- **Default Address:** Your default address carries a **Default** badge. Open the three-dot menu on any address to **Edit**, **Set as default**, or **Delete** it (you'll be asked to confirm before it is deleted).
 
 ## Shipping Address ​
 
 This section allows you to provide or update the address where your orders will be delivered.
 
-- **Add New Address:** Click the **+ ADD NEW ADDRESS** button to add a new shipping address.
-- **Default Address:** You can view your saved shipping addresses.
+- **Add New Address:** Click the **Add New Address** button to add a new shipping address.
+- **Default Address:** Your default address carries a **Default** badge. Open the three-dot menu on any address to **Edit**, **Set as default**, or **Delete** it (you'll be asked to confirm before it is deleted).
+
+The address form lets you name the address (for example Home or Office). If the store collects business details, it also has a **Business Details** part with **Company Name**, **VAT/GST/Tax Number**, and **Legal Registration ID**.
+
+## Payment Methods ​
+
+With FluentCart Pro saved payment methods enabled, Profile also has a **Payment Methods** section where you add, set as default, and remove your [saved payment methods](/guide/customer-dashboard/payment-methods).
 
 ## Edit an Existing Address ​
 
@@ -293,7 +307,7 @@ FluentCart automatically generates an invoice receipt for every order. This invo
 - Renewal information (if it’s a subscription-based order)
 - Subscription **setup fee** as a separate line item (when a one-time setup or activation fee was charged at signup)
 - Customer VAT number (rendered automatically inside the billing address block when the customer provides one at checkout)
-- Your store's business IDs (Legal Registration ID, Seller Tax ID, and Seller VAT ID), shown on the receipt, the thank-you page, and order emails when you have filled them in under [Store Settings](/guide/settings-configuration/store-settings)
+- Your store's business IDs (Legal Registration ID, Seller Tax ID, and Seller VAT ID), shown on the receipt, the thank-you page, and order emails when you have filled them in under [Store Settings](/guide/settings-configuration/store-settings). Your **Company Name** from Business Details is used as the seller name on the receipt (your store name if it is empty)
 
 NOTE
 
@@ -315,9 +329,7 @@ This allows users to quickly access their payment confirmation and keep a digita
 
 ### Accessing the Order Later ​
 
-Customers can always revisit their order details later by logging into their account and navigating to:
-
-**My Account → Purchse History**
+Customers can always revisit their order details later by logging into their account and opening **Purchase History** in their customer dashboard.
 
 From there, they can:
 
@@ -383,7 +395,7 @@ The shipment with the newest update opens on its own, along with any shipment th
 
 If the carrier could not deliver a parcel or it went back to the store, the shipment opens with a red notice, such as **The carrier could not deliver this parcel**, and asks you to check the carrier page or contact the store.
 
-## Upgrading a One time Purchases ​
+## Upgrading a One-Time Purchase ​
 
 Some products can be moved up to a bigger package after you have bought them, and you no longer have to own an active subscription to do it! If the store has set up an [upgrade path](/guide/product-types-creation/defining-upgrade-paths) for something you bought outright, an **Upgrade Plan** button appears next to that item on the order details page.
 
@@ -396,7 +408,7 @@ Some products can be moved up to a bigger package after you have bought them, an
 
 NOTE
 
-The **Upgrade Plan** button only appears on items that qualify. Your original order must be paid, and the store must currently offer an active upgrade path for that exact product.
+The **Upgrade Plan** button only appears on items that qualify. Your original order must be paid, and the store must currently offer an active upgrade path for that exact product. Each order can be upgraded once. If you try to upgrade an order again, you'll see "This order has already been upgraded."
 
 ---
 
@@ -438,17 +450,33 @@ This section provides a summary of the core details of your subscription.
 
 Below the details, you will find several important links:
 
-- **Pay Remaining Installments:** This new feature is perfect for those who want to get ahead. Clicking this allows you to settle your remaining balance early, clearing your future obligations in one go.
+- **Pay Remaining Installments:** This feature is perfect for those who want to get ahead. Clicking this allows you to settle your remaining balance early, clearing your future obligations in one go.
 
 NOTE
 
-The installment plan must be **Active** for this early payment option to be available.- **Update Payment Method:** Use this to securely swap out the credit card or account used for your renewals. For gateways like Stripe and PayPal, you can enter the new details right in the dashboard. For Paddle and other gateways that manage cards on their own site, a short notice tells you that you will be redirected to complete the update: click **Continue** and the gateway's secure card-update page opens in a new tab, where you can finish the change.
-- **View Order:** This takes you directly to the original transaction in your **Purchase History**.
+**Pay Remaining Installments** appears for installment plans that still have payments left and are **Active** or **Trialing**, when the store has FluentCart Pro with early payment for installments enabled.- **Update Payment Method:** Use this to securely swap out the credit card or account used for your renewals. For gateways like Stripe and PayPal, you can enter the new details right in the dashboard. For Paddle and other gateways that manage cards on their own site, a short notice tells you that you will be redirected to complete the update: click **Continue** and the gateway's secure card-update page opens in a new tab, where you can finish the change.
+
+INFO
+
+The **Update Payment Method** link depends on your plan, its billing, and the gateway, so you may not see it on every subscription.
+
+- It is not offered on subscriptions that are **Canceled**, **Expired**, or **Completed**.
+- With **PayPal**, an update creates a new PayPal subscription, so it is offered only while you still have paid days left in the current billing period. It is also not offered on a PayPal subscription that the store bills itself.
+- Subscriptions billed by invoice, with no saved payment method to replace, don't show it. You pay each renewal from your renewal email instead.- **View Order:** This takes you directly to the original transaction in your **Purchase History**.
 - **Connected License:** If your subscription includes software or access keys, you can view and copy your active license key right here.
 
 INFO
 
 Some subscriptions are billed manually by the store rather than charged automatically by the gateway. If yours is, you pay each renewal yourself using the **Pay Now** link sent with your renewal email, and you can use any available payment method. To understand how store billing works, see [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions).
+#### Subscription Options ​
+
+Depending on your plan and its status, you may also see these actions:
+
+- **Upgrade Plan:** Appears when the store offers an upgrade path for your plan.
+- **Renew Subscription Plan** or **Reactivate Subscription Plan:** If the subscription has expired or stopped, this button lets you restart it.
+- **Subscription options:** This menu offers **Pause Subscription**, **Resume Subscription**, and **Cancel Subscription** when they apply. - **Pause:** Store-billed plans can be paused only while they are **Active** or **Trialing** with nothing overdue. Gateway-billed plans can be paused only when the payment gateway supports pausing.
+- **Cancel:** Not offered on installment plans. Cancelling asks you to confirm, and your access stays active until the current billing cycle ends.
+
 #### Related Transactions ​
 
 At the bottom of the page, you'll find a complete financial audit trail for your subscription. This table lists every transaction from your very first purchase to the most recent renewal. You can track the Date, Amount, and Status of each payment, and even download a **Receipt** for your records whenever you need one.

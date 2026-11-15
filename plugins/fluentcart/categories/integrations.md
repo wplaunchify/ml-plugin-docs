@@ -12,7 +12,7 @@
 
 This page has moved
 
-Amazon S3 now has its own dedicated section under the **Storage** menu in FluentCart, alongside Cloudflare R2. The setup experience has been rebuilt into a guided wizard with live bucket browsing, in-UI bucket creation, and a dedicated security step.
+Amazon S3 is now set up from **FluentCart > Settings > Storage Settings**, alongside Local storage and Cloudflare R2 (Cloudflare R2 needs FluentCart Pro). The setup experience has been rebuilt into a guided wizard with live bucket browsing, in-UI bucket creation, and a dedicated security step.
 
 Head to the new guide for the current setup:
 
@@ -32,13 +32,20 @@ Cloudflare Turnstile is a powerful, privacy-first security solution that provide
 
 Turnstile works invisibly in the background, ensuring your shoppers enjoy a smooth, puzzle-free checkout while your store remains protected from automated "carding" attacks and fake order submissions.
 
+Turnstile is included in the free FluentCart plugin. It protects your checkout page, any page that uses the 
+```
+[fluent_cart_checkout]
+```
+
+ shortcode, and the modal checkout. If the Turnstile check fails, the order is not placed and the customer is asked to try again.
+
 ## Step 1: Enabling Turnstile in FluentCart ​
 
 Before heading to Cloudflare, you need to prepare the integration within your WordPress site.
 
 1. Log in to your **WordPress Dashboard**.
 2. Navigate to **FluentCart > Settings** in the side menu.
-3. Click on the **Features & Addon** section in the left-hand sidebar.
+3. Click **Features & addon** in the left-hand sidebar.
 4. Find the **Cloudflare Turnstile** card and toggle the switch to **Active**.
 
 Once enabled, two configuration fields will appear: **Turnstile Site Key** and **Turnstile Secret Key**. You will need to keep this tab open as you’ll be pasting your keys here in Step 3.
@@ -72,9 +79,10 @@ Now, let's link the two platforms to finalize the security layer.
 1. Return to your **FluentCart Settings** tab.
 2. **Copy and Paste:**- Copy the **Site Key** from Cloudflare and paste it into the **Turnstile Site Key** field in FluentCart.
 - Copy the **Secret Key** from Cloudflare and paste it into the **Turnstile Secret Key** field.
-3. **Save Changes:** Click the **Save Settings** button at the bottom right.
+3. **Verify the keys (optional):** Click **Verify Keys**. FluentCart runs a test challenge with Cloudflare and shows **Turnstile keys are valid and working.** If it shows an error, check that your domain is listed under the widget's hostnames in Cloudflare.
+4. **Save Changes:** Click the **Save Settings** button at the bottom right. Verifying the keys does not save them.
 
-You should see a "Settings Saved" confirmation. Your checkout page is now officially protected by Cloudflare Turnstile.
+You should see a **Settings saved successfully** confirmation. Your checkout page is now officially protected by Cloudflare Turnstile.
 
 ## How to Verify the Integration ​
 
@@ -103,7 +111,7 @@ First, you need to activate the connection between the two plugins.
 
 1. From your WordPress dashboard, navigate to **FluentAffiliate > Settings**.
 2. Click on the **Integration Settings** tab.
-3. You will see a list of available integrations. Find **Fluent Cart** and make sure the toggle next to it is enabled.
+3. You will see a list of available integrations. Find **FluentCart** and make sure the toggle next to it is enabled.
 
 ### Configure Integration Settings ​
 
@@ -116,6 +124,7 @@ In the management panel, you can fine-tune how commissions work for your FluentC
 
 - **Disable Referrals on Upgrades:** Check this box to ensure that no referrals will be added on purchased upgrades. This gives you more control over commission payouts for existing customers who upgrade their plan.
 - **Enable custom rate for specific products or categories:** This is a powerful feature that lets you override your default commission rate. Check this box if you want to set special commission rates for specific products or entire product categories.
+- **Enable Referrals on Subscription Renewals:** *(FluentAffiliate Pro, shown when renewal referrals are turned on in FluentAffiliate's referral settings)* Creates a referral for each subscription renewal order. A second **Enable custom rate for specific products or categories on renewals** option lets you set different renewal rates.
 
 NOTE
 
@@ -143,7 +152,7 @@ You give this coupon code directly to one of your affiliates. This way, whenever
 
 1. In your WordPress dashboard, navigate to **FluentCart Pro > Coupons**.
 2. Create a new coupon or edit an existing one.
-3. On the coupon edit screen, find the **FluentAffiliate** section on the right-hand side.
+3. On the coupon edit screen, find the **Fluent Affiliate** section on the right-hand side.
 4. Click on the **Select Affiliate** field and begin typing the affiliate's name. Select their affiliate from the list when it appears.
 5. **Save** the coupon. Now, when this coupon is used, the selected affiliate will be credited with the referral.
 
@@ -236,11 +245,11 @@ If you have any questions or need further assistance, feel free to reach out to 
 
 ---
 
-## FluentCommunity Integrating ​
+## FluentCommunity Integration ​
 
 **Source:** [https://docs.fluentcart.com/guide/integrations/fluentcommunity-integration](https://docs.fluentcart.com/guide/integrations/fluentcommunity-integration)
 
-# FluentCommunity Integrating ​
+# FluentCommunity Integration ​
 
 Connecting FluentCart with FluentCommunity lets you automatically manage your customers' access to community spaces and courses. When a customer buys a product, you can instantly enroll them in a specific course or add them to an exclusive space.
 
@@ -255,7 +264,7 @@ Before you begin, it's helpful to decide which type of integration best suits yo
 - **Use a Global Integration when:** You want a general rule to apply to *every single customer*, regardless of what they buy. - *Example:* Adding all paying customers to a general "Welcome" or "All Customers" space in your community.
 - **Use a Product-Specific Integration when:** You want a targeted action to apply *only to customers who buy a specific product or one of its variations*. - *Example:* Enrolling customers who bought your "Beginner's Yoga Course" into the corresponding "Yoga Students" space and course within FluentCommunity.
 
-> Important Note on Priority If a customer purchases a product that has a specific integration rule, the product-specific rule will always take priority over any global rules.
+> How global and product feeds combine When a customer buys a product that has its own feed, both the product feed and any matching global feeds run. Product feeds run first, then global feeds.
 
 ### Part 1: Global Integration (For All Products) ​
 
@@ -270,7 +279,7 @@ First, you'll need to go to the correct screen in your WordPress dashboard.
 
 #### Creating a New FluentCommunity Feed ​
 
-1. On the **Integrations & Addons** dashboard, click the **Add Integration** button at the top right.
+1. On the **Integrations** screen, click the **Add Integration** button at the top right.
 2. Select **FluentCommunity** from the dropdown menu. This will take you to the configuration screen for your new automation feed.
 
 ### Part 2: Product-Specific Integration ​
@@ -285,7 +294,7 @@ A product-specific integration is ideal for highly targeted automations, like gr
 #### Accessing Product Integrations ​
 
 1. Inside the product editor, you will see a series of tabs at the top. Click on the **Integrations** tab.
-2. On the Product Integrations screen, click the **Add Integration** button and select **FluentCommunity Feed**. This will open the feed configuration screen.
+2. On the Product Integrations screen, click the **Add Integration** button and select **FluentCommunity**. This will open the feed configuration screen.
 
 ### Part 3: Configuring the Integration Feed ​
 
@@ -294,23 +303,15 @@ Whether you are creating a global or a product-specific feed, the configuration 
 - **Feed Title:** Give your feed a descriptive name for your own internal reference (e.g., "Enroll in Beginner's Course" or "Add All Customers to Welcome Space").
 - **Add to Spaces:** Select one or more FluentCommunity Spaces you would like to automatically add the customer to upon purchase.
 - **Add to Courses:** Select one or more FluentCommunity Courses you would like to automatically enroll the customer in.
-- **Remove from Spaces:** (Optional) Select any Spaces you would like to automatically remove the customer from. This is useful if a new purchase moves them to a more advanced group.
-- **Remove from Courses:** (Optional) Select any Courses you would like to automatically unenroll the customer from.
+- **Remove From Spaces:** (Optional) Select any Spaces you would like to automatically remove the customer from. This is useful if a new purchase moves them to a more advanced group.
+- **Remove From Courses:** (Optional) Select any Courses you would like to automatically unenroll the customer from.
 - **Mark the community profile as verified:** Enable this option to automatically grant the customer a "verified" status within FluentCommunity, which can be used to signify them as a paying member.
-- **Remove from selected Courses/Spaces on Refund or Subscription Access Expiration:** This is a crucial automation feature. If enabled, FluentCart will automatically revoke the user's access to the selected spaces and courses if their order is refunded or their subscription expires.
+- **Remove from selected Courses/Spaces on Refund or Subscription Access Expiration:** This is a crucial automation feature. This box is checked by default. With it checked, FluentCart removes the customer from the selected spaces and courses when the order is fully refunded or canceled, or when the subscription's paid access expires. Canceling a subscription does not remove access until the paid period ends.
 - **Event Trigger:** Select the specific store event that will trigger this automation. The available Event Triggers are:
 
-- Order Paid (Payment / Subscription)
-- Order Canceled
-- Order Refunded (Full)
-- Subscription Activated
-- Subscription Canceled
-- Subscription Renewed
-- Subscription End of Term (Completed)
-- Subscription Expired / End of Access Validity
-- Shipping
-- Order Shipped
-- Order Delivered
+- **Orders:** Order Paid (Payment / Subscription), Order Canceled, Order Refunded (Full)
+- **Subscriptions:** Subscription Activated, Subscription Reactivated, Subscription Canceled, Subscription Renewed, Subscription End of Term (Completed), Subscription Expired / End of Access Validity
+- **Shipping:** Order Shipped, Order Delivered
 - **Run on Selected Variations Only (Product-Specific Only):** This powerful option appears only on product-specific integrations. It allows you to run the automation only when a customer purchases a specific variation of the product (e.g., a "Lifetime Access" tier). Leave this empty to have the feed run for all variations of this product.
 - **Enable this Integration:** Ensure the toggle at the top right is switched on to make the automation active. If it is disabled, the feed will be saved but will not run.
 
@@ -382,15 +383,15 @@ A global feed is perfect for tasks that should apply to all your customers, like
 
 Here, you'll decide exactly what happens in FluentCRM when the feed is triggered.
 
-- **Feed Title:** Give your feed a descriptive name that you'll recognize later, like "Add All Customers to Newsletter.
+- **Feed Title:** Give your feed a descriptive name that you'll recognize later, like "Add All Customers to Newsletter."
 - **Add to Lists:** Use this field to select the FluentCRM lists you want to add to a customer’s profile when this feed runs from the dropdown.
 - **Add to Tags:** Select the FluentCRM tag(s) you want to apply to all new customers. This is a great way to segment all your buyers for future marketing campaigns.
 - **Remove From Lists / Remove From Tags:** If needed, you can also select lists and tags to remove from a customer's profile.
 - **Note:** You can add a note that will be attached to the contact's profile in FluentCRM. This is great for internal records. You can even make the note dynamic by using shortcodes (click the {(...)} icon) to include customer or order data.
 - **Enable Double Opt-in:** It is highly recommended to keep this enabled. It sends a confirmation email to new contacts before they are subscribed, which is a best practice for maintaining a healthy and engaged email list.
-- **Event Trigger:** Select the specific store event that will trigger this automation. For most use cases, "Order Completed / Paid" is the best option, as it ensures only paying customers are added to your CRM.
-- **Remove from selected Tags/Lists on Refund or Subscription Access Expiration:** This is a handy automation. If you check this box, FluentCart will automatically remove the customer from the lists and tags you selected if their order is refunded or their subscription ends.
-- **Run on Selected Variations Only:** This setting allows this integration rule to run only when a customer buys a **specific product variation**. Select one or more variations from the dropdown to apply this rule exclusively to them. If you leave this field empty, the rule will apply to all variations of this product.
+- **Event Trigger:** Select the specific store event that will trigger this automation. For most use cases, **Order Paid (Payment / Subscription)** is the best option, as it ensures only paying customers are added to your CRM.
+- **Remove from selected Tags/Lists on Refund or Subscription Access Expiration:** This is a handy automation. If you check this box, FluentCart will automatically remove the customer from the lists and tags you selected if their order is fully refunded or canceled, or when their subscription's paid access runs out. Canceling a subscription does not remove anything on its own: access ends, and the tags and lists are removed, when the paid period expires.
+- **Run on Selected Variations Only (product-specific feeds only):** When you add this feed from a product's **Integrations** tab and the product has variations, you can limit the feed to the variations you pick. Leave it empty to run for all variations. This field does not appear on global feeds.
 - **Enable This Integration:** Ensure the toggle at the top right is switched on to make the automation active. If it is disabled, the integration will be saved but will not run.
 
 Once configured, click the **Create FluentCRM Feed** button. This global automation is now live and will run for every order in your store.
@@ -403,7 +404,7 @@ By combining both Global and Product-specific integrations, you can create a sop
 
 ### Advanced Marketing Automation with FluentCRM Triggers ​
 
-Beyond simply adding tags and lists, the FluentCart integration adds a powerful set of e-commerce triggers directly inside FluentCRM's automation builder. This allows you to create automated marketing funnels based on real-time events in your store. When you create a new automation in FluentCRM, you will find a new FluentCart trigger category. Here are the available triggers and what they do:
+Beyond simply adding tags and lists, the FluentCart integration adds a powerful set of e-commerce triggers directly inside FluentCRM's automation builder. This allows you to create automated marketing funnels based on real-time events in your store.
 
 When you create a new automation in FluentCRM, you will find a new **FluentCart** trigger category.
 
@@ -414,64 +415,43 @@ Here are the available triggers and what they do:
 - **Order Delivered:** Triggers when an order's status is changed to "Delivered." A great opportunity to ask for a product review.
 - **Order Refunded (Full):** Starts when a full refund is processed. You could use this to send a survey asking for feedback on why the customer requested a refund.
 - **Order Canceled:** Triggers when an order is canceled.
-- **Subscription Triggers:** A full suite of triggers for managing communication with your subscribers, including **Subscription Activated, Subscription Canceled, Subscription Renewed, and Subscription Expired**. These are essential for reducing churn and keeping subscribers engaged.
+- **Order Status Changed:** Starts when an order moves to a status you choose.
+- **Subscription Triggers:** A full suite of triggers for managing communication with your subscribers, including **Subscription Activated**, **Subscription Cancelled**, **Subscription Renewed**, **Subscription End of Term (Completed)**, and **Subscription Expired / End of Access Validity**. These are essential for reducing churn and keeping subscribers engaged.
 
 INFO
 
-These triggers are the starting point for powerful marketing funnels. For detailed, step-by-step guides on how to use these triggers to build onboarding sequences, cart abandonment funnels, and other advanced marketing automations, please see this [documentation](https://fluentcrm.com/docs/fluentcart-integration-with-fluentcrm/).
-### Use Case Example: Segmenting Customers by Location ​
+These triggers are the starting point for powerful marketing funnels. For detailed, step-by-step guides on how to use these triggers to build onboarding sequences, cart abandonment funnels, and other advanced marketing automations, please see this [documentation](https://fluentcrm.com/docs/fluentcart-integration-with-fluentcrm/). Abandoned cart tracking for FluentCart comes from FluentCRM's **Abandoned Cart** feature, not from FluentCart itself.
+### Use Case Example: Tagging Buyers of a Specific Product ​
 
-To better understand how this integration works in practice, let's imagine you run an online store that sells physical goods, like custom-printed t-shirts. Your goal is to identify all customers from a specific city (e.g., London) so you can send them a targeted email about a local pop-up shop you are hosting.
+You sell a "Beginner Photography Course" and want to email its buyers separately. Here is how you set up the feed:
 
-Here is how you would configure the FluentCRM feed to achieve this:
-
-- **Name:** 
+1. Open the course product and go to its **Integrations** tab.
+2. Click **Add Integration** and choose **FluentCRM**.
+3. **Feed Title:** 
 ```
-London Customer Segmentation
+Tag photography course buyers
 ```
-- **List:** 
+4. **Add to Lists:** 
 ```
 Main Customer List
 ```
-- **Tags (Dynamic Tag Inputs):**- **Tag:** 
+5. **Add to Tags:** 
 ```
-london-customer
+photography-course
 ```
-- **Condition:** IF 
+6. **Event Trigger:** **Order Paid (Payment / Subscription)**
+7. Make sure **Enable this Integration** is on, then click **Create FluentCRM Feed**.
+
+Every paying buyer of that course is added to your list and tagged 
 ```
-{order.billing.city}
+photography-course
 ```
 
- *equals* 
-```
-London
-```
+, so you can target them from a FluentCRM campaign or automation.
 
-.
-- **Event Trigger:** 
-```
-Order Completed
-```
-- **Status:** 
-```
-Enable This feed
-```
+INFO
 
-**Result:**
-
-With this configuration, every time an order with a London billing address is marked as "Completed" in FluentCart, the customer's information will be sent to FluentCRM. They will be added to your "Main Customer List" and will automatically be tagged as 
-```
-london-customer
-```
-
-.
-
-Inside FluentCRM, you can then create a new email campaign and, in the recipient settings, choose to send it *only* to contacts who have the 
-```
-london-customer
-```
-
- tag. This ensures your promotional email about the London pop-up shop is sent exclusively to the relevant local audience.
+Feeds apply fixed lists and tags; they have no conditions. To segment contacts by details such as their city, use FluentCRM's own segment filters.
 
 ---
 
@@ -485,6 +465,12 @@ FluentPlayer lets you add tutorial, demo, or trailer videos to your FluentCart p
 
 You can add a video by pasting a URL from YouTube, Vimeo, or a direct video file, or by reusing a video you've already uploaded to another product. Once saved, the video shows up as a gallery item with full playback controls, including skip, volume, and fullscreen.
 
+## Before You Start ​
+
+Videos need the free **FluentPlayer** plugin. If it isn't active, the **Video** tab shows an **Install & Activate FluentPlayer** button (or **Activate FluentPlayer** if it is installed but inactive). Save any unsaved changes to your product first, click the button, then click **Reload Page** when prompted. Only users who can install and activate plugins see the button; other users are asked to contact an administrator.
+
+You can attach up to 20 videos to one product.
+
 ## Step 1: Opening the Product Gallery ​
 
 Videos are added from the same screen where you manage a product's images.
@@ -493,14 +479,14 @@ Videos are added from the same screen where you manage a product's images.
 2. Open the product you want to add a video to.
 3. In the **Media** panel on the right, click **Add Media**.
 
-This opens the **Product Gallery** modal, where you'll find three tabs: **Gallery**, **Add by URL**, and **FluentPlayer**.
+This opens the **Product Gallery** modal, where you'll find the **Gallery** and **Video** tabs (and **Add by URL** where it is offered).
 
 ## Step 2: Adding a Video with FluentPlayer ​
 
-Switch to the **FluentPlayer** tab to add a new video or reuse one you've already uploaded.
+Switch to the **Video** tab to add a new video or reuse one you've already uploaded.
 
-1. Click the **FluentPlayer** tab.
-2. Under **Add a video**, paste a YouTube, Vimeo, audio, HLS, or direct video URL into the field. Alternatively, click the video icon next to the field to choose a file from your WordPress Media Library.
+1. Click the **Video** tab.
+2. Under **Add a video**, paste a YouTube, Vimeo, or direct video URL into the field (audio and HLS links also work). Alternatively, click the video icon next to the field to choose a file from your WordPress Media Library.
 3. Click **Add Video**.
 
 FluentPlayer automatically detects the source and pulls in the video's title and poster image, so you don't have to fill those in by hand.
@@ -515,10 +501,10 @@ If you've already added the same video to another product, you don't need to pas
 
 ## Step 3: Managing Videos in the Gallery ​
 
-Every video you add appears in a **Videos** list at the bottom of the **FluentPlayer** tab, showing its thumbnail, title, ID, and source. The tab label also shows a running count of videos already added to this product.
+Every video you add appears in a **Videos** list at the bottom of the **Video** tab, showing its thumbnail, title, ID, and source. The tab label also shows a running count of videos already added to this product.
 
 1. Repeat Step 2 to add more videos.
-2. Use the pencil icon to edit a video's details, or the trash icon to remove it from the gallery.
+2. Use the pencil icon (**Edit in FluentPlayer**) to open the video in FluentPlayer and change its details, or the trash icon (**Remove video**) to remove it from the gallery.
 
 INFO
 
@@ -552,7 +538,7 @@ First, ensure both FluentCart and Fluent Support are installed and active on you
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Integrations**.
 2. Scroll down to the **Integration Modules** section.
-3. Locate the **Fluent Support** module.
+3. Locate the **FluentSupport** module.
 4. You should see a green **Enabled** status badge. This means FluentCart recognizes Fluent Support, and the basic connection is active. No further action is needed here.
 
 ### Step 2: Creating Custom Fields in Fluent Support ​
@@ -594,16 +580,10 @@ Now, whenever a customer submits a ticket and selects that specific product, the
 Provide a great experience by adding a dedicated support section directly into the FluentCart customer account area.
 
 1. Navigate to **Fluent Support > Global Settings**.
-2. Scroll down to the bottom of the page.
-3. Check the box labeled **Add support link to Fluent Cart account navigation**.
-4. Click **Save Settings**.
+2. Under **Customer Portal**, select **FluentCart Account Navigation**.
+3. Click **Save Settings**.
 
-The Result: A new **Support** tab will now appear in the FluentCart customer dashboard (
-```
-/account/Support
-```
-
-). Customers can click this tab to view their existing support tickets and submit new ones without leaving your store's account area.
+The Result: A new **Support** tab appears in the FluentCart customer dashboard. Customers can open it to view their tickets and submit new ones without leaving your store's account area.
 
 ### Step 5: Linking Tickets to Products/Orders (Customer Experience) ​
 
@@ -622,11 +602,8 @@ This ensures that when the ticket arrives in your helpdesk, it's already linked 
 This feature requires no extra setup and works automatically thanks to the integration. It provides invaluable context for your support agents.
 
 1. When a support agent opens any ticket in **Fluent Support > Tickets**.
-2. Look at the right-hand sidebar. A **Purchases** widget will automatically appear if the customer who submitted the ticket has any purchase history in your FluentCart store.
-3. **What it shows:** This widget displays key information: - Customer's **Lifetime Value**.
-- A list of their recent FluentCart purchases, including product names, prices, order statuses, and direct links (#) to the orders in FluentCart.
-- Subscription details (if applicable).
-- License keys (if applicable).
+2. Look at the right-hand sidebar. A **FluentCart Purchases** widget will automatically appear if the customer who submitted the ticket has any purchase history in your FluentCart store.
+3. **What it shows:** **Lifetime Value**, **Paid Purchases**, **First Paid Order** and **Last Paid Order** dates, and a **Recent Purchases** list with product names, prices, statuses, and links to the orders. Subscription renewal details and license keys appear when they apply.
 4. **Benefit:** Your agents get immediate access to the customer's purchase history without needing to ask or switch screens. This allows them to understand the context quickly and provide faster, more accurate support.
 
 By following these steps and understanding these features, you can fully leverage the FluentCart-Fluent Support integration to create a highly efficient support system and a seamless experience for your customers.
@@ -639,15 +616,20 @@ By following these steps and understanding these features, you can fully leverag
 
 # Integrations & Addons ​
 
-The **Integrations & Addons** screen is your central hub for connecting FluentCart with other powerful plugins and services. By activating these modules, you can automate your marketing, improve email deliverability, enhance customer support, and extend the functionality of your e-commerce store.
+The **Integrations** screen is your central hub for connecting FluentCart with other powerful plugins and services. By activating these modules, you can automate your marketing, improve email deliverability, enhance customer support, and extend the functionality of your e-commerce store.
 
 This guide will walk you through the two main sections of this page: **Global Integrations Feeds** and **Integration Modules**.
 
-## Accessing the Integrations & Addons ​
+## Accessing the Integrations Screen ​
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro**.
 2. In the left-hand menu, click on **Integrations**.
 
+Only administrators see the **Integrations** menu item.
+
+INFO
+
+**LearnDash** and **LifterLMS** do not have module cards. They appear in the **Add Integration** list once FluentCart Pro and the LMS plugin are both active.
 ### Global Integrations Feeds ​
 
 This section, located at the top of the page, is where you create powerful, store-wide automation rules. A "feed" is a rule that is triggered by an event in your store (like a new order) and performs an action in another integrated service (like adding a customer to a list in FluentCRM).
@@ -664,19 +646,24 @@ This section, located at the bottom of the page, is where you manage the connect
 The activation process is largely automatic.
 
 - **If the required plugin is already installed and active:** FluentCart will automatically detect it, and you will see a green **Enabled** status badge. The integration is ready to be used.
-- **If the required plugin is not installed:** You will see a button like **Install FluentCommunity**. Clicking this will help you install and activate the necessary plugin. Once the plugin is active, the integration will automatically be enabled on this screen.
+- **If the required plugin is not installed:** You will see a button like **Install FluentCommunity**. Clicking this will help you install and activate the necessary plugin. Once the plugin is active, the integration will automatically be enabled on this screen. Installing needs a WordPress account that can install and activate plugins.
 
 To help you find what you need, you can also use the filter tabs (**ALL, CRM, LMS, CORE, MARKETING**) or the search bar to find a specific module.
 
 ### Available Integration Modules ​
 
-- [Webhook:](/guide/integrations/webhook-integration) For developers and advanced users, **Webhooks** allow you to send real-time data from your FluentCart store (like a new order) to any external service that can accept webhook notifications.
+Here are the modules you can enable from this screen:
+
+- [Webhook (Pro):](/guide/integrations/webhook-integration) For developers and advanced users, **Webhooks** allow you to send real-time data from your FluentCart store (like a new order) to any external service that can accept webhook notifications.
 - [FluentCRM:](/guide/integrations/fluentcrm-integration) Automate your email marketing. This powerful integration allows you to add customers to lists, apply tags based on what they buy, and trigger targeted follow-up email sequences after a purchase.
 - **FluentSMTP:** Ensure your store's emails get delivered. This module allows you to send all of FluentCart's transactional emails through a professional SMTP provider, improving deliverability. You don’t need any extra configuration to connect with FluentSMTP. Simply install FluentSMTP, and it will automatically integrate with your FluentCart.
 - [FluentCommunity:](/guide/integrations/fluentcommunity-integration) Create a seamless membership experience. This integration lets you automatically grant or revoke access to private courses and community spaces based on a customer's purchase or subscription status.
 - **FluentAuth:** Enhance your store's security and user experience. This integration allows you to customize the default WordPress login and registration pages, and add social login options for your customers. No extra settings are needed in FluentCart; simply install and configure the FluentAuth plugin, and it works automatically with your store.
-- **FluentForm:** FluentForm is listed on the Integrations screen under the categories so you can discover and install it in one click. If FluentForm is already active, the module shows an **Enabled** badge; if not, an **Install** button pulls it from the WordPress.org repository and activates it in the background. This module handles plugin discovery and installation only, it does not add a store-wide order feed or a checkout field on its own.
+- **Fluent Forms:** Fluent Forms is listed on the Integrations screen under the categories so you can discover and install it in one click. If Fluent Forms is already active, the module shows an **Enabled** badge; if not, an **Install** button pulls it from the WordPress.org repository and activates it in the background. This module handles plugin discovery and installation only, it does not add a store-wide order feed or a checkout field on its own.
 - **FluentSupport:** Streamline your customer service. This integration connects your e-commerce data with your helpdesk, allowing your support agents to view a customer's purchase history directly from their support tickets in FluentSupport.
+- **WP User Create/Update (Pro):** Creates or updates a WordPress user with the role you choose when an order event fires. Use it to give buyers a custom role, for example a members-only role.
+
+**FluentCRM**, **FluentSMTP**, **FluentCommunity**, **FluentAuth**, **Fluent Forms**, and **FluentSupport** work with the free FluentCart plugin. **Webhook** and **WP User Create/Update** need FluentCart Pro. Without Pro, those two cards show a **Pro** badge and an **Upgrade to Pro** button.
 
 #### Other Key Integrations ​
 
@@ -709,7 +696,7 @@ This guide will show you how to activate the integration and configure enrollmen
 
 ## Activating the LearnDash Integration ​
 
-First, ensure you have both **FluentCart** and **LearnDash** installed and active on your WordPress site. The basic connection is automatic.
+The LearnDash integration is part of **FluentCart Pro**. Make sure **FluentCart**, **FluentCart Pro**, and **LearnDash** are installed and active. There is no module to switch on: once all three are active, **LearnDash** appears in the **Add Integration** list.
 
 ## Configuring Enrollment Rules (Integration Feeds) ​
 
@@ -754,10 +741,7 @@ Here’s what each setting does:
 - **Feed Title:** Give your rule a clear name that you'll easily recognize later (e.g., "Enroll in Learn Python Course" or "Add Subscribers to Student Group").
 - **Add to Courses:** Use the dropdown menu to select the LearnDash courses you want to enroll the user in when this rule runs.
 - **Add to LearnDash Groups:** Similarly, select any LearnDash group(s) you want to add the user to.
-- **Remove from selected Courses/Groups on Refund or Subscription Access Expiration:** This is a vital setting for managing access automatically. Check this box if you want FluentCart to automatically remove the user from the selected courses/groups if their related order is refunded, or if their subscription expires or is canceled.
-- **Set Course Expiration from Subscription / License Expiry:** Enable this option to automatically expire the customer's LearnDash course access on the same date as their **subscription expiration** or **license expiration**. When the underlying commercial relationship ends — the subscription lapses or the license reaches its expiry date — LearnDash receives the same expiry date for the enrolled course(s), so the customer loses access at exactly the right moment. This keeps course access aligned with billing instead of letting the two systems drift apart. - Use this for **membership-style course bundles** where access is tied to an ongoing subscription.
-- Use this for **time-limited licensed courses** where each license carries its own expiry (e.g., a one-year course license).
-- If both a subscription and a license are connected to the order, FluentCart will use whichever expiry is earliest, so the customer never keeps access past either deadline.
+- **Remove from selected Courses/Groups on Refund or Subscription Access Expiration:** This box is checked by default. With it checked, FluentCart unenrolls the customer from the selected courses and groups when the order is fully refunded or canceled, or when the subscription's paid access expires. Canceling a subscription does not remove access right away; access ends when the paid period runs out. If you uncheck it, an expired subscription blocks the course without removing the enrollment, so the student's progress is kept and access returns if they renew. In that case, add **Subscription Expired / End of Access Validity** to **Event Trigger** so the block is applied.
 - **Event Trigger:** Select the FluentCart action from the dropdown that runs this rule. For course access after purchase, you can use 
 ```
 Order Paid (Payment / Subscription)
@@ -767,7 +751,18 @@ Order Paid (Payment / Subscription)
 - **Run on Selected Variations Only (Available for Product-Specific Feeds Only):** If the product has different variations (e.g., "Basic Access," "Premium Access"), you can use this dropdown to make the rule run only when a specific variation is purchased. Leave empty to apply to all variations.
 - **Enable this Integration:** Make sure this toggle at the top right is switched **ON** (blue) to make the rule active.
 
-Click **Create LearnDash Feed** (or similar button) to save your rule.
+Click **Create LearnDash Feed** to save your rule.
+
+### How Course Expiry Works ​
+
+You don't need to turn anything on. When the feed enrolls a customer, FluentCart sets the LearnDash course expiry automatically:
+
+- If the order has a subscription, access lasts until the subscription's next billing date.
+- If there is no subscription but the order has a license, access lasts until the license expiry date.
+- If there is neither (a one-time purchase), no expiry is set.
+- When a subscription finishes all its installments, the expiry is removed and access becomes permanent.
+
+To move the expiry forward each time a subscription renews, also select **Subscription Renewed** in **Event Trigger**. On a renewal, FluentCart only extends the expiry and clears any block; it does not re-enroll the student.
 
 ### Use Case Example: Selling a Course Bundle ​
 
@@ -786,14 +781,14 @@ With these simple, product-specific rules, FluentCart automatically handles the 
 
 ### Use Case Example: Time-Limited Membership Course ​
 
-If you sell course access as a yearly subscription or a time-limited license, you can use **Set Course Expiration from Subscription / License Expiry** to keep LearnDash and FluentCart perfectly in sync:
+If you sell course access as a yearly subscription, FluentCart keeps LearnDash and your billing in sync:
 
 1. Create a subscription product (e.g., "Annual Photography Membership") in FluentCart.
 2. On the product, add a LearnDash feed and select the courses included in the membership.
-3. Enable **Set Course Expiration from Subscription / License Expiry** in the feed.
-4. Set Trigger to **Order Paid (Payment / Subscription)**.
+3. Set **Event Trigger** to **Order Paid (Payment / Subscription)** and **Subscription Renewed**.
+4. Leave **Remove from selected Courses/Groups on Refund or Subscription Access Expiration** checked.
 
-When a customer subscribes, LearnDash gives them access until the subscription's next expiry date. If they renew, the course expiry rolls forward automatically. If they cancel or fail to renew, course access ends on the same day as their subscription — no manual cleanup required, and no risk of a customer losing access early or keeping it for free.
+When a customer subscribes, LearnDash gives them access until the subscription's next billing date. Each renewal moves that date forward. If they cancel, they keep access until the period they paid for ends.
 
 ---
 
@@ -807,9 +802,9 @@ Connecting FluentCart with LifterLMS allows you to sell access to your online co
 
 This guide will show you how to activate the integration and configure enrollment rules using Integration Feeds.
 
-### Activating the LifterLMS Integration ​
+## Activating the LifterLMS Integration ​
 
-First, ensure you have both FluentCart and LifterLMS installed and active on your WordPress site.
+The LifterLMS integration is part of **FluentCart Pro**. Make sure **FluentCart**, **FluentCart Pro**, and **LifterLMS** are installed and active. Once they are, **LifterLMS** appears in the **Add Integration** list.
 
 ## Configuring Enrollment Rules (Integration Feeds) ​
 
@@ -817,7 +812,7 @@ The center of this integration is setting up **Integration Feeds**. An integrati
 
 You can create these feeds in two different locations:
 
-- **Globally:** These are rules that apply to your *entire* store. They are useful for broad, general actions. For example, you could make a global rule to remove any user from a membership if their subscription is canceled, no matter what product they bought.
+- **Globally:** These are rules that apply to your *entire* store. They are useful for broad, general actions. For example, you could make a global rule that enrolls every paying customer in a "Members" membership.
 - **Product Specific:** This rule applies *only* to one specific product. This is the most common and recommended way to sell your courses. For example, "When a customer buys the 'Content Writing Course' product, enroll them in the 'Writing 101' LifterLMS course."
 
 ---
@@ -828,7 +823,7 @@ You have two ways to create these enrollment rules, depending on whether you wan
 
 #### Method 1: Creating a Global Feed ​
 
-Choose this option to create a "catch-all" rule that runs for *any* order or subscription in your store. This is perfect for broad actions, like a site-wide rule that revokes access from a membership if *any* subscription expires.
+Choose this option to create a "catch-all" rule that runs for *any* order or subscription in your store. This is perfect for broad actions, like a site-wide rule that enrolls every new subscriber in a general membership.
 
 1. From your WordPress dashboard, go to **FluentCart Pro > Integrations**.
 2. Look for the **Global Integrations Feeds** section at the top of the page.
@@ -862,13 +857,13 @@ Enroll in Content Writing Course
 
  or 
 ```
-Global Refund Rule
+Enroll All Members
 ```
 
 .
 - **Add to Courses:** Click in this box to select one or more LifterLMS courses. When this rule runs, the customer will be enrolled in the course(s) you pick here.
 - **Add to Memberships:** This works just like the 'Add to Courses' setting. Click here to select one or more LifterLMS memberships to add the customer to.
-- **Remove from selected Courses/Memberships on Refund or Subscription Access Expiration:** This is a very important setting for protecting your content. Check this box if you want FluentCart to automatically *unenroll* the customer from the courses or memberships you selected above. This will happen if their order is refunded or their subscription expires or is canceled.
+- **Remove from selected Courses/Memberships on Refund or Subscription Access Expiration:** This is a very important setting for protecting your content. This box is checked by default. With it checked, FluentCart automatically *unenrolls* the customer from the courses or memberships you selected above when the order is fully refunded or canceled, or when the subscription's paid access expires. Canceling a subscription does not remove access right away; access ends when the paid period runs out.
 - **Event Trigger:** Choose the specific action in FluentCart that should make this rule run. This is the "when" part of your automation. A full list of triggers includes: - **Orders**- ```
 Order Paid (Payment / Subscription)
 ```
@@ -883,12 +878,17 @@ Order Canceled
 Order Refunded (Full)
 ```
 
-: Runs if an order is fully refunded. This is useful for global rules that revoke access.
+: Runs if an order is fully refunded.
 - **Subscriptions**- ```
 Subscription Activated
 ```
 
 : Runs when a subscription's status becomes active.
+- ```
+Subscription Reactivated
+```
+
+: Runs when a canceled or paused subscription becomes active again.
 - ```
 Subscription Canceled
 ```
@@ -924,6 +924,9 @@ Order Delivered
 
 Click the **Create LifterLMS Feed** button to save your rule.
 
+INFO
+
+To remove access, don't build a separate rule around a refund or cancellation trigger. Check **Remove from selected Courses/Memberships on Refund or Subscription Access Expiration** on the feed that grants access. LifterLMS feeds always enroll when their trigger fires, so a feed whose trigger is **Order Refunded (Full)** would enroll the customer instead of removing them.
 ### Use Case Example: Selling a Course Bundle ​
 
 Let's illustrate how product-specific feeds make selling multiple courses simple. Imagine you offer two LifterLMS courses, but you sell them using three different FluentCart products:
@@ -958,7 +961,7 @@ Order Paid (Payment / Subscription)
 - Check the "Remove..." box.
 3. **Inside "The Full Photography Bundle" Product:**
 
-- Add a LifterLFMS feed.
+- Add a LifterLMS feed.
 - In **"Add to Courses,"** select *both* the "Beginner Photography" course AND the "Advanced Editing Masterclass" course.
 - Set **Event Trigger** to 
 ```
@@ -982,7 +985,10 @@ Webhooks are a powerful tool for developers and advanced users that allow you to
 
 This is useful for creating custom integrations, connecting to services that aren't natively supported, or building your own data processing workflows. This guide will walk you through setting up a new webhook.
 
-### Step 1: Navigate to Integartions ​
+INFO
+
+Webhooks are part of **FluentCart Pro**.
+### Step 1: Navigate to Integrations ​
 
 First, you'll need to go to the correct screen in your WordPress dashboard.
 
@@ -998,7 +1004,37 @@ On this page, you will see all of your global integration feeds. To get started,
 This is where you'll tell FluentCart what data to send, where to send it, and when.
 
 - **Integration Title:** Give your webhook a name that's easy to remember, like "Send New Sales to Slack" or "Sync Orders with Accounting."
-- **Request URL:** This is the most important part. Paste the unique URL from the other application where you want to send the data.
+- **Request URL:** This is the most important part. Paste the URL the other application gave you for receiving webhooks. It must be a public 
+```
+http://
+```
+
+ or 
+```
+https://
+```
+
+ address. FluentCart rejects private, local, and loopback addresses (such as 
+```
+localhost
+```
+
+, 
+```
+127.0.0.1
+```
+
+, 
+```
+10.x.x.x
+```
+
+, or 
+```
+192.168.x.x
+```
+
+) when you save the feed, and checks again before each send. If a send is blocked, the reason is written to the order's activity log.
 - **Request Method:** This tells the receiving server what kind of action to perform. POST is the most common method for sending new data. You can also choose **GET**, **PUT**, **PATCH**, or **DELETE** for other advanced uses.
 - **Request Format:** Choose how your data will be structured. You have two options:
 
@@ -1014,35 +1050,35 @@ This is where you'll tell FluentCart what data to send, where to send it, and wh
 - **Selected Fields:** This gives you full control. You can choose exactly which pieces of data to send. For each field, you'll define a **Payload Key** (the name of the data field) and then select the specific Value you want to send from the dropdown.
 - **Event Trigger:** This is the "when." Click the **Select Event** box to choose the specific action in your store that will trigger this webhook. You can select one or more events.
 
-Some of the available triggers include:
+The available triggers are:
 
-- Order Paid (Payment / Subscription)
-- Order Canceled
-- Order Refunded (Full)
-- Subscription Activated
-- Subscription Renewed
-- Order Shipped
-- Order Delivered
+- **Orders:** Order Paid (Payment / Subscription), Order Canceled, Order Refunded (Full)
+- **Subscriptions:** Subscription Activated, Subscription Reactivated, Subscription Canceled, Subscription Renewed, Subscription End of Term (Completed), Subscription Expired / End of Access Validity
+- **Shipping:** Order Shipped, Order Delivered
 
 This screen contains all the settings required to define what data is sent, where it's sent, and what triggers it.
 
-#### Step 4: Save and Activate the Webhook ​
+### Step 4: Save and Activate the Webhook ​
 
-- **Enable This Feed:** At the top right of the screen, ensure the toggle is switched on to make the webhook active.
+Finally, switch the feed on and save it.
+
+- **Enable this Integration:** At the top right of the screen, make sure this toggle is on to make the webhook active.
 - Click the **Create Webhook Feed** button at the bottom to save your configuration.
 
 That's it! Your webhook is now live. Whenever the event you selected occurs, FluentCart will automatically send the data you configured to your URL.
 
 ### Managing Your Webhooks ​
 
-After creating a webhook, it will appear in a list on the main Webhooks screen. This dashboard provides a clear overview of all your webhooks and allows you to manage them easily.
+After you create a webhook, it appears in the **Global Integrations Feeds** table on the **Integrations** screen, alongside your other feeds. The table shows **Enabled**, **Integration**, **Title**, and **Triggers** for each feed.
 
 For each webhook, you can:
 
-- **See its Status:** The "Enabled" column shows if a webhook is active or not.
+- **See its Status:** The **Enabled** column shows if a webhook is active or not.
 - **Enable/Disable:** Use the toggle to quickly turn a webhook on or off without deleting it.
 - **Edit:** Click on the webhook's title or an edit icon to change its settings.
 - **Delete:** Use the trash can icon to permanently remove a webhook.
+
+To send a webhook only for one product, add it from that product's **Integrations** tab instead.
 
 ---
 

@@ -12,7 +12,7 @@
 
 FluentCart ships with a built-in **Storage** layer that decides where your digital product files, downloadable assets, and related media are physically saved and served from. You can keep everything on your own server, or offload to a cloud storage provider for better performance, reliability, and scalability.
 
-From your WordPress dashboard, you will find a dedicated **Storage** menu in the FluentCart sidebar, with a sub-menu for each supported cloud provider.
+To manage storage, go to **FluentCart** > **Settings** > **Storage Settings**. The **Storage Providers** screen lists every provider. Only site administrators can see it.
 
 ## Why Storage Matters ​
 
@@ -43,50 +43,45 @@ Amazon S3 is AWS's cloud object storage — the industry standard for offloading
 
 Cloudflare R2 is Cloudflare's object storage — S3-compatible at the API level, but delivered through Cloudflare's global network with **zero egress fees**. Choose R2 if you have media-heavy downloads, international customers, or want predictable costs as traffic grows.
 
+Cloudflare R2 requires **FluentCart Pro**. Without Pro, the R2 row shows an **Upgrade to Pro** button. Local Storage and Amazon S3 are included in the free plugin.
+
 [Read the full Cloudflare R2 setup guide →](/guide/storage/cloudflare-r2)
 
 ## Provider List, Enable / Disable, and Edit ​
 
-Inside the **Storage** menu, each provider is listed as a card with:
+On the **Storage Providers** screen, each provider shows an **Active** or **Inactive** badge. **Local** has an on/off toggle right in the list.
 
-- An **Active / Inactive** toggle — flip a provider on or off without losing its configuration.
-- An **Edit** button — update credentials, swap the bucket, or adjust security settings any time.
-- A **connection status** banner once connected, with a **Check again** action to re-verify the connection on demand.
+Click **Amazon S3** or **Cloudflare R2** (or its **Manage** button) to open its settings page. There you'll find these controls:
 
-You can configure multiple providers and switch the active one as your needs change.
+- **Active** toggle: turn the provider on or off without losing its configuration.
+- **Check again**: re-verify the connection.
+- **Edit Config**: change credentials or bucket.
+- **Reset**: clear all settings after confirmation.
+
+More than one provider can be active at the same time. When you add a downloadable file, the **Storage Providers** dialog shows a tab for each active provider, so you choose where each file goes.
 
 ## Security Model ​
 
 FluentCart takes credential safety seriously. Both S3 and R2 let you pick how credentials are stored:
 
 - **Define in wp-config.php** *(Recommended)* — keys live in your WordPress configuration file, never in the database. The UI detects the constants and locks the credential fields so nothing overrides them from the admin.
-- **Store in the database** — available when you need UI-only configuration, with an explicit acknowledgement of the reduced security posture.
+- **Store credentials in the database**: for UI-only setups. The option is labelled less secure, but there is no acknowledgement checkbox. It is disabled while keys are defined in 
+```
+wp-config.php
+```
+
+.
 
 For Amazon S3, a dedicated **Security step** additionally lets you enforce *Block All Public Access* and *Object Ownership* on your bucket.
 
 ## Saving Changes ​
 
-After any change to your Storage configuration, click the relevant **Save** button (
-```
-Save & Continue
-```
+After any change to your Storage configuration, click the relevant button to apply it:
 
-, 
-```
-Save Selected Bucket
-```
+- Amazon S3: **Save & Continue** (credentials), then **Next** or **Create Bucket & Continue** (bucket), then **Save Settings** (security).
+- Cloudflare R2: **Save & Continue**, then **Save Settings** or **Create Bucket & Save**.
 
-, 
-```
-Create New Bucket
-```
-
-, or 
-```
-Save Settings
-```
-
-) to apply the change. FluentCart will verify the connection where applicable before marking the provider as connected.
+FluentCart verifies the connection where applicable before marking the provider as connected.
 
 ---
 
@@ -194,8 +189,8 @@ Keep the two keys handy — you will paste them into FluentCart in the next sect
 
 From your WordPress dashboard:
 
-1. Go to **FluentCart → Storage**.
-2. Click **Amazon S3** in the sub-menu.
+1. Go to **FluentCart** > **Settings** > **Storage Settings**.
+2. Click **Amazon S3** (or its **Manage** button).
 
 You will land on the Amazon S3 configuration wizard. Setup is split into three steps:
 
@@ -207,13 +202,13 @@ You will land on the Amazon S3 configuration wizard. Setup is split into three s
 
 ## Step 1 — Credential ​
 
-FluentCart supports two ways to supply your AWS access keys.
+The step is titled **Verify Access Keys**. FluentCart supports two ways to supply your AWS access keys.
 
 ### Method A — Define Access Keys in wp-config.php (Recommended) ​
 
 This is the most secure option. Your keys live in your WordPress configuration file, never in the database, and are not readable from the admin UI.
 
-Copy the snippet below **near the top** of your 
+Select **Define access keys in wp-config.php (Recommended)**. The option has a **Copy Snippet** button. Copy the snippet below **near the top** of your 
 ```
 wp-config.php
 ```
@@ -229,25 +224,20 @@ php
 ```
 define( 'FCT_S3_ACCESS_KEY', 'your-access-key-id' );
 define( 'FCT_S3_SECRET_KEY', 'your-secret-access-key' );
-```Once FluentCart detects these constants, the credential fields in the UI are automatically locked, and the Connection Method card will tell you the keys have been picked up from your 
-```
-wp-config.php
-```
-
-.
+```Once FluentCart detects the constants, this option reads "You have already defined your credentials in wp-config.php." and the database option is disabled.
 
 > Heads up: to later switch to a different method here, comment out or remove the FCT_S3_ACCESS_KEY and FCT_S3_SECRET_KEY defines from wp-config.php and reload the page.
 
 ### Method B — Store Access Keys in the Database ​
 
-Available when you need UI-only configuration. Keys are saved to the database, which is inherently less secure than a file-based constant — an acknowledgement is shown before you proceed.
+Available when you need UI-only configuration. Keys are saved to the database, which is less secure than a file-based constant.
 
-Select **"I understand the risks but I'd like to store access keys in the database."** Then enter:
+Select **Store credentials in the database**, then enter:
 
-- **Access Key** — your AWS Access Key ID.
-- **Secret Key** — your AWS Secret Access Key.
+- **Access Key**: your AWS Access Key ID.
+- **Secret Key**: your AWS Secret Access Key.
 
-Click **Save & Continue** to move on to the bucket step.
+Click **Save & Continue**. FluentCart checks the keys before moving on to the bucket step.
 
 > No access keys yet? Head back to Obtaining AWS Access Keys above for the full IAM walkthrough.
 
@@ -255,33 +245,33 @@ Click **Save & Continue** to move on to the bucket step.
 
 ## Step 2 — Bucket ​
 
-An S3 **bucket** is a named storage container inside your AWS account. FluentCart gives you three ways to pick or create one.
+An S3 **bucket** is a named storage container inside your AWS account. On the **Choose where files live** screen, you either connect an existing bucket (typed in or picked from a list) or create a new one.
 
-### Option 1 — Use Existing Bucket, Entered Manually ​
+### Option 1 — Connect an Existing Bucket, Entered Manually ​
 
 If you already know the exact name of the bucket you want to use, type it directly.
 
-1. Select **Use Existing Bucket**.
-2. Choose **Enter bucket name**.
-3. Type the bucket name and click **Save Selected Bucket**.
+1. Select **Connect an existing bucket**.
+2. Under **Bucket name**, choose **Enter bucket name**.
+3. Type the bucket name and click **Next**.
 
-### Option 2 — Use Existing Bucket, Browse From AWS ​
+### Option 2 — Connect an Existing Bucket, Selected From AWS ​
 
-FluentCart can fetch the list of buckets attached to the connected AWS account so you can pick from a dropdown — no copy-pasting names, no typos.
+FluentCart can fetch the list of buckets in the connected AWS account so you can pick one, with no copy-pasting and no typos.
 
-1. Select **Use Existing Bucket**.
-2. Choose **Browse existing buckets**.
-3. Click the refresh icon if you do not see a bucket you just created.
-4. Click the bucket you want and click **Save Selected Bucket**.
+1. Select **Connect an existing bucket**.
+2. Under **Bucket name**, choose **Select from existing**.
+3. Use the **Search buckets** box to filter the list, or click **Reload bucket list** if you do not see a bucket you just created.
+4. Click the bucket you want, then click **Next**.
 
 ### Option 3 — Create a New Bucket From the UI ​
 
 No need to switch to the AWS console. FluentCart can create a fresh S3 bucket in the region you pick.
 
-1. Select **Create New Bucket**.
+1. Select **Create a new bucket**.
 2. Enter a **Bucket Name**. Bucket names must be unique across **all of AWS globally**, follow DNS-style naming (lowercase letters, numbers, hyphens), and cannot be reused after deletion for a while.
 3. Choose a **Region** — pick the one geographically closest to most of your customers (for example, **US East (N. Virginia)** for the Americas, **EU (Frankfurt)** for Europe).
-4. Click **Create New Bucket**. FluentCart will create the bucket in AWS and select it for you automatically.
+4. Click **Create Bucket & Continue**. FluentCart creates the bucket in AWS and selects it for you.
 
 > Region tip: once a bucket exists, its region is fixed. If you change your mind later, you create a new bucket in the new region and move your files over.
 
@@ -289,7 +279,7 @@ No need to switch to the AWS console. FluentCart can create a fresh S3 bucket in
 
 ## Step 3 — Security ​
 
-This step configures two bucket-level protections on AWS.
+This step is titled **Review protection settings** and configures two bucket-level protections on AWS. Each toggle shows a **Recommended** badge when on and **Review** when off.
 
 ### Block All Public Access ​
 
@@ -317,12 +307,12 @@ Once all three steps are complete, the Amazon S3 card shows the provider as **Ac
 
 What each element does:
 
-- **Active toggle** — enable or disable this storage provider without losing its configuration.
-- **Edit** — re-enter the wizard and change credentials, bucket, or security.
-- **Bucket name link** — opens the bucket in the AWS console.
-- **Region label** — the AWS region your bucket lives in.
-- **Check again** — re-runs FluentCart's connection verification against S3 on demand.
-- **Security Configuration cards** — quick visual of Block All Public Access + Object Ownership state.
+- **Active toggle**: turn the provider on or off without losing its configuration.
+- **Check again**: re-verify the connection.
+- **Edit Config**: re-open the wizard to change credentials, bucket, or security.
+- **Reset**: clear all S3 settings after confirmation.
+
+Below the buttons, info rows show the **Bucket** (links to the bucket in the AWS console), **Region**, **Authentication** (Defined mode or Database mode) and **Security posture** (for example "Public access blocked, ownership enforced").
 
 ---
 
@@ -340,8 +330,8 @@ Once connected, all digital product uploads flow through your S3 bucket automati
 
 Need to rotate your AWS keys, point FluentCart to a different bucket, or tighten the security settings?
 
-1. From **FluentCart → Storage → Amazon S3**, click **Edit**.
-2. Move through the Credential → Bucket → Security wizard again.
+1. From **Settings** > **Storage Settings** > **Amazon S3**, click **Edit Config**. The wizard opens at the bucket step when a bucket is already set. Use **Back** or the step indicator to reach credentials, and **Cancel** to leave without changes.
+2. Move through the Credential, Bucket and Security steps as needed.
 3. Only the fields you change need to be updated.
 
 You do **not** need to disconnect and reconnect — existing assets stay referenced correctly.
@@ -404,15 +394,16 @@ s3:DeleteObject
 ).
 - If you rotated keys recently, make sure the old key is deactivated and you are using the current one.
 
-**"Browse existing buckets" shows nothing.**
+**"Select from existing" shows no buckets.**
 
+- The list reads "No buckets found or credentials are invalid."
 - The IAM user lacks 
 ```
 s3:ListAllMyBuckets
 ```
 
 .
-- The account genuinely has no buckets yet — switch to **Create New Bucket**.
+- The account genuinely has no buckets yet. Switch to **Create a new bucket**.
 
 **Bucket creation fails with a name conflict.**
 
@@ -425,7 +416,7 @@ yourstore-fluentcart-assets
 
 **Files upload but customers cannot download them.**
 
-- *Block All Public Access* is likely **Enabled** (good) — FluentCart serves files through signed URLs in this mode, so confirm your digital product is configured to use S3 as its storage driver.
+- *Block All Public Access* is likely **Enabled** (good) — FluentCart serves files through signed URLs in this mode, so confirm the file was uploaded under the **Amazon S3** tab of the **Storage Providers** dialog when you added it to the product.
 
 **I defined FCT_S3_ACCESS_KEY / FCT_S3_SECRET_KEY but the UI still shows empty fields.**
 
@@ -451,7 +442,7 @@ FCT_S3_SECRET_KEY
 
 ## FAQs ​
 
-**Can I run S3 and Cloudflare R2 at the same time?** Yes — you can configure both and switch which one is active.
+**Can I run S3 and Cloudflare R2 at the same time?** Yes. You can configure both and keep both active. When you add a downloadable file, the **Storage Providers** dialog shows a tab for each active provider, so you choose where each file goes.
 
 **Is my secret key visible from the WordPress admin after I save it?** No. With Method A, keys live only in 
 ```
@@ -485,10 +476,10 @@ FluentCart ships with a **native** R2 driver. This means R2 is a first-class sto
 
 ## Accessing Cloudflare R2 Settings ​
 
-From your WordPress dashboard:
+Cloudflare R2 requires **FluentCart Pro**. From your WordPress dashboard:
 
-1. Go to **FluentCart → Storage**.
-2. Click **Cloudflare R2** in the sub-menu.
+1. Go to **FluentCart** > **Settings** > **Storage Settings**.
+2. Click **Cloudflare R2** (or its **Manage** button).
 
 R2 setup has two steps:
 
@@ -505,7 +496,7 @@ Before you connect R2 to FluentCart, you need:
 
 - A **Cloudflare account** with **R2 enabled** (R2 must be opted into from your Cloudflare dashboard — it is free to enable).
 - Your **Cloudflare Account ID**.
-- An **R2 API token** with **Object Read & Write** permissions, which gives you an **Access Key ID** and **Secret Access Key**.
+- An **R2 API token** with **Admin Read & Write** (or **Object Read & Write** scoped to your bucket, if you don't need to list or create buckets from FluentCart), which gives you an **Access Key ID** and **Secret Access Key**.
 
 ### Getting Credentials From Cloudflare ​
 
@@ -561,8 +552,8 @@ R2 Account Token for FluentCart
 ```
 
 . This is just a label for your own bookkeeping.
-- **Permissions** — select **Admin Read & Write**. This is the right level for FluentCart because it allows the full set of operations the plugin needs: - Listing buckets (so "Browse existing buckets" works in the UI)
-- Creating buckets (so "Create New Bucket" works in the UI)
+- **Permissions** — select **Admin Read & Write**. This is the right level for FluentCart because it allows the full set of operations the plugin needs: - Listing buckets (so **Select from existing** works in the UI)
+- Creating buckets (so **Create a new bucket** works in the UI)
 - Reading, writing, and deleting objects inside buckets (so uploads, downloads, and file management work)
 - **TTL (Time to live)** — choose **Forever**. You do not want your store's storage driver to silently stop working when a token expires. If your security policy requires token rotation, pick a date you can actually track and set a calendar reminder to rotate the token before it expires.
 - **Client IP Address Filtering** *(optional)* — leave blank unless your store runs from a known, fixed set of server IPs. If you do restrict by IP, remember to add any load balancer or cron-runner IPs too, or uploads from background processes will fail.
@@ -618,24 +609,19 @@ php
 define( 'FCT_R2_ACCOUNT_ID', 'your-account-id' );
 define( 'FCT_R2_ACCESS_KEY', 'your-access-key-id' );
 define( 'FCT_R2_SECRET_KEY', 'your-secret-access-key' );
-```Once FluentCart detects these constants, the credential fields lock automatically and the Connection Method card confirms the keys were picked up from 
-```
-wp-config.php
-```
-
-. The in-app snippet includes a **Copy Snippet** button to make this paste-in friendlier.
+```Once FluentCart detects these constants, the **Define access keys in wp-config.php** option reads "You have already defined your R2 credentials in wp-config.php." and the database option is disabled. The in-app snippet includes a **Copy Snippet** button to make this paste-in friendlier.
 
 > Heads up: to later switch to a different method here, comment out or remove the FCT_R2_ACCOUNT_ID, FCT_R2_ACCESS_KEY, and FCT_R2_SECRET_KEY defines from wp-config.php and reload the page.
 
 ### Method B — Store Access Keys in the Database ​
 
-Available when you need UI-only configuration. Keys are saved to the database; an explicit acknowledgement is required.
+Available when you need UI-only configuration. Keys are saved to the database.
 
-Select **"I understand the risks but I'd like to store access keys in the database anyway."** Then enter:
+Select **Store credentials in the database**, then enter:
 
-- **Account ID** — your Cloudflare Account ID.
-- **Access Key ID** — from your R2 API token.
-- **Secret Access Key** — from your R2 API token.
+- **Account ID**: your Cloudflare Account ID.
+- **Access Key**: the Access Key ID from your R2 API token.
+- **Secret Key**: the Secret Access Key from your R2 API token.
 
 Click **Save & Continue** to move to the bucket step.
 
@@ -643,39 +629,39 @@ Click **Save & Continue** to move to the bucket step.
 
 ## Step 2 — Bucket ​
 
-An R2 **bucket** is a named storage container inside your Cloudflare account. FluentCart gives you three ways to pick or create one.
+An R2 **bucket** is a named storage container inside your Cloudflare account. On the **Choose where files live** screen, you either connect an existing bucket (typed in or picked from a list) or create a new one.
 
-### Option 1 — Use Existing Bucket, Entered Manually ​
+### Option 1 — Connect an Existing Bucket, Entered Manually ​
 
 If you already know the name of the bucket you want to use, type it directly.
 
-1. Select **Use Existing Bucket**.
-2. Choose **Enter bucket name**.
+1. Select **Connect an existing bucket**.
+2. Under **Bucket name**, choose **Enter bucket name**.
 3. Type the bucket name and click **Save Settings**.
 
-### Option 2 — Use Existing Bucket, Browse From Cloudflare ​
+### Option 2 — Connect an Existing Bucket, Selected From Cloudflare ​
 
-FluentCart can fetch the buckets attached to your Cloudflare account so you can pick one from the list.
+FluentCart can fetch the buckets in your Cloudflare account so you can pick one from the list.
 
-1. Select **Use Existing Bucket**.
-2. Choose **Browse existing buckets**.
-3. Click the refresh icon if a bucket you just created is not visible.
+1. Select **Connect an existing bucket**.
+2. Under **Bucket name**, choose **Select from existing**.
+3. Use the **Search buckets** box to filter the list, or click **Reload bucket list** if a bucket you just created is not visible.
 4. Click the bucket you want, then **Save Settings**.
 
 ### Option 3 — Create a New Bucket From the UI ​
 
-No need to switch over to the Cloudflare dashboard. FluentCart can create a fresh R2 bucket in the jurisdiction you pick.
+No need to switch over to the Cloudflare dashboard. FluentCart can create a fresh R2 bucket in the region you pick.
 
-1. Select **Create New Bucket**.
-2. Enter a **Bucket Name**. R2 bucket names must be **globally unique across all Cloudflare R2 accounts** — this is called out directly in the UI.
-3. Choose a **Region / Jurisdiction** (see the table below). **Automatic** is a safe default and lets Cloudflare pick the best fit.
-4. Click **Save Settings**. FluentCart creates the bucket in R2 and selects it automatically.
+1. Select **Create a new bucket**.
+2. Enter a **Bucket Name**. R2 bucket names must be **globally unique across all Cloudflare R2 accounts**.
+3. Choose a **Region** (see the table below). **Automatic** is the default and lets Cloudflare pick the best fit.
+4. Click **Create Bucket & Save**. FluentCart creates the bucket in R2 and selects it automatically.
 
-### Understanding R2 Jurisdictions ​
+### Understanding R2 Regions ​
 
-R2 lets you pin a bucket to a geographic jurisdiction for data residency, latency, or compliance reasons.
+R2 lets you pin a bucket to a geographic region (Cloudflare calls this a jurisdiction or location hint) for data residency, latency, or compliance reasons.
 
-| Value | Label | When to pick it |
+| Value | Region | When to pick it |
 | --- | --- | --- |
 | auto | Automatic | Default. Cloudflare chooses the best location based on where data is written. Best general-purpose choice. |
 | apac | Asia-Pacific (APAC) | Most of your customers are in Asia-Pacific. |
@@ -691,20 +677,21 @@ R2 lets you pin a bucket to a geographic jurisdiction for data residency, latenc
 
 ## Connected State ​
 
-Once credentials are verified and a bucket is picked, the Cloudflare R2 card shows the provider as **Active**, with the bucket name and jurisdiction.
+Once credentials are verified and a bucket is picked, the Cloudflare R2 card shows the provider as **Active**, with the bucket name and region.
 
 What each element does:
 
-- **Active toggle** — enable or disable this storage provider without losing its configuration.
-- **Edit** — re-enter the wizard and change credentials or bucket.
-- **Bucket name** — the R2 bucket your assets live in.
-- **Jurisdiction label** (e.g. 
+- **Active toggle**: turn the provider on or off without losing its configuration.
+- **Check again**: re-verify the connection.
+- **Edit Config**: re-open the wizard to change credentials or bucket.
+- **Reset**: clear all R2 settings after confirmation.
+
+Below the buttons, info rows show the **Bucket**, **Region** (for example 
 ```
-ENAM
+Eastern North America (ENAM)
 ```
 
-) — the R2 region this bucket is pinned to.
-- **Check Connection** — re-runs FluentCart's connection verification against R2 on demand.
+) and **Authentication** (Defined mode or Database mode).
 
 ---
 
@@ -720,7 +707,7 @@ Once connected, all digital product uploads flow through your R2 bucket automati
 
 ## Editing an Existing R2 Connection ​
 
-1. From **FluentCart → Storage → Cloudflare R2**, click **Edit**.
+1. From **Settings** > **Storage Settings** > **Cloudflare R2**, click **Edit Config**.
 2. Move through the Credential → Bucket wizard again.
 3. Only the fields you change need to be updated.
 
@@ -753,12 +740,13 @@ define( 'FCT_R2_SECRET_KEY', 'EXAMPLE_SECRET_ACCESS_KEY_1234567890abcd' );
 
 - Verify your **Account ID** is correct — it is a long hex string, not your email or account name.
 - Confirm the **Access Key ID** and **Secret Access Key** were copied fully, with no extra spaces.
-- Make sure the R2 API token has **Object Read & Write** permission.
+- Make sure the R2 API token has **Admin Read & Write** (or **Object Read & Write** scoped to your bucket).
 - If you regenerated the token, the previous Access Key ID / Secret are invalid.
 
-**"Browse existing buckets" is empty.**
+**"Select from existing" shows no buckets.**
 
-- Your Cloudflare account has no R2 buckets yet — switch to **Create New Bucket**.
+- Your Cloudflare account has no R2 buckets yet. Switch to **Create a new bucket**.
+- The token only has **Object Read & Write**, which can't list buckets. Use **Enter bucket name** instead, or a token with **Admin Read & Write**.
 - The API token is scoped to a different set of buckets than the one you expect.
 
 **Bucket creation fails with a name conflict.**
@@ -773,7 +761,7 @@ yourstore-fluentcart-assets
 **Files upload but customers cannot download them.**
 
 - Confirm the digital product is configured to use Cloudflare R2 as its storage driver.
-- Confirm the API token still has **Object Read & Write** — read-only tokens will break downloads.
+- Confirm the API token still has **Admin Read & Write** (or **Object Read & Write** on this bucket). Read-only tokens will break downloads.
 
 **I defined FCT_R2_ACCOUNT_ID / FCT_R2_ACCESS_KEY / FCT_R2_SECRET_KEY but the UI still shows empty fields.**
 
@@ -804,7 +792,7 @@ FCT_R2_SECRET_KEY
 
 ## FAQs ​
 
-**Can I run Cloudflare R2 and Amazon S3 at the same time?** Yes — you can configure both and switch which one is active.
+**Can I run Cloudflare R2 and Amazon S3 at the same time?** Yes. You can configure both and keep both active. When you add a downloadable file, the **Storage Providers** dialog shows a tab for each active provider, so you choose where each file goes.
 
 **Can I change a bucket's jurisdiction after creation?** No. Jurisdiction is fixed at bucket creation. To change it, create a new bucket with the new jurisdiction and migrate your files across.
 

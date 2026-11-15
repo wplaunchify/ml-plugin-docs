@@ -30,7 +30,7 @@ By mastering the tools within Store Management, you can fulfill orders efficient
 
 # Customers Management ​
 
-The **Customers Management** section in FluentCart gives you with a centralized database of all your store's customers. This allows you to view their details, track their purchase history, manage their addresses, and perform various customer-centric actions.
+The **Customers Management** section in FluentCart gives you a centralized database of all your store's customers. This allows you to view their details, track their purchase history, manage their addresses, and perform various customer-centric actions.
 
 Good customer management helps you give great service and know your customers better.
 
@@ -50,7 +50,7 @@ By using these customer management tools, you can keep customer records accurate
 
 # Customer Details Overview ​
 
-The individual **Customer Details** screen in FluentCart provides a comprehensive profile for each of your customers. This centralized view allows you to access all relevant information about a customer, including their contact details, addresses, purchase history, and associated licenses.
+The individual **Customer Details** screen in FluentCart provides a comprehensive profile for each of your customers. This centralized view allows you to access all relevant information about a customer, including their contact details, addresses, purchase history, subscriptions, and associated licenses.
 
 Customers also have access to their own personalized dashboard where they can manage their profile, view orders, subscriptions, and licenses. For more details on what your customers see and can manage, refer to the [Customer Dashboard Profile Management](/guide/customer-dashboard/profile-management) documentation.
 
@@ -62,39 +62,38 @@ From your WordPress dashboard, navigate to **FluentCart Pro > Customers**. On th
 
 The Customer Details screen is organized into several panels, each providing specific information about the customer.
 
-### 1. Customer Header ​
+### 1. Customer Information ​
 
-At the top of the screen, you'll find the customer's primary identification.
+The **Customer Information** card in the right-hand sidebar shows the customer's name and photo, their order count, **Lifetime Value**, and the linked WordPress user (**WP User: #ID**). If no WordPress user is linked, an **Attach User** button lets you connect one.
 
-- **Customer Name:** The name of the customer.
-- **Order Count:** The total number of orders placed by this customer.
-- **WP User ID:** The customer's associated WordPress User ID.
-
-### 2. Customer Information Panel ​
-
-This section provides contact details and address management options for the customer.
+The card also holds the customer's contact details and address management options:
 
 - **Contact Information:** Displays the customer's email address.
 - **Default Addresses:** Shows the customer's default shipping and billing addresses.
-- **Action Links:**
+- **Action Links:** Open the **...** menu in the card header for these options:
 
 - **Edit customer information:** Allows you to modify the customer's core details.
 - **Manage shipping address:** Provides access to manage or add shipping addresses for this customer.
 - **Manage billing address:** Provides access to manage or add billing addresses for this customer.
+- **Recalculate lifetime value:** Refreshes the Lifetime Value from the customer's orders.
 - **Labels:** A section for assigning custom labels to the customer.
 
-### 3. Orders Section ​
+### 2. Orders Section ​
 
-This table lists all orders placed by this specific customer.
+The **Orders** card lists all orders placed by this specific customer.
 
-- **Order Details:** Includes columns for Order ID, Created at, Total, Payment Status, Status, and Order Type.
+- **Order Details:** Shows the **Date** (with the order ID), **Items**, **Total**, **Payment Status**, **Status**, and **Order Type** of each order. Type in the search box and press **Enter** to search this customer's orders.
 - **Clickable Orders:** Each order ID is clickable, allowing you to quickly navigate to the [individual Order Details screen](/guide/store-management/orders-management/order-details-overview) for that specific transaction.
 
-### 4. License Key Section ​
+### 3. Subscriptions ​
 
-For customers who have purchased digital products with licenses, this section displays their associated license keys.
+If the customer has subscriptions, a **Subscriptions** card lists each one with its ID, product, status, billing, created date, **Next Billing Date**, **Collection Method**, **Bills Count**, **Order ID**, and **Payment Method**.
 
-- **License Details:** Includes columns for License Key, Product name, Order ID, and Activations.
+### 4. Licenses ​
+
+With **FluentCart Pro** and licensing active, a **Licenses** card lists the customer's license keys. Users without the license view permission don't see this card.
+
+- **License Details:** Includes columns for **License Key**, **Product**, **Order ID**, and **Activations**.
 - **Clickable License Keys:** Each license key is clickable, allowing you to navigate to the [License Details screen](/guide/product-types-creation/creating-digital-products-with-licenses#_7-product-specific-license-settings) for that specific license.
 
 The Customer Details page is an invaluable tool for understanding your customers' interactions with your store and providing personalized support.
@@ -120,10 +119,10 @@ The Advanced Filter enables you to combine various properties to create precise 
 - **Order Property:** This allows you to filter customers based on aspects of their orders.
 
 - **By Order Items:** Find customers based on the specific items they bought.
-- **Purchase:** Filter customers by the number of purchases they have made (e.g., customers with more than 5 purchases, or exactly 1 purchase).
+- **Purchases:** Filter customers by the number of purchases they have made (e.g., customers with more than 5 purchases, or exactly 1 purchase).
 - **First Purchase Date:** Filter customers based on the date of their very first order. This is useful for identifying new customer cohorts or specific periods of acquisition.
 - **Last Purchase Date:** Filter customers based on the date of their most recent order. This is helpful for identifying recent buyers or customers who haven't purchased in a while.
-- **Customer Property:** This new feature lets you filter based on customer-specific details.
+- **Customer Property:** This lets you filter based on customer-specific details.
 
 - **Customer Name:** Find customers by their first or last name.
 - **Customer Email:** Search for customers using their email address.
@@ -133,24 +132,26 @@ The Advanced Filter enables you to combine various properties to create precise 
 - **Label Name:** Select one or more labels to find all customers who have been tagged. This is a great way to view specific customer segments you have created.
 - **Adding Multiple Conditions:**
 
-- Click **"+ Add"** to add another rule for filtering. This typically functions as an "AND" condition, meaning all criteria must be met.
-- Click the **"+ OR"** button to add an alternative filter condition. This allows you to find customers who meet *either* the previous set of criteria *or* the new one.
+- Click **Add** next to **Add new properties** to add another rule to the same group. Rules in one group work as an "AND" condition, meaning all criteria must be met.
+- Click **+ OR** below the groups to add an alternative group. This "OR" condition finds customers who meet *either* the previous set of criteria *or* the new one.
 
 ## Applying and Resetting Filters ​
 
 1. After setting your desired filter conditions, click the **"Apply"** button to view the filtered list of customers.
 2. To clear all applied filters and view the complete customer list again, click the **"Reset"** button.
 
-## Saving Custom Filter Views (New Feature!) ​
+## Saving Custom Filter Views ​
 
 If you frequently use the same advanced filters, you can save them as quick-access tabs.
 
-1. **Save your filter:** After setting your desired conditions, click **"+ Save as view"** next to the **Apply** and **Reset** buttons.
+INFO
 
-1. **Name your view:** Give it a descriptive name (e.g., **"High LTV Customers"** or **"Recent Hoodie Buyers"**) and, optionally, a short description.
+Saving views requires **FluentCart Pro**. Without Pro, **Save as view** shows an upgrade notice. The Advanced Filter itself is free.1. **Save your filter:** After setting your desired conditions, click **"+ Save as view"** next to the **Apply** and **Reset** buttons.
+
+1. **Name your view:** Give it a descriptive name (e.g., **"High LTV Customers"** or **"Recent Hoodie Buyers"**) and, optionally, a short description. Turn on **Make public (visible to all users)** if other admins should see the view too, then click **Save View**.
 2. **Access anytime:** Open the **More views** dropdown beside your default tabs to quickly reuse your saved filters.
 
-1. **Delete a view:** In the **More views** dropdown, click the trash icon next to a view name you no longer need.
+1. **Delete a view:** In the **More views** dropdown, click the trash icon next to a view name you no longer need. Only the person who created a view can delete it.
 
 Using the Advanced Filter effectively, and saving your most-used views, helps you gain deeper customer insights and manage customers faster.
 
@@ -178,6 +179,11 @@ The Customers list table presents key information for each customer at a glance:
 - **LTV (Lifetime Value):** This shows the total amount of money a customer has spent in your store over their entire history. It helps you quickly identify your most valuable customers.
 - **Last Purchase Date:** Shows the date and time of their most recent purchase.
 - **Customer Since:** Displays the date and time when the customer's record was first created in your system.
+
+Above the table, two more controls help you manage the list:
+
+- **Add Customer:** Creates a customer record by hand.
+- **More actions > Export Customers:** Downloads the list as a file. See [Exporting Your Store Data](/guide/store-management/exporting-data) for the export options.
 
 ## Finding Specific Customers ​
 
@@ -488,7 +494,7 @@ The payment gateway charges the customer in the currency of their cart. Make sur
 
 Every order keeps the currency and exchange rate it was placed at, so changing a rate later never rewrites past orders. Order items, the tax summary, subscription details, and the discount and refund dialogs on an order all show amounts in that order's own currency, even when it differs from your base currency. A subscription's renewals keep the same rate as the original order. When a customer upgrades a subscription through an [upgrade path](/guide/product-types-creation/defining-upgrade-paths), the new plan is priced in the subscription's own currency.
 
-Orders you create yourself follow the same rule. When you [create an order manually](/guide/store-management/orders-management/creating-new-orders), you can choose any enabled currency, and the order keeps that currency and the rate at the time you save it.
+Orders you create yourself follow the same rule. When you [create an order manually](/guide/store-management/orders-management/creating-new-orders), you can choose any enabled currency, and the order keeps that currency and the rate at the time you save it. Coupons you apply to that order are priced in its currency too.
 
 If you use **FluentCart Pro** features that show prices, they follow the customer's currency too:
 
@@ -529,7 +535,7 @@ This section covers the following aspects of order management:
 - **Processing Refunds:** Detailed steps on how to issue full or partial refunds, choose item quantities and shipping, restock items, and cancel associated subscriptions.
 - **Managing Shipments:** Create one or more shipments for an order, add tracking, notify the customer, and follow each shipment's status.
 - **Collecting Payments for Modified Orders:** How to collect outstanding balances after an order has been modified, including generating custom payment links and marking payments as received.
-- **Changing Order Statuses:** Learn how to update the status of an order (e.g., Processing, Completed, On Hold, Canceled) and manage shipping statuses.
+- **Changing Order Statuses:** Learn how to update the status of an order (for example, mark it complete, cancel it, or move it back to Processing) and manage shipping statuses.
 
 By using these order management tools well, you can ensure smooth order processing, accurate record-keeping, and excellent customer service.
 
@@ -551,21 +557,26 @@ Orders in FluentCart naturally progress through various statuses, indicating the
 - **Completed:** The order has been successfully fulfilled, items shipped (if physical), and payment fully received.
 - **On Hold:** The order is temporarily paused, often due to pending payment, stock issues, or customer query.
 - **Canceled:** The order has been canceled by the administrator or customer.
-- **Refunded:** The order has been refunded.
+- **Failed:** The order could not be processed, usually because the payment failed.
+
+Refunds are tracked in the order's **payment status** (**Refunded** or **Partially Refunded**), not in the order status. See [Understanding Statuses](/guide/store-management/understanding-statuses) for every status FluentCart uses.
 
 ## How to Change Order Status ​
 
 You can change an order's status and perform other related actions from the **Order Details screen**.
 
 1. Navigate to the **Order Details** screen for the specific order you wish to update.
-2. In the top right corner of the screen, click the **"More Actions"** dropdown menu.
-3. From the dropdown, you will find several actions to manage the order's status:
+2. In the top right corner of the screen, click the **More Action** dropdown.
+3. The dropdown shows only the actions that apply to the order's current state:
 
-- **Change Shipping Status:** This option is primarily for physical products. It allows you to update the shipping status of items within the order, crucial for tracking fulfillment progress.
-- **Mark As Complete:** Selecting this option will mark the entire order as completed. This signifies that the order has been fully processed, items shipped (if physical), and payment fully received.
-- **Cancel Order:** Selecting this option will mark the entire order as canceled. This often triggers stock adjustments and may be followed by a [refund process](/guide/store-management/orders-management/processing-refunds) if payment was already received.
-- **Back to processing:** This action allows you to revert an order's status to "Processing." This is useful if an order was prematurely marked as "Completed" or "On Hold" and still requires further attention or [editing](/guide/store-management/orders-management/editing-existing-orders).
-- **Receipt:** This option typically allows you to view or re-send the customer's purchase receipt for the order.
+- **Change Shipping Status:** Shown for physical orders that are not canceled. Opens an **Update Shipping Status** window where you pick **Unshipped**, **Shipped**, **Delivered**, or **Unshippable** and click **Update**.
+- **Mark As Complete:** Shown only while the order is **Processing**. Confirm to mark the order completed.
+- **Cancel Order:** Shown until the order is canceled. Canceling can't be undone: a canceled order can't be moved back to another status or edited. Stock is adjusted automatically. If the customer already paid, [refund](/guide/store-management/orders-management/processing-refunds) them separately.
+- **Back to processing:** Shown only while the order is **Completed**. Moves it back to **Processing**, for example when it still needs [editing](/guide/store-management/orders-management/editing-existing-orders).
+- **Sync Order Statuses:** Shown while the order is neither completed nor canceled. Re-checks the order's payment and order statuses against its transactions.
+- **Receipt:** Opens the customer's receipt in a new tab.
+- **Generate missing licenses:** Appears only when a licensed product in the order is missing its license key (FluentCart Pro).
+- **Delete order:** Appears for test-mode orders and canceled orders.
 
 ### Using the Activity Log ​
 
@@ -583,11 +594,11 @@ When you [edit an existing order](/guide/store-management/orders-management/edit
 
 ## When to Collect Payment ​
 
-After you have [edited an order](/guide/store-management/orders-management/editing-existing-orders) and are in the process of saving your changes (by clicking "Disable Editing"), if the order's total has increased, you will be prompted to collect the additional payment. The system will indicate a "Total Amount Due" or similar.
+After you edit an order and click **Update** in the **Unsaved Changes** bar to save it, the **Payment** card shows a **Total Due** line whenever the order total is higher than what the customer has paid. FluentCart doesn't prompt you, so use the options below to collect the balance.
 
 ## Payment Collection Options ​
 
-To collect the outstanding balance, navigate to the **"Transaction Details"** section on the [Order Details screen](/guide/store-management/orders-management/order-details-overview). You will see a **"Collect Payments"** dropdown menu.
+To collect the outstanding balance, navigate to the **"Transaction Details"** section on the [Order Details screen](/guide/store-management/orders-management/order-details-overview). You will see a **Collect Payments** dropdown menu. The **Collect Payments** button appears only while the order has an unpaid balance and is not canceled.
 
 Clicking this dropdown reveals the following options:
 
@@ -596,17 +607,24 @@ Clicking this dropdown reveals the following options:
 This is the most common way to collect an additional payment. It creates a special, secure link that you can send directly to your customer.
 
 1. From the **Collect Payments** dropdown menu, choose the **Custom Payment Link** option.
-2. A small pop-up window will appear with a unique link created just for this order's remaining balance.
+2. The **Custom payment link** window opens with a unique link created just for this order's remaining balance.
 3. Click the **Copy** button to copy this link to your clipboard. You can now paste it into an email, a chat message, or however you normally communicate with your customer.
 
 When your customer clicks the link, they will be taken to a simple and secure page where they can pay the outstanding amount using your store's available payment methods.
 
 ### 2. Mark Order as Paid ​
 
-This option is perfect for when you've already received the payment outside of FluentCart. Maybe the customer paid you the difference in cash, sent a bank transfer, or you charged them directly through your payment processor's website. This feature lets you manually update the order to reflect that payment
+This option is perfect for when you've already received the payment outside of FluentCart. Maybe the customer paid you the difference in cash, sent a bank transfer, or you charged them directly through your payment processor's website. This feature lets you manually update the order to reflect that payment.
 
-1. From the **Collect Payments** dropdown, simply select **Mark order as paid**.
-2. That's it! **FluentCart** will instantly update the order's status to show that it's fully paid. The outstanding balance will be cleared, and the transaction will be marked as complete.
+1. From the **Collect Payments** dropdown, select **Mark order as paid**.
+2. In the **Mark as paid** window, choose the **Payment method** the customer used. Optionally, enter the **Vendor charge id** (for example, a bank or processor reference) and **Notes**.
+3. Click **Mark Paid**. FluentCart records the payment and clears the outstanding balance.
+
+### 3. Send Payment Reminder ​
+
+When the order's payment is still outstanding, the **Collect Payments** dropdown also offers **Send Payment Reminder**. Click it and confirm with **Send Now** to email the customer a reminder to pay the balance.
+
+Your customer's outstanding balance is now collected or on its way, and the order's payment status updates once the payment is recorded.
 
 ---
 
@@ -625,21 +643,18 @@ FluentCart allows you to manually create new orders directly from your WordPress
 3. This will open a new order creation interface. You will need to:
 
 - **Customer Information:** Choose an existing customer from your store or you may create new.
-- **Order currency:** When [multi-currency](/guide/settings-configuration/multi-currency-settings) is enabled, an **Order currency** card appears above the products. Pick any enabled currency to create the order in it. For a currency other than your base currency, enter prices in that currency; the card shows the rate, for example *1 USD = 0.79 GBP*. FluentCart calculates and validates the final prices when you save, using the same rate and rounding rules as the storefront checkout.
-- **Products:** Search for and add the products the customer is purchasing. - You can select product variants if applicable.
-- Specify the quantity for each product.
+- **Order currency:** When [multi-currency](/guide/settings-configuration/multi-currency-settings) is enabled, an **Order currency** card appears above the products. Pick any enabled currency to create the order in it. For a currency other than your base currency, enter prices in that currency; the card shows the rate, for example *1 USD = 0.79 GBP*. FluentCart calculates and validates the final prices when you save, using the same rate and rounding rules as the storefront checkout. Coupons, shipping, and manual discounts are calculated in the order currency too. If the rate changed since you loaded the page, FluentCart recalculates the total and asks you to review it and save again.
+- **Products:** Use **Search products...** or **Browse** to add products, choose the variation, and set the quantity. You can also enter a **Custom Price** for a line.
 - **Have a Coupon:** If a discount coupon applies to this manual order, you can enter and apply it here. Applying a coupon removes any manual discount already added to the order.
 - **Add Discount:** If you want to add a discount for the order instead of a coupon, click the **Add Discount** option to enter a discount value and an optional reason. This option is only available when no coupon is applied — see [Manual Discounts and Tax](#manual-discounts-and-tax) below.
-- **Add Shipping Cost:** Manually you can add shipping charges for physical products.
+- **Shipping method:** When the order has physical products, a **Shipping method** dropdown appears. Leave it on **Custom shipping** to type the charge yourself with **Add Shipping Cost**, or pick one of your [shipping methods](/guide/shipping/setting-up-shipping-methods) and FluentCart calculates the charge from the products on the order. Methods that serve the customer's country are listed under **Shipping Methods**, and your other enabled methods are listed under **Other Shipping Methods**. Once you pick a method, the manual shipping charge is locked, so switch back to **Custom shipping** to type a charge again. If a method cannot cover the order, FluentCart tells you instead of saving a charge.
+- **Add Shipping Cost:** With **Custom shipping** selected, you can add the shipping charge for physical products yourself.
+
 - **Review Totals:** Ensure the order subtotal and total amount are correct after adding products and any discounts/shipping.
 - **Notes:** Click the **Notes** icon to add any private notes or comments relevant to the order.
 - **Labels:** A section for assigning custom labels.
-4. **Choose Payment Method:** Select the payment method for this order. This might include:
-
-- Marking the order as "Paid" if payment was received offline (e.g., cash, bank transfer).
-- Generating a custom payment link to send to the customer for online payment.
-- Processing payment directly if you have integrated payment gateways.
-5. **Finalize Order:** Once all details are correct and the payment method is selected, click the **Save** button finalize the order.
+4. **Save the order:** Click **Save** in the **Unsaved Changes** bar at the top of the screen. FluentCart creates the order as unpaid and opens its Order Details screen.
+5. **Collect the payment:** On the Order Details screen, open **Collect Payments** in the **Transaction Details** card and choose **Mark order as paid** (for cash, bank transfer, or any payment taken outside FluentCart), **Custom Payment Link** (to let the customer pay online), or **Send Payment Reminder**. See [Collecting Payments](/guide/store-management/orders-management/collecting-payments-modified-orders).
 
 ## Manual Discounts and Tax ​
 
@@ -687,7 +702,7 @@ The **Edit** button is disabled, with an explanatory tooltip, whenever any of th
 - The order's status is **Completed**, **Archived**, or **Canceled** — *"Order cannot be edited once it is {status}."*
 - The order is a **subscription** order — *"Subscription Order cannot be edited."*Returning to Processing Status
 
-If a Completed order needs editing, you can use the "Back to processing" option from the "More Actions" dropdown on the Order Details page to revert its status to Processing. This only reverts the order **status** — it does not change the order's payment status. If the order is already paid, editing stays disabled afterward; this action only restores editability for a completed order that isn't marked as paid.
+If a Completed order needs editing, you can use the "Back to processing" option from the **More Action** dropdown on the Order Details page to revert its status to Processing. This only reverts the order **status** — it does not change the order's payment status. If the order is already paid, editing stays disabled afterward; this action only restores editability for a completed order that isn't marked as paid.
 ## Entering Edit Mode ​
 
 1. Navigate to the **Order Details** screen for the specific order you wish to edit.
@@ -737,7 +752,7 @@ You can apply an order-level discount instead of a coupon. This option is only a
 
 1. Locate the **"Add Discount"** option in the financial summary area.
 2. In the dialog, enter a **Discount value** and, optionally, a **Reason for discount** — customers can see this reason.
-3. Click **"Apply"**. The discount is staged on the order and saved along with your other changes when you click **"Disable Editing"**.
+3. Click **"Apply"**. The discount is staged on the order and saved along with your other changes when you click **Update** in the **Unsaved Changes** bar.
 
 Manual Discounts and Tax
 
@@ -746,8 +761,11 @@ A coupon and a manual discount can't be on the same order at the same time: the 
 
 After making all necessary modifications:
 
-1. Click the **"Disable Editing"** button in the top right corner. - This action will save all your changes to the order.
-- If the order total has increased, you may be prompted to [collect additional payment](/guide/store-management/orders-management/collecting-payments-modified-orders).
+1. Click **Update** in the **Unsaved Changes** bar that appears at the top of the screen as soon as you change something (or press Cmd+S / Ctrl+S). Click **Discard** to throw the changes away.
+2. Click **Disable Editing** to leave edit mode. This button only closes the editing tools; it doesn't save.
+3. If the new total is higher than what the customer paid, the **Payment** card shows a **Total Due**. [Collect the additional payment](/guide/store-management/orders-management/collecting-payments-modified-orders) from the **Collect Payments** menu.
+
+Your changes are now saved to the order.
 
 ---
 
@@ -937,11 +955,11 @@ class
 
 ## Implementation Method 4: The Elementor Widget ​
 
-If you build your pages with Elementor, FluentCart's **Buy Now Button** widget can trigger the instant checkout popup as well, no code needed. In the widget's **Content Tab**, set **Enable Modal Checkout** to **Yes**. See the [Elementor widgets guide](/guide/customization-and-themes/using-elementor-widgets) for setup details.
+If you build your pages with Elementor, the **Buy Now Button** widget from the **FluentCart Elementor Blocks** add-on can trigger the instant checkout popup as well, no code needed. In the widget's **Content Tab**, set **Enable Modal Checkout** to **Yes**. See the [Elementor widgets guide](/guide/customization-and-themes/using-elementor-widgets) for setup details.
 
-Using **Divi** instead? FluentCart's Buy Now module for Divi has the same **Enable Modal Checkout** option. See the [Divi modules guide](/guide/customization-and-themes/fluentcart-divi-modules) for details.
+Using **Divi** instead? The Buy Now module from the **FluentCart Divi Modules** add-on has the same **Enable Modal Checkout** option. See the [Divi modules guide](/guide/customization-and-themes/fluentcart-divi-modules) for details.
 
-Want shoppers to choose between a few products and pay without any popup at all? The [On-Page Checkout Form](/guide/customization-and-themes/on-page-checkout-form) places the full checkout directly on your landing page instead.
+Want shoppers to choose between a few products and pay without any popup at all? The [On-Page Checkout Form](/guide/customization-and-themes/on-page-checkout-form) (FluentCart Pro) places the full checkout directly on your landing page instead.
 
 ---
 
@@ -1072,88 +1090,136 @@ You now have every parcel of the order recorded, and your customer can follow ea
 
 # Order Bump ​
 
-The **Order Bump** feature in FluentCart allows you to present a last-minute, complementary product offer directly on the checkout page. This simple, high-converting technique encourages customers to add an extra item to their cart before completing their purchase, significantly increasing your average order value (AOV).
+The **Order Bump** feature in FluentCart allows you to present a last-minute, complementary product offer directly on the checkout page, in the cart drawer, and on the cart page. This simple, high-converting technique encourages customers to add an extra item to their cart before completing their purchase, significantly increasing your average order value (AOV).
 
+INFO
+
+Order Bump is a **FluentCart Pro** feature. The **Order Bump** menu item appears only while Pro is active and the module is switched on.
 ## 1. Enabling the Order Bump Feature ​
 
 Before you can create any order bumps, you must first activate the feature in your store settings.
 
-1. Go to **FluentCart Pro** in your WordPress dashboard.
-2. Navigate to **Settings** from the left-hand menu.
-3. Click on the **Features & Addon** tab.
-4. Locate the **Order Bump** toggle and switch it to **Active**.
+1. Open **FluentCart** in your WordPress dashboard.
+2. Click the **Settings** icon (the gear) at the top right of the FluentCart bar.
+3. Click **Features & addon** in the settings sidebar.
+4. Locate the **Order Bump** toggle and switch it on. The badge next to the name changes to **Active**.
 5. Click the **Save Settings** button to confirm the change.
 
-### 2. Creating a New Order Bump Offer ​
+## 2. Creating a New Order Bump Offer ​
 
 Once the feature is active, you can create and manage your offers.
 
-1. Navigate to the main FluentCart Pro menu.
-2. Hover over the **More** menu item in the top navigation bar.
-3. Click on **Order Bump**. This will take you to the Order Bumps management screen.
-4. Click the **Add New** button on the top right to create a new offer. A pop-up window will appear where you need to define the initial details of your offer.
+1. Open **FluentCart** in your WordPress dashboard.
+2. Click the **More** menu item in the top navigation bar.
+3. Click **Order Bump**. It sits with **Coupons** and **Dynamic Pricing** in the marketing group. This takes you to the Order Bumps management screen.
 
-1. To start creating your new offer, you must first define its core identity:
+1. Click the **Add New** button on the top right to create a new offer. A pop-up window will appear where you define the initial details of your offer.
 
-- **Bump Name:** Enter the main title for your offer. This is the compelling headline that customers will see, so make it attractive.
-- **Order Bump Product:** From the dropdown menu, select the product that you want to offer as the order bump.
+1. To start creating your new offer, define its core identity:
 
-Click the **Create** button.
+- **Offer title:** Enter the headline customers will see above the product, for example "Add socks for $150". Make it attractive.
+- **Offer product:** Search for and select the product or variation you want to offer as the bump. Shoppers can add it with one click.
+2. Click the **Create** button.
 
-After clicking "Create," you will be taken to the main configuration screen to set up the rest of your order bump's rules and design.
+After clicking **Create**, you will be taken to the configuration screen to set up the rest of your order bump's rules.
 
-### 3. Configuring the Order Bump Details ​
+## 3. Configuring the Order Bump Details ​
 
-The Order Bump configuration screen is broken down into simple, manageable steps:
+The configuration screen is split into sections. The left column holds the basics and the display rules. The right column holds the product, discount, and placement.
 
 #### A. Basic Info ​
 
-- **Enable this Order Bump:** Toggle this switch to instantly turn the offer on or off without deleting the configuration.
-- **Bump Title:** This is the headline that captures the customer’s attention at checkout (e.g., "Get this magic offer in 50% discount").
-- **Bump Description:** Add a short, exciting description or a compelling reason why the customer should take the offer.
+- **Enable this Order Bump:** Tick this checkbox to make the offer active. Untick it to keep the bump as a **Draft** without deleting it.
+- **Bump Title:** The headline that captures the customer's attention (e.g., "Get this magic offer in 50% discount").
+- **Bump Description:** Add a short, exciting description or a compelling reason why the customer should take the offer. You can use HTML in this field.
 
-#### B. Promotional Product ​
+#### B. Display Conditions ​
 
-- **Select Product:** Choose the specific product you want to offer as the bump. This item will be added to the customer's cart if they accept the offer. Both **Published** and **Private** products are now available in this dropdown — so you can offer hidden, customer-specific, or invite-only items as a bump without having to make them publicly visible in your store.
+This is where you define exactly when and for whom this offer appears, using conditional logic.
 
-#### C. Discount ​
+- **Enable Conditions for this Order Bump:** Check this box to activate the conditional logic.
+- **Adding Conditions:** You can stack multiple conditions using dropdown menus to create precise rules based on cart content and value: - **Cart Items:** Check whether a specific product (for example, **Fleece Jacket**) is set to **Exists** or **Not Exist** in the customer's cart.
+- **Items Subtotal:** Set a threshold for the cart value (for example, **Items Subtotal** is **Greater Than $30**). The operators are **Greater Than**, **Less Than**, **Equals**, and **Not Equals**. **Greater Than** and **Less Than** also match an exactly equal subtotal.
+- **Add Condition:** Adds another row to the same group. Every row in a group must match (AND logic).
+- **Add New Condition Group:** Sets up a separate, alternative set of rules (OR logic). The bump displays if *any* of the groups' conditions are met.
 
-- **Discount Amount:** Define the savings for this bump product. You can set the discount as a fixed amount or a **Percentage**.
+For example, to show an offer only on carts worth more than $30, tick **Enable Conditions for this Order Bump**, choose **Items Subtotal** in the first dropdown, keep **Greater Than** in the second, and enter 
+```
+30
+```
+
+ as the amount. Use **Cart Items** to pick one or more products or variations instead.
+
+#### C. Promotional Product ​
+
+- **Promotional Product:** Shows the product you picked when creating the bump, with its image and price. Click **Change** to offer a different product. This item is added to the customer's cart if they accept the offer. Both **Published** and **Private** products are available, so you can offer hidden, customer-specific, or invite-only items as a bump without making them publicly visible in your store.
+- **Image (optional):** Pick a custom image for the offer. When you leave it empty, the offered product's own image is used.
+
+#### D. Discount ​
+
+- **Discount Amount:** Choose **Percentage** or **Fixed**, then enter the amount. The amount must be greater than 0. Saving a bump with an empty or zero discount shows the message **Enter a discount amount greater than 0.**
 - **Enable Coupon Discount on top of offer discount:** This option determines if other global coupons applied to the main cart can also be stacked on top of the Order Bump discount.
 - **Free shipping for this offer item:** If desired, you can enable free shipping specifically for the bump product.
 
-#### D. Display Conditions (Detailed) ​
+#### E. Placement ​
 
-This is the crucial step where you define exactly when and for whom this offer appears at checkout using conditional logic.
+The **Placement** section decides where on the page the offer shows. It displays a summary of the current choice (for example **Checkout: Under order notes** and **Cart drawer and Cart page: Off**) as a card you can click to open the placement preview.
 
-- **Enable Conditions for this Order Bump:** Check this box to activate the conditional logic.
-- **Adding Conditions:** You can stack multiple conditions using dropdown menus to create precise rules based on cart content and value: - **Cart Items:** Check if a specific product (**Fleece Jacket**) **Exists** or doesn't exist in the customer's cart.
-- **Items Subtotal:** Set a threshold for the cart value (e.g., **Items Subtotal** is **Greater Than $30**).
-- **Adding Condition Groups:** The **Add New Condition Group** button allows you to set up separate, alternative sets of rules (OR logic). The bump will display if *any* of the defined groups' conditions are met.
+- **Checkout placement:** Choose where the offer sits on the checkout page. The options are **Default** (under the order notes), **Above Customer Details**, **Below Customer Details**, **Above Order Summary**, **Below Order Summary**, **Above Payment Gateways**, **Below Payment Gateways**, and **Disabled on checkout**. Offers with the same position are shown together.
+- **Cart drawer and Cart page:** Turn this on to also offer the item in the cart drawer and on the cart page. It is off by default.
+- **Priority:** When several order bumps qualify, the bump with the **higher** priority number is shown first.
 
-#### E. Priority ​
+Click the placement summary to open the **Placement preview**, a sample checkout where you choose the spot:
 
-- **Set Priority:** If you have multiple Order Bumps active with overlapping display conditions, the priority number (e.g., 1, 2, 3) determines which offer will be displayed first. **Lower numbers mean higher priority.**
+1. Pick a spot from the **Checkout Placement** dropdown in the sidebar, or drag the offer card straight to a slot on the sample checkout.
 
-After configuring all the details, click **Save** (standard practice) to activate your bump offer.
+The offer moves to the new spot right away, so you can see exactly where customers will find it.
+2. To hide the offer on checkout, drop it in the **Hidden on checkout** area. This is the same as choosing **Disabled on checkout**.
+3. Tick **Show in cart drawer and cart page** in the sidebar to also offer the item in the cart. Once it is on, click the cart button to preview the cart drawer, or use the **Checkout** and **Cart page** switch at the top to preview the cart page.
 
-### 4. Managing and Viewing Order Bumps ​
+The cart page preview shows the same offer under **Add to your order**.
+4. Click **Use this placement** to copy your choice into the form. **Reset** brings back the values the form had when you opened the preview.
+
+Nothing is saved until you update the bump, so finish with the **Update** step below.
+
+After configuring all the details, click **Update** in the **Unsaved Changes** bar at the top of the page (or press Cmd+S / Ctrl+S). The offer goes live only if **Enable this Order Bump** is ticked.
+
+## 4. Managing and Viewing Order Bumps ​
 
 On the main **Order Bumps** screen, you can manage all your existing offers:
 
-- **Status Tags:** Quickly see which offers are **Active**, **Draft** (saved but not enabled), or **All**.
+- **Status Tags:** Quickly see which offers are **All**, **Active**, or **Draft** (saved but not enabled).
+- **Search, columns and sorting:** Use the search icon to find a bump by title or description, the columns icon to show or hide the **Title**, **Status**, and **Date** columns, and the sort icon to change the order of the list.
+- **Table columns:** Each row shows the bump's **ID**, **Bump Title**, the **Offer** (product image, name, and variation), the **Price** (regular and offer price), the **Discount** (type and value), where it **Shows on**, its **Priority**, and its **Status**.
+- **Shows on:** Small tags tell you where the offer appears, for example **Checkout · below order summary** plus a **Cart** tag when it is also offered in the cart drawer and cart page. A dash means the offer is hidden everywhere.
+- **Status switch:** Use the switch in the **Status** column to turn a bump on or off without opening it.
+- **Deleted product hint:** If the offered product was deleted, the row shows a hint. Open the bump and choose another product to make the offer work again.
 - **Action Menu:** The vertical ellipsis (
 ```
 ...
 ```
 
-) icon provides options to **Delete** an existing bump offer.
+) icon provides the **Delete** option for an existing bump.
+- **Design:** The **Design** button at the top right opens the [card designs](/guide/store-management/orders-management/order-bump-design) page, where you choose how the offers look.
 
-- **Checkout View:** Once active, the offers appear on your store's checkout page under a section heading (**Recommended** by default). Each offer shows as its own card with: - The product image (the variation's image, then the product's featured image, then your store's placeholder).
-- Your **Bump Name** as a badge, followed by the product name and, when it differs, the variation name.
-- The price. When the offer has a discount, the original price is struck through beside the discounted price, with the amount saved (for example **(Save 5.00)**).
-- Your description, when you added one.
-- A **Yes, add this to my order** checkbox. Ticking it adds the item to the cart, and unticking it removes the item again.
+### What Customers See ​
+
+Once active, the offers appear on your store's checkout page at the placement you chose, and in the cart drawer and cart page when you turned that option on. The card layout depends on the [design you choose](/guide/store-management/orders-management/order-bump-design), and the default is the **Classic Card**. In the Classic layout, each offer shows as its own card with:
+
+- The product image (your custom image, then the variation's image, then the product's featured image, then your store's placeholder).
+- Your **Bump Title** as a badge, followed by the product name and, when it differs, the variation name.
+- The price. When the offer has a discount, the original price is struck through beside the discounted price, with the amount saved (for example **Save $4.75**).
+- Your description, when you added one. The narrow cart drawer leaves the description out.
+- A checkbox labeled **Grab it for** followed by the offer price. Ticking it adds the item to the cart, and unticking it removes the item again.
+
+When you give different bumps different placements, each one shows at its own spot. In this example, one offer sits above the order summary and another sits below it.
+
+A few rules decide which offers appear:
+
+- Checkout shows at most **five** bumps at a time. The cart drawer and the cart page each show two idle offers at a time, and an offer the customer already added always keeps its card so it can be removed.
+- A bump is hidden when its product is already in the customer's cart, and a subscription bump is hidden when the cart already contains a subscription.
+- A bump set to **Disabled on checkout** is not offered at checkout, but it still shows in the cart drawer and cart page when **Cart drawer and Cart page** is on.
+- Bumps don't show on checkouts that can't take extra items, such as a custom payment link or a renewal payment.
 
 INFO
 
@@ -1163,6 +1229,118 @@ fluent_cart/cart/accepts_additional_items
 ```
 
  hook that controls this at [dev.fluentcart.com](https://dev.fluentcart.com/).
+
+---
+
+## Order Bump Card Design ​
+
+**Source:** [https://docs.fluentcart.com/guide/store-management/orders-management/order-bump-design](https://docs.fluentcart.com/guide/store-management/orders-management/order-bump-design)
+
+# Order Bump Card Design ​
+
+The **Design** page lets you choose how your order bump offers look to customers. You can pick one of six ready-made cards, edit any of them in the block editor, or add your own cards, so your offers match your brand without touching code.
+
+INFO
+
+Card designs are part of the Order Bump feature, which needs **FluentCart Pro**. One card is active at a time, and it is used for the checkout, the cart drawer, and the cart page.
+## Opening the Design Page ​
+
+Before you pick a card, open the page from the Order Bumps screen.
+
+1. Click the **More** menu item in the top navigation bar and click **Order Bump**.
+2. Click the **Design** button at the top right.
+
+The **Manage** section shows every card as a live preview with its name, a short description, and a badge.
+
+## The Built-in Cards ​
+
+FluentCart ships with six cards.
+
+- **Classic Card:** A card with a checkbox below. This is the default.
+- **Compact Card:** A slim row with an **Add** button.
+- **Highlight Box:** A yellow bar with the checkbox on top.
+- **Exclusive Card:** A green card with the checkbox at the bottom.
+- **Callout Card:** A blue card with a boxed checkbox.
+- **Toggle Card:** A peach card with a switch.
+
+Each card carries one of these badges:
+
+- **Built-in:** The card still uses its original design.
+- **Customized:** You edited the card.
+- **Custom:** You added the card yourself.
+
+The card currently in use is marked **In Use**.
+
+## Choosing the Card Your Store Uses ​
+
+Once you've found a design you like, switch your store to it.
+
+1. On the card you want, click **Use this layout**.
+2. Wait for the confirmation message. The card is now marked **In Use**.
+
+The change applies right away to the checkout page, the cart drawer, and the cart page. You don't need to edit your individual order bumps.
+
+## Customizing a Card ​
+
+Every card opens in a block editor, the same kind used for the PDF templates, so you can change text, spacing, colors, and layout. The editor opens with the toolbar for adding blocks, undo and redo, and a button with curly braces that lists the offer details you can insert.
+
+1. On the card you want to change, click **Customize**.
+2. Edit the card in the editor.
+3. Click **Save Template** at the top right.
+
+The card keeps its place in your store, so if it is the card in use, the new look goes live as soon as you save.
+
+### Offer Details You Can Place in a Card ​
+
+Your cards read their content from the offer. Add these through the editor's placeholder list or with the order bump blocks:
+
+- **Image:** The offer's picture.
+- **Offer Title:** The title you entered for the bump.
+- **Product Title:** The name of the offered product.
+- **Variation Title:** The name of the offered variation.
+- **Original Price:** The regular price, before the discount.
+- **Price:** The discounted offer price.
+- **Savings:** The amount the customer saves.
+- **Description:** The bump description.
+
+The editor also has blocks for the actions on a card: the **Order Bump Checkbox** (labeled "Grab it for" plus the price by default), an **Order Bump Add Button**, an **Order Bump Remove Button**, and an **Order Bump Added Note** that shows when the offer is already in the cart.
+
+### What Every Card Needs ​
+
+A card has to let the customer both take and remove the offer. Keep the **Order Bump Checkbox** block in the card, or use both the **Order Bump Add Button** and the **Order Bump Remove Button**. If a saved card has neither, your store shows the built-in design of that card instead, so the customer is never stuck with an offer they can't remove.
+
+The cart drawer is narrow, so it leaves out the description even when your card includes it.
+
+### Reverting a Card ​
+
+To undo your edits, open the card and use the **More actions** menu (the three dots) at the top right, then click **Revert to Default**.
+
+You can also click **Reset** on the card in the Design page. A **Reset** button only appears on cards you changed, and you're asked to confirm because your edits are lost.
+
+For a custom card, a reset gives it the Classic design.
+
+## Adding Your Own Card ​
+
+If none of the six cards fit, create your own.
+
+1. Click **Add Template** at the top right of the Design page.
+2. Enter a **Template Name**, for example "Black Friday offer".
+3. Click **Create**. The new card opens in the editor, starting from the Classic design.
+4. Edit it and click **Save Template**.
+5. Back on the Design page, click **Use this layout** on the new card to put it live. Custom cards carry a **Custom** badge and have **Reset** and **Delete** buttons.
+
+You can add up to 20 custom cards. Delete one to add another.
+
+### Deleting a Custom Card ​
+
+Only custom cards can be deleted. Built-in cards can only be reset.
+
+1. On the Design page, click **Delete** on the custom card. In the editor, use the **More actions** menu and click **Delete Template**.
+2. Confirm the prompt.
+
+If the deleted card was the one in use, your store goes back to the **Classic Card**.
+
+Your order bumps now share one consistent look across the checkout, the cart drawer, and the cart page.
 
 ---
 
@@ -1178,7 +1356,7 @@ The Order Details screen in FluentCart provides a comprehensive breakdown of eac
 
 1. From your WordPress dashboard, navigate to **FluentCart Pro > Orders**.
 2. You will see a list of all the orders your store has received.
-3. To open the details for a specific order, simply click on its order number in the first column (labeled # Date).
+3. To open the details for a specific order, click the order in the first column, **Date**, which also shows its order ID.
 
 ## Understanding the Order Details Screen ​
 
@@ -1200,10 +1378,10 @@ INV-1001
 ```
 
 , shown below the title next to the order date. It is assigned when the order is paid, so an unpaid order does not have one yet. You set its prefix and starting number in the [checkout settings](/guide/settings-configuration/cart-checkout-settings).
-- **Order Status:** Shows the current state of the order (like pending or completed).
+- **Order Status and Badges:** The order status, plus a **B2B** badge for business purchases. The order date and order type also appear under the title.
 - **Refund Button:** Initiates the [refund process](/guide/store-management/orders-management/processing-refunds) for the order.
 - **Edit Button:** Allows you to enter [edit mode for the order](/guide/store-management/orders-management/editing-existing-orders).
-- **More Actions Dropdown:** Contains additional actions such as "Change Shipping Status", "Cancel Order", Back to Processing, and "Receipt".
+- **More Action Dropdown:** Contains **Change Shipping Status**, the status actions (**Mark As Complete**, **Cancel Order**, **Back to processing**), **Sync Order Statuses**, **Receipt**, and, when applicable, **Generate missing licenses** and **Delete order**. See [Changing Order Statuses](/guide/store-management/orders-management/changing-order-statuses).
 
 ### 2. Order Items ​
 
@@ -1213,29 +1391,34 @@ This section lists all the products included in the order.
 - **Quantity:** The number of units purchased.
 - **Individual Item Price:** The price of a single unit of the product.
 - For orders with physical products, a **Create shipment** button appears in the card header while items are left to ship. Shipments you create are listed in a **Shipments** card below. See [Managing Shipments](/guide/store-management/orders-management/managing-shipments) for splitting an order into shipments and adding tracking.
+- To update fulfillment, use **Change Shipping Status** in the **More Action** dropdown.
 
-### 3. Payment & Financial Summary ​
+### 3. Payment ​
 
-Provides a summary of the order's financial aspects, including payments received and any outstanding amounts.
+The **Payment** card summarizes the order's financial aspects, including payments received and any outstanding amounts.
 
 - **Payment Status:** At the top of this section, a status like Paid quickly tells you whether the customer has completed their payment.
 - **Subtotal:** This is the total cost of all the products in the cart before any other charges, like shipping, are added.
+- **Coupon Discount:** Shown when a coupon is applied.
 - **Shipping:** This line shows the shipping cost that was added to the order.
+- **Tax:** The tax charged on the order.
 - **Total:** This is the final price of the order that the customer was charged (Subtotal + Shipping + Taxes, etc.).
 - **Total Paid:** This shows how much money the customer has actually sent for this order.
+- **Total Refund:** Shown after a refund.
 - **Net Payment:** This is the final amount your store has received after all payments have been processed.
+- **Total Due:** Shown when the customer still owes money.
+- **Total Refund Owed:** A warning shown when the customer has paid more than the order total, for example after you removed items.
 
 ### 4. Transaction Details ​
 
-This table provides a log of all payment transactions related to this specific order, including both payments and refunds.
+This table provides a log of all payment transactions related to this specific order, including both payments and refunds. The **Collect Payments** button sits in this card's header.
 
-- **ID:** The transaction ID.
-- **Gateway ID:** The unique ID from the payment gateway.
-- **Date:** The date and time of the transaction.
-- **Payment Method:** The method used for the transaction.
+- **# Date:** The transaction ID with its date. For a successful payment this is the settlement time, when the payment actually went through; otherwise it's when the transaction was created.
+- **Gateway ID:** The unique ID from the payment gateway, linked to the gateway.
+- **Payment Method:** The method used for the transaction, with the card brand and last 4 digits when available.
 - **Total:** The amount of the individual transaction.
 - **Status:** The status of the transaction.
-- **Settlement Time:** When the payment actually settled with the provider.
+- **Actions:** Shown only when needed: **Handle dispute** for disputed payments, or a sync button to refresh the payment status from the gateway.
 
 Why settlement time differs from the order date
 
@@ -1250,16 +1433,18 @@ Displays key details about the customer who placed the order.
 - **Contact Information:** The customer's email address.
 - **Shipping Address:** The address provided for shipping, if applicable.
 - **Billing Address:** The address provided for billing.
-- **Labels:** Any custom labels assigned to the customer.
-- This panel also offers quick links to [edit customer information](/guide/store-management/customers-management/customer-details-overview#_2-customer-information-panel), [manage shipping address](/guide/store-management/customers-management/customer-details-overview#_2-customer-information-panel), and [manage billing address](/guide/store-management/customers-management/customer-details-overview#_2-customer-information-panel).
+- **Customer Summary:** The customer's order count, lifetime value, and linked WordPress user.
+- **Actions Menu:** The card's **...** menu offers **Edit customer information**, **Manage shipping address**, **Manage billing address**, and **Change customer**. See the [customer details](/guide/store-management/customers-management/customer-details-overview#_2-customer-information-panel) guide for more.
+
+Labels have their own **Labels** card in the sidebar. They belong to the order, not the customer.
 
 ### 6. Notes ​
 
 A private field where administrators can add notes or comments related to the order.
 
-### 7. Activity Log ​
+### 7. Activity ​
 
-A complete, time-ordered record of all important events and changes related to this order. This helps you track how the order has progressed and makes troubleshooting easier.
+The **Activity** card is a complete, time-ordered record of all important events and changes related to this order. This helps you track how the order has progressed and makes troubleshooting easier.
 
 - **Examples:** Order status updates (e.g., "Order status updated from completed to processing"), payment paid, refunds processed, license upgrades, and order creation events.
 
@@ -1346,11 +1531,19 @@ Attribution is last-touch
 Every order records attribution. When a returning visitor arrives through a new tagged link, that newer touch replaces the previous one — so this card credits the campaign that brought them back for the visit where they bought, not the one that first introduced them.
 
 For campaign-level totals across all orders, see the [Order Sources Report](/guide/reporting-analytics/order-sources-report).
-### 9. Tax Information ​
+### 9. Business Information ​
 
-This section on the sidebar shows the tax details the customer provided during checkout.
+For a business (B2B) purchase, a **Business Information** card shows the **Company**, **VAT/Tax ID**, **Reg. ID**, whether the tax was **Charge Reversed**, and any **Reverse Charge Declaration**. The card appears only when the order has a company name, tax number, or registration ID. Learn more about [tax configuration and classes](/guide/tax-&-duties/configuration-and-classes).
 
-- **Tax ID:** Displays the customer's **Tax Identification** Number. This is especially useful for B2B (business-to-business) sales or for complying with regional tax regulations that require collecting this information. Learn more about [tax configuration and classes](/guide/tax-&-duties/configuration-and-classes).
+### 10. Licenses ​
+
+Orders with licensed products show a **Licenses** card with each license key (FluentCart Pro).
+
+### 11. Subscription ​
+
+A subscription order shows its subscription summary at the top of the sidebar.
+
+With these panels, you have everything you need to review and manage any order from one screen.
 
 ---
 
@@ -1365,7 +1558,7 @@ FluentCart lets you refund an order in full or in part, pick the exact items and
 ## Opening the Refund Modal ​
 
 1. Open the **Order Details** screen for the order you want to refund.
-2. In the top right corner, click the **Refund** button.
+2. In the top right corner, click the **Refund** button. The button appears only while the order still has a paid amount that has not been refunded.
 3. The **Refund Transaction** modal opens.
 
 INFO
@@ -1385,7 +1578,7 @@ The modal fills itself in with the full refundable amount, so you only change wh
 - **Restock items to inventory:** Shown when a selected item has stock management turned on. It is ticked by default, and it puts the refunded units back into your inventory. It is not shown for a canceled order, because cancelling already restocked the items. Only units that never left your store go back into stock. If some of the refunded units had already shipped, the modal notes "Shipped units will not be restocked."
 - **Refund amount:** With items or shipping selected, FluentCart works out the amount for you, and that amount is also the most you can refund. You can lower it, for example to refund part of an item's price. Any amount you enter must be at least the shipping you are refunding plus the smallest unit of your currency. With nothing selected, you can type any amount up to the **Max refund amount for this transaction** shown below the field.
 - **Reason of refund:** An optional note. Your customers can see this reason. Hover over the information icon for the values Stripe accepts here.
-- **Subscription:** If the order includes a subscription that is still active, you will see **Cancel Subscription (if any)**. It is ticked by default, and it cancels the subscription at your payment provider immediately.
+- **Subscription:** If the order includes a subscription that is still active, you will see **Cancel Subscription (if any)**. It is ticked by default, and it cancels the subscription at your payment provider immediately. Untick it if the subscription should keep running.
 
 INFO
 
@@ -1411,7 +1604,7 @@ If the failure was a timeout, check your gateway's dashboard first, because the 
 ## After the Refund ​
 
 - **Payment status:** The order becomes **Refunded** once the total refunded reaches the net amount paid. Until then, it is **Partially Refunded**.
-- **Order summary:** The refund appears in the order's payment and financial summary, and the refunded items show their refunded quantities.
+- **Order summary:** The **Payment** card on the Order Details screen shows a **Total Refund** line and the updated **Net Payment**, and the refunded items show their refunded quantities.
 - **Stock:** Items you chose to restock are added back to your inventory.
 - **Activity log:** The order's Activity log records the refund event.
 - **Customer email:** FluentCart can email the customer after a refund. You control this with the **Send mail to customer after a refund** option in your [email notification settings](/guide/settings-configuration/email-configuration/configuring-email-notification).
@@ -1443,9 +1636,15 @@ Your orders are neatly organized in a table. Each row is a single order, and eac
 - **Items:** The number of distinct product items included in the order.
 - **Total:** The total monetary value of the order.
 - **Payment Status:** Indicates the current status of the payment.
-- **Status:** The current fulfillment or processing status of the order.
+- **Status:** The order status (Processing, Completed, On Hold, Canceled, Failed).
 - **Order Type:** Differentiates between various types of transactions.
-- **Action Icons:** On the far right of each row, you'll see icons that let you quickly print things like order details.
+- **View Invoice:** An icon on the far right opens the order's invoice/receipt.
+
+You can hide the **Customer**, **Items**, **Status**, **Order Type**, and action columns from the column settings.
+
+```
+![Screenshot of Orders List Page](/images/store-management/viewing-and-filtering-orders/orders-list.webp)
+```
 
 ## Customizing Your View & Actions ​
 
@@ -1466,13 +1665,15 @@ Just click the **More actions** button and select **Show Order Stats**. A summar
 
 ### Show Bulk Actions ​
 
-Selecting this option from the dropdown will reveal checkboxes and bulk management tools on your orders list. This allows you to select multiple orders at once to change their statuses or perform other actions simultaneously, saving you a lot of time.
-
-Sometimes you need to apply the same action to many orders at once, such as removing old records. That's where bulk actions come in handy: simply select multiple orders and click **Delete Selected** button to remove them all at once.
+Selecting this option adds checkboxes to the list. Tick the orders you want, then click **Delete Selected** to remove them. Completed orders can't be deleted and are reported as skipped.
 
 ### Delete Test Orders ​
 
 When you are first setting up your store, you will likely create a few fake orders to test your payment gateways. Instead of deleting them one by one, simply click **Delete Test Orders** from the dropdown to instantly clean up your dashboard and reset your data before going live.
+
+### Export Orders ​
+
+Exports your orders to a CSV or JSON file. See [Exporting Your Store Data](/guide/store-management/exporting-data).
 
 ## Filtering Orders ​
 
@@ -1502,17 +1703,38 @@ For times when you need to get super specific, the **Advanced Filter** is your b
 
 Click the toggle button next to the search bar to turn on the **Advanced Filter**. This opens up a new panel where you can set very detailed rules. Clicking the **+ Add** button reveals several categories to build your filter:
 
-- **Order Property**: Filters related to the order itself, like which product was ordered or the payment method used. For example, you can filter By Order Items, Order Status, Payment Status, Order Type, Payment Method, Order Amount, Order Date.
-- **Customer Property**: Filters based on details about the customer, like their name or email address. For example, you can filter by Customer Name, Customer Email.
-- **Transactions Property**: Lets you search by specific payment details, such as the Transaction ID, Transaction Status, Card Brand, or the last 4 digits of their card.
-- **License Property**: Filters for orders that contain software licenses, based on the license key or status.
-- **Labels**: Filters orders based on any custom labels you have assigned.
+- **Order Property:** By Order Items, Order Status, Payment Status, Order Type, Currency, Payment Method, Order Amount, Order Hash (UUID), and Order Date.
+- **Customer Property:** Customer Name and Customer Email.
+- **Transactions Property:** Transaction Id, Transaction Status, Transaction Type, Card last 4, Card Brand, and Payer email.
+- **License Property:** License key and License Status. Shown only with FluentCart Pro and the licensing module active.
+- **Utm Property:** Utm Campaign, Utm Term, Utm Source, Utm Medium, Utm Content, Utm Id, and Refer Url.
+- **Tax Property:** B2B Purchase and Reverse Charge (Yes/No).
+- **Labels:** Label Name.
 
 You can add multiple rules by clicking the **+OR** button to create very powerful and specific searches. When you're done, click **Apply**. To go back to the full list, just click **Reset**.
 
+To reuse a filter, click **Save as view**, give it a name, and it appears under **More views**. Saving views requires FluentCart Pro. The Advanced Filter itself is free.
+
 ### 3. Using the Search Bar ​
 
-If you just need to find something fast, the search bar at the top of the page is perfect. You can type in an Order ID, customer name, email, or product name to instantly find what you're looking for.
+If you just need to find something fast, the search bar at the top of the page is perfect. Type an invoice number, customer name, customer email, or product name to find matching orders. To look up an order by its ID, type 
+```
+id = 1234
+```
+
+ (you can also use 
+```
+id > 100
+```
+
+ or a range such as 
+```
+id :: 1-10
+```
+
+).
+
+You now have every tool you need to find any order in your store in seconds.
 
 ---
 
@@ -1614,7 +1836,7 @@ FluentCart Pro adds two more filter chips: **With Photos** appears once photo re
 
 Clicking **Write a Review** opens a drawer that slides in from the side of the page. By default it shows the whole form at once, so the customer can fill it in from top to bottom:
 
-- **How would you rate this product?:** A star selector *(Required)*. This field is left out entirely if you turned **Enable Star Ratings** off.
+- **How would you rate this product?:** A star selector, required while **Star Ratings Required** is on. This field is left out entirely if you turned **Enable Star Ratings** off.
 - **Review title:** A short summary, up to 80 characters *(Optional)*.
 - **Your review:** The feedback itself, up to 1,500 characters *(Required)*.
 - **Name and email:** Guests are also asked for their name and email address, and the email is marked private.
@@ -1694,7 +1916,7 @@ INFO
 
 The rating summary card on its own: the average score, the star breakdown, and a **Write a Review** button underneath. Reach for this when you want the summary and the call to action in one place, and the reviews themselves somewhere else on the page.
 
-- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product. Its **Show reviews from** setting can also combine several products into one summary card, and the **Write a Review** button is removed in that case.
+- **Product:** Use **Show reviews from** to follow the **Current product**, pin it to **Selected products**, or combine **All products** into one summary card. With more than one product, the **Write a Review** button is removed.
 - **Star Color:** Inside the card sits a **Rating Summary** block with its own **Star Color** panel, so the stars can match your brand instead of the default amber.
 
 ### 3. Review List ​
@@ -1737,7 +1959,7 @@ A few of them carry their own settings:
 
 The star rating on its own, as a compact inline element, with the number of reviews in brackets next to it. Ideal beside a product title, inside a card, or anywhere a full review section would be too much.
 
-- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product. Its **Show reviews from** setting can also combine several products into one summary card, and the **Write a Review** button is removed in that case.
+- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product.
 - **Minimum Reviews:** Hides the rating until the product has at least this many reviews. Leave it at 0 to always show it, including five empty stars on a product with no reviews.
 - **Minimum Average Rating:** Hides the rating unless the product averages at least this many stars. Half stars are allowed, and 0 shows every rating.
 
@@ -1763,7 +1985,7 @@ The **Logged Out** label only ever appears if your **Who can leave reviews?** se
 
 The review form printed directly on the page, with no button and no drawer. Use it on a dedicated "leave a review" page, or under your product description when you want the form always in view.
 
-- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the block to one product. Its **Show reviews from** setting can also combine several products into one summary card, and the **Write a Review** button is removed in that case.
+- **Product:** Choose **Default** to follow the current product, or **Custom** to pin the form to one product.
 - **Field Layout:** Choose **Inline (all fields at once)** or **Steps (one at a time)**, exactly as on the **Write a Review** block.
 
 ## The Reviews Shortcode ​
@@ -2121,7 +2343,7 @@ The form asks for the following:
 - **Reviewer name:** The name shown on the review *(Required)*.
 - **Reviewer email:** The reviewer's email address *(Optional)*.
 - **Status:** Whether the review goes live right away as **Approved**, or waits as **Pending**.
-- **Verified purchase:** Marks the review with the verified badge.
+- **Mark as verified purchase:** Tick to show the verified badge on the review.
 - **Attachments:** Photos to show with the review. This row appears only while **Photo Reviews** is switched on in your [review settings](/guide/store-management/product-reviews/review-settings#photo-reviews-and-helpful-votes), it needs FluentCart Pro, and the form shows the photo limits you set there.
 
 ## Acting on a Single Review ​
@@ -2164,7 +2386,9 @@ A short reply to a critical review often does more for your store than the revie
 
 To reply, type your response into the message box at the bottom of the **Review Information** card and click **Reply**.
 
-You can also reply to several reviews at once by selecting them in the list and choosing **Reply** from the bulk actions, which is useful when you want to send the same thank-you note to a group of happy customers. Each review holds one store reply. To reword or withdraw it, delete the existing reply first, then write a new one.
+You can also reply to several reviews at once by selecting them in the list and choosing **Reply** from the bulk actions, which is useful when you want to send the same thank-you note to a group of happy customers. Write the message in the **Bulk reply to reviews** window and click **Send Reply**. Reviews that already have a store reply are skipped.
+
+Each review holds one store reply. To reword or withdraw it, delete the existing reply first, then write a new one.
 
 INFO
 
@@ -2404,15 +2628,15 @@ If you use an SEO plugin that also outputs product schema, run the test once to 
 
 ---
 
-## FluentCart status Overview ​
+## FluentCart Status Overview ​
 
 **Source:** [https://docs.fluentcart.com/guide/store-management/understanding-statuses](https://docs.fluentcart.com/guide/store-management/understanding-statuses)
 
-# FluentCart status Overview ​
+# FluentCart Status Overview ​
 
 This guide explains the different statuses you'll see throughout FluentCart. Statuses help you quickly understand the current state of your products, orders, payments, subscriptions, and more.
 
-#### 1. Product status ​
+## Product status ​
 
 These statuses describe the visibility of your products.
 
@@ -2424,7 +2648,7 @@ These statuses describe the visibility of your products.
 | future | The product is scheduled to be published at a future date. |
 | trash | The product has been moved to the trash and is not visible. |
 
-#### 2. Order status ​
+## Order status ​
 
 Order statuses help you follow an order from the time it’s placed until it’s finished.
 
@@ -2436,7 +2660,7 @@ Order statuses help you follow an order from the time it’s placed until it’s
 | canceled | The order has been canceled. |
 | failed | The order could not be processed, usually due to a failed payment. |
 
-#### 3. Payment status ​
+## Payment status ​
 
 These statuses show the state of a payment transaction.
 
@@ -2449,8 +2673,9 @@ These statuses show the state of a payment transaction.
 | refunded | The full payment has been returned to the customer. |
 | partially_refunded | A portion of the payment has been refunded. |
 | authorized | The payment has been approved by the provider but not yet charged (captured). |
+| payment_scheduled | A renewal invoice for a store-billed subscription that FluentCart will charge to the saved payment method on its due date. |
 
-#### 4. Transaction status ​
+## Transaction status ​
 
 These statuses apply to individual transaction records.
 
@@ -2461,8 +2686,9 @@ These statuses apply to individual transaction records.
 | refunded | The transaction has been refunded. |
 | failed | The transaction failed. |
 | dispute_lost | A payment dispute was opened and lost. |
+| authorized | The payment was approved by the provider but has not been captured yet. |
 
-#### 4. Transaction Types ​
+## Transaction Types ​
 
 These describe the nature of a transaction.
 
@@ -2472,7 +2698,7 @@ These describe the nature of a transaction.
 | refund | A payment returned to a customer. |
 | dispute | A transaction related to a payment dispute. |
 
-#### 5. Subscription status ​
+## Subscription status ​
 
 These statuses track the lifecycle of a customer subscription.
 
@@ -2507,7 +2733,7 @@ expired
 
  on its own schedule, using a grace period tied to the billing interval. See [Store Billing for Subscriptions](/guide/product-types-creation/store-managed-subscriptions) for how that escalation works.
 
-#### 6. Shipping status ​
+## Shipping status ​
 
 These statuses track the fulfillment of physical goods.
 
@@ -2518,7 +2744,7 @@ These statuses track the fulfillment of physical goods.
 | delivered | The order has been delivered. |
 | unshippable | The order does not require shipping (e.g., a digital product). |
 
-#### Customer status ​
+## Customer status ​
 
 These statuses describe the state of a customer's account.
 
@@ -2527,7 +2753,7 @@ These statuses describe the state of a customer's account.
 | active | The customer is an active user. |
 | inactive | The customer is an inactive user. |
 
-#### Stock status ​
+## Stock status ​
 
 These statuses indicate the availability of a product.
 
@@ -2537,18 +2763,20 @@ These statuses indicate the availability of a product.
 | outofstock | The product is out of stock. |
 | onbackorder | The product is out of stock but can be purchased and will be shipped when available. |
 
-#### Billing Intervals ​
+## Billing Intervals ​
 
 These define the recurring payment schedule for subscriptions.
 
 | Status | Description |
 | --- | --- |
 | yearly | Yearly billing interval. |
+| half_yearly | Billed every six months. |
+| quarterly | Billed every three months. |
 | monthly | Monthly billing interval. |
 | weekly | Weekly billing interval. |
 | daily | Daily billing interval. |
 
-#### License status ​
+## License status ​
 
 These statuses are for products sold with license keys.
 
@@ -2558,7 +2786,7 @@ These statuses are for products sold with license keys.
 | disabled | The license is disabled. |
 | expired | The license has passed its expiration date. |
 
-#### Fulfillment Types ​
+## Fulfillment Types ​
 
 These describe the type of product being sold.
 
@@ -2567,7 +2795,7 @@ These describe the type of product being sold.
 | physical | A physical product that requires shipping. |
 | digital | A downloadable or digital product that does not require shipping. |
 
-#### Order Types ​
+## Order Types ​
 
 These describe the nature of an order.
 
@@ -2577,7 +2805,7 @@ These describe the nature of an order.
 | subscription | An order for a new subscription. |
 | renewal | An automatic renewal payment for an existing subscription. |
 
-#### Schedule status ​
+## Schedule status ​
 
 These statuses apply to automated or scheduled tasks within FluentCart.
 
@@ -2587,6 +2815,17 @@ These statuses apply to automated or scheduled tasks within FluentCart.
 | processing | A scheduled task is currently running. |
 | completed | A scheduled task has finished. |
 | failed | The task did not complete successfully. |
+
+## Review status ​
+
+These statuses apply to product reviews.
+
+| Status | Description |
+| --- | --- |
+| approved | The review is live on the product page and counts toward the rating. |
+| pending | The review is waiting for your approval. |
+| spam | The review was flagged as junk and is hidden. |
+| trash | The review was discarded but not deleted. |
 
 ---
 

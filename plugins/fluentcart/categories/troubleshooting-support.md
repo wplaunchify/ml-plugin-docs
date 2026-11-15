@@ -223,8 +223,8 @@ This section provides solutions to frequently encountered issues and answers to 
 
 **A:**
 
-- **Check API Credentials:** Ensure you have entered your **Live credentials** (API keys/secrets) correctly in **FluentCart Pro > Settings > Payment Settings > Stripe Settings** or **PayPal Settings**.
-- **Switch Order Mode to 'Live':** Make sure your FluentCart store's "Order Mode" is set to "Live" (this setting is typically found under **FluentCart Pro > Settings > Store Settings > Store Setup**). Payments will not process in Live mode if your store is still configured for "Test" mode.
+- **Check API Credentials:** Ensure you have entered your **Live credentials** (API keys/secrets) correctly under **FluentCart > Settings > Payment Settings**, then open **Stripe** or **PayPal**.
+- **Switch Store Mode to Live:** Make sure **Store Mode** is set to **Live** under **FluentCart > Settings > Store Setup**. Payments won't process as live payments while your store is in **Test** mode.
 - **Configure Webhooks (for Stripe):** For Stripe, it's critical that you have correctly configured the Webhook URL in your Stripe Dashboard as instructed in the [Stripe Settings](/guide/payments-checkout/connecting-payment-gateways/stripe-settings) documentation.
 
 ### Q: My digital product downloads are not working, or files are missing. ​
@@ -242,11 +242,11 @@ This section provides solutions to frequently encountered issues and answers to 
 - **Check Order Status:** Ensure the customer's order for the licensed product is marked as "Completed" and fully paid.
 - **Verify License Status:** On the [License Details screen](/guide/product-types-creation/creating-digital-products-with-licenses#_7-product-specific-license-settings) for that customer's license, ensure its status is "Active" and the "Activation Limit" has not been exceeded.
 - **License Key Activation:** Guide the customer to activate their license key on their site if it's for a WordPress plugin, as outlined in the plugin's instructions.
-- **FluentCart License Activation:** Ensure *your* FluentCart plugin license is active in [FluentCart Pro > Settings > Licensing](/guide/settings-configuration/licensing-settings) to receive updates.
+- **FluentCart License Activation:** Ensure *your* FluentCart plugin license is active in **FluentCart Pro > Settings > License Settings** to receive updates.
 
 ## General Troubleshooting Tips ​
 
-- **Check System Status:** Look for a "System Status" or "Health Check" tool within FluentCart (if available) or WordPress that can provide diagnostic information.
+- **Check Site Health:** Open **Tools > Site Health** in WordPress for diagnostic information about your server and plugins.
 - **Deactivate Conflicts:** Temporarily deactivate other plugins one by one to check for conflicts that might be causing unexpected behavior.
 - **Review Logs:** Utilize the [Understanding Logs](/guide/troubleshooting-support/understanding-logs) guide to check for any related "Warning" or "Failed" entries.
 
@@ -269,7 +269,7 @@ To ensure you receive the quickest and most effective assistance, please follow 
 - [FluentCart Account](https://fluentcart.com/account/)
 2. **Submit a Support Ticket:**
 
-- Log in to your FlunetCart account.
+- Log in to your FluentCart account.
 - Navigate to the "Support Tickets" section.
 - Click on "Create Ticket."
 3. **Provide Detailed Information:** When submitting your ticket, please include as much detail as possible. This helps our team understand your issue quickly and provide a precise solution. Include:
@@ -298,7 +298,7 @@ Think of the **Logs** screen as the diary for your store. It keeps a detailed re
 
 ## Accessing the Logs ​
 
-1. From your WordPress dashboard, navigate to **FluentCart Pro > Logs** in the left sidebar.
+1. From your WordPress dashboard, navigate to **FluentCart > Logs** in the left sidebar. Only administrators see the **Logs** menu item.
 2. This will open the **Logs** screen, displaying a detailed table of all recorded events.
 
 ## Understanding the Logs List Table ​
@@ -306,11 +306,12 @@ Think of the **Logs** screen as the diary for your store. It keeps a detailed re
 The Logs list table presents key information for each event entry:
 
 - **ID:** A unique identification number for each log entry.
-- **Date & Title:** The date and time when the event occurred, along along with a brief title describing the action.
+- **Date:** When the event happened.
+- **Title:** A short description of the action.
 - **Content:** A detailed description of the event that took place.
 - **Status:** The outcome or severity of the action.
 - **Module:** The FluentCart module or area from which the action originated.
-- **Actions:** For many log entries, particularly those related to orders, a **"View Order"** link is provided. Clicking this link will navigate you directly to the [Order Details screen](/guide/store-management/orders-management/order-details-overview) for that specific transaction.
+- **Actions:** For entries about an order or a subscription, a **View** button opens that [order](/guide/store-management/orders-management/order-details-overview) or subscription.
 
 ## Filtering Logs ​
 

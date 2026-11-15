@@ -39,41 +39,46 @@ At the top of the main dashboard area, you'll find a welcome message and quick a
 
 ### 2. Getting Started ​
 
-On the right side of the FluentCart dashboard, you’ll see the **Getting Started** panel. This helps you quickly set up your store by walking through the essential first steps.
+On the right side of the FluentCart dashboard, you’ll see the **Getting Started** panel. This helps you quickly set up your store by walking through the essential first steps. The panel is shown to administrators only.
 
 The checklist includes:
 
 - **Add Details to Store**
- Enter your store name, address, and basic configuration in the settings panel.
+ Add your store name and upload a store logo under **Settings > Store Setup**. The step is ticked off once both are saved.
 - **Add Your First Product**
  Create a product using the **Products → Add New** option to make your first item available for sale.
 - **Setup Pages**
- Generate key pages like Checkout, Cart, and Account in the settigns.
-- **Add Payments**
- Configure Stripe, PayPal, or other payment gateways so you can start accepting payments.
+ Generate key pages like Checkout, Cart, and Account in the settings.
+- **Setup Payment Methods**
+ Turn on Stripe, PayPal, cash on delivery, or another gateway so you can start accepting payments.
 
 #### Page Builder Steps ​
 
-Two more steps appear only when they apply to your site, so you'll see them only if you build pages with one of the supported builders:
+Up to three more steps appear only when they apply to your site, so you'll see them only if you build pages with one of the supported builders:
 
 - **Install Bricks Addon**
  Appears when the **Bricks** theme is active. It points you to the add-on that brings extra FluentCart elements into the Bricks editor, and ticks itself off once that add-on is installed. See [Customize Store with Bricks](/guide/customization-and-themes/customize-store-with-bricks).
 - **Install Elementor Addon**
  Appears when **Elementor** is active, and works the same way for FluentCart's Elementor widgets. See [Using Elementor Widgets](/guide/customization-and-themes/using-elementor-widgets).
+- **Install Divi Addon**
+ Appears when a **Divi** theme is active, and works the same way for FluentCart's Divi modules. See [FluentCart Divi Modules](/guide/customization-and-themes/fluentcart-divi-modules).
 
 INFO
 
 As you complete each step, FluentCart will mark it off automatically. This guide disappears once your setup is complete.
 ### 3. Store Key Metrics ​
 
-This section of the dashboard provides a simple, at-a-glance overview of your store's most important performance indicators. It's designed to give you a quick snapshot of your business health every time you log in.
+This section of the dashboard provides a simple, at-a-glance overview of your store's most important performance indicators. It's designed to give you a quick snapshot of your business health every time you log in. The stats, the chart, **Recent Orders**, **Top Sold Products**, and the heat map are shown only to users with report access.
 
-- **Total Products:** The total number of products currently in your store, including both published and draft items.
-- **Orders:** The total number of orders your store has received.
-- **Revenue:** The total revenue your store has generated from all sales.
-- **Refund:** The total monetary value of all refunds that have been processed.
+A small **Last 30 Days** label above the cards tells you the period. **Total Products** counts every product that isn't in the trash. **Orders**, **Revenue**, and **Refund** cover orders created in the last 30 days, leaving out on-hold and failed orders:
 
-### 3. Sales Growth Chart ​
+- **Orders:** The number of orders.
+- **Revenue:** What you were paid, less refunds and tax.
+- **Refund:** The total amount refunded on those orders.
+
+Amounts are shown in your base currency.
+
+### 4. Sales Growth Chart ​
 
 This chart provides a clear, visual representation of your store's performance over time, helping you to spot trends, track growth, and understand your sales patterns.
 
@@ -86,7 +91,7 @@ You can hover your mouse over any point on the chart to see a detailed breakdown
 
 ### 5. Recent Activities ​
 
-This log shows a list of the newest important things that happened in your store, such as order updates, payments, and refunds. It serves as a quick audit trail for recent operations.
+This log sits in the right-hand sidebar, under the **Getting Started** panel. It shows a list of the newest important things that happened in your store, such as order updates, payments, and refunds, and serves as a quick audit trail for recent operations.
 
 - **Example Activities:** Order Created, Payment Paid, Order Status Updated, Order Refunded, Shipping Status Updated, License Upgrade.
 
@@ -105,7 +110,9 @@ This widget highlights your current best-sellers, helping you to instantly see w
 
 ### 8. Order Heat Map ​
 
-A geographical visualization that likely shows areas with high order volume, giving you insights into your customer distribution.
+A world map that shades each country from **Low** to **High** by its number of orders. Hover over a country to see its order count.
+
+The dashboard gives you a daily snapshot of your store, so you can spot what needs attention the moment you log in.
 
 ---
 
@@ -119,9 +126,9 @@ This glossary defines common terms used throughout the FluentCart documentation 
 
 **A**
 
-- **Abandoned Cart:** A shopping cart where a customer has added products but has not completed the checkout process. FluentCart can track these for recovery and remarketing campaigns.
+- **Abandoned Cart:** A shopping cart where a customer has added products but has not completed the checkout process. FluentCart doesn't run cart recovery on its own. If you use FluentCRM, its **Abandoned Cart** feature can track FluentCart carts and send recovery emails.
 - **Activation Limit:** The maximum number of times a **License Key** can be used to activate a software product. This is set per **Variation** (e.g., a "Single Site" license has an activation limit of 1).
-- **Add-on:** An optional extension that adds new features and capabilities to FluentCart Pro, such as Subscriptions or advanced licensing.
+- **Add-on:** A separate plugin that adds a feature to FluentCart, such as an extra payment gateway, Elementor, Bricks, or Divi elements, or the Migrator. You can install most add-ons from **Settings > Features & addon**. Subscriptions are built into the free plugin; licensing is part of FluentCart Pro.
 - **Advanced Filters:** A set of powerful tools in the admin dashboard for searching and segmenting records like orders or customers based on specific, detailed criteria.
 - **Advanced Inventory:** A Pro module that adds a central **Inventory** screen for viewing low and out-of-stock items, updating stock in bulk, and reviewing a history of every stock change.
 - **Advanced Variations:** A pricing method for products built from reusable **Attributes** such as Color, Size, or Material. You pick the option dimensions and their values, and FluentCart automatically generates every possible combination as a **Variation**. To learn more, read the [Advanced Variations](/guide/product-types-creation/advanced-variations) documentation.
@@ -136,7 +143,6 @@ This glossary defines common terms used throughout the FluentCart documentation 
 **C**
 
 - **Checkout:** The final stage of a purchase where customers provide payment information, shipping details, and confirm their order.
-- **Checkout Action:** An automation that triggers during the checkout process. It is used to connect FluentCart to other services, such as adding a customer to a specific list in FluentCRM. Also referred to as a **Feed**.
 - **Compare at price:** An optional, higher price shown with a strikethrough next to the actual selling price. This is used to visually indicate a sale or discount.
 - **Coupon:** A promotional code that customers can enter at checkout to receive a discount, such as a fixed amount or a percentage off their order total.
 - **Dynamic Pricing:** A FluentCart Pro feature that automatically applies discounts or fees at checkout when a cart meets conditions you set, such as quantity, subtotal, customer, or payment method. Rules can apply to line items, the checkout total, or shipping, and can be scheduled.
@@ -150,12 +156,11 @@ This glossary defines common terms used throughout the FluentCart documentation 
 
 **E**
 
-- **Email Credit Link:** A unique URL that can be embedded in emails. When a customer clicks this link, a specific credit or discount is automatically applied to their next purchase or added to their account.
 - **Email Notification:** Automated emails sent from your store to customers or administrators to confirm actions like order placement, payment, or refunds.
 
 **F**
 
-- **Feed** In the context of **Checkout Actions:**, a feed is a single, configured automation that sends data from FluentCart to another service (like FluentCRM).
+- **Feed:** Short for **Integration Feed**. See **Integration Feed**.
 
 **G**
 
@@ -168,6 +173,7 @@ This glossary defines common terms used throughout the FluentCart documentation 
 
 **I**
 
+- **Integration Feed:** A rule that runs when an order or subscription event happens (for example, an order is paid or refunded) and sends data to another service, such as adding the customer to a FluentCRM list. Feeds can be global or set on a single product. Also referred to as a **Feed**.
 - **Inventory Management:** The process of tracking stock levels for **Physical Products**, including available quantities, units on hold for pending orders, and fulfilled units.
 
 **L**
@@ -185,21 +191,21 @@ This glossary defines common terms used throughout the FluentCart documentation 
 **O**
 
 - **Order:** A formal record of a customer's transaction. It includes all details of the purchase, such as products, pricing, customer information, and payment status.
-- **Order Status:** The current stage of an **Order** in the fulfillment process (e.g., Pending, Completed, Refunded). Statuses can be updated manually or automatically by payment events.
-- **Order Bump** An Order Bump is a last-minute offer presented to customers directly on the checkout page, just before they complete their purchase. It's designed to increase the average order value by allowing customers to add a complementary or discounted product to their order with a single click.
+- **Order Status:** The current stage of an **Order** in the fulfillment process (e.g., Processing, Completed, On Hold, Canceled). Payment progress, such as Pending, Paid, or Refunded, is tracked separately as the **Payment Status**. Statuses can be updated manually or automatically by payment events.
+- **Order Bump:** An Order Bump is a last-minute offer presented to customers on the checkout page, in the cart drawer, or on the cart page, just before they complete their purchase. It's designed to increase the average order value by allowing customers to add a complementary or discounted product to their order with a single click. Order Bumps are a FluentCart Pro feature.
 
 **P**
 
-- **Payment Gateway:** A third-party service that processes customer payment information to authorize and complete transactions. FluentCart includes built-in integrations for major gateways like Stripe and PayPal, and allows for custom integrations via **Webhooks**.
+- **Payment Gateway:** A third-party service that processes customer payment information to authorize and complete transactions. The free plugin includes Stripe, PayPal, and cash on delivery. FluentCart Pro adds Paddle, Mollie, and Authorize.net, and add-ons connect more gateways such as Square and Razorpay.
 - **Physical Product:** A tangible item that must be physically shipped to a customer. Requires inventory tracking and shipping settings.
 - **Product:** Any item, service, or download that you offer for sale in your store.
 - **Product Category:** A method for organizing similar products into public-facing groups to help customers browse your store (e.g., "Men's Clothing," "Software," "Home Decor").
 - **Product Status:** The current visibility and availability of a product in your store's backend.
 
-- **Draft:** The product is not visible to the public and is still being worked on.
 - **Published:** The product is live and available for purchase on your storefront.
-- **Archived:** (Coming Soon) A planned status to hide a product from the main store view without deleting it.
-- **Product Type:** A flexible, custom classification system you create to group and manage products for your own internal needs (e.g., "Polo Shirts," "Limited Edition," "Brand Collabs").
+- **Draft:** The product is not visible to the public and is still being worked on.
+- **Scheduled:** The product is published automatically at a date you set.
+- **Product Type:** Whether a product is **Physical** (shipped) or **Digital** (downloaded). To group products your own way, use **Categories** and **Brands**.
 - **Purchases:** A record of a completed transaction where a customer has successfully bought one or more products from your store.
 
 **R**
@@ -216,9 +222,9 @@ This glossary defines common terms used throughout the FluentCart documentation 
 - **Shipping Class:** A way to group products with similar shipping characteristics (e.g., "Heavy Items," "Fragile") in order to apply specific shipping cost adjustments.
 - **Shipping Method:** The specific service used to deliver physical products, such as Flat Rate, Free Shipping, or Local Pickup. Methods are applied to different **Shipping Zones**.
 - **Shipping Zone:** A specific geographic region (e.g., a country, state, or group of zip codes) to which a unique set of **Shipping Methods** and rates apply.
-- **Shortcode:** A small placeholder, enclosed in curly braces (e.g., 
+- **Shortcode:** A small placeholder in double curly braces (for example, 
 ```
-{order.id}
+{{order.id}}
 ```
 
 ), used in email and document templates. FluentCart automatically replaces it with the corresponding dynamic information, such as a customer's name or order number.
@@ -266,12 +272,15 @@ These settings can be accessed and modified anytime from **FluentCart → Settin
 
 The second step turns tax collection on or off and captures the high-level tax behaviour for your store. The card pre-fills your **Store country** from Step 1, so make sure that's right before continuing.
 
-- **Collect taxes for my store:** Master toggle. Leave it on to collect tax at checkout; switch it off to ship without any tax calculations.
+- **Collect taxes for my store:** Master toggle. FluentCart pre-sets it, and picks **Prices include tax** or **Add tax at checkout**, based on the store country you chose. Check both before you continue. Switch the toggle off to sell without any tax calculations.
 - **How do you display your prices?** Pick one: - **Prices include tax:** the price on a product already contains tax. FluentCart splits the tax out for reporting, and the customer pays the listed number.
 - **Add tax at checkout:** the listed price excludes tax. Tax is shown separately and added to the subtotal.
-- **Tax ID / VAT Number** *(optional)*: Your registration number. Printed on invoices and PDF receipts where local rules require it.
+- **Cross-border compliance** *(EU stores only)*: If your store country is in the EU, choose how you charge VAT to customers in other EU countries: - **OSS (One Stop Shop):** Charge each EU customer their own country's VAT rate. This is the default.
+- **Home Country Only:** Charge all EU customers your home country's rate.
+- **Only for [your country]:** Only collect VAT from customers in your own country.
+- **Tax ID / VAT Number** *(optional)*: Your registration number, printed on invoices. For EU stores the label follows your choice above: **OSS VAT Number**, **Home VAT Number**, or **[Country] VAT Number**.
 
-An advisory at the bottom of the card reminds you that a **standard tax class will be created automatically for your store country**, and that the actual per-region rates are set later under **Tax → Tax Rates**.
+An advisory at the bottom of the card explains what happens next. For most countries, a standard tax class is created for your store country and you add rates later under **Tax → Tax Rates**. For EU stores, standard EU VAT rates are imported automatically for all EU countries.
 
 Click **Continue** to proceed. You can also choose **Skip for now** to leave tax disabled (configure it later) or **Skip All** to jump straight past the remaining wizard steps.
 
@@ -363,9 +372,10 @@ This guide will show you how to install and activate the FluentCart plugin on yo
 
 Before you install FluentCart, make sure your hosting environment meets the following requirements. This ensures that the plugin runs smoothly and delivers the best performance for your store.
 
-Minimum Requirements [​](#minimum-requirements)- **WordPress Version:** 5.0 or higher
+Minimum Requirements [​](#minimum-requirements)- **WordPress Version:** 6.7 or higher
 - **PHP Version:** 7.4 or higher
-- **MySQL Version:** 5.6 or higher (with InnoDB support)
+- **Database:** MySQL or MariaDB. FluentCart does not run on SQLite.
+- **FluentCart Pro:** Keep FluentCart and FluentCart Pro on the same version. FluentCart 2.2.0 needs FluentCart Pro 2.2.0 or later, and Pro 2.2.0 needs FluentCart 2.2.0 or later.
 
 ## 1. Installing FluentCart (Free Version) ​
 
@@ -377,11 +387,11 @@ This is the standard method for installing the core FluentCart plugin, which is 
 4. Locate the "FluentCart" plugin in the search results and click **"Install Now"**.
 5. Once installed, click **"Activate"**. You can now use the FluentCart plugin.
 
-## 2. Installing FluentCart Pro Addons (Requires Base Plugin) ​
+## 2. Installing FluentCart Pro (Requires Base Plugin) ​
 
-If you have purchased FluentCart Pro Addons for advanced features, you will need to upload and activate them. Ensure the Free Base Plugin (from step 1) is already installed and active before proceeding with Pro Addons.
+If you have purchased FluentCart Pro for advanced features, you will need to upload and activate it. Ensure the Free Base Plugin (from step 1) is already installed and active before proceeding with FluentCart Pro.
 
-1. Download the FluentCart Pro Addons 
+1. Download the FluentCart Pro 
 ```
 .zip
 ```
@@ -391,7 +401,7 @@ If you have purchased FluentCart Pro Addons for advanced features, you will need
 1. Navigate to your WordPress dashboard.
 2. Go to **Plugins > Add New**.
 3. At the top of the page, click the **"Upload Plugin"** button.
-4. Click **"Choose File"**, then select the FluentCart Pro Addons 
+4. Click **"Choose File"**, then select the FluentCart Pro 
 ```
 .zip
 ```
@@ -400,22 +410,22 @@ If you have purchased FluentCart Pro Addons for advanced features, you will need
 5. Click **"Install Now"**.
 6. Once the installation is complete, click **"Activate Plugin"**.
 
-## 3. Activating Your FluentCart Pro Addons License ​
+## 3. Activating Your FluentCart Pro License ​
 
-After installing the Pro Addons, you will need to activate your license key. This is essential to receive automatic updates, bug fixes, new features, and access to our support for your Pro Addons.
+After installing FluentCart Pro, you will need to activate your license key. This is essential to receive automatic updates, bug fixes, new features, and access to our support for FluentCart Pro.
 
-1. When you turn on the Pro Addons, you might see an activation notice directly in your WordPress dashboard. You can click on this notice to start the activation process.
+1. When you turn on FluentCart Pro, you might see an activation notice directly in your WordPress dashboard. You can click on this notice to start the activation process.
 2. Alternatively, navigate to the FluentCart Dashboard in your WordPress admin area.
 3. In the left sidebar, go to **FluentCart Pro > Settings**.
 4. Click on the **"License Settings"** tab.
-5. In the "License Key" field, enter the unique license key you received upon purchasing FluentCart Pro Addons from the [site](https://fluentcart.com/account/).
+5. In the "License Key" field, enter the unique license key you received upon purchasing FluentCart Pro from the [site](https://fluentcart.com/account/).
 
 1. Click the **"Verify License"** button. - If successful, you will see a confirmation message, and your license status will be marked as active.
 - If you encounter an error, please double-check your license key for any typos or ensure your site can connect to the licensing server.
 
 Need a License Key?
 
-If you don't have a FluentCart Pro Addons license key yet, you can purchase one directly from [FluentCart](https://fluentcart.com/).
+If you don't have a FluentCart Pro license key yet, you can purchase one directly from [FluentCart](https://fluentcart.com/).
 
 ---
 
@@ -445,10 +455,10 @@ Every type supports variations, so one product can carry different sizes, format
 
 Once your products are in place, these systems run the store day to day:
 
-- **Payments:** Connect Stripe, PayPal, Square, Paddle, Mollie, Razorpay, and other gateways, or take offline payments with cash on delivery.
+- **Payments:** Take payments with Stripe, PayPal, and cash on delivery in the free plugin. FluentCart Pro adds Paddle, Mollie, and Authorize.net, and add-ons connect gateways such as Square, Razorpay, Paystack, Flutterwave, Mercado Pago, Airwallex, and SSLCommerz.
 - **Tax and VAT:** Apply country-specific rates and tax classes, including EU VAT with OSS, home country, or per-country registrations.
 - **Shipping:** Build the zones, methods, classes, and packages that match how you actually ship.
-- **Inventory:** Track stock for each product or variation, with low-stock thresholds and bulk import.
+- **Inventory:** Track stock for each product or variation, with a low-stock view and bulk import in FluentCart Pro's Advanced Inventory.
 - **Reports:** Follow sales, revenue, refunds, subscriptions, cohorts, and retention from one dashboard.
 - **Customer accounts:** Give buyers their own area for orders, downloads, licenses, subscriptions, and saved payment methods.
 
@@ -466,7 +476,7 @@ Start here if this is your first store on the site.
 
 ### Moving From Another Platform ​
 
-If you already sell somewhere else, the [Migration](/guide/migration/) tool brings your products, customers, orders, subscriptions, and licenses across in one coordinated pass. Your old store is only ever read, never modified, so it keeps running while you migrate.
+If you already sell somewhere else, the [Migration](/guide/migration/) tool brings your products, customers, orders, subscriptions, and licenses across in one coordinated pass. Your old store keeps running while you migrate. The Migrator only reads your orders, customers, and settings; the one thing it writes is a small reference field on each source product so it can match it to the new FluentCart product.
 
 FluentCart currently migrates from **Easy Digital Downloads** and **WooCommerce**.
 

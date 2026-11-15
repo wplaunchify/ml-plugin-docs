@@ -85,7 +85,13 @@ These variables affect multiple pages at once, making them perfect for store-wid
 | --- | --- | --- |
 | --fct-input-bg-color | #ffffff | Input background |
 | --fct-input-text-color | #2F3448 | Input text |
-| --fct-input-border-color | #d6dae1 | Input border |
+
+Input borders use 
+```
+--fct-border-color
+```
+
+.
 
 **Example: Making all buttons blue**
 
@@ -112,7 +118,7 @@ The checkout page has its own set of variables for fine-tuned control.
 | Variable | Default Value | Description |
 | --- | --- | --- |
 | --fct-checkout-input-bg-color | #ffffff | Input background |
-| --fct-checkout-input-text-color | theme('colors.system.dark') | Input text |
+| --fct-checkout-input-text-color | --fct-input-text-color | Input text |
 | --fct-checkout-input-border-color | --fct-checkout-border-color | Input border |
 
 ### Checkout Sections ​
@@ -216,14 +222,14 @@ The cart drawer (slide-out cart) can be customized independently.
 | --- | --- | --- |
 | --fct-cart-drawer-btn-bg-color | #253241 | Action button |
 | --fct-cart-drawer-btn-text-color | #ffffff | Button text |
-| --fct-cart-drawer-open-btn-bg-color | #253241 | Cart icon button |
-| --fct-view-cart-btn-bg-color | #253241 | View Cart button |
+| --fct-cart-drawer-open-btn-bg-color | #ffffff (follows --fct-secondary-btn-bg-color) | Cart icon button |
+| --fct-view-cart-btn-bg-color | #ffffff (follows --fct-secondary-btn-bg-color) | View Cart button |
 
 ### Cart Badge ​
 
 | Variable | Default Value | Description |
 | --- | --- | --- |
-| --fct-cart-drawer-badge-bg-color | #ef4444 | Badge background |
+| --fct-cart-drawer-badge-bg-color | #000000 | Badge background |
 | --fct-cart-drawer-badge-text-color | #ffffff | Badge text |
 
 **Example: Blue cart drawer**
@@ -326,15 +332,15 @@ Customize individual product pages.
 
 | Variable | Default Value | Description |
 | --- | --- | --- |
-| --fct-single-product-primary-text-color | theme('colors.system.dark') | Primary text |
-| --fct-single-product-secondary-text-color | theme('colors.system.mid') | Secondary text |
+| --fct-single-product-primary-text-color | --fct-primary-text-color | Primary text |
+| --fct-single-product-secondary-text-color | --fct-secondary-text-color | Secondary text |
 
 ### Product Page Borders ​
 
 | Variable | Default Value | Description |
 | --- | --- | --- |
-| --fct-single-product-border-color | theme('colors.gray.outline') | Element borders |
-| --fct-single-product-active-border-color | theme('colors.primary.500') | Active borders |
+| --fct-single-product-border-color | --fct-border-color | Element borders |
+| --fct-single-product-active-border-color | --fct-active-border-color | Active borders |
 
 ### Quantity Selector ​
 
@@ -785,6 +791,8 @@ off_session
 ```
 
  to have the card stored, or a falsy value to leave it unstored.
+
+The filter runs only when Stripe takes a one-time payment. Checkouts that start a subscription always ask Stripe to keep the card.
 
 php
 ```
@@ -1296,6 +1304,8 @@ The FluentCart addons for Elementor, Bricks, and Divi each include a ready-made 
 Before you start, make sure the addon for your builder is installed and active: **FluentCart Elementor Blocks**, **FluentCart Bricks Blocks**, or **FluentCart Divi Modules**. Then pick the steps for your builder.
 
 ### Elementor ​
+
+The **Currency Switcher** widget needs **FluentCart Elementor Blocks 1.1.1** or later.
 
 1. Open the page or template with **Edit with Elementor**.
 2. In the **Elements** panel, type 
@@ -1819,7 +1829,8 @@ A focused shortcut that sends customers straight to checkout without stopping at
 
 A compact cart icon that usually sits in your site header. It lets customers see their cart count and total without leaving the current page.
 
-- **Style Tab:** Almost all customization lives in **Cart Icon Style**. - **States:** Style **Normal** and **Hover** states separately.
+- **Content Tab:** Choose the **Cart Icon** (or a **Custom Icon URL**), and set **Display Total Price**, **Show Cart Item Count**, and **Badge Count Shows**: **Count distinct products** or **Count total item quantity**.
+- **Style Tab:** Almost all visual customization lives in **Cart Icon Style**. - **States:** Style **Normal** and **Hover** states separately.
 - **Typography & Colors:** Adjust the typography, text color, and icon color.
 - **Container Style:** Pick a **Background Type** (Classic or Gradient), choose a **Border Type**, set the **Border Radius** for rounded corners, and add a **Box Shadow**.
 - **Advanced Tab:** Fine-tune padding and margin so the cart icon aligns perfectly with the rest of your header.
@@ -1837,7 +1848,7 @@ Renders the full FluentCart shopping cart — item rows, quantities, line totals
 
 The main widget for building shop pages. It renders your product catalog as a clean grid or list and supports filters, sorting, and pagination.
 
-- **Content Tab:** Control which products show up and how they're arranged. - **General Settings:** Set **Products Per Page**, switch the **View Mode** between Grid and List, choose **Grid Columns**, and pick a **Pagination Type** (Infinite Scroll, Load More, or numbered pages). Choose the **Price Format**, sort with **Order By** and **Order**, and toggle **Use Default Style** for FluentCart's built-in styling.
+- **Content Tab:** Control which products show up and how they're arranged. - **General Settings:** Set **Products Per Page**, switch the **View Mode** between Grid and List, choose **Grid Columns**, and pick a **Pagination Type** (**Infinite Scroll** or **Page Numbers**). Choose the **Price Format** and toggle **Use Default Style** for FluentCart's built-in styling.
 - **Shop Layout:** Adjust the spacing and layout of the product grid.
 - **Product Card Layout:** Choose which elements (image, title, excerpt, price, rating, button) appear inside each product card. See [ratings on shop cards](/guide/customization-and-themes/elementor-review-widgets#ratings-on-shop-cards) for the **Rating** element.
 - **Filter Settings:** Turn on a sidebar filter so customers can narrow the list by category, price, or attributes.
@@ -1916,7 +1927,7 @@ A button that links to your customer's account dashboard. Drop it into your head
 - **Style Tab:** Customize colors, typography, borders, and hover states.
 - **Advanced Tab:** Standard Elementor positioning and responsive controls.
 
-The dashboard page itself is configured under **FluentCart Pro → Settings → Pages Setup**.
+The dashboard page itself is configured under **FluentCart → Settings → Store Settings → Pages Setup**.
 
 ## 12. Customer Dashboard ​
 
@@ -1943,6 +1954,7 @@ A search input that lets customers find products from anywhere on your site. Use
 - **Content Tab:** Set up the search behavior. - **Show Category Filter:** Turn this on to add an inline category dropdown next to the search input.
 - **Link Target:** Choose whether results open in the **Same Tab** or a **New Tab**.
 - **Link With Shop App:** Connect the bar to your configured Shop App page so results display in your store's layout.
+- **Show Thumbnail:** Shows product images in the results dropdown.
 - **Style Tab:** Style the input field, the category dropdown, the submit button, and the placeholder text.
 - **Advanced Tab:** Standard Elementor controls.
 
@@ -1950,7 +1962,7 @@ A search input that lets customers find products from anywhere on your site. Use
 
 Renders the store logo you configured in your FluentCart store settings. Drop it into headers, footers, or invoice templates so the logo updates everywhere when you change it.
 
-- **Content Tab:** Configure the link. - **Link:** Choose where clicking the logo takes the visitor (Home Page or a custom URL).
+- **Content Tab:** Configure the link. - **Link:** **Home Page** makes the logo link to your home page, and **None** shows it without a link.
 - **Open in New Tab:** Toggle on to open the link in a new browser tab.
 - **Style Tab:** Adjust the logo size, max width, alignment, and border radius.
 - **Advanced Tab:** Standard Elementor positioning controls.
@@ -1994,7 +2006,7 @@ Standard Elementor controls for margin, padding, and responsive visibility.
 
 ## 16. Related Products ​
 
-Renders a row of products related to the current product. FluentCart picks the related items based on shared categories and tags, plus any manual relations you set in the product editor.
+Renders a row of products related to the current product. FluentCart picks products that share a category or brand with the current product.
 
 - **Content Tab:** Configure the query and badges. - **Source:** Pull from the **Current Product** or a **Custom** product.
 - **Select Product:** When **Source** is **Custom**, pick the product whose related items you want to preview.
@@ -2316,22 +2328,27 @@ The **FluentCart Bricks Blocks** addon brings a full palette of FluentCart eleme
 Before you install the addon, make sure of two things:
 
 1. The **Bricks** theme is installed and active on your site. These blocks render inside the Bricks builder, so without the theme there is nowhere for them to appear.
-2. Your FluentCart Pro license is verified. See [Licensing Settings](/guide/settings-configuration/licensing-settings) if you have not done this yet.
+2. FluentCart is installed. The addon itself is free.
 
 ## Installing the Addon ​
 
 The blocks ship as a separate addon, so you install it once from the FluentCart settings before it shows up in Bricks.
 
-1. Navigate to **FluentCart Pro > Settings > Features & addon**.
+1. Navigate to **FluentCart > Settings > Features & addon** (the menu reads **FluentCart Pro** when Pro is active).
 2. Scroll to the **Plugin Addons** section.
 3. Find the **FluentCart Bricks Blocks** card. Its description reads "Enable to get Bricks Builder elements for FluentCart. Requires the Bricks theme."
-4. Click the **Install & Activate** button on the card.
+4. Click the **Install & Activate** button on the card (with FluentCart Pro active), or **Download** on the free plugin.
 
-FluentCart fetches the addon, installs it, and activates it for you. The card's status badge switches to **Active** when it finishes, and no upload or page reload is needed. For more on this installer, see [Features & Addons](/guide/settings-configuration/features-addons).
+FluentCart installs and activates the addon, then reloads the page. The card then shows an **Active** badge. For more on this installer, see [Features & Addons](/guide/settings-configuration/features-addons).
 
 INFO
 
-If the **Install & Activate** button is greyed out or replaced with a license prompt, your FluentCart Pro license either has not been verified or has lapsed. Verify it from **Settings > License Settings** and the installer becomes available again.
+On the free plugin the button reads **Download**: it opens the FluentCart addons page, where you download the 
+```
+.zip
+```
+
+ and upload it under **Plugins > Add New > Upload Plugin**.
 ## Finding the Blocks in Bricks ​
 
 Once the addon is active, the blocks are ready to use straight away.
@@ -2393,7 +2410,7 @@ These blocks help customers find their way around your catalog:
 - **Product Carousel:** Products in a sliding carousel. Set **Slides to Show**, **Space Between**, and **Autoplay** with its **Autoplay Speed**, then choose whether **Infinite Loop**, **Show Arrows**, and **Show Pagination** are on.
 - **Product Categories:** A list of your product categories. **Display Style** sets the look, while **Show Product Count**, **Show Hierarchy**, and **Show Empty Categories** control what is listed.
 - **Related Products:** Products related to the one being viewed. **Related By** matches on **Categories** or **Brands**, and you can set the **Heading Text**, **Order By**, **Columns**, and **Products Per Page**.
-- **Product Search:** A search field scoped to your products, with an optional **Show Category Filter**. **Open In** sets where results land.
+- **Product Search:** A search field scoped to your products, with an optional **Show Category Filter**. **Open In** sets where results land. **Link With Shop App** makes the search filter a **Products** element on the same page instead of opening a results dropdown.
 
 ### Store and Account ​
 
@@ -2539,24 +2556,29 @@ This guide walks you through installing the addon, finding the modules inside Di
 Before you install the addon, make sure of two things:
 
 1. **Divi 5.0 or newer** is installed and active on your site. These are native Divi 5 modules, so they render inside the Divi 5 builder and need that version to appear.
-2. **FluentCart 1.3.4 or newer** is installed, and your FluentCart Pro license is verified. See [Licensing Settings](/guide/settings-configuration/licensing-settings) if you have not done this yet.
+2. **FluentCart 1.3.4 or newer** is installed. The addon itself is free.
 
 ## Installing the Addon ​
 
 The modules ship as a separate addon, so you install it once from the FluentCart settings before they show up in Divi.
 
-1. From your WordPress dashboard, navigate to **FluentCart Pro > Settings > Features & addon**.
+1. From your WordPress dashboard, navigate to **FluentCart > Settings > Features & addon** (the menu reads **FluentCart Pro** when Pro is active).
 2. Scroll to the **Plugin Addons** section.
 3. Find the **FluentCart Divi Modules** card. Its description reads "Native Divi 5 modules for FluentCart products, cart, and checkout. Requires Divi 5.0+ and FluentCart 1.3.4+."
-4. Click the **Install & Activate** button on the card.
+4. Click the **Install & Activate** button on the card (with FluentCart Pro active), or **Download** on the free plugin.
 
-FluentCart fetches the addon, installs it, and activates it for you. No upload or manual download is needed. When it finishes, the card's status badge switches to **Active**.
+With FluentCart Pro, FluentCart installs and activates the addon for you, then reloads the page. When it finishes, the card's status badge switches to **Active**.
 
 For more on this one-click installer, see [Features & Addons](/guide/settings-configuration/features-addons).
 
 INFO
 
-If the **Install & Activate** button is greyed out or replaced with a license prompt, your FluentCart Pro license either has not been verified or has lapsed. Verify it from **Settings > License Settings** and the installer becomes available again.
+On the free plugin the button reads **Download**: it opens the FluentCart addons page, where you download the 
+```
+.zip
+```
+
+ and upload it under **Plugins > Add New > Upload Plugin**.
 ## Finding the Modules in Divi ​
 
 Once the addon is active, the modules are ready to use straight away.
@@ -2812,6 +2834,9 @@ text
 // Subscription products only
 [fluent_cart_products product_type="subscription"]
 
+// One-time (non-subscription) products only
+[fluent_cart_products product_type="onetime"]
+
 // Only products currently on sale
 [fluent_cart_products on_sale="yes"]
 ```> Tip: Empty parameter values (e.g., ids="", category="", product_type="") are safely ignored, so you don't have to worry about accidental blank values breaking your page.
@@ -2849,6 +2874,9 @@ text
 // Alphabetical A–Z
 [fluent_cart_products sort_by="name-asc"]
 
+// Alphabetical Z–A
+[fluent_cart_products sort_by="name-desc"]
+
 // Newest first
 [fluent_cart_products sort_by="date-newest"]
 
@@ -2864,7 +2892,7 @@ text
 // Show products in a 3-column grid
 [fluent_cart_products columns="3"]
 
-// Limit to 6 products in a 3-column grid
+// 6 products per page in a 3-column grid
 [fluent_cart_products limit="6" columns="3"]
 
 // 2-column grid view
@@ -2915,18 +2943,18 @@ text
 | category | Filter products by one or more category slugs. | — | Comma-separated slugs (e.g., cloths or cloths,shoes) |
 | category_id | Filter products by one or more category term IDs. | — | Comma-separated IDs (e.g., 9 or 9,12) |
 | taxonomies | Filter products by term IDs from any taxonomy registered on products. | — | taxonomy:id,id, with | between taxonomies (e.g., product-brands:67,82|product-categories:9) |
-| product_type | Show only products of a specific type. | — | simple, simple_variations, physical, digital, subscription |
+| product_type | Show only products of a specific type. | — | simple, simple_variations, physical, digital, subscription, onetime |
 | on_sale | Show only products that are currently discounted. | — | yes |
-| sort_by | A quick preset for sorting products. | — | price-low, price-high, name-asc, date-newest, date-oldest |
-| orderby | The field to sort products by (use with order). | — | price, name, date |
-| order | Sort direction (use with orderby). | — | ASC, DESC |
-| columns | Number of columns in the product grid. | — | Any number (e.g., 2, 3, 4) |
-| limit | Maximum number of products to display. | — | Any number (e.g., 6, 10) |
+| sort_by | A quick preset for sorting products. | name-asc | name-asc (A–Z), name-desc (Z–A), price-low, price-high, date-newest, date-oldest |
+| orderby | The field to sort products by (use with order). | — | title, price, date, id |
+| order | Sort direction (use with orderby). | DESC | ASC, DESC |
+| columns | Number of columns in the product grid. | — | 1 to 6 |
+| limit | Another name for per_page. Sets how many products show per page. | — | Any number (e.g., 6, 10) |
 | view_mode | Choose between a grid layout or a list layout. | grid | grid, list |
-| per_page | How many products to show on one page. | 12 | Any number (e.g., 4, 8, 20) |
-| paginator | The style of the page navigation at the bottom. | numbers | numbers, load_more, scroll, none |
-| enable_filter | Show or hide the filter sidebar on the left/right. | true | true, false |
-| live_filter | If "true," products update instantly as you click filters. | true | true, false |
+| per_page | How many products to show on one page. | 10 | Any number up to 100 (e.g., 4, 8, 20) |
+| paginator | How visitors move through more products. | scroll | scroll (load more as the visitor scrolls), numbers (numbered pages) |
+| enable_filter | Show or hide the filter sidebar on the left/right. | false | true, false |
+| live_filter | If "true," products update instantly as you click filters. | false | true, false |
 | custom_filters | A list of settings to control category and price filters. | — | See JSON guide below |
 | filters | Settings for how products are sorted (Name, Price, etc.). | — | See JSON guide below |
 
@@ -2961,7 +2989,7 @@ true
 
 **filters object:**
 
-- **sort_by:** Choose how products appear first. Options include: 
+- **sort_by:** Choose how products appear first. Options: 
 ```
 name-asc
 ```
@@ -2973,17 +3001,37 @@ name-desc
 
 , 
 ```
-price-asc
+price-low
 ```
 
 , 
 ```
-price-desc
+price-high
 ```
 
-, or 
+, 
 ```
-date-desc
+date-newest
+```
+
+, 
+```
+date-oldest
+```
+
+. The 
+```
+filters
+```
+
+ attribute only takes effect when 
+```
+enable_filter
+```
+
+ is 
+```
+true
 ```
 
 .
@@ -3004,16 +3052,17 @@ text
 
 | Attribute | Description |
 | --- | --- |
-| button_text | Changes what the button says. Example: button_text="Get it Now". (If left empty, it usually says "Checkout".) |
-| variation_id | (Very Important) The ID of the specific item or size/color you want to sell. You must use the specific variation ID found in your product settings. |
+| button_text | Changes what the button says. Example: button_text="Get it Now". Defaults to Buy Now. |
+| variation_id | (Required) The ID of the specific item or size/color you want to sell. Without it the shortcode renders nothing. A product ID also works and uses that product's first variation. |
 | target | Decides where the link opens. Use _self for the same tab or _blank to open the checkout in a new window. |
-| instant_checkout | If set to yes, the checkout will open in a popup modal. If set to no, it works like a normal link to the checkout page. |
+| instant_checkout | If set to yes, the checkout will open in a popup modal. If set to no (the default), it works like a normal link to the checkout page. |
+| class | Your own CSS class for the button. It replaces the default button class. |
 
 #### Example Variations ​
 
-- **Standard Link to Checkout:** 
+- **Link to Checkout for One Item:** 
 ```
-[fluent_cart_checkout_button button_text="Go to Checkout" target="_self"]
+[fluent_cart_checkout_button variation_id="113" button_text="Go to Checkout" target="_self"]
 ```
 - **One-Click "Instant" Purchase:** 
 ```
@@ -3036,8 +3085,9 @@ text
 
 | Attribute | Description |
 | --- | --- |
-| button_text | The text displayed on the button (e.g., "Add to Bag", "Grab One"). |
-| variation_id | The ID of the product or specific option you want added to the cart. |
+| button_text | The text displayed on the button (e.g., "Add to Bag", "Grab One"). Defaults to Add to Cart. |
+| variation_id | (Required) The ID of the specific option you want added to the cart. Without it nothing renders. A product ID also works. |
+| class | Your own CSS class for the button. |
 
 ---
 
@@ -3055,9 +3105,10 @@ text
 
 | Attribute | Description |
 | --- | --- |
-| cart_icon | Choose the style of your icon. Options: cart, bag, bag-alt. You can also use a custom SVG URL: cart_icon="https://example.com/icon.svg". |
-| show_total_price | Set to true to show the current total amount next to the icon. |
-| show_item_count | Decides when to show the number of items: always (shows even if 0), has_items (only when cart has items), never (hides count). |
+| cart_icon | Choose the style of your icon. Options: cart (the default), bag, bag-alt. You can also use a custom SVG URL: cart_icon="https://example.com/icon.svg". |
+| show_total_price | Shows the current total amount next to the icon. Default true. Set to false to hide the total. |
+| show_item_count | Decides when to show the number of items: always (shows even if 0), has_items (only when cart has items, the default), never (hides count). |
+| count_mode | What the number counts: distinct_products (the default, one per product line) or total_quantity (adds up quantities). |
 | icon_color / price_color / product_count_color | Use hex codes to match your site's branding (e.g., icon_color="#cf2e2e"). |
 | button_class | Add a custom CSS class if you want to apply your own specific styling to the cart button. |
 
@@ -3077,10 +3128,10 @@ text
 
 | Attribute | Description |
 | --- | --- |
-| display_style | Choose how the categories are presented: list (standard bulleted list) or dropdown (space-saving dropdown menu). |
-| show_hierarchy | Set to true to show "parent" and "child" categories (indented). |
-| show_empty | Set to true if you want to show categories even if they don't have any products yet. |
-| show_product_count | Set to true to show the number of products next to each category name. |
+| display_style | Choose how the categories are presented: list (standard bulleted list, the default) or dropdown (space-saving dropdown menu). |
+| show_hierarchy | Set to true to show "parent" and "child" categories (indented). Default true. |
+| show_empty | Set to true if you want to show categories even if they don't have any products yet. Default false. |
+| show_product_count | Set to true to show the number of products next to each category name. Default true. |
 
 ### 6. Store Logo Shortcode ([fluent_cart_store_logo]) ​
 
@@ -3090,15 +3141,15 @@ Use this shortcode to display your store's branding logo anywhere on your site. 
 
 text
 ```
-[fluent_cart_store_logo is_link="true" logo_url="https://yoursite.com/logo.png" max_width="200"]
+[fluent_cart_store_logo max_width="200"]
 ```
 #### Supported Attributes ​
 
 | Attribute | Description |
 | --- | --- |
-| logo_url | (Required) The direct URL link to your logo image file. |
-| is_link | Set to true to make the logo clickable (usually linking to your homepage). Set to false for a static image. |
-| link_target | Choose _self to open in the same tab, or _blank to open the link in a new tab. |
+| logo_url | (Optional) A logo image URL. Leave it out to use the store logo from your store settings. |
+| is_link | Set to true (the default) to make the logo clickable (usually linking to your homepage). Set to false for a static image. |
+| link_target | Choose _self (the default) to open in the same tab, or _blank to open the link in a new tab. |
 | max_width | Sets the maximum width of the logo in pixels (e.g., "300"). |
 | max_height | Sets the maximum height of the logo in pixels (e.g., "200"). |
 
@@ -3106,7 +3157,7 @@ text
 
 ### 7. Customer Dashboard Button ([fluent_cart_customer_dashboard_button]) ​
 
-This shortcode adds a button or link that allows logged-in customers to access their "My Profile" or "My Orders" area. It is perfect for your site's header or footer menu.
+This shortcode adds a button or link to the customer dashboard page, where customers reach their "My Profile" or "My Orders" area (logged-out visitors see the login form there). It is perfect for your site's header or footer menu.
 
 #### Basic Usage ​
 
@@ -3118,10 +3169,10 @@ text
 
 | Attribute | Description |
 | --- | --- |
-| button_text | The text displayed on the link or button (e.g., "My Account", "Profile"). |
-| display_type | Choose how it looks: link (simple text link) or button (styled button). |
-| show_icon | Set to true to display a small user icon next to the text, or false to hide it. |
-| link_target | Choose _self (same tab) or _blank (new tab). |
+| button_text | The text displayed on the link or button (e.g., "Profile"). Defaults to My Account. |
+| display_type | Choose how it looks: link (simple text link) or button (styled button, the default). |
+| show_icon | Set to true (the default) to display a small user icon next to the text, or false to hide it. |
+| link_target | Choose _self (same tab, the default) or _blank (new tab). |
 
 ---
 
@@ -3139,10 +3190,10 @@ text
 
 | Attribute | Description |
 | --- | --- |
-| product_id | (Required) The ID of the specific product you want to display the title for. |
-| is_link | Set to true to make the title clickable (links to the product page). |
-| link_target | Choose _self (same tab) or _blank (new tab). |
-| is_default | Set to true to use default styling, or false to inherit the surrounding text style. |
+| product_id | The product to show the title for. Not needed when is_default is true. |
+| is_link | Set to true (the default) to make the title clickable (links to the product page). |
+| link_target | Choose _self (same tab, the default) or _blank (new tab). |
+| is_default | Set to true to show the product being viewed (for product templates). Default false. |
 
 ---
 
@@ -3160,8 +3211,8 @@ text
 
 | Attribute | Description |
 | --- | --- |
-| product_id | (Required) The ID of the specific product you want to display the image for. |
-| is_default | Set to false to allow for custom sizing or styling via CSS, or true for standard output. |
+| product_id | The product to show the image for. Not needed when is_default is true. |
+| is_default | Set to true to show the image of the product being viewed (for product templates). Default false. |
 
 ---
 
@@ -3181,7 +3232,7 @@ text
 | --- | --- |
 | variant_ids | (Required for this mode) A comma-separated list of the variation IDs to offer, up to 20. |
 | selection_mode | single shows radio buttons (the default). multiple shows checkboxes. |
-| max_items | With multiple, the most options a shopper can tick at once, from 1 to 20. |
+| max_items | With multiple, the most options a shopper can tick at once, from 1 to 20. Default 5. |
 | selector_label | The heading shown above the list of options. |
 | field_label_style | Sets how checkout fields show their name once the customer has typed in them: docked (the default), floating, or placeholder. It works with or without variant_ids. |
 
@@ -3216,6 +3267,27 @@ list_
 | list_flag_position | left (the default) or right. Where the flag sits in each row. |
 
 The same switcher is also available as a block, and as a menu item. See [Adding a Currency Switcher](/guide/customization-and-themes/currency-switcher) for what each value looks like and for ready-made combinations.
+
+---
+
+### 12. More Shortcodes ​
+
+FluentCart registers a few more shortcodes. Most of them power the store pages you assign under [Pages Setup](/guide/settings-configuration/pages-setup), and you rarely need to place them by hand:
+
+| Shortcode | What it shows |
+| --- | --- |
+| [fluent_cart_product_card] | A single product card, like one item from the product grid. |
+| [fluent_cart_single_product] | A full single product layout. |
+| [fluent_cart_pricing_table] | A pricing table for comparing product plans. |
+| [fluent_products_search_bar] | A product search bar. |
+| [fluent_cart_cart] | The cart page. |
+| [fluent_cart_customer_profile] | The customer dashboard page. |
+| [fluent_cart_receipt] | The order receipt (thank you) page. |
+| [fluent_cart_order_review] | The "review your order" page. |
+| [fluent_cart_product_reviews] | A product's reviews. See the reviews shortcode for its options. |
+| [fluent_cart_product_header] | The top section of a single product page. |
+| [fluent_cart_related_products] | Products related to the one being viewed. |
+| [fluent_cart_checkout_shipping_methods] | The shipping method choices on the checkout. |
 
 ---
 
@@ -3344,7 +3416,7 @@ Each product you added appears in the panel with its price. Use the bin icon nex
 
 When you choose **Select many**, an extra setting appears:
 
-- **Maximum Selectable Items:** How many options a shopper can tick at the same time, from 1 to 20. Every product you added is always shown. This setting only limits how many can be chosen together.
+- **Maximum Selectable Items:** How many options a shopper can tick at the same time, from 1 to 20 (default 5). Every product you added is always shown. This setting only limits how many can be chosen together.
 
 ### Selector Heading ​
 
@@ -3386,7 +3458,7 @@ single
 ```
 
 .
-- **max_items:** The most options a shopper can tick at once, from 1 to 20. It only applies when 
+- **max_items:** The most options a shopper can tick at once, from 1 to 20 (default 5). It only applies when 
 ```
 selection_mode
 ```
@@ -3431,7 +3503,16 @@ While FluentCart should work well with almost any standard theme, we have offici
 #### Popular Page Builders & Frameworks: ​
 
 - Bricks
+- Elementor
 - Gutenberg
+
+Elementor, Bricks, and Divi each have a free FluentCart addon with native widgets:
+
+- **Elementor Blocks:** needs Elementor 3.34 or later. See [Using Elementor Widgets](/guide/customization-and-themes/using-elementor-widgets).
+- **FluentCart Bricks Blocks:** needs the Bricks theme. See [FluentCart Bricks Blocks](/guide/customization-and-themes/fluentcart-bricks-blocks).
+- **FluentCart Divi Modules:** needs Divi 5. See [FluentCart Divi Modules](/guide/customization-and-themes/fluentcart-divi-modules).
+
+You install them from **FluentCart > Settings > Features & addon > Plugin Addons**.
 
 #### Popular Modern & Block-Based Themes: ​
 
@@ -3580,11 +3661,16 @@ FluentCart starts with only the basics to keep your site fast. To use the Elemen
 1. **Go to Settings:** In your WordPress dashboard, go to **FluentCart → Settings**.
 2. **Open Features & Addons:** Click the **Features & addon** tab on the left.
 3. **Find Plugin Addons:** Scroll to the bottom of the page to find the **Plugin Addons** section.
-4. **Turn it On:** Find the **Elementor Blocks** card and click **Install & Activate**.
+4. **Turn it On:** Find the **Elementor Blocks** card and click **Install & Activate** (FluentCart Pro) or **Download** (free plugin).
 
 INFO
 
-The Elementor Blocks add-on is available on **FluentCart Free** as well as Pro, and it installs in one click from the Plugin Addons section. It requires **Elementor 3.34 or later**.Activating the addon gives you three things:
+The addon is free. With FluentCart Pro it installs in one click. On the free plugin, **Download** opens the FluentCart addons page, where you download the 
+```
+.zip
+```
+
+ and upload it under **Plugins → Add New → Upload Plugin**. It requires **Elementor 3.34 or later**.Activating the addon gives you three things:
 
 - **Two new widget categories** inside the Elementor editor — **FluentCart** for store-wide widgets and **FluentCart Product** for single-product widgets.
 - **Eight ready-made page templates** in Elementor's template library, so you can start from a finished design instead of a blank canvas.
@@ -3627,7 +3713,7 @@ You don't have to build every store page from a blank canvas. Activating the add
 
 Once inserted, everything is a normal Elementor layout. Edit any widget, delete sections you don't need, and restyle it to match your brand.
 
-You'll also want to tell FluentCart to use these pages. After building them, assign each one under **FluentCart Pro → Settings → Pages Setup** so your store's shop, cart, checkout, and dashboard links point at your new designs. See [Pages Setup](/guide/settings-configuration/pages-setup) for the full walkthrough.
+You'll also want to tell FluentCart to use these pages. After building them, assign each one under **FluentCart → Settings → Store Settings → Pages Setup** so your store's shop, cart, checkout, and dashboard links point at your new designs. See [Pages Setup](/guide/settings-configuration/pages-setup) for the full walkthrough.
 
 The templates install themselves
 
