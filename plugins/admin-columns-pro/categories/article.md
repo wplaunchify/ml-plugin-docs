@@ -5228,10 +5228,9 @@ The WooCommerce integration adds a lot of custom columns to the WooCommerce list
 
 1. [Products](//docs.admincolumns.com/article/41-woocommerce-product-columns)
 2. [Product variations](//docs.admincolumns.com/article/45-woocommerce-product-variation-columns)
-3. [Orders](//docs.admincolumns.com/article/42-woocommerce-order-columns)
-4. [Coupons](//docs.admincolumns.com/article/43-woocommerce-coupon-columns)
-5. [Users](//docs.admincolumns.com/article/44-woocommerce-user-columns)
-6. [Subscriptions](//docs.admincolumns.com/article/93-woocommerce-subscription-columns)
+3. [Coupons](//docs.admincolumns.com/article/43-woocommerce-coupon-columns)
+4. [Users](//docs.admincolumns.com/article/44-woocommerce-user-columns)
+5. [Subscriptions](//docs.admincolumns.com/article/93-woocommerce-subscription-columns)
 
 ---
 
