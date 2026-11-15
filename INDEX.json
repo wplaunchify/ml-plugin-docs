@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-15T02:16:28.062Z",
+  "last_updated": "2026-11-15T02:21:11.085Z",
   "total_plugins": 131,
   "plugins": [
     {
@@ -744,7 +744,7 @@
       "slug": "fluentbooking-appointment-scheduling-booking-solution",
       "name": "FluentBooking - Appointment Scheduling & Booking Solution",
       "documentation_url": "https://fluentbooking.com/documentation/",
-      "last_scraped": "2026-11-08T02:20:12.204Z",
+      "last_scraped": "2026-11-15T02:21:11.085Z",
       "page_count": 57,
       "categories": [
         "availability",
