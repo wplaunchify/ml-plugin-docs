@@ -2,16 +2,16 @@
   "plugin_slug": "ninja-tables-easy-data-table-builder",
   "plugin_name": "Ninja Tables – Easy Data Table Builder",
   "documentation_url": "https://wpmanageninja.com/docs/ninja-tables/documentation/",
-  "last_scraped": "2026-11-08T03:18:52.287Z",
-  "total_pages": 443,
-  "failed_urls_count": 33,
+  "last_scraped": "2026-11-15T03:19:15.780Z",
+  "total_pages": 441,
+  "failed_urls_count": 32,
   "sections": [
     {
       "title": "Uncategorized",
       "slug": "uncategorized",
       "url": "https://wpmanageninja.com/docs/ninja-tables/documentation/uncategorized/",
       "file": "categories/uncategorized.md",
-      "page_count": 443,
+      "page_count": 441,
       "pages": [
         {
           "title": "Changelog",
@@ -926,10 +926,6 @@
           "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/welcome-to-elementor/importing-demo-content-optional/"
         },
         {
-          "title": "Choose Menu Specification",
-          "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/page-creation/choose-menu-specification/"
-        },
-        {
           "title": "Page Building",
           "url": "https://wpmanageninja.com/docs/new-sciencex-multipurpose-education-researcher-professor-wordpress-theme/using-science-x/page-building/"
         },
@@ -1644,10 +1640,6 @@
         {
           "title": "Table color customization by Ninja Tables",
           "url": "https://wpmanageninja.com/docs/ninja-tables/designing-tables/table-color-customization-by-ninja-tables/"
-        },
-        {
-          "title": "T-Managing Amazon Product Listing Table",
-          "url": "https://wpmanageninja.com/docs/blogs/managing-amazon-product-listing-table/"
         },
         {
           "title": "Demo: Amazon Product Listing",
