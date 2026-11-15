@@ -1,7 +1,7 @@
 {
   "plugin_slug": "advanced-custom-fields-pro",
   "plugin_name": "Advanced Custom Fields PRO",
-  "last_scraped": "2026-11-08T03:52:38.081Z",
+  "last_scraped": "2026-11-15T03:52:33.907Z",
   "total_pages": 281,
   "failed_urls": [
     "https://www.advancedcustomfields.com/resources/upgrade-guide-acf-pro/",
@@ -3565,17 +3565,21 @@
       "title": "Password",
       "url": "https://www.advancedcustomfields.com/resources/password/",
       "category": "Uncategorized",
-      "content": "## Description\n\nThe Password field creates an input for providing a password using a masked field.\n\n## Screenshots\n\n![Creating a Password field in the ACF UI.](https://www.advancedcustomfields.com/wp-content/uploads/2023/03/Creating-a-Password-Field.png)Creating a Password field.\n\n![Settings on the Presentation tab allow you to control how the Password field will appear.](https://www.advancedcustomfields.com/wp-content/uploads/2023/03/Password-Field-Presentation-Layer.png)Settings on the Presentation tab allow you to control how the Password field will appear.\n\n![How the password field might appear to content editors. Instructions added in the Presentation tab are visible here. ](https://www.advancedcustomfields.com/wp-content/uploads/2023/03/Password-Field-for-Content-Editors-1.png)How the password field might appear to content editors. Instructions added in the Presentation tab are visible here.\n\n## Settings\n\n- **Required**\n\nFound on the Validation tab, this requires a valid password be provided as the input and prevents the field  from accepting empty values. Defaults to off.\n- **Instructions**\n\nShows instructions when submitting data.\n- **Placeholder Text**\n\nAppears within input when no value exists.\n- **Prepend**\n\nAdds a visual text element before the input.\n- **Append**\n\nAdds a visual text element after the input.\n\n## Template usage\n\n### Get value\n\nIt’s unlikely you’re going to want to output password fields to the frontend, but rather use the value in other code. The following example shows how to load the value of the field “password” from an ACF [options page](https://www.advancedcustomfields.com/resources/options-page/).\n\n```\n$value = get_field( \"password\", \"option\");\n```",
+      "content": "## Description\n\nThe Password field creates a text input that masks characters as they are typed. The masking only applies in the editor: the value is stored as plain text, the same as a Text field.\n\n## Screenshots\n\n![Creating a Password field in the ACF UI.](https://www.advancedcustomfields.com/wp-content/uploads/2023/03/Creating-a-Password-Field.png)Creating a Password field.\n\n![Settings on the Presentation tab allow you to control how the Password field will appear.](https://www.advancedcustomfields.com/wp-content/uploads/2023/03/Password-Field-Presentation-Layer.png)Settings on the Presentation tab allow you to control how the Password field will appear.\n\n![How the password field might appear to content editors. Instructions added in the Presentation tab are visible here. ](https://www.advancedcustomfields.com/wp-content/uploads/2023/03/Password-Field-for-Content-Editors-1.png)How the password field might appear to content editors. Instructions added in the Presentation tab are visible here.\n\n## Settings\n\n- **Required**\n\nFound on the Validation tab, this prevents the field from accepting empty values. Defaults to off.\n- **Instructions**\n\nShows instructions when submitting data.\n- **Placeholder Text**\n\nAppears within input when no value exists.\n- **Prepend**\n\nAdds a visual text element before the input.\n- **Append**\n\nAdds a visual text element after the input.\n\n## Storage and output\n\nThe Password field masks input only. It does not encrypt, hash or hide the value it stores:\n\n- ```\nget_field()\n```\n\n and \n```\nthe_field()\n```\n\n return the value as plain text, so any template or block that outputs it shows it to everyone who can view the page.\n- When the field group has **Show in REST API** enabled, the value is included in REST API responses for anyone who can view the object, which for a published post includes logged-out visitors.\n- Front-end forms created with \n```\nacf_form()\n```\n\n include the stored value in the input’s HTML.\n- The value is never included in [structured data (JSON-LD)](https://www.advancedcustomfields.com/resources/automatic-structured-data-with-schema-org/) output.\n\nDon’t use the Password field to store secrets such as credentials, API keys or access tokens. Store them outside custom fields instead, for example as constants in \n```\nwp-config.php\n```\n\n.\n\n## Template usage\n\n### Get value\n\nAvoid outputting a Password field’s value on the front end unless it is meant to be public. More often, you’ll use the value in other code. The following example shows how to load the value of the field “password” from an ACF [options page](https://www.advancedcustomfields.com/resources/options-page/).\n\n```\n$value = get_field( 'password', 'option' );\n```",
       "headings": [
         "Description",
         "Screenshots",
         "Settings",
+        "Storage and output",
         "Template usage",
         "Get value"
       ],
       "code_blocks": [
-        "$value = get_field( \"password\", \"option\");",
-        "$value = get_field( \"password\", \"option\");"
+        "get_field()",
+        "the_field()",
+        "wp-config.php",
+        "$value = get_field( 'password', 'option' );",
+        "$value = get_field( 'password', 'option' );"
       ]
     },
     {

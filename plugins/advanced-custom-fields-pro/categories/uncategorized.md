@@ -17809,7 +17809,7 @@ This example demonstrates how to use a URL field named “sales_url” within an
 
 ## Description
 
-The Password field creates an input for providing a password using a masked field.
+The Password field creates a text input that masks characters as they are typed. The masking only applies in the editor: the value is stored as plain text, the same as a Text field.
 
 ## Screenshots
 
@@ -17823,7 +17823,7 @@ The Password field creates an input for providing a password using a masked fiel
 
 - **Required**
 
-Found on the Validation tab, this requires a valid password be provided as the input and prevents the field  from accepting empty values. Defaults to off.
+Found on the Validation tab, this prevents the field from accepting empty values. Defaults to off.
 - **Instructions**
 
 Shows instructions when submitting data.
@@ -17837,14 +17837,44 @@ Adds a visual text element before the input.
 
 Adds a visual text element after the input.
 
+## Storage and output
+
+The Password field masks input only. It does not encrypt, hash or hide the value it stores:
+
+- ```
+get_field()
+```
+
+ and 
+```
+the_field()
+```
+
+ return the value as plain text, so any template or block that outputs it shows it to everyone who can view the page.
+- When the field group has **Show in REST API** enabled, the value is included in REST API responses for anyone who can view the object, which for a published post includes logged-out visitors.
+- Front-end forms created with 
+```
+acf_form()
+```
+
+ include the stored value in the input’s HTML.
+- The value is never included in [structured data (JSON-LD)](https://www.advancedcustomfields.com/resources/automatic-structured-data-with-schema-org/) output.
+
+Don’t use the Password field to store secrets such as credentials, API keys or access tokens. Store them outside custom fields instead, for example as constants in 
+```
+wp-config.php
+```
+
+.
+
 ## Template usage
 
 ### Get value
 
-It’s unlikely you’re going to want to output password fields to the frontend, but rather use the value in other code. The following example shows how to load the value of the field “password” from an ACF [options page](https://www.advancedcustomfields.com/resources/options-page/).
+Avoid outputting a Password field’s value on the front end unless it is meant to be public. More often, you’ll use the value in other code. The following example shows how to load the value of the field “password” from an ACF [options page](https://www.advancedcustomfields.com/resources/options-page/).
 
 ```
-$value = get_field( "password", "option");
+$value = get_field( 'password', 'option' );
 ```
 
 ---
